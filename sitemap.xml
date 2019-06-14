@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://iamzhl.top/tags/index.html</loc>
+    
+    <lastmod>2019-03-30T10:34:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://iamzhl.top/about/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
@@ -19,55 +26,6 @@
     <loc>https://iamzhl.top/categories/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/tags/index.html</loc>
-    
-    <lastmod>2019-03-30T10:34:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/0-1-backpack.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/ASUS-X455LD-i5-4210u.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/BinarySearch.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/CAS-5-3-4-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/CentOS-install-openLDAP.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
@@ -107,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Config-NexT-to-beautify-your-blog-with-hexo.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/Connect-Network-in-Windows-10.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -128,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Disable-the-discrete-GPU-in-laptop.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -142,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Driver-audio-for-hackintosh.html</loc>
+    <loc>https://iamzhl.top/Disable-the-discrete-GPU-in-laptop.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -163,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Gerrit-install-and-deploy.html</loc>
+    <loc>https://iamzhl.top/Gerrit-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Gerrit-integrate-with-ldap-and-CAS.html</loc>
+    <loc>https://iamzhl.top/0-1-backpack.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -184,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/How-to-use-xcode-select-in-terminal.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -198,14 +135,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/How-to-use-youdao-note-in-a-special-way.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Install-and-config-mysql-on-mac.html</loc>
+    <loc>https://iamzhl.top/How-to-use-xcode-select-in-terminal.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -219,6 +149,13 @@
   </url>
   
   <url>
+    <loc>https://iamzhl.top/How-to-use-youdao-note-in-a-special-way.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://iamzhl.top/Install-jdk-on-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -226,28 +163,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Install-macOS-on-laptop.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Intro-about-iterator-in-struts2.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Jenkins-configure-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Jenkins-integrate-with-ldap-and-CAS.html</loc>
+    <loc>https://iamzhl.top/Install-and-config-mysql-on-mac.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -261,21 +177,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/MantisBT-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/MantisBT-integrate-with-ldap-and-CAS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/OSI-Model.html</loc>
+    <loc>https://iamzhl.top/Jenkins-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -303,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Problem-about-low-carbon-lifestyle-answering.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/Problem-about-police-and-gangster-110.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -324,6 +219,13 @@
   </url>
   
   <url>
+    <loc>https://iamzhl.top/Problem-about-low-carbon-lifestyle-answering.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://iamzhl.top/RW-NTFS-partition-natively-on-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -331,7 +233,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/RecurMatrix.html</loc>
+    <loc>https://iamzhl.top/ASUS-X455LD-i5-4210u.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -359,28 +261,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/SonarQube-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/SonarQube-integrate-with-ldap-and-CAS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/Statistical-problem.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Supported-codecs-by-AppleALC.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -408,21 +289,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/TestLink-integrate-with-ldap-and-CAS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/The-simplest-case-demo-about-client-and-server.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Use-GitHub-for-team-development.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -450,13 +317,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/quicksort.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/shadowsocks-libev.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -464,7 +324,147 @@
   </url>
   
   <url>
+    <loc>https://iamzhl.top/quicksort.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/CentOS-install-openLDAP.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/CAS-5-3-4-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Gerrit-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Intro-about-iterator-in-struts2.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/MantisBT-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/OSI-Model.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/SonarQube-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/SonarQube-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Use-GitHub-for-team-development.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/TestLink-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Config-NexT-to-beautify-your-blog-with-hexo.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Driver-audio-for-hackintosh.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Install-macOS-on-laptop.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Jenkins-configure-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/MantisBT-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Supported-codecs-by-AppleALC.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://iamzhl.top/Clover-ACPI-hotpatch.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/BinarySearch.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/RecurMatrix.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     

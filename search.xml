@@ -59,9 +59,9 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>CAS</tag>
         <tag>Gerrit</tag>
         <tag>ldap</tag>
+        <tag>CAS</tag>
       </tags>
   </entry>
   <entry>
@@ -637,19 +637,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[派遣敢死队问题]]></title>
-    <url>%2FProblem-about-Sending-out-death-squads.html</url>
-    <content type="text"><![CDATA[问题描述​ G将军有一支训练有素的军队，这个军队除开G将军外，每名士兵都有一个直接上级（可能是其他士兵，也可能是G将军）。现在G将军将接受一个特别的任务，需要派遣一部分士兵（至少一个）组成一个敢死队，为了增加敢死队队员的独立性，要求如果一名士兵在敢死队中，他的直接上级不能在敢死队中。​ 请问，G将军有多少种派出敢死队的方法。注意，G将军也可以作为一个士兵进入敢死队。​ 输入格式:​ 输入的第一行包含一个整数n，表示包括G将军在内的军队的人数。军队的士兵从1至n编号，G将军编号为1。接下来n-1个数，分别表示编号为2, 3, …, n的士兵的直接上级编号，编号i的士兵的直接上级的编号小于i。​ 输出格式:​ 输出一个整数，表示派出敢死队的方案数。由于数目可能很大，你只需要输出这个数除10007的余数即可。​ 样例输入1:​ 3​ 1 1​ 样例输出1:​ 4​ 样例说明:​ 这四种方式分别是：选1；选2；选3；选2, 3。样例输入2:71 1 2 2 3 3样例输出2:40数据规模与约定对于20%的数据，n ≤ 20；对于40%的数据，n ≤ 100；对于100%的数据，1 ≤ n ≤ 100000。资源约定：峰值内存消耗 &lt; 256MCPU消耗 &lt; 2000ms请严格按要求输出，不要画蛇添足地打印类似：“请您输入…” 的多余内容。所有代码放在同一个源文件中，调试通过后，拷贝提交该源码。注意: main函数需要返回0注意: 只使用ANSI C/ANSI C++ 标准，不要调用依赖于编译环境或操作系统的特殊函数。注意: 所有依赖的函数必须明确地在源文件中 #include， 不能通过工程设置而省略常用头文件。提交时，注意选择所期望的编译器类型。思路1、首先将所有士兵直属上级的编号放于数组a；2、每个人有两种选择，去和不去，用0和1表示，转换为二进制放于数组b；3、最后判断每个士兵是不是与其直属上级同时执行任务，进而对count进行统计。代码实现1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253//// main.c// 派遣敢死队问题//// Created by Canvas on 2018/12/31.// Copyright © 2018 Canvas. All rights reserved.//#include &lt;stdio.h&gt;#include &lt;math.h&gt;int main() &#123; int number; int count=0; int flag; scanf("%d",&amp;number);//派遣的人数 int i,j; int temp; int a[number],b[number];//a a[0]=0;//将军 for(i=1;i&lt;number;i++)&#123; scanf("%d",&amp;a[i]);//每个人的直属上级 &#125; for(i=1;i&lt;pow(2,number);i++)&#123; temp=i; for(j=0;j&lt;number;j++)&#123; //遍历所有情况 b[j]=temp%2; temp/=2; &#125; flag=1; for(j=1;j&lt;number;j++)&#123; //将军没有上级，不用判断 if(b[j]==1&amp;&amp;b[a[j]-1]==1)&#123; //判断是否士兵和上级同时执行任务 //b[j]为编号为j+1的士兵去不去 //b[a[j]-1]为编号为j+1的士兵的直接上级去不去 flag=0; break; &#125; &#125; if(flag==1) count++; &#125; printf("%d\n",count); return 0;&#125;]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>C语言</tag>
-        <tag>派遣敢死队</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[警匪110问题]]></title>
     <url>%2FProblem-about-police-and-gangster-110.html</url>
     <content type="text"><![CDATA[问题描述​ 匪警请拨110,即使手机欠费也可拨通！​ 为了保障社会秩序，保护人民群众生命财产安全，警察叔叔需要与罪犯斗智斗勇，因而需要经常性地进行体力训练和智力训练！某批警察叔叔正在进行智力训练：12 3 4 5 6 7 8 9 =110;​ 请看上边的算式，为了使等式成立，需要在数字间填入加号或者减号（可以不填，但不能填入其它符号）。之间没有填入符号的数字组合成一个数，例如：12+34+56+7-8+9 就是一种合格的填法；123+4+5+67-89 是另一个可能的答案。​ 请你利用计算机的优势，帮助警察叔叔快速找到所有答案。每个答案占一行。形如：12+34+56+7-8+9123+4+5+67-89思路1、一共九个数字，八个操作符；2、每个操作符有三种情况，即留空、加或者减，分别用0、1和2表示；3、共有 3^8 种情况，遍历每种情况判断输出；4、需要注意的是留空和’+’、’-‘需要分开处理，因为留空之后需要将其前后的数据连在一起。5、以12+34+56+7-8+9为例，给和sum赋初值为0，第一次循环操作符为留空，需要先加上第一位的1，然后进行这一次运算，即1x10+2，然后下一次循环操作符为+，需要计算的就是12+3，同理在3、4之间的空需要计算的是3x10+4，而不是（12+3）x10+4，所以需要一个临时变量来记录上次的操作数，还需要一个变量来记录上次的操作符将上次的结果进行统计处理，原因就在于我们无法确定下次的操作符是不是留空。6、由于我们在统计和时，只有在下一次循环才能处理最后一个操作数，所以需要将9最后单独处理。代码实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576#include &lt;stdio.h&gt; #include &lt;math.h&gt; int main() &#123; int a[9]=&#123;1,2,3,4,5,6,7,8,9&#125;; int sum; int temp; int oper,lastoper; int number; int i,j; for(i=0;i&lt;pow(3,8);i++) &#123; sum=0; temp=1; lastoper=1; number=i; for(j=1;j&lt;=8;j++) &#123; //操作八次 oper=number%3; number=number/3; if (!oper) temp=temp*10+a[j]; //留空单独处理 if (oper==1) &#123; //当前操作符 if(lastoper==1)&#123; //前一次操作符 sum=sum+temp; temp=a[j]; &#125; if(lastoper==2)&#123; sum=sum-temp; temp=a[j]; &#125; lastoper=oper; //更新上次操作符 &#125; if(oper==2)&#123; if(lastoper==1)&#123; sum=sum+temp; temp=a[j]; &#125; if(lastoper==2)&#123; sum=sum-temp; temp=a[j]; &#125; lastoper=oper; &#125; &#125; if(lastoper==1) //第九次操作单独处理 sum=sum+temp; if(lastoper==2) sum=sum-temp; if(sum==110) &#123; number=i; for(j=1;j&lt;=8;j++) &#123; printf("%d",a[j-1]); oper=number%3; number=number/3; if(oper==1) printf("+"); if(oper==2) printf("-"); else continue; &#125; printf("9\n"); &#125; &#125; return 0;&#125;运行结果]]></content>
@@ -673,6 +660,19 @@
         <tag>算法</tag>
         <tag>C语言</tag>
         <tag>价牌翻转</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[派遣敢死队问题]]></title>
+    <url>%2FProblem-about-Sending-out-death-squads.html</url>
+    <content type="text"><![CDATA[问题描述​ G将军有一支训练有素的军队，这个军队除开G将军外，每名士兵都有一个直接上级（可能是其他士兵，也可能是G将军）。现在G将军将接受一个特别的任务，需要派遣一部分士兵（至少一个）组成一个敢死队，为了增加敢死队队员的独立性，要求如果一名士兵在敢死队中，他的直接上级不能在敢死队中。​ 请问，G将军有多少种派出敢死队的方法。注意，G将军也可以作为一个士兵进入敢死队。​ 输入格式:​ 输入的第一行包含一个整数n，表示包括G将军在内的军队的人数。军队的士兵从1至n编号，G将军编号为1。接下来n-1个数，分别表示编号为2, 3, …, n的士兵的直接上级编号，编号i的士兵的直接上级的编号小于i。​ 输出格式:​ 输出一个整数，表示派出敢死队的方案数。由于数目可能很大，你只需要输出这个数除10007的余数即可。​ 样例输入1:​ 3​ 1 1​ 样例输出1:​ 4​ 样例说明:​ 这四种方式分别是：选1；选2；选3；选2, 3。样例输入2:71 1 2 2 3 3样例输出2:40数据规模与约定对于20%的数据，n ≤ 20；对于40%的数据，n ≤ 100；对于100%的数据，1 ≤ n ≤ 100000。资源约定：峰值内存消耗 &lt; 256MCPU消耗 &lt; 2000ms请严格按要求输出，不要画蛇添足地打印类似：“请您输入…” 的多余内容。所有代码放在同一个源文件中，调试通过后，拷贝提交该源码。注意: main函数需要返回0注意: 只使用ANSI C/ANSI C++ 标准，不要调用依赖于编译环境或操作系统的特殊函数。注意: 所有依赖的函数必须明确地在源文件中 #include， 不能通过工程设置而省略常用头文件。提交时，注意选择所期望的编译器类型。思路1、首先将所有士兵直属上级的编号放于数组a；2、每个人有两种选择，去和不去，用0和1表示，转换为二进制放于数组b；3、最后判断每个士兵是不是与其直属上级同时执行任务，进而对count进行统计。代码实现1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253//// main.c// 派遣敢死队问题//// Created by Canvas on 2018/12/31.// Copyright © 2018 Canvas. All rights reserved.//#include &lt;stdio.h&gt;#include &lt;math.h&gt;int main() &#123; int number; int count=0; int flag; scanf("%d",&amp;number);//派遣的人数 int i,j; int temp; int a[number],b[number];//a a[0]=0;//将军 for(i=1;i&lt;number;i++)&#123; scanf("%d",&amp;a[i]);//每个人的直属上级 &#125; for(i=1;i&lt;pow(2,number);i++)&#123; temp=i; for(j=0;j&lt;number;j++)&#123; //遍历所有情况 b[j]=temp%2; temp/=2; &#125; flag=1; for(j=1;j&lt;number;j++)&#123; //将军没有上级，不用判断 if(b[j]==1&amp;&amp;b[a[j]-1]==1)&#123; //判断是否士兵和上级同时执行任务 //b[j]为编号为j+1的士兵去不去 //b[a[j]-1]为编号为j+1的士兵的直接上级去不去 flag=0; break; &#125; &#125; if(flag==1) count++; &#125; printf("%d\n",count); return 0;&#125;]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>C语言</tag>
+        <tag>派遣敢死队</tag>
       </tags>
   </entry>
   <entry>
@@ -742,19 +742,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[xcode-select 命令详解]]></title>
-    <url>%2FHow-to-use-xcode-select-in-terminal.html</url>
-    <content type="text"><![CDATA[It’s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current production release installed.However, there are times when you may want various tools, such as xcodebuild, to point to a specific Xcode folder. To faciliate this, you can use xcode-select. A common use case is if you use scripts and/or makefiles to build your projects.Once you set the Xcode folder, xcodebuild will be invoked from the folder you specified.The command line options are below:1234xcode-select [-help]xcode-select [-switch xcode_folder_path]xcode-select [-print-path]xcode-select [-version]Here is how to print the current Xcode path:12$ xcode-select --print-path/Developer/Applications/Xcode.appLine number 2 shows the current version of Xcode that is ‘active.’ If you are accessing xcodebuild or other related tools from a script, –print-path is the preferred means to determine the current Xcode location.Use the -switch option to change to another version of Xcode on your system:1$ sudo xcode-select --switch /Applications/Xcode-beta.app/Contents/DeveloperThis changes to the Xcode-beta 9 on my system. Note that root access is required to set the Xcode location, thus I have used sudo to execute the command as root.Printing the path now looks as follows:12$ xcode-select --print-path/Applications/Xcode-beta.app/Contents/DeveloperTo switch back to Xcode installed in the /Applications directory:1$ sudo xcode-select -switch /Applications/Xcode.app/You can read more about xcode-select by view the man page from a terminal:1$ man xcode-select]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>终端</tag>
-        <tag>Mac</tag>
-        <tag>Xcode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[金币阵列问题]]></title>
     <url>%2FProblem-about-coin-array.html</url>
     <content type="text"><![CDATA[问题描述有m*n枚金币在桌面上排列成一个m行n列的金币阵列。每一枚金币或正面朝上，或背面朝上。用数字表示金币状态，0表示正面朝上，1表示背面朝上。金币阵列游戏的规则1、每次将任一行金币翻过来放在原来的位置上;2、每次可以任选2列，交换这2列金币的位置.任务给定金币的初始状态和目标状态，编程计算按金币游戏规则，将金币排列从初始状态变换到目标状态所需的最少变换次数。思路本例的实质是将一个二进制矩阵从一种形式利用相应规则变换到另一种形式。提供的规则有两种：1、将某一行的金币翻转;2、将某两列进行交换。在这两种操作中，第一种操作可能会影响到某一行或者某一列中已经排列好的相关元素，因此，首先利用该规则进行变换，而后续的操作则不再利用该规则。​ 那么在程序中应该如下操作：1、将矩阵中的每一列作为第1列，并利用第一个规则将第1列中的相关元素与目标矩阵中第1列的元素进行配对，如果不相同，则利用每1个规则进行翻转；​ 2、从第2列开始，将处理后的列与目标列进行比较，如果相同，则转下一列；如果不同，看是否可以通过列的交换完成，如果可以，则继续扫描，否则无解。​代码实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697//// main.c// coin-array//// Created by Canvas on 2018/12/31.// Copyright © 2018 Canvas. All rights reserved.//#include &lt;stdio.h&gt;#define row 4#define col 3int source[row][col] = &#123;1,0,1,0,0,0,1,1,0,1,0,1&#125;; //sourceint target[row][col] = &#123;1,0,1,1,1,1,0,1,1,1,0,1&#125;; //targetint temparr[row][col];int number = 0; //转换的次数int minnum = 9999;void raw_change(int i) &#123; //行翻转 int j; for(j=0; j&lt;col; j++) &#123; temparr[i][j] = 1-temparr[i][j]; &#125; number++;&#125;void col_exchange(int i, int j) &#123; //列交换 int temp, k; for(k=0; k&lt;row; k++) &#123; temp = temparr[k][i]; temparr[k][i] = temparr[k][j]; temparr[k][j] = temp; &#125; if(i != j) number++;&#125;int judge(int i, int j) &#123; //temparr的i列是否和target的j列相同 int flag = 0; for(int k=0; k&lt;row; k++) &#123; flag=1; if(temparr[k][i] != target[k][j]) &#123; flag=0; break; &#125; &#125; return flag;&#125;int main() &#123; // insert code here... int i,j,k; for(i=0; i&lt;col; i++) &#123; //代表source的列 for(j=0; j&lt;row; j++) &#123; for(k=0; k&lt;col; k++) &#123; temparr[j][k] = source[j][k]; //给替身数组赋值 &#125; &#125; number=0; col_exchange(0,i); //temparr数组的列先做交换，把其他列放到第一列的位置 for(j=0; j&lt;row; j++) &#123; //判断temparr的0号列和target的0号列是否相同，不同则翻转 if(temparr[j][0] != target[j][0]) &#123; raw_change(j); //如果第1列不匹配，那么行全部翻转 &#125; &#125; int found = 0; for(j=0; j&lt;col; j++) &#123; //代表target，从第2行开始，到最后一行 found=0; for(k=j; k&lt;col; k++) &#123; //代表temparr，从第2行开始，直到最后一行 if(judge(k, j)) &#123; found=1; col_exchange(k, j); break; &#125; &#125; if(!found) &#123; break; &#125; &#125; if(found) &#123; minnum=number; &#125; &#125; if(minnum&lt;9999) &#123; printf("一共变换%d次！\n", minnum); &#125; else&#123; printf("无解！\n"); &#125; return 0;&#125;运行结果]]></content>
@@ -765,6 +752,19 @@
         <tag>算法</tag>
         <tag>C语言</tag>
         <tag>金币阵列</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[xcode-select 命令详解]]></title>
+    <url>%2FHow-to-use-xcode-select-in-terminal.html</url>
+    <content type="text"><![CDATA[It’s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current production release installed.However, there are times when you may want various tools, such as xcodebuild, to point to a specific Xcode folder. To faciliate this, you can use xcode-select. A common use case is if you use scripts and/or makefiles to build your projects.Once you set the Xcode folder, xcodebuild will be invoked from the folder you specified.The command line options are below:1234xcode-select [-help]xcode-select [-switch xcode_folder_path]xcode-select [-print-path]xcode-select [-version]Here is how to print the current Xcode path:12$ xcode-select --print-path/Developer/Applications/Xcode.appLine number 2 shows the current version of Xcode that is ‘active.’ If you are accessing xcodebuild or other related tools from a script, –print-path is the preferred means to determine the current Xcode location.Use the -switch option to change to another version of Xcode on your system:1$ sudo xcode-select --switch /Applications/Xcode-beta.app/Contents/DeveloperThis changes to the Xcode-beta 9 on my system. Note that root access is required to set the Xcode location, thus I have used sudo to execute the command as root.Printing the path now looks as follows:12$ xcode-select --print-path/Applications/Xcode-beta.app/Contents/DeveloperTo switch back to Xcode installed in the /Applications directory:1$ sudo xcode-select -switch /Applications/Xcode.app/You can read more about xcode-select by view the man page from a terminal:1$ man xcode-select]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>终端</tag>
+        <tag>Mac</tag>
+        <tag>Xcode</tag>
       </tags>
   </entry>
   <entry>
