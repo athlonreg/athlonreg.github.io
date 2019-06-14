@@ -9,7 +9,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/tags/index.html</loc>
+    <loc>https://iamzhl.top/categories/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
     
@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/categories/index.html</loc>
+    <loc>https://iamzhl.top/tags/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
     
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Drive-CX20751-2-audio-on-hackintosh.html</loc>
+    <loc>https://iamzhl.top/Disable-the-discrete-GPU-in-laptop.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Disable-the-discrete-GPU-in-laptop.html</loc>
+    <loc>https://iamzhl.top/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -142,21 +142,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/How-to-use-youdao-note-in-a-special-way.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Install-jdk-on-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -170,7 +156,14 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Make-a-boot-img-of-OS-X-with-Clover.html</loc>
+    <loc>https://iamzhl.top/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Install-jdk-on-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -178,6 +171,13 @@
   
   <url>
     <loc>https://iamzhl.top/Jenkins-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Make-a-boot-img-of-OS-X-with-Clover.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -205,20 +205,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Problem-about-police-and-gangster-110.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/Problem-about-rollover-price-tag.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/Problem-about-low-carbon-lifestyle-answering.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -226,7 +212,21 @@
   </url>
   
   <url>
+    <loc>https://iamzhl.top/Problem-about-police-and-gangster-110.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://iamzhl.top/RW-NTFS-partition-natively-on-macOS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/Problem-about-rollover-price-tag.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -268,7 +268,14 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Sync-the-codes-between-native-and-remote-by-git.html</loc>
+    <loc>https://iamzhl.top/TestLink-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/The-simplest-case-demo-about-client-and-server.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -282,14 +289,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/TestLink-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iamzhl.top/The-simplest-case-demo-about-client-and-server.html</loc>
+    <loc>https://iamzhl.top/Sync-the-codes-between-native-and-remote-by-git.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -317,13 +317,6 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/shadowsocks-libev.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iamzhl.top/quicksort.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -331,7 +324,7 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/CentOS-install-openLDAP.html</loc>
+    <loc>https://iamzhl.top/shadowsocks-libev.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -339,6 +332,13 @@
   
   <url>
     <loc>https://iamzhl.top/CAS-5-3-4-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iamzhl.top/CentOS-install-openLDAP.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -387,14 +387,14 @@
   </url>
   
   <url>
-    <loc>https://iamzhl.top/Use-GitHub-for-team-development.html</loc>
+    <loc>https://iamzhl.top/TestLink-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iamzhl.top/TestLink-integrate-with-ldap-and-CAS.html</loc>
+    <loc>https://iamzhl.top/Use-GitHub-for-team-development.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
