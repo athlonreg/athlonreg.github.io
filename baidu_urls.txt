@@ -10,8 +10,8 @@ https://blog.iamzhl.top/CentOS-install-openLDAP.html
 https://blog.iamzhl.top/CAS-5-3-4-install-and-deploy.html
 https://blog.iamzhl.top/Install-and-deploy-mail-server-on-CentOS-7.html
 https://blog.iamzhl.top/TestLink-install-and-deploy.html
-https://blog.iamzhl.top/Jenkins-configure-and-deploy.html
 https://blog.iamzhl.top/Gerrit-install-and-deploy.html
+https://blog.iamzhl.top/Jenkins-configure-and-deploy.html
 https://blog.iamzhl.top/SonarQube-install-and-deploy.html
 https://blog.iamzhl.top/MantisBT-install-and-deploy.html
 https://blog.iamzhl.top/awk-to-use.html
@@ -48,8 +48,8 @@ https://blog.iamzhl.top/Connect-Network-in-Windows-10.html
 https://blog.iamzhl.top/Sync-your-hexo-with-several-terminal.html
 https://blog.iamzhl.top/Disable-the-discrete-GPU-in-laptop.html
 https://blog.iamzhl.top/Sync-the-codes-between-native-and-remote-by-git.html
-https://blog.iamzhl.top/Problem-about-Sending-out-death-squads.html
 https://blog.iamzhl.top/Problem-about-rollover-price-tag.html
+https://blog.iamzhl.top/Problem-about-Sending-out-death-squads.html
 https://blog.iamzhl.top/Problem-about-police-and-gangster-110.html
 https://blog.iamzhl.top/Allow-apps-downloaded-from-anywhere-in-macOS.html
 https://blog.iamzhl.top/Config-NexT-to-beautify-your-blog-with-hexo.html
