@@ -48,9 +48,9 @@ https://blog.iamzhl.top/Connect-Network-in-Windows-10.html
 https://blog.iamzhl.top/Sync-your-hexo-with-several-terminal.html
 https://blog.iamzhl.top/Disable-the-discrete-GPU-in-laptop.html
 https://blog.iamzhl.top/Sync-the-codes-between-native-and-remote-by-git.html
-https://blog.iamzhl.top/Problem-about-police-and-gangster-110.html
-https://blog.iamzhl.top/Problem-about-Sending-out-death-squads.html
 https://blog.iamzhl.top/Problem-about-rollover-price-tag.html
+https://blog.iamzhl.top/Problem-about-Sending-out-death-squads.html
+https://blog.iamzhl.top/Problem-about-police-and-gangster-110.html
 https://blog.iamzhl.top/Allow-apps-downloaded-from-anywhere-in-macOS.html
 https://blog.iamzhl.top/Config-NexT-to-beautify-your-blog-with-hexo.html
 https://blog.iamzhl.top/Enable-BCM94352z-on-hacintosh.html
