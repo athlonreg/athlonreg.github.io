@@ -6,7 +6,7 @@ const ap = new APlayer({
       {
         name: '怀念青春',
         artist: '刘刚',
-        url: 'http://dl.stream.qqmusic.qq.com/M500001MlFXX0CZG12.mp3?vkey=66A9EF335603F4D34D0E91EDC7C008AA69F49E65A1867A6FCCEF8D75749E9707FD97E9191671C25F55BC678B751477FBB6B8FA01DD17AEDF&guid=5150825362&fromtag=1',
+        url: 'http://fs.open.kugou.com/29a3096f387f721a01045e05ccec52e2/5d12478b/G013/M09/04/15/rYYBAFULeqyAUeKKAEFz6g_8Mco392.mp3',
         cover: 'https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/blogcover/huainianqingchun.jpg',
       },
       {

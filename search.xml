@@ -637,6 +637,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[价牌翻转问题]]></title>
+    <url>%2FProblem-about-rollover-price-tag.html</url>
+    <content type="text"><![CDATA[价牌翻转问题问题描述​ 小李的店里专卖其它店中下架的样品电视机，可称为：样品电视专卖店。​ 其标价都是4位数字（即千元不等）。​ 小李为了标价清晰、方便，使用了预制的类似数码管的标价签，只要用颜色笔涂数字就可以了。​ 这种价牌有个特点，对一些数字，倒过来看也是合理的数字。如：1 2 5 6 8 9 0 都可以。这样一来，如果牌子挂倒了，有可能完全变成了另一个价格，比如：1958 倒着挂就是：8561，差了几千元啊!! ​ 当然，多数情况不能倒读，比如，1110 就不能倒过来，因为0不能作为开始数字。​ 有一天，悲剧终于发生了。某个店员不小心把店里的某两个价格牌给挂倒了。并且这两个价格牌的电视机都卖出去了!庆幸的是价格出入不大，其中一个价牌赔了2百多，另一个价牌却赚了8百多，综合起来，反而多赚了558元。思路1、已知是一个四位数，那么共有1001-9999种情况；2、一个数颠倒之后，数字顺序颠倒并且每个数字颠倒，例如1269颠倒之后就是6921；3、0不能是第一位也不能是最后一位。代码实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667//// main.c// rollover-price-tag//// Created by Canvas on 2018/12/31.// Copyright © 2018 Canvas. All rights reserved.//#include&lt;stdio.h&gt;#include&lt;math.h&gt;int array[4]=&#123;0&#125;;int inverse(int a)&#123;//求一个数颠倒之后的结果 int b=0; int arr[4]=&#123;0&#125;; for(int i=0;i&lt;4;i++)&#123; arr[i]=(int)(a/pow(10,3-i))%10; if(arr[i]==9) b+=6*pow(10,i); else if(arr[i]==6) b+=9*pow(10,i); else b+=arr[i]*pow(10,i); &#125; return b;&#125;int main()&#123; int i,j; int k=0,l=0; int temp; int flag; int up[50]=&#123;0&#125;,down[50]=&#123;0&#125;;//分别存放赚钱和赔钱的价牌 for(i=1001;i&lt;10000;i++)&#123; temp=i; flag=1; for(j=0;j&lt;4;j++)&#123; array[j]=(int)(temp/pow(10,3-j))%10; if(array[j]==3||array[j]==4||array[j]==7)&#123;//分割数字排除不能翻转的数字 flag=0; break; &#125; &#125; if(flag)&#123; if(array[0]==0 || array[3]==0)//0不能位于第一位和最后一位 continue; if(inverse(i)-i&gt;800&amp;&amp;inverse(i)-i&lt;900) up[k++]=i; if(i-inverse(i)&gt;200&amp;&amp;i-inverse(i)&lt;300) down[l++]=i; &#125; &#125; for(i=0;i&lt;50;i++)&#123;//依次输出赚钱的原价，颠倒价、赚的钱、赔钱的原价、颠倒价、赔的钱 for(j=0;j&lt;50;j++)&#123; if((inverse(up[i])-up[i])-(down[j]-inverse(down[j]))==558)&#123; printf("%d\t%d\t%d\t",up[i],inverse(up[i]),inverse(up[i])-up[i]); printf("%d\t%d\t%d\n",down[j],inverse(down[j]),down[j]-inverse(down[j])); &#125; &#125; &#125; return 0;&#125;运行结果：![image-20181231154932718](/Users/canvas/Library/Application Support/typora-user-images/image-20181231154932718.png)]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>C语言</tag>
+        <tag>价牌翻转</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[派遣敢死队问题]]></title>
     <url>%2FProblem-about-Sending-out-death-squads.html</url>
     <content type="text"><![CDATA[问题描述​ G将军有一支训练有素的军队，这个军队除开G将军外，每名士兵都有一个直接上级（可能是其他士兵，也可能是G将军）。现在G将军将接受一个特别的任务，需要派遣一部分士兵（至少一个）组成一个敢死队，为了增加敢死队队员的独立性，要求如果一名士兵在敢死队中，他的直接上级不能在敢死队中。​ 请问，G将军有多少种派出敢死队的方法。注意，G将军也可以作为一个士兵进入敢死队。​ 输入格式:​ 输入的第一行包含一个整数n，表示包括G将军在内的军队的人数。军队的士兵从1至n编号，G将军编号为1。接下来n-1个数，分别表示编号为2, 3, …, n的士兵的直接上级编号，编号i的士兵的直接上级的编号小于i。​ 输出格式:​ 输出一个整数，表示派出敢死队的方案数。由于数目可能很大，你只需要输出这个数除10007的余数即可。​ 样例输入1:​ 3​ 1 1​ 样例输出1:​ 4​ 样例说明:​ 这四种方式分别是：选1；选2；选3；选2, 3。样例输入2:71 1 2 2 3 3样例输出2:40数据规模与约定对于20%的数据，n ≤ 20；对于40%的数据，n ≤ 100；对于100%的数据，1 ≤ n ≤ 100000。资源约定：峰值内存消耗 &lt; 256MCPU消耗 &lt; 2000ms请严格按要求输出，不要画蛇添足地打印类似：“请您输入…” 的多余内容。所有代码放在同一个源文件中，调试通过后，拷贝提交该源码。注意: main函数需要返回0注意: 只使用ANSI C/ANSI C++ 标准，不要调用依赖于编译环境或操作系统的特殊函数。注意: 所有依赖的函数必须明确地在源文件中 #include， 不能通过工程设置而省略常用头文件。提交时，注意选择所期望的编译器类型。思路1、首先将所有士兵直属上级的编号放于数组a；2、每个人有两种选择，去和不去，用0和1表示，转换为二进制放于数组b；3、最后判断每个士兵是不是与其直属上级同时执行任务，进而对count进行统计。代码实现1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253//// main.c// 派遣敢死队问题//// Created by Canvas on 2018/12/31.// Copyright © 2018 Canvas. All rights reserved.//#include &lt;stdio.h&gt;#include &lt;math.h&gt;int main() &#123; int number; int count=0; int flag; scanf("%d",&amp;number);//派遣的人数 int i,j; int temp; int a[number],b[number];//a a[0]=0;//将军 for(i=1;i&lt;number;i++)&#123; scanf("%d",&amp;a[i]);//每个人的直属上级 &#125; for(i=1;i&lt;pow(2,number);i++)&#123; temp=i; for(j=0;j&lt;number;j++)&#123; //遍历所有情况 b[j]=temp%2; temp/=2; &#125; flag=1; for(j=1;j&lt;number;j++)&#123; //将军没有上级，不用判断 if(b[j]==1&amp;&amp;b[a[j]-1]==1)&#123; //判断是否士兵和上级同时执行任务 //b[j]为编号为j+1的士兵去不去 //b[a[j]-1]为编号为j+1的士兵的直接上级去不去 flag=0; break; &#125; &#125; if(flag==1) count++; &#125; printf("%d\n",count); return 0;&#125;]]></content>
@@ -660,19 +673,6 @@
         <tag>算法</tag>
         <tag>C语言</tag>
         <tag>警匪110</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[价牌翻转问题]]></title>
-    <url>%2FProblem-about-rollover-price-tag.html</url>
-    <content type="text"><![CDATA[价牌翻转问题问题描述​ 小李的店里专卖其它店中下架的样品电视机，可称为：样品电视专卖店。​ 其标价都是4位数字（即千元不等）。​ 小李为了标价清晰、方便，使用了预制的类似数码管的标价签，只要用颜色笔涂数字就可以了。​ 这种价牌有个特点，对一些数字，倒过来看也是合理的数字。如：1 2 5 6 8 9 0 都可以。这样一来，如果牌子挂倒了，有可能完全变成了另一个价格，比如：1958 倒着挂就是：8561，差了几千元啊!! ​ 当然，多数情况不能倒读，比如，1110 就不能倒过来，因为0不能作为开始数字。​ 有一天，悲剧终于发生了。某个店员不小心把店里的某两个价格牌给挂倒了。并且这两个价格牌的电视机都卖出去了!庆幸的是价格出入不大，其中一个价牌赔了2百多，另一个价牌却赚了8百多，综合起来，反而多赚了558元。思路1、已知是一个四位数，那么共有1001-9999种情况；2、一个数颠倒之后，数字顺序颠倒并且每个数字颠倒，例如1269颠倒之后就是6921；3、0不能是第一位也不能是最后一位。代码实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667//// main.c// rollover-price-tag//// Created by Canvas on 2018/12/31.// Copyright © 2018 Canvas. All rights reserved.//#include&lt;stdio.h&gt;#include&lt;math.h&gt;int array[4]=&#123;0&#125;;int inverse(int a)&#123;//求一个数颠倒之后的结果 int b=0; int arr[4]=&#123;0&#125;; for(int i=0;i&lt;4;i++)&#123; arr[i]=(int)(a/pow(10,3-i))%10; if(arr[i]==9) b+=6*pow(10,i); else if(arr[i]==6) b+=9*pow(10,i); else b+=arr[i]*pow(10,i); &#125; return b;&#125;int main()&#123; int i,j; int k=0,l=0; int temp; int flag; int up[50]=&#123;0&#125;,down[50]=&#123;0&#125;;//分别存放赚钱和赔钱的价牌 for(i=1001;i&lt;10000;i++)&#123; temp=i; flag=1; for(j=0;j&lt;4;j++)&#123; array[j]=(int)(temp/pow(10,3-j))%10; if(array[j]==3||array[j]==4||array[j]==7)&#123;//分割数字排除不能翻转的数字 flag=0; break; &#125; &#125; if(flag)&#123; if(array[0]==0 || array[3]==0)//0不能位于第一位和最后一位 continue; if(inverse(i)-i&gt;800&amp;&amp;inverse(i)-i&lt;900) up[k++]=i; if(i-inverse(i)&gt;200&amp;&amp;i-inverse(i)&lt;300) down[l++]=i; &#125; &#125; for(i=0;i&lt;50;i++)&#123;//依次输出赚钱的原价，颠倒价、赚的钱、赔钱的原价、颠倒价、赔的钱 for(j=0;j&lt;50;j++)&#123; if((inverse(up[i])-up[i])-(down[j]-inverse(down[j]))==558)&#123; printf("%d\t%d\t%d\t",up[i],inverse(up[i]),inverse(up[i])-up[i]); printf("%d\t%d\t%d\n",down[j],inverse(down[j]),down[j]-inverse(down[j])); &#125; &#125; &#125; return 0;&#125;运行结果：![image-20181231154932718](/Users/canvas/Library/Application Support/typora-user-images/image-20181231154932718.png)]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>C语言</tag>
-        <tag>价牌翻转</tag>
       </tags>
   </entry>
   <entry>

@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>https://blog.iamzhl.top/Custom-terminal-on-your-mac.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.iamzhl.top/Disable-the-discrete-GPU-in-laptop.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -93,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/Custom-terminal-on-your-mac.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.iamzhl.top/Extract-and-fix-DSDT-SSDT-simply.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/ASUS-X455LD-i5-4210u.html</loc>
+    <loc>https://blog.iamzhl.top/Gerrit-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/Gerrit-integrate-with-ldap-and-CAS.html</loc>
+    <loc>https://blog.iamzhl.top/0-1-backpack.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/How-to-use-youdao-note-in-a-special-way.html</loc>
+    <loc>https://blog.iamzhl.top/How-to-use-xcode-select-in-terminal.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/How-to-use-xcode-select-in-terminal.html</loc>
+    <loc>https://blog.iamzhl.top/How-to-use-youdao-note-in-a-special-way.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -233,14 +233,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/0-1-backpack.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.iamzhl.top/Setup-gitlab-to-support-frame.html</loc>
+    <loc>https://blog.iamzhl.top/ASUS-X455LD-i5-4210u.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -248,6 +241,13 @@
   
   <url>
     <loc>https://blog.iamzhl.top/RecurMatrix.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.iamzhl.top/Setup-gitlab-to-support-frame.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -289,6 +289,13 @@
   </url>
   
   <url>
+    <loc>https://blog.iamzhl.top/The-simplest-case-demo-about-client-and-server.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.iamzhl.top/Use-Hibernate-reverse-engineering-to%20generate-entity-classes-and-mapping-files-automatically.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -303,7 +310,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/The-simplest-case-demo-about-client-and-server.html</loc>
+    <loc>https://blog.iamzhl.top/n-queen.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -324,7 +331,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/n-queen.html</loc>
+    <loc>https://blog.iamzhl.top/CAS-5-3-4-install-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -332,13 +339,6 @@
   
   <url>
     <loc>https://blog.iamzhl.top/CentOS-install-openLDAP.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.iamzhl.top/CAS-5-3-4-install-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -450,14 +450,14 @@
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/BinarySearch.html</loc>
+    <loc>https://blog.iamzhl.top/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.iamzhl.top/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
+    <loc>https://blog.iamzhl.top/BinarySearch.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
