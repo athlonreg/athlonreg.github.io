@@ -100,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Common-command-in-macOS.html</loc>
+    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
+    <loc>https://blog.cloudops.ml/Common-command-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -233,13 +233,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Intro-about-iterator-in-struts2.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Install-macOS-on-laptop.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -247,7 +240,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Jenkins-configure-and-deploy.html</loc>
+    <loc>https://blog.cloudops.ml/Intro-about-iterator-in-struts2.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -255,6 +248,13 @@
   
   <url>
     <loc>https://blog.cloudops.ml/Jenkins-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Jenkins-configure-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -352,14 +352,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Setup-gitlab-to-support-frame.html</loc>
+    <loc>https://blog.cloudops.ml/Solve-problem-of-subset-sum-with-backtracking-method.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Solve-problem-of-subset-sum-with-backtracking-method.html</loc>
+    <loc>https://blog.cloudops.ml/Setup-gitlab-to-support-frame.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
