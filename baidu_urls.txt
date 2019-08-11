@@ -1,3 +1,11 @@
+https://blog.cloudops.ml/Openldap-backup-and-recovery-data.html
+https://blog.cloudops.ml/Centos7-docker-image-with-systemd.html
+https://blog.cloudops.ml/Systemd-service-file-of-sonar-gerrit-and-tomcat.html
+https://blog.cloudops.ml/Nginx-enable-directory-browser-function.html
+https://blog.cloudops.ml/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html
+https://blog.cloudops.ml/Check-current-system-is-vm-or-real.html
+https://blog.cloudops.ml/Setup-postgresql-login-by-password.html
+https://blog.cloudops.ml/Deploy-redmine-on-CentOS7.html
 https://blog.cloudops.ml/Setup-gitlab-to-support-frame.html
 https://blog.cloudops.ml/How-to-use-youdao-note-in-a-special-way.html
 https://blog.cloudops.ml/TestLink-integrate-with-ldap-and-CAS.html

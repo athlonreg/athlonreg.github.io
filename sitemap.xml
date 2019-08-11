@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.cloudops.ml/CAS-5-3-4-install-and-deploy.html</loc>
+    
+    <lastmod>2019-08-11T14:11:07.323Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Openldap-backup-and-recovery-data.html</loc>
+    
+    <lastmod>2019-08-11T14:04:48.905Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Centos7-docker-image-with-systemd.html</loc>
+    
+    <lastmod>2019-08-11T14:01:56.518Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Systemd-service-file-of-sonar-gerrit-and-tomcat.html</loc>
+    
+    <lastmod>2019-08-11T13:58:53.329Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Nginx-enable-directory-browser-function.html</loc>
+    
+    <lastmod>2019-08-11T13:54:22.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    
+    <lastmod>2019-08-11T13:51:10.341Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Check-current-system-is-vm-or-real.html</loc>
+    
+    <lastmod>2019-08-11T13:47:57.445Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Setup-postgresql-login-by-password.html</loc>
+    
+    <lastmod>2019-08-11T13:46:06.264Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Deploy-redmine-on-CentOS7.html</loc>
+    
+    <lastmod>2019-08-11T13:43:12.923Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.cloudops.ml/Supported-codecs-by-AppleALC.html</loc>
     
     <lastmod>2019-06-29T02:27:35.297Z</lastmod>
@@ -65,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/CAS-5-3-4-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/CentOS-install-openLDAP.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -100,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Common-command-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -115,6 +164,13 @@
   
   <url>
     <loc>https://blog.cloudops.ml/Config-NexT-to-beautify-your-blog-with-hexo.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -247,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Jenkins-integrate-with-ldap-and-CAS.html</loc>
+    <loc>https://blog.cloudops.ml/Jenkins-configure-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Jenkins-configure-and-deploy.html</loc>
+    <loc>https://blog.cloudops.ml/Jenkins-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -352,14 +408,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Solve-problem-of-subset-sum-with-backtracking-method.html</loc>
+    <loc>https://blog.cloudops.ml/Setup-gitlab-to-support-frame.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Setup-gitlab-to-support-frame.html</loc>
+    <loc>https://blog.cloudops.ml/Solve-problem-of-subset-sum-with-backtracking-method.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
