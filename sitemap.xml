@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/about/index.html</loc>
+    <loc>https://blog.cloudops.ml/categories/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/categories/index.html</loc>
+    <loc>https://blog.cloudops.ml/about/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
     
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/BinarySearch.html</loc>
+    <loc>https://blog.cloudops.ml/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
+    <loc>https://blog.cloudops.ml/BinarySearch.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -156,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Common-command-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -170,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Connect-Network-in-Windows-10.html</loc>
+    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -184,6 +177,13 @@
   </url>
   
   <url>
+    <loc>https://blog.cloudops.ml/Connect-Network-in-Windows-10.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.cloudops.ml/Custom-terminal-on-your-mac.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Drive-CX20751-2-audio-on-hackintosh.html</loc>
+    <loc>https://blog.cloudops.ml/Disable-the-discrete-GPU-in-laptop.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Disable-the-discrete-GPU-in-laptop.html</loc>
+    <loc>https://blog.cloudops.ml/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -268,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
+    <loc>https://blog.cloudops.ml/Install-and-config-mysql-on-mac.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Install-and-config-mysql-on-mac.html</loc>
+    <loc>https://blog.cloudops.ml/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -366,14 +366,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Problem-about-police-and-gangster-110.html</loc>
+    <loc>https://blog.cloudops.ml/Problem-about-low-carbon-lifestyle-answering.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Problem-about-low-carbon-lifestyle-answering.html</loc>
+    <loc>https://blog.cloudops.ml/Problem-about-police-and-gangster-110.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -429,14 +429,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Statistical-problem.html</loc>
+    <loc>https://blog.cloudops.ml/SonarQube-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/SonarQube-integrate-with-ldap-and-CAS.html</loc>
+    <loc>https://blog.cloudops.ml/Statistical-problem.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -478,13 +478,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Use-GitHub-for-team-development.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Use-Hibernate-reverse-engineering-to%20generate-entity-classes-and-mapping-files-automatically.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -492,7 +485,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/quicksort.html</loc>
+    <loc>https://blog.cloudops.ml/Use-GitHub-for-team-development.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/awk-to-use.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -506,7 +506,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/awk-to-use.html</loc>
+    <loc>https://blog.cloudops.ml/quicksort.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
