@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/BinarySearch.html</loc>
+    <loc>https://blog.cloudops.ml/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
+    <loc>https://blog.cloudops.ml/BinarySearch.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -170,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Common-command-in-macOS.html</loc>
+    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
+    <loc>https://blog.cloudops.ml/Common-command-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Driver-audio-for-hackintosh.html</loc>
+    <loc>https://blog.cloudops.ml/Enable-BCM94352z-on-hacintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Enable-BCM94352z-on-hacintosh.html</loc>
+    <loc>https://blog.cloudops.ml/Driver-audio-for-hackintosh.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -254,6 +254,13 @@
   </url>
   
   <url>
+    <loc>https://blog.cloudops.ml/Install-jdk-on-macOS.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.cloudops.ml/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -268,21 +275,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Install-jdk-on-macOS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Intro-about-iterator-in-struts2.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Jenkins-configure-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -297,6 +290,13 @@
   
   <url>
     <loc>https://blog.cloudops.ml/MantisBT-install-and-deploy.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Jenkins-configure-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -401,13 +401,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/The-simplest-case-demo-about-client-and-server.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/awk-to-use.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -415,7 +408,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/n-queen.html</loc>
+    <loc>https://blog.cloudops.ml/The-simplest-case-demo-about-client-and-server.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -423,6 +416,13 @@
   
   <url>
     <loc>https://blog.cloudops.ml/quicksort.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/n-queen.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
