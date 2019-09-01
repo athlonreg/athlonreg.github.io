@@ -135,13 +135,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/BinarySearch.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -149,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/CentOS-install-openLDAP.html</loc>
+    <loc>https://blog.cloudops.ml/Allow-apps-downloaded-from-anywhere-in-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Change-launchpad-icon-grid-layout-in-macOS.html</loc>
+    <loc>https://blog.cloudops.ml/CentOS-install-openLDAP.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -185,20 +178,6 @@
   
   <url>
     <loc>https://blog.cloudops.ml/Common-patches-on-Hackintosh.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Config-NexT-to-beautify-your-blog-with-hexo.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Connect-Network-in-Windows-10.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -240,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Extract-and-fix-DSDT-SSDT-simply.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Gerrit-install-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -282,13 +254,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Install-and-config-mysql-on-mac.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -296,14 +261,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Install-jdk-on-macOS.html</loc>
+    <loc>https://blog.cloudops.ml/Install-macOS-on-laptop.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Install-macOS-on-laptop.html</loc>
+    <loc>https://blog.cloudops.ml/Install-jdk-on-macOS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -331,13 +296,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Make-a-boot-img-of-OS-X-with-Clover.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/MantisBT-install-and-deploy.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -353,20 +311,6 @@
   
   <url>
     <loc>https://blog.cloudops.ml/Problem-about-Sending-out-death-squads.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Problem-about-coin-array.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Problem-about-dictionary-order.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -408,13 +352,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Reverse-part-of-array.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Setup-gitlab-to-support-frame.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -430,13 +367,6 @@
   
   <url>
     <loc>https://blog.cloudops.ml/SonarQube-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Statistical-problem.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -464,13 +394,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/The-simplest-case-demo-about-client-and-server.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/TestLink-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -478,14 +401,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Use-GitHub-for-team-development.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/Use-Hibernate-reverse-engineering-to%20generate-entity-classes-and-mapping-files-automatically.html</loc>
+    <loc>https://blog.cloudops.ml/The-simplest-case-demo-about-client-and-server.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
