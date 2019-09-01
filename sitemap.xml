@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.cloudops.ml/SonarQube-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-09-01T13:56:55.572Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Gerrit-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-09-01T13:56:34.487Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Deploy-redmine-on-CentOS7.html</loc>
+    
+    <lastmod>2019-09-01T13:56:07.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/MantisBT-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2019-09-01T13:54:56.068Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.cloudops.ml/CAS-5-3-4-install-and-deploy.html</loc>
     
     <lastmod>2019-08-11T14:11:07.323Z</lastmod>
@@ -58,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Deploy-redmine-on-CentOS7.html</loc>
-    
-    <lastmod>2019-08-11T13:43:12.923Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Supported-codecs-by-AppleALC.html</loc>
     
     <lastmod>2019-06-29T02:27:35.297Z</lastmod>
@@ -79,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/categories/index.html</loc>
+    <loc>https://blog.cloudops.ml/about/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/about/index.html</loc>
+    <loc>https://blog.cloudops.ml/categories/index.html</loc>
     
     <lastmod>2019-03-30T10:34:31.000Z</lastmod>
     
@@ -233,13 +254,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Gerrit-integrate-with-ldap-and-CAS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/How-to-change-your-username-on-your-mac.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -325,13 +339,6 @@
   
   <url>
     <loc>https://blog.cloudops.ml/MantisBT-install-and-deploy.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/MantisBT-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -429,13 +436,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/SonarQube-integrate-with-ldap-and-CAS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/Statistical-problem.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -464,13 +464,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/TestLink-integrate-with-ldap-and-CAS.html</loc>
-    
-    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.cloudops.ml/The-simplest-case-demo-about-client-and-server.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
@@ -478,7 +471,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cloudops.ml/Use-Hibernate-reverse-engineering-to%20generate-entity-classes-and-mapping-files-automatically.html</loc>
+    <loc>https://blog.cloudops.ml/TestLink-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
@@ -486,6 +479,13 @@
   
   <url>
     <loc>https://blog.cloudops.ml/Use-GitHub-for-team-development.html</loc>
+    
+    <lastmod>2019-03-11T16:21:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.cloudops.ml/Use-Hibernate-reverse-engineering-to%20generate-entity-classes-and-mapping-files-automatically.html</loc>
     
     <lastmod>2019-03-11T16:21:49.000Z</lastmod>
     
