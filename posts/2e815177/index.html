@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    199
+                    203
                 </div>
                 
 
@@ -521,11 +522,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">FROM centos:7</span><br><span class="line">ENV container docker</span><br><span class="line">RUN (<span class="built_in">cd</span> /lib/systemd/system/sysinit.target.wants/; <span class="keyword">for</span> i <span class="keyword">in</span> *; <span class="keyword">do</span> [ <span class="variable">$i</span> == \</span><br><span class="line">systemd-tmpfiles-setup.service ] || rm -f <span class="variable">$i</span>; <span class="keyword">done</span>); \</span><br><span class="line">rm -f /lib/systemd/system/multi-user.target.wants/*;\</span><br><span class="line">rm -f /etc/systemd/system/*.wants/*;\</span><br><span class="line">rm -f /lib/systemd/system/<span class="built_in">local</span>-fs.target.wants/*; \</span><br><span class="line">rm -f /lib/systemd/system/sockets.target.wants/*udev*; \</span><br><span class="line">rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \</span><br><span class="line">rm -f /lib/systemd/system/basic.target.wants/*;\</span><br><span class="line">rm -f /lib/systemd/system/anaconda.target.wants/*;</span><br><span class="line">VOLUME [ <span class="string">"/sys/fs/cgroup"</span> ]</span><br><span class="line">CMD [<span class="string">"/usr/sbin/init"</span>]</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="Build-Command"><a href="#Build-Command" class="headerlink" title="Build Command"></a>Build Command</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># docker build --rm -t zhanghl/centos7.6.1810 /path/of/Dockerfile</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="Example-Apache-Systemd-Service-To-Run"><a href="#Example-Apache-Systemd-Service-To-Run" class="headerlink" title="Example Apache Systemd Service To Run"></a>Example Apache Systemd Service To Run</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># docker run -it -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup --name centos7 -p 80:80 centos7.6.1810:latest /usr/sbin/init</span></span><br><span class="line"><span class="comment"># docker exec -it centos /bin/bash</span></span><br><span class="line">docker<span class="comment"># yum -y install httpd</span></span><br><span class="line">docker<span class="comment"># systemctl start httpd</span></span><br></pre></td></tr></tbody></table></figure><script>
+                <h1 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h1><pre class="line-numbers language-bash"><code class="language-bash">FROM centos:7
+ENV container docker
+RUN <span class="token punctuation">(</span>cd /lib/systemd/system/sysinit.target.wants/<span class="token punctuation">;</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> *<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token punctuation">[</span> <span class="token variable">$i</span> <span class="token operator">==</span> \
+systemd-tmpfiles-setup.service <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token function">rm</span> -f <span class="token variable">$i</span><span class="token punctuation">;</span> done<span class="token punctuation">)</span><span class="token punctuation">;</span> \
+<span class="token function">rm</span> -f /lib/systemd/system/multi-user.target.wants/*<span class="token punctuation">;</span>\
+<span class="token function">rm</span> -f /etc/systemd/system/*.wants/*<span class="token punctuation">;</span>\
+<span class="token function">rm</span> -f /lib/systemd/system/local-fs.target.wants/*<span class="token punctuation">;</span> \
+<span class="token function">rm</span> -f /lib/systemd/system/sockets.target.wants/*udev*<span class="token punctuation">;</span> \
+<span class="token function">rm</span> -f /lib/systemd/system/sockets.target.wants/*initctl*<span class="token punctuation">;</span> \
+<span class="token function">rm</span> -f /lib/systemd/system/basic.target.wants/*<span class="token punctuation">;</span>\
+<span class="token function">rm</span> -f /lib/systemd/system/anaconda.target.wants/*<span class="token punctuation">;</span>
+VOLUME <span class="token punctuation">[</span> <span class="token string">"/sys/fs/cgroup"</span> <span class="token punctuation">]</span>
+CMD <span class="token punctuation">[</span><span class="token string">"/usr/sbin/init"</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="Build-Command"><a href="#Build-Command" class="headerlink" title="Build Command"></a>Build Command</h1><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># docker build --rm -t zhanghl/centos7.6.1810 /path/of/Dockerfile</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="Example-Apache-Systemd-Service-To-Run"><a href="#Example-Apache-Systemd-Service-To-Run" class="headerlink" title="Example Apache Systemd Service To Run"></a>Example Apache Systemd Service To Run</h1><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># docker run -it -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup --name centos7 -p 80:80 centos7.6.1810:latest /usr/sbin/init</span>
+<span class="token comment" spellcheck="true"># docker exec -it centos /bin/bash</span>
+docker<span class="token comment" spellcheck="true"># yum -y install httpd</span>
+docker<span class="token comment" spellcheck="true"># systemctl start httpd</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -826,7 +841,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            123456# slapcat &gt; ldapbak.ldif            // 导出# systemctl stop slapd              // 停止服务# rm -rf /var/lib/ldap/*   
+                            # slapcat > ldapbak.ldif            // 导出
+# systemctl stop slapd              // 停止服务
+# rm -rf /var/lib/ldap/*          
                         
                     </div>
                     <div class="publish-info">
@@ -879,7 +896,14 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Tomcat1234567891011121314# /usr/lib/systemd/system/tomcat.service[Unit]Description=TomcatAfter=network.target  [Service]
+                            Tomcat# /usr/lib/systemd/system/tomcat.service
+[Unit]
+Description=Tomcat
+After=network.target
+
+[Service]
+Type=oneshot
+Ex
                         
                     </div>
                     <div class="publish-info">
@@ -984,8 +1008,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1108,7 +1130,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

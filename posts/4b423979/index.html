@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -495,7 +496,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    465
+                    456
                 </div>
                 
 
@@ -529,17 +530,15 @@
 <ul>
 <li><p>打印<code>/etc/passwd</code>每行的行号，每行的字符总数以及第一行(即每行的用户名)</p>
 <p><code>print</code>实现</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ awk -F <span class="string">':'</span> <span class="string">'{print "Line:"NR,"Col:"NF,"User:"$1}'</span> /etc/passwd</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">awk</span> -F <span class="token string">':'</span> <span class="token string">'{print "Line:"NR,"Col:"NF,"User:"<span class="token variable">$1</span>}'</span> /etc/passwd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><code>printf</code>实现</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ awk -F <span class="string">':'</span> <span class="string">'{printf "Line:%s,Col:%s,User:%s\n",NR,NF,$1}'</span> /etc/passwd</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">awk</span> -F <span class="token string">':'</span> <span class="token string">'{printf "Line:%s,Col:%s,User:%s\n",NR,NF,<span class="token variable">$1</span>}'</span> /etc/passwd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>打印<code>/etc/passwd</code>中<code>UID(即第三列)</code>大于100的行的行号，字符总数以及第一列(即每行的用户名)</p>
 <p><code>print</code>实现</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ awk -F <span class="string">':'</span> <span class="string">'{if ($3&gt;100) print "Line:"NR,"Col:"NF,"User:",$1}'</span> /etc/passwd</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">awk</span> -F <span class="token string">':'</span> <span class="token string">'{if (<span class="token variable">$3</span>>100) print "Line:"NR,"Col:"NF,"User:",<span class="token variable">$1</span>}'</span> /etc/passwd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><code>printf</code>实现</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ awk -F <span class="string">':'</span> <span class="string">'{if ($3&gt;100) printf("Line:%s,Col:%s,User:%s\n",NR,NF,$1)}'</span> /etc/passwd</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">awk</span> -F <span class="token string">':'</span> <span class="token string">'{if (<span class="token variable">$3</span>>100) printf("Line:%s,Col:%s,User:%s\n",NR,NF,<span class="token variable">$1</span>)}'</span> /etc/passwd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>提取服务器日志<code>fresh.log</code>中<code>ERROR</code>行发生的时间</p>
 </li>
@@ -547,11 +546,9 @@
 <p><code>fresh.log</code>内容格式如下图</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7b/0fc81ccb4783036209f7ed10c01128.jpg" alt=""></p>
 <p>  利用<code>sed</code>和<code>awk</code></p>
-  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sed <span class="string">'/ERROR/p'</span> fresh.log | awk <span class="string">'{print $1}'</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">  $ <span class="token function">sed</span> <span class="token string">'/ERROR/p'</span> fresh.log <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$1</span>}'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>  只利用<code>awk</code></p>
-  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ awk <span class="string">'/ERROR/{print $1}'</span> fresh.log</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">  $ <span class="token function">awk</span> <span class="token string">'/ERROR/{print <span class="token variable">$1</span>}'</span> fresh.log<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="START-END"><a href="#START-END" class="headerlink" title="START END"></a><code>START</code> <code>END</code></h1><blockquote>
 <p><code>awk</code>提供了一个简单的方式在利用<code>awk</code>处理编程需求时的问题，例如制表时需在表前打印表头、表后打印表尾。</p>
 </blockquote>
@@ -561,8 +558,7 @@
 <blockquote>
 <p>思路是首先在开头打印”Line Col User”，然后依次打印<code>/etc/passwd</code>每一行的行号、列号和用户名，最后另起一行打印<code>--------</code>并在中间加入<code>awk</code>操作的文件名以结束制表</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ awk -F <span class="string">':'</span> <span class="string">'BEGIN{print "Line    Col    User"}{print NR,NF,$1}END{print "------",FILENAME,"------"}'</span> /etc/passwd | grep -v <span class="string">"#"</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">awk</span> -F <span class="token string">':'</span> <span class="token string">'BEGIN{print "Line    Col    User"}{print NR,NF,<span class="token variable">$1</span>}END{print "------",FILENAME,"------"}'</span> /etc/passwd <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">"#"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>其中的<code>grep -v "#"</code>用以过滤掉<code>/etc/passwd</code>中开头的无用说明信息</p>
 </blockquote>
@@ -921,7 +917,13 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546#include "stdio.h"void quicksort(in
+                            代码#include "stdio.h"
+
+void quicksort(int a[], int left, int right) 
+{ 
+    int i, j, t, temp; 
+    if(left > right) 
+   
                         
                     </div>
                     <div class="publish-info">
@@ -1010,8 +1012,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1134,7 +1134,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

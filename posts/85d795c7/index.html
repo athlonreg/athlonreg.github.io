@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -669,8 +670,17 @@
 <p><img src="http://bbs.pcbeta.com/data/attachment/forum/201803/26/123137nl7xl0340ublz66b.png" alt=""></p>
 <p><img src="http://bbs.pcbeta.com/data/attachment/forum/201803/26/123147b69lwm99q5p6jd5q.png" alt=""></p>
 <h4 id="利用鲁大师等软件查看自己机器的配置信息，来定制config和需要用的kext"><a href="#利用鲁大师等软件查看自己机器的配置信息，来定制config和需要用的kext" class="headerlink" title="利用鲁大师等软件查看自己机器的配置信息，来定制config和需要用的kext"></a>利用鲁大师等软件查看自己机器的配置信息，来定制<code>config</code>和需要用的<code>kext</code></h4><p>这一步想必不用我多说，大家利用鲁大师或者<code>AIDA64</code>看一下自己配置好了。有一点提示，尽量在安装过程中不考虑各种<code>kext</code>，尽量用少的驱动去安装，安装完成后再完善驱动，这样可以减少许多安装中的错误，也利于排错，但需要注意的必备的驱动一定要放，例如<code>FakeSMC.kext</code>、还有就是键盘驱动。当然老鸟无所谓了，直接把需要用到的都放上就<code>OK</code>了。以我自己机器为例，配置如下：</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">主板</span>       <span class="string">Asus X455LD Intel Haswell-ULT - Lynx Point-LP</span></span><br><span class="line"></span><br><span class="line"><span class="meta">独立显卡</span>    <span class="string">Nvidia GeForce 820M 2G </span></span><br><span class="line"></span><br><span class="line"><span class="meta">核心显卡</span>    <span class="string">HD4400</span></span><br><span class="line"></span><br><span class="line"><span class="meta">声卡</span>        <span class="string">Realtek @ Intel Lynx Point-LP  High Definition Audio (CX20751)</span></span><br><span class="line"></span><br><span class="line"><span class="meta">以太网卡</span>    <span class="string">Realtek RTL8168/8111/8112 Gigabit Ethernet Controller / Asus</span></span><br><span class="line"></span><br><span class="line"><span class="meta">无线网卡</span>    <span class="string">Atheros AR956X</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">主板</span> <span class="token attr-value">      Asus X455LD Intel Haswell-ULT - Lynx Point-LP</span>
 
+<span class="token attr-name">独立显卡</span> <span class="token attr-value">   Nvidia GeForce 820M 2G </span>
+
+<span class="token attr-name">核心显卡</span> <span class="token attr-value">   HD4400</span>
+
+<span class="token attr-name">声卡</span> <span class="token attr-value">       Realtek @ Intel Lynx Point-LP  High Definition Audio (CX20751)</span>
+
+<span class="token attr-name">以太网卡</span> <span class="token attr-value">   Realtek RTL8168/8111/8112 Gigabit Ethernet Controller / Asus</span>
+
+<span class="token attr-name">无线网卡</span> <span class="token attr-value">   Atheros AR956X</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>按照上面的驱动简要说明，我以太网卡是<code>RTL8111</code>，那么需要<code>RTL8111.kext</code>、核心显卡是<code>HD4400</code>，就需要<code>FakePCIID.kext</code>、<code>FakePCIID_Intel_HD_Graphics.kext</code>，声卡比较麻烦，暂时不考虑，无线网卡是<code>Atheros AR956X</code>，那么我需要<code>ATH9KFixup.kext</code>，又要依赖<code>Lilu.kext</code>，所以需要<code>Lilu.kext</code>，四代低压机器，我需要<code>IntelGraphicsFixup.kext</code>来解决腾讯视频死机的问题，所以放上这个。暂时只考虑这些驱动吧，下面就进入安装阶段。</p>
 <h4 id="重启利用U盘启动选择安装盘"><a href="#重启利用U盘启动选择安装盘" class="headerlink" title="重启利用U盘启动选择安装盘"></a>重启利用<code>U</code>盘启动选择安装盘</h4><p>开机按<code>esc</code>键进入启动项列表，不同厂商热键不同，参考下图：<br><img src="http://bbs.pcbeta.com/data/attachment/forum/201803/26/123342i0kax4jeex4kxl1l.jpg" alt=""></p>
 <p>选择<code>U</code>盘进入，这里就不介绍太多了，大家玩黑果的想必对<code>BIOS</code>不会陌生，不过需要注意的是需要将<code>BIOS</code>中的安全启动关掉。</p>
@@ -1159,8 +1169,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1282,7 +1290,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

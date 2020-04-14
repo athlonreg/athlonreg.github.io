@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    634
+                    627
                 </div>
                 
 
@@ -527,15 +528,20 @@
 <li>openLDAP 服务：ldap://devops.iamzhl.top:389</li>
 <li>CAS 服务：<a href="http://devops.iamzhl.top:8080/cas" target="_blank" rel="noopener">http://devops.iamzhl.top:8080/cas</a></li>
 </ul>
-<h2 id="整合-LDAP"><a href="#整合-LDAP" class="headerlink" title="整合 LDAP"></a>整合 LDAP</h2><h3 id="修改-gerrit-config"><a href="#修改-gerrit-config" class="headerlink" title="修改 gerrit.config"></a>修改 gerrit.config</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/review_site/etc/gerrit.config</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="整合-LDAP"><a href="#整合-LDAP" class="headerlink" title="整合 LDAP"></a>整合 LDAP</h2><h3 id="修改-gerrit-config"><a href="#修改-gerrit-config" class="headerlink" title="修改 gerrit.config"></a>修改 gerrit.config</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/review_site/etc/gerrit.config</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>请根据自己的<code>LDAP</code>服务器信息进行定制</p>
 </blockquote>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">[auth]</span></span><br><span class="line">        <span class="attr">type</span> = <span class="string">LDAP</span></span><br><span class="line"><span class="attr">[ldap]</span></span><br><span class="line">        <span class="attr">server</span> = <span class="string">ldap://devops.iamzhl.top:389</span></span><br><span class="line">        <span class="attr">username</span> = <span class="string">cn=Manager,dc=iamzhl,dc=top</span></span><br><span class="line">        <span class="attr">password</span> = <span class="string">passwd</span></span><br><span class="line">        <span class="attr">accountBase</span> = <span class="string">ou=People,dc=iamzhl,dc=top</span></span><br><span class="line">        <span class="attr">groupBase</span> = <span class="string">ou=People,dc=iamzhl,dc=top</span></span><br><span class="line">        <span class="attr">accountFullName</span> = <span class="string">uid</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="重启服务"><a href="#重启服务" class="headerlink" title="重启服务"></a>重启服务</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gerrit restart</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties">[auth]
+<span class="token attr-name">        type</span> <span class="token punctuation">=</span> <span class="token attr-value">LDAP</span>
+[ldap]
+<span class="token attr-name">        server</span> <span class="token punctuation">=</span> <span class="token attr-value">ldap://devops.iamzhl.top:389</span>
+<span class="token attr-name">        username</span> <span class="token punctuation">=</span> <span class="token attr-value">cn=Manager,dc=iamzhl,dc=top</span>
+<span class="token attr-name">        password</span> <span class="token punctuation">=</span> <span class="token attr-value">passwd</span>
+<span class="token attr-name">        accountBase</span> <span class="token punctuation">=</span> <span class="token attr-value">ou=People,dc=iamzhl,dc=top</span>
+<span class="token attr-name">        groupBase</span> <span class="token punctuation">=</span> <span class="token attr-value">ou=People,dc=iamzhl,dc=top</span>
+<span class="token attr-name">        accountFullName</span> <span class="token punctuation">=</span> <span class="token attr-value">uid</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="重启服务"><a href="#重启服务" class="headerlink" title="重启服务"></a>重启服务</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># gerrit restart</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>打开网址<code>http://devops.iamzhl.top:8081</code>，进入到<code>Gerrit</code>主页面</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4d/42f6d16ca0cd469d5b5bd9cfb9f471.jpg" alt=""></p>
 <p>点击右上角<code>Sign in</code>，进入登录界面，输入<code>LDAP</code>服务器中的用户名和密码，然后点击<code>Sign in</code></p>
@@ -545,29 +551,70 @@
 <p>点击用户名 -&gt; Sign Out，正常退出</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4d/42f6d16ca0cd469d5b5bd9cfb9f471.jpg" alt=""></p>
 <p>至此，<code>Gerrit</code>整合<code>LDAP</code>完成。</p>
-<h2 id="整合-CAS"><a href="#整合-CAS" class="headerlink" title="整合 CAS"></a>整合 CAS</h2><h3 id="修改-gerrit-config-1"><a href="#修改-gerrit-config-1" class="headerlink" title="修改 gerrit.config"></a>修改 gerrit.config</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/review_site/etc/gerrit.config</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="整合-CAS"><a href="#整合-CAS" class="headerlink" title="整合 CAS"></a>整合 CAS</h2><h3 id="修改-gerrit-config-1"><a href="#修改-gerrit-config-1" class="headerlink" title="修改 gerrit.config"></a>修改 gerrit.config</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/review_site/etc/gerrit.config</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改<code>[auth]</code>部分</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">[auth]</span></span><br><span class="line">        <span class="attr">type</span> = <span class="string">HTTP</span></span><br><span class="line">        <span class="attr">httpHeader</span> = <span class="string">X-Forwarded-Gerrit</span></span><br><span class="line">        <span class="attr">logoutUrl</span> = <span class="string">http://devops.iamzhl.top:8080/cas/logout</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties">[auth]
+<span class="token attr-name">        type</span> <span class="token punctuation">=</span> <span class="token attr-value">HTTP</span>
+<span class="token attr-name">        httpHeader</span> <span class="token punctuation">=</span> <span class="token attr-value">X-Forwarded-Gerrit</span>
+<span class="token attr-name">        logoutUrl</span> <span class="token punctuation">=</span> <span class="token attr-value">http://devops.iamzhl.top:8080/cas/logout</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="mod-auth-cas修改"><a href="#mod-auth-cas修改" class="headerlink" title="mod_auth_cas修改"></a><code>mod_auth_cas</code>修改</h3><p>然后安装<code>mod_auth_cas</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install mod_auth_cas</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install mod_auth_cas</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>配置<code>mod_auth_cas</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/httpd/conf.d/auth_cas.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /etc/httpd/conf.d/auth_cas.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改<code>CAS</code>的<code>Cookie</code>存储位置以及登录地址和验证地址等参数如下</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">LogLevel</span> <span class="string">Debug</span></span><br><span class="line"><span class="attr">CASDebug</span> <span class="string">On</span></span><br><span class="line"><span class="attr">CASVersion</span> <span class="string">2</span></span><br><span class="line"><span class="attr">CASTimeout</span> <span class="string">1740</span></span><br><span class="line"><span class="attr">CASIdleTimeout</span> <span class="string">1740</span></span><br><span class="line"><span class="attr">CASSSOEnabled</span> <span class="string">On</span></span><br><span class="line"><span class="attr">CASCookiePath</span> <span class="string">/var/cache/httpd/mod_auth_cas/</span></span><br><span class="line"><span class="attr">CASLoginURL</span> <span class="string">http://devops.iamzhl.top:8080/cas/login</span></span><br><span class="line"><span class="attr">CASValidateURL</span> <span class="string">http://devops.iamzhl.top:8080/cas/serviceValidate</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="修改-apache-配置文件"><a href="#修改-apache-配置文件" class="headerlink" title="修改 apache 配置文件"></a>修改 apache 配置文件</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/httpd/conf/httpd.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">LogLevel</span> <span class="token attr-value">Debug</span>
+<span class="token attr-name">CASDebug</span> <span class="token attr-value">On</span>
+<span class="token attr-name">CASVersion</span> <span class="token attr-value">2</span>
+<span class="token attr-name">CASTimeout</span> <span class="token attr-value">1740</span>
+<span class="token attr-name">CASIdleTimeout</span> <span class="token attr-value">1740</span>
+<span class="token attr-name">CASSSOEnabled</span> <span class="token attr-value">On</span>
+<span class="token attr-name">CASCookiePath</span> <span class="token attr-value">/var/cache/httpd/mod_auth_cas/</span>
+<span class="token attr-name">CASLoginURL</span> <span class="token attr-value">http://devops.iamzhl.top:8080/cas/login</span>
+<span class="token attr-name">CASValidateURL</span> <span class="token attr-value">http://devops.iamzhl.top:8080/cas/serviceValidate</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="修改-apache-配置文件"><a href="#修改-apache-配置文件" class="headerlink" title="修改 apache 配置文件"></a>修改 apache 配置文件</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /etc/httpd/conf/httpd.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>添加反向代理</p>
 </blockquote>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加一个监听端口 82 用作 Gerrit 的代理主机</span></span><br><span class="line"><span class="attr">Listen</span> <span class="string">82</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载 mod_auth_cas 模块，如果已经加载请忽略</span></span><br><span class="line"><span class="attr">LoadModule</span> <span class="string">auth_cas_module modules/mod_auth_cas.so</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置 Gerrit 的虚拟主机</span></span><br><span class="line"><span class="meta">&lt;VirtualHost</span> <span class="string">*:82&gt;</span></span><br><span class="line">    <span class="attr">ServerName</span> <span class="string">devops.iamzhl.top</span></span><br><span class="line">    <span class="attr">ServerAdmin</span> <span class="string">15563836030@163.com</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">CASRootProxiedAs</span> <span class="string">http://devops.iamzhl.top:82</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">ProxyRequests</span> <span class="string">Off</span></span><br><span class="line">    <span class="attr">ProxyVia</span> <span class="string">Off</span></span><br><span class="line">    <span class="attr">ProxyPreserveHost</span> <span class="string">On</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">&lt;Proxy</span> <span class="string">*&gt;</span></span><br><span class="line">          <span class="attr">Order</span> <span class="string">deny,allow</span></span><br><span class="line">          <span class="attr">Allow</span> <span class="string">from all</span></span><br><span class="line">    <span class="attr">&lt;/Proxy&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">&lt;Location</span> <span class="string">"/login/"&gt;</span></span><br><span class="line">        <span class="attr">AuthType</span> <span class="string">CAS</span></span><br><span class="line">        <span class="attr">AuthName</span> <span class="string">"Welcome To Gerrit Code Review"</span></span><br><span class="line">        <span class="attr">Require</span> <span class="string">valid-user</span></span><br><span class="line">        <span class="attr">CASAuthNHeader</span> <span class="string">X-Forwarded-Gerrit</span></span><br><span class="line">    <span class="attr">&lt;/Location&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">AllowEncodedSlashes</span> <span class="string">On</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">ProxyPass</span> <span class="string">/ http://devops.iamzhl.top:8081/</span></span><br><span class="line">    <span class="attr">ProxyPassReverse</span> <span class="string">/ http://devops.iamzhl.top:8081</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">ErrorLog</span> <span class="string">/var/log/gerrit/error.log</span></span><br><span class="line">    <span class="attr">CustomLog</span> <span class="string">/var/log/gerrit/access.log common</span></span><br><span class="line"><span class="attr">&lt;/VirtualHost&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># 添加一个监听端口 82 用作 Gerrit 的代理主机</span>
+<span class="token attr-name">Listen</span> <span class="token attr-value">82</span>
 
-<h3 id="重启服务-1"><a href="#重启服务-1" class="headerlink" title="重启服务"></a>重启服务</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mkdir /var/log/gerrit</span></span><br><span class="line"><span class="comment"># gerrit restart</span></span><br><span class="line"><span class="comment"># systemctl restart httpd</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token comment" spellcheck="true"># 加载 mod_auth_cas 模块，如果已经加载请忽略</span>
+<span class="token attr-name">LoadModule</span> <span class="token attr-value">auth_cas_module modules/mod_auth_cas.so</span>
 
+<span class="token comment" spellcheck="true"># 设置 Gerrit 的虚拟主机</span>
+<span class="token attr-name">&lt;VirtualHost</span> <span class="token attr-value">*:82></span>
+<span class="token attr-name">    ServerName</span> <span class="token attr-value">devops.iamzhl.top</span>
+<span class="token attr-name">    ServerAdmin</span> <span class="token attr-value">15563836030@163.com</span>
+
+<span class="token attr-name">    CASRootProxiedAs</span> <span class="token attr-value">http://devops.iamzhl.top:82</span>
+
+<span class="token attr-name">    ProxyRequests</span> <span class="token attr-value">Off</span>
+<span class="token attr-name">    ProxyVia</span> <span class="token attr-value">Off</span>
+<span class="token attr-name">    ProxyPreserveHost</span> <span class="token attr-value">On</span>
+
+<span class="token attr-name">    &lt;Proxy</span> <span class="token attr-value">*></span>
+<span class="token attr-name">          Order</span> <span class="token attr-value">deny,allow</span>
+<span class="token attr-name">          Allow</span> <span class="token attr-value">from all</span>
+    &lt;/Proxy>
+
+<span class="token attr-name">    &lt;Location</span> <span class="token attr-value">"/login/"></span>
+<span class="token attr-name">        AuthType</span> <span class="token attr-value">CAS</span>
+<span class="token attr-name">        AuthName</span> <span class="token attr-value">"Welcome To Gerrit Code Review"</span>
+<span class="token attr-name">        Require</span> <span class="token attr-value">valid-user</span>
+<span class="token attr-name">        CASAuthNHeader</span> <span class="token attr-value">X-Forwarded-Gerrit</span>
+    &lt;/Location>
+
+<span class="token attr-name">    AllowEncodedSlashes</span> <span class="token attr-value">On</span>
+
+<span class="token attr-name">    ProxyPass</span> <span class="token attr-value">/ http://devops.iamzhl.top:8081/</span>
+<span class="token attr-name">    ProxyPassReverse</span> <span class="token attr-value">/ http://devops.iamzhl.top:8081</span>
+
+<span class="token attr-name">    ErrorLog</span> <span class="token attr-value">/var/log/gerrit/error.log</span>
+<span class="token attr-name">    CustomLog</span> <span class="token attr-value">/var/log/gerrit/access.log common</span>
+&lt;/VirtualHost><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="重启服务-1"><a href="#重启服务-1" class="headerlink" title="重启服务"></a>重启服务</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># mkdir /var/log/gerrit</span>
+<span class="token comment" spellcheck="true"># gerrit restart</span>
+<span class="token comment" spellcheck="true"># systemctl restart httpd</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="测试-1"><a href="#测试-1" class="headerlink" title="测试"></a>测试</h3><p>打开网址<code>http://devops.iamzhl.top:82</code>，发现自动跳转到了<code>CAS</code>的登录界面，网址是<a href="http://devops.iamzhl.top:8080/cas/login?service=http%3a%2f%2fdevops.iamzhl.top%3a82%2f" target="_blank" rel="noopener">http://devops.iamzhl.top:8080/cas/login?service=http%3a%2f%2fdevops.iamzhl.top%3a82%2f</a></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/dc/a298cbb27df3f031b6a75d41b8ae3b.jpg" alt=""></p>
 <p>输入用户名密码后，点击登录，登陆成功，地址是<code>http://devops.iamzhl.top:82//#/dashboard/self</code></p>
@@ -1041,8 +1088,6 @@ CAS 服务：http:/
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1164,7 +1209,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

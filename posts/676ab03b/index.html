@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -491,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    983
                 </div>
                 
 
@@ -514,52 +515,62 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="TestLink安装部署"><a href="#TestLink安装部署" class="headerlink" title="TestLink安装部署"></a><center>TestLink安装部署</center></h1><h2 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h2><p>MySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm</span></span><br><span class="line"><span class="comment"># rpm -ivh mysql57-community-release-el7-9.noarch.rpm</span></span><br><span class="line"><span class="comment"># yum -y install mysql mysql-server mysql-devel</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># rpm -ivh mysql57-community-release-el7-9.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># yum -y install mysql mysql-server mysql-devel</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>启动MySQL服务</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl start mysqld</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl start mysqld</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>获取安装MySQL时的初始密码并登录MySQL</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># grep 'temporary password' /var/log/mysqld.log</span></span><br><span class="line"><span class="comment"># mysql -u root -p</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># grep 'temporary password' /var/log/mysqld.log</span>
+<span class="token comment" spellcheck="true"># mysql -u root -p</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4a/a001ae2bae5a494c7329cd78a477a3.jpg" alt=""></p>
 <p>登录成功后修改密码，首先修改安全策略为0，然后将密码长度限制修改为1，最后修改密码</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; set global validate_password_policy=0;</span><br><span class="line">mysql&gt; set global validate_password_length=1;</span><br><span class="line">mysql&gt; set password for root@localhost=password('root');</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> set global validate_password_policy=0;
+mysql> set global validate_password_length=1;
+mysql> set password for root@localhost=password('root');<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a2/0f74ed53f3a426d1fe005228478d8f.jpg" alt=""></p>
 <p>创建testlink用户并创建testlink要用的数据库并把testlink数据库的所有权限赋给testlink用户</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE USER 'testlink'@'%' IDENTIFIED BY 'root';</span><br><span class="line">mysql&gt; CREATE DATABASE testlink; </span><br><span class="line">mysql&gt; GRANT ALL ON testlink.* TO 'testlink'@'%'; </span><br><span class="line">mysql&gt; flush privileges;</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> CREATE USER 'testlink'@'%' IDENTIFIED BY 'root';
+mysql> CREATE DATABASE testlink; 
+mysql> GRANT ALL ON testlink.* TO 'testlink'@'%'; 
+mysql> flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>设置MySQL启动与自启动</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl enable mysqld    //自启动</span></span><br><span class="line"><span class="comment"># systemctl start mysqld     //启动</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="安装httpd"><a href="#安装httpd" class="headerlink" title="安装httpd"></a>安装httpd</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install httpd</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="启动自启动"><a href="#启动自启动" class="headerlink" title="启动自启动"></a>启动自启动</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl enable httpd  //自启动</span></span><br><span class="line"><span class="comment"># systemctl start httpd   //启动</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</span></span><br><span class="line"><span class="comment"># rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span></span><br><span class="line"><span class="comment"># yum -y install `yum search php | grep php56w | grep -v "===" | grep -v mysqlnd | awk -F '.' '{print $1}'`</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl enable mysqld    //自启动</span>
+<span class="token comment" spellcheck="true"># systemctl start mysqld     //启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="安装httpd"><a href="#安装httpd" class="headerlink" title="安装httpd"></a>安装httpd</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install httpd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="启动自启动"><a href="#启动自启动" class="headerlink" title="启动自启动"></a>启动自启动</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl enable httpd  //自启动</span>
+<span class="token comment" spellcheck="true"># systemctl start httpd   //启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span>
+<span class="token comment" spellcheck="true"># yum -y install `yum search php | grep php56w | grep -v "===" | grep -v mysqlnd | awk -F '.' '{print $1}'`</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="测试一下PHP环境"><a href="#测试一下PHP环境" class="headerlink" title="测试一下PHP环境"></a>测试一下PHP环境</h3><p>写一个phpinfo测试php环境是否正常</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /var/www/html/info.php</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight php"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    phpinfo();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim /var/www/html/info.php</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-php"><code class="language-php"><span class="token delimiter">&lt;?php</span>
+    <span class="token function">phpinfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token delimiter">?></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>浏览器打开<code>http://IP:httpd端口/info.php</code></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bf/a51c4fe3482af30d3b54a102c5a844.jpg" alt=""></p>
 <p>如图，PHP环境安装完成。</p>
 <p>*<em>Note: *</em><br>PHP无法正确解析，网页显示源码的解决方法：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/php.ini</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">vi</span> /etc/php.ini <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>将short_open_tag = Off修改为short_open_tag = On，然后重启httpd服务即可</p>
-<h2 id="安装TestLink"><a href="#安装TestLink" class="headerlink" title="安装TestLink"></a>安装TestLink</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget https://jaist.dl.sourceforge.net/project/testlink/TestLink%201.9/TestLink%201.9.18/testlink-1.9.18.tar.gz</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="解压重命名"><a href="#解压重命名" class="headerlink" title="解压重命名"></a>解压重命名</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># tar zxvf testlink-1.9.18.tar.gz</span></span><br><span class="line"><span class="comment"># mv testlink-1.9.18 testlink</span></span><br><span class="line"><span class="comment"># mv testlink /var/www/html/</span></span><br><span class="line"><span class="comment"># chown -R apache:apache /var/www/html/testlink</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sed -i -e "s/AllowOverride None/AllowOverride All/g" /etc/httpd/conf/httpd.conf</span></span><br><span class="line"><span class="comment"># sed -i -e "s/DirectoryIndex index.html/DirectoryIndex index.html index.php index.shtm/g" /etc/httpd/conf/httpd.conf</span></span><br><span class="line"><span class="comment"># sed -i -e "s/session.gc_maxlifetime = 1440/session.gc_maxlifetime = 2400/g" /etc/php.ini</span></span><br><span class="line"><span class="comment"># sed -i -e "s/max_execution_time = 30/max_execution_time = 120/g" /etc/php.ini</span></span><br><span class="line"><span class="comment"># service httpd restart</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="安装TestLink"><a href="#安装TestLink" class="headerlink" title="安装TestLink"></a>安装TestLink</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget https://jaist.dl.sourceforge.net/project/testlink/TestLink%201.9/TestLink%201.9.18/testlink-1.9.18.tar.gz</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="解压重命名"><a href="#解压重命名" class="headerlink" title="解压重命名"></a>解压重命名</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># tar zxvf testlink-1.9.18.tar.gz</span>
+<span class="token comment" spellcheck="true"># mv testlink-1.9.18 testlink</span>
+<span class="token comment" spellcheck="true"># mv testlink /var/www/html/</span>
+<span class="token comment" spellcheck="true"># chown -R apache:apache /var/www/html/testlink</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># sed -i -e "s/AllowOverride None/AllowOverride All/g" /etc/httpd/conf/httpd.conf</span>
+<span class="token comment" spellcheck="true"># sed -i -e "s/DirectoryIndex index.html/DirectoryIndex index.html index.php index.shtm/g" /etc/httpd/conf/httpd.conf</span>
+<span class="token comment" spellcheck="true"># sed -i -e "s/session.gc_maxlifetime = 1440/session.gc_maxlifetime = 2400/g" /etc/php.ini</span>
+<span class="token comment" spellcheck="true"># sed -i -e "s/max_execution_time = 30/max_execution_time = 120/g" /etc/php.ini</span>
+<span class="token comment" spellcheck="true"># service httpd restart</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/49/3c7f4c9291a6c276e5dad2200d5571.jpg" alt=""></p>
-<h3 id="新建一些PHP环境要求必备的文件夹并赋予适当权限"><a href="#新建一些PHP环境要求必备的文件夹并赋予适当权限" class="headerlink" title="新建一些PHP环境要求必备的文件夹并赋予适当权限"></a>新建一些PHP环境要求必备的文件夹并赋予适当权限</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mkdir -p /var/www/html/testlink/gui/templates_c</span></span><br><span class="line"><span class="comment"># mkdir -p /var/testlink/logs/</span></span><br><span class="line"><span class="comment"># mkdir -p /var/testlink/upload_area/</span></span><br><span class="line"><span class="comment"># chmod 777 /var/www/html/testlink/gui/templates_c</span></span><br><span class="line"><span class="comment"># chmod 777 /var/testlink/logs/</span></span><br><span class="line"><span class="comment"># chmod 777 /var/testlink/upload_area/</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h3 id="新建一些PHP环境要求必备的文件夹并赋予适当权限"><a href="#新建一些PHP环境要求必备的文件夹并赋予适当权限" class="headerlink" title="新建一些PHP环境要求必备的文件夹并赋予适当权限"></a>新建一些PHP环境要求必备的文件夹并赋予适当权限</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># mkdir -p /var/www/html/testlink/gui/templates_c</span>
+<span class="token comment" spellcheck="true"># mkdir -p /var/testlink/logs/</span>
+<span class="token comment" spellcheck="true"># mkdir -p /var/testlink/upload_area/</span>
+<span class="token comment" spellcheck="true"># chmod 777 /var/www/html/testlink/gui/templates_c</span>
+<span class="token comment" spellcheck="true"># chmod 777 /var/testlink/logs/</span>
+<span class="token comment" spellcheck="true"># chmod 777 /var/testlink/upload_area/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/23/c132221e0b416226f6f7df1e63b12c.jpg" alt=""></p>
 <h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>浏览器打开<code>http://IP:port/testlink/install</code>(将IP换成自己主机IP，端口号换为自己主机的Apache服务端口号)。如图，点击New installation开始安装</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/14/da839143e11bec790a2a77f7247529.jpg" alt=""></p>
@@ -869,10 +880,10 @@
                     <div class="summary block-with-text">
                         
                             本文环境CentOS 7.2 1511
-开始安装安装postfix1# yum -y install postfix
-
+开始安装安装postfix# yum -y install postfix
 如果机器已经安装了sendmail，需要将其卸载，下面两条命令均可
-12# yum -y remove sendmail
+# yum -y remove sendmail
+# r
                         
                     </div>
                     <div class="publish-info">
@@ -933,10 +944,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Gerrit 安装配置过程安装过程如下步骤一：创建专用账户和工作目录12# adduser gerrit  // 创建专用账户# passwd gerrit  //为专有账户设置密码
-
+                            Gerrit 安装配置过程安装过程如下步骤一：创建专用账户和工作目录# adduser gerrit  // 创建专用账户
+# passwd gerrit  //为专有账户设置密码
 步骤二：配置Java环境
-去官网下载JDK：http:
+去官网下载JDK：http://
                         
                     </div>
                     <div class="publish-info">
@@ -1029,8 +1040,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1153,7 +1162,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

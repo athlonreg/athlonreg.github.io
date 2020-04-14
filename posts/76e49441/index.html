@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -495,7 +496,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    341
+                    340
                 </div>
                 
 
@@ -520,16 +521,110 @@
                 <blockquote>
 <p>编辑 nginx 配置文件</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/nginx/nginx.conf</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">vim /etc/nginx/nginx.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>在 http 下面加入以下配置</p>
 </blockquote>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">autoindex</span> <span class="string">on;</span></span><br><span class="line"><span class="attr">autoindex_exact_size</span> <span class="string">off;</span></span><br><span class="line"><span class="attr">autoindex_localtime</span> <span class="string">on;</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">autoindex</span> <span class="token attr-value">on;</span>
+<span class="token attr-name">autoindex_exact_size</span> <span class="token attr-value">off;</span>
+<span class="token attr-name">autoindex_localtime</span> <span class="token attr-value">on;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>完整配置实例</p>
 </blockquote>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># For more information on configuration, see:</span></span><br><span class="line"><span class="comment">#   * Official English Documentation: http://nginx.org/en/docs/</span></span><br><span class="line"><span class="comment">#   * Official Russian Documentation: http://nginx.org/ru/docs/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">user</span> <span class="string">nginx;</span></span><br><span class="line"><span class="attr">worker_processes</span> <span class="string">auto;</span></span><br><span class="line"><span class="attr">error_log</span> <span class="string">/var/log/nginx/error.log;</span></span><br><span class="line"><span class="attr">pid</span> <span class="string">/run/nginx.pid;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load dynamic modules. See /usr/share/nginx/README.dynamic.</span></span><br><span class="line"><span class="attr">include</span> <span class="string">/usr/share/nginx/modules/*.conf;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">events</span> <span class="string">{</span></span><br><span class="line">    <span class="attr">worker_connections</span> <span class="string">1024;</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="attr">http</span> <span class="string">{</span></span><br><span class="line">    <span class="attr">autoindex</span> <span class="string">on;</span></span><br><span class="line">    <span class="attr">autoindex_exact_size</span> <span class="string">off;</span></span><br><span class="line">    <span class="attr">autoindex_localtime</span> <span class="string">on;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">log_format</span>  <span class="string">main  '$remote_addr - $remote_user [$time_local] "$request" '</span></span><br><span class="line">                      <span class="meta">'$status</span> <span class="string">$body_bytes_sent "$http_referer" '</span></span><br><span class="line">                      <span class="meta">'"$http_user_agent"</span> <span class="string">"$http_x_forwarded_for"';</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">access_log</span>  <span class="string">/var/log/nginx/access.log  main;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">sendfile</span>            <span class="string">on;</span></span><br><span class="line">    <span class="attr">tcp_nopush</span>          <span class="string">on;</span></span><br><span class="line">    <span class="attr">tcp_nodelay</span>         <span class="string">on;</span></span><br><span class="line">    <span class="attr">keepalive_timeout</span>   <span class="string">65;</span></span><br><span class="line">    <span class="attr">types_hash_max_size</span> <span class="string">2048;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">include</span>             <span class="string">/etc/nginx/mime.types;</span></span><br><span class="line">    <span class="attr">default_type</span>        <span class="string">application/octet-stream;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">    # Load modular configuration files from the /etc/nginx/conf.d directory.</span></span><br><span class="line"><span class="comment">    # See http://nginx.org/en/docs/ngx_core_module.html#include</span></span><br><span class="line"><span class="comment">    # for more information.</span></span><br><span class="line">    <span class="attr">include</span> <span class="string">/etc/nginx/conf.d/*.conf;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">server</span> <span class="string">{</span></span><br><span class="line">        <span class="attr">listen</span>       <span class="string">81 default_server;</span></span><br><span class="line">        <span class="attr">listen</span>       <span class="string">[::]:81 default_server;</span></span><br><span class="line">        <span class="attr">server_name</span>  <span class="string">_;</span></span><br><span class="line">        <span class="attr">root</span>         <span class="string">/usr/share/nginx/html;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">        # Load configuration files for the default server block.</span></span><br><span class="line">        <span class="attr">include</span> <span class="string">/etc/nginx/default.d/*.conf;</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">location</span> <span class="string">/ {</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">error_page</span> <span class="string">404 /404.html;</span></span><br><span class="line">            <span class="attr">location</span> = <span class="string">/40x.html {</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">error_page</span> <span class="string">500 502 503 504 /50x.html;</span></span><br><span class="line">            <span class="attr">location</span> = <span class="string">/50x.html {</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Settings for a TLS enabled server.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#    server {</span></span><br><span class="line"><span class="comment">#        listen       443 ssl http2 default_server;</span></span><br><span class="line"><span class="comment">#        listen       [::]:443 ssl http2 default_server;</span></span><br><span class="line"><span class="comment">#        server_name  _;</span></span><br><span class="line"><span class="comment">#        root         /usr/share/nginx/html;</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#        ssl_certificate "/etc/pki/nginx/server.crt";</span></span><br><span class="line"><span class="comment">#        ssl_certificate_key "/etc/pki/nginx/private/server.key";</span></span><br><span class="line"><span class="comment">#        ssl_session_cache shared:SSL:1m;</span></span><br><span class="line"><span class="comment">#        ssl_session_timeout  10m;</span></span><br><span class="line"><span class="comment">#        ssl_ciphers HIGH:!aNULL:!MD5;</span></span><br><span class="line"><span class="comment">#        ssl_prefer_server_ciphers on;</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#        # Load configuration files for the default server block.</span></span><br><span class="line"><span class="comment">#        include /etc/nginx/default.d/*.conf;</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#        location / {</span></span><br><span class="line"><span class="comment">#        }</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#        error_page 404 /404.html;</span></span><br><span class="line"><span class="comment">#            location = /40x.html {</span></span><br><span class="line"><span class="comment">#        }</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#        error_page 500 502 503 504 /50x.html;</span></span><br><span class="line"><span class="comment">#            location = /50x.html {</span></span><br><span class="line"><span class="comment">#        }</span></span><br><span class="line"><span class="comment">#    }</span></span><br><span class="line"></span><br><span class="line"><span class="attr">}</span></span><br></pre></td></tr></tbody></table></figure><script>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># For more information on configuration, see:</span>
+<span class="token comment" spellcheck="true">#   * Official English Documentation: http://nginx.org/en/docs/</span>
+<span class="token comment" spellcheck="true">#   * Official Russian Documentation: http://nginx.org/ru/docs/</span>
+
+<span class="token attr-name">user</span> <span class="token attr-value">nginx;</span>
+<span class="token attr-name">worker_processes</span> <span class="token attr-value">auto;</span>
+<span class="token attr-name">error_log</span> <span class="token attr-value">/var/log/nginx/error.log;</span>
+<span class="token attr-name">pid</span> <span class="token attr-value">/run/nginx.pid;</span>
+
+<span class="token comment" spellcheck="true"># Load dynamic modules. See /usr/share/nginx/README.dynamic.</span>
+<span class="token attr-name">include</span> <span class="token attr-value">/usr/share/nginx/modules/*.conf;</span>
+
+<span class="token attr-name">events</span> <span class="token attr-value">{</span>
+<span class="token attr-name">    worker_connections</span> <span class="token attr-value">1024;</span>
+}
+
+<span class="token attr-name">http</span> <span class="token attr-value">{</span>
+<span class="token attr-name">    autoindex</span> <span class="token attr-value">on;</span>
+<span class="token attr-name">    autoindex_exact_size</span> <span class="token attr-value">off;</span>
+<span class="token attr-name">    autoindex_localtime</span> <span class="token attr-value">on;</span>
+
+<span class="token attr-name">    log_format</span> <span class="token attr-value"> main  '$remote_addr - $remote_user [$time_local] "$request" '</span>
+<span class="token attr-name">                      '$status</span> <span class="token attr-value">$body_bytes_sent "$http_referer" '</span>
+<span class="token attr-name">                      '"$http_user_agent"</span> <span class="token attr-value">"$http_x_forwarded_for"';</span>
+
+<span class="token attr-name">    access_log</span> <span class="token attr-value"> /var/log/nginx/access.log  main;</span>
+
+<span class="token attr-name">    sendfile</span> <span class="token attr-value">           on;</span>
+<span class="token attr-name">    tcp_nopush</span> <span class="token attr-value">         on;</span>
+<span class="token attr-name">    tcp_nodelay</span> <span class="token attr-value">        on;</span>
+<span class="token attr-name">    keepalive_timeout</span> <span class="token attr-value">  65;</span>
+<span class="token attr-name">    types_hash_max_size</span> <span class="token attr-value">2048;</span>
+
+<span class="token attr-name">    include</span> <span class="token attr-value">            /etc/nginx/mime.types;</span>
+<span class="token attr-name">    default_type</span> <span class="token attr-value">       application/octet-stream;</span>
+
+<span class="token comment" spellcheck="true">    # Load modular configuration files from the /etc/nginx/conf.d directory.</span>
+<span class="token comment" spellcheck="true">    # See http://nginx.org/en/docs/ngx_core_module.html#include</span>
+<span class="token comment" spellcheck="true">    # for more information.</span>
+<span class="token attr-name">    include</span> <span class="token attr-value">/etc/nginx/conf.d/*.conf;</span>
+
+<span class="token attr-name">    server</span> <span class="token attr-value">{</span>
+<span class="token attr-name">        listen</span> <span class="token attr-value">      81 default_server;</span>
+<span class="token attr-name">        listen</span> <span class="token attr-value">      [::]:81 default_server;</span>
+<span class="token attr-name">        server_name</span> <span class="token attr-value"> _;</span>
+<span class="token attr-name">        root</span> <span class="token attr-value">        /usr/share/nginx/html;</span>
+
+<span class="token comment" spellcheck="true">        # Load configuration files for the default server block.</span>
+<span class="token attr-name">        include</span> <span class="token attr-value">/etc/nginx/default.d/*.conf;</span>
+
+<span class="token attr-name">        location</span> <span class="token attr-value">/ {</span>
+        }
+
+<span class="token attr-name">        error_page</span> <span class="token attr-value">404 /404.html;</span>
+<span class="token attr-name">            location</span> <span class="token punctuation">=</span> <span class="token attr-value">/40x.html {</span>
+        }
+
+<span class="token attr-name">        error_page</span> <span class="token attr-value">500 502 503 504 /50x.html;</span>
+<span class="token attr-name">            location</span> <span class="token punctuation">=</span> <span class="token attr-value">/50x.html {</span>
+        }
+    }
+
+<span class="token comment" spellcheck="true"># Settings for a TLS enabled server.</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true">#    server {</span>
+<span class="token comment" spellcheck="true">#        listen       443 ssl http2 default_server;</span>
+<span class="token comment" spellcheck="true">#        listen       [::]:443 ssl http2 default_server;</span>
+<span class="token comment" spellcheck="true">#        server_name  _;</span>
+<span class="token comment" spellcheck="true">#        root         /usr/share/nginx/html;</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true">#        ssl_certificate "/etc/pki/nginx/server.crt";</span>
+<span class="token comment" spellcheck="true">#        ssl_certificate_key "/etc/pki/nginx/private/server.key";</span>
+<span class="token comment" spellcheck="true">#        ssl_session_cache shared:SSL:1m;</span>
+<span class="token comment" spellcheck="true">#        ssl_session_timeout  10m;</span>
+<span class="token comment" spellcheck="true">#        ssl_ciphers HIGH:!aNULL:!MD5;</span>
+<span class="token comment" spellcheck="true">#        ssl_prefer_server_ciphers on;</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true">#        # Load configuration files for the default server block.</span>
+<span class="token comment" spellcheck="true">#        include /etc/nginx/default.d/*.conf;</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true">#        location / {</span>
+<span class="token comment" spellcheck="true">#        }</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true">#        error_page 404 /404.html;</span>
+<span class="token comment" spellcheck="true">#            location = /40x.html {</span>
+<span class="token comment" spellcheck="true">#        }</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true">#        error_page 500 502 503 504 /50x.html;</span>
+<span class="token comment" spellcheck="true">#            location = /50x.html {</span>
+<span class="token comment" spellcheck="true">#        }</span>
+<span class="token comment" spellcheck="true">#    }</span>
+
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -826,7 +921,14 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Tomcat1234567891011121314# /usr/lib/systemd/system/tomcat.service[Unit]Description=TomcatAfter=network.target  [Service]
+                            Tomcat# /usr/lib/systemd/system/tomcat.service
+[Unit]
+Description=Tomcat
+After=network.target
+
+[Service]
+Type=oneshot
+Ex
                         
                     </div>
                     <div class="publish-info">
@@ -894,12 +996,11 @@
                             
 修改主题 head 文件
 
-1# vim /Users/canvas/athlonreg/themes/next/layout/_partials/head/head.swig
-
+# vim /Users/canvas/athlonreg/themes/next/layout/_partials/head/head.swig
 
 添加如下行
 
-1&lt;meta name="refer
+&lt;meta name="referrer
                         
                     </div>
                     <div class="publish-info">
@@ -988,8 +1089,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1112,7 +1211,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

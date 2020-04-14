@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -533,46 +534,38 @@
 <h6 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h6><ul>
 <li>将下载得到的<code>jdk-8u161-linux-x64.rpm</code>包保存到<code>Linux</code>主机</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rpm -ivh jdk-8u161-linux-x64.rpm</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># rpm -ivh jdk-8u161-linux-x64.rpm</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/ad/4301bf0ab8d0d138ded7bc3709fd4a.jpg" alt=""></p>
-<h6 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h6><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h6 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在文件的末尾添加以下行</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_161</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line">export CLASSPATH=$JAVA_HOME/lib</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CLASSPATH</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/49/6ac74e90a641e355b29b9c4d17deb9.jpg" alt=""></p>
+<pre><code>export JAVA_HOME=/usr/java/jdk1.8.0_161
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=$JAVA_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CLASSPATH</code></pre><p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/49/6ac74e90a641e355b29b9c4d17deb9.jpg" alt=""></p>
 <p>使环境配置生效</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># source ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h6 id="测试Java环境"><a href="#测试Java环境" class="headerlink" title="测试Java环境"></a>测试<code>Java</code>环境</h6><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># java -version</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># source ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="测试Java环境"><a href="#测试Java环境" class="headerlink" title="测试Java环境"></a>测试<code>Java</code>环境</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># java -version</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>  查看是否正常显示版本信息，若显示则安装成功</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/2f/49c7d622b298ae690db3c13754c1b1.jpg" alt=""></p>
 <h5 id="Tomcat环境准备"><a href="#Tomcat环境准备" class="headerlink" title="Tomcat环境准备"></a>Tomcat环境准备</h5><h6 id="下载Tomcat"><a href="#下载Tomcat" class="headerlink" title="下载Tomcat"></a>下载Tomcat</h6><blockquote>
 <p>地址: <a href="http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz" target="_blank" rel="noopener">http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz</a></p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h6 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h6><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># tar zxvf apache-tomcat-8.5.32.tar.gz</span></span><br><span class="line"><span class="comment"># mv apache-tomcat-8.5.32 /usr/local/</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h6 id="配置Tomcat环境"><a href="#配置Tomcat环境" class="headerlink" title="配置Tomcat环境"></a>配置Tomcat环境</h6><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># tar zxvf apache-tomcat-8.5.32.tar.gz</span>
+<span class="token comment" spellcheck="true"># mv apache-tomcat-8.5.32 /usr/local/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h6 id="配置Tomcat环境"><a href="#配置Tomcat环境" class="headerlink" title="配置Tomcat环境"></a>配置Tomcat环境</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在文件的末尾添加以下行</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export CATALINA_BASE=/usr/local/apache-tomcat-8.5.32</span><br><span class="line">export TOMCAT_HOME=/usr/local/apache-tomcat-8.5.32</span><br><span class="line">export CATALINA_HOME=/usr/local/apache-tomcat-8.5.32</span><br><span class="line">export PATH=$PATH:$CATALINA_HOME/bin:$CATALINA_HOME/lib</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/66/1656ee9280886c6c7de6057c8835cd.jpg" alt=""></p>
+<pre><code>export CATALINA_BASE=/usr/local/apache-tomcat-8.5.32
+export TOMCAT_HOME=/usr/local/apache-tomcat-8.5.32
+export CATALINA_HOME=/usr/local/apache-tomcat-8.5.32
+export PATH=$PATH:$CATALINA_HOME/bin:$CATALINA_HOME/lib</code></pre><p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/66/1656ee9280886c6c7de6057c8835cd.jpg" alt=""></p>
 <p>使环境配置生效</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># source ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h6 id="启动Tomcat服务"><a href="#启动Tomcat服务" class="headerlink" title="启动Tomcat服务"></a>启动Tomcat服务</h6><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># startup.sh</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># source ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="启动Tomcat服务"><a href="#启动Tomcat服务" class="headerlink" title="启动Tomcat服务"></a>启动Tomcat服务</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># startup.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f9/4e6e503aa6fe748959adfb182e3e1c.jpg" alt=""></p>
 <h6 id="测试Tomcat"><a href="#测试Tomcat" class="headerlink" title="测试Tomcat"></a>测试Tomcat</h6><p>打开浏览器，在地址栏中输入<a href="http://IP:8080回车，如果看到Tomcat自带的一个JSP页面，说明你的Tomcat已搭建成功">http://IP:8080回车，如果看到Tomcat自带的一个JSP页面，说明你的Tomcat已搭建成功</a></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/43/36596794bdf3af70f1ecd35f8c40a0.jpg" alt=""></p>
-<h3 id="安装部署-1"><a href="#安装部署-1" class="headerlink" title="安装部署"></a>安装部署</h3><h4 id="下载war文件"><a href="#下载war文件" class="headerlink" title="下载war文件"></a>下载war文件</h4><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="安装Jenkins"><a href="#安装Jenkins" class="headerlink" title="安装Jenkins"></a>安装Jenkins</h4><p>将下载后的war包放到/usr/local/apache-tomcat-8.5.32/webapps/目录下，启动tomcat即可， 或者用命令<code>java -jar jenkins.war</code>。</p>
+<h3 id="安装部署-1"><a href="#安装部署-1" class="headerlink" title="安装部署"></a>安装部署</h3><h4 id="下载war文件"><a href="#下载war文件" class="headerlink" title="下载war文件"></a>下载war文件</h4><pre><code># wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war</code></pre><h4 id="安装Jenkins"><a href="#安装Jenkins" class="headerlink" title="安装Jenkins"></a>安装Jenkins</h4><p>将下载后的war包放到/usr/local/apache-tomcat-8.5.32/webapps/目录下，启动tomcat即可， 或者用命令<code>java -jar jenkins.war</code>。</p>
 <h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>打开浏览器输入<a href="http://IP:8080/jenkins回车即可看到jenkin初始配置界面，按照提示进行设置。" target="_blank" rel="noopener">http://IP:8080/jenkins回车即可看到jenkin初始配置界面，按照提示进行设置。</a></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/27/4f737ebea43eb34f747fb68a08b6fa.jpg" alt=""></p>
 <h3 id="常用设置"><a href="#常用设置" class="headerlink" title="常用设置"></a>常用设置</h3><h5 id="邮件设置"><a href="#邮件设置" class="headerlink" title="邮件设置"></a>邮件设置</h5><p>Jenkins-&gt;系统管理-&gt;系统设置，弹出如下图所示：</p>
@@ -634,12 +627,14 @@
 </ul>
 <p>这里选择第一个：构建一个自由风格的软件项目， 输入项目名称：python test project ，点击”确定”按钮。</p>
 <h5 id="构建-Windows-测试任务"><a href="#构建-Windows-测试任务" class="headerlink" title="构建 Windows 测试任务"></a>构建 Windows 测试任务</h5><p>假设，有一个 Python 编写的测试脚本 py_tests.py ，其绝对路径为/root/py_tests.py，内容如下：</p>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> <span class="string">"Hello world"</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span> <span class="token string">"Hello world"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在Linux下怎么执行这个测试用例，打开终端</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@centos-7 ~]# cd</span><br><span class="line">[root@centos-7 ~]# ll py_tests.py</span><br><span class="line">-rw-r--r--. 1 root root 20 8月  16 16:07 py_tests.py</span><br><span class="line">[root@centos-7 ~]# python py_tests.py</span><br><span class="line">Hello world</span><br><span class="line">[root@centos-7 ~]#</span><br></pre></td></tr></tbody></table></figure>
-
-<p>下面回到Jenkins的配置过程中</p>
+<pre><code>[root@centos-7 ~]# cd
+[root@centos-7 ~]# ll py_tests.py
+-rw-r--r--. 1 root root 20 8月  16 16:07 py_tests.py
+[root@centos-7 ~]# python py_tests.py
+Hello world
+[root@centos-7 ~]#</code></pre><p>下面回到Jenkins的配置过程中</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/ab/46e2f5d22700eb539eac4128e19c85.jpg" alt=""></p>
 <p>添加项目的描述：Python 测试项目，打印Hello world。</p>
 <p>剩下的选项都不要管，拖到页面底部，构建 选项。</p>
@@ -1047,10 +1042,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Gerrit 安装配置过程安装过程如下步骤一：创建专用账户和工作目录12# adduser gerrit  // 创建专用账户# passwd gerrit  //为专有账户设置密码
-
+                            Gerrit 安装配置过程安装过程如下步骤一：创建专用账户和工作目录# adduser gerrit  // 创建专用账户
+# passwd gerrit  //为专有账户设置密码
 步骤二：配置Java环境
-去官网下载JDK：http:
+去官网下载JDK：http://
                         
                     </div>
                     <div class="publish-info">
@@ -1200,8 +1195,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1323,7 +1316,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

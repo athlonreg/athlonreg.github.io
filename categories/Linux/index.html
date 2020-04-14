@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -339,7 +340,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
 </script>
 
 
@@ -439,7 +440,9 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                123456# slapcat &gt; ldapbak.ldif            // 导出# systemctl stop slapd              // 停止服务# rm -rf /var/lib/ldap/*   
+                                # slapcat > ldapbak.ldif            // 导出
+# systemctl stop slapd              // 停止服务
+# rm -rf /var/lib/ldap/*          
                             
                         </div>
                         <div class="publish-info">
@@ -489,7 +492,14 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Tomcat1234567891011121314# /usr/lib/systemd/system/tomcat.service[Unit]Description=TomcatAfter=network.target  [Service]
+                                Tomcat# /usr/lib/systemd/system/tomcat.service
+[Unit]
+Description=Tomcat
+After=network.target
+
+[Service]
+Type=oneshot
+Ex
                             
                         </div>
                         <div class="publish-info">
@@ -554,12 +564,13 @@
                                 
 编辑 nginx 配置文件
 
-1vim /etc/nginx/nginx.conf
-
+vim /etc/nginx/nginx.conf
 
 在 http 下面加入以下配置
 
-123autoindex on;autoindex_exact_size off;autoindex_localti
+autoindex on;
+autoindex_exact_size off;
+autoindex_localtime 
                             
                         </div>
                         <div class="publish-info">
@@ -609,12 +620,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1dmidecode -s system-product-name
-
+                                dmidecode -s system-product-name
 
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
-      
+        
                             
                         </div>
                         <div class="publish-info">
@@ -655,7 +665,10 @@
                                 
 修改文件 pg_hba.conf
 
-123local all all md5host  all all 127.0.0.1/32 md5host all all 192.168.45.0/32 md5
+local all all md5
+host  all all 127.0.0.1/32 md5
+host all all 192.168.45.0/32 md5
+
         document.q
                             
                         </div>
@@ -702,7 +715,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                安装 Ruby 2.41234567891011yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel 
+                                安装 Ruby 2.4yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel
                             
                         </div>
                         <div class="publish-info">
@@ -756,7 +769,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                CentOS 安装 GitLab安装依赖1234# yum -y install curl# yum -y install postfix# systemctl start postfix# systemctl enable postfix
+                                CentOS 安装 GitLab安装依赖# yum -y install curl
+# yum -y install postfix
+# systemctl start postfix
+# systemctl enable postfix
+
                             
                         </div>
                         <div class="publish-info">
@@ -865,7 +882,7 @@ CAS 服务：http://devops
                         <div class="summary block-with-text">
                             
                                 简介OpenLDAP 是轻型目录访问协议Lightweight Directory Access Protocol - LDAP的自由和开源的实现，在其OpenLDAP许可证下发行，并已经被包含在众多流行的Linux发行版中。
-安装12# 
+安装# cd
                             
                         </div>
                         <div class="publish-info">
@@ -912,10 +929,10 @@ CAS 服务：http://devops
                         <div class="summary block-with-text">
                             
                                 本文环境CentOS 7.2 1511
-开始安装安装postfix1# yum -y install postfix
-
+开始安装安装postfix# yum -y install postfix
 如果机器已经安装了sendmail，需要将其卸载，下面两条命令均可
-12# yum -y remove sendmail
+# yum -y remove sendmail
+# r
                             
                         </div>
                         <div class="publish-info">
@@ -973,10 +990,10 @@ CAS 服务：http://devops
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Gerrit 安装配置过程安装过程如下步骤一：创建专用账户和工作目录12# adduser gerrit  // 创建专用账户# passwd gerrit  //为专有账户设置密码
-
+                                Gerrit 安装配置过程安装过程如下步骤一：创建专用账户和工作目录# adduser gerrit  // 创建专用账户
+# passwd gerrit  //为专有账户设置密码
 步骤二：配置Java环境
-去官网下载JDK：http:
+去官网下载JDK：http://
                             
                         </div>
                         <div class="publish-info">
@@ -1116,7 +1133,7 @@ print实
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

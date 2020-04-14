@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -526,70 +527,172 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="本文环境"><a href="#本文环境" class="headerlink" title="本文环境"></a>本文环境</h1><p>CentOS 7.2 1511</p>
-<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="安装postfix"><a href="#安装postfix" class="headerlink" title="安装postfix"></a>安装postfix</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install postfix</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="安装postfix"><a href="#安装postfix" class="headerlink" title="安装postfix"></a>安装postfix</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install postfix</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果机器已经安装了sendmail，需要将其卸载，下面两条命令均可</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y remove sendmail</span></span><br><span class="line"><span class="comment"># rpm -e sendmail</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y remove sendmail</span>
+<span class="token comment" spellcheck="true"># rpm -e sendmail</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>修改MTA(默认邮件代理)</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># alternatives --config mta</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># alternatives --config mta</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>检查是否配置成功</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># alternatives --display mta</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># alternatives --display mta</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/14/519a03d59c7bc4ff363f66a8620736.jpg" alt=""></p>
 <p>这里我已经安装过postfix了</p>
-<h2 id="安装dovecot"><a href="#安装dovecot" class="headerlink" title="安装dovecot"></a>安装dovecot</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install dovecot</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="安装dovecot"><a href="#安装dovecot" class="headerlink" title="安装dovecot"></a>安装dovecot</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install dovecot</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/fd/d041b10136a8aea22008556cba508a.jpg" alt=""></p>
-<h2 id="配置postfix"><a href="#配置postfix" class="headerlink" title="配置postfix"></a>配置postfix</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/postfix/main.cf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="配置postfix"><a href="#配置postfix" class="headerlink" title="配置postfix"></a>配置postfix</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /etc/postfix/main.cf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改以下参数</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">myhostname = mail.zhanghl.cn  # 取消注释，设置hostname</span><br><span class="line">mydomain = zhanghl.cn  # 取消注释，设置域名</span><br><span class="line">myorigin = $mydomain  # 取消注释</span><br><span class="line">inet_interfaces = all  # 修改为all</span><br><span class="line">inet_protocols = ipv4  # 修改ipv4，如果支持ipv6，则可以为all</span><br><span class="line">mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain # 修改在最后添加$mydomain</span><br><span class="line">mynetworks = 127.0.0.0/8, 10.0.0.0/24  # 取消注释，指定内网和本地的IP地址范围</span><br><span class="line">home_mailbox = Maildir/  # 取消注释，邮件保存目录</span><br><span class="line">smtpd_banner = $myhostname ESMTP $mail_name ($mail_version)  # 取消注释，邮件服务器欢迎信息</span><br></pre></td></tr></tbody></table></figure>
-
-<p>文件最后添加以下内容</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Setup max mail attachment to 10M</span><br><span class="line">message_size_limit = 10485760</span><br><span class="line"># Setup max capacity of Inbox to 1G</span><br><span class="line">mailbox_size_limit = 1073741824</span><br><span class="line"># SMTP Authentication</span><br><span class="line">smtpd_sasl_type = dovecot</span><br><span class="line">smtpd_sasl_path = private/auth</span><br><span class="line">smtpd_sasl_auth_enable = yes</span><br><span class="line">smtpd_sasl_security_options = noanonymous</span><br><span class="line">smtpd_sasl_local_domain = $myhostname</span><br><span class="line">smtpd_recipient_restrictions = permit_mynetworks,permit_auth_destination,permit_sasl_authenticated,reject</span><br></pre></td></tr></tbody></table></figure>
-
-<p>启动并设置自启动</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl start postfix  //启动</span></span><br><span class="line"><span class="comment"># systemctl enable postfix  //自启动</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="配置dovecot"><a href="#配置dovecot" class="headerlink" title="配置dovecot"></a>配置dovecot</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/dovecot/dovecot.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listen = *  //取消注释并修改</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/dovecot/conf.d/10-auth.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">disable_plaintext_auth = no  //取消注释并修改</span><br><span class="line">auth_mechanisms = plain login  //修改添加login</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/dovecot/conf.d/10-mail.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mail_location = maildir:~/Maildir  //修改设置邮件存储位置</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/dovecot/conf.d/10-master.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre><code>myhostname = mail.zhanghl.cn  # 取消注释，设置hostname
+mydomain = zhanghl.cn  # 取消注释，设置域名
+myorigin = $mydomain  # 取消注释
+inet_interfaces = all  # 修改为all
+inet_protocols = ipv4  # 修改ipv4，如果支持ipv6，则可以为all
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain # 修改在最后添加$mydomain
+mynetworks = 127.0.0.0/8, 10.0.0.0/24  # 取消注释，指定内网和本地的IP地址范围
+home_mailbox = Maildir/  # 取消注释，邮件保存目录
+smtpd_banner = $myhostname ESMTP $mail_name ($mail_version)  # 取消注释，邮件服务器欢迎信息</code></pre><p>文件最后添加以下内容</p>
+<pre><code># Setup max mail attachment to 10M
+message_size_limit = 10485760
+# Setup max capacity of Inbox to 1G
+mailbox_size_limit = 1073741824
+# SMTP Authentication
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_security_options = noanonymous
+smtpd_sasl_local_domain = $myhostname
+smtpd_recipient_restrictions = permit_mynetworks,permit_auth_destination,permit_sasl_authenticated,reject</code></pre><p>启动并设置自启动</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl start postfix  //启动</span>
+<span class="token comment" spellcheck="true"># systemctl enable postfix  //自启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="配置dovecot"><a href="#配置dovecot" class="headerlink" title="配置dovecot"></a>配置dovecot</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim /etc/dovecot/dovecot.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code>listen = *  //取消注释并修改</code></pre><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim /etc/dovecot/conf.d/10-auth.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code>disable_plaintext_auth = no  //取消注释并修改
+auth_mechanisms = plain login  //修改添加login</code></pre><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim /etc/dovecot/conf.d/10-mail.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code>mail_location = maildir:~/Maildir  //修改设置邮件存储位置</code></pre><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim /etc/dovecot/conf.d/10-master.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>取消注释并添加user和group属性</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">unix_listener /var/spool/postfix/private/auth {</span><br><span class="line">    mode = 0666</span><br><span class="line">    user = postfix</span><br><span class="line">    group = postfix</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>启动并设置自启动</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl start dovecot  //启动</span></span><br><span class="line"><span class="comment"># systemctl enable dovecot  //自启动</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre><code>unix_listener /var/spool/postfix/private/auth {
+    mode = 0666
+    user = postfix
+    group = postfix
+}</code></pre><p>启动并设置自启动</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl start dovecot  //启动</span>
+<span class="token comment" spellcheck="true"># systemctl enable dovecot  //自启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><p>添加一个子域名mail，A记录解析到服务器IP。</p>
 <p>再添加一个MX记录，主机记录为空，记录值为上面解析的二级域名mail.zhanghl.cn，优先级10。</p>
 <p>注意：解析生效可能需要一段时间。</p>
 <p>也可以修改/etc/hosts添加邮件服务器域名实现。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/hosts</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim /etc/hosts</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/e2/0e95d3345f60b59bffdf377e55fc3b.jpg" alt=""></p>
 <h2 id="测试邮箱"><a href="#测试邮箱" class="headerlink" title="测试邮箱"></a>测试邮箱</h2><p>首先安装telnet，由于CentOS 7已经默认没有了xinetd和telnet，因此需要安装</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install xinetd telnet telnet-server</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install xinetd telnet telnet-server</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>设置xinetd启动并自启动</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl start xinetd</span></span><br><span class="line"><span class="comment"># systemctl enable xinetd</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl start xinetd</span>
+<span class="token comment" spellcheck="true"># systemctl enable xinetd</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>利用telnet测试邮件服务器</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line">[zhanghl@centos-7 ~]$ telnet zhanghl.cn 25</span><br><span class="line">Trying 127.0.0.1...</span><br><span class="line">Connected to zhanghl.cn.</span><br><span class="line">Escape character is <span class="string">'^]'</span>.</span><br><span class="line">220 mail.zhanghl.cn ESMTP Postfix (2.10.1)</span><br><span class="line">mail from:zhanghl</span><br><span class="line">250 2.1.0 Ok</span><br><span class="line">rcpt to:root</span><br><span class="line">250 2.1.5 Ok</span><br><span class="line">data</span><br><span class="line">354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;</span><br><span class="line">Hello, i<span class="string">'m zhanghl!</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">250 2.0.0 Ok: queued as 731144191B7F</span></span><br><span class="line"><span class="string">quit</span></span><br><span class="line"><span class="string">221 2.0.0 Bye</span></span><br><span class="line"><span class="string">Connection closed by foreign host.</span></span><br><span class="line"><span class="string">[zhanghl@centos-7 ~]$ telnet zhanghl.cn 110</span></span><br><span class="line"><span class="string">Trying 127.0.0.1...</span></span><br><span class="line"><span class="string">Connected to zhanghl.cn.</span></span><br><span class="line"><span class="string">Escape character is '</span>^]<span class="string">'.</span></span><br><span class="line"><span class="string">+OK Dovecot ready.</span></span><br><span class="line"><span class="string">user zhanghl</span></span><br><span class="line"><span class="string">+OK</span></span><br><span class="line"><span class="string">pass 123456</span></span><br><span class="line"><span class="string">+OK Logged in.</span></span><br><span class="line"><span class="string">list</span></span><br><span class="line"><span class="string">+OK 1 messages:</span></span><br><span class="line"><span class="string">1 2381</span></span><br><span class="line"><span class="string">.</span></span><br><span class="line"><span class="string">retr 1</span></span><br><span class="line"><span class="string">+OK 2381 octets</span></span><br><span class="line"><span class="string">Return-Path: &lt;&gt;</span></span><br><span class="line"><span class="string">X-Original-To: zhanghl@zhanghl.cn</span></span><br><span class="line"><span class="string">Delivered-To: zhanghl@zhanghl.cn</span></span><br><span class="line"><span class="string">Received: by mail.zhanghl.cn (Postfix)</span></span><br><span class="line"><span class="string">	id 61E594191B92; Fri, 19 Oct 2018 22:44:27 +0800 (CST)</span></span><br><span class="line"><span class="string">Date: Fri, 19 Oct 2018 22:44:27 +0800 (CST)</span></span><br><span class="line"><span class="string">From: MAILER-DAEMON@zhanghl.cn (Mail Delivery System)</span></span><br><span class="line"><span class="string">Subject: Undelivered Mail Returned to Sender</span></span><br><span class="line"><span class="string">To: zhanghl@zhanghl.cn</span></span><br><span class="line"><span class="string">Auto-Submitted: auto-replied</span></span><br><span class="line"><span class="string">MIME-Version: 1.0</span></span><br><span class="line"><span class="string">Content-Type: multipart/report; report-type=delivery-status;</span></span><br><span class="line"><span class="string">	boundary="731144191B7F.1539960267/mail.zhanghl.cn"</span></span><br><span class="line"><span class="string">Message-Id: &lt;20181019144427.61E594191B92@mail.zhanghl.cn&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">This is a MIME-encapsulated message.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">--731144191B7F.1539960267/mail.zhanghl.cn</span></span><br><span class="line"><span class="string">Content-Description: Notification</span></span><br><span class="line"><span class="string">Content-Type: text/plain; charset=us-ascii</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">This is the mail system at host mail.zhanghl.cn.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">I'</span>m sorry to have to inform you that your message could not</span><br><span class="line">be delivered to one or more recipients. It<span class="string">'s attached below.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">For further assistance, please send mail to postmaster.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If you do so, please include this problem report. You can</span></span><br><span class="line"><span class="string">delete your own text from the attached returned message.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                   The mail system</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;root@zhanghl.cn&gt; (expanded from &lt;root&gt;): maildir delivery failed: create</span></span><br><span class="line"><span class="string">    maildir file /root/Maildir/tmp/1539960267.P14995.centos-7.shared:</span></span><br><span class="line"><span class="string">    Permission denied</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">--731144191B7F.1539960267/mail.zhanghl.cn</span></span><br><span class="line"><span class="string">Content-Description: Delivery report</span></span><br><span class="line"><span class="string">Content-Type: message/delivery-status</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Reporting-MTA: dns; mail.zhanghl.cn</span></span><br><span class="line"><span class="string">X-Postfix-Queue-ID: 731144191B7F</span></span><br><span class="line"><span class="string">X-Postfix-Sender: rfc822; zhanghl@zhanghl.cn</span></span><br><span class="line"><span class="string">Arrival-Date: Fri, 19 Oct 2018 22:43:58 +0800 (CST)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Final-Recipient: rfc822; root@zhanghl.cn</span></span><br><span class="line"><span class="string">Original-Recipient: rfc822;root</span></span><br><span class="line"><span class="string">Action: failed</span></span><br><span class="line"><span class="string">Status: 5.2.0</span></span><br><span class="line"><span class="string">Diagnostic-Code: X-Postfix; maildir delivery failed: create maildir file</span></span><br><span class="line"><span class="string">    /root/Maildir/tmp/1539960267.P14995.centos-7.shared: Permission denied</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">--731144191B7F.1539960267/mail.zhanghl.cn</span></span><br><span class="line"><span class="string">Content-Description: Undelivered Message</span></span><br><span class="line"><span class="string">Content-Type: message/rfc822</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Return-Path: &lt;zhanghl@zhanghl.cn&gt;</span></span><br><span class="line"><span class="string">Received: from mail.zhanghl.cn (mail.zhanghl.cn [127.0.0.1])</span></span><br><span class="line"><span class="string">	by mail.zhanghl.cn (Postfix) with SMTP id 731144191B7F</span></span><br><span class="line"><span class="string">	for &lt;root&gt;; Fri, 19 Oct 2018 22:43:58 +0800 (CST)</span></span><br><span class="line"><span class="string">Message-Id: &lt;20181019144410.731144191B7F@mail.zhanghl.cn&gt;</span></span><br><span class="line"><span class="string">Date: Fri, 19 Oct 2018 22:43:58 +0800 (CST)</span></span><br><span class="line"><span class="string">From: zhanghl@zhanghl.cn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Hello, i'</span>m zhanghl!</span><br><span class="line"></span><br><span class="line">--731144191B7F.1539960267/mail.zhanghl.cn--</span><br><span class="line">.</span><br><span class="line">quit</span><br><span class="line">+OK Logging out.</span><br><span class="line">Connection closed by foreign host.</span><br><span class="line">[zhanghl@centos-7 ~]$</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token punctuation">[</span>zhanghl@centos-7 ~<span class="token punctuation">]</span>$ telnet zhanghl.cn 25
+Trying 127.0.0.1<span class="token punctuation">..</span>.
+Connected to zhanghl.cn.
+Escape character is <span class="token string">'^]'</span><span class="token keyword">.</span>
+220 mail.zhanghl.cn ESMTP Postfix <span class="token punctuation">(</span>2.10.1<span class="token punctuation">)</span>
+mail from:zhanghl
+250 2.1.0 Ok
+rcpt to:root
+250 2.1.5 Ok
+data
+354 End data with <span class="token operator">&lt;</span>CR<span class="token operator">></span><span class="token operator">&lt;</span>LF<span class="token operator">></span>.<span class="token operator">&lt;</span>CR<span class="token operator">></span><span class="token operator">&lt;</span>LF<span class="token operator">></span>
+Hello, i<span class="token string">'m zhanghl!
+.
+250 2.0.0 Ok: queued as 731144191B7F
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
+[zhanghl@centos-7 ~]$ telnet zhanghl.cn 110
+Trying 127.0.0.1...
+Connected to zhanghl.cn.
+Escape character is '</span>^<span class="token punctuation">]</span><span class="token string">'.
++OK Dovecot ready.
+user zhanghl
++OK
+pass 123456
++OK Logged in.
+list
++OK 1 messages:
+1 2381
+.
+retr 1
++OK 2381 octets
+Return-Path: &lt;>
+X-Original-To: zhanghl@zhanghl.cn
+Delivered-To: zhanghl@zhanghl.cn
+Received: by mail.zhanghl.cn (Postfix)
+    id 61E594191B92; Fri, 19 Oct 2018 22:44:27 +0800 (CST)
+Date: Fri, 19 Oct 2018 22:44:27 +0800 (CST)
+From: MAILER-DAEMON@zhanghl.cn (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: zhanghl@zhanghl.cn
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="731144191B7F.1539960267/mail.zhanghl.cn"
+Message-Id: &lt;20181019144427.61E594191B92@mail.zhanghl.cn>
 
+This is a MIME-encapsulated message.
 
+--731144191B7F.1539960267/mail.zhanghl.cn
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host mail.zhanghl.cn.
+
+I'</span>m sorry to have to inform you that your message could not
+be delivered to one or <span class="token function">more</span> recipients. It<span class="token string">'s attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+&lt;root@zhanghl.cn> (expanded from &lt;root>): maildir delivery failed: create
+    maildir file /root/Maildir/tmp/1539960267.P14995.centos-7.shared:
+    Permission denied
+
+--731144191B7F.1539960267/mail.zhanghl.cn
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mail.zhanghl.cn
+X-Postfix-Queue-ID: 731144191B7F
+X-Postfix-Sender: rfc822; zhanghl@zhanghl.cn
+Arrival-Date: Fri, 19 Oct 2018 22:43:58 +0800 (CST)
+
+Final-Recipient: rfc822; root@zhanghl.cn
+Original-Recipient: rfc822;root
+Action: failed
+Status: 5.2.0
+Diagnostic-Code: X-Postfix; maildir delivery failed: create maildir file
+    /root/Maildir/tmp/1539960267.P14995.centos-7.shared: Permission denied
+
+--731144191B7F.1539960267/mail.zhanghl.cn
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: &lt;zhanghl@zhanghl.cn>
+Received: from mail.zhanghl.cn (mail.zhanghl.cn [127.0.0.1])
+    by mail.zhanghl.cn (Postfix) with SMTP id 731144191B7F
+    for &lt;root>; Fri, 19 Oct 2018 22:43:58 +0800 (CST)
+Message-Id: &lt;20181019144410.731144191B7F@mail.zhanghl.cn>
+Date: Fri, 19 Oct 2018 22:43:58 +0800 (CST)
+From: zhanghl@zhanghl.cn
+
+Hello, i'</span>m zhanghl<span class="token operator">!</span>
+
+--731144191B7F.1539960267/mail.zhanghl.cn--
+<span class="token keyword">.</span>
+quit
++OK Logging out.
+Connection closed by foreign host.
+<span class="token punctuation">[</span>zhanghl@centos-7 ~<span class="token punctuation">]</span>$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="使用邮箱"><a href="#使用邮箱" class="headerlink" title="使用邮箱"></a>使用邮箱</h2><p>一切都弄好以后，就可以使用Foxmail等第三方软件来收发邮件了。在这里需要说一下，系统用户就是邮件的用户，例如root，就是一个邮箱用户，邮箱是<a href="mailto:root@zhanghl.cn">root@zhanghl.cn</a>，密码就是root的密码，所以需要创建用户，只要使用useradd创建用户，再使用passwd设置密码。</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -946,7 +1049,7 @@
                     <div class="summary block-with-text">
                         
                             TestLink安装部署安装MySQLMySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
-123# wget http:
+# wget http://d
                         
                     </div>
                     <div class="publish-info">
@@ -1035,8 +1138,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1159,7 +1260,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

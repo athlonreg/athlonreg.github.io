@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    512
+                    528
                 </div>
                 
 
@@ -521,30 +522,49 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="安装-Ruby-2-4"><a href="#安装-Ruby-2-4" class="headerlink" title="安装 Ruby 2.4"></a>安装 Ruby 2.4</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison ImageMagick-devel  ImageMagick</span><br><span class="line">yum -y install centos-release-scl-rh</span><br><span class="line">yum -y install rh-ruby24 </span><br><span class="line">scl <span class="built_in">enable</span> rh-ruby24 bash</span><br><span class="line">ruby -v </span><br><span class="line">yum -y install rh-ruby24-rubygems rh-ruby24-ruby-devel</span><br><span class="line">gem <span class="built_in">source</span> -l</span><br><span class="line">gem sources -a http://mirrors.aliyun.com/rubygems/</span><br><span class="line">gem sources --remove  https://rubygems.org/</span><br><span class="line">gem <span class="built_in">source</span> -u</span><br><span class="line">gem <span class="built_in">source</span> -l</span><br></pre></td></tr></tbody></table></figure>
-
+                <h2 id="安装-Ruby-2-4"><a href="#安装-Ruby-2-4" class="headerlink" title="安装 Ruby 2.4"></a>安装 Ruby 2.4</h2><pre class="line-numbers language-bash"><code class="language-bash">yum <span class="token function">install</span> -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel <span class="token function">make</span> <span class="token function">bzip2</span> autoconf automake libtool bison ImageMagick-devel  ImageMagick
+yum -y <span class="token function">install</span> centos-release-scl-rh
+yum -y <span class="token function">install</span> rh-ruby24 
+scl <span class="token function">enable</span> rh-ruby24 <span class="token function">bash</span>
+ruby -v 
+yum -y <span class="token function">install</span> rh-ruby24-rubygems rh-ruby24-ruby-devel
+gem <span class="token function">source</span> -l
+gem sources -a http://mirrors.aliyun.com/rubygems/
+gem sources --remove  https://rubygems.org/
+gem <span class="token function">source</span> -u
+gem <span class="token function">source</span> -l <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="设置数据库"><a href="#设置数据库" class="headerlink" title="设置数据库"></a>设置数据库</h2><blockquote>
 <p>建立相应数据库</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create user 'redmine'@'%' identified by '123456' ;</span><br><span class="line">mysql&gt; create database redmine;</span><br><span class="line">mysql&gt; grant all on redmine.* to 'redmine'@'%';</span><br><span class="line">mysql&gt; flush privileges;</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="安装-redmine"><a href="#安装-redmine" class="headerlink" title="安装 redmine"></a>安装 redmine</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span></span><br><span class="line">wget https://www.redmine.org/releases/redmine-4.0.4.tar.gz</span><br><span class="line">tar zxvf redmine-4.0.4.tar.gz</span><br><span class="line">mv redmine-4.0.4 redmine</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"export REDMINE=/usr/local/redmine"</span> &gt;&gt; /etc/profile</span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$REDMINE</span></span><br><span class="line">cp config/database.yml.example config/database.yml</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> create user 'redmine'@'%' identified by '123456' ;
+mysql> create database redmine;
+mysql> grant all on redmine.* to 'redmine'@'%';
+mysql> flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="安装-redmine"><a href="#安装-redmine" class="headerlink" title="安装 redmine"></a>安装 redmine</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> /usr/local
+<span class="token function">wget</span> https://www.redmine.org/releases/redmine-4.0.4.tar.gz
+<span class="token function">tar</span> zxvf redmine-4.0.4.tar.gz
+<span class="token function">mv</span> redmine-4.0.4 redmine
+<span class="token keyword">echo</span> <span class="token string">"export REDMINE=/usr/local/redmine"</span> <span class="token operator">>></span> /etc/profile
+<span class="token function">source</span> /etc/profile
+<span class="token function">cd</span> <span class="token variable">$REDMINE</span>
+<span class="token function">cp</span> config/database.yml.example config/database.yml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>配置 redmine，修改 $REDMINE/config/database.yml</p>
 </blockquote>
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">production:</span></span><br><span class="line">  <span class="attr">adapter:</span> <span class="string">mysql2</span></span><br><span class="line">  <span class="attr">database:</span> <span class="string">redmine</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">localhost</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">3306</span></span><br><span class="line">  <span class="attr">username:</span> <span class="string">redmine</span></span><br><span class="line">  <span class="attr">password:</span> <span class="string">"123456"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="安装-GEMS-依赖"><a href="#安装-GEMS-依赖" class="headerlink" title="安装 GEMS 依赖"></a>安装 GEMS 依赖</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="variable">$REDMINE</span></span><br><span class="line">gem install bundler</span><br><span class="line">bundle install --without development <span class="built_in">test</span> production</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="生成会话存储秘钥令牌"><a href="#生成会话存储秘钥令牌" class="headerlink" title="生成会话存储秘钥令牌"></a>生成会话存储秘钥令牌</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bundle <span class="built_in">exec</span> rake generate_secret_token</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="生成数据库结构"><a href="#生成数据库结构" class="headerlink" title="生成数据库结构"></a>生成数据库结构</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RAILS_ENV=production REDMINE_LANG=zh bundle <span class="built_in">exec</span> rake db:migrate</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="数据库插入默认数据"><a href="#数据库插入默认数据" class="headerlink" title="数据库插入默认数据"></a>数据库插入默认数据</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RAILS_ENV=production REDMINE_LANG=zh bundle <span class="built_in">exec</span> rake redmine:load_default_data</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="启动-redmine"><a href="#启动-redmine" class="headerlink" title="启动 redmine"></a>启动 redmine</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bundle <span class="built_in">exec</span> rails server webrick -e production -b 127.0.0.1</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">production</span><span class="token punctuation">:</span>
+  <span class="token key atrule">adapter</span><span class="token punctuation">:</span> mysql2
+  <span class="token key atrule">database</span><span class="token punctuation">:</span> redmine
+  <span class="token key atrule">host</span><span class="token punctuation">:</span> localhost
+  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">3306</span>
+  <span class="token key atrule">username</span><span class="token punctuation">:</span> redmine
+  <span class="token key atrule">password</span><span class="token punctuation">:</span> <span class="token string">"123456"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="安装-GEMS-依赖"><a href="#安装-GEMS-依赖" class="headerlink" title="安装 GEMS 依赖"></a>安装 GEMS 依赖</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token variable">$REDMINE</span>
+gem <span class="token function">install</span> bundler
+bundle <span class="token function">install</span> --without development <span class="token function">test</span> production <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="生成会话存储秘钥令牌"><a href="#生成会话存储秘钥令牌" class="headerlink" title="生成会话存储秘钥令牌"></a>生成会话存储秘钥令牌</h2><pre class="line-numbers language-bash"><code class="language-bash">bundle <span class="token function">exec</span> rake generate_secret_token<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="生成数据库结构"><a href="#生成数据库结构" class="headerlink" title="生成数据库结构"></a>生成数据库结构</h2><pre class="line-numbers language-bash"><code class="language-bash">RAILS_ENV<span class="token operator">=</span>production REDMINE_LANG<span class="token operator">=</span>zh bundle <span class="token function">exec</span> rake db:migrate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="数据库插入默认数据"><a href="#数据库插入默认数据" class="headerlink" title="数据库插入默认数据"></a>数据库插入默认数据</h2><pre class="line-numbers language-bash"><code class="language-bash">RAILS_ENV<span class="token operator">=</span>production REDMINE_LANG<span class="token operator">=</span>zh bundle <span class="token function">exec</span> rake redmine:load_default_data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="启动-redmine"><a href="#启动-redmine" class="headerlink" title="启动 redmine"></a>启动 redmine</h2><pre class="line-numbers language-bash"><code class="language-bash">bundle <span class="token function">exec</span> rails server webrick -e production -b 127.0.0.1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="配置-LDAP-认证"><a href="#配置-LDAP-认证" class="headerlink" title="配置 LDAP 认证"></a>配置 LDAP 认证</h2><blockquote>
 <p>依次打开 管理 -&gt; LDAP 认证 -&gt; 新建认证模式</p>
 </blockquote>
@@ -555,8 +575,14 @@
 <h2 id="配置-CAS-SSO"><a href="#配置-CAS-SSO" class="headerlink" title="配置 CAS SSO"></a>配置 CAS SSO</h2><blockquote>
 <p>安装插件</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="variable">$REDMINE</span>/plugins</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/athlonreg/redmine_omniauth_cas</span><br><span class="line"><span class="built_in">cd</span> redmine_omniauth_cas</span><br><span class="line">bundle install</span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$REDMINE</span></span><br><span class="line">bundle install</span><br><span class="line">RAILS_ENV=production rake redmine:plugins</span><br><span class="line">bundle <span class="built_in">exec</span> rails server webrick -e production -b 127.0.0.1</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token variable">$REDMINE</span>/plugins
+<span class="token function">git</span> clone https://github.com/athlonreg/redmine_omniauth_cas
+<span class="token function">cd</span> redmine_omniauth_cas
+bundle <span class="token function">install</span>
+<span class="token function">cd</span> <span class="token variable">$REDMINE</span>
+bundle <span class="token function">install</span>
+RAILS_ENV<span class="token operator">=</span>production rake redmine:plugins
+bundle <span class="token function">exec</span> rails server webrick -e production -b 127.0.0.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>依次打开 管理 -&gt; 插件，点击插件 Redmine Omniauth plugin 后的配置</p>
 </blockquote>
@@ -897,7 +923,10 @@
                             
 修改文件 pg_hba.conf
 
-123local all all md5host  all all 127.0.0.1/32 md5host all all 192.168.45.0/32 md5
+local all all md5
+host  all all 127.0.0.1/32 md5
+host all all 192.168.45.0/32 md5
+
         document.q
                         
                     </div>
@@ -947,7 +976,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CentOS 安装 GitLab安装依赖1234# yum -y install curl# yum -y install postfix# systemctl start postfix# systemctl enable postfix
+                            CentOS 安装 GitLab安装依赖# yum -y install curl
+# yum -y install postfix
+# systemctl start postfix
+# systemctl enable postfix
+
                         
                     </div>
                     <div class="publish-info">
@@ -1040,8 +1073,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1164,7 +1195,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

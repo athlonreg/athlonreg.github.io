@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -340,7 +341,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
 </script>
 
 
@@ -373,7 +374,13 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546#include "stdio.h"void quicksort(in
+                                代码#include "stdio.h"
+
+void quicksort(int a[], int left, int right) 
+{ 
+    int i, j, t, temp; 
+    if(left > right) 
+   
                             
                         </div>
                         <div class="publish-info">
@@ -532,7 +539,7 @@
 首先搭建好安装homebrew环境
 在mac上拥有一个好的包管理器是非常重要的，Debian家族有apt，mac有homebrew，非常好用。
 
-1$ /usr/bin/ruby -e "$(curl -fsSL https:
+$ /usr/bin/ruby -e "$(curl -fsSL https:/
                             
                         </div>
                         <div class="publish-info">
@@ -706,7 +713,9 @@
                         <div class="summary block-with-text">
                             
                                 先说说怎样强制加载某个驱动如下，KextToPatch并列ForceKextsToLoad，设置kext路径
-12345&lt;key&gt;ForceKextsToLoad&lt;/key&gt;&lt;array&gt;    &lt;
+&lt;key&gt;ForceKextsToLoad&lt;/key&gt;
+&lt;array&gt;
+    &lt;str
                             
                         </div>
                         <div class="publish-info">
@@ -764,15 +773,10 @@
                                 Trim
 开启
 
-1$ sudo trimforce enable
-
-
+$ sudo trimforce enable
 关闭
 
-1$ sudo trimforce disable
-
-查看启用的ig-platform-id1$ ioreg -l | grep -y platform-id
-
+$ sudo trimforce disable查看启用的ig-platform-id$ ioreg -l | grep -y platform-id笔记本开启插电源
                             
                         </div>
                         <div class="publish-info">
@@ -882,10 +886,8 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                帐户信息修改1System Preferences &gt; Users &amp; Groups &gt; 右单击当前用户 &gt; Advanced Options
-
-注意：用了一段时间的电脑不建议修改，可能会导致很多软件要重新安装。
-
+                                帐户信息修改System Preferences &gt; Users &amp; Groups &gt; 右单击当前用户 &gt; Advanced Options注意：用了一段时间的电脑不建议修改，可能会导致很多软件要重新安装。
+主机名
                             
                         </div>
                         <div class="publish-info">
@@ -944,7 +946,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                递归123456789101112131415161718192021222324252627282930313233////  main.c//  algorithm////  Created by athlonreg on 17/01/
+                                递归//
+//  main.c
+//  algorithm
+//
+//  Created by athlonreg on 17/01/2018.
+//  Copyright © 2018 athlonreg. All rights rese
                             
                         </div>
                         <div class="publish-info">
@@ -999,7 +1006,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950////  main.c//  algorithm//
+                                代码//
+//  main.c
+//  algorithm
+//
+//  Created by athlonreg on 17/01/2018.
+//  Copyright © 2018 athlonreg. All rights rese
                             
                         </div>
                         <div class="publish-info">
@@ -1084,7 +1096,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

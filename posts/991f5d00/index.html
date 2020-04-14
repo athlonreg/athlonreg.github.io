@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -503,7 +504,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    19.7k
+                    19.8k
                 </div>
                 
 
@@ -674,15 +675,16 @@
 <blockquote>
 <p>使用<code>hotpatch</code>，我们可以在<code>ACPI/DSDT/Patches</code>使用一个简单的四叶草补丁将<code>GFX0</code>重命名为<code>IGPU</code>。这些补丁适用于<code>DSDT</code>和所有本地的<code>SSDTs</code>(<code>(DSDT/Patches</code>不能被应用到通过<code>ACPI/patched</code>添加的<code>SSDT</code>)。重命名的补丁是:</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comment: Rename GFX0 to IGPU</span><br><span class="line">Find: &lt;4746 5830&gt;</span><br><span class="line">Replace: &lt;4947 5055&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>The hex values in Find and Replaces are the ASCII codes for GFX0 and IGPU, respectively.</p>
+<pre><code>Comment: Rename GFX0 to IGPU
+Find: &lt;4746 5830&gt;
+Replace: &lt;4947 5055&gt;</code></pre><p>The hex values in Find and Replaces are the ASCII codes for GFX0 and IGPU, respectively.</p>
 <blockquote>
 <p>查找和替换的十六进制值分别是<code>GFX0</code>和<code>IGPU</code>的<code>ASCII</code>码,分别是：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ echo -n GFX0|xxd</span><br><span class="line">0000000: 4746 5830                                GFX0</span><br><span class="line">$ echo -n IGPU|xxd</span><br><span class="line">0000000: 4947 5055                                IGPU</span><br></pre></td></tr></tbody></table></figure>
-
-<p>There are number of common renames, and most are in the config.plist that are part of my Clover/hoptpatch project:</p>
+<pre><code>$ echo -n GFX0|xxd
+0000000: 4746 5830                                GFX0
+$ echo -n IGPU|xxd
+0000000: 4947 5055                                IGPU</code></pre><p>There are number of common renames, and most are in the config.plist that are part of my Clover/hoptpatch project:</p>
 <p><a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch</a></p>
 <blockquote>
 <p>有许多通用的重命名，而且很多都在<code>config.plist</code>里，这个<code>config.plist</code>是我的<code>Clover/hotpatch</code>项目的一部分:<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch</a></p>
@@ -695,9 +697,16 @@
 <blockquote>
 <p>通用的重命名：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">GFX0 -&gt; IGPU</span><br><span class="line">SAT0 -&gt; SATA</span><br><span class="line">EHC1 -&gt; EH01</span><br><span class="line">EHC2 -&gt; EH02</span><br><span class="line">XHCI -&gt; XHC</span><br><span class="line">HECI -&gt; IMEI</span><br><span class="line">MEI -&gt; IMEI</span><br><span class="line">LPC -&gt; LPCB</span><br><span class="line">HDAS -&gt; HDEF</span><br><span class="line">AZAL -&gt; HDEF</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Note: All ACPI identifiers are 4 characters. Shorter names are padded with underscore. So, for example, XHC is represented in the AML binary as XHC_, EC would be EC__, EC0 would be EC_, MEI would be MEI_, etc.</p>
+<pre><code>GFX0 -&gt; IGPU
+SAT0 -&gt; SATA
+EHC1 -&gt; EH01
+EHC2 -&gt; EH02
+XHCI -&gt; XHC
+HECI -&gt; IMEI
+MEI -&gt; IMEI
+LPC -&gt; LPCB
+HDAS -&gt; HDEF
+AZAL -&gt; HDEF</code></pre><p>Note: All ACPI identifiers are 4 characters. Shorter names are padded with underscore. So, for example, XHC is represented in the AML binary as XHC_, EC would be EC__, EC0 would be EC_, MEI would be MEI_, etc.</p>
 <blockquote>
 <p>注意：所有的<code>ACPI</code>标识符都是4个字符。较短的名字用下划线填充。例如，<code>XHC</code>在<code>AML</code>二进制文件中被表示为<code>XHC_</code>，<code>EC</code>是<code>EC__</code>，<code>EC0</code>是<code>EC0_</code>，<code>MEI</code>是<code>MEI_</code>，等等。</p>
 </blockquote>
@@ -713,9 +722,9 @@
 <blockquote>
 <p>那么…同样地，我们使用一个简单的重命名补丁:</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comment: Rename _DSM to XDSM</span><br><span class="line">Find: &lt;5f44534d&gt;</span><br><span class="line">Replace: &lt;5844534d&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Sometimes, you might rename an object to effectively disable it so it does not cause problems. For example, my Intel DH67GD DSDT defines an APSS object. If this object is left in the DSDT it interferes with power management (causes panic). I use a rename from APSS -&gt; APXX. Because AppleIntelCPUPowerManagement is looking for APSS, it does not cause a problem once renamed to APXX.</p>
+<pre><code>Comment: Rename _DSM to XDSM
+Find: &lt;5f44534d&gt;
+Replace: &lt;5844534d&gt;</code></pre><p>Sometimes, you might rename an object to effectively disable it so it does not cause problems. For example, my Intel DH67GD DSDT defines an APSS object. If this object is left in the DSDT it interferes with power management (causes panic). I use a rename from APSS -&gt; APXX. Because AppleIntelCPUPowerManagement is looking for APSS, it does not cause a problem once renamed to APXX.</p>
 <blockquote>
 <p>有时，你可能会重命名一个对象，以便有效地禁用它，这样它就不会造成问题。例如，我的<code>Intel DH67GD</code>的 <code>DSDT</code>定义了<code>APSS</code>对象。如果这个对象留在<code>DSDT</code>中，它会干扰电源管理(引起<code>KP</code>)。我使用<code>APSS-&gt;APXX</code>的重命名。因为<code>AppleIntelCPUPowerManagement</code>会查找<code>APSS</code>,只要改名为<code>APXX</code>就不会引起问题。</p>
 </blockquote>
@@ -727,15 +736,11 @@
 <blockquote>
 <p>一个常见的修复是在<code>DSDT</code>和<code>SSDT</code>中仿冒<code>ACPI</code>代码，使其表现得就像是<code>ACPI</code>主机的某个版本的<code>Windows</code>一样。当利用静态补丁时，我们可能会使用<code>OS Check Fix (Windows 8)</code>。当应用这个补丁时，它会将代码从:</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">If (_OSI("Windows 2012"))</span><br></pre></td></tr></tbody></table></figure>
-
-<p>To:</p>
+<pre><code>If (_OSI("Windows 2012"))</code></pre><p>To:</p>
 <blockquote>
 <p>改为：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">If (LOr(_OSI("Darwin"),_OSI("Windows 2012"))</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Since the _OSI implementation in OS X only responds to “Darwin” the code is changed so that this specific _OSI check also accomodates “Darwin”.</p>
+<pre><code>If (LOr(_OSI("Darwin"),_OSI("Windows 2012"))</code></pre><p>Since the _OSI implementation in OS X only responds to “Darwin” the code is changed so that this specific _OSI check also accomodates “Darwin”.</p>
 <blockquote>
 <p>由于<code>OS X</code>中<code>_OSI</code>方法的实现只对被修改了代码的<code>Darwin</code>作出响应，所以这个特定的<code>_OSI check</code>补丁也能响应<code>Darwin</code>。</p>
 </blockquote>
@@ -751,9 +756,9 @@
 <blockquote>
 <p>首先，改变代码来调用<code>XOSI</code>而不是<code>_OSI</code>:</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comment: Change _OSI to XOSI</span><br><span class="line">Find: &lt;5f4f 5349&gt;</span><br><span class="line">Replace: &lt;584f 5349&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>The hex codes above should be no mystery (they are ASCII for _OSI and XOSI, respectively).</p>
+<pre><code>Comment: Change _OSI to XOSI
+Find: &lt;5f4f 5349&gt;
+Replace: &lt;584f 5349&gt;</code></pre><p>The hex codes above should be no mystery (they are ASCII for _OSI and XOSI, respectively).</p>
 <blockquote>
 <p>上面的十六进制代码没有什么神秘的(它们分别是<code>_OSI</code>和<code>XOSI</code>的<code>ASCII</code>码)。</p>
 </blockquote>
@@ -761,9 +766,7 @@
 <blockquote>
 <p>现在，上面提到的代码，在通过<code>Clover</code>打了补丁之后，将会读到:</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">If (XOSI("Windows 2012"))</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Now we need an SSDT that implements XOSI. You will find such an implementation in the repository (SSDT-XOSI.dsl).</p>
+<pre><code>If (XOSI("Windows 2012"))</code></pre><p>Now we need an SSDT that implements XOSI. You will find such an implementation in the repository (SSDT-XOSI.dsl).</p>
 <blockquote>
 <p>现在我们需要一个实现<code>XOSI</code>的<code>SSDT</code>。你可以我的<code>GitHub</code>仓库中找到这样的实现(SSDT-XOSI.dsl).</p>
 </blockquote>
@@ -774,47 +777,71 @@
 <h3 id="Rename-and-Replace-重命名和替换"><a href="#Rename-and-Replace-重命名和替换" class="headerlink" title="Rename and Replace-重命名和替换"></a>Rename and Replace-重命名和替换</h3><p>A second pattern, similar to “Redirect and Replace” is “Rename and Replace”. In this case, instead of changing all the call sites, we change the method definition such that the method is named something different than it was originally, but leave the original method name at the call sites. This allows the method that is the target of the calls to be replaced.</p>
 <p>For example, it is very common for USB devices to cause “instant wake”. As a work around, wake on USB can be disabled. Most laptops don’t have a BIOS option for it, so instead the _PRW methods that control this feature are patched.</p>
 <p>For example, the native _SB.PCI0.EHC1._PRW method might read:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake</span><br><span class="line">{</span><br><span class="line">	Return (GPRW (0x6D, 0x03))</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>In order to patch it so USB devices on EHCI#1 cannot cause wake, it would be changed:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake</span><br><span class="line">{</span><br><span class="line">	Return (GPRW (0x6D, 0))</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Usually, there are several such call sites to GPRW that need to be changed (also, keep in mind not all ACPI sets use the specific name GPRW). Instead of trying to patch all the call sites as above, we can instead patch the method definition of GPRW instead:</p>
+<pre><code>Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+{
+    Return (GPRW (0x6D, 0x03))
+}</code></pre><p>In order to patch it so USB devices on EHCI#1 cannot cause wake, it would be changed:</p>
+<pre><code>Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+{
+    Return (GPRW (0x6D, 0))
+}</code></pre><p>Usually, there are several such call sites to GPRW that need to be changed (also, keep in mind not all ACPI sets use the specific name GPRW). Instead of trying to patch all the call sites as above, we can instead patch the method definition of GPRW instead:</p>
 <p>With the original code:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Method (GPRW, 2, NotSerialized)</span><br><span class="line">{</span><br><span class="line">   ...</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>If we change it to:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Method (XPRW, 2, NotSerialized)</span><br><span class="line">{</span><br><span class="line">   ...</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Since you don’t want to change any call sites, the patch must be constructed such that it affects only the method itself and not the call sites. According to ACPI spec, a method definition starts with bytecode 14, is followed by the method size, the method name, argument count/flags. You can use the “-l” option in iasl to generate a mixed listing of your ACPI file. For example, the Lenovo u430 GPRW method mixed listing:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">4323:          Method (GPRW, 2, NotSerialized)</span><br><span class="line">00003F95:  14 45 08 47 50 52 57 02     ".E.GPRW."</span><br><span class="line">4324:          {</span><br><span class="line">4325:              Store (Arg0, Index (PRWP, Zero))</span><br><span class="line">00003F9D:  70 68 ..................    "ph"</span><br><span class="line">00003F9F:  88 50 52 57 50 00 00 ...    ".PRWP.."</span><br></pre></td></tr></tbody></table></figure>
-
-<p>We could do a find replace using the method header bytes:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;14 45 08 47 50 52 57 02&gt;</span><br><span class="line">Replace: &lt;14 45 08 58 50 52 57 02&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>But what happens if the method differs slightly between different versions of BIOS or models that are similar, but not exactly the same? In that case, the byte following the 14 will change due to the change in the method length.</p>
+<pre><code>Method (GPRW, 2, NotSerialized)
+{
+   ...
+}</code></pre><p>If we change it to:</p>
+<pre><code>Method (XPRW, 2, NotSerialized)
+{
+   ...
+}</code></pre><p>Since you don’t want to change any call sites, the patch must be constructed such that it affects only the method itself and not the call sites. According to ACPI spec, a method definition starts with bytecode 14, is followed by the method size, the method name, argument count/flags. You can use the “-l” option in iasl to generate a mixed listing of your ACPI file. For example, the Lenovo u430 GPRW method mixed listing:</p>
+<pre><code>4323:          Method (GPRW, 2, NotSerialized)
+00003F95:  14 45 08 47 50 52 57 02     ".E.GPRW."
+4324:          {
+4325:              Store (Arg0, Index (PRWP, Zero))
+00003F9D:  70 68 ..................    "ph"
+00003F9F:  88 50 52 57 50 00 00 ...    ".PRWP.."</code></pre><p>We could do a find replace using the method header bytes:</p>
+<pre><code>Find: &lt;14 45 08 47 50 52 57 02&gt;
+Replace: &lt;14 45 08 58 50 52 57 02&gt;</code></pre><p>But what happens if the method differs slightly between different versions of BIOS or models that are similar, but not exactly the same? In that case, the byte following the 14 will change due to the change in the method length.</p>
 <p>My thought is that the beginning of the method body is less likely to be different than the total length of the method, so it helps to add a few extra bytes from the body of the method to the find/replace specification:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;47 50 52 57 02 70 68&gt;</span><br><span class="line">Replace: &lt;58 50 52 57 02 70 68&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>The number of follow-on bytes that you use depends on how many you need to make the find/replace affect only the method definition. You can verify by looking at the native AML binary in a hex editor such as Hex Fiend (it is a nice hex editor and is also open source).</p>
+<pre><code>Find: &lt;47 50 52 57 02 70 68&gt;
+Replace: &lt;58 50 52 57 02 70 68&gt;</code></pre><p>The number of follow-on bytes that you use depends on how many you need to make the find/replace affect only the method definition. You can verify by looking at the native AML binary in a hex editor such as Hex Fiend (it is a nice hex editor and is also open source).</p>
 <p>Note: Although you could search just for the method name + arg count/flags, it is possible that the same pattern will find a call site to the method which you don’t want to change. In the case of the u430 that wasn’t the case, so I was able to find/replace with just the method name+flags.</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;47505257 02&gt;</span><br><span class="line">Replace: &lt;58505257 02&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>In the case of the ProBook UPRW, it was necessary to use the follow-on bytes that are part of the method body:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;55505257 0a7012&gt;</span><br><span class="line">Replace: &lt;58505257 0a7012&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Now any code that calls GPRW (or UPRW in the ProBook example) will not call the implementation in XPRW because the name doesn’t match. The original XPRW is now unreachable code. Which means the GPRW implementation can be changed for our purpose:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Method(GPRW, 2)</span><br><span class="line">{</span><br><span class="line">	If (0x6d == Arg0) { Return(Package() { 0x6d, 0, }) }</span><br><span class="line">    External(\XPRW, MethodObj)</span><br><span class="line">    Return(XPRW(Arg0, Arg1))</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Explaining the code: For any call to GPRW with the first argument set to 0x6d (the GPE we are trying to disable for wake), instead of returning what the original GPRW would, we return a package with 0x6d and 0 (which disables wake). And for other GPE values, the code simply calls the original GPRW method now named XPRW.</p>
+<pre><code>Find: &lt;47505257 02&gt;
+Replace: &lt;58505257 02&gt;</code></pre><p>In the case of the ProBook UPRW, it was necessary to use the follow-on bytes that are part of the method body:</p>
+<pre><code>Find: &lt;55505257 0a7012&gt;
+Replace: &lt;58505257 0a7012&gt;</code></pre><p>Now any code that calls GPRW (or UPRW in the ProBook example) will not call the implementation in XPRW because the name doesn’t match. The original XPRW is now unreachable code. Which means the GPRW implementation can be changed for our purpose:</p>
+<pre><code>Method(GPRW, 2)
+{
+    If (0x6d == Arg0) { Return(Package() { 0x6d, 0, }) }
+    External(\XPRW, MethodObj)
+    Return(XPRW(Arg0, Arg1))
+}</code></pre><p>Explaining the code: For any call to GPRW with the first argument set to 0x6d (the GPE we are trying to disable for wake), instead of returning what the original GPRW would, we return a package with 0x6d and 0 (which disables wake). And for other GPE values, the code simply calls the original GPRW method now named XPRW.</p>
 <p>Another simple case is patching EC query methods to fix the brightness keys. A simple rename of the _Qxx methods involved to XQxx, and a new definition of the method with the original name is all that is needed.</p>
 <p>For example, in the HP Envy Haswell repo:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// _Q13 called on brightness/mirror display key</span><br><span class="line">Method (_Q13, 0, Serialized)  // _Qxx: EC Query</span><br><span class="line">{</span><br><span class="line">	External(\HKNO, FieldUnitObj)</span><br><span class="line">	Store(HKNO, Local0)</span><br><span class="line">	If (LEqual(Local0,7))</span><br><span class="line">	{</span><br><span class="line">		// Brightness Down</span><br><span class="line">		Notify(\_SB.PCI0.LPCB.PS2K, 0x0405)</span><br><span class="line">	}</span><br><span class="line">	If (LEqual(Local0,8))</span><br><span class="line">	{</span><br><span class="line">		// Brightness Up</span><br><span class="line">		Notify(\_SB.PCI0.LPCB.PS2K, 0x0406)</span><br><span class="line">	}</span><br><span class="line">	If (LEqual(Local0,4))</span><br><span class="line">	{</span><br><span class="line">		// Mirror toggle</span><br><span class="line">		Notify(\_SB.PCI0.LPCB.PS2K, 0x046e)</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>And the associated patch:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comment: change Method(_Q13,0,S) to XQ13</span><br><span class="line">Find: &lt;5f513133 08&gt;</span><br><span class="line">Replace: &lt;58513133 08&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>This same “Rename and Replace” mechanism can be used in cases that are much more complex than this. For example, it is typically used to patch battery methods, which need to be patched to avoid access to multibyte EC fields.</p>
+<pre><code>// _Q13 called on brightness/mirror display key
+Method (_Q13, 0, Serialized)  // _Qxx: EC Query
+{
+    External(\HKNO, FieldUnitObj)
+    Store(HKNO, Local0)
+    If (LEqual(Local0,7))
+    {
+        // Brightness Down
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x0405)
+    }
+    If (LEqual(Local0,8))
+    {
+        // Brightness Up
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x0406)
+    }
+    If (LEqual(Local0,4))
+    {
+        // Mirror toggle
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x046e)
+    }
+}</code></pre><p>And the associated patch:</p>
+<pre><code>Comment: change Method(_Q13,0,S) to XQ13
+Find: &lt;5f513133 08&gt;
+Replace: &lt;58513133 08&gt;</code></pre><p>This same “Rename and Replace” mechanism can be used in cases that are much more complex than this. For example, it is typically used to patch battery methods, which need to be patched to avoid access to multibyte EC fields.</p>
 <h4 id="Tips-for-complex-Rename-and-Replace"><a href="#Tips-for-complex-Rename-and-Replace" class="headerlink" title="Tips for complex Rename and Replace"></a>Tips for complex Rename and Replace</h4><p>As you probably already know, patching for battery status (multibyte EC fields) can be very complex and can involve a lot of code changes to many methods.</p>
 <p>This section will detail some of the techniques and procedures used for battery patching.</p>
 <p>It is advisable to patch for battery without using hotpatch first. After you get it working, then attempt hotpatch. Also, the difference between the code not patched for battery and the code patched for battery is very helpful. You can use a tool like ‘diffmerge’ to compare each. This is especially true if there is already a static battery patch for your laptop in my laptop repository.</p>
@@ -835,9 +862,10 @@
 <p>As an example, the u430 has Mutexes delcared as such:</p>
 <pre><code>Mutex (MSMI, 0x07)</code></pre><p>To make it compatible with OS X it must be changed:</p>
 <pre><code>Mutex (MSMI, 0)</code></pre><p>The ACPI spec defines how a Mutex object is encoded in the AML, but it can be helpful to look at a mixed disassembly of a small ACPI file:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock ("", "DSDT", 2, "test", "test", 0)</span><br><span class="line">{</span><br><span class="line">    Mutex(ABCD, 7)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>The iasl compiler can create a mixed listing file with the “-l” option.</p>
+<pre><code>DefinitionBlock ("", "DSDT", 2, "test", "test", 0)
+{
+    Mutex(ABCD, 7)
+}</code></pre><p>The iasl compiler can create a mixed listing file with the “-l” option.</p>
 <p>If we compile the above file with: iasl -l test.dsl, test.lst contains:</p>
 <pre><code>       1:  DefinitionBlock ("", "DSDT", 2, "test", "test", 0)
 00000000:  44 53 44 54 2B 00 00 00     "DSDT+..."
@@ -852,9 +880,9 @@
 00000024:  5B 01 41 42 43 44 07 ...    "[.ABCD."
        4:  }   </code></pre><p>As you can see, the <code>Mutex(ABCD, 7)</code>, is encoded as <code>&lt;5B 01 41 42 43 44 07&gt;</code></p>
 <p>It is now very easy to construct a patch for it:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Comment: Change Mutex(ABCD,7) to Mutex(ABCD,0)</span><br><span class="line">Find: &lt;5B 01 41 42 43 44 07&gt;</span><br><span class="line">Replace: &lt;5B 01 41 42 43 44 00&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="Clover-ACPI-configuration"><a href="#Clover-ACPI-configuration" class="headerlink" title="Clover ACPI configuration"></a>Clover ACPI configuration</h3><p>With static patching, DropOem=true is used and patched DSDT and SSDTs are added to ACPI/patched. With hotpatch, instead use DropOem=false, and only add-on SSDTs are placed in ACPI/patched.</p>
+<pre><code>Comment: Change Mutex(ABCD,7) to Mutex(ABCD,0)
+Find: &lt;5B 01 41 42 43 44 07&gt;
+Replace: &lt;5B 01 41 42 43 44 00&gt;</code></pre><h3 id="Clover-ACPI-configuration"><a href="#Clover-ACPI-configuration" class="headerlink" title="Clover ACPI configuration"></a>Clover ACPI configuration</h3><p>With static patching, DropOem=true is used and patched DSDT and SSDTs are added to ACPI/patched. With hotpatch, instead use DropOem=false, and only add-on SSDTs are placed in ACPI/patched.</p>
 <p>It is important to note that config.plist/ACPI/patches are applied only to native SSDTs, and not the SSDTs in ACPI/patched. This means that if you are renaming objects using config.plist, the add-on SSDTs must refer to the new names, not the old names. Unlike SSDTs in ACPI/patched, binary patches in ACPI/Patches <em>do apply</em> to DSDT.aml that might be in ACPI/patched. Keep this in mind if you’re using a combination of static and hotpatching.</p>
 <p>Also, with static patching, SortedOrder is used to specify the order of SSDTs in ACPI/patched. With hotpatch it is not strictly necessary as it is possible to construct the code in each SSDT such that the code is not order dependent. Especially if you place all add-on code in a single SSDT such as many of my laptop repo examples. Unless your add-on SSDTs are order dependent, you do not have to name each one in SortedOrder.</p>
 <p>It is also not necessary to choose “numbered names” for each SSDT. Instead you can use meaningful names, such as “SSDT-USB.aml”, SSDT-XOSI.aml”, etc. Using numbers instead of meaningul names will just confuse you. Don’t do it.</p>
@@ -891,9 +919,9 @@
 <li>final group: addition of B1B2 method</li>
 </ul>
 <h3 id="Constructing-the-initial-SSDT"><a href="#Constructing-the-initial-SSDT" class="headerlink" title="Constructing the initial SSDT"></a>Constructing the initial SSDT</h3><p>Start with an empty SSDT in MaciASL:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)</span><br><span class="line">{</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Next, add all methods that were added by the patch. In the example, this includes RDBA, WRBA, RDBB, WRBB and B1B2 methods. You can copy them directly from the DSDT_patched.dsl.</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+{
+}</code></pre><p>Next, add all methods that were added by the patch. In the example, this includes RDBA, WRBA, RDBB, WRBB and B1B2 methods. You can copy them directly from the DSDT_patched.dsl.</p>
 <p>You want to be certain each method is placed in the same scope. For example, here is the “group 2” methods added:</p>
 <pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
@@ -1536,16 +1564,700 @@ Else
     }            
 }</code></pre><p>Notice how FBST and _BIX were added to scope _SB.PCI0.BAT0, but BIFA was added to _SB.PCI0.LPCB.EC0. It is important to inject all methods into their original scope.</p>
 <p>Now, we add SMBR, SMBW, ECSB, and TACH:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br><span class="line">514</span><br><span class="line">515</span><br><span class="line">516</span><br><span class="line">517</span><br><span class="line">518</span><br><span class="line">519</span><br><span class="line">520</span><br><span class="line">521</span><br><span class="line">522</span><br><span class="line">523</span><br><span class="line">524</span><br><span class="line">525</span><br><span class="line">526</span><br><span class="line">527</span><br><span class="line">528</span><br><span class="line">529</span><br><span class="line">530</span><br><span class="line">531</span><br><span class="line">532</span><br><span class="line">533</span><br><span class="line">534</span><br><span class="line">535</span><br><span class="line">536</span><br><span class="line">537</span><br><span class="line">538</span><br><span class="line">539</span><br><span class="line">540</span><br><span class="line">541</span><br><span class="line">542</span><br><span class="line">543</span><br><span class="line">544</span><br><span class="line">545</span><br><span class="line">546</span><br><span class="line">547</span><br><span class="line">548</span><br><span class="line">549</span><br><span class="line">550</span><br><span class="line">551</span><br><span class="line">552</span><br><span class="line">553</span><br><span class="line">554</span><br><span class="line">555</span><br><span class="line">556</span><br><span class="line">557</span><br><span class="line">558</span><br><span class="line">559</span><br><span class="line">560</span><br><span class="line">561</span><br><span class="line">562</span><br><span class="line">563</span><br><span class="line">564</span><br><span class="line">565</span><br><span class="line">566</span><br><span class="line">567</span><br><span class="line">568</span><br><span class="line">569</span><br><span class="line">570</span><br><span class="line">571</span><br><span class="line">572</span><br><span class="line">573</span><br><span class="line">574</span><br><span class="line">575</span><br><span class="line">576</span><br><span class="line">577</span><br><span class="line">578</span><br><span class="line">579</span><br><span class="line">580</span><br><span class="line">581</span><br><span class="line">582</span><br><span class="line">583</span><br><span class="line">584</span><br><span class="line">585</span><br><span class="line">586</span><br><span class="line">587</span><br><span class="line">588</span><br><span class="line">589</span><br><span class="line">590</span><br><span class="line">591</span><br><span class="line">592</span><br><span class="line">593</span><br><span class="line">594</span><br><span class="line">595</span><br><span class="line">596</span><br><span class="line">597</span><br><span class="line">598</span><br><span class="line">599</span><br><span class="line">600</span><br><span class="line">601</span><br><span class="line">602</span><br><span class="line">603</span><br><span class="line">604</span><br><span class="line">605</span><br><span class="line">606</span><br><span class="line">607</span><br><span class="line">608</span><br><span class="line">609</span><br><span class="line">610</span><br><span class="line">611</span><br><span class="line">612</span><br><span class="line">613</span><br><span class="line">614</span><br><span class="line">615</span><br><span class="line">616</span><br><span class="line">617</span><br><span class="line">618</span><br><span class="line">619</span><br><span class="line">620</span><br><span class="line">621</span><br><span class="line">622</span><br><span class="line">623</span><br><span class="line">624</span><br><span class="line">625</span><br><span class="line">626</span><br><span class="line">627</span><br><span class="line">628</span><br><span class="line">629</span><br><span class="line">630</span><br><span class="line">631</span><br><span class="line">632</span><br><span class="line">633</span><br><span class="line">634</span><br><span class="line">635</span><br><span class="line">636</span><br><span class="line">637</span><br><span class="line">638</span><br><span class="line">639</span><br><span class="line">640</span><br><span class="line">641</span><br><span class="line">642</span><br><span class="line">643</span><br><span class="line">644</span><br><span class="line">645</span><br><span class="line">646</span><br><span class="line">647</span><br><span class="line">648</span><br><span class="line">649</span><br><span class="line">650</span><br><span class="line">651</span><br><span class="line">652</span><br><span class="line">653</span><br><span class="line">654</span><br><span class="line">655</span><br><span class="line">656</span><br><span class="line">657</span><br><span class="line">658</span><br><span class="line">659</span><br><span class="line">660</span><br><span class="line">661</span><br><span class="line">662</span><br><span class="line">663</span><br><span class="line">664</span><br><span class="line">665</span><br><span class="line">666</span><br><span class="line">667</span><br><span class="line">668</span><br><span class="line">669</span><br><span class="line">670</span><br><span class="line">671</span><br><span class="line">672</span><br><span class="line">673</span><br><span class="line">674</span><br><span class="line">675</span><br><span class="line">676</span><br><span class="line">677</span><br><span class="line">678</span><br><span class="line">679</span><br><span class="line">680</span><br><span class="line">681</span><br><span class="line">682</span><br><span class="line">683</span><br><span class="line">684</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)</span><br><span class="line">{</span><br><span class="line">	// patched methods</span><br><span class="line">    Scope (_SB.PCI0)</span><br><span class="line">    {</span><br><span class="line">        Scope (BAT0)</span><br><span class="line">        {</span><br><span class="line">            Method (FBST, 4, NotSerialized)</span><br><span class="line">            {</span><br><span class="line">                And (Arg1, 0xFFFF, Local1)</span><br><span class="line">                Store (Zero, Local0)</span><br><span class="line">                If (^^LPCB.EC0.ACAP ())</span><br><span class="line">                {</span><br><span class="line">                    Store (One, Local0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (Local0)</span><br><span class="line">                {</span><br><span class="line">                    If (CHGS (Zero))</span><br><span class="line">{</span><br><span class="line">	Store (0x02, Local0)</span><br><span class="line">}</span><br><span class="line">Else</span><br><span class="line">{</span><br><span class="line">	Store (Zero, Local0)</span><br><span class="line">}</span><br><span class="line">				}</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Store (One, Local0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (BLLO)</span><br><span class="line">                {</span><br><span class="line">                    ShiftLeft (One, 0x02, Local2)</span><br><span class="line">                    Or (Local0, Local2, Local0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (And (^^LPCB.EC0.EB0S, 0x08))</span><br><span class="line">                {</span><br><span class="line">                    ShiftLeft (One, 0x02, Local2)</span><br><span class="line">                    Or (Local0, Local2, Local0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LGreaterEqual (Local1, 0x8000))</span><br><span class="line">                {</span><br><span class="line">                    Subtract (0xFFFF, Local1, Local1)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Store (Arg2, Local2)</span><br><span class="line">                If (LEqual (PUNT, Zero))</span><br><span class="line">                {</span><br><span class="line">                    Multiply (Local1, ^^LPCB.EC0.B0DV, Local1)</span><br><span class="line">                    Multiply (Local2, 0x0A, Local2)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                And (Local0, 0x02, Local3)</span><br><span class="line">                If (LNot (Local3))</span><br><span class="line">                {</span><br><span class="line">                    Subtract (LFCC, Local2, Local3)</span><br><span class="line">                    Divide (LFCC, 0xC8, Local4, Local5)</span><br><span class="line">                    If (LLess (Local3, Local5))</span><br><span class="line">                    {</span><br><span class="line">                        Store (LFCC, Local2)</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Divide (LFCC, 0xC8, Local4, Local5)</span><br><span class="line">                    Subtract (LFCC, Local5, Local4)</span><br><span class="line">                    If (LGreater (Local2, Local4))</span><br><span class="line">                    {</span><br><span class="line">                        Store (Local4, Local2)</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LNot (^^LPCB.EC0.ACAP ()))</span><br><span class="line">                {</span><br><span class="line">                    Divide (Local2, MBLF, Local3, Local4)</span><br><span class="line">                    If (LLess (Local1, Local4))</span><br><span class="line">                    {</span><br><span class="line">                        Store (Local4, Local1)</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Store (Local0, Index (PBST, Zero))</span><br><span class="line">                Store (Local1, Index (PBST, One))</span><br><span class="line">                Store (Local2, Index (PBST, 0x02))</span><br><span class="line">                Store (Arg3, Index (PBST, 0x03))</span><br><span class="line">            }</span><br><span class="line">            Method (_BIX, 0, NotSerialized)  // _BIX: Battery Information Extended</span><br><span class="line">            {</span><br><span class="line">                If (LNot (^^LPCB.EC0.BATP (Zero)))</span><br><span class="line">                {</span><br><span class="line">                    Return (NBIX)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LEqual (^^LPCB.EC0.GBTT (Zero), 0xFF))</span><br><span class="line">                {</span><br><span class="line">                    Return (NBIX)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                _BIF ()</span><br><span class="line">                Store (DerefOf (Index (PBIF, Zero)), Index (BIXT, One))</span><br><span class="line">                Store (DerefOf (Index (PBIF, One)), Index (BIXT, 0x02))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x02)), Index (BIXT, 0x03))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x03)), Index (BIXT, 0x04))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x04)), Index (BIXT, 0x05))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x05)), Index (BIXT, 0x06))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x06)), Index (BIXT, 0x07))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x07)), Index (BIXT, 0x0E))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x08)), Index (BIXT, 0x0F))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x09)), Index (BIXT, 0x10))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x0A)), Index (BIXT, 0x11))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x0B)), Index (BIXT, 0x12))</span><br><span class="line">                Store (DerefOf (Index (PBIF, 0x0C)), Index (BIXT, 0x13))</span><br><span class="line">                If (LEqual (DerefOf (Index (BIXT, One)), One))</span><br><span class="line">                {</span><br><span class="line">                    Store (Zero, Index (BIXT, One))</span><br><span class="line">                    Store (DerefOf (Index (BIXT, 0x05)), Local0)</span><br><span class="line">                    Multiply (DerefOf (Index (BIXT, 0x02)), Local0, Index (BIXT, 0x02))</span><br><span class="line">                    Multiply (DerefOf (Index (BIXT, 0x03)), Local0, Index (BIXT, 0x03))</span><br><span class="line">                    Multiply (DerefOf (Index (BIXT, 0x06)), Local0, Index (BIXT, 0x06))</span><br><span class="line">                    Multiply (DerefOf (Index (BIXT, 0x07)), Local0, Index (BIXT, 0x07))</span><br><span class="line">                    Multiply (DerefOf (Index (BIXT, 0x0E)), Local0, Index (BIXT, 0x0E))</span><br><span class="line">                    Multiply (DerefOf (Index (BIXT, 0x0F)), Local0, Index (BIXT, 0x0F))</span><br><span class="line">                    Divide (DerefOf (Index (BIXT, 0x02)), 0x03E8, Local0, Index (BIXT, 0x02))</span><br><span class="line">                    Divide (DerefOf (Index (BIXT, 0x03)), 0x03E8, Local0, Index (BIXT, 0x03))</span><br><span class="line">                    Divide (DerefOf (Index (BIXT, 0x06)), 0x03E8, Local0, Index (BIXT, 0x06))</span><br><span class="line">                    Divide (DerefOf (Index (BIXT, 0x07)), 0x03E8, Local0, Index (BIXT, 0x07))</span><br><span class="line">                    Divide (DerefOf (Index (BIXT, 0x0E)), 0x03E8, Local0, Index (BIXT, 0x0E))</span><br><span class="line">                    Divide (DerefOf (Index (BIXT, 0x0F)), 0x03E8, Local0, Index (BIXT, 0x0F))</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Store (B1B2(^^LPCB.EC0.XC30,^^LPCB.EC0.XC31), Index (BIXT, 0x08))</span><br><span class="line">                Store (0x0001869F, Index (BIXT, 0x09))</span><br><span class="line">                Return (BIXT)</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">    }</span><br><span class="line">    Scope (_SB.PCI0.LPCB.EC0)</span><br><span class="line">    {</span><br><span class="line">        Method (BIFA, 0, NotSerialized)</span><br><span class="line">        {</span><br><span class="line">            If (ECAV ())</span><br><span class="line">            {</span><br><span class="line">                If (BSLF)</span><br><span class="line">                {</span><br><span class="line">                    Store (B1B2(B1S0,B1S1), Local0)</span><br><span class="line">                }</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Store (B1B2(B0S0,B0S1), Local0)</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            Else</span><br><span class="line">            {</span><br><span class="line">                Store (Ones, Local0)</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            Return (Local0)</span><br><span class="line">        }</span><br><span class="line">        Method (SMBR, 3, Serialized)</span><br><span class="line">        {</span><br><span class="line">            Store (Package (0x03)</span><br><span class="line">                {</span><br><span class="line">                    0x07,</span><br><span class="line">                    Zero,</span><br><span class="line">                    Zero</span><br><span class="line">                }, Local0)</span><br><span class="line">            If (LNot (ECAV ()))</span><br><span class="line">            {</span><br><span class="line">                Return (Local0)</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            If (LNotEqual (Arg0, RDBL))</span><br><span class="line">            {</span><br><span class="line">                If (LNotEqual (Arg0, RDWD))</span><br><span class="line">                {</span><br><span class="line">                    If (LNotEqual (Arg0, RDBT))</span><br><span class="line">                    {</span><br><span class="line">                        If (LNotEqual (Arg0, RCBT))</span><br><span class="line">                        {</span><br><span class="line">                            If (LNotEqual (Arg0, RDQK))</span><br><span class="line">                            {</span><br><span class="line">                                Return (Local0)</span><br><span class="line">                            }</span><br><span class="line">                        }</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            Acquire (MUEC, 0xFFFF)</span><br><span class="line">            Store (PRTC, Local1)</span><br><span class="line">            Store (Zero, Local2)</span><br><span class="line">            While (LNotEqual (Local1, Zero))</span><br><span class="line">            {</span><br><span class="line">                Stall (0x0A)</span><br><span class="line">                Increment (Local2)</span><br><span class="line">                If (LGreater (Local2, 0x03E8))</span><br><span class="line">                {</span><br><span class="line">                    Store (SBBY, Index (Local0, Zero))</span><br><span class="line">                    Store (Zero, Local1)</span><br><span class="line">                }</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Store (PRTC, Local1)</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            If (LLessEqual (Local2, 0x03E8))</span><br><span class="line">            {</span><br><span class="line">                ShiftLeft (Arg1, One, Local3)</span><br><span class="line">                Or (Local3, One, Local3)</span><br><span class="line">                Store (Local3, ADDR)</span><br><span class="line">                If (LNotEqual (Arg0, RDQK))</span><br><span class="line">                {</span><br><span class="line">                    If (LNotEqual (Arg0, RCBT))</span><br><span class="line">                    {</span><br><span class="line">                        Store (Arg2, CMDB)</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                WRBA(Zero)</span><br><span class="line">                Store (Arg0, PRTC)</span><br><span class="line">                Store (SWTC (Arg0), Index (Local0, Zero))</span><br><span class="line">                If (LEqual (DerefOf (Index (Local0, Zero)), Zero))</span><br><span class="line">                {</span><br><span class="line">                    If (LEqual (Arg0, RDBL))</span><br><span class="line">                    {</span><br><span class="line">                        Store (BCNT, Index (Local0, One))</span><br><span class="line">                        Store (RDBA(), Index (Local0, 0x02))</span><br><span class="line">                    }</span><br><span class="line"></span><br><span class="line">                    If (LEqual (Arg0, RDWD))</span><br><span class="line">                    {</span><br><span class="line">                        Store (0x02, Index (Local0, One))</span><br><span class="line">                        Store (B1B2(T2B0,T2B1), Index (Local0, 0x02))</span><br><span class="line">                    }</span><br><span class="line"></span><br><span class="line">                    If (LEqual (Arg0, RDBT))</span><br><span class="line">                    {</span><br><span class="line">                        Store (One, Index (Local0, One))</span><br><span class="line">                        Store (DAT0, Index (Local0, 0x02))</span><br><span class="line">                    }</span><br><span class="line"></span><br><span class="line">                    If (LEqual (Arg0, RCBT))</span><br><span class="line">                    {</span><br><span class="line">                        Store (One, Index (Local0, One))</span><br><span class="line">                        Store (DAT0, Index (Local0, 0x02))</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            Release (MUEC)</span><br><span class="line">            Return (Local0)</span><br><span class="line">        }</span><br><span class="line">        Method (SMBW, 5, Serialized)</span><br><span class="line">        {</span><br><span class="line">            Store (Package (0x01)</span><br><span class="line">                {</span><br><span class="line">                    0x07</span><br><span class="line">                }, Local0)</span><br><span class="line">            If (LNot (ECAV ()))</span><br><span class="line">            {</span><br><span class="line">                Return (Local0)</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            If (LNotEqual (Arg0, WRBL))</span><br><span class="line">            {</span><br><span class="line">                If (LNotEqual (Arg0, WRWD))</span><br><span class="line">                {</span><br><span class="line">                    If (LNotEqual (Arg0, WRBT))</span><br><span class="line">                    {</span><br><span class="line">                        If (LNotEqual (Arg0, SDBT))</span><br><span class="line">                        {</span><br><span class="line">                            If (LNotEqual (Arg0, WRQK))</span><br><span class="line">                            {</span><br><span class="line">                                Return (Local0)</span><br><span class="line">                            }</span><br><span class="line">                        }</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            Acquire (MUEC, 0xFFFF)</span><br><span class="line">            Store (PRTC, Local1)</span><br><span class="line">            Store (Zero, Local2)</span><br><span class="line">            While (LNotEqual (Local1, Zero))</span><br><span class="line">            {</span><br><span class="line">                Stall (0x0A)</span><br><span class="line">                Increment (Local2)</span><br><span class="line">                If (LGreater (Local2, 0x03E8))</span><br><span class="line">                {</span><br><span class="line">                    Store (SBBY, Index (Local0, Zero))</span><br><span class="line">                    Store (Zero, Local1)</span><br><span class="line">                }</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Store (PRTC, Local1)</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            If (LLessEqual (Local2, 0x03E8))</span><br><span class="line">            {</span><br><span class="line">                WRBA(Zero)</span><br><span class="line">                ShiftLeft (Arg1, One, Local3)</span><br><span class="line">                Store (Local3, ADDR)</span><br><span class="line">                If (LNotEqual (Arg0, WRQK))</span><br><span class="line">                {</span><br><span class="line">                    If (LNotEqual (Arg0, SDBT))</span><br><span class="line">                    {</span><br><span class="line">                        Store (Arg2, CMDB)</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LEqual (Arg0, WRBL))</span><br><span class="line">                {</span><br><span class="line">                    Store (Arg3, BCNT)</span><br><span class="line">                    WRBA(Arg4)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LEqual (Arg0, WRWD))</span><br><span class="line">                {</span><br><span class="line">                    Store(Arg4,T2B0) Store(ShiftRight(Arg4,8),T2B1)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LEqual (Arg0, WRBT))</span><br><span class="line">                {</span><br><span class="line">                    Store (Arg4, DAT0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LEqual (Arg0, SDBT))</span><br><span class="line">                {</span><br><span class="line">                    Store (Arg4, DAT0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Store (Arg0, PRTC)</span><br><span class="line">                Store (SWTC (Arg0), Index (Local0, Zero))</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            Release (MUEC)</span><br><span class="line">            Return (Local0)</span><br><span class="line">        }</span><br><span class="line">        Method (ECSB, 7, NotSerialized)</span><br><span class="line">        {</span><br><span class="line">            Store (Package (0x05)</span><br><span class="line">                {</span><br><span class="line">                    0x11,</span><br><span class="line">                    Zero,</span><br><span class="line">                    Zero,</span><br><span class="line">                    Zero,</span><br><span class="line">                    Buffer (0x20){}</span><br><span class="line">                }, Local1)</span><br><span class="line">            If (LGreater (Arg0, One))</span><br><span class="line">            {</span><br><span class="line">                Return (Local1)</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            If (ECAV ())</span><br><span class="line">            {</span><br><span class="line">                Acquire (MUEC, 0xFFFF)</span><br><span class="line">                If (LEqual (Arg0, Zero))</span><br><span class="line">                {</span><br><span class="line">                    Store (PRTC, Local0)</span><br><span class="line">                }</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Store (PRT2, Local0)</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Store (Zero, Local2)</span><br><span class="line">                While (LNotEqual (Local0, Zero))</span><br><span class="line">                {</span><br><span class="line">                    Stall (0x0A)</span><br><span class="line">                    Increment (Local2)</span><br><span class="line">                    If (LGreater (Local2, 0x03E8))</span><br><span class="line">                    {</span><br><span class="line">                        Store (SBBY, Index (Local1, Zero))</span><br><span class="line">                        Store (Zero, Local0)</span><br><span class="line">                    }</span><br><span class="line">                    ElseIf (LEqual (Arg0, Zero))</span><br><span class="line">                    {</span><br><span class="line">                        Store (PRTC, Local0)</span><br><span class="line">                    }</span><br><span class="line">                    Else</span><br><span class="line">                    {</span><br><span class="line">                        Store (PRT2, Local0)</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                If (LLessEqual (Local2, 0x03E8))</span><br><span class="line">                {</span><br><span class="line">                    If (LEqual (Arg0, Zero))</span><br><span class="line">                    {</span><br><span class="line">                        Store (Arg2, ADDR)</span><br><span class="line">                        Store (Arg3, CMDB)</span><br><span class="line">                        If (LOr (LEqual (Arg1, 0x0A), LEqual (Arg1, 0x0B)))</span><br><span class="line">                        {</span><br><span class="line">                            Store (DerefOf (Index (Arg6, Zero)), BCNT)</span><br><span class="line">                            WRBA(DerefOf (Index (Arg6, One)))</span><br><span class="line">                        }</span><br><span class="line">                        Else</span><br><span class="line">                        {</span><br><span class="line">                            Store (Arg4, DAT0)</span><br><span class="line">                            Store (Arg5, DAT1)</span><br><span class="line">                        }</span><br><span class="line"></span><br><span class="line">                        Store (Arg1, PRTC)</span><br><span class="line">                    }</span><br><span class="line">                    Else</span><br><span class="line">                    {</span><br><span class="line">                        Store (Arg2, ADD2)</span><br><span class="line">                        Store (Arg3, CMD2)</span><br><span class="line">                        If (LOr (LEqual (Arg1, 0x0A), LEqual (Arg1, 0x0B)))</span><br><span class="line">                        {</span><br><span class="line">                            Store (DerefOf (Index (Arg6, Zero)), BCN2)</span><br><span class="line">                            WRBB(DerefOf (Index (Arg6, One)))</span><br><span class="line">                        }</span><br><span class="line">                        Else</span><br><span class="line">                        {</span><br><span class="line">                            Store (Arg4, DA20)</span><br><span class="line">                            Store (Arg5, DA21)</span><br><span class="line">                        }</span><br><span class="line"></span><br><span class="line">                        Store (Arg1, PRT2)</span><br><span class="line">                    }</span><br><span class="line"></span><br><span class="line">                    Store (0x7F, Local0)</span><br><span class="line">                    If (LEqual (Arg0, Zero))</span><br><span class="line">                    {</span><br><span class="line">                        While (PRTC)</span><br><span class="line">                        {</span><br><span class="line">                            Sleep (One)</span><br><span class="line">                            Decrement (Local0)</span><br><span class="line">                        }</span><br><span class="line">                    }</span><br><span class="line">                    Else</span><br><span class="line">                    {</span><br><span class="line">                        While (PRT2)</span><br><span class="line">                        {</span><br><span class="line">                            Sleep (One)</span><br><span class="line">                            Decrement (Local0)</span><br><span class="line">                        }</span><br><span class="line">                    }</span><br><span class="line"></span><br><span class="line">                    If (Local0)</span><br><span class="line">                    {</span><br><span class="line">                        If (LEqual (Arg0, Zero))</span><br><span class="line">                        {</span><br><span class="line">                            Store (SSTS, Local0)</span><br><span class="line">                            Store (DAT0, Index (Local1, One))</span><br><span class="line">                            Store (DAT1, Index (Local1, 0x02))</span><br><span class="line">                            Store (BCNT, Index (Local1, 0x03))</span><br><span class="line">                            Store (RDBA(), Index (Local1, 0x04))</span><br><span class="line">                        }</span><br><span class="line">                        Else</span><br><span class="line">                        {</span><br><span class="line">                            Store (SST2, Local0)</span><br><span class="line">                            Store (DA20, Index (Local1, One))</span><br><span class="line">                            Store (DA21, Index (Local1, 0x02))</span><br><span class="line">                            Store (BCN2, Index (Local1, 0x03))</span><br><span class="line">                            Store (RDBB(), Index (Local1, 0x04))</span><br><span class="line">                        }</span><br><span class="line"></span><br><span class="line">                        And (Local0, 0x1F, Local0)</span><br><span class="line">                        If (Local0)</span><br><span class="line">                        {</span><br><span class="line">                            Add (Local0, 0x10, Local0)</span><br><span class="line">                        }</span><br><span class="line"></span><br><span class="line">                        Store (Local0, Index (Local1, Zero))</span><br><span class="line">                    }</span><br><span class="line">                    Else</span><br><span class="line">                    {</span><br><span class="line">                        Store (0x10, Index (Local1, Zero))</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Release (MUEC)</span><br><span class="line">            }</span><br><span class="line"></span><br><span class="line">            Return (Local1)</span><br><span class="line">        }</span><br><span class="line">        Method (TACH, 1, Serialized)</span><br><span class="line">        {</span><br><span class="line">            If (ECAV ())</span><br><span class="line">            {</span><br><span class="line">                Switch (Arg0)</span><br><span class="line">                {</span><br><span class="line">                    Case (Zero)</span><br><span class="line">                    {</span><br><span class="line">                        Store (B1B2(TH00,TH01), Local0)</span><br><span class="line">                        Break</span><br><span class="line">                    }</span><br><span class="line">                    Case (One)</span><br><span class="line">                    {</span><br><span class="line">                        Store (B1B2(TH10,TH11), Local0)</span><br><span class="line">                        Break</span><br><span class="line">                    }</span><br><span class="line">                    Default</span><br><span class="line">                    {</span><br><span class="line">                        Return (Ones)</span><br><span class="line">                    }</span><br><span class="line"></span><br><span class="line">                }</span><br><span class="line"></span><br><span class="line">                Multiply (Local0, 0x02, Local0)</span><br><span class="line">                If (LNotEqual (Local0, Zero))</span><br><span class="line">                {</span><br><span class="line">                    Divide (0x0041CDB4, Local0, Local1, Local0)</span><br><span class="line">                    Return (Local0)</span><br><span class="line">                }</span><br><span class="line">                Else</span><br><span class="line">                {</span><br><span class="line">                    Return (Ones)</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            Else</span><br><span class="line">            {</span><br><span class="line">                Return (Ones)</span><br><span class="line">            }</span><br><span class="line">        }    </span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    Method (B1B2, 2, NotSerialized) { Return (Or (Arg0, ShiftLeft (Arg1, 8))) }</span><br><span class="line"></span><br><span class="line">    // added methods (group 2)</span><br><span class="line">    Scope (_SB.PCI0.LPCB)</span><br><span class="line">    {</span><br><span class="line">        Scope (EC0)</span><br><span class="line">        {</span><br><span class="line">            Method (RDBA, 0, Serialized)</span><br><span class="line">            {</span><br><span class="line">                Name (TEMP, Buffer(0x20) { })</span><br><span class="line">                Store (BA00, Index(TEMP, 0x00))</span><br><span class="line">                Store (BA01, Index(TEMP, 0x01))</span><br><span class="line">                Store (BA02, Index(TEMP, 0x02))</span><br><span class="line">                Store (BA03, Index(TEMP, 0x03))</span><br><span class="line">                Store (BA04, Index(TEMP, 0x04))</span><br><span class="line">                Store (BA05, Index(TEMP, 0x05))</span><br><span class="line">                Store (BA06, Index(TEMP, 0x06))</span><br><span class="line">                Store (BA07, Index(TEMP, 0x07))</span><br><span class="line">                Store (BA08, Index(TEMP, 0x08))</span><br><span class="line">                Store (BA09, Index(TEMP, 0x09))</span><br><span class="line">                Store (BA0A, Index(TEMP, 0x0A))</span><br><span class="line">                Store (BA0B, Index(TEMP, 0x0B))</span><br><span class="line">                Store (BA0C, Index(TEMP, 0x0C))</span><br><span class="line">                Store (BA0D, Index(TEMP, 0x0D))</span><br><span class="line">                Store (BA0E, Index(TEMP, 0x0E))</span><br><span class="line">                Store (BA0F, Index(TEMP, 0x0F))</span><br><span class="line">                Store (BA10, Index(TEMP, 0x10))</span><br><span class="line">                Store (BA11, Index(TEMP, 0x11))</span><br><span class="line">                Store (BA12, Index(TEMP, 0x12))</span><br><span class="line">                Store (BA13, Index(TEMP, 0x13))</span><br><span class="line">                Store (BA14, Index(TEMP, 0x14))</span><br><span class="line">                Store (BA15, Index(TEMP, 0x15))</span><br><span class="line">                Store (BA16, Index(TEMP, 0x16))</span><br><span class="line">                Store (BA17, Index(TEMP, 0x17))</span><br><span class="line">                Store (BA18, Index(TEMP, 0x18))</span><br><span class="line">                Store (BA19, Index(TEMP, 0x19))</span><br><span class="line">                Store (BA1A, Index(TEMP, 0x1A))</span><br><span class="line">                Store (BA1B, Index(TEMP, 0x1B))</span><br><span class="line">                Store (BA1C, Index(TEMP, 0x1C))</span><br><span class="line">                Store (BA1D, Index(TEMP, 0x1D))</span><br><span class="line">                Store (BA1E, Index(TEMP, 0x1E))</span><br><span class="line">                Store (BA1F, Index(TEMP, 0x1F))</span><br><span class="line">                Return (TEMP)</span><br><span class="line">            }</span><br><span class="line">            Method (WRBA, 1, Serialized)</span><br><span class="line">            {</span><br><span class="line">                Name (TEMP, Buffer(0x20) { })</span><br><span class="line">                Store (Arg0, TEMP)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x00)), BA00)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x01)), BA01)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x02)), BA02)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x03)), BA03)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x04)), BA04)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x05)), BA05)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x06)), BA06)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x07)), BA07)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x08)), BA08)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x09)), BA09)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0A)), BA0A)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0B)), BA0B)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0C)), BA0C)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0D)), BA0D)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0E)), BA0E)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0F)), BA0F)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x10)), BA10)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x11)), BA11)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x12)), BA12)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x13)), BA13)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x14)), BA14)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x15)), BA15)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x16)), BA16)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x17)), BA17)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x18)), BA18)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x19)), BA19)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1A)), BA1A)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1B)), BA1B)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1C)), BA1C)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1D)), BA1D)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1E)), BA1E)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1F)), BA1F)</span><br><span class="line">            }</span><br><span class="line">            Method (RDBB, 0, Serialized)</span><br><span class="line">            {</span><br><span class="line">                Name (TEMP, Buffer(0x20) { })</span><br><span class="line">                Store (BB00, Index(TEMP, 0x00))</span><br><span class="line">                Store (BB01, Index(TEMP, 0x01))</span><br><span class="line">                Store (BB02, Index(TEMP, 0x02))</span><br><span class="line">                Store (BB03, Index(TEMP, 0x03))</span><br><span class="line">                Store (BB04, Index(TEMP, 0x04))</span><br><span class="line">                Store (BB05, Index(TEMP, 0x05))</span><br><span class="line">                Store (BB06, Index(TEMP, 0x06))</span><br><span class="line">                Store (BB07, Index(TEMP, 0x07))</span><br><span class="line">                Store (BB08, Index(TEMP, 0x08))</span><br><span class="line">                Store (BB09, Index(TEMP, 0x09))</span><br><span class="line">                Store (BB0A, Index(TEMP, 0x0A))</span><br><span class="line">                Store (BB0B, Index(TEMP, 0x0B))</span><br><span class="line">                Store (BB0C, Index(TEMP, 0x0C))</span><br><span class="line">                Store (BB0D, Index(TEMP, 0x0D))</span><br><span class="line">                Store (BB0E, Index(TEMP, 0x0E))</span><br><span class="line">                Store (BB0F, Index(TEMP, 0x0F))</span><br><span class="line">                Store (BB10, Index(TEMP, 0x10))</span><br><span class="line">                Store (BB11, Index(TEMP, 0x11))</span><br><span class="line">                Store (BB12, Index(TEMP, 0x12))</span><br><span class="line">                Store (BB13, Index(TEMP, 0x13))</span><br><span class="line">                Store (BB14, Index(TEMP, 0x14))</span><br><span class="line">                Store (BB15, Index(TEMP, 0x15))</span><br><span class="line">                Store (BB16, Index(TEMP, 0x16))</span><br><span class="line">                Store (BB17, Index(TEMP, 0x17))</span><br><span class="line">                Store (BB18, Index(TEMP, 0x18))</span><br><span class="line">                Store (BB19, Index(TEMP, 0x19))</span><br><span class="line">                Store (BB1A, Index(TEMP, 0x1A))</span><br><span class="line">                Store (BB1B, Index(TEMP, 0x1B))</span><br><span class="line">                Store (BB1C, Index(TEMP, 0x1C))</span><br><span class="line">                Store (BB1D, Index(TEMP, 0x1D))</span><br><span class="line">                Store (BB1E, Index(TEMP, 0x1E))</span><br><span class="line">                Store (BB1F, Index(TEMP, 0x1F))</span><br><span class="line">                Return (TEMP)</span><br><span class="line">            }</span><br><span class="line">            Method (WRBB, 1, Serialized)</span><br><span class="line">            {</span><br><span class="line">                Name (TEMP, Buffer(0x20) { })</span><br><span class="line">                Store (Arg0, TEMP)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x00)), BB00)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x01)), BB01)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x02)), BB02)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x03)), BB03)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x04)), BB04)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x05)), BB05)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x06)), BB06)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x07)), BB07)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x08)), BB08)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x09)), BB09)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0A)), BB0A)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0B)), BB0B)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0C)), BB0C)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0D)), BB0D)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0E)), BB0E)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x0F)), BB0F)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x10)), BB10)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x11)), BB11)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x12)), BB12)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x13)), BB13)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x14)), BB14)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x15)), BB15)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x16)), BB16)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x17)), BB17)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x18)), BB18)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x19)), BB19)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1A)), BB1A)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1B)), BB1B)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1C)), BB1C)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1D)), BB1D)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1E)), BB1E)</span><br><span class="line">                Store (DerefOf(Index(TEMP, 0x1F)), BB1F)</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+{
+    // patched methods
+    Scope (_SB.PCI0)
+    {
+        Scope (BAT0)
+        {
+            Method (FBST, 4, NotSerialized)
+            {
+                And (Arg1, 0xFFFF, Local1)
+                Store (Zero, Local0)
+                If (^^LPCB.EC0.ACAP ())
+                {
+                    Store (One, Local0)
+                }
 
-<p>With all the nodes expanded in MaciASL, our work looks like this:<br><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fypvtw1v2ej30r10hr41s.jpg" alt=""></p>
+                If (Local0)
+                {
+                    If (CHGS (Zero))
+{
+    Store (0x02, Local0)
+}
+Else
+{
+    Store (Zero, Local0)
+}
+                }
+                Else
+                {
+                    Store (One, Local0)
+                }
+
+                If (BLLO)
+                {
+                    ShiftLeft (One, 0x02, Local2)
+                    Or (Local0, Local2, Local0)
+                }
+
+                If (And (^^LPCB.EC0.EB0S, 0x08))
+                {
+                    ShiftLeft (One, 0x02, Local2)
+                    Or (Local0, Local2, Local0)
+                }
+
+                If (LGreaterEqual (Local1, 0x8000))
+                {
+                    Subtract (0xFFFF, Local1, Local1)
+                }
+
+                Store (Arg2, Local2)
+                If (LEqual (PUNT, Zero))
+                {
+                    Multiply (Local1, ^^LPCB.EC0.B0DV, Local1)
+                    Multiply (Local2, 0x0A, Local2)
+                }
+
+                And (Local0, 0x02, Local3)
+                If (LNot (Local3))
+                {
+                    Subtract (LFCC, Local2, Local3)
+                    Divide (LFCC, 0xC8, Local4, Local5)
+                    If (LLess (Local3, Local5))
+                    {
+                        Store (LFCC, Local2)
+                    }
+                }
+                Else
+                {
+                    Divide (LFCC, 0xC8, Local4, Local5)
+                    Subtract (LFCC, Local5, Local4)
+                    If (LGreater (Local2, Local4))
+                    {
+                        Store (Local4, Local2)
+                    }
+                }
+
+                If (LNot (^^LPCB.EC0.ACAP ()))
+                {
+                    Divide (Local2, MBLF, Local3, Local4)
+                    If (LLess (Local1, Local4))
+                    {
+                        Store (Local4, Local1)
+                    }
+                }
+
+                Store (Local0, Index (PBST, Zero))
+                Store (Local1, Index (PBST, One))
+                Store (Local2, Index (PBST, 0x02))
+                Store (Arg3, Index (PBST, 0x03))
+            }
+            Method (_BIX, 0, NotSerialized)  // _BIX: Battery Information Extended
+            {
+                If (LNot (^^LPCB.EC0.BATP (Zero)))
+                {
+                    Return (NBIX)
+                }
+
+                If (LEqual (^^LPCB.EC0.GBTT (Zero), 0xFF))
+                {
+                    Return (NBIX)
+                }
+
+                _BIF ()
+                Store (DerefOf (Index (PBIF, Zero)), Index (BIXT, One))
+                Store (DerefOf (Index (PBIF, One)), Index (BIXT, 0x02))
+                Store (DerefOf (Index (PBIF, 0x02)), Index (BIXT, 0x03))
+                Store (DerefOf (Index (PBIF, 0x03)), Index (BIXT, 0x04))
+                Store (DerefOf (Index (PBIF, 0x04)), Index (BIXT, 0x05))
+                Store (DerefOf (Index (PBIF, 0x05)), Index (BIXT, 0x06))
+                Store (DerefOf (Index (PBIF, 0x06)), Index (BIXT, 0x07))
+                Store (DerefOf (Index (PBIF, 0x07)), Index (BIXT, 0x0E))
+                Store (DerefOf (Index (PBIF, 0x08)), Index (BIXT, 0x0F))
+                Store (DerefOf (Index (PBIF, 0x09)), Index (BIXT, 0x10))
+                Store (DerefOf (Index (PBIF, 0x0A)), Index (BIXT, 0x11))
+                Store (DerefOf (Index (PBIF, 0x0B)), Index (BIXT, 0x12))
+                Store (DerefOf (Index (PBIF, 0x0C)), Index (BIXT, 0x13))
+                If (LEqual (DerefOf (Index (BIXT, One)), One))
+                {
+                    Store (Zero, Index (BIXT, One))
+                    Store (DerefOf (Index (BIXT, 0x05)), Local0)
+                    Multiply (DerefOf (Index (BIXT, 0x02)), Local0, Index (BIXT, 0x02))
+                    Multiply (DerefOf (Index (BIXT, 0x03)), Local0, Index (BIXT, 0x03))
+                    Multiply (DerefOf (Index (BIXT, 0x06)), Local0, Index (BIXT, 0x06))
+                    Multiply (DerefOf (Index (BIXT, 0x07)), Local0, Index (BIXT, 0x07))
+                    Multiply (DerefOf (Index (BIXT, 0x0E)), Local0, Index (BIXT, 0x0E))
+                    Multiply (DerefOf (Index (BIXT, 0x0F)), Local0, Index (BIXT, 0x0F))
+                    Divide (DerefOf (Index (BIXT, 0x02)), 0x03E8, Local0, Index (BIXT, 0x02))
+                    Divide (DerefOf (Index (BIXT, 0x03)), 0x03E8, Local0, Index (BIXT, 0x03))
+                    Divide (DerefOf (Index (BIXT, 0x06)), 0x03E8, Local0, Index (BIXT, 0x06))
+                    Divide (DerefOf (Index (BIXT, 0x07)), 0x03E8, Local0, Index (BIXT, 0x07))
+                    Divide (DerefOf (Index (BIXT, 0x0E)), 0x03E8, Local0, Index (BIXT, 0x0E))
+                    Divide (DerefOf (Index (BIXT, 0x0F)), 0x03E8, Local0, Index (BIXT, 0x0F))
+                }
+
+                Store (B1B2(^^LPCB.EC0.XC30,^^LPCB.EC0.XC31), Index (BIXT, 0x08))
+                Store (0x0001869F, Index (BIXT, 0x09))
+                Return (BIXT)
+            }
+
+    }
+    }
+    Scope (_SB.PCI0.LPCB.EC0)
+    {
+        Method (BIFA, 0, NotSerialized)
+        {
+            If (ECAV ())
+            {
+                If (BSLF)
+                {
+                    Store (B1B2(B1S0,B1S1), Local0)
+                }
+                Else
+                {
+                    Store (B1B2(B0S0,B0S1), Local0)
+                }
+            }
+            Else
+            {
+                Store (Ones, Local0)
+            }
+
+            Return (Local0)
+        }
+        Method (SMBR, 3, Serialized)
+        {
+            Store (Package (0x03)
+                {
+                    0x07,
+                    Zero,
+                    Zero
+                }, Local0)
+            If (LNot (ECAV ()))
+            {
+                Return (Local0)
+            }
+
+            If (LNotEqual (Arg0, RDBL))
+            {
+                If (LNotEqual (Arg0, RDWD))
+                {
+                    If (LNotEqual (Arg0, RDBT))
+                    {
+                        If (LNotEqual (Arg0, RCBT))
+                        {
+                            If (LNotEqual (Arg0, RDQK))
+                            {
+                                Return (Local0)
+                            }
+                        }
+                    }
+                }
+            }
+
+            Acquire (MUEC, 0xFFFF)
+            Store (PRTC, Local1)
+            Store (Zero, Local2)
+            While (LNotEqual (Local1, Zero))
+            {
+                Stall (0x0A)
+                Increment (Local2)
+                If (LGreater (Local2, 0x03E8))
+                {
+                    Store (SBBY, Index (Local0, Zero))
+                    Store (Zero, Local1)
+                }
+                Else
+                {
+                    Store (PRTC, Local1)
+                }
+            }
+
+            If (LLessEqual (Local2, 0x03E8))
+            {
+                ShiftLeft (Arg1, One, Local3)
+                Or (Local3, One, Local3)
+                Store (Local3, ADDR)
+                If (LNotEqual (Arg0, RDQK))
+                {
+                    If (LNotEqual (Arg0, RCBT))
+                    {
+                        Store (Arg2, CMDB)
+                    }
+                }
+
+                WRBA(Zero)
+                Store (Arg0, PRTC)
+                Store (SWTC (Arg0), Index (Local0, Zero))
+                If (LEqual (DerefOf (Index (Local0, Zero)), Zero))
+                {
+                    If (LEqual (Arg0, RDBL))
+                    {
+                        Store (BCNT, Index (Local0, One))
+                        Store (RDBA(), Index (Local0, 0x02))
+                    }
+
+                    If (LEqual (Arg0, RDWD))
+                    {
+                        Store (0x02, Index (Local0, One))
+                        Store (B1B2(T2B0,T2B1), Index (Local0, 0x02))
+                    }
+
+                    If (LEqual (Arg0, RDBT))
+                    {
+                        Store (One, Index (Local0, One))
+                        Store (DAT0, Index (Local0, 0x02))
+                    }
+
+                    If (LEqual (Arg0, RCBT))
+                    {
+                        Store (One, Index (Local0, One))
+                        Store (DAT0, Index (Local0, 0x02))
+                    }
+                }
+            }
+
+            Release (MUEC)
+            Return (Local0)
+        }
+        Method (SMBW, 5, Serialized)
+        {
+            Store (Package (0x01)
+                {
+                    0x07
+                }, Local0)
+            If (LNot (ECAV ()))
+            {
+                Return (Local0)
+            }
+
+            If (LNotEqual (Arg0, WRBL))
+            {
+                If (LNotEqual (Arg0, WRWD))
+                {
+                    If (LNotEqual (Arg0, WRBT))
+                    {
+                        If (LNotEqual (Arg0, SDBT))
+                        {
+                            If (LNotEqual (Arg0, WRQK))
+                            {
+                                Return (Local0)
+                            }
+                        }
+                    }
+                }
+            }
+
+            Acquire (MUEC, 0xFFFF)
+            Store (PRTC, Local1)
+            Store (Zero, Local2)
+            While (LNotEqual (Local1, Zero))
+            {
+                Stall (0x0A)
+                Increment (Local2)
+                If (LGreater (Local2, 0x03E8))
+                {
+                    Store (SBBY, Index (Local0, Zero))
+                    Store (Zero, Local1)
+                }
+                Else
+                {
+                    Store (PRTC, Local1)
+                }
+            }
+
+            If (LLessEqual (Local2, 0x03E8))
+            {
+                WRBA(Zero)
+                ShiftLeft (Arg1, One, Local3)
+                Store (Local3, ADDR)
+                If (LNotEqual (Arg0, WRQK))
+                {
+                    If (LNotEqual (Arg0, SDBT))
+                    {
+                        Store (Arg2, CMDB)
+                    }
+                }
+
+                If (LEqual (Arg0, WRBL))
+                {
+                    Store (Arg3, BCNT)
+                    WRBA(Arg4)
+                }
+
+                If (LEqual (Arg0, WRWD))
+                {
+                    Store(Arg4,T2B0) Store(ShiftRight(Arg4,8),T2B1)
+                }
+
+                If (LEqual (Arg0, WRBT))
+                {
+                    Store (Arg4, DAT0)
+                }
+
+                If (LEqual (Arg0, SDBT))
+                {
+                    Store (Arg4, DAT0)
+                }
+
+                Store (Arg0, PRTC)
+                Store (SWTC (Arg0), Index (Local0, Zero))
+            }
+
+            Release (MUEC)
+            Return (Local0)
+        }
+        Method (ECSB, 7, NotSerialized)
+        {
+            Store (Package (0x05)
+                {
+                    0x11,
+                    Zero,
+                    Zero,
+                    Zero,
+                    Buffer (0x20){}
+                }, Local1)
+            If (LGreater (Arg0, One))
+            {
+                Return (Local1)
+            }
+
+            If (ECAV ())
+            {
+                Acquire (MUEC, 0xFFFF)
+                If (LEqual (Arg0, Zero))
+                {
+                    Store (PRTC, Local0)
+                }
+                Else
+                {
+                    Store (PRT2, Local0)
+                }
+
+                Store (Zero, Local2)
+                While (LNotEqual (Local0, Zero))
+                {
+                    Stall (0x0A)
+                    Increment (Local2)
+                    If (LGreater (Local2, 0x03E8))
+                    {
+                        Store (SBBY, Index (Local1, Zero))
+                        Store (Zero, Local0)
+                    }
+                    ElseIf (LEqual (Arg0, Zero))
+                    {
+                        Store (PRTC, Local0)
+                    }
+                    Else
+                    {
+                        Store (PRT2, Local0)
+                    }
+                }
+
+                If (LLessEqual (Local2, 0x03E8))
+                {
+                    If (LEqual (Arg0, Zero))
+                    {
+                        Store (Arg2, ADDR)
+                        Store (Arg3, CMDB)
+                        If (LOr (LEqual (Arg1, 0x0A), LEqual (Arg1, 0x0B)))
+                        {
+                            Store (DerefOf (Index (Arg6, Zero)), BCNT)
+                            WRBA(DerefOf (Index (Arg6, One)))
+                        }
+                        Else
+                        {
+                            Store (Arg4, DAT0)
+                            Store (Arg5, DAT1)
+                        }
+
+                        Store (Arg1, PRTC)
+                    }
+                    Else
+                    {
+                        Store (Arg2, ADD2)
+                        Store (Arg3, CMD2)
+                        If (LOr (LEqual (Arg1, 0x0A), LEqual (Arg1, 0x0B)))
+                        {
+                            Store (DerefOf (Index (Arg6, Zero)), BCN2)
+                            WRBB(DerefOf (Index (Arg6, One)))
+                        }
+                        Else
+                        {
+                            Store (Arg4, DA20)
+                            Store (Arg5, DA21)
+                        }
+
+                        Store (Arg1, PRT2)
+                    }
+
+                    Store (0x7F, Local0)
+                    If (LEqual (Arg0, Zero))
+                    {
+                        While (PRTC)
+                        {
+                            Sleep (One)
+                            Decrement (Local0)
+                        }
+                    }
+                    Else
+                    {
+                        While (PRT2)
+                        {
+                            Sleep (One)
+                            Decrement (Local0)
+                        }
+                    }
+
+                    If (Local0)
+                    {
+                        If (LEqual (Arg0, Zero))
+                        {
+                            Store (SSTS, Local0)
+                            Store (DAT0, Index (Local1, One))
+                            Store (DAT1, Index (Local1, 0x02))
+                            Store (BCNT, Index (Local1, 0x03))
+                            Store (RDBA(), Index (Local1, 0x04))
+                        }
+                        Else
+                        {
+                            Store (SST2, Local0)
+                            Store (DA20, Index (Local1, One))
+                            Store (DA21, Index (Local1, 0x02))
+                            Store (BCN2, Index (Local1, 0x03))
+                            Store (RDBB(), Index (Local1, 0x04))
+                        }
+
+                        And (Local0, 0x1F, Local0)
+                        If (Local0)
+                        {
+                            Add (Local0, 0x10, Local0)
+                        }
+
+                        Store (Local0, Index (Local1, Zero))
+                    }
+                    Else
+                    {
+                        Store (0x10, Index (Local1, Zero))
+                    }
+                }
+
+                Release (MUEC)
+            }
+
+            Return (Local1)
+        }
+        Method (TACH, 1, Serialized)
+        {
+            If (ECAV ())
+            {
+                Switch (Arg0)
+                {
+                    Case (Zero)
+                    {
+                        Store (B1B2(TH00,TH01), Local0)
+                        Break
+                    }
+                    Case (One)
+                    {
+                        Store (B1B2(TH10,TH11), Local0)
+                        Break
+                    }
+                    Default
+                    {
+                        Return (Ones)
+                    }
+
+                }
+
+                Multiply (Local0, 0x02, Local0)
+                If (LNotEqual (Local0, Zero))
+                {
+                    Divide (0x0041CDB4, Local0, Local1, Local0)
+                    Return (Local0)
+                }
+                Else
+                {
+                    Return (Ones)
+                }
+            }
+            Else
+            {
+                Return (Ones)
+            }
+        }    
+    }
+
+    Method (B1B2, 2, NotSerialized) { Return (Or (Arg0, ShiftLeft (Arg1, 8))) }
+
+    // added methods (group 2)
+    Scope (_SB.PCI0.LPCB)
+    {
+        Scope (EC0)
+        {
+            Method (RDBA, 0, Serialized)
+            {
+                Name (TEMP, Buffer(0x20) { })
+                Store (BA00, Index(TEMP, 0x00))
+                Store (BA01, Index(TEMP, 0x01))
+                Store (BA02, Index(TEMP, 0x02))
+                Store (BA03, Index(TEMP, 0x03))
+                Store (BA04, Index(TEMP, 0x04))
+                Store (BA05, Index(TEMP, 0x05))
+                Store (BA06, Index(TEMP, 0x06))
+                Store (BA07, Index(TEMP, 0x07))
+                Store (BA08, Index(TEMP, 0x08))
+                Store (BA09, Index(TEMP, 0x09))
+                Store (BA0A, Index(TEMP, 0x0A))
+                Store (BA0B, Index(TEMP, 0x0B))
+                Store (BA0C, Index(TEMP, 0x0C))
+                Store (BA0D, Index(TEMP, 0x0D))
+                Store (BA0E, Index(TEMP, 0x0E))
+                Store (BA0F, Index(TEMP, 0x0F))
+                Store (BA10, Index(TEMP, 0x10))
+                Store (BA11, Index(TEMP, 0x11))
+                Store (BA12, Index(TEMP, 0x12))
+                Store (BA13, Index(TEMP, 0x13))
+                Store (BA14, Index(TEMP, 0x14))
+                Store (BA15, Index(TEMP, 0x15))
+                Store (BA16, Index(TEMP, 0x16))
+                Store (BA17, Index(TEMP, 0x17))
+                Store (BA18, Index(TEMP, 0x18))
+                Store (BA19, Index(TEMP, 0x19))
+                Store (BA1A, Index(TEMP, 0x1A))
+                Store (BA1B, Index(TEMP, 0x1B))
+                Store (BA1C, Index(TEMP, 0x1C))
+                Store (BA1D, Index(TEMP, 0x1D))
+                Store (BA1E, Index(TEMP, 0x1E))
+                Store (BA1F, Index(TEMP, 0x1F))
+                Return (TEMP)
+            }
+            Method (WRBA, 1, Serialized)
+            {
+                Name (TEMP, Buffer(0x20) { })
+                Store (Arg0, TEMP)
+                Store (DerefOf(Index(TEMP, 0x00)), BA00)
+                Store (DerefOf(Index(TEMP, 0x01)), BA01)
+                Store (DerefOf(Index(TEMP, 0x02)), BA02)
+                Store (DerefOf(Index(TEMP, 0x03)), BA03)
+                Store (DerefOf(Index(TEMP, 0x04)), BA04)
+                Store (DerefOf(Index(TEMP, 0x05)), BA05)
+                Store (DerefOf(Index(TEMP, 0x06)), BA06)
+                Store (DerefOf(Index(TEMP, 0x07)), BA07)
+                Store (DerefOf(Index(TEMP, 0x08)), BA08)
+                Store (DerefOf(Index(TEMP, 0x09)), BA09)
+                Store (DerefOf(Index(TEMP, 0x0A)), BA0A)
+                Store (DerefOf(Index(TEMP, 0x0B)), BA0B)
+                Store (DerefOf(Index(TEMP, 0x0C)), BA0C)
+                Store (DerefOf(Index(TEMP, 0x0D)), BA0D)
+                Store (DerefOf(Index(TEMP, 0x0E)), BA0E)
+                Store (DerefOf(Index(TEMP, 0x0F)), BA0F)
+                Store (DerefOf(Index(TEMP, 0x10)), BA10)
+                Store (DerefOf(Index(TEMP, 0x11)), BA11)
+                Store (DerefOf(Index(TEMP, 0x12)), BA12)
+                Store (DerefOf(Index(TEMP, 0x13)), BA13)
+                Store (DerefOf(Index(TEMP, 0x14)), BA14)
+                Store (DerefOf(Index(TEMP, 0x15)), BA15)
+                Store (DerefOf(Index(TEMP, 0x16)), BA16)
+                Store (DerefOf(Index(TEMP, 0x17)), BA17)
+                Store (DerefOf(Index(TEMP, 0x18)), BA18)
+                Store (DerefOf(Index(TEMP, 0x19)), BA19)
+                Store (DerefOf(Index(TEMP, 0x1A)), BA1A)
+                Store (DerefOf(Index(TEMP, 0x1B)), BA1B)
+                Store (DerefOf(Index(TEMP, 0x1C)), BA1C)
+                Store (DerefOf(Index(TEMP, 0x1D)), BA1D)
+                Store (DerefOf(Index(TEMP, 0x1E)), BA1E)
+                Store (DerefOf(Index(TEMP, 0x1F)), BA1F)
+            }
+            Method (RDBB, 0, Serialized)
+            {
+                Name (TEMP, Buffer(0x20) { })
+                Store (BB00, Index(TEMP, 0x00))
+                Store (BB01, Index(TEMP, 0x01))
+                Store (BB02, Index(TEMP, 0x02))
+                Store (BB03, Index(TEMP, 0x03))
+                Store (BB04, Index(TEMP, 0x04))
+                Store (BB05, Index(TEMP, 0x05))
+                Store (BB06, Index(TEMP, 0x06))
+                Store (BB07, Index(TEMP, 0x07))
+                Store (BB08, Index(TEMP, 0x08))
+                Store (BB09, Index(TEMP, 0x09))
+                Store (BB0A, Index(TEMP, 0x0A))
+                Store (BB0B, Index(TEMP, 0x0B))
+                Store (BB0C, Index(TEMP, 0x0C))
+                Store (BB0D, Index(TEMP, 0x0D))
+                Store (BB0E, Index(TEMP, 0x0E))
+                Store (BB0F, Index(TEMP, 0x0F))
+                Store (BB10, Index(TEMP, 0x10))
+                Store (BB11, Index(TEMP, 0x11))
+                Store (BB12, Index(TEMP, 0x12))
+                Store (BB13, Index(TEMP, 0x13))
+                Store (BB14, Index(TEMP, 0x14))
+                Store (BB15, Index(TEMP, 0x15))
+                Store (BB16, Index(TEMP, 0x16))
+                Store (BB17, Index(TEMP, 0x17))
+                Store (BB18, Index(TEMP, 0x18))
+                Store (BB19, Index(TEMP, 0x19))
+                Store (BB1A, Index(TEMP, 0x1A))
+                Store (BB1B, Index(TEMP, 0x1B))
+                Store (BB1C, Index(TEMP, 0x1C))
+                Store (BB1D, Index(TEMP, 0x1D))
+                Store (BB1E, Index(TEMP, 0x1E))
+                Store (BB1F, Index(TEMP, 0x1F))
+                Return (TEMP)
+            }
+            Method (WRBB, 1, Serialized)
+            {
+                Name (TEMP, Buffer(0x20) { })
+                Store (Arg0, TEMP)
+                Store (DerefOf(Index(TEMP, 0x00)), BB00)
+                Store (DerefOf(Index(TEMP, 0x01)), BB01)
+                Store (DerefOf(Index(TEMP, 0x02)), BB02)
+                Store (DerefOf(Index(TEMP, 0x03)), BB03)
+                Store (DerefOf(Index(TEMP, 0x04)), BB04)
+                Store (DerefOf(Index(TEMP, 0x05)), BB05)
+                Store (DerefOf(Index(TEMP, 0x06)), BB06)
+                Store (DerefOf(Index(TEMP, 0x07)), BB07)
+                Store (DerefOf(Index(TEMP, 0x08)), BB08)
+                Store (DerefOf(Index(TEMP, 0x09)), BB09)
+                Store (DerefOf(Index(TEMP, 0x0A)), BB0A)
+                Store (DerefOf(Index(TEMP, 0x0B)), BB0B)
+                Store (DerefOf(Index(TEMP, 0x0C)), BB0C)
+                Store (DerefOf(Index(TEMP, 0x0D)), BB0D)
+                Store (DerefOf(Index(TEMP, 0x0E)), BB0E)
+                Store (DerefOf(Index(TEMP, 0x0F)), BB0F)
+                Store (DerefOf(Index(TEMP, 0x10)), BB10)
+                Store (DerefOf(Index(TEMP, 0x11)), BB11)
+                Store (DerefOf(Index(TEMP, 0x12)), BB12)
+                Store (DerefOf(Index(TEMP, 0x13)), BB13)
+                Store (DerefOf(Index(TEMP, 0x14)), BB14)
+                Store (DerefOf(Index(TEMP, 0x15)), BB15)
+                Store (DerefOf(Index(TEMP, 0x16)), BB16)
+                Store (DerefOf(Index(TEMP, 0x17)), BB17)
+                Store (DerefOf(Index(TEMP, 0x18)), BB18)
+                Store (DerefOf(Index(TEMP, 0x19)), BB19)
+                Store (DerefOf(Index(TEMP, 0x1A)), BB1A)
+                Store (DerefOf(Index(TEMP, 0x1B)), BB1B)
+                Store (DerefOf(Index(TEMP, 0x1C)), BB1C)
+                Store (DerefOf(Index(TEMP, 0x1D)), BB1D)
+                Store (DerefOf(Index(TEMP, 0x1E)), BB1E)
+                Store (DerefOf(Index(TEMP, 0x1F)), BB1F)
+            }
+        }
+    }
+}</code></pre><p>With all the nodes expanded in MaciASL, our work looks like this:<br><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fypvtw1v2ej30r10hr41s.jpg" alt=""></p>
 <h3 id="Resolving-errors"><a href="#Resolving-errors" class="headerlink" title="Resolving errors"></a>Resolving errors</h3><p>Now we need to start resolving errors by using External or defining the patched EC fields as necessary.<br>We can use the compiler to help.</p>
 <p>Clicking Compile will show the first error: “3, 6085, Object not found or not accessible from scope (_SB.PCI0)”<br>It is at this line:</p>
 <pre><code>Scope (_SB.PCI0)</code></pre><p>The compiler is indicating that _SB.PCI0 is not declared, so you can’t use it in a Scope operator.</p>
 <p>We need to declare it with External, as the scope is actually defined in another file (DSDT.aml):<br>Add it to the top of the file:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)</span><br><span class="line">{</span><br><span class="line">	External(_SB.PCI0, DeviceObj)</span><br><span class="line">	Scope (_SB.PCI0)</span><br><span class="line">	{</span><br><span class="line">...</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Now the next error is at “Scope(BAT0)”, so, again:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+{
+    External(_SB.PCI0, DeviceObj)
+    Scope (_SB.PCI0)
+    {
+...</code></pre><p>Now the next error is at “Scope(BAT0)”, so, again:</p>
 <pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
@@ -2795,24 +3507,23 @@ Else
     Store (Zero, Local0)
 FF74: 14 43 12 46 42 53 54 04 7B 69 0B FF FF 61 70 00  // .C.FBST.{i...ap.
 FF84: 60</code></pre><p>A potential rename patch (FBST-&gt;XBST):</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;46 42 53 54 04&gt;</span><br><span class="line">Replace: &lt;58 42 53 54 04&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>It is a good idea to verify that there is only one match for the Find hex data by searching for it in a hex editor such as Hex Fiend. Because the patch should ONLY apply to the method definition, not other code that may be present in the DSDT (or native SSDTs).</p>
+<pre><code>Find: &lt;46 42 53 54 04&gt;
+Replace: &lt;58 42 53 54 04&gt;</code></pre><p>It is a good idea to verify that there is only one match for the Find hex data by searching for it in a hex editor such as Hex Fiend. Because the patch should ONLY apply to the method definition, not other code that may be present in the DSDT (or native SSDTs).</p>
 <p>The target name you choose must be unique within the scope that the method resides. Creating a duplicate method will cause kernel panic. Changing the first letter to ‘X’ is usually ok, but no guarantee.</p>
 <p>Patches for the rest of the methods:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">_BIX-&gt;XBIX:</span><br><span class="line">Find: &lt;5F 42 49 58 00&gt;</span><br><span class="line">Replace: &lt;58 42 49 58 00&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BIFA-&gt;XIFA:</span><br><span class="line">Find: &lt;42 49 46 41 00&gt;</span><br><span class="line">Replace: &lt;58 49 46 41 00&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SMBR-&gt;XMBR:</span><br><span class="line">Find: &lt;53 4D 42 52 0B&gt;</span><br><span class="line">Replace: &lt;58 4D 42 52 0B&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SMBW-&gt;XMBW:</span><br><span class="line">Find: &lt;53 4D 42 57 0D&gt;</span><br><span class="line">Replace: &lt;58 4D 42 57 0D&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ECSB-&gt;XCSB:</span><br><span class="line">Find: &lt;45 43 53 42 07&gt;</span><br><span class="line">Replace: &lt;58 43 53 42 07&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">TACH-&gt;XACH:</span><br><span class="line">Find: &lt;54 41 43 48 09&gt;</span><br><span class="line">Replace: &lt;58 41 43 48 09&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>After adding those patches to config.plist/ACPI/DSDT/Patches, the methods in native DSDT will be renamed by Clover. And as a result of the renaming, the patched methods defined in SSDT-BATT.aml will override.</p>
+<pre><code>_BIX-&gt;XBIX:
+Find: &lt;5F 42 49 58 00&gt;
+Replace: &lt;58 42 49 58 00&gt;</code></pre><pre><code>BIFA-&gt;XIFA:
+Find: &lt;42 49 46 41 00&gt;
+Replace: &lt;58 49 46 41 00&gt;</code></pre><pre><code>SMBR-&gt;XMBR:
+Find: &lt;53 4D 42 52 0B&gt;
+Replace: &lt;58 4D 42 52 0B&gt;</code></pre><pre><code>SMBW-&gt;XMBW:
+Find: &lt;53 4D 42 57 0D&gt;
+Replace: &lt;58 4D 42 57 0D&gt;</code></pre><pre><code>ECSB-&gt;XCSB:
+Find: &lt;45 43 53 42 07&gt;
+Replace: &lt;58 43 53 42 07&gt;</code></pre><pre><code>TACH-&gt;XACH:
+Find: &lt;54 41 43 48 09&gt;
+Replace: &lt;58 41 43 48 09&gt;</code></pre><p>After adding those patches to config.plist/ACPI/DSDT/Patches, the methods in native DSDT will be renamed by Clover. And as a result of the renaming, the patched methods defined in SSDT-BATT.aml will override.</p>
 <h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Hotpatching for battery status is one of the most complex hotpatch tasks possible. The process of writing all the ‘External’ refernences is tedious and boring.</p>
 <p>It will take some time (several hours into the text you’re reading here). Do not rush it.</p>
 <h2 id="Disabling-discrete-switched-GPU-with-Hotpatch"><a href="#Disabling-discrete-switched-GPU-with-Hotpatch" class="headerlink" title="Disabling discrete/switched GPU with Hotpatch"></a>Disabling discrete/switched GPU with Hotpatch</h2><p>This third post is dedicated to hotpatching required for disabling the discrete GPU in a switched dual-GPU laptop, using the same example ACPI fils as the static patch guide.</p>
@@ -2976,9 +3687,7 @@ Scope(_SB.PCI0.LPCB.EC0)
 <p>But we still need to rename the original methods in native ACPI.</p>
 <h3 id="Renaming-the-methods"><a href="#Renaming-the-methods" class="headerlink" title="Renaming the methods"></a>Renaming the methods</h3><p>As mentioned earlier, the following methods need renaming:<br>_SB.PCI0.RP05.PEGP._INI -&gt; XINI<br>_SB.PCI0.RP05.PEGP._OFF -&gt; XOFF<br>_SB.PCI0.LPCB.EC0._REG -&gt; XREG</p>
 <p>To determine the binary patches needed, we need a mixed listing of DSDT.aml, SSDT-7.aml, and SSDT-8.aml.<br>Create with:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iasl -dl -l DSDT.aml SSDT-7.aml SSDT-8.aml</span><br></pre></td></tr></tbody></table></figure>
-
-<p>The resulting mixed listing is in DSDT.dsl, SSDT-7.dsl, and SSDT-8.dsl.</p>
+<pre><code>iasl -dl -l DSDT.aml SSDT-7.aml SSDT-8.aml</code></pre><p>The resulting mixed listing is in DSDT.dsl, SSDT-7.dsl, and SSDT-8.dsl.</p>
 <p>Here is the mixed listing for _REG in DSDT.dsl:<br>Code (Text):</p>
 <pre><code>        Method (_REG, 2, NotSerialized)  // _REG: Region Availability
         {
@@ -2997,9 +3706,8 @@ D2BF: A0 0B 93 68 0A 03                                // ...h..
     }
 D2C5: 70 69 45 43 46 4C</code></pre><p>The patch used should rename only this _REG, not other _REG methods in the ACPI set. We can rename it by grabbing the name/header plus a few bytes from the code.</p>
 <p>This pattern grabs enough bytes to be unique for sure:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;</span><br><span class="line">Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>And the mixed listing for the target _INI in SSDT-7.dsl:</p>
+<pre><code>Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;
+Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;</code></pre><p>And the mixed listing for the target _INI in SSDT-7.dsl:</p>
 <pre><code>        Method (_INI, 0, NotSerialized)  // _INI: Initialize
         {
 
@@ -3011,9 +3719,8 @@ D2C5: 70 69 45 43 46 4C</code></pre><p>The patch used should rename only this _R
 03D8: 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30  // p.\/._SB_PCI0RP0
 03E8: 35 50 45 47 50 5F 41 44 52                       // 5PEGP_ADR</code></pre><p>​            </p>
 <p>Resulting patch…</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;5F 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;</span><br><span class="line">Replace: &lt;58 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>And the _OFF in SSDT-8.dsl:</p>
+<pre><code>Find: &lt;5F 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;
+Replace: &lt;58 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;</code></pre><p>And the _OFF in SSDT-8.dsl:</p>
 <pre><code>    Method (_OFF, 0, Serialized)  // _OFF: Power Off
     {
 
@@ -3026,9 +3733,8 @@ D2C5: 70 69 45 43 46 4C</code></pre><p>The patch used should rename only this _R
 0333: A0 39 93 43 54 58 54 00 5C 2F 05 5F 53 42 5F 50  // .9.CTXT.\/._SB_P
 0343: 43 49 30 4C 50 43 42 45 43 30 5F 53 50 49 4E 0A  // CI0LPCBEC0_SPIN.
 0353: 96 00</code></pre><p> The patch…</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;5F 4F 46 46 08 A0 39 93 43 54 58 54&gt;</span><br><span class="line">Replace: &lt;58 4F 46 46 08 A0 39 93 43 54 58 54&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Note: Each of these patches could probably be reduced, but you would need to check carefully in all native DSDT and SSDTs for the Find pattern as you don’t want to match on any methods but the target methods. Because _REG, _INI and _OFF are very common names for methods in other scopes, we need to be careful.</p>
+<pre><code>Find: &lt;5F 4F 46 46 08 A0 39 93 43 54 58 54&gt;
+Replace: &lt;58 4F 46 46 08 A0 39 93 43 54 58 54&gt;</code></pre><p>Note: Each of these patches could probably be reduced, but you would need to check carefully in all native DSDT and SSDTs for the Find pattern as you don’t want to match on any methods but the target methods. Because _REG, _INI and _OFF are very common names for methods in other scopes, we need to be careful.</p>
 <h3 id="A-simple-example"><a href="#A-simple-example" class="headerlink" title="A simple example"></a>A simple example</h3><p>The files for the ASUS mentioned above were complex due to the need to patch _OFF, _INI, and _REG.</p>
 <p>But let’s take a look at an example that is much simpler. The files are for an Asus K550VX-DM406T, and they are attached to this post. Please download them so you can follow along.</p>
 <p>When we look at the _OFF method in SSDT-14, there is no EC related code. And it calls PGOF, but the PGOF method, defined in SSDT-3, also has no EC related code:</p>
@@ -3048,13 +3754,17 @@ D2C5: 70 69 45 43 46 4C</code></pre><p>The patch used should rename only this _R
 }</code></pre><p>This means _OFF can be called directly from an _INI.</p>
 <p>If you look at all the _INI methods in the ACPI set, you will find there is no _INI at the path of _OFF (_SB.PCI0.PEG0.PEGP). Which means we can simply add an SSDT that has an _INI at the correct path, and that _INI simply calls _OFF.</p>
 <p>It is a one-liner method:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)</span><br><span class="line">{</span><br><span class="line">	External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)</span><br><span class="line">	Method(_SB.PCI0.PEG0.PEGP._INI) { _OFF() }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Just as mentioned in the main discrete disable guide (static patch), sometimes you need to call _PS3 instead of _OFF. It is a trial and error process to determine which is best.</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
+{
+    External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
+    Method(_SB.PCI0.PEG0.PEGP._INI) { _OFF() }
+}</code></pre><p>Just as mentioned in the main discrete disable guide (static patch), sometimes you need to call _PS3 instead of _OFF. It is a trial and error process to determine which is best.</p>
 <p>Same code as above, but calling _PS3:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)</span><br><span class="line">{</span><br><span class="line">	External(_SB.PCI0.PEG0.PEGP._PS3, MethodObj)</span><br><span class="line">	Method(_SB.PCI0.PEG0.PEGP._INI) { _PS3() }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Save it as SSDT-DGPU.aml and the Nvidia should be disabled.</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
+{
+    External(_SB.PCI0.PEG0.PEGP._PS3, MethodObj)
+    Method(_SB.PCI0.PEG0.PEGP._INI) { _PS3() }
+}</code></pre><p>Save it as SSDT-DGPU.aml and the Nvidia should be disabled.</p>
 <p>The simple example turned not so simple</p>
 <p>Although the method mentioned above will usually work in this scenario (even with other laptops that present the same scenario: no EC access in _OFF path, no existing _INI at the path), this specific laptop needed additional patching in order to turn off the dedicated Nvidia fan.</p>
 <p>A little investigation was needed. As we can see by looking at the _OFF code, it calls PGOF(Zero) to do most of the work. And if we search for other examples of PGOF being called with Arg0==Zero, we find this code in SSDT-3.dsl:</p>
@@ -3085,12 +3795,28 @@ Method (FAOF, 0, Serialized)
 }</code></pre><p>And you can see it does a bunch of EC manipulations. Typically the EC controls the system fans, so this seems to confirm these methods are for “FAN ON”, and “FAN OFF”.</p>
 <p>Since these methods manipulate the EC, we cannot call FAOF without the EC being ready. To do that, we need to patch _REG.</p>
 <p>So, adding the necessary code to our SSDT:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)</span><br><span class="line">{</span><br><span class="line">	External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)</span><br><span class="line">	Method(_SB.PCI0.PEG0.PEGP._INI) { _OFF() }</span><br><span class="line">	External(_SB.PCI0.LPCB.EC0, DeviceObj)</span><br><span class="line">	External(_SB.PCI0.LPCB.EC0.XREG, MethodObj)</span><br><span class="line">	External(_SB.PCI0.PEG0.FAOF, MethodObj)</span><br><span class="line">	Scope(_SB.PCI0.LPCB.EC0)</span><br><span class="line">	{</span><br><span class="line">    	OperationRegion(RME3, EmbeddedControl, 0x00, 0xFF)</span><br><span class="line">    	Method(_REG, 2)</span><br><span class="line">    	{</span><br><span class="line">        	XREG(Arg0, Arg1) // call original _REG, now renamed XREG</span><br><span class="line">        	If (3 == Arg0 &amp;&amp; 1 == Arg1) // EC ready?</span><br><span class="line">        	{</span><br><span class="line">             	\_SB.PCI0.PEG0.FAOF() // turn dedicated Nvidia fan off</span><br><span class="line">        	}</span><br><span class="line">    	}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>And the patch we need to rename _REG to XREG (again, based on a mixed listing of DSDT.aml):</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03&gt;</span><br><span class="line">Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>With the patch in config.plist, EC0._REG is renamed XREG. The eventual call to _REG by the system lands in our modified _REG, which, in turn, calls the original _REG (renamed to XREG) and calls FAOF to turn the fan off.</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
+{
+    External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
+    Method(_SB.PCI0.PEG0.PEGP._INI) { _OFF() }
+    External(_SB.PCI0.LPCB.EC0, DeviceObj)
+    External(_SB.PCI0.LPCB.EC0.XREG, MethodObj)
+    External(_SB.PCI0.PEG0.FAOF, MethodObj)
+    Scope(_SB.PCI0.LPCB.EC0)
+    {
+        OperationRegion(RME3, EmbeddedControl, 0x00, 0xFF)
+        Method(_REG, 2)
+        {
+            XREG(Arg0, Arg1) // call original _REG, now renamed XREG
+            If (3 == Arg0 &amp;&amp; 1 == Arg1) // EC ready?
+            {
+                 \_SB.PCI0.PEG0.FAOF() // turn dedicated Nvidia fan off
+            }
+        }
+    }
+}</code></pre><p>And the patch we need to rename _REG to XREG (again, based on a mixed listing of DSDT.aml):</p>
+<pre><code>Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03&gt;
+Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</code></pre><p>With the patch in config.plist, EC0._REG is renamed XREG. The eventual call to _REG by the system lands in our modified _REG, which, in turn, calls the original _REG (renamed to XREG) and calls FAOF to turn the fan off.</p>
 <h3 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Hotpatching discrete GPU disable code is a bit simpler than battery status, but involves similar concepts.</p>
 <h2 id="Credits"><a href="#Credits" class="headerlink" title="Credits"></a>Credits</h2><p><a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config</a><br><a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p>
 <script>
@@ -3398,7 +4124,12 @@ Method (FAOF, 0, Serialized)
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            代码1234567891011121314151617181920212223242526272829303132////  main.c//  algorithm////  Created by athlonreg on 17/01/20
+                            代码//
+//  main.c
+//  algorithm
+//
+//  Created by athlonreg on 17/01/2018.
+//  Copyright © 2018 athlonreg. All rights rese
                         
                     </div>
                     <div class="publish-info">
@@ -3457,7 +4188,8 @@ Method (FAOF, 0, Serialized)
                         
                             Install macOS High Sierra on ASUS X455LD i5 4210u
 
-Laptop Configuration123456789101112131415161718Computer model &nbsp; 
+Laptop ConfigurationComputer model              Asus F455LD Notebook
+
                         
                     </div>
                     <div class="publish-info">
@@ -3550,8 +4282,6 @@ Laptop Configuration123456789101112131415161718Computer model &nbsp;
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -3674,7 +4404,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,14 +500,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    326
+                    318
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -522,21 +523,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="It’s-not-uncommon-developers-to-have-multiple-versions-of-Xcode-installed-For-example-I-typically-have-the-latest-beta-as-well-as-the-most-current-production-release-installed"><a href="#It’s-not-uncommon-developers-to-have-multiple-versions-of-Xcode-installed-For-example-I-typically-have-the-latest-beta-as-well-as-the-most-current-production-release-installed" class="headerlink" title="It’s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current production release installed."></a>It’s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current production release installed.</h2><p>However, there are times when you may want various tools, such as xcodebuild, to point to a specific Xcode folder. To faciliate this, you can use xcode-select. A common use case is if you use scripts and/or makefiles to build your projects.<br>Once you set the Xcode folder, xcodebuild will be invoked from the folder you specified.<br>The command line options are below:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xcode-select [-help]</span><br><span class="line">xcode-select [-switch xcode_folder_path]</span><br><span class="line">xcode-select [-print-path]</span><br><span class="line">xcode-select [-version]</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="Here-is-how-to-print-the-current-Xcode-path"><a href="#Here-is-how-to-print-the-current-Xcode-path" class="headerlink" title="Here is how to print the current Xcode path:"></a>Here is how to print the current Xcode path:</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ xcode-select --print-path</span><br><span class="line">/Developer/Applications/Xcode.app</span><br></pre></td></tr></tbody></table></figure>
-
-<p>Line number 2 shows the current version of Xcode that is ‘active.’ If you are accessing xcodebuild or other related tools from a script, –print-path is the preferred means to determine the current Xcode location.<br>Use the -switch option to change to another version of Xcode on your system:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo xcode-select --switch /Applications/Xcode-beta.app/Contents/Developer</span><br></pre></td></tr></tbody></table></figure>
-
-<p>This changes to the Xcode-beta 9 on my system. Note that root access is required to set the Xcode location, thus I have used sudo to execute the command as root.<br>Printing the path now looks as follows:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ xcode-select --print-path</span><br><span class="line">/Applications/Xcode-beta.app/Contents/Developer</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="To-switch-back-to-Xcode-installed-in-the-Applications-directory"><a href="#To-switch-back-to-Xcode-installed-in-the-Applications-directory" class="headerlink" title="To switch back to Xcode installed in the /Applications directory:"></a>To switch back to Xcode installed in the /Applications directory:</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo xcode-select -switch /Applications/Xcode.app/</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="You-can-read-more-about-xcode-select-by-view-the-man-page-from-a-terminal"><a href="#You-can-read-more-about-xcode-select-by-view-the-man-page-from-a-terminal" class="headerlink" title="You can read more about xcode-select by view the man page from a terminal:"></a>You can read more about xcode-select by view the man page from a terminal:</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ man xcode-select</span><br></pre></td></tr></tbody></table></figure>
-
-<script>
+<pre><code>xcode-select [-help]
+xcode-select [-switch xcode_folder_path]
+xcode-select [-print-path]
+xcode-select [-version]</code></pre><h2 id="Here-is-how-to-print-the-current-Xcode-path"><a href="#Here-is-how-to-print-the-current-Xcode-path" class="headerlink" title="Here is how to print the current Xcode path:"></a>Here is how to print the current Xcode path:</h2><pre><code>$ xcode-select --print-path
+/Developer/Applications/Xcode.app</code></pre><p>Line number 2 shows the current version of Xcode that is ‘active.’ If you are accessing xcodebuild or other related tools from a script, –print-path is the preferred means to determine the current Xcode location.<br>Use the -switch option to change to another version of Xcode on your system:</p>
+<pre><code>$ sudo xcode-select --switch /Applications/Xcode-beta.app/Contents/Developer</code></pre><p>This changes to the Xcode-beta 9 on my system. Note that root access is required to set the Xcode location, thus I have used sudo to execute the command as root.<br>Printing the path now looks as follows:</p>
+<pre><code>$ xcode-select --print-path
+/Applications/Xcode-beta.app/Contents/Developer</code></pre><h2 id="To-switch-back-to-Xcode-installed-in-the-Applications-directory"><a href="#To-switch-back-to-Xcode-installed-in-the-Applications-directory" class="headerlink" title="To switch back to Xcode installed in the /Applications directory:"></a>To switch back to Xcode installed in the /Applications directory:</h2><pre><code>$ sudo xcode-select -switch /Applications/Xcode.app/</code></pre><h2 id="You-can-read-more-about-xcode-select-by-view-the-man-page-from-a-terminal"><a href="#You-can-read-more-about-xcode-select-by-view-the-man-page-from-a-terminal" class="headerlink" title="You can read more about xcode-select by view the man page from a terminal:"></a>You can read more about xcode-select by view the man page from a terminal:</h2><pre><code>$ man xcode-select</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -863,12 +857,12 @@
                         <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/%E4%BD%8E%E7%A2%B3%E7%94%9F%E6%B4%BB%E7%AD%94%E9%A2%98%E9%97%AE%E9%A2%98/">
-                        <span class="chip bg-color">低碳生活答题问题</span>
-                    </a>
-                    
                     <a href="/tags/C%E8%AF%AD%E8%A8%80/">
                         <span class="chip bg-color">C语言</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BD%8E%E7%A2%B3%E7%94%9F%E6%B4%BB%E7%AD%94%E9%A2%98%E9%97%AE%E9%A2%98/">
+                        <span class="chip bg-color">低碳生活答题问题</span>
                     </a>
                     
                 </div>
@@ -993,8 +987,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1116,7 +1108,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -543,37 +544,71 @@
 <td>PHP 环境</td>
 </tr>
 </tbody></table>
-<h1 id="部署过程"><a href="#部署过程" class="headerlink" title="部署过程"></a>部署过程</h1><h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><h3 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</span></span><br><span class="line"><span class="comment"># rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span></span><br><span class="line"><span class="comment"># yum -y install libicu libicu-devel libicu-doc</span></span><br><span class="line"><span class="comment"># yum -y install php70w php70w-gd php70w-xml php70w-mysql php70w-mbstring php70w-ldap php70w-xmlrpc php70w-odbc php70w-pear php70w-soap php70w-snmp</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="安装PHPMailer"><a href="#安装PHPMailer" class="headerlink" title="安装PHPMailer"></a>安装PHPMailer</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/Synchro/PHPMailer/releases/tag/v5.2.13</span><br></pre></td></tr></tbody></table></figure>
-
-<p>下载解压到/var/www/html/mantis/PHPMailer-5.2.13/</p>
+<h1 id="部署过程"><a href="#部署过程" class="headerlink" title="部署过程"></a>部署过程</h1><h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><h3 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span>
+<span class="token comment" spellcheck="true"># yum -y install libicu libicu-devel libicu-doc</span>
+<span class="token comment" spellcheck="true"># yum -y install php70w php70w-gd php70w-xml php70w-mysql php70w-mbstring php70w-ldap php70w-xmlrpc php70w-odbc php70w-pear php70w-soap php70w-snmp</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="安装PHPMailer"><a href="#安装PHPMailer" class="headerlink" title="安装PHPMailer"></a>安装PHPMailer</h3><pre><code>https://github.com/Synchro/PHPMailer/releases/tag/v5.2.13</code></pre><p>下载解压到/var/www/html/mantis/PHPMailer-5.2.13/</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/0b/f7ba2cdc89ecb4edee3d7c32861ad1.jpg" alt=""></p>
 <h3 id="安装apache-mysql等必要软件"><a href="#安装apache-mysql等必要软件" class="headerlink" title="安装apache mysql等必要软件"></a>安装apache mysql等必要软件</h3><p>MySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm</span></span><br><span class="line"><span class="comment"># rpm -ivh mysql57-community-release-el7-9.noarch.rpm</span></span><br><span class="line"><span class="comment"># yum -y install mysql mysql-server mysql-devel</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># rpm -ivh mysql57-community-release-el7-9.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># yum -y install mysql mysql-server mysql-devel</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>启动MySQL服务</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl start mysqld</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl start mysqld</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>获取安装MySQL时的初始密码并登录MySQL</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># grep 'temporary password' /var/log/mysqld.log</span></span><br><span class="line"><span class="comment"># mysql -u root -p</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># grep 'temporary password' /var/log/mysqld.log</span>
+<span class="token comment" spellcheck="true"># mysql -u root -p</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4a/a001ae2bae5a494c7329cd78a477a3.jpg" alt=""></p>
 <p>登录成功后修改密码，首先修改安全策略为0，然后将密码长度限制修改为1，最后修改密码</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; set global validate_password_policy=0;</span><br><span class="line">mysql&gt; set global validate_password_length=1;</span><br><span class="line">mysql&gt; set password for root@localhost=password('root');</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> set global validate_password_policy=0;
+mysql> set global validate_password_length=1;
+mysql> set password for root@localhost=password('root');<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a2/0f74ed53f3a426d1fe005228478d8f.jpg" alt=""></p>
 <p>安装apache httpd</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install httpd</span></span><br><span class="line"><span class="comment"># systemctl enable httpd   //自启动</span></span><br><span class="line"><span class="comment"># systemctl start httpd    //启动</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install httpd</span>
+<span class="token comment" spellcheck="true"># systemctl enable httpd   //自启动</span>
+<span class="token comment" spellcheck="true"># systemctl start httpd    //启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="安装mantis"><a href="#安装mantis" class="headerlink" title="安装mantis"></a>安装mantis</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># cd /var/www/html</span>
+<span class="token comment" spellcheck="true"># wget https://jaist.dl.sourceforge.net/project/mantisbt/mantis-stable/2.18.0/mantisbt-2.18.0.zip</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="解压重命名"><a href="#解压重命名" class="headerlink" title="解压重命名"></a>解压重命名</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># tar zxvf mantisbt-2.16.0.tar.gz</span>
+<span class="token comment" spellcheck="true"># mv mantisbt-2.16.0 mantis</span>
+<span class="token comment" spellcheck="true"># mv mantis /var/www/html/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="修改用户组"><a href="#修改用户组" class="headerlink" title="修改用户组"></a>修改用户组</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># chown -R apache:apache /var/www/html/mantis</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token punctuation">[</span>root@centos-7 html<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># mysql -u root -p</span>
+Enter password:
+Welcome to the MySQL monitor.  Commands end with <span class="token punctuation">;</span> or \g.
+Your MySQL connection <span class="token function">id</span> is 8
+Server version: 5.7.23 MySQL Community Server <span class="token punctuation">(</span>GPL<span class="token punctuation">)</span>
 
-<h3 id="安装mantis"><a href="#安装mantis" class="headerlink" title="安装mantis"></a>安装mantis</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cd /var/www/html</span></span><br><span class="line"><span class="comment"># wget https://jaist.dl.sourceforge.net/project/mantisbt/mantis-stable/2.18.0/mantisbt-2.18.0.zip</span></span><br></pre></td></tr></tbody></table></figure>
+Copyright <span class="token punctuation">(</span>c<span class="token punctuation">)</span> 2000, 2018, Oracle and/or its affiliates. All rights reserved.
 
-<h4 id="解压重命名"><a href="#解压重命名" class="headerlink" title="解压重命名"></a>解压重命名</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># tar zxvf mantisbt-2.16.0.tar.gz</span></span><br><span class="line"><span class="comment"># mv mantisbt-2.16.0 mantis</span></span><br><span class="line"><span class="comment"># mv mantis /var/www/html/</span></span><br></pre></td></tr></tbody></table></figure>
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
 
-<h4 id="修改用户组"><a href="#修改用户组" class="headerlink" title="修改用户组"></a>修改用户组</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># chown -R apache:apache /var/www/html/mantis</span></span><br></pre></td></tr></tbody></table></figure>
+Type <span class="token string">'help;'</span> or <span class="token string">'\h'</span> <span class="token keyword">for</span> help. Type <span class="token string">'\c'</span> to <span class="token function">clear</span> the current input statement.
 
-<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">[root@centos-7 html]<span class="comment"># mysql -u root -p</span></span><br><span class="line">Enter password:</span><br><span class="line">Welcome to the MySQL monitor.  Commands end with ; or \g.</span><br><span class="line">Your MySQL connection id is 8</span><br><span class="line">Server version: 5.7.23 MySQL Community Server (GPL)</span><br><span class="line"></span><br><span class="line">Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.</span><br><span class="line"></span><br><span class="line">Oracle is a registered trademark of Oracle Corporation and/or its</span><br><span class="line">affiliates. Other names may be trademarks of their respective</span><br><span class="line">owners.</span><br><span class="line"></span><br><span class="line">Type <span class="string">'help;'</span> or <span class="string">'\h'</span> <span class="keyword">for</span> <span class="built_in">help</span>. Type <span class="string">'\c'</span> to clear the current input statement.</span><br><span class="line"></span><br><span class="line">mysql&gt; create database mantis;</span><br><span class="line">Query OK, 1 row affected (0.00 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; grant all privileges on mantis.* to root@localhost identified by <span class="string">'123456'</span>;</span><br><span class="line">ERROR 1819 (HY000): Your password does not satisfy the current policy requirements</span><br><span class="line">mysql&gt; <span class="built_in">set</span> global validate_password_policy=0;</span><br><span class="line">Query OK, 0 rows affected (0.00 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="built_in">set</span> global validate_password_length=1;</span><br><span class="line">Query OK, 0 rows affected (0.00 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; grant all privileges on mantis.* to root@localhost identified by <span class="string">'123456'</span>;</span><br><span class="line">Query OK, 0 rows affected, 1 warning (0.01 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; flush privileges;</span><br><span class="line">Query OK, 0 rows affected (0.00 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; <span class="built_in">exit</span></span><br><span class="line">Bye</span><br><span class="line">[root@centos-7 html]<span class="comment">#</span></span><br></pre></td></tr></tbody></table></figure>
+mysql<span class="token operator">></span> create database mantis<span class="token punctuation">;</span>
+Query OK, 1 row affected <span class="token punctuation">(</span>0.00 sec<span class="token punctuation">)</span>
 
+mysql<span class="token operator">></span> grant all privileges on mantis.* to root@localhost identified by <span class="token string">'123456'</span><span class="token punctuation">;</span>
+ERROR 1819 <span class="token punctuation">(</span>HY000<span class="token punctuation">)</span>: Your password does not satisfy the current policy requirements
+mysql<span class="token operator">></span> <span class="token keyword">set</span> global validate_password_policy<span class="token operator">=</span>0<span class="token punctuation">;</span>
+Query OK, 0 rows affected <span class="token punctuation">(</span>0.00 sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">></span> <span class="token keyword">set</span> global validate_password_length<span class="token operator">=</span>1<span class="token punctuation">;</span>
+Query OK, 0 rows affected <span class="token punctuation">(</span>0.00 sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">></span> grant all privileges on mantis.* to root@localhost identified by <span class="token string">'123456'</span><span class="token punctuation">;</span>
+Query OK, 0 rows affected, 1 warning <span class="token punctuation">(</span>0.01 sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">></span> flush privileges<span class="token punctuation">;</span>
+Query OK, 0 rows affected <span class="token punctuation">(</span>0.00 sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">></span> <span class="token keyword">exit</span>
+Bye
+<span class="token punctuation">[</span>root@centos-7 html<span class="token punctuation">]</span><span class="token comment" spellcheck="true">#</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>打开浏览器在地址栏输入 <a href="http://10.211.55.17:82/mantis" target="_blank" rel="noopener">http://10.211.55.17:82/mantis</a>  –  格式为 <code>http://IP:端口/mantis文件夹名称</code>，这时就会自动跳转到php安装向导的页面: </p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/13/430b174ae372e2c4854b5804123ab1.jpg" alt=""></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;填好主机、密码等信息之后点击 Install/Upgrade Database 安装数据库。</p>
@@ -582,11 +617,18 @@
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b1/c3e84af9570ae5c9d61d788d482a69.jpg" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f4/2302c64875ae7556c732820ffe6c2f.jpg" alt=""></p>
 <h2 id="邮件配置"><a href="#邮件配置" class="headerlink" title="邮件配置"></a>邮件配置</h2><p>修改MantisBT/config/config_inc.php文件</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$g_enable_email_notification = ON;</span><br><span class="line">$g_administrator_email = 'mailuser';    # 邮箱地址</span><br><span class="line">$g_webmaster_email = 'mailuser';        # 邮箱地址</span><br><span class="line">$g_from_email = 'mailuser';             # 邮箱地址</span><br><span class="line">$g_from_name = 'Mantis Bug Tracker';</span><br><span class="line">$g_phpMailer_method = PHPMAILER_METHOD_SMTP;</span><br><span class="line">$g_smtp_host = 'smtp.163.com';          # SMTP 服务器</span><br><span class="line">$g_smtp_username = 'mailuser';          # 邮箱地址</span><br><span class="line">$g_smtp_password = 'mailpwd';           # 邮箱密码</span><br><span class="line">$g_use_phpMailer = ON; </span><br><span class="line">$g_return_path_email = 'mailuser';      # 邮箱地址</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="中文配置"><a href="#中文配置" class="headerlink" title="中文配置"></a>中文配置</h2><p>修改/var/www/html/mantis/config_defaults_inc.php文件，在该文件中找到语言设置的地方，修改$g_default_language，将’english’改为’chinese_simplified’。懒得找的话直接复制下面的命令也可以。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sed -i -e "s/$g_default_language = 'auto'/$g_default_language = 'chinese_simplified'/g" /var/www/html/mantis/config_defaults_inc.php</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre><code>$g_enable_email_notification = ON;
+$g_administrator_email = 'mailuser';    # 邮箱地址
+$g_webmaster_email = 'mailuser';        # 邮箱地址
+$g_from_email = 'mailuser';             # 邮箱地址
+$g_from_name = 'Mantis Bug Tracker';
+$g_phpMailer_method = PHPMAILER_METHOD_SMTP;
+$g_smtp_host = 'smtp.163.com';          # SMTP 服务器
+$g_smtp_username = 'mailuser';          # 邮箱地址
+$g_smtp_password = 'mailpwd';           # 邮箱密码
+$g_use_phpMailer = ON; 
+$g_return_path_email = 'mailuser';      # 邮箱地址</code></pre><h2 id="中文配置"><a href="#中文配置" class="headerlink" title="中文配置"></a>中文配置</h2><p>修改/var/www/html/mantis/config_defaults_inc.php文件，在该文件中找到语言设置的地方，修改$g_default_language，将’english’改为’chinese_simplified’。懒得找的话直接复制下面的命令也可以。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># sed -i -e "s/$g_default_language = 'auto'/$g_default_language = 'chinese_simplified'/g" /var/www/html/mantis/config_defaults_inc.php</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/17/52f55640c0580b49bb51e81728e32b.jpg" alt=""></p>
 <h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h1><p>问题描述：配置完成后，无法发送邮件。</p>
 <p>解决方法：<br>邮箱配置问题，添加本地邮箱服务器，设置本地邮箱，对于本地测试邮箱，设置$g_smtp_host=本地IP地址。</p>
@@ -1112,8 +1154,6 @@ print实
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1235,7 +1275,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

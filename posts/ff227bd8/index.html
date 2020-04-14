@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    157
+                    153
                 </div>
                 
 
@@ -524,28 +525,20 @@
                 <h3 id="实现-MAC-原生读写-NTFS-分区"><a href="#实现-MAC-原生读写-NTFS-分区" class="headerlink" title="实现 MAC 原生读写 NTFS 分区"></a>实现 MAC 原生读写 NTFS 分区</h3><blockquote>
 <p>打开终端，输入命令</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ diskutil list</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>$ diskutil list</code></pre><blockquote>
 <p>输入命令</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim /etc/fstab</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>$ sudo vim /etc/fstab</code></pre><blockquote>
 <p>编辑内容如下</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse</code></pre><blockquote>
 <p>注意</p>
 </blockquote>
 <p>**<code>Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code>Win\040Ntfs\040Drive</code> 这一串出现在<code>diskutil list</code>那个屏幕里面</p>
 <blockquote>
 <p>最后一步</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ln -s /Volumes ~/Desktop/Volumes</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="Credit"><a href="#Credit" class="headerlink" title="Credit"></a>Credit</h3><blockquote>
+<pre><code>$ sudo ln -s /Volumes ~/Desktop/Volumes</code></pre><h3 id="Credit"><a href="#Credit" class="headerlink" title="Credit"></a>Credit</h3><blockquote>
 <p>转自<a href="https://www.waitsun.com" target="_blank" rel="noopener">爱情守望者</a></p>
 <p>转载请注明<a href="https://www.waitsun.com/aboutus/help" target="_blank" rel="noopener">原帖地址</a></p>
 </blockquote>
@@ -1003,8 +996,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1126,7 +1117,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

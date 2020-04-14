@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -495,7 +496,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    288
+                    281
                 </div>
                 
 
@@ -517,35 +518,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="CentOS-安装-GitLab"><a href="#CentOS-安装-GitLab" class="headerlink" title="CentOS 安装 GitLab"></a>CentOS 安装 GitLab</h2><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install curl</span></span><br><span class="line"><span class="comment"># yum -y install postfix</span></span><br><span class="line"><span class="comment"># systemctl start postfix</span></span><br><span class="line"><span class="comment"># systemctl enable postfix</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="下载-GitLab-的-RPM-包"><a href="#下载-GitLab-的-RPM-包" class="headerlink" title="下载 GitLab 的 RPM 包"></a>下载 GitLab 的 RPM 包</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-11.7.0-ce.0.el7.x86_64.rpm</span></span><br></pre></td></tr></tbody></table></figure>
-
+                <h2 id="CentOS-安装-GitLab"><a href="#CentOS-安装-GitLab" class="headerlink" title="CentOS 安装 GitLab"></a>CentOS 安装 GitLab</h2><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install curl</span>
+<span class="token comment" spellcheck="true"># yum -y install postfix</span>
+<span class="token comment" spellcheck="true"># systemctl start postfix</span>
+<span class="token comment" spellcheck="true"># systemctl enable postfix</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="下载-GitLab-的-RPM-包"><a href="#下载-GitLab-的-RPM-包" class="headerlink" title="下载 GitLab 的 RPM 包"></a>下载 GitLab 的 RPM 包</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-11.7.0-ce.0.el7.x86_64.rpm</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在<a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/</a>找自己需要的版本，下载到本地，然后安装即可</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rpm -ivh  gitlab-ce-11.7.0-ce.0.el7.x86_64.rpm</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># rpm -ivh  gitlab-ce-11.7.0-ce.0.el7.x86_64.rpm</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>也可以这样</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum localinstall gitlab-ce-11.7.0-ce.0.el7.x86_64.rpm</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum localinstall gitlab-ce-11.7.0-ce.0.el7.x86_64.rpm</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="配置-gitlab-repo"><a href="#配置-gitlab-repo" class="headerlink" title="配置 gitlab repo"></a>配置 gitlab repo</h2><p>为了后续升级方便，建议添加<code>gitlab</code>的<code>repo</code>源</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sh</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h2 id="端口修改"><a href="#端口修改" class="headerlink" title="端口修改"></a>端口修改</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/gitlab/gitlab.rb</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="端口修改"><a href="#端口修改" class="headerlink" title="端口修改"></a>端口修改</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /etc/gitlab/gitlab.rb</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改下面的属性</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">external_url</span> <span class="string">'http://devops.iamzhl.top:8090'</span></span><br><span class="line"><span class="meta">unicorn['port']</span> = <span class="string">8070</span></span><br><span class="line"><span class="meta">nginx['listen_port']</span> = <span class="string">8090</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">external_url</span> <span class="token attr-value">'http://devops.iamzhl.top:8090'</span>
+<span class="token attr-name">unicorn['port']</span> <span class="token punctuation">=</span> <span class="token attr-value">8070</span>
+<span class="token attr-name">nginx['listen_port']</span> <span class="token punctuation">=</span> <span class="token attr-value">8090</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><em>请根据个人需要进行定制</em></p>
-<h2 id="重新部署并重启"><a href="#重新部署并重启" class="headerlink" title="重新部署并重启"></a>重新部署并重启</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab-ctl reconfigure</span></span><br><span class="line"><span class="comment"># gitlab-ctl restart</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="设置页面嵌套支持"><a href="#设置页面嵌套支持" class="headerlink" title="设置页面嵌套支持"></a>设置页面嵌套支持</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /var/opt/gitlab/nginx/conf/gitlab-http.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="重新部署并重启"><a href="#重新部署并重启" class="headerlink" title="重新部署并重启"></a>重新部署并重启</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># gitlab-ctl reconfigure</span>
+<span class="token comment" spellcheck="true"># gitlab-ctl restart</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="设置页面嵌套支持"><a href="#设置页面嵌套支持" class="headerlink" title="设置页面嵌套支持"></a>设置页面嵌套支持</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /var/opt/gitlab/nginx/conf/gitlab-http.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fzqr3dsb7gj31p818kgzc.jpg" alt=""></p>
 <p>如图，添加标注的属性设置后重启<code>GitLab</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab-ctl restart</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># gitlab-ctl restart</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -843,7 +838,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安装 Ruby 2.41234567891011yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel 
+                            安装 Ruby 2.4yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel
                         
                     </div>
                     <div class="publish-info">
@@ -1002,8 +997,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1125,7 +1118,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

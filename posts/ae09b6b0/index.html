@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    790
+                    787
                 </div>
                 
 
@@ -526,15 +527,89 @@
 <p>   某批警察叔叔正在进行智力训练：</p>
 <pre><code>12 3 4 5 6 7 8 9 =110;</code></pre><p>​    请看上边的算式，为了使等式成立，需要在数字间填入加号或者减号（可以不填，但不能填入其它符号）。之间没有填入符号的数字组合成一个数，例如：12+34+56+7-8+9 就是一种合格的填法；123+4+5+67-89 是另一个可能的答案。</p>
 <p>​    请你利用计算机的优势，帮助警察叔叔快速找到所有答案。</p>
-<pre><code>每个答案占一行。形如：</code></pre><ul>
+<pre><code>   每个答案占一行。形如：</code></pre><ul>
 <li><p>12+34+56+7-8+9</p>
 </li>
 <li><p>123+4+5+67-89</p>
 </li>
 </ul>
 <h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>1、一共九个数字，八个操作符；<br>2、每个操作符有三种情况，即留空、加或者减，分别用0、1和2表示；<br>3、共有 3^8 种情况，遍历每种情况判断输出；<br>4、需要注意的是留空和’+’、’-‘需要分开处理，因为留空之后需要将其前后的数据连在一起。<br>5、以12+34+56+7-8+9为例，给和sum赋初值为0，第一次循环操作符为留空，需要先加上第一位的1，然后进行这一次运算，即1x10+2，然后下一次循环操作符为+，需要计算的就是12+3，同理在3、4之间的空需要计算的是3x10+4，而不是（12+3）x10+4，所以需要一个临时变量来记录上次的操作数，还需要一个变量来记录上次的操作符将上次的结果进行统计处理，原因就在于我们无法确定下次的操作符是不是留空。<br>6、由于我们在统计和时，只有在下一次循环才能处理最后一个操作数，所以需要将9最后单独处理。 </p>
-<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt; </span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">9</span>]={<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>};</span><br><span class="line">	<span class="keyword">int</span> sum; </span><br><span class="line">	<span class="keyword">int</span> temp; </span><br><span class="line">	<span class="keyword">int</span> oper,lastoper;  </span><br><span class="line">    <span class="keyword">int</span> number; </span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="built_in">pow</span>(<span class="number">3</span>,<span class="number">8</span>);i++)  </span><br><span class="line">    {  </span><br><span class="line">        sum=<span class="number">0</span>; </span><br><span class="line">		temp=<span class="number">1</span>; </span><br><span class="line">		lastoper=<span class="number">1</span>;  </span><br><span class="line">        number=i;  </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=<span class="number">8</span>;j++)  </span><br><span class="line">        {  <span class="comment">//操作八次 </span></span><br><span class="line">            oper=number%<span class="number">3</span>; </span><br><span class="line">			number=number/<span class="number">3</span>;  </span><br><span class="line">            </span><br><span class="line">			<span class="keyword">if</span> (!oper) </span><br><span class="line">				temp=temp*<span class="number">10</span>+a[j];  <span class="comment">//留空单独处理 </span></span><br><span class="line">				</span><br><span class="line">            <span class="keyword">if</span> (oper==<span class="number">1</span>) {  <span class="comment">//当前操作符 </span></span><br><span class="line">                <span class="keyword">if</span>(lastoper==<span class="number">1</span>){ <span class="comment">//前一次操作符 </span></span><br><span class="line">					sum=sum+temp; </span><br><span class="line">					temp=a[j];</span><br><span class="line">				}  </span><br><span class="line">                <span class="keyword">if</span>(lastoper==<span class="number">2</span>){</span><br><span class="line">					sum=sum-temp; </span><br><span class="line">					temp=a[j];</span><br><span class="line">				}  </span><br><span class="line">                lastoper=oper;  <span class="comment">//更新上次操作符 </span></span><br><span class="line">            }  </span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span>(oper==<span class="number">2</span>){  </span><br><span class="line">                <span class="keyword">if</span>(lastoper==<span class="number">1</span>){</span><br><span class="line">					sum=sum+temp; </span><br><span class="line">					temp=a[j];</span><br><span class="line">				}  </span><br><span class="line">                <span class="keyword">if</span>(lastoper==<span class="number">2</span>){</span><br><span class="line">					sum=sum-temp; </span><br><span class="line">					temp=a[j];</span><br><span class="line">				}  </span><br><span class="line">                lastoper=oper;  </span><br><span class="line">            }  </span><br><span class="line">        }  </span><br><span class="line">  </span><br><span class="line">        <span class="keyword">if</span>(lastoper==<span class="number">1</span>) 	<span class="comment">//第九次操作单独处理 </span></span><br><span class="line">			sum=sum+temp;  </span><br><span class="line">        <span class="keyword">if</span>(lastoper==<span class="number">2</span>) </span><br><span class="line">			sum=sum-temp;     </span><br><span class="line">  </span><br><span class="line">        <span class="keyword">if</span>(sum==<span class="number">110</span>)  </span><br><span class="line">        {  </span><br><span class="line">            number=i;  </span><br><span class="line">            <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=<span class="number">8</span>;j++)  </span><br><span class="line">            {  </span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d"</span>,a[j<span class="number">-1</span>]);  </span><br><span class="line">                oper=number%<span class="number">3</span>; </span><br><span class="line">				number=number/<span class="number">3</span>;  </span><br><span class="line">                <span class="keyword">if</span>(oper==<span class="number">1</span>) </span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">"+"</span>);  </span><br><span class="line">                <span class="keyword">if</span>(oper==<span class="number">2</span>) </span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">"-"</span>);</span><br><span class="line">				<span class="keyword">else</span></span><br><span class="line">					<span class="keyword">continue</span>;</span><br><span class="line">            }             </span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"9\n"</span>);  </span><br><span class="line">        }  </span><br><span class="line">    }</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;math.h></span> </span>
 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> sum<span class="token punctuation">;</span> 
+    <span class="token keyword">int</span> temp<span class="token punctuation">;</span> 
+    <span class="token keyword">int</span> oper<span class="token punctuation">,</span>lastoper<span class="token punctuation">;</span>  
+    <span class="token keyword">int</span> number<span class="token punctuation">;</span> 
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>  
+    <span class="token punctuation">{</span>  
+        sum<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> 
+        temp<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> 
+        lastoper<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>  
+        number<span class="token operator">=</span>i<span class="token punctuation">;</span>  
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span><span class="token number">8</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>  
+        <span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//操作八次 </span>
+            oper<span class="token operator">=</span>number<span class="token operator">%</span><span class="token number">3</span><span class="token punctuation">;</span> 
+            number<span class="token operator">=</span>number<span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">;</span>  
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>oper<span class="token punctuation">)</span> 
+                temp<span class="token operator">=</span>temp<span class="token operator">*</span><span class="token number">10</span><span class="token operator">+</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//留空单独处理 </span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>oper<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//当前操作符 </span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>lastoper<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//前一次操作符 </span>
+                    sum<span class="token operator">=</span>sum<span class="token operator">+</span>temp<span class="token punctuation">;</span> 
+                    temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>  
+                <span class="token keyword">if</span><span class="token punctuation">(</span>lastoper<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    sum<span class="token operator">=</span>sum<span class="token operator">-</span>temp<span class="token punctuation">;</span> 
+                    temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>  
+                lastoper<span class="token operator">=</span>oper<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//更新上次操作符 </span>
+            <span class="token punctuation">}</span>  
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>oper<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  
+                <span class="token keyword">if</span><span class="token punctuation">(</span>lastoper<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    sum<span class="token operator">=</span>sum<span class="token operator">+</span>temp<span class="token punctuation">;</span> 
+                    temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>  
+                <span class="token keyword">if</span><span class="token punctuation">(</span>lastoper<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    sum<span class="token operator">=</span>sum<span class="token operator">-</span>temp<span class="token punctuation">;</span> 
+                    temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>  
+                lastoper<span class="token operator">=</span>oper<span class="token punctuation">;</span>  
+            <span class="token punctuation">}</span>  
+        <span class="token punctuation">}</span>  
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>lastoper<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true">//第九次操作单独处理 </span>
+            sum<span class="token operator">=</span>sum<span class="token operator">+</span>temp<span class="token punctuation">;</span>  
+        <span class="token keyword">if</span><span class="token punctuation">(</span>lastoper<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span> 
+            sum<span class="token operator">=</span>sum<span class="token operator">-</span>temp<span class="token punctuation">;</span>     
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>sum<span class="token operator">==</span><span class="token number">110</span><span class="token punctuation">)</span>  
+        <span class="token punctuation">{</span>  
+            number<span class="token operator">=</span>i<span class="token punctuation">;</span>  
+            <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span><span class="token number">8</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>  
+            <span class="token punctuation">{</span>  
+                <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+                oper<span class="token operator">=</span>number<span class="token operator">%</span><span class="token number">3</span><span class="token punctuation">;</span> 
+                number<span class="token operator">=</span>number<span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">;</span>  
+                <span class="token keyword">if</span><span class="token punctuation">(</span>oper<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span> 
+                    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"+"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+                <span class="token keyword">if</span><span class="token punctuation">(</span>oper<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span> 
+                    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"-"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">else</span>
+                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>             
+            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"9\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token punctuation">}</span>  
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h1><p><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fypyfpkfu0j32701f6ne8.jpg" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -994,8 +1069,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1117,7 +1190,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

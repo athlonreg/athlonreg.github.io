@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -507,7 +508,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    197
+                    214
                 </div>
                 
 
@@ -529,11 +530,51 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /usr/lib/systemd/system/tomcat.service</span></span><br><span class="line">[Unit]</span><br><span class="line">Description=Tomcat</span><br><span class="line">After=network.target</span><br><span class="line">  </span><br><span class="line">[Service]</span><br><span class="line">Type=oneshot</span><br><span class="line">ExecStart=/usr/<span class="built_in">local</span>/tomcat/bin/startup.sh</span><br><span class="line">ExecStop=/usr/<span class="built_in">local</span>/tomcat/bin/shutdown.sh</span><br><span class="line">ExecReload=/bin/<span class="built_in">kill</span> -s HUP <span class="variable">$MAINPID</span></span><br><span class="line">RemainAfterExit=yes</span><br><span class="line"> </span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># /usr/lib/systemd/system/tomcat.service</span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+Description<span class="token operator">=</span>Tomcat
+After<span class="token operator">=</span>network.target
 
-<h2 id="SonarQube"><a href="#SonarQube" class="headerlink" title="SonarQube"></a>SonarQube</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /usr/lib/systemd/system/sonar.service</span></span><br><span class="line">[Unit]</span><br><span class="line">Description=SonarQube</span><br><span class="line">After=network.target</span><br><span class="line">  </span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStart=/usr/<span class="built_in">local</span>/sonarqube-7.5/bin/linux-x86-64/sonar.sh start</span><br><span class="line">ExecStop=/usr/<span class="built_in">local</span>/sonarqube-7.5/bin/linux-x86-64/sonar.sh stop</span><br><span class="line">ExecReload=/usr/<span class="built_in">local</span>/sonarqube-7.5/bin/linux-x86-64/sonar.sh restart</span><br><span class="line">User=sonar</span><br><span class="line">Group=sonar</span><br><span class="line"> </span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">Alias=sonarqube</span><br></pre></td></tr></tbody></table></figure>
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+Type<span class="token operator">=</span>oneshot
+ExecStart<span class="token operator">=</span>/usr/local/tomcat/bin/startup.sh
+ExecStop<span class="token operator">=</span>/usr/local/tomcat/bin/shutdown.sh
+ExecReload<span class="token operator">=</span>/bin/kill -s HUP <span class="token variable">$MAINPID</span>
+RemainAfterExit<span class="token operator">=</span>yes
 
-<h2 id="Gerrit-Code-Review"><a href="#Gerrit-Code-Review" class="headerlink" title="Gerrit Code Review"></a>Gerrit Code Review</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /usr/lib/systemd/system/gerrit.service</span></span><br><span class="line">[Unit]</span><br><span class="line">Description=Gerrit Code Review</span><br><span class="line">After=network.target httpd.service</span><br><span class="line">  </span><br><span class="line">[Service]</span><br><span class="line">Type=oneshot</span><br><span class="line">RemainAfterExit=yes</span><br><span class="line">ExecStart=/usr/<span class="built_in">local</span>/review_site/bin/gerrit.sh start</span><br><span class="line">ExecStop=/usr/<span class="built_in">local</span>/review_site/bin/gerrit.sh stop</span><br><span class="line">ExecReload=/usr/<span class="built_in">local</span>/review_site/bin/gerrit.sh restart</span><br><span class="line"> </span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></tbody></table></figure><script>
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+WantedBy<span class="token operator">=</span>multi-user.target<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="SonarQube"><a href="#SonarQube" class="headerlink" title="SonarQube"></a>SonarQube</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># /usr/lib/systemd/system/sonar.service</span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+Description<span class="token operator">=</span>SonarQube
+After<span class="token operator">=</span>network.target
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+Type<span class="token operator">=</span>forking
+ExecStart<span class="token operator">=</span>/usr/local/sonarqube-7.5/bin/linux-x86-64/sonar.sh start
+ExecStop<span class="token operator">=</span>/usr/local/sonarqube-7.5/bin/linux-x86-64/sonar.sh stop
+ExecReload<span class="token operator">=</span>/usr/local/sonarqube-7.5/bin/linux-x86-64/sonar.sh restart
+User<span class="token operator">=</span>sonar
+Group<span class="token operator">=</span>sonar
+
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+WantedBy<span class="token operator">=</span>multi-user.target
+Alias<span class="token operator">=</span>sonarqube<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Gerrit-Code-Review"><a href="#Gerrit-Code-Review" class="headerlink" title="Gerrit Code Review"></a>Gerrit Code Review</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># /usr/lib/systemd/system/gerrit.service</span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+Description<span class="token operator">=</span>Gerrit Code Review
+After<span class="token operator">=</span>network.target httpd.service
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+Type<span class="token operator">=</span>oneshot
+RemainAfterExit<span class="token operator">=</span>yes
+ExecStart<span class="token operator">=</span>/usr/local/review_site/bin/gerrit.sh start
+ExecStop<span class="token operator">=</span>/usr/local/review_site/bin/gerrit.sh stop
+ExecReload<span class="token operator">=</span>/usr/local/review_site/bin/gerrit.sh restart
+
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+WantedBy<span class="token operator">=</span>multi-user.target<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -842,7 +883,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Dockerfile12345678910111213FROM centos:7ENV container dockerRUN (cd /lib/systemd/system/sysinit.target.wants/; for i in 
+                            DockerfileFROM centos:7
+ENV container docker
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
                         
                     </div>
                     <div class="publish-info">
@@ -902,12 +945,13 @@
                             
 编辑 nginx 配置文件
 
-1vim /etc/nginx/nginx.conf
-
+vim /etc/nginx/nginx.conf
 
 在 http 下面加入以下配置
 
-123autoindex on;autoindex_exact_size off;autoindex_localti
+autoindex on;
+autoindex_exact_size off;
+autoindex_localtime 
                         
                     </div>
                     <div class="publish-info">
@@ -1000,8 +1044,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1124,7 +1166,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

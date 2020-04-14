@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -498,7 +499,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    5 分
                 </div>
                 
 
@@ -514,50 +515,176 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>OpenLDAP 是轻型目录访问协议<code>Lightweight Directory Access Protocol</code> - <code>LDAP</code>的自由和开源的实现，在其<code>OpenLDAP</code>许可证下发行，并已经被包含在众多流行的<code>Linux</code>发行版中。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cd ~</span></span><br><span class="line"><span class="comment"># yum -y install openldap-servers openldap-clients</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># cd ~</span>
+<span class="token comment" spellcheck="true"># yum -y install openldap-servers openldap-clients</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/1c/02ad1e703c7187295361dbff3fad9c.jpg" alt=""></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG</span></span><br><span class="line"><span class="comment"># chown ldap:ldap /var/lib/ldap/DB_CONFIG</span></span><br><span class="line"><span class="comment"># systemctl start slapd</span></span><br><span class="line"><span class="comment"># systemctl enable slapd</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># slappasswd</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG</span>
+<span class="token comment" spellcheck="true"># chown ldap:ldap /var/lib/ldap/DB_CONFIG</span>
+<span class="token comment" spellcheck="true"># systemctl start slapd</span>
+<span class="token comment" spellcheck="true"># systemctl enable slapd</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># slappasswd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/75/c5c970bd59e02ac7434f217a5f27a6.jpg" alt=""></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi chrootpw.ldif</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># specify the password generated above for "olcRootPW" section</span></span><br><span class="line"><span class="attr">dn</span>: <span class="string">olcDatabase={0}config,cn=config</span></span><br><span class="line"><span class="attr">changetype</span>: <span class="string">modify</span></span><br><span class="line"><span class="attr">add</span>: <span class="string">olcRootPW</span></span><br><span class="line"><span class="attr">olcRootPW</span>: <span class="string">{SSHA}xxxxxxxxxxxxxxxxxxxxxxxx</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ldapadd -Y EXTERNAL -H ldapi:/// -f chrootpw.ldif</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="导入基本模式"><a href="#导入基本模式" class="headerlink" title="导入基本模式"></a>导入基本模式</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/cosine.ldif </span></span><br><span class="line"><span class="comment"># ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/nis.ldif </span></span><br><span class="line"><span class="comment"># ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="在ldap的DB中设置域名"><a href="#在ldap的DB中设置域名" class="headerlink" title="在ldap的DB中设置域名"></a>在ldap的DB中设置域名</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># slappasswd</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi chrootpw.ldif</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># specify the password generated above for "olcRootPW" section</span>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">olcDatabase={0}config,cn=config</span>
+<span class="token attr-name">changetype</span><span class="token punctuation">:</span> <span class="token attr-value">modify</span>
+<span class="token attr-name">add</span><span class="token punctuation">:</span> <span class="token attr-value">olcRootPW</span>
+<span class="token attr-name">olcRootPW</span><span class="token punctuation">:</span> <span class="token attr-value">{SSHA}xxxxxxxxxxxxxxxxxxxxxxxx</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># ldapadd -Y EXTERNAL -H ldapi:/// -f chrootpw.ldif </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="导入基本模式"><a href="#导入基本模式" class="headerlink" title="导入基本模式"></a>导入基本模式</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/cosine.ldif </span>
+<span class="token comment" spellcheck="true"># ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/nis.ldif </span>
+<span class="token comment" spellcheck="true"># ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="在ldap的DB中设置域名"><a href="#在ldap的DB中设置域名" class="headerlink" title="在ldap的DB中设置域名"></a>在ldap的DB中设置域名</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># slappasswd </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/de/9a4502a39d572493b8ae8d723a08ef.jpg" alt=""></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi chdomain.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi chdomain.ldif</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># replace to your own domain name for "dc=***,dc=***" section</span>
+<span class="token comment" spellcheck="true"># specify the password generated above for "olcRootPW" section</span>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">olcDatabase={1}monitor,cn=config</span>
+<span class="token attr-name">changetype</span><span class="token punctuation">:</span> <span class="token attr-value">modify</span>
+<span class="token attr-name">replace</span><span class="token punctuation">:</span> <span class="token attr-value">olcAccess</span>
+<span class="token attr-name">olcAccess</span><span class="token punctuation">:</span> <span class="token attr-value">{0}to * by dn.base="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth"</span>
+<span class="token attr-name">  read</span> <span class="token attr-value">by dn.base="cn=Manager,dc=iamzhl,dc=top" read by * none</span>
 
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># replace to your own domain name for "dc=***,dc=***" section</span></span><br><span class="line"><span class="comment"># specify the password generated above for "olcRootPW" section</span></span><br><span class="line"><span class="attr">dn</span>: <span class="string">olcDatabase={1}monitor,cn=config</span></span><br><span class="line"><span class="attr">changetype</span>: <span class="string">modify</span></span><br><span class="line"><span class="attr">replace</span>: <span class="string">olcAccess</span></span><br><span class="line"><span class="attr">olcAccess</span>: <span class="string">{0}to * by dn.base="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth"</span></span><br><span class="line">  <span class="attr">read</span> <span class="string">by dn.base="cn=Manager,dc=iamzhl,dc=top" read by * none</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">olcDatabase={2}hdb,cn=config</span></span><br><span class="line"><span class="attr">changetype</span>: <span class="string">modify</span></span><br><span class="line"><span class="attr">replace</span>: <span class="string">olcSuffix</span></span><br><span class="line"><span class="attr">olcSuffix</span>: <span class="string">dc=iamzhl,dc=top</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">olcDatabase={2}hdb,cn=config</span></span><br><span class="line"><span class="attr">changetype</span>: <span class="string">modify</span></span><br><span class="line"><span class="attr">replace</span>: <span class="string">olcRootDN</span></span><br><span class="line"><span class="attr">olcRootDN</span>: <span class="string">cn=Manager,dc=iamzhl,dc=top</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">olcDatabase={2}hdb,cn=config</span></span><br><span class="line"><span class="attr">changetype</span>: <span class="string">modify</span></span><br><span class="line"><span class="attr">add</span>: <span class="string">olcRootPW</span></span><br><span class="line"><span class="attr">olcRootPW</span>: <span class="string">{SSHA}xxxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">olcDatabase={2}hdb,cn=config</span></span><br><span class="line"><span class="attr">changetype</span>: <span class="string">modify</span></span><br><span class="line"><span class="attr">add</span>: <span class="string">olcAccess</span></span><br><span class="line"><span class="attr">olcAccess</span>: <span class="string">{0}to attrs=userPassword,shadowLastChange by</span></span><br><span class="line">  <span class="attr">dn</span>=<span class="string">"cn=Manager,dc=iamzhl,dc=top" write by anonymous auth by self write by * none</span></span><br><span class="line"><span class="attr">olcAccess</span>: <span class="string">{1}to dn.base="" by * read</span></span><br><span class="line"><span class="attr">olcAccess</span>: <span class="string">{2}to * by dn="cn=Manager,dc=iamzhl,dc=top" write by * read</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">olcDatabase={2}hdb,cn=config</span>
+<span class="token attr-name">changetype</span><span class="token punctuation">:</span> <span class="token attr-value">modify</span>
+<span class="token attr-name">replace</span><span class="token punctuation">:</span> <span class="token attr-value">olcSuffix</span>
+<span class="token attr-name">olcSuffix</span><span class="token punctuation">:</span> <span class="token attr-value">dc=iamzhl,dc=top</span>
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ldapmodify -Y EXTERNAL -H ldapi:/// -f chdomain.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">olcDatabase={2}hdb,cn=config</span>
+<span class="token attr-name">changetype</span><span class="token punctuation">:</span> <span class="token attr-value">modify</span>
+<span class="token attr-name">replace</span><span class="token punctuation">:</span> <span class="token attr-value">olcRootDN</span>
+<span class="token attr-name">olcRootDN</span><span class="token punctuation">:</span> <span class="token attr-value">cn=Manager,dc=iamzhl,dc=top</span>
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi basedomain.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">olcDatabase={2}hdb,cn=config</span>
+<span class="token attr-name">changetype</span><span class="token punctuation">:</span> <span class="token attr-value">modify</span>
+<span class="token attr-name">add</span><span class="token punctuation">:</span> <span class="token attr-value">olcRootPW</span>
+<span class="token attr-name">olcRootPW</span><span class="token punctuation">:</span> <span class="token attr-value">{SSHA}xxxxxxxxxxxxxxxxxxxxxxxx</span>
 
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># replace to your own domain name for "dc=***,dc=***" section</span></span><br><span class="line"><span class="attr">dn</span>: <span class="string">dc=iamzhl,dc=top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">dcObject</span></span><br><span class="line"><span class="attr">objectclass</span>: <span class="string">organization</span></span><br><span class="line"><span class="attr">o</span>: <span class="string">iamzhl</span></span><br><span class="line"><span class="attr">dc</span>: <span class="string">iamzhl</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">cn=Manager,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">organizationalRole</span></span><br><span class="line"><span class="attr">cn</span>: <span class="string">Manager</span></span><br><span class="line"><span class="attr">description</span>: <span class="string">Directory Manager</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">ou=People,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">organizationalUnit</span></span><br><span class="line"><span class="attr">ou</span>: <span class="string">People</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">ou=Group,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">organizationalUnit</span></span><br><span class="line"><span class="attr">ou</span>: <span class="string">Group</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">olcDatabase={2}hdb,cn=config</span>
+<span class="token attr-name">changetype</span><span class="token punctuation">:</span> <span class="token attr-value">modify</span>
+<span class="token attr-name">add</span><span class="token punctuation">:</span> <span class="token attr-value">olcAccess</span>
+<span class="token attr-name">olcAccess</span><span class="token punctuation">:</span> <span class="token attr-value">{0}to attrs=userPassword,shadowLastChange by</span>
+<span class="token attr-name">  dn</span><span class="token punctuation">=</span><span class="token attr-value">"cn=Manager,dc=iamzhl,dc=top" write by anonymous auth by self write by * none</span>
+<span class="token attr-name">olcAccess</span><span class="token punctuation">:</span> <span class="token attr-value">{1}to dn.base="" by * read</span>
+<span class="token attr-name">olcAccess</span><span class="token punctuation">:</span> <span class="token attr-value">{2}to * by dn="cn=Manager,dc=iamzhl,dc=top" write by * read</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># ldapmodify -Y EXTERNAL -H ldapi:/// -f chdomain.ldif </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi basedomain.ldif</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># replace to your own domain name for "dc=***,dc=***" section</span>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">dc=iamzhl,dc=top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">dcObject</span>
+<span class="token attr-name">objectclass</span><span class="token punctuation">:</span> <span class="token attr-value">organization</span>
+<span class="token attr-name">o</span><span class="token punctuation">:</span> <span class="token attr-value">iamzhl</span>
+<span class="token attr-name">dc</span><span class="token punctuation">:</span> <span class="token attr-value">iamzhl</span>
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ldapadd -x -D cn=Manager,dc=iamzhl,dc=top -W -f basedomain.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">cn=Manager,dc=iamzhl,dc=top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">organizationalRole</span>
+<span class="token attr-name">cn</span><span class="token punctuation">:</span> <span class="token attr-value">Manager</span>
+<span class="token attr-name">description</span><span class="token punctuation">:</span> <span class="token attr-value">Directory Manager</span>
 
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">ou=People,dc=iamzhl,dc=top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">organizationalUnit</span>
+<span class="token attr-name">ou</span><span class="token punctuation">:</span> <span class="token attr-value">People</span>
+
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">ou=Group,dc=iamzhl,dc=top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">organizationalUnit</span>
+<span class="token attr-name">ou</span><span class="token punctuation">:</span> <span class="token attr-value">Group</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># ldapadd -x -D cn=Manager,dc=iamzhl,dc=top -W -f basedomain.ldif </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/d1/46842e7f601199c0f78da4d97d30ad.jpg" alt=""></p>
-<h2 id="添加一个用户"><a href="#添加一个用户" class="headerlink" title="添加一个用户"></a>添加一个用户</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># slappasswd </span></span><br><span class="line"><span class="comment"># vi ldapuser.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="添加一个用户"><a href="#添加一个用户" class="headerlink" title="添加一个用户"></a>添加一个用户</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># slappasswd </span>
+<span class="token comment" spellcheck="true"># vi ldapuser.ldif</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># create new</span>
+<span class="token comment" spellcheck="true"># replace to your own domain name for "dc=***,dc=***" section</span>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">uid=cent,ou=People,dc=iamzhl,dc=top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">inetOrgPerson</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">posixAccount</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">shadowAccount</span>
+<span class="token attr-name">cn</span><span class="token punctuation">:</span> <span class="token attr-value">Cent</span>
+<span class="token attr-name">sn</span><span class="token punctuation">:</span> <span class="token attr-value">Linux</span>
+<span class="token attr-name">userPassword</span><span class="token punctuation">:</span> <span class="token attr-value">{SSHA}xxxxxxxxxxxxxxxxx</span>
+<span class="token attr-name">loginShell</span><span class="token punctuation">:</span> <span class="token attr-value">/bin/bash</span>
+<span class="token attr-name">uidNumber</span><span class="token punctuation">:</span> <span class="token attr-value">1000</span>
+<span class="token attr-name">gidNumber</span><span class="token punctuation">:</span> <span class="token attr-value">1000</span>
+<span class="token attr-name">homeDirectory</span><span class="token punctuation">:</span> <span class="token attr-value">/home/cent</span>
 
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># create new</span></span><br><span class="line"><span class="comment"># replace to your own domain name for "dc=***,dc=***" section</span></span><br><span class="line"><span class="attr">dn</span>: <span class="string">uid=cent,ou=People,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">inetOrgPerson</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">posixAccount</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">shadowAccount</span></span><br><span class="line"><span class="attr">cn</span>: <span class="string">Cent</span></span><br><span class="line"><span class="attr">sn</span>: <span class="string">Linux</span></span><br><span class="line"><span class="attr">userPassword</span>: <span class="string">{SSHA}xxxxxxxxxxxxxxxxx</span></span><br><span class="line"><span class="attr">loginShell</span>: <span class="string">/bin/bash</span></span><br><span class="line"><span class="attr">uidNumber</span>: <span class="string">1000</span></span><br><span class="line"><span class="attr">gidNumber</span>: <span class="string">1000</span></span><br><span class="line"><span class="attr">homeDirectory</span>: <span class="string">/home/cent</span></span><br><span class="line"></span><br><span class="line"><span class="attr">dn</span>: <span class="string">cn=cent,ou=Group,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="attr">objectClass</span>: <span class="string">posixGroup</span></span><br><span class="line"><span class="attr">cn</span>: <span class="string">Cent</span></span><br><span class="line"><span class="attr">gidNumber</span>: <span class="string">1000</span></span><br><span class="line"><span class="attr">memberUid</span>: <span class="string">cent</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token attr-name">dn</span><span class="token punctuation">:</span> <span class="token attr-value">cn=cent,ou=Group,dc=iamzhl,dc=top</span>
+<span class="token attr-name">objectClass</span><span class="token punctuation">:</span> <span class="token attr-value">posixGroup</span>
+<span class="token attr-name">cn</span><span class="token punctuation">:</span> <span class="token attr-value">Cent</span>
+<span class="token attr-name">gidNumber</span><span class="token punctuation">:</span> <span class="token attr-value">1000</span>
+<span class="token attr-name">memberUid</span><span class="token punctuation">:</span> <span class="token attr-value">cent</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># ldapadd -x -D cn=Manager,dc=iamzhl,dc=top -W -f ldapuser.ldif </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="添加本机的用户和群组到ldap目录"><a href="#添加本机的用户和群组到ldap目录" class="headerlink" title="添加本机的用户和群组到ldap目录"></a>添加本机的用户和群组到ldap目录</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi ldapuser.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell"># extract local users and groups who have 1000-9999 digit UID
+# replace "SUFFIX=***" to your own domain name
+# this is an example
+#!/bin/bash
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ldapadd -x -D cn=Manager,dc=iamzhl,dc=top -W -f ldapuser.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+SUFFIX='dc=iamzhl,dc=top'
+LDIF='ldapuser.ldif'
 
-<h2 id="添加本机的用户和群组到ldap目录"><a href="#添加本机的用户和群组到ldap目录" class="headerlink" title="添加本机的用户和群组到ldap目录"></a>添加本机的用户和群组到ldap目录</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi ldapuser.sh</span></span><br></pre></td></tr></tbody></table></figure>
+echo -n > $LDIF
+GROUP_IDS=()
+grep "x:[1-9][0-9][0-9][0-9]:" /etc/passwd | (while read TARGET_USER
+do
+    USER_ID="$(echo "$TARGET_USER" | cut -d':' -f1)"
 
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> extract <span class="built_in">local</span> users and groups who have 1000-9999 digit UID</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> replace <span class="string">"SUFFIX=***"</span> to your own domain name</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> this is an example</span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">SUFFIX='dc=iamzhl,dc=top'</span><br><span class="line">LDIF='ldapuser.ldif'</span><br><span class="line"></span><br><span class="line">echo -n &gt; $LDIF</span><br><span class="line">GROUP_IDS=()</span><br><span class="line">grep "x:[1-9][0-9][0-9][0-9]:" /etc/passwd | (while read TARGET_USER</span><br><span class="line">do</span><br><span class="line">    USER_ID="$(echo "$TARGET_USER" | cut -d':' -f1)"</span><br><span class="line"></span><br><span class="line">    USER_NAME="$(echo "$TARGET_USER" | cut -d':' -f5 | cut -d' ' -f1,2)"</span><br><span class="line">    [ ! "$USER_NAME" ] &amp;&amp; USER_NAME="$USER_ID"</span><br><span class="line"></span><br><span class="line">    LDAP_SN="$(echo "$USER_NAME" | cut -d' ' -f2)"</span><br><span class="line">    [ ! "$LDAP_SN" ] &amp;&amp; LDAP_SN="$USER_NAME"</span><br><span class="line"></span><br><span class="line">    LASTCHANGE_FLAG="$(grep "${USER_ID}:" /etc/shadow | cut -d':' -f3)"</span><br><span class="line">    [ ! "$LASTCHANGE_FLAG" ] &amp;&amp; LASTCHANGE_FLAG="0"</span><br><span class="line"></span><br><span class="line">    SHADOW_FLAG="$(grep "${USER_ID}:" /etc/shadow | cut -d':' -f9)"</span><br><span class="line">    [ ! "$SHADOW_FLAG" ] &amp;&amp; SHADOW_FLAG="0"</span><br><span class="line"></span><br><span class="line">    GROUP_ID="$(echo "$TARGET_USER" | cut -d':' -f4)"</span><br><span class="line">    [ ! "$(echo "${GROUP_IDS[@]}" | grep "$GROUP_ID")" ] &amp;&amp; GROUP_IDS=("${GROUP_IDS[@]}" "$GROUP_ID")</span><br><span class="line"></span><br><span class="line">    echo "dn: uid=$USER_ID,ou=People,$SUFFIX" &gt;&gt; $LDIF</span><br><span class="line">    echo "objectClass: inetOrgPerson" &gt;&gt; $LDIF</span><br><span class="line">    echo "objectClass: posixAccount" &gt;&gt; $LDIF</span><br><span class="line">    echo "objectClass: shadowAccount" &gt;&gt; $LDIF</span><br><span class="line">    echo "sn: $LDAP_SN" &gt;&gt; $LDIF</span><br><span class="line">    echo "givenName: $(echo "$USER_NAME" | awk '{print $1}')" &gt;&gt; $LDIF</span><br><span class="line">    echo "cn: $USER_NAME" &gt;&gt; $LDIF</span><br><span class="line">    echo "displayName: $USER_NAME" &gt;&gt; $LDIF</span><br><span class="line">    echo "uidNumber: $(echo "$TARGET_USER" | cut -d':' -f3)" &gt;&gt; $LDIF</span><br><span class="line">    echo "gidNumber: $(echo "$TARGET_USER" | cut -d':' -f4)" &gt;&gt; $LDIF</span><br><span class="line">    echo "userPassword: {crypt}$(grep "${USER_ID}:" /etc/shadow | cut -d':' -f2)" &gt;&gt; $LDIF</span><br><span class="line">    echo "gecos: $USER_NAME" &gt;&gt; $LDIF</span><br><span class="line">    echo "loginShell: $(echo "$TARGET_USER" | cut -d':' -f7)" &gt;&gt; $LDIF</span><br><span class="line">    echo "homeDirectory: $(echo "$TARGET_USER" | cut -d':' -f6)" &gt;&gt; $LDIF</span><br><span class="line">    echo "shadowExpire: $(passwd -S "$USER_ID" | awk '{print $7}')" &gt;&gt; $LDIF</span><br><span class="line">    echo "shadowFlag: $SHADOW_FLAG" &gt;&gt; $LDIF</span><br><span class="line">    echo "shadowWarning: $(passwd -S "$USER_ID" | awk '{print $6}')" &gt;&gt; $LDIF</span><br><span class="line">    echo "shadowMin: $(passwd -S "$USER_ID" | awk '{print $4}')" &gt;&gt; $LDIF</span><br><span class="line">    echo "shadowMax: $(passwd -S "$USER_ID" | awk '{print $5}')" &gt;&gt; $LDIF</span><br><span class="line">    echo "shadowLastChange: $LASTCHANGE_FLAG" &gt;&gt; $LDIF</span><br><span class="line">    echo &gt;&gt; $LDIF</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">for TARGET_GROUP_ID in "${GROUP_IDS[@]}"</span><br><span class="line">do</span><br><span class="line">    LDAP_CN="$(grep ":${TARGET_GROUP_ID}:" /etc/group | cut -d':' -f1)"</span><br><span class="line"></span><br><span class="line">    echo "dn: cn=$LDAP_CN,ou=Group,$SUFFIX" &gt;&gt; $LDIF</span><br><span class="line">    echo "objectClass: posixGroup" &gt;&gt; $LDIF</span><br><span class="line">    echo "cn: $LDAP_CN" &gt;&gt; $LDIF</span><br><span class="line">    echo "gidNumber: $TARGET_GROUP_ID" &gt;&gt; $LDIF</span><br><span class="line"></span><br><span class="line">    for MEMBER_UID in $(grep ":${TARGET_GROUP_ID}:" /etc/passwd | cut -d':' -f1,3)</span><br><span class="line">    do</span><br><span class="line">        UID_NUM=$(echo "$MEMBER_UID" | cut -d':' -f2)</span><br><span class="line">        [ $UID_NUM -ge 1000 -a $UID_NUM -le 9999 ] &amp;&amp; echo "memberUid: $(echo "$MEMBER_UID" | cut -d':' -f1)" &gt;&gt; $LDIF</span><br><span class="line">    done</span><br><span class="line">    echo &gt;&gt; $LDIF</span><br><span class="line">done</span><br><span class="line">)</span><br></pre></td></tr></tbody></table></figure>
+    USER_NAME="$(echo "$TARGET_USER" | cut -d':' -f5 | cut -d' ' -f1,2)"
+    [ ! "$USER_NAME" ] && USER_NAME="$USER_ID"
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sh ldapuser.sh </span></span><br><span class="line"><span class="comment"># ldapadd -x -D cn=Manager,dc=iamzhl,dc=top -W -f ldapuser.ldif</span></span><br></pre></td></tr></tbody></table></figure>
+    LDAP_SN="$(echo "$USER_NAME" | cut -d' ' -f2)"
+    [ ! "$LDAP_SN" ] && LDAP_SN="$USER_NAME"
 
+    LASTCHANGE_FLAG="$(grep "${USER_ID}:" /etc/shadow | cut -d':' -f3)"
+    [ ! "$LASTCHANGE_FLAG" ] && LASTCHANGE_FLAG="0"
+
+    SHADOW_FLAG="$(grep "${USER_ID}:" /etc/shadow | cut -d':' -f9)"
+    [ ! "$SHADOW_FLAG" ] && SHADOW_FLAG="0"
+
+    GROUP_ID="$(echo "$TARGET_USER" | cut -d':' -f4)"
+    [ ! "$(echo "${GROUP_IDS[@]}" | grep "$GROUP_ID")" ] && GROUP_IDS=("${GROUP_IDS[@]}" "$GROUP_ID")
+
+    echo "dn: uid=$USER_ID,ou=People,$SUFFIX" >> $LDIF
+    echo "objectClass: inetOrgPerson" >> $LDIF
+    echo "objectClass: posixAccount" >> $LDIF
+    echo "objectClass: shadowAccount" >> $LDIF
+    echo "sn: $LDAP_SN" >> $LDIF
+    echo "givenName: $(echo "$USER_NAME" | awk '{print $1}')" >> $LDIF
+    echo "cn: $USER_NAME" >> $LDIF
+    echo "displayName: $USER_NAME" >> $LDIF
+    echo "uidNumber: $(echo "$TARGET_USER" | cut -d':' -f3)" >> $LDIF
+    echo "gidNumber: $(echo "$TARGET_USER" | cut -d':' -f4)" >> $LDIF
+    echo "userPassword: {crypt}$(grep "${USER_ID}:" /etc/shadow | cut -d':' -f2)" >> $LDIF
+    echo "gecos: $USER_NAME" >> $LDIF
+    echo "loginShell: $(echo "$TARGET_USER" | cut -d':' -f7)" >> $LDIF
+    echo "homeDirectory: $(echo "$TARGET_USER" | cut -d':' -f6)" >> $LDIF
+    echo "shadowExpire: $(passwd -S "$USER_ID" | awk '{print $7}')" >> $LDIF
+    echo "shadowFlag: $SHADOW_FLAG" >> $LDIF
+    echo "shadowWarning: $(passwd -S "$USER_ID" | awk '{print $6}')" >> $LDIF
+    echo "shadowMin: $(passwd -S "$USER_ID" | awk '{print $4}')" >> $LDIF
+    echo "shadowMax: $(passwd -S "$USER_ID" | awk '{print $5}')" >> $LDIF
+    echo "shadowLastChange: $LASTCHANGE_FLAG" >> $LDIF
+    echo >> $LDIF
+done
+
+for TARGET_GROUP_ID in "${GROUP_IDS[@]}"
+do
+    LDAP_CN="$(grep ":${TARGET_GROUP_ID}:" /etc/group | cut -d':' -f1)"
+
+    echo "dn: cn=$LDAP_CN,ou=Group,$SUFFIX" >> $LDIF
+    echo "objectClass: posixGroup" >> $LDIF
+    echo "cn: $LDAP_CN" >> $LDIF
+    echo "gidNumber: $TARGET_GROUP_ID" >> $LDIF
+
+    for MEMBER_UID in $(grep ":${TARGET_GROUP_ID}:" /etc/passwd | cut -d':' -f1,3)
+    do
+        UID_NUM=$(echo "$MEMBER_UID" | cut -d':' -f2)
+        [ $UID_NUM -ge 1000 -a $UID_NUM -le 9999 ] && echo "memberUid: $(echo "$MEMBER_UID" | cut -d':' -f1)" >> $LDIF
+    done
+    echo >> $LDIF
+done
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># sh ldapuser.sh </span>
+<span class="token comment" spellcheck="true"># ldapadd -x -D cn=Manager,dc=iamzhl,dc=top -W -f ldapuser.ldif </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/d5/aaa70f4f22ad6ee40fa74bf027bd4b.jpg" alt=""></p>
 <h2 id="利用Apache-Directory-Studio进行管理"><a href="#利用Apache-Directory-Studio进行管理" class="headerlink" title="利用Apache Directory Studio进行管理"></a>利用Apache Directory Studio进行管理</h2><p>Apache Directory Studio 是一个 LDAP 的工具平台，用来连接到任何 LDAP 服务器并进行管理和开发工作。其可以实现以下功能：</p>
 <ul>
@@ -1030,8 +1157,6 @@ openLDAP 服务：lda
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1153,7 +1278,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

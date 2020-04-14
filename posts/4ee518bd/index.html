@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -528,52 +529,200 @@
 <li>CAS 服务：<a href="http://devops.iamzhl.top:8080/cas" target="_blank" rel="noopener">http://devops.iamzhl.top:8080/cas</a></li>
 </ul>
 <h2 id="整合LDAP"><a href="#整合LDAP" class="headerlink" title="整合LDAP"></a>整合<code>LDAP</code></h2><p>修改<code>sonar</code>配置文件<code>sonar.properties</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /usr/<span class="built_in">local</span>/sonarqube-7.4/conf/sonar.properties</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">vi</span> /usr/local/sonarqube-7.4/conf/sonar.properties<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>找到下面的部分修改<code>LDAP</code>配置</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#--------------------------------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># LDAP CONFIGURATION</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable the LDAP feature</span></span><br><span class="line"><span class="comment"># sonar.security.realm=LDAP</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set to true when connecting to a LDAP server using a case-insensitive setup.</span></span><br><span class="line"><span class="comment"># sonar.authenticator.downcase=true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL of the LDAP server. Note that if you are using ldaps, then you should install the server certificate into the Java truststore.</span></span><br><span class="line"><span class="comment"># ldap.url=ldap://localhost:10389</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Bind DN is the username of an LDAP user to connect (or bind) with. Leave this blank for anonymous access to the LDAP directory (optional)</span></span><br><span class="line"><span class="comment"># ldap.bindDn=cn=sonar,ou=users,o=mycompany</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Bind Password is the password of the user to connect with. Leave this blank for anonymous access to the LDAP directory (optional)</span></span><br><span class="line"><span class="comment"># ldap.bindPassword=secret</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Possible values: simple | CRAM-MD5 | DIGEST-MD5 | GSSAPI See http://java.sun.com/products/jndi/tutorial/ldap/security/auth.html (default: simple)</span></span><br><span class="line"><span class="comment"># ldap.authentication=simple</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true">#--------------------------------------------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true"># LDAP CONFIGURATION</span>
 
+<span class="token comment" spellcheck="true"># Enable the LDAP feature</span>
+<span class="token comment" spellcheck="true"># sonar.security.realm=LDAP</span>
+
+<span class="token comment" spellcheck="true"># Set to true when connecting to a LDAP server using a case-insensitive setup.</span>
+<span class="token comment" spellcheck="true"># sonar.authenticator.downcase=true</span>
+
+<span class="token comment" spellcheck="true"># URL of the LDAP server. Note that if you are using ldaps, then you should install the server certificate into the Java truststore.</span>
+<span class="token comment" spellcheck="true"># ldap.url=ldap://localhost:10389</span>
+
+<span class="token comment" spellcheck="true"># Bind DN is the username of an LDAP user to connect (or bind) with. Leave this blank for anonymous access to the LDAP directory (optional)</span>
+<span class="token comment" spellcheck="true"># ldap.bindDn=cn=sonar,ou=users,o=mycompany</span>
+
+<span class="token comment" spellcheck="true"># Bind Password is the password of the user to connect with. Leave this blank for anonymous access to the LDAP directory (optional)</span>
+<span class="token comment" spellcheck="true"># ldap.bindPassword=secret</span>
+
+<span class="token comment" spellcheck="true"># Possible values: simple | CRAM-MD5 | DIGEST-MD5 | GSSAPI See http://java.sun.com/products/jndi/tutorial/ldap/security/auth.html (default: simple)</span>
+<span class="token comment" spellcheck="true"># ldap.authentication=simple</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>修改如下(请将具体信息按照自己的<code>LDAP</code>服务器信息进行修改):</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#--------------------------------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># LDAP CONFIGURATION</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable the LDAP feature</span></span><br><span class="line"><span class="meta">sonar.security.realm</span>=<span class="string">LDAP</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set to true when connecting to a LDAP server using a case-insensitive setup.</span></span><br><span class="line"><span class="comment"># sonar.authenticator.downcase=true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL of the LDAP server. Note that if you are using ldaps, then you should install the server certificate into the Java truststore.</span></span><br><span class="line"><span class="meta">ldap.url</span>=<span class="string">ldap://devops.iamzhl.top:389</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Bind DN is the username of an LDAP user to connect (or bind) with. Leave this blank for anonymous access to the LDAP directory (optional)</span></span><br><span class="line"><span class="meta">ldap.bindDn</span>=<span class="string">cn=Manager,dc=iamzhl,dc=top</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Bind Password is the password of the user to connect with. Leave this blank for anonymous access to the LDAP directory (optional)</span></span><br><span class="line"><span class="meta">ldap.bindPassword</span>=<span class="string">passwd</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Possible values: simple | CRAM-MD5 | DIGEST-MD5 | GSSAPI See http://java.sun.com/products/jndi/tutorial/ldap/security/auth.html (default: simple)</span></span><br><span class="line"><span class="meta">ldap.authentication</span>=<span class="string">simple</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># See :</span></span><br><span class="line"><span class="comment">#   * http://java.sun.com/products/jndi/tutorial/ldap/security/digest.html</span></span><br><span class="line"><span class="comment">#   * http://java.sun.com/products/jndi/tutorial/ldap/security/crammd5.html</span></span><br><span class="line"><span class="comment"># (optional)</span></span><br><span class="line"><span class="comment"># ldap.realm=example.org</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Context factory class (optional)</span></span><br><span class="line"><span class="comment"># ldap.contextFactoryClass=com.sun.jndi.ldap.LdapCtxFactory</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable usage of StartTLS (default : false)</span></span><br><span class="line"><span class="comment"># ldap.StartTLS=true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Follow or not referrals. See http://docs.oracle.com/javase/jndi/tutorial/ldap/referral/jndi.html (default: true)</span></span><br><span class="line"><span class="comment"># ldap.followReferrals=false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># USER MAPPING</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Distinguished Name (DN) of the root node in LDAP from which to search for users (mandatory)</span></span><br><span class="line"><span class="meta">ldap.user.baseDn</span>=<span class="string">ou=People,dc=iamzhl,dc=top</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># LDAP user request. (default: (&amp;(objectClass=inetOrgPerson)(uid={login})) )</span></span><br><span class="line"><span class="comment"># ldap.user.request=(&amp;(objectClass=user)(sAMAccountName={login}))</span></span><br><span class="line"><span class="meta">ldap.user.request</span>=<span class="string">(&amp;(objectClass=inetOrgPerson)(uid={login}))</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Attribute in LDAP defining the user’s real name. (default: cn)</span></span><br><span class="line"><span class="comment"># ldap.user.realNameAttribute=name</span></span><br><span class="line"><span class="meta">ldap.user.realNameAttribute</span>=<span class="string">cn</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Attribute in LDAP defining the user’s email. (default: mail)</span></span><br><span class="line"><span class="comment"># ldap.user.emailAttribute=email</span></span><br><span class="line"><span class="meta">ldap.user.emailAttribute</span>=<span class="string">mail</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># GROUP MAPPING</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Distinguished Name (DN) of the root node in LDAP from which to search for groups. (optional, default: empty)</span></span><br><span class="line"><span class="comment"># ldap.group.baseDn=cn=groups,dc=example,dc=org</span></span><br><span class="line"><span class="meta">ldap.group.baseDn</span>=<span class="string">ou=People,dc=iamzhl,dc=top</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># LDAP group request (default: (&amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )</span></span><br><span class="line"><span class="comment"># ldap.group.request=(&amp;(objectClass=group)(member={dn}))</span></span><br><span class="line"><span class="meta">ldap.group.request</span>=<span class="string">(&amp;(objectClass=posixGroup)(memberUid={uid}))</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Property used to specifiy the attribute to be used for returning the list of user groups in the compatibility mode. (default: cn)</span></span><br><span class="line"><span class="comment"># ldap.group.idAttribute=sAMAccountName</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true">#--------------------------------------------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true"># LDAP CONFIGURATION</span>
 
+<span class="token comment" spellcheck="true"># Enable the LDAP feature</span>
+<span class="token attr-name">sonar.security.realm</span><span class="token punctuation">=</span><span class="token attr-value">LDAP</span>
+
+<span class="token comment" spellcheck="true"># Set to true when connecting to a LDAP server using a case-insensitive setup.</span>
+<span class="token comment" spellcheck="true"># sonar.authenticator.downcase=true</span>
+
+<span class="token comment" spellcheck="true"># URL of the LDAP server. Note that if you are using ldaps, then you should install the server certificate into the Java truststore.</span>
+<span class="token attr-name">ldap.url</span><span class="token punctuation">=</span><span class="token attr-value">ldap://devops.iamzhl.top:389</span>
+
+<span class="token comment" spellcheck="true"># Bind DN is the username of an LDAP user to connect (or bind) with. Leave this blank for anonymous access to the LDAP directory (optional)</span>
+<span class="token attr-name">ldap.bindDn</span><span class="token punctuation">=</span><span class="token attr-value">cn=Manager,dc=iamzhl,dc=top</span>
+
+<span class="token comment" spellcheck="true"># Bind Password is the password of the user to connect with. Leave this blank for anonymous access to the LDAP directory (optional)</span>
+<span class="token attr-name">ldap.bindPassword</span><span class="token punctuation">=</span><span class="token attr-value">passwd</span>
+
+<span class="token comment" spellcheck="true"># Possible values: simple | CRAM-MD5 | DIGEST-MD5 | GSSAPI See http://java.sun.com/products/jndi/tutorial/ldap/security/auth.html (default: simple)</span>
+<span class="token attr-name">ldap.authentication</span><span class="token punctuation">=</span><span class="token attr-value">simple</span>
+
+<span class="token comment" spellcheck="true"># See :</span>
+<span class="token comment" spellcheck="true">#   * http://java.sun.com/products/jndi/tutorial/ldap/security/digest.html</span>
+<span class="token comment" spellcheck="true">#   * http://java.sun.com/products/jndi/tutorial/ldap/security/crammd5.html</span>
+<span class="token comment" spellcheck="true"># (optional)</span>
+<span class="token comment" spellcheck="true"># ldap.realm=example.org</span>
+
+<span class="token comment" spellcheck="true"># Context factory class (optional)</span>
+<span class="token comment" spellcheck="true"># ldap.contextFactoryClass=com.sun.jndi.ldap.LdapCtxFactory</span>
+
+<span class="token comment" spellcheck="true"># Enable usage of StartTLS (default : false)</span>
+<span class="token comment" spellcheck="true"># ldap.StartTLS=true</span>
+
+<span class="token comment" spellcheck="true"># Follow or not referrals. See http://docs.oracle.com/javase/jndi/tutorial/ldap/referral/jndi.html (default: true)</span>
+<span class="token comment" spellcheck="true"># ldap.followReferrals=false</span>
+
+<span class="token comment" spellcheck="true"># USER MAPPING</span>
+
+<span class="token comment" spellcheck="true"># Distinguished Name (DN) of the root node in LDAP from which to search for users (mandatory)</span>
+<span class="token attr-name">ldap.user.baseDn</span><span class="token punctuation">=</span><span class="token attr-value">ou=People,dc=iamzhl,dc=top</span>
+
+<span class="token comment" spellcheck="true"># LDAP user request. (default: (&amp;(objectClass=inetOrgPerson)(uid={login})) )</span>
+<span class="token comment" spellcheck="true"># ldap.user.request=(&amp;(objectClass=user)(sAMAccountName={login}))</span>
+<span class="token attr-name">ldap.user.request</span><span class="token punctuation">=</span><span class="token attr-value">(&amp;(objectClass=inetOrgPerson)(uid={login}))</span>
+
+<span class="token comment" spellcheck="true"># Attribute in LDAP defining the user’s real name. (default: cn)</span>
+<span class="token comment" spellcheck="true"># ldap.user.realNameAttribute=name</span>
+<span class="token attr-name">ldap.user.realNameAttribute</span><span class="token punctuation">=</span><span class="token attr-value">cn</span>
+
+<span class="token comment" spellcheck="true"># Attribute in LDAP defining the user’s email. (default: mail)</span>
+<span class="token comment" spellcheck="true"># ldap.user.emailAttribute=email</span>
+<span class="token attr-name">ldap.user.emailAttribute</span><span class="token punctuation">=</span><span class="token attr-value">mail</span>
+
+<span class="token comment" spellcheck="true"># GROUP MAPPING</span>
+
+<span class="token comment" spellcheck="true"># Distinguished Name (DN) of the root node in LDAP from which to search for groups. (optional, default: empty)</span>
+<span class="token comment" spellcheck="true"># ldap.group.baseDn=cn=groups,dc=example,dc=org</span>
+<span class="token attr-name">ldap.group.baseDn</span><span class="token punctuation">=</span><span class="token attr-value">ou=People,dc=iamzhl,dc=top</span>
+
+<span class="token comment" spellcheck="true"># LDAP group request (default: (&amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )</span>
+<span class="token comment" spellcheck="true"># ldap.group.request=(&amp;(objectClass=group)(member={dn}))</span>
+<span class="token attr-name">ldap.group.request</span><span class="token punctuation">=</span><span class="token attr-value">(&amp;(objectClass=posixGroup)(memberUid={uid}))</span>
+
+<span class="token comment" spellcheck="true"># Property used to specifiy the attribute to be used for returning the list of user groups in the compatibility mode. (default: cn)</span>
+<span class="token comment" spellcheck="true"># ldap.group.idAttribute=sAMAccountName</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>修改完成后，重启<code>sonar</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sonar restart</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ sonar restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>打开<code>sonar</code>网址，输入<code>LDAP</code>中的用户名和密码后点击登录</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/89/7728c5a52a96a6841a426155062a56.jpg" alt=""></p>
 <p>登陆成功后，正常获取用户名</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/dd/53d39dc0858679e2a4949419417678.jpg" alt=""></p>
 <p>至此，<code>SonarQube</code>整合<code>LDAP</code>完成</p>
 <h2 id="整合CAS单点登录"><a href="#整合CAS单点登录" class="headerlink" title="整合CAS单点登录"></a>整合<code>CAS</code>单点登录</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><code>SonarQube</code>提供了一种<code>SSO</code>机制，可以用来作为单点登录的实现方式，就是使用<code>HTTP header</code>的方式，而<code>CAS</code>也提供了一种用于<code>apache</code>服务的认证方式，这就是<code>mod_auth_cas</code>，思路很简单，我们利用<code>apache</code>反向代理，做一个端口用于虚拟主机来转发<code>SonarQube</code>服务，然后在这个虚拟主机内部加入<code>mod_auth_cas</code>提供的认证拦截，同时在里面指定一个<code>HTTP header</code>用于发送认证后的请求到<code>SonarQube</code>，然后，<code>SonarQube</code>接收到这个请求后，发现正是自己设定的<code>HTTP header</code>，于是予以通过认证。这就是整个认证流程，下面开始介绍整合方法。</p>
-<h3 id="SonarQube修改"><a href="#SonarQube修改" class="headerlink" title="SonarQube修改"></a><code>SonarQube</code>修改</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /usr/<span class="built_in">local</span>/sonarqube-7.4/conf/sonar.properties</span><br></pre></td></tr></tbody></table></figure>
-
+<h3 id="SonarQube修改"><a href="#SonarQube修改" class="headerlink" title="SonarQube修改"></a><code>SonarQube</code>修改</h3><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">vi</span> /usr/local/sonarqube-7.4/conf/sonar.properties<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改如下部分(就是将<code>SSO AUTHENTICATION</code>部分的参数取消注释，令其生效)</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#--------------------------------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># SSO AUTHENTICATION</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable authentication using HTTP headers</span></span><br><span class="line"><span class="meta">sonar.web.sso.enable</span>=<span class="string">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Name of the header to get the user login.</span></span><br><span class="line"><span class="comment"># Only alphanumeric, '.' and '@' characters are allowed</span></span><br><span class="line"><span class="meta">sonar.web.sso.loginHeader</span>=<span class="string">X-Forwarded-Login</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Name of the header to get the user name</span></span><br><span class="line"><span class="meta">sonar.web.sso.nameHeader</span>=<span class="string">X-Forwarded-Name</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Name of the header to get the user email (optional)</span></span><br><span class="line"><span class="meta">sonar.web.sso.emailHeader</span>=<span class="string">X-Forwarded-Email</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Name of the header to get the list of user groups, separated by comma (optional).</span></span><br><span class="line"><span class="comment"># If the sonar.sso.groupsHeader is set, the user will belong to those groups if groups exist in SonarQube.</span></span><br><span class="line"><span class="comment"># If none of the provided groups exists in SonarQube, the user will only belong to the default group.</span></span><br><span class="line"><span class="comment"># Note that the default group will always be set.</span></span><br><span class="line"><span class="meta">sonar.web.sso.groupsHeader</span>=<span class="string">X-Forwarded-Groups</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Interval used to know when to refresh name, email and groups.</span></span><br><span class="line"><span class="comment"># During this interval, if for instance the name of the user is changed in the header, it will only be updated after X minutes.</span></span><br><span class="line"><span class="meta">sonar.web.sso.refreshIntervalInMinutes</span>=<span class="string">5</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true">#--------------------------------------------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true"># SSO AUTHENTICATION</span>
 
+<span class="token comment" spellcheck="true"># Enable authentication using HTTP headers</span>
+<span class="token attr-name">sonar.web.sso.enable</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+
+<span class="token comment" spellcheck="true"># Name of the header to get the user login.</span>
+<span class="token comment" spellcheck="true"># Only alphanumeric, '.' and '@' characters are allowed</span>
+<span class="token attr-name">sonar.web.sso.loginHeader</span><span class="token punctuation">=</span><span class="token attr-value">X-Forwarded-Login</span>
+
+<span class="token comment" spellcheck="true"># Name of the header to get the user name</span>
+<span class="token attr-name">sonar.web.sso.nameHeader</span><span class="token punctuation">=</span><span class="token attr-value">X-Forwarded-Name</span>
+
+<span class="token comment" spellcheck="true"># Name of the header to get the user email (optional)</span>
+<span class="token attr-name">sonar.web.sso.emailHeader</span><span class="token punctuation">=</span><span class="token attr-value">X-Forwarded-Email</span>
+
+<span class="token comment" spellcheck="true"># Name of the header to get the list of user groups, separated by comma (optional).</span>
+<span class="token comment" spellcheck="true"># If the sonar.sso.groupsHeader is set, the user will belong to those groups if groups exist in SonarQube.</span>
+<span class="token comment" spellcheck="true"># If none of the provided groups exists in SonarQube, the user will only belong to the default group.</span>
+<span class="token comment" spellcheck="true"># Note that the default group will always be set.</span>
+<span class="token attr-name">sonar.web.sso.groupsHeader</span><span class="token punctuation">=</span><span class="token attr-value">X-Forwarded-Groups</span>
+
+<span class="token comment" spellcheck="true"># Interval used to know when to refresh name, email and groups.</span>
+<span class="token comment" spellcheck="true"># During this interval, if for instance the name of the user is changed in the header, it will only be updated after X minutes.</span>
+<span class="token attr-name">sonar.web.sso.refreshIntervalInMinutes</span><span class="token punctuation">=</span><span class="token attr-value">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>修改<code>app.d5dba530.chunk.js</code>，解决登出问题，不同的版本不同，<code>7.2.1</code>的在<code>main</code>开头的一个<code>js</code>文件中。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/sonarqube-7.4/web/js/app.d5dba530.chunk.js</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/sonarqube-7.4/web/js/app.d5dba530.chunk.js</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改如下</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">t.handleLogout = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>{</span><br><span class="line">	<span class="comment">// e.preventDefault(), t.context.router.push("/sessions/logout") </span></span><br><span class="line">	t.context.router.push(<span class="string">"/sessions/logout"</span>)  <span class="comment">//去掉e.preventDefault()方法</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">r.createElement(<span class="string">"li"</span>, <span class="literal">null</span>, r.createElement(<span class="string">"a"</span>, {</span><br><span class="line">	<span class="comment">//href: "#",</span></span><br><span class="line">	href: <span class="string">"http://192.168.6.99:8080/cas/logout"</span>,  <span class="comment">//将此注销按钮的href改为CAS服务器的登出页面</span></span><br><span class="line">	onClick: <span class="keyword">this</span>.handleLogout</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-js"><code class="language-js">t<span class="token punctuation">.</span>handleLogout <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// e.preventDefault(), t.context.router.push("/sessions/logout") </span>
+    t<span class="token punctuation">.</span>context<span class="token punctuation">.</span>router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">"/sessions/logout"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">//去掉e.preventDefault()方法</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-js"><code class="language-js">r<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"li"</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> r<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//href: "#",</span>
+    href<span class="token punctuation">:</span> <span class="token string">"http://192.168.6.99:8080/cas/logout"</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">//将此注销按钮的href改为CAS服务器的登出页面</span>
+    onClick<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogout
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="mod-auth-cas修改"><a href="#mod-auth-cas修改" class="headerlink" title="mod_auth_cas修改"></a><code>mod_auth_cas</code>修改</h3><p>然后安装<code>mod_auth_cas</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum -y install mod_auth_cas</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum -y install mod_auth_cas</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>配置<code>mod_auth_cas</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/httpd/conf.d/auth_cas.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /etc/httpd/conf.d/auth_cas.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改<code>CAS</code>的<code>Cookie</code>存储位置以及登录地址和验证地址等参数如下</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">LogLevel</span> <span class="string">Debug</span></span><br><span class="line"><span class="attr">CASDebug</span> <span class="string">On</span></span><br><span class="line"><span class="attr">CASVersion</span> <span class="string">2</span></span><br><span class="line"><span class="attr">CASTimeout</span> <span class="string">1740</span></span><br><span class="line"><span class="attr">CASIdleTimeout</span> <span class="string">1740</span></span><br><span class="line"><span class="attr">CASSSOEnabled</span> <span class="string">On</span></span><br><span class="line"><span class="attr">CASCookiePath</span> <span class="string">/var/cache/httpd/mod_auth_cas/</span></span><br><span class="line"><span class="attr">CASLoginURL</span> <span class="string">http://devops.iamzhl.top:8080/cas/login</span></span><br><span class="line"><span class="attr">CASValidateURL</span> <span class="string">http://devops.iamzhl.top:8080/cas/serviceValidate</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="apache修改"><a href="#apache修改" class="headerlink" title="apache修改"></a><code>apache</code>修改</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/httpd/conf/httpd.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">LogLevel</span> <span class="token attr-value">Debug</span>
+<span class="token attr-name">CASDebug</span> <span class="token attr-value">On</span>
+<span class="token attr-name">CASVersion</span> <span class="token attr-value">2</span>
+<span class="token attr-name">CASTimeout</span> <span class="token attr-value">1740</span>
+<span class="token attr-name">CASIdleTimeout</span> <span class="token attr-value">1740</span>
+<span class="token attr-name">CASSSOEnabled</span> <span class="token attr-value">On</span>
+<span class="token attr-name">CASCookiePath</span> <span class="token attr-value">/var/cache/httpd/mod_auth_cas/</span>
+<span class="token attr-name">CASLoginURL</span> <span class="token attr-value">http://devops.iamzhl.top:8080/cas/login</span>
+<span class="token attr-name">CASValidateURL</span> <span class="token attr-value">http://devops.iamzhl.top:8080/cas/serviceValidate</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="apache修改"><a href="#apache修改" class="headerlink" title="apache修改"></a><code>apache</code>修改</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /etc/httpd/conf/httpd.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>添加虚拟主机</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加一个监听端口 83 用作 SonarQube 的代理主机</span></span><br><span class="line"><span class="attr">Listen</span> <span class="string">83</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载 mod_auth_cas 模块，如果已经加载请忽略</span></span><br><span class="line"><span class="attr">LoadModule</span> <span class="string">auth_cas_module modules/mod_auth_cas.so</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置 SonarQube 的虚拟主机</span></span><br><span class="line"><span class="meta">&lt;VirtualHost</span> <span class="string">*:83&gt;</span></span><br><span class="line">        <span class="attr">ServerName</span> <span class="string">devops.iamzhl.top</span></span><br><span class="line">        <span class="attr">ServerAdmin</span> <span class="string">15563836030@163.com</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">CASRootProxiedAs</span> <span class="string">http://devops.iamzhl.top:83</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">ProxyPreserveHost</span> <span class="string">On</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">ProxyPass</span> <span class="string">/ http://devops.iamzhl.top:9000/</span></span><br><span class="line">        <span class="attr">ProxyPassReverse</span> <span class="string">/ http://devops.iamzhl.top:9000/</span></span><br><span class="line">        <span class="attr">ProxyPass</span> <span class="string">/sessions/logout http://devops.iamzhl.top:8080/cas/logout</span></span><br><span class="line">        <span class="attr">ProxyPassReverse</span> <span class="string">/sessions/logout http://devops.iamzhl.top:8080/cas/logout</span></span><br><span class="line">        <span class="attr">ProxyPass</span> <span class="string">/api/authentication/logout http://devops.iamzhl.top:8080/cas/logout</span></span><br><span class="line">        <span class="attr">ProxyPassReverse</span> <span class="string">/api/authentication/logout http://devops.iamzhl.top:8080/cas/logout</span></span><br><span class="line"></span><br><span class="line">        <span class="attr">ErrorLog</span> <span class="string">/var/log/sonar/error.log</span></span><br><span class="line">        <span class="attr">CustomLog</span> <span class="string">/var/log/sonar/access.log common</span></span><br><span class="line"></span><br><span class="line">        <span class="meta">&lt;Location</span> <span class="string">/&gt;</span></span><br><span class="line">                <span class="attr">AuthName</span> <span class="string">"Welcome to devops sonar"</span></span><br><span class="line">                <span class="attr">CASAuthNHeader</span> <span class="string">X-Forwarded-Login</span></span><br><span class="line">                <span class="attr">Authtype</span> <span class="string">CAS</span></span><br><span class="line">                <span class="attr">require</span> <span class="string">valid-user</span></span><br><span class="line">        <span class="attr">&lt;/Location&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="meta">&lt;Proxy</span> <span class="string">*&gt;</span></span><br><span class="line">                <span class="attr">Order</span> <span class="string">deny,allow</span></span><br><span class="line">                <span class="attr">Allow</span> <span class="string">from all</span></span><br><span class="line">        <span class="attr">&lt;/Proxy&gt;</span></span><br><span class="line"><span class="attr">&lt;/VirtualHost&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># 添加一个监听端口 83 用作 SonarQube 的代理主机</span>
+<span class="token attr-name">Listen</span> <span class="token attr-value">83</span>
 
-<h3 id="重启服务"><a href="#重启服务" class="headerlink" title="重启服务"></a>重启服务</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mkdir /var/log/sonar</span></span><br><span class="line"><span class="comment"># chown -R apache:apache /var/log/sonar</span></span><br><span class="line"><span class="comment"># su sonar</span></span><br><span class="line">$ sonar restart</span><br><span class="line"><span class="comment"># su </span></span><br><span class="line"><span class="comment"># systemctl restart httpd</span></span><br></pre></td></tr></tbody></table></figure>
+<span class="token comment" spellcheck="true"># 加载 mod_auth_cas 模块，如果已经加载请忽略</span>
+<span class="token attr-name">LoadModule</span> <span class="token attr-value">auth_cas_module modules/mod_auth_cas.so</span>
 
+<span class="token comment" spellcheck="true"># 设置 SonarQube 的虚拟主机</span>
+<span class="token attr-name">&lt;VirtualHost</span> <span class="token attr-value">*:83></span>
+<span class="token attr-name">        ServerName</span> <span class="token attr-value">devops.iamzhl.top</span>
+<span class="token attr-name">        ServerAdmin</span> <span class="token attr-value">15563836030@163.com</span>
+
+<span class="token attr-name">        CASRootProxiedAs</span> <span class="token attr-value">http://devops.iamzhl.top:83</span>
+
+<span class="token attr-name">        ProxyPreserveHost</span> <span class="token attr-value">On</span>
+
+<span class="token attr-name">        ProxyPass</span> <span class="token attr-value">/ http://devops.iamzhl.top:9000/</span>
+<span class="token attr-name">        ProxyPassReverse</span> <span class="token attr-value">/ http://devops.iamzhl.top:9000/</span>
+<span class="token attr-name">        ProxyPass</span> <span class="token attr-value">/sessions/logout http://devops.iamzhl.top:8080/cas/logout</span>
+<span class="token attr-name">        ProxyPassReverse</span> <span class="token attr-value">/sessions/logout http://devops.iamzhl.top:8080/cas/logout</span>
+<span class="token attr-name">        ProxyPass</span> <span class="token attr-value">/api/authentication/logout http://devops.iamzhl.top:8080/cas/logout</span>
+<span class="token attr-name">        ProxyPassReverse</span> <span class="token attr-value">/api/authentication/logout http://devops.iamzhl.top:8080/cas/logout</span>
+
+<span class="token attr-name">        ErrorLog</span> <span class="token attr-value">/var/log/sonar/error.log</span>
+<span class="token attr-name">        CustomLog</span> <span class="token attr-value">/var/log/sonar/access.log common</span>
+
+<span class="token attr-name">        &lt;Location</span> <span class="token attr-value">/></span>
+<span class="token attr-name">                AuthName</span> <span class="token attr-value">"Welcome to devops sonar"</span>
+<span class="token attr-name">                CASAuthNHeader</span> <span class="token attr-value">X-Forwarded-Login</span>
+<span class="token attr-name">                Authtype</span> <span class="token attr-value">CAS</span>
+<span class="token attr-name">                require</span> <span class="token attr-value">valid-user</span>
+        &lt;/Location>
+
+<span class="token attr-name">        &lt;Proxy</span> <span class="token attr-value">*></span>
+<span class="token attr-name">                Order</span> <span class="token attr-value">deny,allow</span>
+<span class="token attr-name">                Allow</span> <span class="token attr-value">from all</span>
+        &lt;/Proxy>
+&lt;/VirtualHost><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="重启服务"><a href="#重启服务" class="headerlink" title="重启服务"></a>重启服务</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># mkdir /var/log/sonar</span>
+<span class="token comment" spellcheck="true"># chown -R apache:apache /var/log/sonar</span>
+<span class="token comment" spellcheck="true"># su sonar</span>
+$ sonar restart
+<span class="token comment" spellcheck="true"># su </span>
+<span class="token comment" spellcheck="true"># systemctl restart httpd</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>打开网址<code>http://devops.iamzhl.top:83</code>，发现自动跳转到了<code>CAS</code>的登录界面，网址是<code>http://devops.iamzhl.top:8080/cas/login?service=http%3a%2f%2fdevops.iamzhl.top%3a83%2f</code></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/0b/b05aa63a31ffc624e42290d71c68e8.jpg" alt=""></p>
 <p>输入用户名密码后点击登录</p>
@@ -1047,8 +1196,6 @@ openLDAP 服务：lda
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1170,7 +1317,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

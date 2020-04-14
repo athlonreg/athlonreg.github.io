@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -509,8 +510,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dmidecode -s system-product-name</span><br></pre></td></tr></tbody></table></figure>
-
+                <pre class="line-numbers language-bash"><code class="language-bash">dmidecode -s system-product-name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -803,12 +803,11 @@
                             
 修改主题 head 文件
 
-1# vim /Users/canvas/athlonreg/themes/next/layout/_partials/head/head.swig
-
+# vim /Users/canvas/athlonreg/themes/next/layout/_partials/head/head.swig
 
 添加如下行
 
-1&lt;meta name="refer
+&lt;meta name="referrer
                         
                     </div>
                     <div class="publish-info">
@@ -860,7 +859,10 @@
                             
 修改文件 pg_hba.conf
 
-123local all all md5host  all all 127.0.0.1/32 md5host all all 192.168.45.0/32 md5
+local all all md5
+host  all all 127.0.0.1/32 md5
+host all all 192.168.45.0/32 md5
+
         document.q
                         
                     </div>
@@ -950,8 +952,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1074,7 +1074,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

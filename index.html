@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -386,7 +387,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
 </script>
 
 
@@ -578,28 +579,6 @@
     
     
     <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/11.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/Linux/" class="category">Linux</a>
-                        
-                    
-                </div>
-                <a href="/posts/3dd29769/">
-                    <h3 class="post-title">CentOS 部署配置 Redmine</h3>
-                </a>
-                <p class="post-description">安装 Ruby 2.41234567891011yum install -y gcc-c++ patch readline readline</p>
-                <a href="/posts/3dd29769/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12" data-aos="zoom-in-up">
         <div class="post-card" style="background-image: url('/medias/featureimages/21.jpg')">
             <div class="post-body">
                 <div class="post-categories">
@@ -612,8 +591,30 @@
                 <a href="/posts/fbb0a12f/">
                     <h3 class="post-title">Hotpatch 屏蔽独显</h3>
                 </a>
-                <p class="post-description">写在前面最近我根据 RehabMan 的 hotpatch 添加了一些路径做了一个屏蔽独显得 hotpatch 来屏蔽独显解决一些升级 10.13 后因为 nv_disa</p>
-                <a href="/posts/fbb0a12f/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)" target="_blank">
+                <p class="post-description">写在前面最近我根据 RehabMan 的 hotpatch 添加了一些路径做了一个屏蔽独显得 hotpatch 来屏蔽独显解决一些升级 10</p>
+                <a href="/posts/fbb0a12f/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12" data-aos="zoom-in-up">
+        <div class="post-card" style="background-image: url('/medias/featureimages/11.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/Linux/" class="category">Linux</a>
+                        
+                    
+                </div>
+                <a href="/posts/3dd29769/">
+                    <h3 class="post-title">CentOS 部署配置 Redmine</h3>
+                </a>
+                <p class="post-description">安装 Ruby 2.4yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libya</p>
+                <a href="/posts/3dd29769/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -728,7 +729,9 @@
                 <a href="/posts/35bb9d15/">
                     <h3 class="post-title">CentOS 安装配置 GitLab</h3>
                 </a>
-                <p class="post-description">CentOS 安装 GitLab安装依赖1234# yum -y install curl# yum -y install postfix#</p>
+                <p class="post-description">CentOS 安装 GitLab安装依赖# yum -y install curl
+# yum -y install postfix
+# s</p>
                 <a href="/posts/35bb9d15/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
@@ -769,7 +772,9 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                123456# slapcat &gt; ldapbak.ldif            // 导出# systemctl stop slapd              // 停止服务# rm -rf /var/lib/ldap/*   
+                                # slapcat > ldapbak.ldif            // 导出
+# systemctl stop slapd              // 停止服务
+# rm -rf /var/lib/ldap/*          
                             
                         </div>
                         <div class="publish-info">
@@ -820,7 +825,9 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Dockerfile12345678910111213FROM centos:7ENV container dockerRUN (cd /lib/systemd/system/sysinit.target.wants/; for i in 
+                                DockerfileFROM centos:7
+ENV container docker
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
                             
                         </div>
                         <div class="publish-info">
@@ -875,7 +882,14 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Tomcat1234567891011121314# /usr/lib/systemd/system/tomcat.service[Unit]Description=TomcatAfter=network.target  [Service]
+                                Tomcat# /usr/lib/systemd/system/tomcat.service
+[Unit]
+Description=Tomcat
+After=network.target
+
+[Service]
+Type=oneshot
+Ex
                             
                         </div>
                         <div class="publish-info">
@@ -941,12 +955,13 @@
                                 
 编辑 nginx 配置文件
 
-1vim /etc/nginx/nginx.conf
-
+vim /etc/nginx/nginx.conf
 
 在 http 下面加入以下配置
 
-123autoindex on;autoindex_exact_size off;autoindex_localti
+autoindex on;
+autoindex_exact_size off;
+autoindex_localtime 
                             
                         </div>
                         <div class="publish-info">
@@ -1000,12 +1015,11 @@
                                 
 修改主题 head 文件
 
-1# vim /Users/canvas/athlonreg/themes/next/layout/_partials/head/head.swig
-
+# vim /Users/canvas/athlonreg/themes/next/layout/_partials/head/head.swig
 
 添加如下行
 
-1&lt;meta name="refer
+&lt;meta name="referrer
                             
                         </div>
                         <div class="publish-info">
@@ -1052,12 +1066,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1dmidecode -s system-product-name
-
+                                dmidecode -s system-product-name
 
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
-      
+        
                             
                         </div>
                         <div class="publish-info">
@@ -1099,7 +1112,10 @@
                                 
 修改文件 pg_hba.conf
 
-123local all all md5host  all all 127.0.0.1/32 md5host all all 192.168.45.0/32 md5
+local all all md5
+host  all all 127.0.0.1/32 md5
+host all all 192.168.45.0/32 md5
+
         document.q
                             
                         </div>
@@ -1147,7 +1163,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                安装 Ruby 2.41234567891011yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel 
+                                安装 Ruby 2.4yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel
                             
                         </div>
                         <div class="publish-info">
@@ -1202,7 +1218,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                CentOS 安装 GitLab安装依赖1234# yum -y install curl# yum -y install postfix# systemctl start postfix# systemctl enable postfix
+                                CentOS 安装 GitLab安装依赖# yum -y install curl
+# yum -y install postfix
+# systemctl start postfix
+# systemctl enable postfix
+
                             
                         </div>
                         <div class="publish-info">
@@ -1459,7 +1479,7 @@ CAS 服务：http://
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

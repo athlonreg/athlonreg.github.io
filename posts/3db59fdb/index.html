@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -539,59 +540,62 @@
 <h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><h3 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h3><p>去官网下载<code>JDK</code>：<a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html</a></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/81/1b33b7e9dbe92a1515154d0193194f.jpg" alt=""></p>
 <p>安装<code>JDK</code><br>将下载得到的<code>jdk-8u161-linux-x64.rpm</code>包保存到<code>Linux</code>主机</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rpm -ivh jdk-8u161-linux-x64.rpm</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># rpm -ivh jdk-8u161-linux-x64.rpm</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>设置环境变量，编辑<code>~/.bashrc</code>，</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在文件的末尾添加以下行</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_161</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line">export CLASSPATH=$JAVA_HOME/lib</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CLASSPATH</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/49/6ac74e90a641e355b29b9c4d17deb9.jpg" alt=""></p>
+<pre><code>export JAVA_HOME=/usr/java/jdk1.8.0_161
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=$JAVA_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CLASSPATH</code></pre><p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/49/6ac74e90a641e355b29b9c4d17deb9.jpg" alt=""></p>
 <p>使环境配置生效</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># source ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># source ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>测试<code>Java</code>环境，在终端输入：<code>java -version</code>查看是否正常显示版本信息，若显示则安装成功</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/2f/49c7d622b298ae690db3c13754c1b1.jpg" alt=""></p>
 <p><strong>Note:</strong><br>如果已经预装了openjdk，请先卸载</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum list installed | grep openjdk # 根据执行结果进行卸载</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># yum list installed | grep openjdk # 根据执行结果进行卸载</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h3><p>MySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm</span></span><br><span class="line"><span class="comment"># rpm -ivh mysql57-community-release-el7-9.noarch.rpm</span></span><br><span class="line"><span class="comment"># yum -y install mysql mysql-server mysql-devel</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># rpm -ivh mysql57-community-release-el7-9.noarch.rpm</span>
+<span class="token comment" spellcheck="true"># yum -y install mysql mysql-server mysql-devel</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>启动MySQL服务</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl start mysqld</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># systemctl start mysqld</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>获取安装MySQL时的初始密码并登录MySQL</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># grep 'temporary password' /var/log/mysqld.log</span></span><br><span class="line"><span class="comment"># mysql -u root -p</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># grep 'temporary password' /var/log/mysqld.log</span>
+<span class="token comment" spellcheck="true"># mysql -u root -p</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4a/a001ae2bae5a494c7329cd78a477a3.jpg" alt=""></p>
 <p>登录成功后修改密码，首先修改安全策略为0，然后将密码长度限制修改为1，最后修改密码</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; set global validate_password_policy=0;</span><br><span class="line">mysql&gt; set global validate_password_length=1;</span><br><span class="line">mysql&gt; set password for root@localhost=password('root');</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> set global validate_password_policy=0;
+mysql> set global validate_password_length=1;
+mysql> set password for root@localhost=password('root');<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a2/0f74ed53f3a426d1fe005228478d8f.jpg" alt=""></p>
 <p>设置sonar的用户名和数据库</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># adduser sonar</span></span><br><span class="line"><span class="comment"># passwd sonar # 修改sonar用户密码</span></span><br><span class="line"><span class="comment"># su sonar # 切换为sonar用户安装</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create user 'sonar'@'%' identified by 'sonar';</span><br><span class="line">mysql&gt; CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;</span><br><span class="line">mysql&gt; grant all privileges on sonar.* to 'sonar'@'%';</span><br><span class="line">mysql&gt; flush privileges;</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="安装SonarQube"><a href="#安装SonarQube" class="headerlink" title="安装SonarQube"></a>安装SonarQube</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.3.zip</span><br><span class="line">$ unzip sonarqube-7.3.zip  //若提示unzip命令找不到，用yum -y install unzip安装即可</span><br><span class="line">$ mv sonarqube-7.3 sonarqube </span><br><span class="line">$ mv sonarqube /usr/<span class="built_in">local</span>/</span><br><span class="line"><span class="comment"># chown -R sonar:sonar /usr/local/sonarqube</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="配置sonar"><a href="#配置sonar" class="headerlink" title="配置sonar"></a>配置sonar</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /usr/<span class="built_in">local</span>/sonarqube/conf/sonar.properties</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># adduser sonar</span>
+<span class="token comment" spellcheck="true"># passwd sonar # 修改sonar用户密码</span>
+<span class="token comment" spellcheck="true"># su sonar # 切换为sonar用户安装</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> create user 'sonar'@'%' identified by 'sonar';
+mysql> CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
+mysql> grant all privileges on sonar.* to 'sonar'@'%';
+mysql> flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="安装SonarQube"><a href="#安装SonarQube" class="headerlink" title="安装SonarQube"></a>安装SonarQube</h3><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">wget</span> https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.3.zip
+$ unzip sonarqube-7.3.zip  //若提示unzip命令找不到，用yum -y <span class="token function">install</span> unzip安装即可
+$ <span class="token function">mv</span> sonarqube-7.3 sonarqube 
+$ <span class="token function">mv</span> sonarqube /usr/local/
+<span class="token comment" spellcheck="true"># chown -R sonar:sonar /usr/local/sonarqube</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="配置sonar"><a href="#配置sonar" class="headerlink" title="配置sonar"></a>配置sonar</h2><pre class="line-numbers language-bash"><code class="language-bash">$ vim /usr/local/sonarqube/conf/sonar.properties<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如图设置以下选项</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/46/56cfe2c33866ab48ab8c9bdd402acc.jpg" alt=""></p>
-<h2 id="启动sonar"><a href="#启动sonar" class="headerlink" title="启动sonar"></a>启动sonar</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/sonarqube/bin/linux-x86-64/sonar.sh start</span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="启动sonar"><a href="#启动sonar" class="headerlink" title="启动sonar"></a>启动sonar</h2><pre class="line-numbers language-bash"><code class="language-bash">$ /usr/local/sonarqube/bin/linux-x86-64/sonar.sh start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>成功启动后，访问本地 <a href="http://IP:9000，SonarQube">http://IP:9000，SonarQube</a> 初始管理员账号为 admin，默认密码为 admin，登录后可修改密码。</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/25/5b9f14a21cdaf024ea8b3ce551dd7a.jpg" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/83/71e7da548917e52b08eb37f385e000.jpg" alt=""></p>
 <p><strong>Note:</strong><br>如果遇到Sonar启动不起来，查看日志自动关闭的问题，可以采用以下方法解决</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># echo -e "vm.max_map_count=262144" &gt;&gt; /etc/sysctl.conf</span></span><br><span class="line"><span class="comment"># sysctl -p</span></span><br><span class="line"><span class="comment"># echo -e "sonar hard nofile 65536" &gt;&gt; /etc/security/limits.conf </span></span><br><span class="line"><span class="comment"># echo -e "sonar soft nofile 65536" &gt;&gt; /etc/security/limits.conf</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># echo -e "vm.max_map_count=262144" >> /etc/sysctl.conf</span>
+<span class="token comment" spellcheck="true"># sysctl -p</span>
+<span class="token comment" spellcheck="true"># echo -e "sonar hard nofile 65536" >> /etc/security/limits.conf </span>
+<span class="token comment" spellcheck="true"># echo -e "sonar soft nofile 65536" >> /etc/security/limits.conf </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>然后注销sonar用户重新以sonar身份登录后再次启动:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /usr/<span class="built_in">local</span>/sonarqube/bin/linux-x86-64/sonar.sh start</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ /usr/local/sonarqube/bin/linux-x86-64/sonar.sh start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>插件安装：如果需要下载插件的话，各个版本不一样，如图所示，先点击Administration,再打开Marketplace就可以看到Plugins各种插件了。</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/c6/cef3a943ab5d4347d4af8f3332a196.jpg" alt=""></p>
 <p>SonarQube 支持分析的语言有很多，像Java、Python、Php、C/C++、C#、HTML、JavaScript、PL/SQL、Objective C等20+语言，当我们需要支持分析什么语言时，只需要去插件中心安装对应语言的插件即可，非常方便，可扩展性强，根据自己的需要去选择插件。</p>
@@ -601,30 +605,29 @@
 <h3 id="安装配置sonar-scanner"><a href="#安装配置sonar-scanner" class="headerlink" title="安装配置sonar-scanner"></a>安装配置sonar-scanner</h3><ul>
 <li>获取sonar-scanner</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip</span></span><br><span class="line"><span class="comment"># unzip sonar-scanner-cli-3.2.0.1227-linux.zip</span></span><br><span class="line"><span class="comment"># mv sonar-scanner-3.2.0.1227-linux sonar-scanner</span></span><br><span class="line"><span class="comment"># mv sonar-scanner /usr/local/</span></span><br><span class="line"><span class="comment"># chown -R sonar:sonar sonar-scanner</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip</span>
+<span class="token comment" spellcheck="true"># unzip sonar-scanner-cli-3.2.0.1227-linux.zip</span>
+<span class="token comment" spellcheck="true"># mv sonar-scanner-3.2.0.1227-linux sonar-scanner</span>
+<span class="token comment" spellcheck="true"># mv sonar-scanner /usr/local/</span>
+<span class="token comment" spellcheck="true"># chown -R sonar:sonar sonar-scanner</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>配置sonar-scanner环境变量</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vim ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/40/6ea5e9c0aee37c056f4583b32c048d.jpg" alt=""></p>
 <ul>
 <li>使配置生效</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># source ~/.bashrc</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># source ~/.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/70/524b2333bbfb3e6a50b77f92eb201d.jpg" alt=""></p>
 <ul>
 <li>检查环境配置是否成功</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sonar-scanner -version</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ sonar-scanner -version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ul>
 <li>配置sonar-scanner.properties文件</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /usr/<span class="built_in">local</span>/sonar-scanner/conf/sonar-scanner.properties</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ vim /usr/local/sonar-scanner/conf/sonar-scanner.properties<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/46/849b0c5cac635e91e9efcf07ba5fbd.jpg" alt=""></p>
 <h3 id="验证过程"><a href="#验证过程" class="headerlink" title="验证过程"></a>验证过程</h3><ul>
 <li>添加Java Maven测试工程</li>
@@ -634,9 +637,10 @@
 <li>添加sonar-project.properties文件</li>
 </ul>
 <p>在工程根目录中添加sonar-project.properties文件，格式如下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sonar.projectKey=com.geovis         //项目的唯一标识</span><br><span class="line">sonar.projectName=helloworld        //项目的名字</span><br><span class="line">sonar.projectVersion=1.0            //项目的版本</span><br><span class="line">sonar.sources=/root/helloworld/src  //项目的源码目录，多目录以英文逗号分隔</span><br></pre></td></tr></tbody></table></figure>
-
-<p>例如我的项目结构如下</p>
+<pre><code>sonar.projectKey=com.geovis         //项目的唯一标识
+sonar.projectName=helloworld        //项目的名字
+sonar.projectVersion=1.0            //项目的版本
+sonar.sources=/root/helloworld/src  //项目的源码目录，多目录以英文逗号分隔</code></pre><p>例如我的项目结构如下</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/6a/e62e31b74ec65b783f21f4d8cda98e.jpg" alt=""></p>
 <p>那么此项目配置文件应为</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/98/4f0aa2e69db09a846cfd6da4a3442f.jpg" alt=""></p>
@@ -1094,8 +1098,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1217,7 +1219,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    599
+                    595
                 </div>
                 
 
@@ -545,20 +546,16 @@
 <p><a href="https://github.com/vit9696/AppleALC/releases" target="_blank" rel="noopener">https://github.com/vit9696/AppleALC/releases</a><br><a href="https://github.com/vit9696/Lilu/releases" target="_blank" rel="noopener">https://github.com/vit9696/Lilu/releases</a><br><a href="https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/" target="_blank" rel="noopener">https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/</a></p>
 <p><strong>注意三个驱动都用<code>Release</code>里面的</strong></p>
 <h3 id="放SSDT"><a href="#放SSDT" class="headerlink" title="放SSDT"></a>放<code>SSDT</code></h3><p>打开终端执行</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/RehabMan/OS-X-Clover-Laptop-Config</span><br></pre></td></tr></tbody></table></figure>
-
-<p>利用<code>MaciASL</code>打开<code>SSDT-CX20752.dsl</code>，将其另存为<code>SSDT-CX20752.aml</code>。保存至<code>/EFI/CLOVER/ACPI/patched</code>,如果你正在使用<code>SortedOrder</code>，则将其加入进去。</p>
+<pre><code>$ git clone https://github.com/RehabMan/OS-X-Clover-Laptop-Config</code></pre><p>利用<code>MaciASL</code>打开<code>SSDT-CX20752.dsl</code>，将其另存为<code>SSDT-CX20752.aml</code>。保存至<code>/EFI/CLOVER/ACPI/patched</code>,如果你正在使用<code>SortedOrder</code>，则将其加入进去。</p>
 <p>然后保存全部工作重启。</p>
 <h3 id="声卡输入修复"><a href="#声卡输入修复" class="headerlink" title="声卡输入修复"></a>声卡输入修复</h3><p>若遇到声卡内建输入或耳机线路输入无电平的情况，请继续以下步骤。</p>
 <p>下载<code>ALCPlugFix for AppleALC.zip</code></p>
 <p><a href="https://github.com/athlonreg/ASUS-F455LD-i5-4210u" target="_blank" rel="noopener">https://github.com/athlonreg/ASUS-F455LD-i5-4210u</a></p>
 <p>打开终端执行</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/athlonreg/ASUS-F455LD-i5-4210u</span><br></pre></td></tr></tbody></table></figure>
-
-<p>下载完成后，如果你的<code>Layout-ID</code>是<code>3</code>，则将其中的<code>ALCPlugFix-LayoutID=3.zip</code>解压至桌面，若为<code>28</code>则将其中的<code>ALCPlugFix-LayoutID=28.zip</code>解压至桌面，执行</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/Desktop/ALCPlugFix/alc_fix </span><br><span class="line">$ chmod +x install.sh </span><br><span class="line">$ ./install.sh</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后根据提示输入密码回车。最后保存重启即可。</p>
+<pre><code>$ git clone https://github.com/athlonreg/ASUS-F455LD-i5-4210u</code></pre><p>下载完成后，如果你的<code>Layout-ID</code>是<code>3</code>，则将其中的<code>ALCPlugFix-LayoutID=3.zip</code>解压至桌面，若为<code>28</code>则将其中的<code>ALCPlugFix-LayoutID=28.zip</code>解压至桌面，执行</p>
+<pre><code>$ cd ~/Desktop/ALCPlugFix/alc_fix 
+$ chmod +x install.sh 
+$ ./install.sh </code></pre><p>然后根据提示输入密码回车。最后保存重启即可。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -864,7 +861,7 @@
 首先搭建好安装homebrew环境
 在mac上拥有一个好的包管理器是非常重要的，Debian家族有apt，mac有homebrew，非常好用。
 
-1$ /usr/bin/ruby -e "$(curl -fsSL https:
+$ /usr/bin/ruby -e "$(curl -fsSL https:/
                         
                     </div>
                     <div class="publish-info">
@@ -1026,8 +1023,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1149,7 +1144,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

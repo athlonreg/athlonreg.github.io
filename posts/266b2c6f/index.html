@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    702
+                    699
                 </div>
                 
 
@@ -524,35 +525,30 @@
                 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><code>sed</code>是<code>shell</code>中字符串处理的三大神器之一，利用<code>sed</code>进行字符串处理对从事<code>Linux</code>相关职业的人来说是必不可少的，但是在<code>mac</code>上的<code>sed</code>与<code>Linux</code>的<code>sed</code>是有一定区别的，为什么呢，因为<code>mac</code>实质上和<code>Linux</code>就是不一样的，尽管其中很多基本命令是通用的，例如<code>ls</code>、<code>cd</code>、<code>pwd</code>等。<code>mac</code>是<code>unix</code>内核，是基于<code>FreeBSD</code>的，而我们常用的<code>Linux</code>如<code>Ubuntu</code>、<code>CentOS</code>等是<code>Linux</code>内核。</p>
 <h2 id="sed的不同"><a href="#sed的不同" class="headerlink" title="sed的不同"></a><code>sed</code>的不同</h2><p>非常大的一个坑就是<code>sed</code>命令的不统一，<code>Linux</code>的<code>sed</code>是基于<code>GNU</code>的<code>sed</code>，而<code>FreeBSD</code>中的<code>sed</code>则是基于<code>XNU</code>的，其用法有些不同，下面会做对比简要说明。</p>
 <p>拿最常用的追加行来说，我们假设一个场景，我需要对<code>test.txt</code>文件实时写入，在文件第二行添加<code>1234</code>，文件初始内容如下所示</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ cat test.txt</span><br><span class="line">3333</span><br><span class="line">1112</span><br><span class="line">3333</span><br><span class="line"><span class="built_in">test</span></span><br><span class="line">4444</span><br><span class="line">5555</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">cat</span> test.txt
+3333
+1112
+3333
+<span class="token function">test</span>
+4444
+5555<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在<code>Linux</code>下，我们只需要执行下面的命令即可实现追加</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sed -i -e <span class="string">'1a\1234'</span> test.txt</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">sed</span> -i -e <span class="token string">'1a\1234'</span> test.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>但是在<code>mac</code>下这条命令会报错如下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed: 1: "1a\1234": extra characters after \ at the end of a command</span><br></pre></td></tr></tbody></table></figure>
-
-<p>这是因为<code>xnu</code>的<code>sed</code>命令用法不同于<code>gnu</code>，具体可以通过下面的命令查看<code>sed</code>命令手册</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ man sed</span><br></pre></td></tr></tbody></table></figure>
-
+<pre><code>sed: 1: "1a\1234": extra characters after \ at the end of a command</code></pre><p>这是因为<code>xnu</code>的<code>sed</code>命令用法不同于<code>gnu</code>，具体可以通过下面的命令查看<code>sed</code>命令手册</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">man</span> <span class="token function">sed</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fypvvrfr68j31p818kn8n.jpg" alt=""></p>
 <p>那么我想用我习惯的<code>Linux</code>的<code>GNU-sed</code>怎么解决呢，我们可以安装<code>gnu-sed</code>来代替系统内的<code>sed</code>，具体方法如下</p>
 <p>首先我们需要<code>Homebrew</code>包管理器</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /usr/bin/ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ /usr/bin/ruby -e <span class="token string">"<span class="token variable"><span class="token variable">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="token variable">)</span></span>"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>然后，通过<code>brew</code>来安装<code>gnu-sed</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install gnu-sed</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ brew <span class="token function">install</span> gnu-sed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>默认<code>brew</code>会将<code>gnu-sed</code>安装到<code>/usr/local/Cellar/</code>目录下，这时我们就可以利用<code>gsed</code>来执行了</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gsed -i -e <span class="string">'1a\1234'</span> test.txt</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ gsed -i -e <span class="token string">'1a\1234'</span> test.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果提示命令找不到的话，只需要将下面的路径添加到<code>PATH</code>环境变量就可以了</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/Cellar/gnu-sed/4.5/bin/</span><br></pre></td></tr></tbody></table></figure>
-
-<p>或者将<code>/usr/local/Cellar/gnu-sed/4.5/bin/gsed</code>添加别名都可以。</p>
+<pre><code>/usr/local/Cellar/gnu-sed/4.5/bin/</code></pre><p>或者将<code>/usr/local/Cellar/gnu-sed/4.5/bin/gsed</code>添加别名都可以。</p>
 <p>网上也有人用下面的命令安装</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install gnu-sed --with-default-names</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ brew <span class="token function">install</span> gnu-sed --with-default-names<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>貌似这种方式直接替代了系统内的<code>sed</code>，我个人不是很推荐这种方式，不是说不好，而是当我们的机器不只是一个人用，是做服务器用的，或者有一些我们正在用的脚本里面有<code>xnu</code>的<code>sed</code>调用，那么这种方式就会造成一些问题，所以我个人认为安装了<code>gnu-sed</code>后，利用别名、环境变量、配置文件等方式调用是更好的一种方法，当然，这个根据个人需求决定就好了。</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -914,7 +910,7 @@
 首先搭建好安装homebrew环境
 在mac上拥有一个好的包管理器是非常重要的，Debian家族有apt，mac有homebrew，非常好用。
 
-1$ /usr/bin/ruby -e "$(curl -fsSL https:
+$ /usr/bin/ruby -e "$(curl -fsSL https:/
                         
                     </div>
                     <div class="publish-info">
@@ -1019,8 +1015,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1143,7 +1137,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

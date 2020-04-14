@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -495,7 +496,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    103
+                    101
                 </div>
                 
 
@@ -517,7 +518,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># slapcat &gt; ldapbak.ldif            // 导出</span></span><br><span class="line"><span class="comment"># systemctl stop slapd              // 停止服务</span></span><br><span class="line"><span class="comment"># rm -rf /var/lib/ldap/*            // 删除原有数据</span></span><br><span class="line"><span class="comment"># slapadd -l ldapbak.ldif           // 导入数据</span></span><br><span class="line"><span class="comment"># chown -R ldap:ldap /var/lib/ldap  // 修复权限</span></span><br><span class="line"><span class="comment"># systemctl start slapd             // 启动服务</span></span><br></pre></td></tr></tbody></table></figure><script>
+                <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># slapcat > ldapbak.ldif            // 导出</span>
+<span class="token comment" spellcheck="true"># systemctl stop slapd              // 停止服务</span>
+<span class="token comment" spellcheck="true"># rm -rf /var/lib/ldap/*            // 删除原有数据</span>
+<span class="token comment" spellcheck="true"># slapadd -l ldapbak.ldif           // 导入数据</span>
+<span class="token comment" spellcheck="true"># chown -R ldap:ldap /var/lib/ldap  // 修复权限</span>
+<span class="token comment" spellcheck="true"># systemctl start slapd             // 启动服务</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -815,7 +822,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            123456# slapcat &gt; ldapbak.ldif            // 导出# systemctl stop slapd              // 停止服务# rm -rf /var/lib/ldap/*   
+                            # slapcat > ldapbak.ldif            // 导出
+# systemctl stop slapd              // 停止服务
+# rm -rf /var/lib/ldap/*          
                         
                     </div>
                     <div class="publish-info">
@@ -869,7 +878,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Dockerfile12345678910111213FROM centos:7ENV container dockerRUN (cd /lib/systemd/system/sysinit.target.wants/; for i in 
+                            DockerfileFROM centos:7
+ENV container docker
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
                         
                     </div>
                     <div class="publish-info">
@@ -966,8 +977,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1090,7 +1099,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

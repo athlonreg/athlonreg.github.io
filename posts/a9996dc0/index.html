@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -491,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.8k
+                    2.7k
                 </div>
                 
 
@@ -517,30 +518,103 @@
 <h2 id="协议介绍"><a href="#协议介绍" class="headerlink" title="协议介绍"></a>协议介绍</h2><p>关于 oauth2.0 的原理及介绍可以参考<a href="http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html" target="_blank" rel="noopener">理解OAuth 2.0 - 阮一峰的网络日志</a>，这里不做赘述。</p>
 <h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p><code>CAS</code>是基于Spring写的，因此需要准备Java环境，官方提供了一种非常好用的编译方法，我们在使用时可以根据自己的需求来决定依赖的选择，本文主要以openLDAP和oauth为例。编译时需要maven环境。运行时需要 Tomcat 容器，因此需要提前准备好 Tomcat 环境。后续我们会整合 openLDAP 做统一用户管理，因此请先安装好 openLDAP。</p>
 <h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><p>首先去项目地址下载编译模板</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/apereo/cas-overlay-template</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git clone https://github.com/apereo/cas-overlay-template</span></span><br><span class="line"><span class="comment"># cd cas-overlay-template</span></span><br><span class="line"><span class="comment"># vi pom.xml</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-url"><code class="language-url">https://github.com/apereo/cas-overlay-template<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># git clone https://github.com/apereo/cas-overlay-template</span>
+<span class="token comment" spellcheck="true"># cd cas-overlay-template</span>
+<span class="token comment" spellcheck="true"># vi pom.xml</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>找到下面的部分</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&lt;dependencies&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-webapp${app.server}&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">        <span class="attr">&lt;type&gt;war&lt;/type&gt;</span></span><br><span class="line">        <span class="attr">&lt;scope&gt;runtime&lt;/scope&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;!--</span></span><br><span class="line">    <span class="meta">...Additional</span> <span class="string">dependencies may be placed here...</span></span><br><span class="line">    <span class="attr">--&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependencies&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties">&lt;dependencies>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-webapp${app.server}&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+        &lt;type>war&lt;/type>
+        &lt;scope>runtime&lt;/scope>
+    &lt;/dependency>
+    &lt;!--
+<span class="token attr-name">    ...Additional</span> <span class="token attr-value">dependencies may be placed here...</span>
+    -->
+    &lt;/dependencies><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>将注释的部分替换为我们需要的模块</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&lt;dependencies&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-webapp${app.server}&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">        <span class="attr">&lt;type&gt;war&lt;/type&gt;</span></span><br><span class="line">        <span class="attr">&lt;scope&gt;runtime&lt;/scope&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-oauth-webflow&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;mysql&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${mysql.driver.version}&lt;/version&gt;</span></span><br><span class="line">        <span class="attr">&lt;scope&gt;runtime&lt;/scope&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-jdbc&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-jdbc-drivers&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;!--</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-rest&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">        <span class="attr">&lt;scope&gt;runtime&lt;/scope&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">--&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-ldap&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;!--</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-jpa-ticket-registry&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-jpa-service-registry&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-rest-services&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">        <span class="attr">&lt;scope&gt;runtime&lt;/scope&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">&lt;dependency&gt;</span></span><br><span class="line">        <span class="attr">&lt;groupId&gt;org.apereo.cas&lt;/groupId&gt;</span></span><br><span class="line">        <span class="attr">&lt;artifactId&gt;cas-server-support-json-service-registry&lt;/artifactId&gt;</span></span><br><span class="line">        <span class="attr">&lt;version&gt;${cas.version}&lt;/version&gt;</span></span><br><span class="line">    <span class="attr">&lt;/dependency&gt;</span></span><br><span class="line">    <span class="attr">--&gt;</span></span><br><span class="line"><span class="attr">&lt;/dependencies&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties">&lt;dependencies>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-webapp${app.server}&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+        &lt;type>war&lt;/type>
+        &lt;scope>runtime&lt;/scope>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-oauth-webflow&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>mysql&lt;/groupId>
+        &lt;artifactId>mysql-connector-java&lt;/artifactId>
+        &lt;version>${mysql.driver.version}&lt;/version>
+        &lt;scope>runtime&lt;/scope>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-jdbc&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-jdbc-drivers&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
+    &lt;!--
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-rest&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+        &lt;scope>runtime&lt;/scope>
+    &lt;/dependency>
+    -->
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-ldap&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
+    &lt;!--
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-jpa-ticket-registry&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
 
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-jpa-service-registry&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-rest-services&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+        &lt;scope>runtime&lt;/scope>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>org.apereo.cas&lt;/groupId>
+        &lt;artifactId>cas-server-support-json-service-registry&lt;/artifactId>
+        &lt;version>${cas.version}&lt;/version>
+    &lt;/dependency>
+    -->
+&lt;/dependencies><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>上面例子中我添加了openLDAP oauth2.0 mysql的依赖，具体请按照自己需求选择。</p>
 <blockquote>
 <p>添加 MySQL 需要指定 connector-java 连接器的版本</p>
 </blockquote>
-<figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mysql.driver.version</span>&gt;</span>5.1.47<span class="tag">&lt;/<span class="name">mysql.driver.version</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mysql.driver.version</span><span class="token punctuation">></span></span>5.1.47<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mysql.driver.version</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>编辑好pom文件后，执行下面的命令开始编译</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mvn clean package</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># mvn clean package</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/42/20e1a20a856b8d98083544240e949b.jpg" alt=""></p>
 <p>过程很长，需要联网。如上图所示，编译完成后，会在此目录下生成一个 target 目录，我们需要的 war 包就在里面。</p>
 <h2 id="安装测试"><a href="#安装测试" class="headerlink" title="安装测试"></a>安装测试</h2><p>安装过程就比较简单了，将 war 包保存至 Tomcat 下 webapps 目录下，然后运行 Tomcat 即可。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># startup.sh</span></span><br><span class="line"><span class="comment"># tail -f /usr/local/tomcat/logs/catalina.out</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># startup.sh</span>
+<span class="token comment" spellcheck="true"># tail -f /usr/local/tomcat/logs/catalina.out</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b7/bfb043dc833a972751ad396ccc63c5.jpg" alt=""></p>
 <p>运行完成后日志如上图所示，然后我们打开 <a href="http://localhost:8080/cas" target="_blank" rel="noopener">http://localhost:8080/cas</a> </p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/91/6097314bc496dd2404ecc7ccac8a28.jpg" alt=""></p>
@@ -550,41 +624,60 @@
 <h2 id="开启-oauth-2-0-授权"><a href="#开启-oauth-2-0-授权" class="headerlink" title="开启 oauth 2.0 授权"></a>开启 oauth 2.0 授权</h2><blockquote>
 <p>application.properties 增加配置文件如下</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">cas.authn.oauth.refreshToken.timeToKillInSeconds</span>=<span class="string">2592000</span></span><br><span class="line"><span class="meta">cas.authn.oauth.code.timeToKillInSeconds</span>=<span class="string">30</span></span><br><span class="line"><span class="meta">cas.authn.oauth.code.numberOfUses</span>=<span class="string">1</span></span><br><span class="line"><span class="meta">cas.authn.oauth.accessToken.releaseProtocolAttributes</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.oauth.accessToken.timeToKillInSeconds</span>=<span class="string">7200</span></span><br><span class="line"><span class="meta">cas.authn.oauth.accessToken.maxTimeToLiveInSeconds</span>=<span class="string">28800</span></span><br><span class="line"><span class="meta">cas.authn.oauth.grants.resourceOwner.requireServiceHeader</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.oauth.userProfileViewType</span>=<span class="string">NESTED</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">cas.authn.oauth.refreshToken.timeToKillInSeconds</span><span class="token punctuation">=</span><span class="token attr-value">2592000</span>
+<span class="token attr-name">cas.authn.oauth.code.timeToKillInSeconds</span><span class="token punctuation">=</span><span class="token attr-value">30</span>
+<span class="token attr-name">cas.authn.oauth.code.numberOfUses</span><span class="token punctuation">=</span><span class="token attr-value">1</span>
+<span class="token attr-name">cas.authn.oauth.accessToken.releaseProtocolAttributes</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.oauth.accessToken.timeToKillInSeconds</span><span class="token punctuation">=</span><span class="token attr-value">7200</span>
+<span class="token attr-name">cas.authn.oauth.accessToken.maxTimeToLiveInSeconds</span><span class="token punctuation">=</span><span class="token attr-value">28800</span>
+<span class="token attr-name">cas.authn.oauth.grants.resourceOwner.requireServiceHeader</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.oauth.userProfileViewType</span><span class="token punctuation">=</span><span class="token attr-value">NESTED</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>增加 OAUTH-1002.json service 注册文件</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/servies/OAUTH-1002.json</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">{</span></span><br><span class="line">  <span class="meta">"@class"</span> : <span class="string">"org.apereo.cas.support.oauth.services.OAuthRegisteredService",</span></span><br><span class="line">  <span class="meta">"clientId"</span>: <span class="string">"20181124",</span></span><br><span class="line">  <span class="meta">"clientSecret"</span>: <span class="string">"123456",</span></span><br><span class="line">  <span class="meta">"serviceId"</span> : <span class="string">"^(https|http|imaps)://.*",</span></span><br><span class="line">  <span class="meta">"name"</span> : <span class="string">"OAuthService",</span></span><br><span class="line">  <span class="meta">"id"</span> : <span class="string">1002</span></span><br><span class="line"><span class="attr">}</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/servies/OAUTH-1002.json</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-properties"><code class="language-properties">{
+<span class="token attr-name">  "@class"</span> <span class="token punctuation">:</span> <span class="token attr-value">"org.apereo.cas.support.oauth.services.OAuthRegisteredService",</span>
+<span class="token attr-name">  "clientId"</span><span class="token punctuation">:</span> <span class="token attr-value">"20181124",</span>
+<span class="token attr-name">  "clientSecret"</span><span class="token punctuation">:</span> <span class="token attr-value">"123456",</span>
+<span class="token attr-name">  "serviceId"</span> <span class="token punctuation">:</span> <span class="token attr-value">"^(https|http|imaps)://.*",</span>
+<span class="token attr-name">  "name"</span> <span class="token punctuation">:</span> <span class="token attr-value">"OAuthService",</span>
+<span class="token attr-name">  "id"</span> <span class="token punctuation">:</span> <span class="token attr-value">1002</span>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>重启 Tomcat 测试</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># shutdown.sh                   </span></span><br><span class="line">Using CATALINA_BASE:   /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line">Using CATALINA_HOME:   /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line">Using CATALINA_TMPDIR: /usr/<span class="built_in">local</span>/tomcat/temp</span><br><span class="line">Using JRE_HOME:        /usr</span><br><span class="line">Using CLASSPATH:       /usr/<span class="built_in">local</span>/tomcat/bin/bootstrap.jar:/usr/<span class="built_in">local</span>/tomcat/bin/tomcat-juli.jar</span><br><span class="line"><span class="comment"># startup.sh </span></span><br><span class="line">Using CATALINA_BASE:   /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line">Using CATALINA_HOME:   /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line">Using CATALINA_TMPDIR: /usr/<span class="built_in">local</span>/tomcat/temp</span><br><span class="line">Using JRE_HOME:        /usr</span><br><span class="line">Using CLASSPATH:       /usr/<span class="built_in">local</span>/tomcat/bin/bootstrap.jar:/usr/<span class="built_in">local</span>/tomcat/bin/tomcat-juli.jar</span><br><span class="line">Tomcat started.</span><br><span class="line"><span class="comment">#</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># shutdown.sh                   </span>
+Using CATALINA_BASE:   /usr/local/tomcat
+Using CATALINA_HOME:   /usr/local/tomcat
+Using CATALINA_TMPDIR: /usr/local/tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
+<span class="token comment" spellcheck="true"># startup.sh </span>
+Using CATALINA_BASE:   /usr/local/tomcat
+Using CATALINA_HOME:   /usr/local/tomcat
+Using CATALINA_TMPDIR: /usr/local/tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
+Tomcat started.
+<span class="token comment" spellcheck="true"># </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>重启完成后，我们利用本博客作为目标访问网址进行测试，浏览器打开 <a href="http://localhost:8080/cas/oauth2.0/authorize?response_type=code&amp;client_id=20181124&amp;redirect_uri=https://blog.iamzhl.top" target="_blank" rel="noopener">http://localhost:8080/cas/oauth2.0/authorize?response_type=code&amp;client_id=20181124&amp;redirect_uri=https://blog.iamzhl.top</a></p>
 <p>发现跳转了一个示例网址</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b1/603980e19d03912f2c01b3a7c94b80.jpg" alt=""></p>
 <p>这时我们需要设置一下两个变量</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>加入下面两行</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">cas.server.name</span>=<span class="string">http://devops.iamzhl.top:8080/cas</span></span><br><span class="line"><span class="meta">cas.server.prefix</span>=<span class="string">${cas.server.name}</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">cas.server.name</span><span class="token punctuation">=</span><span class="token attr-value">http://devops.iamzhl.top:8080/cas</span>
+<span class="token attr-name">cas.server.prefix</span><span class="token punctuation">=</span><span class="token attr-value">${cas.server.name}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>请将 devops.iamzhl.top 改为你的 ip，然后重启 Tomcat 再次测试</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/66/574e93fdcc2b8ab686a46ec772627d.jpg" alt=""></p>
 <p>这次能正常跳转了，但是出现了<code>未认证授权的服务</code>，这是因为我们没有开启 http 协议支持，因此只要再让我们的 CAS Server 支持 http 认证就行了</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>添加下面两行</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">cas.tgc.secure</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">cas.serviceRegistry.initFromJson</span>=<span class="string">true</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/services/HTTPSandIMAPS-10000001.json</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">cas.tgc.secure</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token attr-name">cas.serviceRegistry.initFromJson</span><span class="token punctuation">=</span><span class="token attr-value">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/services/HTTPSandIMAPS-10000001.json</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>将<code>"serviceId" : "^(https|imaps)://.*",</code>改为<code>"serviceId" : "^(https|http|imaps)://.*",</code>，如图</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/2b/cca4a5df53dd47b94e73664bdc8ff3.jpg" alt=""></p>
 <p>再次登录测试</p>
@@ -594,14 +687,58 @@
 <p>点击 Allow 即可成功授权跳转至本博客，我们会注意到 uri 会携带一个 code，这就是 CAS 目前在 oauth2.0 授权中最为完善的 code 授权模式了。</p>
 <p>至此， CAS 5.3 集成 oauth2.0 的授权已经搭建完毕</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/13/f1a8df13c6ee93210a970833c5059a.jpg" alt=""></p>
-<h2 id="整合-openLDAP"><a href="#整合-openLDAP" class="headerlink" title="整合 openLDAP"></a>整合 openLDAP</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span></span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="整合-openLDAP"><a href="#整合-openLDAP" class="headerlink" title="整合 openLDAP"></a>整合 openLDAP</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>注释掉默认的 <code>cas.authn.accept.users</code> 认证方式并添加与<code>LDAP Server</code>连接的配置(请根据自己的<code>LDAP</code>服务器信息进行修改)</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># CAS Authentication Credentials</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># cas.authn.accept.users=casuser::Mellon</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].principalAttributeList</span>=<span class="string">sn,cn:commonName,givenName,eduPersonTargettedId:SOME_IDENTIFIER</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].collectDnAttribute</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].principalDnAttributeName</span>=<span class="string">principalLdapDn</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].allowMultiplePrincipalAttributeValues</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].allowMissingPrincipalAttributeValue</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].credentialCriteria</span>=<span class="string"></span></span><br><span class="line"><span class="meta">cas.authn.attributeRepository.ldap[0].attributes.uid</span>=<span class="string">uid</span></span><br><span class="line"><span class="meta">cas.authn.attributeRepository.ldap[0].attributes.displayName</span>=<span class="string">displayName</span></span><br><span class="line"><span class="meta">cas.authn.attributeRepository.ldap[0].attributes.cn</span>=<span class="string">commonName</span></span><br><span class="line"><span class="meta">cas.authn.attributeRepository.ldap[0].attributes.affiliation</span>=<span class="string">groupMembership</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].ldapUrl</span>=<span class="string">ldap://devops.iamzhl.top:389</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].bindDn</span>=<span class="string">cn=Manager,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].bindCredential</span>=<span class="string">passwd</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].poolPassivator</span>=<span class="string">BIND</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].connectionStrategy</span>=<span class="string"></span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].providerClass</span>=<span class="string">org.ldaptive.provider.unboundid.UnboundIDProvider</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].connectTimeout</span>=<span class="string">5000</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].trustCertificates</span>=<span class="string"></span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].keystore</span>=<span class="string"></span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].keystorePassword</span>=<span class="string"></span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].keystoreType</span>=<span class="string">PKCS12</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].minPoolSize</span>=<span class="string">3</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].maxPoolSize</span>=<span class="string">10</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].validateOnCheckout</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].validatePeriodically</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].validatePeriod</span>=<span class="string">500</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].validateTimeout</span>=<span class="string">5000</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].failFast</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].idleTime</span>=<span class="string">500</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].prunePeriod</span>=<span class="string">24</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].blockWaitTime</span>=<span class="string">5000</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].useSsl</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].useStartTls</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].responseTimeout</span>=<span class="string">8000</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].allowMultipleDns</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].name</span>=<span class="string"></span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].type</span>=<span class="string">AUTHENTICATED</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].searchFilter</span>=<span class="string">uid={user}</span></span><br><span class="line"><span class="comment">#cas.authn.ldap[0].enhanceWithEntryResolver=true</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].derefAliases</span>=<span class="string">NEVER</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].dnFormat</span>=<span class="string">uid=%s,ou=People,dc=iamzhl,dc=top</span></span><br><span class="line"><span class="meta">cas.authn.ldap[0].baseDn</span>=<span class="string">ou=People,dc=iamzhl,dc=top</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true">##</span>
+<span class="token comment" spellcheck="true"># CAS Authentication Credentials</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true"># cas.authn.accept.users=casuser::Mellon</span>
+<span class="token attr-name">cas.authn.ldap[0].principalAttributeList</span><span class="token punctuation">=</span><span class="token attr-value">sn,cn:commonName,givenName,eduPersonTargettedId:SOME_IDENTIFIER</span>
+<span class="token attr-name">cas.authn.ldap[0].collectDnAttribute</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token attr-name">cas.authn.ldap[0].principalDnAttributeName</span><span class="token punctuation">=</span><span class="token attr-value">principalLdapDn</span>
+<span class="token attr-name">cas.authn.ldap[0].allowMultiplePrincipalAttributeValues</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.ldap[0].allowMissingPrincipalAttributeValue</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.ldap[0].credentialCriteria</span><span class="token punctuation">=</span>
+<span class="token attr-name">cas.authn.attributeRepository.ldap[0].attributes.uid</span><span class="token punctuation">=</span><span class="token attr-value">uid</span>
+<span class="token attr-name">cas.authn.attributeRepository.ldap[0].attributes.displayName</span><span class="token punctuation">=</span><span class="token attr-value">displayName</span>
+<span class="token attr-name">cas.authn.attributeRepository.ldap[0].attributes.cn</span><span class="token punctuation">=</span><span class="token attr-value">commonName</span>
+<span class="token attr-name">cas.authn.attributeRepository.ldap[0].attributes.affiliation</span><span class="token punctuation">=</span><span class="token attr-value">groupMembership</span>
+<span class="token attr-name">cas.authn.ldap[0].ldapUrl</span><span class="token punctuation">=</span><span class="token attr-value">ldap://devops.iamzhl.top:389</span>
+<span class="token attr-name">cas.authn.ldap[0].bindDn</span><span class="token punctuation">=</span><span class="token attr-value">cn=Manager,dc=iamzhl,dc=top</span>
+<span class="token attr-name">cas.authn.ldap[0].bindCredential</span><span class="token punctuation">=</span><span class="token attr-value">passwd</span>
+<span class="token attr-name">cas.authn.ldap[0].poolPassivator</span><span class="token punctuation">=</span><span class="token attr-value">BIND</span>
+<span class="token attr-name">cas.authn.ldap[0].connectionStrategy</span><span class="token punctuation">=</span>
+<span class="token attr-name">cas.authn.ldap[0].providerClass</span><span class="token punctuation">=</span><span class="token attr-value">org.ldaptive.provider.unboundid.UnboundIDProvider</span>
+<span class="token attr-name">cas.authn.ldap[0].connectTimeout</span><span class="token punctuation">=</span><span class="token attr-value">5000</span>
+<span class="token attr-name">cas.authn.ldap[0].trustCertificates</span><span class="token punctuation">=</span>
+<span class="token attr-name">cas.authn.ldap[0].keystore</span><span class="token punctuation">=</span>
+<span class="token attr-name">cas.authn.ldap[0].keystorePassword</span><span class="token punctuation">=</span>
+<span class="token attr-name">cas.authn.ldap[0].keystoreType</span><span class="token punctuation">=</span><span class="token attr-value">PKCS12</span>
+<span class="token attr-name">cas.authn.ldap[0].minPoolSize</span><span class="token punctuation">=</span><span class="token attr-value">3</span>
+<span class="token attr-name">cas.authn.ldap[0].maxPoolSize</span><span class="token punctuation">=</span><span class="token attr-value">10</span>
+<span class="token attr-name">cas.authn.ldap[0].validateOnCheckout</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.ldap[0].validatePeriodically</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.ldap[0].validatePeriod</span><span class="token punctuation">=</span><span class="token attr-value">500</span>
+<span class="token attr-name">cas.authn.ldap[0].validateTimeout</span><span class="token punctuation">=</span><span class="token attr-value">5000</span>
+<span class="token attr-name">cas.authn.ldap[0].failFast</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.authn.ldap[0].idleTime</span><span class="token punctuation">=</span><span class="token attr-value">500</span>
+<span class="token attr-name">cas.authn.ldap[0].prunePeriod</span><span class="token punctuation">=</span><span class="token attr-value">24</span>
+<span class="token attr-name">cas.authn.ldap[0].blockWaitTime</span><span class="token punctuation">=</span><span class="token attr-value">5000</span>
+<span class="token attr-name">cas.authn.ldap[0].useSsl</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token attr-name">cas.authn.ldap[0].useStartTls</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token attr-name">cas.authn.ldap[0].responseTimeout</span><span class="token punctuation">=</span><span class="token attr-value">8000</span>
+<span class="token attr-name">cas.authn.ldap[0].allowMultipleDns</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token attr-name">cas.authn.ldap[0].name</span><span class="token punctuation">=</span>
+<span class="token attr-name">cas.authn.ldap[0].type</span><span class="token punctuation">=</span><span class="token attr-value">AUTHENTICATED</span>
+<span class="token attr-name">cas.authn.ldap[0].searchFilter</span><span class="token punctuation">=</span><span class="token attr-value">uid={user}</span>
+<span class="token comment" spellcheck="true">#cas.authn.ldap[0].enhanceWithEntryResolver=true</span>
+<span class="token attr-name">cas.authn.ldap[0].derefAliases</span><span class="token punctuation">=</span><span class="token attr-value">NEVER</span>
+<span class="token attr-name">cas.authn.ldap[0].dnFormat</span><span class="token punctuation">=</span><span class="token attr-value">uid=%s,ou=People,dc=iamzhl,dc=top</span>
+<span class="token attr-name">cas.authn.ldap[0].baseDn</span><span class="token punctuation">=</span><span class="token attr-value">ou=People,dc=iamzhl,dc=top</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>重启 Tomcat 查看日志</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># shutdown.sh</span></span><br><span class="line"><span class="comment"># startup.sh</span></span><br><span class="line"><span class="comment"># tail -f /usr/local/tomcat/logs/catalina.out</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># shutdown.sh</span>
+<span class="token comment" spellcheck="true"># startup.sh</span>
+<span class="token comment" spellcheck="true"># tail -f /usr/local/tomcat/logs/catalina.out</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f2/308f5dc1de191625e6087c1d040824.jpg" alt=""></p>
 <p>新建一个 openLDAP 用户 test / 123456</p>
 <p><img src="https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/0e/e69bb807212cc32a80cb28c4b927e1.jpg" alt=""></p>
@@ -624,23 +761,56 @@
 <h2 id="整合-MySQL-认证"><a href="#整合-MySQL-认证" class="headerlink" title="整合 MySQL 认证"></a>整合 MySQL 认证</h2><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><blockquote>
 <p>修改配置文件</p>
 </blockquote>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/<span class="built_in">local</span>/tomcat/webapps/cas/WEB-INF/classes/application.properties</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">vim /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>最后添加如下内容 (需要将静态认证关闭，即 cas.authn.accept.users 配置项注释掉即可)</p>
 </blockquote>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##</span></span><br><span class="line"><span class="comment"># MySQL Authentication Credentials</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 定义查询用户名的 sql 语句</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].sql</span>=<span class="string">select * from sys_user where username=?</span></span><br><span class="line"><span class="comment"># 定义用户密码字段</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].fieldPassword</span>=<span class="string">password</span></span><br><span class="line"><span class="comment"># 定义提示修改密码字段</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].fieldExpired</span>=<span class="string">expired</span></span><br><span class="line"><span class="comment"># 定义禁用用户的字段</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].fieldDisabled</span>=<span class="string">disabled</span></span><br><span class="line"><span class="comment"># 使用的数据库方言</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].dialect</span>=<span class="string">org.hibernate.dialect.MySQLDialect</span></span><br><span class="line"><span class="comment"># 定义数据库类</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].driverClass</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="comment"># 使用的数据库</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].url</span>=<span class="string">jdbc:mysql://localhost:3306/cas?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false</span></span><br><span class="line"><span class="comment"># 使用的数据库用户</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].user</span>=<span class="string">root</span></span><br><span class="line"><span class="comment"># 数据库 root 用户密码</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].password</span>=<span class="string">123456</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#默认加密策略，通过encodingAlgorithm来指定算法，默认NONE不加密</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].passwordEncoder.type</span>=<span class="string">DEFAULT</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].passwordEncoder.characterEncoding</span>=<span class="string">UTF-8</span></span><br><span class="line"><span class="meta">cas.authn.jdbc.query[0].passwordEncoder.encodingAlgorithm</span>=<span class="string">MD5</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token comment" spellcheck="true">##</span>
+<span class="token comment" spellcheck="true"># MySQL Authentication Credentials</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true"># 定义查询用户名的 sql 语句</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].sql</span><span class="token punctuation">=</span><span class="token attr-value">select * from sys_user where username=?</span>
+<span class="token comment" spellcheck="true"># 定义用户密码字段</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].fieldPassword</span><span class="token punctuation">=</span><span class="token attr-value">password</span>
+<span class="token comment" spellcheck="true"># 定义提示修改密码字段</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].fieldExpired</span><span class="token punctuation">=</span><span class="token attr-value">expired</span>
+<span class="token comment" spellcheck="true"># 定义禁用用户的字段</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].fieldDisabled</span><span class="token punctuation">=</span><span class="token attr-value">disabled</span>
+<span class="token comment" spellcheck="true"># 使用的数据库方言</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].dialect</span><span class="token punctuation">=</span><span class="token attr-value">org.hibernate.dialect.MySQLDialect</span>
+<span class="token comment" spellcheck="true"># 定义数据库类</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].driverClass</span><span class="token punctuation">=</span><span class="token attr-value">com.mysql.jdbc.Driver</span>
+<span class="token comment" spellcheck="true"># 使用的数据库</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].url</span><span class="token punctuation">=</span><span class="token attr-value">jdbc:mysql://localhost:3306/cas?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false</span>
+<span class="token comment" spellcheck="true"># 使用的数据库用户</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].user</span><span class="token punctuation">=</span><span class="token attr-value">root</span>
+<span class="token comment" spellcheck="true"># 数据库 root 用户密码</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].password</span><span class="token punctuation">=</span><span class="token attr-value">123456</span>
 
+<span class="token comment" spellcheck="true">#默认加密策略，通过encodingAlgorithm来指定算法，默认NONE不加密</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].passwordEncoder.type</span><span class="token punctuation">=</span><span class="token attr-value">DEFAULT</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].passwordEncoder.characterEncoding</span><span class="token punctuation">=</span><span class="token attr-value">UTF-8</span>
+<span class="token attr-name">cas.authn.jdbc.query[0].passwordEncoder.encodingAlgorithm</span><span class="token punctuation">=</span><span class="token attr-value">MD5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="数据库配置"><a href="#数据库配置" class="headerlink" title="数据库配置"></a>数据库配置</h3><blockquote>
 <p>创建数据库</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create database cas;</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> create database cas;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>创建表</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; use cas</span><br><span class="line">mysql&gt; create table sys_user (</span><br><span class="line"> `id` int(11) not null auto_increment,</span><br><span class="line"> `username` varchar(30) not null,</span><br><span class="line"> `password` varchar(64) not null,</span><br><span class="line"> `email`    varchar(50),</span><br><span class="line"> `address`  varchar(100),</span><br><span class="line"> `age`      int,</span><br><span class="line"> `expired` int,</span><br><span class="line"> `disabled` int,</span><br><span class="line"> `locked` int,</span><br><span class="line">  primary key (`id`)</span><br><span class="line">) engine=innodb auto_increment=1 default charset=utf8;</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> use cas
+mysql> create table sys_user (
+ `id` int(11) not null auto_increment,
+ `username` varchar(30) not null,
+ `password` varchar(64) not null,
+ `email`    varchar(50),
+ `address`  varchar(100),
+ `age`      int,
+ `expired` int,
+ `disabled` int,
+ `locked` int,
+  primary key (`id`)
+) engine=innodb auto_increment=1 default charset=utf8;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>数据表字段说明:</p>
 </blockquote>
@@ -648,21 +818,21 @@
 <blockquote>
 <p>配置完成后在数据表添加用户启动 Tomcat 进行测试即可。</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; insert into sys_user values ('1', 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'admin@example.com', '北京顺义', 20, 0, 0, 0);</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-mysql"><code class="language-mysql">mysql> insert into sys_user values ('1', 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'admin@example.com', '北京顺义', 20, 0, 0, 0);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong><em>需要注意的是插入数据时，需要用密码的 MD5 值</em></strong></p>
 <h2 id="自定义登出跳转界面"><a href="#自定义登出跳转界面" class="headerlink" title="自定义登出跳转界面"></a>自定义登出跳转界面</h2><p>某些时候，我们可能需要对登出进行定制，比如等出后跳转到等出界面，在<code>CAS 5.3</code>以后的版本中，直接修改前端的<code>HTML</code>页面无法完成登出的定制跳转，不过官方提供了更为方便的设置方法，我们可以通过修改配置文件<code>application.properties</code>来实现，在文件中添加以下内容</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">cas.logout.followServiceRedirects</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">cas.logout.redirectParameter</span>=<span class="string">service</span></span><br><span class="line"><span class="meta">cas.logout.redirectUrl</span>=<span class="string">https://default.cas.com</span></span><br><span class="line"><span class="meta">cas.logout.confirmLogout</span>=<span class="string">false</span></span><br><span class="line"><span class="meta">cas.logout.removeDescendantTickets</span>=<span class="string">true</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">cas.logout.followServiceRedirects</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token attr-name">cas.logout.redirectParameter</span><span class="token punctuation">=</span><span class="token attr-value">service</span>
+<span class="token attr-name">cas.logout.redirectUrl</span><span class="token punctuation">=</span><span class="token attr-value">https://default.cas.com</span>
+<span class="token attr-name">cas.logout.confirmLogout</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token attr-name">cas.logout.removeDescendantTickets</span><span class="token punctuation">=</span><span class="token attr-value">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><em>请根据需要将其中的<code>redirectUrl</code>改为要定制的登出跳转链接</em></p>
 <h2 id="自定义默认的登录跳转界面"><a href="#自定义默认的登录跳转界面" class="headerlink" title="自定义默认的登录跳转界面"></a>自定义默认的登录跳转界面</h2><p>登出跳转可以定制，登录的也可以，有些时候，可能需要在直接访问的<code>CAS</code>的时候，登陆成功后直接跳转到指定的界面，比如直接访问<code>http://devops.iamzhl.top:8080/cas</code>，需要跳转到<code>http://devops.iamzhl.top/index.html</code>，那么就可以在<code>application.properties</code>中添加以下属性</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">cas.view.defaultRedirectUrl</span>=<span class="string">http://devops.iamzhl.top/index.html</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name">cas.view.defaultRedirectUrl</span><span class="token punctuation">=</span><span class="token attr-value">http://devops.iamzhl.top/index.html</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="自定义登录界面主题"><a href="#自定义登录界面主题" class="headerlink" title="自定义登录界面主题"></a>自定义登录界面主题</h2><p>在<code>cas/WEB-INF/classes/static/themes</code>中新建一个文件夹以要设置的主题名命名，比如<code>devops</code>，在此目录下建立<code>js</code>、<code>css</code>以及<code>images</code>等静态资源文件夹，将定制的静态资源保存好，结构如下</p>
 <p><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fzqqbpvu1cj31p818k4au.jpg" alt=""></p>
 <p>然后在<code>application.properties</code>添加以下属性</p>
-<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">cas.theme.defaultThemeName</span>=<span class="string">devops</span></span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-properties"><code class="language-properties"><span class="token attr-name"> cas.theme.defaultThemeName</span><span class="token punctuation">=</span><span class="token attr-value">devops</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -957,7 +1127,7 @@
                     <div class="summary block-with-text">
                         
                             简介OpenLDAP 是轻型目录访问协议Lightweight Directory Access Protocol - LDAP的自由和开源的实现，在其OpenLDAP许可证下发行，并已经被包含在众多流行的Linux发行版中。
-安装12# 
+安装# cd
                         
                     </div>
                     <div class="publish-info">
@@ -1007,10 +1177,10 @@
                     <div class="summary block-with-text">
                         
                             本文环境CentOS 7.2 1511
-开始安装安装postfix1# yum -y install postfix
-
+开始安装安装postfix# yum -y install postfix
 如果机器已经安装了sendmail，需要将其卸载，下面两条命令均可
-12# yum -y remove sendmail
+# yum -y remove sendmail
+# r
                         
                     </div>
                     <div class="publish-info">
@@ -1111,8 +1281,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1235,7 +1403,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

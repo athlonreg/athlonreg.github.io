@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -533,46 +534,32 @@
 </blockquote>
 </li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/vit9696/AppleALC</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
+<pre><code>$ git clone https://github.com/vit9696/AppleALC</code></pre><ul>
 <li>下载<code>Lilu</code><blockquote>
 <p>在下面的网址下载<code>DEBUG</code>和<code>RELEASE</code></p>
 </blockquote>
 </li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/vit9696/Lilu/releases</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
+<pre><code>https://github.com/vit9696/Lilu/releases</code></pre><ul>
 <li>提取<code>Codec</code><blockquote>
 <p>这一步需要用到<code>Linux</code>环境，首先下载<code>Ubuntu</code>镜像，我个人提供一个</p>
 </blockquote>
 </li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">链接:http://pan.baidu.com/s/1i47I0jN  密码:de4v</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>链接:http://pan.baidu.com/s/1i47I0jN  密码:de4v</code></pre><blockquote>
 <p>当然也可以去官网下载，下载好镜像之后，将<code>U</code>盘格式化为<code>Fat32</code>，然后将镜像解压到<code>U</code>盘，重启以<code>U</code>盘启动，选择试用进入<code>Ubuntu</code>系统界面，打开终端输入</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat /proc/asound/card0/codec#0 &gt; ~/Desktop/Codec.txt</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>$ cat /proc/asound/card0/codec#0 &gt; ~/Desktop/Codec.txt</code></pre><blockquote>
 <p>执行完后会将<code>Codec.txt</code>提取到桌面，将其保存到<code>U</code>盘</p>
 </blockquote>
 <p><strong>PS: 一般来说提取的<code>Codec</code>会有<code>10k</code>左右大小，如果大小不够，很有可能提取错误，可以尝试以下命令</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat /proc/asound/card0/codec#1 &gt; ~/Desktop/Codec.txt</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>$ cat /proc/asound/card0/codec#1 &gt; ~/Desktop/Codec.txt</code></pre><blockquote>
 <p>或者</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat /proc/asound/card0/codec#2 &gt; ~/Desktop/Codec.txt</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>$ cat /proc/asound/card0/codec#2 &gt; ~/Desktop/Codec.txt</code></pre><blockquote>
 <p>或者</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat /proc/asound/card1/codec#0 &gt; ~/Desktop/Codec.txt</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="Codec-txt的数据整理"><a href="#Codec-txt的数据整理" class="headerlink" title="Codec.txt的数据整理"></a><code>Codec.txt</code>的数据整理</h2><ul>
+<pre><code>$ cat /proc/asound/card1/codec#0 &gt; ~/Desktop/Codec.txt</code></pre><h2 id="Codec-txt的数据整理"><a href="#Codec-txt的数据整理" class="headerlink" title="Codec.txt的数据整理"></a><code>Codec.txt</code>的数据整理</h2><ul>
 <li>记录<code>Address</code>和<code>Vendor Id</code>值</li>
 </ul>
 <blockquote>
@@ -691,17 +678,18 @@
 <ul>
 <li>打开终端，输入 </li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/goodwin/ALCPlugFix</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
+<pre><code>git clone https://github.com/goodwin/ALCPlugFix </code></pre><ul>
 <li>回车就将<code>ALCPlugFix</code>下载到了你的用户目录，打开此目录中的<code>ALCPlugFix</code>中的<code>main.m</code>下拉到最下方，注意这一部分：</li>
 </ul>
 <p><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fy0s84o8vij31qc1f6twi.jpg" alt=""></p>
 <ul>
 <li>下载<a href="https://github.com/RehabMan/EAPD-Codec-Commander.git" target="_blank" rel="noopener"><code>CodecCommander</code></a></li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/athlonreg/ALCPlugFix.git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/RehabMan/EAPD-Codec-Commander.git</span><br><span class="line">$ cp ALCPlugFix/alc_fix/hda-verb /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">$ <span class="built_in">cd</span> EAPD-Codec-Commander</span><br><span class="line">$ ./widget_dump.sh</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/athlonreg/ALCPlugFix.git
+$ <span class="token function">git</span> clone https://github.com/RehabMan/EAPD-Codec-Commander.git
+$ <span class="token function">cp</span> ALCPlugFix/alc_fix/hda-verb /usr/local/bin/
+$ <span class="token function">cd</span> EAPD-Codec-Commander
+$ ./widget_dump.sh <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>回车</li>
 </ul>
@@ -717,13 +705,10 @@
 <li><p>然后将生成的<code>ALCPlugFix</code>替换<code>alc_fix</code>中的<code>ALCPlugFix</code>，终端<code>cd</code>到<code>alc_fix</code>目录，执行 </p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./install.sh</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
+<pre><code>$ ./install.sh</code></pre><ul>
 <li>耳机就可以自动切换了，三节点的朋友运气好的话杂音应该也解决了，这时插入耳机在执行 </li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./widget_dump.sh</span><br></pre></td></tr></tbody></table></figure>
-<ul>
+<pre><code>$ ./widget_dump.sh </code></pre><ul>
 <li>就可以发现之前的<code>19</code>和<code>1a</code>后面的数据反过来了(我这里是修复好的，就不再演示了。。。)</li>
 </ul>
 <blockquote>
@@ -787,23 +772,26 @@
 <h4 id="将整理出的所有Node的Pin-Default值进行转换修正得出需要的设定值"><a href="#将整理出的所有Node的Pin-Default值进行转换修正得出需要的设定值" class="headerlink" title="将整理出的所有Node的Pin Default值进行转换修正得出需要的设定值"></a>将整理出的所有<code>Node</code>的<code>Pin Default</code>值进行转换修正得出需要的设定值</h4><ul>
 <li>对于<code>Pin Default</code>值，我们的处理方法为八位四分、二二逆置，例如<code>0x16</code>节点，首先得出<code>40 10 21 03</code>，同理得出：</li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0x16: 40 10 21 03</span><br><span class="line">0x17: 10 01 17 90</span><br><span class="line">0x19: 30 10 A1 03</span><br><span class="line">0x1a: 20 01 A7 95</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>0x16: 40 10 21 03
+0x17: 10 01 17 90
+0x19: 30 10 A1 03
+0x1a: 20 01 A7 95</code></pre><blockquote>
 <p>根据八位设定值的规则描述，对上面得出的设定值进行修正。</p>
 <p>拿<code>0x16</code>为例，这是一个耳机扬声器节点。</p>
 <p>第1、2、3位没什么好说的保持不变；<br>第4位插孔侦测，耳机设备属于外接设备，所以应当是0，这里是0不用动；<br>第5位装置类型笔记本忽略；<br>第6位连接类型，插口为圆口，所以是1，这里是1，保持不变；<br>第7位代表是否有插孔，耳机是外接设备，所以是0，这里是0，保持不变；<br>第8位插孔所在位置，耳机是外接设备，所以是1；</p>
 <p>其他<code>Node</code>节点也是如此设定；</p>
 <p>修正后的数据如下：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0x16: 40 10 21 01</span><br><span class="line">0x17: 10 01 17 90</span><br><span class="line">0x19: 30 10 81 01</span><br><span class="line">0x1a: 20 01 A0 90</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="根据规律或者规则得出ConfigData"><a href="#根据规律或者规则得出ConfigData" class="headerlink" title="根据规律或者规则得出ConfigData"></a>根据规律或者规则得出<code>ConfigData</code></h4><blockquote>
+<pre><code>0x16: 40 10 21 01
+0x17: 10 01 17 90
+0x19: 30 10 81 01
+0x1a: 20 01 A0 90</code></pre><h4 id="根据规律或者规则得出ConfigData"><a href="#根据规律或者规则得出ConfigData" class="headerlink" title="根据规律或者规则得出ConfigData"></a>根据规律或者规则得出<code>ConfigData</code></h4><blockquote>
 <p>根据上面得出的设定值，我可以得出以下<code>ConfigData</code>值：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">01671C40 01671D10 01671E21 01671F01</span><br><span class="line">01771C10 01771D01 01771E17 01771F90</span><br><span class="line">01971C30 01971D10 01971E81 01971F01</span><br><span class="line">01a71C20 01a71D01 01a71EA0 01a71F90</span><br></pre></td></tr></tbody></table></figure>
-
-<p><strong>PS: 搜索一下codec里面有没有<code>EAPD</code>这个字符串，有的话就在<code>ConfigData</code>的最后面加上一串<code>01470C02</code>这组数字。</strong></p>
+<pre><code>01671C40 01671D10 01671E21 01671F01
+01771C10 01771D01 01771E17 01771F90
+01971C30 01971D10 01971E81 01971F01
+01a71C20 01a71D01 01a71EA0 01a71F90</code></pre><p><strong>PS: 搜索一下codec里面有没有<code>EAPD</code>这个字符串，有的话就在<code>ConfigData</code>的最后面加上一串<code>01470C02</code>这组数字。</strong></p>
 <h4 id="PathMap的获取和整理"><a href="#PathMap的获取和整理" class="headerlink" title="PathMap的获取和整理"></a><code>PathMap</code>的获取和整理</h4><blockquote>
 <p>在声卡仿冒的过程中这一步是最麻烦的。有几个需要注意的地方。</p>
 <p>对于声音节点来说，节点路径的推断遵循一个规律：</p>
@@ -812,14 +800,11 @@
 <ul>
 <li>首先利用<code>codecgraph</code>得到路径图，该操作需要安装<code>graphviz</code>，这里我推荐利用终端<code>npm install graphviz</code>安装即可，然后执行下面的命令下载<code>codecgraph</code></li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/athlonreg/codecgraph.git</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
+<pre><code>$ git clone https://github.com/athlonreg/codecgraph.git </code></pre><ul>
 <li>这样就下载到了你的用户根目录，将你的<code>Codec.txt</code>拷贝到下载的<code>codecgraph</code>目录下，然后</li>
 </ul>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd codecgraph</span><br><span class="line">$ ./codecgraph Codec.txt</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
+<pre><code>$ cd codecgraph
+$ ./codecgraph Codec.txt</code></pre><ul>
 <li>就在<code>codecgraph</code>目录下生成了你的声卡路径图，格式为<code>svg</code>，用<code>safari</code>即可打开，当然也可以转换为其他格式，例如我的</li>
 </ul>
 <p><img src="https://ws1.sinaimg.cn/large/006dLY5Ily1fy0t3vra4yj31u60f2n07.jpg" alt=""></p>
@@ -1223,17 +1208,13 @@
                             实现 MAC 原生读写 NTFS 分区
 打开终端，输入命令
 
-1$ diskutil list
-
-
+$ diskutil list
 输入命令
 
-1$ sudo vim /etc/fstab
-
-
+$ sudo vim /etc/fstab
 编辑内容如下
 
-1LABEL=Win\040Ntfs\040Drive non
+LABEL=Win\040Ntfs\040Drive none ntfs 
                         
                     </div>
                     <div class="publish-info">
@@ -1330,8 +1311,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1454,7 +1433,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

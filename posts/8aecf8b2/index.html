@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    740
+                    793
                 </div>
                 
 
@@ -522,82 +523,122 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="先说说怎样强制加载某个驱动"><a href="#先说说怎样强制加载某个驱动" class="headerlink" title="先说说怎样强制加载某个驱动"></a>先说说怎样强制加载某个驱动</h3><p>如下，<code>KextToPatch</code>并列<code>ForceKextsToLoad</code>，设置<code>kext</code>路径</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;key&gt;ForceKextsToLoad&lt;/key&gt;</span><br><span class="line">&lt;array&gt;</span><br><span class="line">    &lt;string&gt;\System\Library\Extensions\AppleHDA.kext&lt;/string&gt;</span><br><span class="line">    &lt;string&gt;\Extra\Extensions&lt;/string&gt;</span><br><span class="line">&lt;/array&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="笔记本显存修改至2048MB"><a href="#笔记本显存修改至2048MB" class="headerlink" title="笔记本显存修改至2048MB"></a>笔记本显存修改至<code>2048MB</code></h3><blockquote>
+<pre><code>&lt;key&gt;ForceKextsToLoad&lt;/key&gt;
+&lt;array&gt;
+    &lt;string&gt;\System\Library\Extensions\AppleHDA.kext&lt;/string&gt;
+    &lt;string&gt;\Extra\Extensions&lt;/string&gt;
+&lt;/array&gt;</code></pre><h3 id="笔记本显存修改至2048MB"><a href="#笔记本显存修改至2048MB" class="headerlink" title="笔记本显存修改至2048MB"></a>笔记本显存修改至<code>2048MB</code></h3><blockquote>
 <p>HD4200_4400_4600 Mobile：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name：		AppleIntelFramebufferAzul</span><br><span class="line">Find：		01030303 00000002 00003001 00006000 00000060</span><br><span class="line">Replace：	01030303 00000002 00003001 00009000 00000080</span><br><span class="line">Comment:	1536MB -&gt; 2048MB for HD4200_4400_4600 Mobile</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>Name：        AppleIntelFramebufferAzul
+Find：        01030303 00000002 00003001 00006000 00000060
+Replace：    01030303 00000002 00003001 00009000 00000080
+Comment:    1536MB -&gt; 2048MB for HD4200_4400_4600 Mobile</code></pre><blockquote>
 <p>HD620 Mobile：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name：		AppleIntelKBLGraphicsFramebuffer</span><br><span class="line">Find：		01030303 00002002 00000000 00000060</span><br><span class="line">Replace：	01030303 00002002 00000000 00000080 </span><br><span class="line">Comment:	1536MB -&gt; 2048MB for HD620 Mobile</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>Name：        AppleIntelKBLGraphicsFramebuffer
+Find：        01030303 00002002 00000000 00000060
+Replace：    01030303 00002002 00000000 00000080 
+Comment:    1536MB -&gt; 2048MB for HD620 Mobile</code></pre><blockquote>
 <p>HD630 Mobile：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name：		AppleIntelKBLGraphicsFramebuffer</span><br><span class="line">Find：		01030303 00006002 00005001 00000060</span><br><span class="line">Replace：	01030303 00006002 00005001 00000080</span><br><span class="line">Comment:	1536MB -&gt; 2048MB for HD630 Mobile</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>Name：        AppleIntelKBLGraphicsFramebuffer
+Find：        01030303 00006002 00005001 00000060
+Replace：    01030303 00006002 00005001 00000080
+Comment:    1536MB -&gt; 2048MB for HD630 Mobile</code></pre><blockquote>
 <p>HD520_530_540 Mobile：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name：		AppleIntelSKLGraphicsFramebuffer</span><br><span class="line">Find：		01030303 00002002 00005001 00000060</span><br><span class="line">Replace：	01030303 00002002 00005001 00000080</span><br><span class="line">Comment:	1536MB -&gt; 2048MB for HD520_530_540 Mobile</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>Name：        AppleIntelSKLGraphicsFramebuffer
+Find：        01030303 00002002 00005001 00000060
+Replace：    01030303 00002002 00005001 00000080
+Comment:    1536MB -&gt; 2048MB for HD520_530_540 Mobile</code></pre><blockquote>
 <p>HD5500 Mobile：</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name：		AppleIntelBDWGraphicsFramebuffer </span><br><span class="line">Find: 		01030303 00002002 00005001 00000060</span><br><span class="line">Replace: 	01030303 00002002 00005001 00000080</span><br><span class="line">Comment:	1536MB -&gt; 2048MB for HD5500 Mobile</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="开启Trim"><a href="#开启Trim" class="headerlink" title="开启Trim"></a>开启<code>Trim</code></h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.iokit.IOAHCIBlockStorage</span><br><span class="line">Find: 00415050 4C452053 534400</span><br><span class="line">Replcae: 00000000 00000000 000000</span><br><span class="line">Comment: Enable TRIM for SSD</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="花屏补丁"><a href="#花屏补丁" class="headerlink" title="花屏补丁"></a>花屏补丁</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.iokit.IOGraphicsFamily</span><br><span class="line">Find: 4188C4EB 11</span><br><span class="line">Replcae: 4188C4EB 31</span><br><span class="line">Comment: Boot graphics glitch, 10.10.2/10.10.3</span><br><span class="line">MatchOS: 10.10.2,10.10.3</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.iokit.IOGraphicsFamily</span><br><span class="line">Find: 01000075 17</span><br><span class="line">Replcae: 010000EB 17</span><br><span class="line">Comment: Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</span><br><span class="line">MatchOS: 10.10.x,10.11.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.iokit.IOGraphicsFamily</span><br><span class="line">Find: 01000075 25</span><br><span class="line">Replcae: 010000EB 25</span><br><span class="line">Comment: Boot graphics glitch, 10.12.dp1 (credit denskop)</span><br><span class="line">MatchOS: 10.12.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.iokit.IOGraphicsFamily</span><br><span class="line">Find: 01000075 22</span><br><span class="line">Replcae: 010000EB 22</span><br><span class="line">Comment: Boot graphics glitch, 10.13 beta (based on denskop patch)</span><br><span class="line">MatchOS: 10.13.x</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="DVMT补丁"><a href="#DVMT补丁" class="headerlink" title="DVMT补丁"></a>DVMT补丁</h3><blockquote>
+<pre><code>Name：        AppleIntelBDWGraphicsFramebuffer 
+Find:         01030303 00002002 00005001 00000060
+Replace:     01030303 00002002 00005001 00000080
+Comment:    1536MB -&gt; 2048MB for HD5500 Mobile</code></pre><h3 id="开启Trim"><a href="#开启Trim" class="headerlink" title="开启Trim"></a>开启<code>Trim</code></h3><pre><code>Name: com.apple.iokit.IOAHCIBlockStorage
+Find: 00415050 4C452053 534400
+Replcae: 00000000 00000000 000000
+Comment: Enable TRIM for SSD</code></pre><h3 id="花屏补丁"><a href="#花屏补丁" class="headerlink" title="花屏补丁"></a>花屏补丁</h3><pre><code>Name: com.apple.iokit.IOGraphicsFamily
+Find: 4188C4EB 11
+Replcae: 4188C4EB 31
+Comment: Boot graphics glitch, 10.10.2/10.10.3
+MatchOS: 10.10.2,10.10.3</code></pre><pre><code>Name: com.apple.iokit.IOGraphicsFamily
+Find: 01000075 17
+Replcae: 010000EB 17
+Comment: Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)
+MatchOS: 10.10.x,10.11.x</code></pre><pre><code>Name: com.apple.iokit.IOGraphicsFamily
+Find: 01000075 25
+Replcae: 010000EB 25
+Comment: Boot graphics glitch, 10.12.dp1 (credit denskop)
+MatchOS: 10.12.x</code></pre><pre><code>Name: com.apple.iokit.IOGraphicsFamily
+Find: 01000075 22
+Replcae: 010000EB 22
+Comment: Boot graphics glitch, 10.13 beta (based on denskop patch)
+MatchOS: 10.13.x</code></pre><h3 id="DVMT补丁"><a href="#DVMT补丁" class="headerlink" title="DVMT补丁"></a>DVMT补丁</h3><blockquote>
 <p>Broadwell</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer</span><br><span class="line">Find: 39CF763C</span><br><span class="line">Replcae: 39CFEB3C</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.10.x (based on Austere.J patch)</span><br><span class="line">MatchOS: 10.10.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer</span><br><span class="line">Find: 4139C476 3E</span><br><span class="line">Replcae: 4139C4EB 3E</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.beta (based on Austere.J patch)</span><br><span class="line">MatchOS: 10.11.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer</span><br><span class="line">Find: 8945C839 C7764F</span><br><span class="line">Replcae: 8945C839 C7EB4F</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 (based on Austere.J patch)</span><br><span class="line">MatchOS: 10.12.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer</span><br><span class="line">Find: 4C895DB8 7644</span><br><span class="line">Replcae: 4C895DB8 EB44</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.0/1 (credit PMHeart)</span><br><span class="line">MatchOS: 10.13.0,10.13.1</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer</span><br><span class="line">Find: 4C8945C0 7644</span><br><span class="line">Replcae: 4C8945C0 EB44</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.2/3 (credit RehabMan)</span><br><span class="line">MatchOS: 10.13.2,10.13.3</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer
+Find: 39CF763C
+Replcae: 39CFEB3C
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.10.x (based on Austere.J patch)
+MatchOS: 10.10.x</code></pre><pre><code>Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer
+Find: 4139C476 3E
+Replcae: 4139C4EB 3E
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.beta (based on Austere.J patch)
+MatchOS: 10.11.x</code></pre><pre><code>Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer
+Find: 8945C839 C7764F
+Replcae: 8945C839 C7EB4F
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 (based on Austere.J patch)
+MatchOS: 10.12.x</code></pre><pre><code>Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer
+Find: 4C895DB8 7644
+Replcae: 4C895DB8 EB44
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.0/1 (credit PMHeart)
+MatchOS: 10.13.0,10.13.1</code></pre><pre><code>Name: com.apple.driver.AppleIntelBDWGraphicsFramebuffer
+Find: 4C8945C0 7644
+Replcae: 4C8945C0 EB44
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.2/3 (credit RehabMan)
+MatchOS: 10.13.2,10.13.3</code></pre><blockquote>
 <p>Skylake</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer</span><br><span class="line">Find: 4139C476 2A</span><br><span class="line">Replcae: 4139C4EB 2A</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 (based on Austere.J patch)</span><br><span class="line">MatchOS: 10.11.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer</span><br><span class="line">Find: 8945C839 C67651</span><br><span class="line">Replcae: 8945C839 C6EB51</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 (based on Austere.J patch)</span><br><span class="line">MatchOS: 10.12.x</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer</span><br><span class="line">Find: 4C8955B8 7640</span><br><span class="line">Replcae: 4C8955B8 EB40</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.0/1 (credit PMHeart)</span><br><span class="line">MatchOS: 10.13.0,10.13.1</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer</span><br><span class="line">Find: 4C895DB8 7640</span><br><span class="line">Replcae: 4C895DB8 EB40</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.2/3 (credit PMHeart, , shdkpr2008)</span><br><span class="line">MatchOS: 10.13.2,10.13.3</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
+<pre><code>Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer
+Find: 4139C476 2A
+Replcae: 4139C4EB 2A
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 (based on Austere.J patch)
+MatchOS: 10.11.x</code></pre><pre><code>Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer
+Find: 8945C839 C67651
+Replcae: 8945C839 C6EB51
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 (based on Austere.J patch)
+MatchOS: 10.12.x</code></pre><pre><code>Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer
+Find: 4C8955B8 7640
+Replcae: 4C8955B8 EB40
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.0/1 (credit PMHeart)
+MatchOS: 10.13.0,10.13.1</code></pre><pre><code>Name: com.apple.driver.AppleIntelSKLGraphicsFramebuffer
+Find: 4C895DB8 7640
+Replcae: 4C895DB8 EB40
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.2/3 (credit PMHeart, , shdkpr2008)
+MatchOS: 10.13.2,10.13.3</code></pre><blockquote>
 <p>Kabylake</p>
 </blockquote>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelKBLGraphicsFramebuffer</span><br><span class="line">Find: 4C895DC0 7646</span><br><span class="line">Replcae: 4C895DC0 EB46</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.0/1 (credit PMHeart)</span><br><span class="line">MatchOS: 10.13.0,10.13.1</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Name: com.apple.driver.AppleIntelKBLGraphicsFramebuffer</span><br><span class="line">Find: 4C896DB8 7646</span><br><span class="line">Replcae: 4C896DB8 EB46</span><br><span class="line">Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.2/3 (credit RehabMan)</span><br><span class="line">MatchOS: 10.13.2,10.13.3</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="硬盘橙色"><a href="#硬盘橙色" class="headerlink" title="硬盘橙色"></a>硬盘橙色</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: AppleAHCIPort</span><br><span class="line">Find: 45787465 726E616C</span><br><span class="line">Replcae: 496E7465 726E616C</span><br><span class="line">Comment: Define external drivers as internal to fix yellow drive icons</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="让没有ECC内存的机器利用MacPro4-1或者-MacPro5-1机型启动"><a href="#让没有ECC内存的机器利用MacPro4-1或者-MacPro5-1机型启动" class="headerlink" title="让没有ECC内存的机器利用MacPro4,1或者 MacPro5,1机型启动"></a>让没有<code>ECC</code>内存的机器利用<code>MacPro4,1</code>或者 <code>MacPro5,1</code>机型启动</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: AppleTyMCEDriver</span><br><span class="line">Find: 720A004D 61635072 6F342C31 004D6163 50726F35 2C310058</span><br><span class="line">Replcae: 720A0000 00000000 00000000 00000000 00000000 00000058</span><br><span class="line">Comment: Allow booting with a MacPro4,1 or MacPro5,1 SMBIOS definition without ECC memory</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="万能声卡将Headphones显示替代为Telephones"><a href="#万能声卡将Headphones显示替代为Telephones" class="headerlink" title="万能声卡将Headphones显示替代为Telephones"></a>万能声卡将<code>Headphones</code>显示替代为<code>Telephones</code></h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: VoodooHDA</span><br><span class="line">Find: 48656164 70686F6E 657300</span><br><span class="line">Replcae: 54656C65 70686F6E 657300</span><br><span class="line">Comment: For VoodooHDA replacing the string Headphones with Telephones</span><br></pre></td></tr></tbody></table></figure>
-
-
-<script>
+<pre><code>Name: com.apple.driver.AppleIntelKBLGraphicsFramebuffer
+Find: 4C895DC0 7646
+Replcae: 4C895DC0 EB46
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.0/1 (credit PMHeart)
+MatchOS: 10.13.0,10.13.1</code></pre><pre><code>Name: com.apple.driver.AppleIntelKBLGraphicsFramebuffer
+Find: 4C896DB8 7646
+Replcae: 4C896DB8 EB46
+Comment: Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13.2/3 (credit RehabMan)
+MatchOS: 10.13.2,10.13.3</code></pre><h3 id="硬盘橙色"><a href="#硬盘橙色" class="headerlink" title="硬盘橙色"></a>硬盘橙色</h3><pre><code>Name: AppleAHCIPort
+Find: 45787465 726E616C
+Replcae: 496E7465 726E616C
+Comment: Define external drivers as internal to fix yellow drive icons</code></pre><h3 id="让没有ECC内存的机器利用MacPro4-1或者-MacPro5-1机型启动"><a href="#让没有ECC内存的机器利用MacPro4-1或者-MacPro5-1机型启动" class="headerlink" title="让没有ECC内存的机器利用MacPro4,1或者 MacPro5,1机型启动"></a>让没有<code>ECC</code>内存的机器利用<code>MacPro4,1</code>或者 <code>MacPro5,1</code>机型启动</h3><pre><code>Name: AppleTyMCEDriver
+Find: 720A004D 61635072 6F342C31 004D6163 50726F35 2C310058
+Replcae: 720A0000 00000000 00000000 00000000 00000000 00000058
+Comment: Allow booting with a MacPro4,1 or MacPro5,1 SMBIOS definition without ECC memory</code></pre><h3 id="万能声卡将Headphones显示替代为Telephones"><a href="#万能声卡将Headphones显示替代为Telephones" class="headerlink" title="万能声卡将Headphones显示替代为Telephones"></a>万能声卡将<code>Headphones</code>显示替代为<code>Telephones</code></h3><pre><code>Name: VoodooHDA
+Find: 48656164 70686F6E 657300
+Replcae: 54656C65 70686F6E 657300
+Comment: For VoodooHDA replacing the string Headphones with Telephones</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -957,15 +998,10 @@
                             Trim
 开启
 
-1$ sudo trimforce enable
-
-
+$ sudo trimforce enable
 关闭
 
-1$ sudo trimforce disable
-
-查看启用的ig-platform-id1$ ioreg -l | grep -y platform-id
-
+$ sudo trimforce disable查看启用的ig-platform-id$ ioreg -l | grep -y platform-id笔记本开启插电源
                         
                     </div>
                     <div class="publish-info">
@@ -1058,8 +1094,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
@@ -1182,7 +1216,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             

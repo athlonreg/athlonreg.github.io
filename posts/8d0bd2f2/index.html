@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -419,7 +420,7 @@
     }
 
     #toc-content .is-active-link::before {
-        background-color: #42b983;
+//        background-color: #42b983;
     }
 
     #floating-toc-btn {
@@ -456,12 +457,12 @@
                                 <span class="chip bg-color">算法</span>
                             </a>
                         
-                            <a href="/tags/%E4%BD%8E%E7%A2%B3%E7%94%9F%E6%B4%BB%E7%AD%94%E9%A2%98%E9%97%AE%E9%A2%98/">
-                                <span class="chip bg-color">低碳生活答题问题</span>
-                            </a>
-                        
                             <a href="/tags/C%E8%AF%AD%E8%A8%80/">
                                 <span class="chip bg-color">C语言</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%BD%8E%E7%A2%B3%E7%94%9F%E6%B4%BB%E7%AD%94%E9%A2%98%E9%97%AE%E9%A2%98/">
+                                <span class="chip bg-color">低碳生活答题问题</span>
                             </a>
                         
                     </div>
@@ -499,7 +500,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    541
+                    538
                 </div>
                 
 
@@ -523,12 +524,38 @@
             <div id="articleContent">
                 <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>某电视台举办了低碳生活大奖赛。题目的计分规则相当奇怪：<br>​<br>1、每位选手需要回答10个问题（其编号为1到10），越后面越有难度。答对的，当前分数翻倍；答错了则扣掉与题号相同的分数（选手必须回答问题，不回答按错误处理）。<br>​<br>2、每位选手都有一个起步的分数为10分。 某获胜选手最终得分刚好是100分，如果不让你看比赛过程，你能推断出他（她）哪个题目答对了，哪个题目答错了吗？<br>​<br>3、如果把答对的记为1，答错的记为0，则10个题目的回答情况可以用仅含有1和0的串来表示。例如：0010110011 就是可能的情况。<br>​<br>4、你的任务是算出所有可能情况。每个答案占一行。</p>
 <h1 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h1><p>一共十个问题，每个问题两种情况，要么对要么错，那么结果就会有 0000000000 ~ 1111111111 = pow（2，10）种，就可以用暴力搜索将所有情况枚举出来然后判断符合要求的情况；<br>​<br>分数的控制可以直接利用遍历所有情况的 for 循环分别判断两种情况；<br>​<br>如果用输出 1 代表回答正确， 0 代表错误，不难想到任何一个正整数对 2 取余结果只有 1 和 0 两种情况， 输出的时候也就成了进制转换问题； </p>
-<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt; </span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">int</span> score,temp;</span><br><span class="line">		</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="built_in">pow</span>(<span class="number">2</span>,<span class="number">10</span>);i++){</span><br><span class="line">        temp=i;</span><br><span class="line">        score=<span class="number">10</span>;</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;<span class="number">10</span>;j++){ </span><br><span class="line">            <span class="keyword">if</span>(temp%<span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">                score*=<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                score-=j+<span class="number">1</span>; </span><br><span class="line">            temp/=<span class="number">2</span>;		</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(score==<span class="number">100</span>){	</span><br><span class="line">            temp=i;</span><br><span class="line">            <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;<span class="number">10</span>;j++){</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d "</span>, temp%<span class="number">2</span>);</span><br><span class="line">                temp/=<span class="number">2</span>;</span><br><span class="line">            }</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span> </span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;math.h></span> </span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> score<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
 
-<h1 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h1><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 0 1 1 0 1 0 0 0 0 </span><br><span class="line">0 1 1 1 0 1 0 0 0 0 </span><br><span class="line">0 0 1 0 1 1 0 0 1 1</span><br></pre></td></tr></tbody></table></figure>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        temp<span class="token operator">=</span>i<span class="token punctuation">;</span>
+        score<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
 
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                score<span class="token operator">*</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+                score<span class="token operator">-</span><span class="token operator">=</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span> 
+            temp<span class="token operator">/</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>        
+        <span class="token punctuation">}</span>
 
-<script>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>score<span class="token operator">==</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    
+            temp<span class="token operator">=</span>i<span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d "</span><span class="token punctuation">,</span> temp<span class="token operator">%</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                temp<span class="token operator">/</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h1><pre><code>1 0 1 1 0 1 0 0 0 0 
+0 1 1 1 0 1 0 0 0 0 
+0 0 1 0 1 1 0 0 1 1 </code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -613,12 +640,12 @@
                                     <span class="chip bg-color">算法</span>
                                 </a>
                             
-                                <a href="/tags/%E4%BD%8E%E7%A2%B3%E7%94%9F%E6%B4%BB%E7%AD%94%E9%A2%98%E9%97%AE%E9%A2%98/">
-                                    <span class="chip bg-color">低碳生活答题问题</span>
-                                </a>
-                            
                                 <a href="/tags/C%E8%AF%AD%E8%A8%80/">
                                     <span class="chip bg-color">C语言</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%BD%8E%E7%A2%B3%E7%94%9F%E6%B4%BB%E7%AD%94%E9%A2%98%E9%97%AE%E9%A2%98/">
+                                    <span class="chip bg-color">低碳生活答题问题</span>
                                 </a>
                             
                         </div>
@@ -831,7 +858,7 @@
                         
                             Allow apps downloaded from anywhere on许多朋友升级到 macOS Sierra 后在”安全性与隐私”中找不到”任何来源”选项，这里我教给大家怎么打开”任何来源”。
 打开终端，输入以下代码回车：
-1sud
+sudo
                         
                     </div>
                     <div class="publish-info">
@@ -990,8 +1017,6 @@
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
 
 <!-- 代码块折行 -->
 
@@ -1113,7 +1138,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">69.2k</span>&nbsp;字
+                class="white-color">68.9k</span>&nbsp;字
             
             
             
