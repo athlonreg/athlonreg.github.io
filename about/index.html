@@ -930,24 +930,6 @@
             
             
             
-            <a href="/tags/Redmine/">
-                <span class="chip center-align waves-effect waves-light chip-default">Redmine</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
-                <span class="chip center-align waves-effect waves-light chip-default">项目管理</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/">
-                <span class="chip center-align waves-effect waves-light chip-default">敏捷开发</span>
-            </a>
-            
-            
-            
             <a href="/tags/Window-Server-Service-only-ran-for-0-seconds/">
                 <span class="chip center-align waves-effect waves-light chip-default">Window Server Service only ran for 0 seconds</span>
             </a>
@@ -962,6 +944,24 @@
             
             <a href="/tags/%E5%B1%8F%E8%94%BD%E7%8B%AC%E6%98%BE/">
                 <span class="chip center-align waves-effect waves-light chip-default">屏蔽独显</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Redmine/">
+                <span class="chip center-align waves-effect waves-light chip-default">Redmine</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
+                <span class="chip center-align waves-effect waves-light chip-default">项目管理</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/">
+                <span class="chip center-align waves-effect waves-light chip-default">敏捷开发</span>
             </a>
             
             
@@ -1148,18 +1148,6 @@
             
             
             
-            <a href="/tags/openldap/">
-                <span class="chip center-align waves-effect waves-light chip-default">openldap</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/">
-                <span class="chip center-align waves-effect waves-light chip-default">数据迁移</span>
-            </a>
-            
-            
-            
             <a href="/tags/OSI/">
                 <span class="chip center-align waves-effect waves-light chip-default">OSI</span>
             </a>
@@ -1168,6 +1156,18 @@
             
             <a href="/tags/%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B/">
                 <span class="chip center-align waves-effect waves-light chip-default">七层模型</span>
+            </a>
+            
+            
+            
+            <a href="/tags/openldap/">
+                <span class="chip center-align waves-effect waves-light chip-default">openldap</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/">
+                <span class="chip center-align waves-effect waves-light chip-default">数据迁移</span>
             </a>
             
             
@@ -1286,14 +1286,14 @@
             
             
             
-            <a href="/tags/%E5%AD%A6%E4%B9%A0/">
-                <span class="chip center-align waves-effect waves-light chip-default">学习</span>
+            <a href="/tags/n%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
+                <span class="chip center-align waves-effect waves-light chip-default">n皇后问题</span>
             </a>
             
             
             
-            <a href="/tags/n%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
-                <span class="chip center-align waves-effect waves-light chip-default">n皇后问题</span>
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+                <span class="chip center-align waves-effect waves-light chip-default">学习</span>
             </a>
             
             
@@ -1356,13 +1356,13 @@
             
             
             
-            <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_container_site_pv" style='display:none'>
                 |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
             </span>
             
             
-            <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_container_site_uv" style='display:none'>
                 |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
             </span>
@@ -1408,6 +1408,8 @@
 </footer>
 
 <div class="progress-bar"></div>
+
+<script> $(document).ready(function () { var int = setInterval(fixCount, 50); // 50ms周期检测函数 var pvcountOffset = 193807; // 初始化首次数据 var uvcountOffset = 13776; function fixCount() { if (document.getElementById("busuanzi_container_site_pv").style.display != "none") { $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); clearInterval(int); } if ($("#busuanzi_container_site_pv").css("display") != "none") { $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 clearInterval(int); // 停止检测 } } }); </script>
 
 
     <!-- 搜索遮罩框 -->

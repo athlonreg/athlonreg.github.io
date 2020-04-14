@@ -568,6 +568,48 @@
                             </div>
                         </div>
                         
+                        
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card2">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Logos/Logo.png" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">OC 部件库</h1>
+                                            <p style="position: relative;top: -35px;"></p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="https://blog.cloudops.ml/ocbook" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            OpenCore 部件库
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card3">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="https://runebalot.cn/favicon.ico" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">常原丶Blog</h1>
+                                            <p style="position: relative;top: -35px;"></p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="https://runebalot.cn" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            常原博客
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                 </article>
@@ -667,13 +709,13 @@
             
             
             
-            <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_container_site_pv" style='display:none'>
                 |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
             </span>
             
             
-            <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_container_site_uv" style='display:none'>
                 |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
             </span>
@@ -719,6 +761,8 @@
 </footer>
 
 <div class="progress-bar"></div>
+
+<script> $(document).ready(function () { var int = setInterval(fixCount, 50); // 50ms周期检测函数 var pvcountOffset = 193807; // 初始化首次数据 var uvcountOffset = 13776; function fixCount() { if (document.getElementById("busuanzi_container_site_pv").style.display != "none") { $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); clearInterval(int); } if ($("#busuanzi_container_site_pv").css("display") != "none") { $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 clearInterval(int); // 停止检测 } } }); </script>
 
 
     <!-- 搜索遮罩框 -->

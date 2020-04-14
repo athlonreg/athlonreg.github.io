@@ -250,7 +250,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #68a0a0 0%, #ee6e73 100%);
 }
 
 .text-color {
@@ -299,13 +299,15 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
-    height: 45px;
+    height: 40px;
     vertical-align: middle;
     padding-bottom: 6px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 header .brand-logo .logo-span {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
