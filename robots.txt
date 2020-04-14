@@ -1,0 +1,11 @@
+User-agent: * Allow: /
+Allow: /archives/
+Disallow: /about/
+Disallow: /categories/
+Disallow: /contact/
+Disallow: /friends/
+Disallow: /tags/
+
+
+Sitemap: https://blog.cloudops.ml/sitemap.xml
+Sitemap: https://blog.cloudops.ml/baidusitemap.xml
