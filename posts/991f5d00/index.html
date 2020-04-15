@@ -1,4 +1,319 @@
-<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="Clover ACPI hotpatch, 套陆的博客"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="referrer" content="no-referrer"><script data-ad-client="ca-pub-7406269002228687" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><title>Clover ACPI hotpatch | 套陆的博客</title><link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/favicon.ico"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/awesome/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/materialize/materialize.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/aos/aos.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/animate/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/css/matery.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/css/my.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/live2d/autoload.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml"><link rel="stylesheet" href="/css/prism-tomorrow.css"><link rel="stylesheet" href="/css/prism-line-numbers.css"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/favicon.ico" class="logo-img" alt="LOGO"> <span class="logo-span">套陆的博客</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>关于</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom:.6"></i> <span>留言板</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/favicon.ico" class="logo-img circle responsive-img"><div class="logo-name">套陆的博客</div><div class="logo-desc">Never really desperate, only the lost of the soul.</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-comments"></i> 留言板</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li><li><div class="divider"></div></li><li><a href="https://github.com/athlonreg" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i> Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/athlonreg" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/cryptojs/crypto-js.min.js"></script><script>(function() {
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Clover ACPI hotpatch, 套陆的博客">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer" />
+    <script data-ad-client="ca-pub-7406269002228687" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Clover ACPI hotpatch | 套陆的博客</title>
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/css/my.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/live2d/autoload.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="套陆的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/favicon.ico" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">套陆的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/favicon.ico" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">套陆的博客</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/athlonreg" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/athlonreg" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
@@ -6,12 +321,387 @@
                 location.href = '/';
             }
         }
-    })();</script><div class="bg-cover pd-header post-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/featureimages/5.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">Clover ACPI hotpatch</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}.toc-fixed .toc-link::before{position:fixed!important}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/Hacintosh/"><span class="chip bg-color">Hacintosh</span></a> <a href="/tags/hotpatch/"><span class="chip bg-color">hotpatch</span></a> <a href="/tags/ACPI/"><span class="chip bg-color">ACPI</span></a> <a href="/tags/SSDT/"><span class="chip bg-color">SSDT</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Hackintosh/" class="post-category">Hackintosh</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2017-12-17</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i> 更新日期:&nbsp;&nbsp; 2020-04-15</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 19.8k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i> 阅读时长:&nbsp;&nbsp; 115 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i> 阅读次数:&nbsp;&nbsp;<span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h2 id="Preface–序言"><a href="#Preface–序言" class="headerlink" title="Preface–序言"></a>Preface–序言</h2><p>This blog is created by me to introduce how to using Clover to hotpatch ACPI，and provide an Chinese version。</p><blockquote><p>我写这篇博客是为了介绍如何使用<code>Clover</code>对<code>ACPI</code>使用<code>hotpatch</code>，并翻译原贴提供中文参考帖。</p></blockquote><h2 id="Brief-description-for-hotpatch–hotpatch概要"><a href="#Brief-description-for-hotpatch–hotpatch概要" class="headerlink" title="Brief description for hotpatch–hotpatch概要"></a>Brief description for hotpatch–<code>hotpatch</code>概要</h2><p>In RehabMan’s GitHub homepage, a repository named <code>OS-X-Clover-Laptop-Config</code> Contains some Clover <code>config.plist</code> for common Intel graphics and hotpatch for common configurations.More information in <a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">here</a>.</p><blockquote><p><code>RehabMan</code>的<code>GitHub</code>有一个仓库–<code>OS-X-Clover-Laptop-Config</code>,里面包含了一些适用于常见的英特尔核芯显卡的<code>config.plist</code>,还有<code>hotpatch</code>。点击<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">这里</a>了解更多。</p></blockquote><p>There are some handy SSDTs for use with Clover ACPI hotpatch (in conjunction with hotpatch/config.plist) If you understand ACPI, you may find the SSDTs and hotpatch/config.plist quite useful.</p><blockquote><p>这儿有许多针对使用Clover ACPI hotpatch(连同使用hotpatch/config.plist)的SSDT。如果你理解了ACPI，你会发现这些<code>SSDT</code>和<code>hotpatch/config.plist</code>相当重要。</p></blockquote><p>Read here for the hotpatch guide: <a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p><blockquote><p>这里是<code>hotpatch</code>的‘入门引导贴。<br><a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p></blockquote><h2 id="A-brief-description-of-each-hotpatch-SSDT-is-provided-below–下面是每一个-hotpatch-SSDT-的概要"><a href="#A-brief-description-of-each-hotpatch-SSDT-is-provided-below–下面是每一个-hotpatch-SSDT-的概要" class="headerlink" title="A brief description of each hotpatch SSDT is provided below–下面是每一个 hotpatch SSDT 的概要"></a>A brief description of each hotpatch SSDT is provided below–下面是每一个 <code>hotpatch SSDT</code> 的概要</h2><p><code>SSDT-Config.dsl</code>: This file provides configuration data for other SSDTs. Read the comments within the file for more information.</p><blockquote><p><code>SSDT-Config.dsl</code>:这个文件为其他<code>SSDT</code>提供参数。请阅读文件中的注释以获得更多信息。</p></blockquote><p><code>SSDT-Debug.dsl</code>: This SSDT is for use with ACPIDebug.kext. Instead of patching your DSDT to add the RMDT device, you can use this SSDT and refer to the methods with External. See ACPIDebug.kext documentation for more information regarding the RMDT methods.</p><blockquote><p>这个<code>SSDT</code>和<code>ACPIDebug.kext</code>一起使用。不需要对你的<code>DSDT</code>打补丁增加<code>RMDT</code>设备，你可以使用这个<code>SSDT</code>通过<code>External</code>导入这个方法。关于<code>RMDT</code>方法，要了解更多请参阅<code>ACPIDebug.kext</code>文档。</p></blockquote><p><code>SSDT-XOSI.dsl</code>: This SSDT provides the XOSI method, which is a replacement for the system provided _OSI object when the _OSI-&gt;XOSI patch is being used. This is actually one of the examples in the Clover ACPI hotpatch guide, linked above.</p><blockquote><p>这个<code>SSDT</code>提供了<code>XOSI</code>方法，当打了<code>_OSI-&gt;XOSI</code>补丁时，<code>XOSI</code>方法会替换系统提供的<code>_OSI</code>对象。实际上，这就是<code>Clover ACPI hotpatch</code>入门参考帖的一个例子，链接在下面。</p></blockquote><p>SSDT-IGPU.dsl This SSDT injects Intel GPU properties depending on the configuration data in SSDT-Config and the device-id that is discovered to be present on the system. It assumes the IGPU is named IGPU (typical is GFX0, requring GFX0-&gt;IGPU rename). Configured with RMCF.TYPE, RMCF.HIGH, RMCF.IGPI, and SSDT-SkylakeSpoof.aml.</p><blockquote><p>这个<code>SSDT</code>根据<code>SSDT-config</code>的配置数据和系统中发现的设备id注入了Intel GPU–核芯显卡属性。它假定<code>IGPU</code>被命名成<code>IGPU</code>(通常是<code>GFX0</code>，需要重命名<code>GFX0-&gt;IGPU</code>)。通过<code>RMCF.TYPE, RMCF.HIGH, RMCF.IGPI, and SSDT-SkylakeSpoof.aml</code>来配置。</p></blockquote><p><code>SSDT-SkylakeSpoof.aml</code>: This SSDT is an optional SSDT that can be paired with SSDT-IGPU.dsl. When present, SSDT-IGPU uses the data within as an override for various KabyLake graphics devices which spoofs those devices as Skylake. Prior to 10.12.6, Skylake spoofing is the only option for KabyLake graphics. And even with 10.12.6 (or later, including 10.13.x), it still may be useful to spoof KabyLake graphics as Skyake. Keep in mind complete Skylake spoofing requires FakePCIID.kext + FakePCIID_Intel_HD_Graphics.kext.</p><blockquote><p>这个<code>SSDT</code>是一个可选的<code>SSDT</code>,它可以配合<code>SSDT-IGPU.dsl</code>使用。<code>SSDT-IGPU</code>使用这些数据对<code>KabyLake</code>图形设备的数据进行覆盖重写，把<code>KabyLake</code>仿冒成<code>Skylake</code>。10.12.6之前,<code>KabyLake</code>只有仿冒成’SkyLake’驱动核显，即使在10.12.6之后(或者更新的版本，包括10.13.x)，将<code>KabyLake</code>仿冒成’SkyLake’仍然是很有用的，需要注意的是完整的仿冒需要<code>FakePCIID.kext + FakePCIID_Intel_HD_Graphics.kext</code>。</p></blockquote><p><code>SSDT-IMEI.dsl</code>: This SSDT injects fake device-id as required for IMEI when using mixed HD3000/7-series or HD4000/6-series. Be sure to read the comments within carefully, as customization is required if your system already has an IMEI identity in ACPI.</p><blockquote><p>当使用混合的hd3000/7系或hd4000/6系时，该SSDT为IMEI注入了仿冒的设备id。一定要仔细阅读注释，因为如果您的系统已经在ACPI中有了IMEI标识，那么就需要进行定制。</p></blockquote><p><code>SSDT-PNLF.dsl</code>: This SSDT injects a PNLF device that works with IntelBacklight.kext or AppleBacklight.kext. Configured with RMCF.BKLT, RMCF.LMAX, RMCF.FBTP. See guide for more information: <a href="https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/</a></p><blockquote><p>这个SSDT注入了一个<code>PNLF</code>设备，它可以与<code>IntelBacklight.kext</code> 或者<code>AppleBacklight.kext</code>一起工作。通过<code>RMCF.BKLT</code> ,<code>RMCF.LMAX</code> <code>RMCF.FBTP</code>。更多信息参见指南:</p></blockquote><p><code>SSDT-LPC.dsl</code>:This SSDT injects properties to force AppleLPC to load for various unsupported LPC device-ids. It assumes the LPC device is named LPCB.</p><blockquote><p>这个SSDT:注入属性以强制<code>AppleLPC</code>加载各种不支持的<code>LPC</code>设备id。需要<code>LPC</code>设备被命名为<code>LPCB</code>。</p></blockquote><p><code>SSDT-SATA.dsl</code>: This SSDT injects properties (fake device-id, compatible) to enable the SATA controller with certain unsupported SATA controllers. It assumes the SATA device is named SATA (typical is SAT0, thus requiring SAT0-&gt;SATA rename).</p><blockquote><p>这个SSDT注入了一些属性(仿冒的设备id，兼容的)，以使某些不受支持的<code>SATA</code>控制器启用<code>SATA</code>控制器。它假设<code>SATA</code>设备被命名为<code>SATA</code>(常见的是<code>SAT0</code>，因此需要<code>SAT0-SATA</code>重命名)。</p></blockquote><p><code>SSDT-Disable_DGPU.dsl</code>: This SSDT provides an _INI method that will call _OFF for a couple of common paths for a discrete GPU in a switched/dual GPU scenario. This SSDT can work to disable the Nvidia or AMD graphics device, if the path matches (or is modified to math) and your _OFF method code path has no EC related code. Refer to the hotpatch guide for a complete example.</p><blockquote><p>这个SSDT提供了一个<code>INI</code>方法，它将在可切换的/双<code>GPU</code>中为独立显卡提供一些通用的路径来调用<code>_OFF</code>。如果路径匹配(或被自定义来匹配)而且你的<code>_OFF</code>方法代码路径则没有与<code>EC</code>相关的代码，那么这个<code>SSDT</code>可以禁用<code>Nvidia</code>或<code>AMD</code>图形设备。有关一个完整的示例，请参阅热补丁指南。</p></blockquote><p><code>SSDT-SMBUS.dsl</code>:This SSDT injects the missing DVL0 device. Mostly used with Sandy Bridge and Ivy Bridge systems.</p><blockquote><p>这个SSDT注入了丢失的<code>DVL0</code>设备。主要用于<code>Sandy Bridge</code>和<code>Ivy Bridge</code>平台。</p></blockquote><p><code>SSDT-GPRW.dsl</code> and <code>SSDT-UPRW.dsl</code>: These SSDTs is used in conjuction with the GPRW-&gt;XPRW or UPRW-&gt;XPRW patch. Used together this SSDT can fix “instant-wake” by disabling “wake on USB”. It overrides the _PRW package return for GPE indexes 0x0d or 0x6d. Potential companion patches are provided in hotpatch/config.plist</p><blockquote><p>这些SSDT与<code>GPRW-XPRW</code>或<code>UPRW-XPRW</code>补丁一起使用。通过使用这些<code>SSDT</code>，可以通过禁用<code>wake on USB</code>来修复<code>instant wake</code>。它重写了<code>GPE</code>的索引<code>0x0d</code>或<code>0x6d</code>的<code>PRW</code>包返回值。在<code>hotpatch</code>/<code>config.plist</code>中提供了潜在的伙伴补丁。</p></blockquote><p><code>SSDT-LANC_PRW.dsl</code>: Also part of fixing “instant wake”, but this is for _PRW on the Ethernet device. Potential companion patches are provided in hotpatch/config.plist.</p><blockquote><p>这也是修复<code>instant wake</code>的一部分，但这是在以太网设备上进行修复的。在<code>hotpatch</code>/<code>config.plist</code>中提供了潜在的伙伴补丁。</p></blockquote><p><code>SSDT-PTSWAK.dsl</code>: This SSDT provides overrides for both _PTS and _WAK. When combined with the appropriate companion patches from hotpatch/config.plist, these methods can provide various fixes. The actions are controlled by RMCF.DPTS, RMCF.SHUT, RMCF.XPEE, RMCF.SSTF. Refer to SSDT-Config.dsl for more information on those options.</p><blockquote><p>这个SSDT提供了对<code>_PTS</code>和<code>_WAK</code>的重写。当与来自<code>hotpatch</code>/<code>config.plist</code>的适当的补丁相结合使用时，这些方法可以提供一系列的修复。这些行为是由<code>RMCF.DPTS</code>, <code>RMCF.SHUT</code>,<code>RMCF.XPEE</code>,<code>RMCF.XPEE</code> ,<code>RMCF.SSTF</code>.更多关于这些选项的信息参阅<code>SSDT-Config</code>。</p></blockquote><p><code>SSDT-Disable_EHCI.dsl</code>: This SSDT can disable both EHCI controllers. It is assumed both have been renamed to EH01/EH02 (typically original names are EHC1/EHC2).</p><blockquote><p>这个SSDT可以禁用<code>EHCI</code>控制器。要求这两种情况都被重新命名为<code>EH01/EH02</code>(通常原来的名字是<code>EHC1/EHC2</code>).</p></blockquote><p><code>SSDT-Disable_EH01.dsl</code>, <code>SSDT-Disable_EH02.dsl</code>: Each of these SSDTs is just SSDT-Disable_EHCI.dsl broken down to only disable EH01 or only EH02. Use as appropriate depending on which EHCI controllers are active/present in your ACPI set.</p><blockquote><p>这些SSDT每一个都是<code>SSDT-Disable_EHCI.dsl</code>分解的，仅仅用以禁用<code>EH01</code>或<code>EH02</code>。取决于在你的<code>ACPI</code>集合中使用哪个<code>EHCI</code>控制器是合适的。</p></blockquote><p><code>SSDT-XWAK.dsl</code>, <code>SSDT-XSEL.dsl</code>, <code>SSDT-ESEL.dsl</code>: Each of these SSDTs provides an empty XWAK, XSEL, and ESEL methods (respectively). Use with the appropriate companion patch from hotpatch/config.plist. Typically, these methods are disabled (by having no code in them) to disable certain actions native ACPI may be doing on wake from sleep or during startup that cause problems with the xHCI/EHCI configuration.</p><blockquote><p>这些SSDT分别提供了一个空的<code>XWAK</code>、<code>XSEL</code>和<code>ESEL</code>方法(独立地)。配合<code>hotpatch/config.plist</code>中适当的补丁一起使用。通常情况下，这些方法被禁用(因为在它们中没有代码)，以禁用本地<code>ACPI</code>可能在唤醒睡眠或在启动时导致<code>xHCI/EHCI</code>i配置问题的某些动作。</p></blockquote><p><code>SSDT-PluginType1.dsl</code>: This SSDT injects “plugin-type”=1 on CPU0. It assumes ACPI Processor objects are in Scope(_PR). It can be used to enable native CPU power management on Haswell and later CPUs. See guide for more information: <a href="https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/</a>.</p><blockquote><p>这个SSDT在<code>CPU0</code>注入<code>“plugin-type”=1</code>。它要求<code>ACPI</code>处理器对象在<code>Scope(_PR)</code>范围内。它可以用于在<code>Haswell</code>和更新的<code>CPU</code>启用原生电源管理。更多信息见指南：<a href="https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/</a>.</p></blockquote><p><code>SSDT-HDEF.dsl</code> and <code>SSDT-HDAU.dsl</code>: Injects layout-id, hda-gfx, and PinConfiguration properties on HDEF and HDAU in order to implement audio with patched AppleHDA.kext Configured with: RMCF.AUDL.</p><blockquote><p>在<code>HDEF</code>和<code>HDAU</code>上注入<code>layout-id</code>、<code>hda-gfx</code>和<code>PinConfiguration</code>属性，以通过对<code>AppleHDA</code>的<code>patch</code>实现音频。通过<code>RMCF.AUDL</code>配置.</p></blockquote><p><code>SSDT-EH01.dsl</code>,<code>SSDT-EH02.dsl</code>, and <code>SSDT-XHC.dsl</code>:These SSDTs inject USB power properties and control over FakePCIID_XHCIMux (dending on SSDT-Disable_EH*.dsl).</p><blockquote><p>这些SSDT注入<code>USB</code>电源属性并通过<code>FakePCIID_XHCIMux</code>控制(取决于<code>SSDT-Disable_EH*.dsl</code>)。</p></blockquote><p><code>SSDT-ALS0.dsl</code>: Injects a fake ALS device (ambient light sensor). This SSDT is used to fix problems with restoring brightness upon reboot.</p><blockquote><p>注入仿冒<code>ALS</code>设备(环境光传感器)。这个<code>SSDT</code>用于修复重新启动时还原亮度的问题。</p></blockquote><h2 id="Introduction-说明文档"><a href="#Introduction-说明文档" class="headerlink" title="Introduction-说明文档"></a>Introduction-说明文档</h2><p>Patching ACPI is always necessary to enable (near) full functionality when installing OS X on non-Apple hardware.</p><blockquote><p>在非苹果硬件上安装OS X时，修补<code>ACPI</code>以启用(接近)完整的功能总是必要的。</p></blockquote><p>There is a complete guide here: <a href="http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/" target="_blank" rel="noopener">http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/</a></p><blockquote><p>这里有一个完整的指南: <a href="http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/" target="_blank" rel="noopener">http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/</a></p></blockquote><p>That guide uses what is known as “static patching”. In order to inject patched ACPI files, we extract native ACPI, disassemble them, make changes, then recompile and place the files in ACPI/patched, so that Clover injects the patched ACPI instead of native ACPI. With the techniques detailed in this guide, the changes can be made directly to the ACPI binaries provided by BIOS, skipping the extract, disassembly, and recompilation steps.</p><blockquote><p>该指南使用了所谓的“静态补丁”。为了注入打了补丁的<code>ACPI</code>文件，我们提取本地的ACPI，将它们反编译，进行修改，然后重新编译，并将文件放在<code>ACPI/patched</code>中，这样Clover就注入了打过补丁的<code>ACPI</code>，而不是原生的<code>ACPI</code>。通过本指南中详细介绍的技术，可以直接对<code>BIOS</code>提供的<code>ACPI</code>二进制文件进行更改，跳过提取、分解和重新编译步骤。</p></blockquote><p>You should have a solid understanding of static ACPI patching before attempting to hotpatch. You should also have an understanding of the ACPI spec, binary patching, programming, and ACPI concepts. Don’t expect step-by-step and spoon feeding in this thread.</p><blockquote><p>在尝试<code>hotpatch</code>之前，你应该对静态的<code>ACPI</code>补丁有一定的了解。你还应该了解<code>ACPI</code>规范、二进制补丁、语法和<code>ACPI</code>概念。不要指望在这个过程中循序渐进地学习。</p></blockquote><h3 id="Clover-mechanisms-Clover机制"><a href="#Clover-mechanisms-Clover机制" class="headerlink" title="Clover mechanisms-Clover机制"></a>Clover mechanisms-<code>Clover</code>机制</h3><p>Clover provides a few methods for accomplishing ACPI hotpatch:</p><blockquote><p>Clover提供了一些新的方法来实现<code>ACPI hotpatch</code>.</p></blockquote><ul><li>config.plist/ACPI/DSDT/Fixes</li><li>config.plist/ACPI/DSDT/Patches</li><li>ability to inject additional SSDTs</li></ul><p><code>DSDT/Fixes</code> provide fixed function ACPI patching. Each “Fix” can do a particular kind of patching that can be used instead of typical patching you might do with MaciASL and static patching. For example, “IRQ Fix” can be accomplished with “FixHPET_0010” “FixIPIC_0040” “FIX_RTC_20000” and “FIX_TMR_40000”. As an other example, “Fix _WAK Arg0 v2” can be accomplished with “FIX_WAK_200000”. You can read the Clover wiki for more information on each patch. Most of the time, there are not many DSDT “Fixes” needed for basic functionality. DSDT “Fixes” are useful for implementing patches that are difficult or impossible to implement with ACPI/DSDT/Patches or additional SSDTs.</p><blockquote><p><code>DSDT/Fixes</code>提供了具有修复功能的<code>ACPI</code>补丁。每一个<code>Fix</code>都可以使用一种特殊的补丁，从而不需要你使用<code>MaciASL</code>和静态补丁。例如，<code>IRQ Fix</code>可以用<code>FixHPET_0010</code>、<code>FixIPIC_0040</code>、<code>FIX_RTC_20000</code>和<code>FIX_TMR_40000</code>来完成。再举一个例子，<code>Fix _WAK Arg0 v2</code>可以用<code>FIX_WAK_200000</code>来完成。对于每个补丁阅读<code>Clover wiki</code>以获得更多信息。大多数情况下，基本功能所需的DSDT<code>Fix</code>并不多。对于用<code>ACPI/DSDT/Patches</code>或附加的<code>SSDT</code>很难实现甚至不可能实现的补丁,利用DSDT<code>Fixes</code>实现非常有用。</p></blockquote><p>DSDT/Patches allows for binary search and replace by Clover. Clover loads the native ACPI files, applies the patches specified in ACPI/Patches using binary search/replace, then injects the patched ACPI. You need to have an understanding of the binary AML format. It is fully documented in the ACPI spec.</p><blockquote><p><code>DSDT/Patches</code>允许通过<code>Clover</code>对二进制进行查找并替换。<code>Clover</code>加载本地的<code>ACPI</code>文件，在<code>ACPI/Patches</code>中使用二进制查找替换以应用指定的补丁，然后注入打过补丁的<code>ACPI</code>。您需要了解二进制<code>AML</code>格式。它在<code>ACPI</code>规范中有完整的文档记录。</p></blockquote><p>ACPI namespace is built by merging the DSDT and SSDTs at load time. By placing additional SSDTs into ACPI/patched, we can essentially add code to this ACPI set. Since many OS X patches involve adding properties to ioreg with a _DSM method, it is often adequate to simply add an SSDT which contains the additional _DSM method instead of patching the native ACPI files. A perfect example you’re already familiar with is the SSDT.aml that is generated by Pike’s ssdtPRgen.sh.</p><blockquote><p>ACPI命名空间在加载时通过合并<code>DSDT</code>和<code>SSDT</code>构建。通过将额外的<code>SSDT</code>放到<code>ACPI/patched</code>,我们可以添加代码到<code>ACPI</code>集。因为许多<code>OS X</code>补丁涉及<code>_DSM</code>方法添加属性到<code>ioreg</code> ,通常是适当的<code>SSDT</code>包含额外的一个<code>_DSM</code>方法而不是对本地<code>ACPI</code>文件打补丁。你已经熟悉的一个很好的例子是<code>Pike</code>的<code>ssdtprgensh.sh</code>脚本生成的<code>SSDT.aml</code>。</p></blockquote><p>In some cases, more than one mechanism must be used to accomplish a single goal. For example, you might use binary patching to disable or rename components in the native ACPI set, and then replace it with additional SSDTs.</p><blockquote><p>在某些情况下，必须使用不止一个机制来完成某一个目标。例如，你可能使用二进制补丁来禁用或重命名本地<code>ACPI</code>集合中的组件，然后用额外的<code>SSDT</code>替换它。</p></blockquote><h3 id="Renaming-ACPI-objects-重命名ACPI对象"><a href="#Renaming-ACPI-objects-重命名ACPI对象" class="headerlink" title="Renaming ACPI objects-重命名ACPI对象"></a>Renaming ACPI objects-重命名<code>ACPI</code>对象</h3><p>Since OS X can depend on specific ACPI object names used by Macs, a common patch is to rename an object in the native ACPI set. For example, most PC laptops use GFX0 for the integrated Intel GPU object (Intel HD Graphics). In OS X, power management for Intel graphics is not enabled unless this device is named IGPU. Using static patching, we apply “Rename IGPU to GFX0” in order to rename this object. The patch must be applied to the DSDT and all SSDTs that reference it.</p><blockquote><p>由于<code>OS X</code>可以依赖于<code>Mac</code>所使用的特定的<code>ACPI</code>对象名称，一个常见的补丁是在本地的ACPI集合中重命名一个对象，例如，大多数<code>PC</code>笔记本使用<code>GFX0</code>作为集成的<code>Intel GPU</code>对象(<code>Intel HD</code>显卡)。在<code>OS X</code>中，除非这个设备被命名为<code>IGPU</code>，否则英特尔图形的电源管理是不能启用的。使用静态补丁，我们应用<code>Rename IGPU to GFX0</code>来重命名这个对象。这个补丁必须应用到<code>DSDT</code>和所有有引用<code>GFX0</code>的<code>SSDT</code>上。</p></blockquote><p>With hotpatch, we can rename GFX0 to IGPU using a simple Clover patch in ACPI/DSDT/Patches. Such patches apply to DSDT and all native SSDTs (DSDT/Patches do not apply to SSDTs that are added via ACPI/patched). The patch for the rename would be:</p><blockquote><p>使用<code>hotpatch</code>，我们可以在<code>ACPI/DSDT/Patches</code>使用一个简单的四叶草补丁将<code>GFX0</code>重命名为<code>IGPU</code>。这些补丁适用于<code>DSDT</code>和所有本地的<code>SSDTs</code>(<code>(DSDT/Patches</code>不能被应用到通过<code>ACPI/patched</code>添加的<code>SSDT</code>)。重命名的补丁是:</p></blockquote><pre><code>Comment: Rename GFX0 to IGPU
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/featureimages/5.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Clover ACPI hotpatch</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    .toc-fixed .toc-link::before{
+        position: fixed!important;/*当toc的位置改为fixed时，.toc-link::before也要改为fixed*/
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+//        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hacintosh/">
+                                <span class="chip bg-color">Hacintosh</span>
+                            </a>
+                        
+                            <a href="/tags/hotpatch/">
+                                <span class="chip bg-color">hotpatch</span>
+                            </a>
+                        
+                            <a href="/tags/ACPI/">
+                                <span class="chip bg-color">ACPI</span>
+                            </a>
+                        
+                            <a href="/tags/SSDT/">
+                                <span class="chip bg-color">SSDT</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Hackintosh/" class="post-category">
+                                Hackintosh
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2017-12-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-04-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    19.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    115 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Preface–序言"><a href="#Preface–序言" class="headerlink" title="Preface–序言"></a>Preface–序言</h2><p>This blog is created by me to introduce how to using Clover to hotpatch ACPI，and provide an Chinese version。</p>
+<blockquote>
+<p>我写这篇博客是为了介绍如何使用<code>Clover</code>对<code>ACPI</code>使用<code>hotpatch</code>，并翻译原贴提供中文参考帖。</p>
+</blockquote>
+<h2 id="Brief-description-for-hotpatch–hotpatch概要"><a href="#Brief-description-for-hotpatch–hotpatch概要" class="headerlink" title="Brief description for hotpatch–hotpatch概要"></a>Brief description for hotpatch–<code>hotpatch</code>概要</h2><p>In RehabMan’s GitHub homepage, a repository named <code>OS-X-Clover-Laptop-Config</code> Contains some Clover <code>config.plist</code> for common Intel graphics and hotpatch for common configurations.More information in <a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">here</a>.</p>
+<blockquote>
+<p><code>RehabMan</code>的<code>GitHub</code>有一个仓库–<code>OS-X-Clover-Laptop-Config</code>,里面包含了一些适用于常见的英特尔核芯显卡的<code>config.plist</code>,还有<code>hotpatch</code>。点击<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">这里</a>了解更多。</p>
+</blockquote>
+<p>There are some handy SSDTs for use with Clover ACPI hotpatch (in conjunction with hotpatch/config.plist) If you understand ACPI, you may find the SSDTs and hotpatch/config.plist quite useful.</p>
+<blockquote>
+<p>这儿有许多针对使用Clover ACPI hotpatch(连同使用hotpatch/config.plist)的SSDT。如果你理解了ACPI，你会发现这些<code>SSDT</code>和<code>hotpatch/config.plist</code>相当重要。</p>
+</blockquote>
+<p>Read here for the hotpatch guide: <a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p>
+<blockquote>
+<p>这里是<code>hotpatch</code>的‘入门引导贴。<br><a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p>
+</blockquote>
+<h2 id="A-brief-description-of-each-hotpatch-SSDT-is-provided-below–下面是每一个-hotpatch-SSDT-的概要"><a href="#A-brief-description-of-each-hotpatch-SSDT-is-provided-below–下面是每一个-hotpatch-SSDT-的概要" class="headerlink" title="A brief description of each hotpatch SSDT is provided below–下面是每一个 hotpatch SSDT 的概要"></a>A brief description of each hotpatch SSDT is provided below–下面是每一个 <code>hotpatch SSDT</code> 的概要</h2><p><code>SSDT-Config.dsl</code>: This file provides configuration data for other SSDTs. Read the comments within the file for more information.</p>
+<blockquote>
+<p><code>SSDT-Config.dsl</code>:这个文件为其他<code>SSDT</code>提供参数。请阅读文件中的注释以获得更多信息。</p>
+</blockquote>
+<p><code>SSDT-Debug.dsl</code>: This SSDT is for use with ACPIDebug.kext. Instead of patching your DSDT to add the RMDT device, you can use this SSDT and refer to the methods with External. See ACPIDebug.kext documentation for more information regarding the RMDT methods.</p>
+<blockquote>
+<p>这个<code>SSDT</code>和<code>ACPIDebug.kext</code>一起使用。不需要对你的<code>DSDT</code>打补丁增加<code>RMDT</code>设备，你可以使用这个<code>SSDT</code>通过<code>External</code>导入这个方法。关于<code>RMDT</code>方法，要了解更多请参阅<code>ACPIDebug.kext</code>文档。</p>
+</blockquote>
+<p><code>SSDT-XOSI.dsl</code>: This SSDT provides the XOSI method, which is a replacement for the system provided _OSI object when the _OSI-&gt;XOSI patch is being used. This is actually one of the examples in the Clover ACPI hotpatch guide, linked above.</p>
+<blockquote>
+<p>这个<code>SSDT</code>提供了<code>XOSI</code>方法，当打了<code>_OSI-&gt;XOSI</code>补丁时，<code>XOSI</code>方法会替换系统提供的<code>_OSI</code>对象。实际上，这就是<code>Clover ACPI hotpatch</code>入门参考帖的一个例子，链接在下面。</p>
+</blockquote>
+<p>SSDT-IGPU.dsl This SSDT injects Intel GPU properties depending on the configuration data in SSDT-Config and the device-id that is discovered to be present on the system. It assumes the IGPU is named IGPU (typical is GFX0, requring GFX0-&gt;IGPU rename). Configured with RMCF.TYPE, RMCF.HIGH, RMCF.IGPI, and SSDT-SkylakeSpoof.aml.</p>
+<blockquote>
+<p>这个<code>SSDT</code>根据<code>SSDT-config</code>的配置数据和系统中发现的设备id注入了Intel GPU–核芯显卡属性。它假定<code>IGPU</code>被命名成<code>IGPU</code>(通常是<code>GFX0</code>，需要重命名<code>GFX0-&gt;IGPU</code>)。通过<code>RMCF.TYPE, RMCF.HIGH, RMCF.IGPI, and SSDT-SkylakeSpoof.aml</code>来配置。</p>
+</blockquote>
+<p><code>SSDT-SkylakeSpoof.aml</code>: This SSDT is an optional SSDT that can be paired with SSDT-IGPU.dsl. When present, SSDT-IGPU uses the data within as an override for various KabyLake graphics devices which spoofs those devices as Skylake. Prior to 10.12.6, Skylake spoofing is the only option for KabyLake graphics. And even with 10.12.6 (or later, including 10.13.x), it still may be useful to spoof KabyLake graphics as Skyake. Keep in mind complete Skylake spoofing requires FakePCIID.kext + FakePCIID_Intel_HD_Graphics.kext.</p>
+<blockquote>
+<p>这个<code>SSDT</code>是一个可选的<code>SSDT</code>,它可以配合<code>SSDT-IGPU.dsl</code>使用。<code>SSDT-IGPU</code>使用这些数据对<code>KabyLake</code>图形设备的数据进行覆盖重写，把<code>KabyLake</code>仿冒成<code>Skylake</code>。10.12.6之前,<code>KabyLake</code>只有仿冒成’SkyLake’驱动核显，即使在10.12.6之后(或者更新的版本，包括10.13.x)，将<code>KabyLake</code>仿冒成’SkyLake’仍然是很有用的，需要注意的是完整的仿冒需要<code>FakePCIID.kext + FakePCIID_Intel_HD_Graphics.kext</code>。</p>
+</blockquote>
+<p><code>SSDT-IMEI.dsl</code>: This SSDT injects fake device-id as required for IMEI when using mixed HD3000/7-series or HD4000/6-series. Be sure to read the comments within carefully, as customization is required if your system already has an IMEI identity in ACPI.</p>
+<blockquote>
+<p>当使用混合的hd3000/7系或hd4000/6系时，该SSDT为IMEI注入了仿冒的设备id。一定要仔细阅读注释，因为如果您的系统已经在ACPI中有了IMEI标识，那么就需要进行定制。</p>
+</blockquote>
+<p><code>SSDT-PNLF.dsl</code>: This SSDT injects a PNLF device that works with IntelBacklight.kext or AppleBacklight.kext. Configured with RMCF.BKLT, RMCF.LMAX, RMCF.FBTP. See guide for more information: <a href="https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/</a></p>
+<blockquote>
+<p>这个SSDT注入了一个<code>PNLF</code>设备，它可以与<code>IntelBacklight.kext</code> 或者<code>AppleBacklight.kext</code>一起工作。通过<code>RMCF.BKLT</code> ,<code>RMCF.LMAX</code> <code>RMCF.FBTP</code>。更多信息参见指南:</p>
+</blockquote>
+<p><code>SSDT-LPC.dsl</code>:This SSDT injects properties to force AppleLPC to load for various unsupported LPC device-ids. It assumes the LPC device is named LPCB.</p>
+<blockquote>
+<p>这个SSDT:注入属性以强制<code>AppleLPC</code>加载各种不支持的<code>LPC</code>设备id。需要<code>LPC</code>设备被命名为<code>LPCB</code>。</p>
+</blockquote>
+<p><code>SSDT-SATA.dsl</code>: This SSDT injects properties (fake device-id, compatible) to enable the SATA controller with certain unsupported SATA controllers. It assumes the SATA device is named SATA (typical is SAT0, thus requiring SAT0-&gt;SATA rename).</p>
+<blockquote>
+<p>这个SSDT注入了一些属性(仿冒的设备id，兼容的)，以使某些不受支持的<code>SATA</code>控制器启用<code>SATA</code>控制器。它假设<code>SATA</code>设备被命名为<code>SATA</code>(常见的是<code>SAT0</code>，因此需要<code>SAT0-SATA</code>重命名)。</p>
+</blockquote>
+<p><code>SSDT-Disable_DGPU.dsl</code>: This SSDT provides an _INI method that will call _OFF for a couple of common paths for a discrete GPU in a switched/dual GPU scenario. This SSDT can work to disable the Nvidia or AMD graphics device, if the path matches (or is modified to math) and your _OFF method code path has no EC related code. Refer to the hotpatch guide for a complete example.</p>
+<blockquote>
+<p>这个SSDT提供了一个<code>INI</code>方法，它将在可切换的/双<code>GPU</code>中为独立显卡提供一些通用的路径来调用<code>_OFF</code>。如果路径匹配(或被自定义来匹配)而且你的<code>_OFF</code>方法代码路径则没有与<code>EC</code>相关的代码，那么这个<code>SSDT</code>可以禁用<code>Nvidia</code>或<code>AMD</code>图形设备。有关一个完整的示例，请参阅热补丁指南。</p>
+</blockquote>
+<p><code>SSDT-SMBUS.dsl</code>:This SSDT injects the missing DVL0 device. Mostly used with Sandy Bridge and Ivy Bridge systems.</p>
+<blockquote>
+<p>这个SSDT注入了丢失的<code>DVL0</code>设备。主要用于<code>Sandy Bridge</code>和<code>Ivy Bridge</code>平台。</p>
+</blockquote>
+<p><code>SSDT-GPRW.dsl</code> and <code>SSDT-UPRW.dsl</code>: These SSDTs is used in conjuction with the GPRW-&gt;XPRW or UPRW-&gt;XPRW patch. Used together this SSDT can fix “instant-wake” by disabling “wake on USB”. It overrides the _PRW package return for GPE indexes 0x0d or 0x6d. Potential companion patches are provided in hotpatch/config.plist</p>
+<blockquote>
+<p>这些SSDT与<code>GPRW-XPRW</code>或<code>UPRW-XPRW</code>补丁一起使用。通过使用这些<code>SSDT</code>，可以通过禁用<code>wake on USB</code>来修复<code>instant wake</code>。它重写了<code>GPE</code>的索引<code>0x0d</code>或<code>0x6d</code>的<code>PRW</code>包返回值。在<code>hotpatch</code>/<code>config.plist</code>中提供了潜在的伙伴补丁。</p>
+</blockquote>
+<p><code>SSDT-LANC_PRW.dsl</code>: Also part of fixing “instant wake”, but this is for _PRW on the Ethernet device. Potential companion patches are provided in hotpatch/config.plist.</p>
+<blockquote>
+<p>这也是修复<code>instant wake</code>的一部分，但这是在以太网设备上进行修复的。在<code>hotpatch</code>/<code>config.plist</code>中提供了潜在的伙伴补丁。</p>
+</blockquote>
+<p><code>SSDT-PTSWAK.dsl</code>: This SSDT provides overrides for both _PTS and _WAK. When combined with the appropriate companion patches from hotpatch/config.plist, these methods can provide various fixes. The actions are controlled by RMCF.DPTS, RMCF.SHUT, RMCF.XPEE, RMCF.SSTF. Refer to SSDT-Config.dsl for more information on those options.</p>
+<blockquote>
+<p>这个SSDT提供了对<code>_PTS</code>和<code>_WAK</code>的重写。当与来自<code>hotpatch</code>/<code>config.plist</code>的适当的补丁相结合使用时，这些方法可以提供一系列的修复。这些行为是由<code>RMCF.DPTS</code>, <code>RMCF.SHUT</code>,<code>RMCF.XPEE</code>,<code>RMCF.XPEE</code> ,<code>RMCF.SSTF</code>.更多关于这些选项的信息参阅<code>SSDT-Config</code>。</p>
+</blockquote>
+<p><code>SSDT-Disable_EHCI.dsl</code>: This SSDT can disable both EHCI controllers. It is assumed both have been renamed to EH01/EH02 (typically original names are EHC1/EHC2).</p>
+<blockquote>
+<p>这个SSDT可以禁用<code>EHCI</code>控制器。要求这两种情况都被重新命名为<code>EH01/EH02</code>(通常原来的名字是<code>EHC1/EHC2</code>).</p>
+</blockquote>
+<p><code>SSDT-Disable_EH01.dsl</code>, <code>SSDT-Disable_EH02.dsl</code>: Each of these SSDTs is just SSDT-Disable_EHCI.dsl broken down to only disable EH01 or only EH02. Use as appropriate depending on which EHCI controllers are active/present in your ACPI set.</p>
+<blockquote>
+<p>这些SSDT每一个都是<code>SSDT-Disable_EHCI.dsl</code>分解的，仅仅用以禁用<code>EH01</code>或<code>EH02</code>。取决于在你的<code>ACPI</code>集合中使用哪个<code>EHCI</code>控制器是合适的。</p>
+</blockquote>
+<p><code>SSDT-XWAK.dsl</code>, <code>SSDT-XSEL.dsl</code>, <code>SSDT-ESEL.dsl</code>: Each of these SSDTs provides an empty XWAK, XSEL, and ESEL methods (respectively). Use with the appropriate companion patch from hotpatch/config.plist. Typically, these methods are disabled (by having no code in them) to disable certain actions native ACPI may be doing on wake from sleep or during startup that cause problems with the xHCI/EHCI configuration.</p>
+<blockquote>
+<p>这些SSDT分别提供了一个空的<code>XWAK</code>、<code>XSEL</code>和<code>ESEL</code>方法(独立地)。配合<code>hotpatch/config.plist</code>中适当的补丁一起使用。通常情况下，这些方法被禁用(因为在它们中没有代码)，以禁用本地<code>ACPI</code>可能在唤醒睡眠或在启动时导致<code>xHCI/EHCI</code>i配置问题的某些动作。</p>
+</blockquote>
+<p><code>SSDT-PluginType1.dsl</code>: This SSDT injects “plugin-type”=1 on CPU0. It assumes ACPI Processor objects are in Scope(_PR). It can be used to enable native CPU power management on Haswell and later CPUs. See guide for more information: <a href="https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/</a>.</p>
+<blockquote>
+<p>这个SSDT在<code>CPU0</code>注入<code>“plugin-type”=1</code>。它要求<code>ACPI</code>处理器对象在<code>Scope(_PR)</code>范围内。它可以用于在<code>Haswell</code>和更新的<code>CPU</code>启用原生电源管理。更多信息见指南：<a href="https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/</a>.</p>
+</blockquote>
+<p><code>SSDT-HDEF.dsl</code> and <code>SSDT-HDAU.dsl</code>: Injects layout-id, hda-gfx, and PinConfiguration properties on HDEF and HDAU in order to implement audio with patched AppleHDA.kext Configured with: RMCF.AUDL.</p>
+<blockquote>
+<p>在<code>HDEF</code>和<code>HDAU</code>上注入<code>layout-id</code>、<code>hda-gfx</code>和<code>PinConfiguration</code>属性，以通过对<code>AppleHDA</code>的<code>patch</code>实现音频。通过<code>RMCF.AUDL</code>配置.</p>
+</blockquote>
+<p><code>SSDT-EH01.dsl</code>,<code>SSDT-EH02.dsl</code>, and <code>SSDT-XHC.dsl</code>:These SSDTs inject USB power properties and control over FakePCIID_XHCIMux (dending on SSDT-Disable_EH*.dsl).</p>
+<blockquote>
+<p>这些SSDT注入<code>USB</code>电源属性并通过<code>FakePCIID_XHCIMux</code>控制(取决于<code>SSDT-Disable_EH*.dsl</code>)。</p>
+</blockquote>
+<p><code>SSDT-ALS0.dsl</code>: Injects a fake ALS device (ambient light sensor). This SSDT is used to fix problems with restoring brightness upon reboot.</p>
+<blockquote>
+<p>注入仿冒<code>ALS</code>设备(环境光传感器)。这个<code>SSDT</code>用于修复重新启动时还原亮度的问题。</p>
+</blockquote>
+<h2 id="Introduction-说明文档"><a href="#Introduction-说明文档" class="headerlink" title="Introduction-说明文档"></a>Introduction-说明文档</h2><p>Patching ACPI is always necessary to enable (near) full functionality when installing OS X on non-Apple hardware.</p>
+<blockquote>
+<p>在非苹果硬件上安装OS X时，修补<code>ACPI</code>以启用(接近)完整的功能总是必要的。</p>
+</blockquote>
+<p>There is a complete guide here: <a href="http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/" target="_blank" rel="noopener">http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/</a></p>
+<blockquote>
+<p>这里有一个完整的指南: <a href="http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/" target="_blank" rel="noopener">http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/</a></p>
+</blockquote>
+<p>That guide uses what is known as “static patching”. In order to inject patched ACPI files, we extract native ACPI, disassemble them, make changes, then recompile and place the files in ACPI/patched, so that Clover injects the patched ACPI instead of native ACPI. With the techniques detailed in this guide, the changes can be made directly to the ACPI binaries provided by BIOS, skipping the extract, disassembly, and recompilation steps.</p>
+<blockquote>
+<p>该指南使用了所谓的“静态补丁”。为了注入打了补丁的<code>ACPI</code>文件，我们提取本地的ACPI，将它们反编译，进行修改，然后重新编译，并将文件放在<code>ACPI/patched</code>中，这样Clover就注入了打过补丁的<code>ACPI</code>，而不是原生的<code>ACPI</code>。通过本指南中详细介绍的技术，可以直接对<code>BIOS</code>提供的<code>ACPI</code>二进制文件进行更改，跳过提取、分解和重新编译步骤。</p>
+</blockquote>
+<p>You should have a solid understanding of static ACPI patching before attempting to hotpatch. You should also have an understanding of the ACPI spec, binary patching, programming, and ACPI concepts. Don’t expect step-by-step and spoon feeding in this thread.</p>
+<blockquote>
+<p>在尝试<code>hotpatch</code>之前，你应该对静态的<code>ACPI</code>补丁有一定的了解。你还应该了解<code>ACPI</code>规范、二进制补丁、语法和<code>ACPI</code>概念。不要指望在这个过程中循序渐进地学习。</p>
+</blockquote>
+<h3 id="Clover-mechanisms-Clover机制"><a href="#Clover-mechanisms-Clover机制" class="headerlink" title="Clover mechanisms-Clover机制"></a>Clover mechanisms-<code>Clover</code>机制</h3><p>Clover provides a few methods for accomplishing ACPI hotpatch:</p>
+<blockquote>
+<p>Clover提供了一些新的方法来实现<code>ACPI hotpatch</code>.</p>
+</blockquote>
+<ul>
+<li>config.plist/ACPI/DSDT/Fixes</li>
+<li>config.plist/ACPI/DSDT/Patches</li>
+<li>ability to inject additional SSDTs</li>
+</ul>
+<p><code>DSDT/Fixes</code> provide fixed function ACPI patching. Each “Fix” can do a particular kind of patching that can be used instead of typical patching you might do with MaciASL and static patching. For example, “IRQ Fix” can be accomplished with “FixHPET_0010” “FixIPIC_0040” “FIX_RTC_20000” and “FIX_TMR_40000”. As an other example, “Fix _WAK Arg0 v2” can be accomplished with “FIX_WAK_200000”. You can read the Clover wiki for more information on each patch. Most of the time, there are not many DSDT “Fixes” needed for basic functionality. DSDT “Fixes” are useful for implementing patches that are difficult or impossible to implement with ACPI/DSDT/Patches or additional SSDTs.</p>
+<blockquote>
+<p><code>DSDT/Fixes</code>提供了具有修复功能的<code>ACPI</code>补丁。每一个<code>Fix</code>都可以使用一种特殊的补丁，从而不需要你使用<code>MaciASL</code>和静态补丁。例如，<code>IRQ Fix</code>可以用<code>FixHPET_0010</code>、<code>FixIPIC_0040</code>、<code>FIX_RTC_20000</code>和<code>FIX_TMR_40000</code>来完成。再举一个例子，<code>Fix _WAK Arg0 v2</code>可以用<code>FIX_WAK_200000</code>来完成。对于每个补丁阅读<code>Clover wiki</code>以获得更多信息。大多数情况下，基本功能所需的DSDT<code>Fix</code>并不多。对于用<code>ACPI/DSDT/Patches</code>或附加的<code>SSDT</code>很难实现甚至不可能实现的补丁,利用DSDT<code>Fixes</code>实现非常有用。</p>
+</blockquote>
+<p>DSDT/Patches allows for binary search and replace by Clover. Clover loads the native ACPI files, applies the patches specified in ACPI/Patches using binary search/replace, then injects the patched ACPI. You need to have an understanding of the binary AML format. It is fully documented in the ACPI spec.</p>
+<blockquote>
+<p><code>DSDT/Patches</code>允许通过<code>Clover</code>对二进制进行查找并替换。<code>Clover</code>加载本地的<code>ACPI</code>文件，在<code>ACPI/Patches</code>中使用二进制查找替换以应用指定的补丁，然后注入打过补丁的<code>ACPI</code>。您需要了解二进制<code>AML</code>格式。它在<code>ACPI</code>规范中有完整的文档记录。</p>
+</blockquote>
+<p>ACPI namespace is built by merging the DSDT and SSDTs at load time. By placing additional SSDTs into ACPI/patched, we can essentially add code to this ACPI set. Since many OS X patches involve adding properties to ioreg with a _DSM method, it is often adequate to simply add an SSDT which contains the additional _DSM method instead of patching the native ACPI files. A perfect example you’re already familiar with is the SSDT.aml that is generated by Pike’s ssdtPRgen.sh.</p>
+<blockquote>
+<p>ACPI命名空间在加载时通过合并<code>DSDT</code>和<code>SSDT</code>构建。通过将额外的<code>SSDT</code>放到<code>ACPI/patched</code>,我们可以添加代码到<code>ACPI</code>集。因为许多<code>OS X</code>补丁涉及<code>_DSM</code>方法添加属性到<code>ioreg</code> ,通常是适当的<code>SSDT</code>包含额外的一个<code>_DSM</code>方法而不是对本地<code>ACPI</code>文件打补丁。你已经熟悉的一个很好的例子是<code>Pike</code>的<code>ssdtprgensh.sh</code>脚本生成的<code>SSDT.aml</code>。</p>
+</blockquote>
+<p>In some cases, more than one mechanism must be used to accomplish a single goal. For example, you might use binary patching to disable or rename components in the native ACPI set, and then replace it with additional SSDTs.</p>
+<blockquote>
+<p>在某些情况下，必须使用不止一个机制来完成某一个目标。例如，你可能使用二进制补丁来禁用或重命名本地<code>ACPI</code>集合中的组件，然后用额外的<code>SSDT</code>替换它。</p>
+</blockquote>
+<h3 id="Renaming-ACPI-objects-重命名ACPI对象"><a href="#Renaming-ACPI-objects-重命名ACPI对象" class="headerlink" title="Renaming ACPI objects-重命名ACPI对象"></a>Renaming ACPI objects-重命名<code>ACPI</code>对象</h3><p>Since OS X can depend on specific ACPI object names used by Macs, a common patch is to rename an object in the native ACPI set. For example, most PC laptops use GFX0 for the integrated Intel GPU object (Intel HD Graphics). In OS X, power management for Intel graphics is not enabled unless this device is named IGPU. Using static patching, we apply “Rename IGPU to GFX0” in order to rename this object. The patch must be applied to the DSDT and all SSDTs that reference it.</p>
+<blockquote>
+<p>由于<code>OS X</code>可以依赖于<code>Mac</code>所使用的特定的<code>ACPI</code>对象名称，一个常见的补丁是在本地的ACPI集合中重命名一个对象，例如，大多数<code>PC</code>笔记本使用<code>GFX0</code>作为集成的<code>Intel GPU</code>对象(<code>Intel HD</code>显卡)。在<code>OS X</code>中，除非这个设备被命名为<code>IGPU</code>，否则英特尔图形的电源管理是不能启用的。使用静态补丁，我们应用<code>Rename IGPU to GFX0</code>来重命名这个对象。这个补丁必须应用到<code>DSDT</code>和所有有引用<code>GFX0</code>的<code>SSDT</code>上。</p>
+</blockquote>
+<p>With hotpatch, we can rename GFX0 to IGPU using a simple Clover patch in ACPI/DSDT/Patches. Such patches apply to DSDT and all native SSDTs (DSDT/Patches do not apply to SSDTs that are added via ACPI/patched). The patch for the rename would be:</p>
+<blockquote>
+<p>使用<code>hotpatch</code>，我们可以在<code>ACPI/DSDT/Patches</code>使用一个简单的四叶草补丁将<code>GFX0</code>重命名为<code>IGPU</code>。这些补丁适用于<code>DSDT</code>和所有本地的<code>SSDTs</code>(<code>(DSDT/Patches</code>不能被应用到通过<code>ACPI/patched</code>添加的<code>SSDT</code>)。重命名的补丁是:</p>
+</blockquote>
+<pre><code>Comment: Rename GFX0 to IGPU
 Find: &lt;4746 5830&gt;
-Replace: &lt;4947 5055&gt;</code></pre><p>The hex values in Find and Replaces are the ASCII codes for GFX0 and IGPU, respectively.</p><blockquote><p>查找和替换的十六进制值分别是<code>GFX0</code>和<code>IGPU</code>的<code>ASCII</code>码,分别是：</p></blockquote><pre><code>$ echo -n GFX0|xxd
+Replace: &lt;4947 5055&gt;</code></pre><p>The hex values in Find and Replaces are the ASCII codes for GFX0 and IGPU, respectively.</p>
+<blockquote>
+<p>查找和替换的十六进制值分别是<code>GFX0</code>和<code>IGPU</code>的<code>ASCII</code>码,分别是：</p>
+</blockquote>
+<pre><code>$ echo -n GFX0|xxd
 0000000: 4746 5830                                GFX0
 $ echo -n IGPU|xxd
-0000000: 4947 5055                                IGPU</code></pre><p>There are number of common renames, and most are in the config.plist that are part of my Clover/hoptpatch project:</p><p><a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch</a></p><blockquote><p>有许多通用的重命名，而且很多都在<code>config.plist</code>里，这个<code>config.plist</code>是我的<code>Clover/hotpatch</code>项目的一部分:<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch</a></p></blockquote><p>In fact, the hotpatch SSDTs that are part of the same project depend on the renames being implemented.</p><blockquote><p>事实上，这些<code>hotpach</code>的<code>SSDT</code>也是上面那个项目的一部分，并且它们要求这些重命名必须被实现。</p></blockquote><p>Common renames:</p><blockquote><p>通用的重命名：</p></blockquote><pre><code>GFX0 -&gt; IGPU
+0000000: 4947 5055                                IGPU</code></pre><p>There are number of common renames, and most are in the config.plist that are part of my Clover/hoptpatch project:</p>
+<p><a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch</a></p>
+<blockquote>
+<p>有许多通用的重命名，而且很多都在<code>config.plist</code>里，这个<code>config.plist</code>是我的<code>Clover/hotpatch</code>项目的一部分:<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch</a></p>
+</blockquote>
+<p>In fact, the hotpatch SSDTs that are part of the same project depend on the renames being implemented.</p>
+<blockquote>
+<p>事实上，这些<code>hotpach</code>的<code>SSDT</code>也是上面那个项目的一部分，并且它们要求这些重命名必须被实现。</p>
+</blockquote>
+<p>Common renames:</p>
+<blockquote>
+<p>通用的重命名：</p>
+</blockquote>
+<pre><code>GFX0 -&gt; IGPU
 SAT0 -&gt; SATA
 EHC1 -&gt; EH01
 EHC2 -&gt; EH02
@@ -20,37 +710,119 @@ HECI -&gt; IMEI
 MEI -&gt; IMEI
 LPC -&gt; LPCB
 HDAS -&gt; HDEF
-AZAL -&gt; HDEF</code></pre><p>Note: All ACPI identifiers are 4 characters. Shorter names are padded with underscore. So, for example, XHC is represented in the AML binary as XHC_, EC would be EC__, EC0 would be EC_, MEI would be MEI_, etc.</p><blockquote><p>注意：所有的<code>ACPI</code>标识符都是4个字符。较短的名字用下划线填充。例如，<code>XHC</code>在<code>AML</code>二进制文件中被表示为<code>XHC_</code>，<code>EC</code>是<code>EC__</code>，<code>EC0</code>是<code>EC0_</code>，<code>MEI</code>是<code>MEI_</code>，等等。</p></blockquote><h3 id="Removing-methods-移除方法"><a href="#Removing-methods-移除方法" class="headerlink" title="Removing methods-移除方法"></a>Removing methods-移除方法</h3><p>It is very difficult to remove ACPI objects, (methods, names, devices, etc) using Clover binary patches. Commonly, we must add _DSM methods to inject properties that describe various hardware properties. But added _DSM methods can conflict with existing _DSM methods that may already be in the native ACPI files. With static patching, “Remove _DSM methods” would be used.</p><blockquote><p>使用<code>Clover</code>二进制补丁来移除<code>ACPI</code>对象(方法、名称、设备等等)是非常困难的。通常，我们必须添加<code>_DSM</code>方法来注入各种描述硬件属性的属性。但是，添加<code>_DSM</code>方法可能与本地<code>ACPI</code>文件现有的<code>_DSM</code>方法冲突。这时，就会用到静态补丁<code>Remove _DSM methods</code>。</p></blockquote><p>Since it is difficult to remove the methods, but we don’t want the native methods to conflict with new _DSM methods that are added, the fix is to rename the native methods to something else.</p><blockquote><p>由于很难删除这些方法，但是我们又不希望本地方法与添加的新<code>_DSM</code>方法相冲突，所以就将本地方法重命名为其他名字来修复这个问题。</p></blockquote><p>So… again, we use a simple rename patch:</p><blockquote><p>那么…同样地，我们使用一个简单的重命名补丁:</p></blockquote><pre><code>Comment: Rename _DSM to XDSM
+AZAL -&gt; HDEF</code></pre><p>Note: All ACPI identifiers are 4 characters. Shorter names are padded with underscore. So, for example, XHC is represented in the AML binary as XHC_, EC would be EC__, EC0 would be EC_, MEI would be MEI_, etc.</p>
+<blockquote>
+<p>注意：所有的<code>ACPI</code>标识符都是4个字符。较短的名字用下划线填充。例如，<code>XHC</code>在<code>AML</code>二进制文件中被表示为<code>XHC_</code>，<code>EC</code>是<code>EC__</code>，<code>EC0</code>是<code>EC0_</code>，<code>MEI</code>是<code>MEI_</code>，等等。</p>
+</blockquote>
+<h3 id="Removing-methods-移除方法"><a href="#Removing-methods-移除方法" class="headerlink" title="Removing methods-移除方法"></a>Removing methods-移除方法</h3><p>It is very difficult to remove ACPI objects, (methods, names, devices, etc) using Clover binary patches. Commonly, we must add _DSM methods to inject properties that describe various hardware properties. But added _DSM methods can conflict with existing _DSM methods that may already be in the native ACPI files. With static patching, “Remove _DSM methods” would be used.</p>
+<blockquote>
+<p>使用<code>Clover</code>二进制补丁来移除<code>ACPI</code>对象(方法、名称、设备等等)是非常困难的。通常，我们必须添加<code>_DSM</code>方法来注入各种描述硬件属性的属性。但是，添加<code>_DSM</code>方法可能与本地<code>ACPI</code>文件现有的<code>_DSM</code>方法冲突。这时，就会用到静态补丁<code>Remove _DSM methods</code>。</p>
+</blockquote>
+<p>Since it is difficult to remove the methods, but we don’t want the native methods to conflict with new _DSM methods that are added, the fix is to rename the native methods to something else.</p>
+<blockquote>
+<p>由于很难删除这些方法，但是我们又不希望本地方法与添加的新<code>_DSM</code>方法相冲突，所以就将本地方法重命名为其他名字来修复这个问题。</p>
+</blockquote>
+<p>So… again, we use a simple rename patch:</p>
+<blockquote>
+<p>那么…同样地，我们使用一个简单的重命名补丁:</p>
+</blockquote>
+<pre><code>Comment: Rename _DSM to XDSM
 Find: &lt;5f44534d&gt;
-Replace: &lt;5844534d&gt;</code></pre><p>Sometimes, you might rename an object to effectively disable it so it does not cause problems. For example, my Intel DH67GD DSDT defines an APSS object. If this object is left in the DSDT it interferes with power management (causes panic). I use a rename from APSS -&gt; APXX. Because AppleIntelCPUPowerManagement is looking for APSS, it does not cause a problem once renamed to APXX.</p><blockquote><p>有时，你可能会重命名一个对象，以便有效地禁用它，这样它就不会造成问题。例如，我的<code>Intel DH67GD</code>的 <code>DSDT</code>定义了<code>APSS</code>对象。如果这个对象留在<code>DSDT</code>中，它会干扰电源管理(引起<code>KP</code>)。我使用<code>APSS-&gt;APXX</code>的重命名。因为<code>AppleIntelCPUPowerManagement</code>会查找<code>APSS</code>,只要改名为<code>APXX</code>就不会引起问题。</p></blockquote><h3 id="Redirect-and-Replace-重定向和替换"><a href="#Redirect-and-Replace-重定向和替换" class="headerlink" title="Redirect and Replace-重定向和替换"></a>Redirect and Replace-重定向和替换</h3><p>In some cases, we would like to replace code to change the behavior. For this, we can rename the object and provide an alternate implementation in an SSDT.</p><blockquote><p>在某些情况下，我们希望替换代码来改变某些动作。为此，我们可以重命名这个对象，并在<code>SSDT</code>中提供一个用来替代的对象以达到目的。</p></blockquote><p>A common fix is spoofing the ACPI code in DSDT and SSDTs such that it behaves as if a certain version of Windows is the ACPI host. When static patching, we might use “OS Check Fix (Windows 8)”. When applied, it changes code from:</p><blockquote><p>一个常见的修复是在<code>DSDT</code>和<code>SSDT</code>中仿冒<code>ACPI</code>代码，使其表现得就像是<code>ACPI</code>主机的某个版本的<code>Windows</code>一样。当利用静态补丁时，我们可能会使用<code>OS Check Fix (Windows 8)</code>。当应用这个补丁时，它会将代码从:</p></blockquote><pre><code>If (_OSI("Windows 2012"))</code></pre><p>To:</p><blockquote><p>改为：</p></blockquote><pre><code>If (LOr(_OSI("Darwin"),_OSI("Windows 2012"))</code></pre><p>Since the _OSI implementation in OS X only responds to “Darwin” the code is changed so that this specific _OSI check also accomodates “Darwin”.</p><blockquote><p>由于<code>OS X</code>中<code>_OSI</code>方法的实现只对被修改了代码的<code>Darwin</code>作出响应，所以这个特定的<code>_OSI check</code>补丁也能响应<code>Darwin</code>。</p></blockquote><p>With hotpatching, the opposite approach is taken. Instead of changing the code using _OSI, we change the code so it calls a different method that emulates the _OSI implementation that would be in the Windows ACPI host.</p><blockquote><p>而热补丁则采用相反的方法，我们不使用<code>_OSI</code>修改代码，而是改变代码让它调用一种不同的方法来模拟在<code>Windows ACPI</code>主机上的<code>_OSI</code>实现。</p></blockquote><p>This technique relies on two of the techniques… a patch to change all calls from _OSI to XOSI… and an implementation of XOSI that emulates what Windows would do for a certain Windows version.</p><blockquote><p>这项技术依赖于两种技术，一个补丁来改变从<code>_OSI</code>到<code>XOSI</code>的所有调用。另一个是<code>XOSI</code>的实现，即模拟<code>Windows</code>对某个<code>Windows</code>版本的操作。</p></blockquote><p>First, changing the code to call XOSI instead of _OSI:</p><blockquote><p>首先，改变代码来调用<code>XOSI</code>而不是<code>_OSI</code>:</p></blockquote><pre><code>Comment: Change _OSI to XOSI
+Replace: &lt;5844534d&gt;</code></pre><p>Sometimes, you might rename an object to effectively disable it so it does not cause problems. For example, my Intel DH67GD DSDT defines an APSS object. If this object is left in the DSDT it interferes with power management (causes panic). I use a rename from APSS -&gt; APXX. Because AppleIntelCPUPowerManagement is looking for APSS, it does not cause a problem once renamed to APXX.</p>
+<blockquote>
+<p>有时，你可能会重命名一个对象，以便有效地禁用它，这样它就不会造成问题。例如，我的<code>Intel DH67GD</code>的 <code>DSDT</code>定义了<code>APSS</code>对象。如果这个对象留在<code>DSDT</code>中，它会干扰电源管理(引起<code>KP</code>)。我使用<code>APSS-&gt;APXX</code>的重命名。因为<code>AppleIntelCPUPowerManagement</code>会查找<code>APSS</code>,只要改名为<code>APXX</code>就不会引起问题。</p>
+</blockquote>
+<h3 id="Redirect-and-Replace-重定向和替换"><a href="#Redirect-and-Replace-重定向和替换" class="headerlink" title="Redirect and Replace-重定向和替换"></a>Redirect and Replace-重定向和替换</h3><p>In some cases, we would like to replace code to change the behavior. For this, we can rename the object and provide an alternate implementation in an SSDT.</p>
+<blockquote>
+<p>在某些情况下，我们希望替换代码来改变某些动作。为此，我们可以重命名这个对象，并在<code>SSDT</code>中提供一个用来替代的对象以达到目的。</p>
+</blockquote>
+<p>A common fix is spoofing the ACPI code in DSDT and SSDTs such that it behaves as if a certain version of Windows is the ACPI host. When static patching, we might use “OS Check Fix (Windows 8)”. When applied, it changes code from:</p>
+<blockquote>
+<p>一个常见的修复是在<code>DSDT</code>和<code>SSDT</code>中仿冒<code>ACPI</code>代码，使其表现得就像是<code>ACPI</code>主机的某个版本的<code>Windows</code>一样。当利用静态补丁时，我们可能会使用<code>OS Check Fix (Windows 8)</code>。当应用这个补丁时，它会将代码从:</p>
+</blockquote>
+<pre><code>If (_OSI("Windows 2012"))</code></pre><p>To:</p>
+<blockquote>
+<p>改为：</p>
+</blockquote>
+<pre><code>If (LOr(_OSI("Darwin"),_OSI("Windows 2012"))</code></pre><p>Since the _OSI implementation in OS X only responds to “Darwin” the code is changed so that this specific _OSI check also accomodates “Darwin”.</p>
+<blockquote>
+<p>由于<code>OS X</code>中<code>_OSI</code>方法的实现只对被修改了代码的<code>Darwin</code>作出响应，所以这个特定的<code>_OSI check</code>补丁也能响应<code>Darwin</code>。</p>
+</blockquote>
+<p>With hotpatching, the opposite approach is taken. Instead of changing the code using _OSI, we change the code so it calls a different method that emulates the _OSI implementation that would be in the Windows ACPI host.</p>
+<blockquote>
+<p>而热补丁则采用相反的方法，我们不使用<code>_OSI</code>修改代码，而是改变代码让它调用一种不同的方法来模拟在<code>Windows ACPI</code>主机上的<code>_OSI</code>实现。</p>
+</blockquote>
+<p>This technique relies on two of the techniques… a patch to change all calls from _OSI to XOSI… and an implementation of XOSI that emulates what Windows would do for a certain Windows version.</p>
+<blockquote>
+<p>这项技术依赖于两种技术，一个补丁来改变从<code>_OSI</code>到<code>XOSI</code>的所有调用。另一个是<code>XOSI</code>的实现，即模拟<code>Windows</code>对某个<code>Windows</code>版本的操作。</p>
+</blockquote>
+<p>First, changing the code to call XOSI instead of _OSI:</p>
+<blockquote>
+<p>首先，改变代码来调用<code>XOSI</code>而不是<code>_OSI</code>:</p>
+</blockquote>
+<pre><code>Comment: Change _OSI to XOSI
 Find: &lt;5f4f 5349&gt;
-Replace: &lt;584f 5349&gt;</code></pre><p>The hex codes above should be no mystery (they are ASCII for _OSI and XOSI, respectively).</p><blockquote><p>上面的十六进制代码没有什么神秘的(它们分别是<code>_OSI</code>和<code>XOSI</code>的<code>ASCII</code>码)。</p></blockquote><p>Now the code mentioned above, after patching by Clover, will read:</p><blockquote><p>现在，上面提到的代码，在通过<code>Clover</code>打了补丁之后，将会读到:</p></blockquote><pre><code>If (XOSI("Windows 2012"))</code></pre><p>Now we need an SSDT that implements XOSI. You will find such an implementation in the repository (SSDT-XOSI.dsl).</p><blockquote><p>现在我们需要一个实现<code>XOSI</code>的<code>SSDT</code>。你可以我的<code>GitHub</code>仓库中找到这样的实现(SSDT-XOSI.dsl).</p></blockquote><p>Note that without the SSDT that implements the XOSI method, the (patched) calls to XOSI would cause an ACPI abort (ACPI abort causes execution of the ACPI method to be terminated immediately with an error). Don’t use the _OSI-&gt;XOSI patch without the XOSI method.</p><blockquote><p>注意，如果没有实现<code>XOSI</code>方法的<code>SSDT</code>，这个补丁对<code>XOSI</code>的调用将导致<code>ACPI</code>的加载被终止(<code>ACPI</code>中止导致<code>ACPI</code>方法的执行被错误立即终止)。如果没有<code>XOSI</code>方法不要使用<code>_OSI</code>-&gt;<code>XOSI</code>补丁。</p></blockquote><h3 id="Rename-and-Replace-重命名和替换"><a href="#Rename-and-Replace-重命名和替换" class="headerlink" title="Rename and Replace-重命名和替换"></a>Rename and Replace-重命名和替换</h3><p>A second pattern, similar to “Redirect and Replace” is “Rename and Replace”. In this case, instead of changing all the call sites, we change the method definition such that the method is named something different than it was originally, but leave the original method name at the call sites. This allows the method that is the target of the calls to be replaced.</p><p>For example, it is very common for USB devices to cause “instant wake”. As a work around, wake on USB can be disabled. Most laptops don’t have a BIOS option for it, so instead the _PRW methods that control this feature are patched.</p><p>For example, the native _SB.PCI0.EHC1._PRW method might read:</p><pre><code>Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+Replace: &lt;584f 5349&gt;</code></pre><p>The hex codes above should be no mystery (they are ASCII for _OSI and XOSI, respectively).</p>
+<blockquote>
+<p>上面的十六进制代码没有什么神秘的(它们分别是<code>_OSI</code>和<code>XOSI</code>的<code>ASCII</code>码)。</p>
+</blockquote>
+<p>Now the code mentioned above, after patching by Clover, will read:</p>
+<blockquote>
+<p>现在，上面提到的代码，在通过<code>Clover</code>打了补丁之后，将会读到:</p>
+</blockquote>
+<pre><code>If (XOSI("Windows 2012"))</code></pre><p>Now we need an SSDT that implements XOSI. You will find such an implementation in the repository (SSDT-XOSI.dsl).</p>
+<blockquote>
+<p>现在我们需要一个实现<code>XOSI</code>的<code>SSDT</code>。你可以我的<code>GitHub</code>仓库中找到这样的实现(SSDT-XOSI.dsl).</p>
+</blockquote>
+<p>Note that without the SSDT that implements the XOSI method, the (patched) calls to XOSI would cause an ACPI abort (ACPI abort causes execution of the ACPI method to be terminated immediately with an error). Don’t use the _OSI-&gt;XOSI patch without the XOSI method.</p>
+<blockquote>
+<p>注意，如果没有实现<code>XOSI</code>方法的<code>SSDT</code>，这个补丁对<code>XOSI</code>的调用将导致<code>ACPI</code>的加载被终止(<code>ACPI</code>中止导致<code>ACPI</code>方法的执行被错误立即终止)。如果没有<code>XOSI</code>方法不要使用<code>_OSI</code>-&gt;<code>XOSI</code>补丁。</p>
+</blockquote>
+<h3 id="Rename-and-Replace-重命名和替换"><a href="#Rename-and-Replace-重命名和替换" class="headerlink" title="Rename and Replace-重命名和替换"></a>Rename and Replace-重命名和替换</h3><p>A second pattern, similar to “Redirect and Replace” is “Rename and Replace”. In this case, instead of changing all the call sites, we change the method definition such that the method is named something different than it was originally, but leave the original method name at the call sites. This allows the method that is the target of the calls to be replaced.</p>
+<p>For example, it is very common for USB devices to cause “instant wake”. As a work around, wake on USB can be disabled. Most laptops don’t have a BIOS option for it, so instead the _PRW methods that control this feature are patched.</p>
+<p>For example, the native _SB.PCI0.EHC1._PRW method might read:</p>
+<pre><code>Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
 {
     Return (GPRW (0x6D, 0x03))
-}</code></pre><p>In order to patch it so USB devices on EHCI#1 cannot cause wake, it would be changed:</p><pre><code>Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+}</code></pre><p>In order to patch it so USB devices on EHCI#1 cannot cause wake, it would be changed:</p>
+<pre><code>Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
 {
     Return (GPRW (0x6D, 0))
-}</code></pre><p>Usually, there are several such call sites to GPRW that need to be changed (also, keep in mind not all ACPI sets use the specific name GPRW). Instead of trying to patch all the call sites as above, we can instead patch the method definition of GPRW instead:</p><p>With the original code:</p><pre><code>Method (GPRW, 2, NotSerialized)
+}</code></pre><p>Usually, there are several such call sites to GPRW that need to be changed (also, keep in mind not all ACPI sets use the specific name GPRW). Instead of trying to patch all the call sites as above, we can instead patch the method definition of GPRW instead:</p>
+<p>With the original code:</p>
+<pre><code>Method (GPRW, 2, NotSerialized)
 {
    ...
-}</code></pre><p>If we change it to:</p><pre><code>Method (XPRW, 2, NotSerialized)
+}</code></pre><p>If we change it to:</p>
+<pre><code>Method (XPRW, 2, NotSerialized)
 {
    ...
-}</code></pre><p>Since you don’t want to change any call sites, the patch must be constructed such that it affects only the method itself and not the call sites. According to ACPI spec, a method definition starts with bytecode 14, is followed by the method size, the method name, argument count/flags. You can use the “-l” option in iasl to generate a mixed listing of your ACPI file. For example, the Lenovo u430 GPRW method mixed listing:</p><pre><code>4323:          Method (GPRW, 2, NotSerialized)
+}</code></pre><p>Since you don’t want to change any call sites, the patch must be constructed such that it affects only the method itself and not the call sites. According to ACPI spec, a method definition starts with bytecode 14, is followed by the method size, the method name, argument count/flags. You can use the “-l” option in iasl to generate a mixed listing of your ACPI file. For example, the Lenovo u430 GPRW method mixed listing:</p>
+<pre><code>4323:          Method (GPRW, 2, NotSerialized)
 00003F95:  14 45 08 47 50 52 57 02     ".E.GPRW."
 4324:          {
 4325:              Store (Arg0, Index (PRWP, Zero))
 00003F9D:  70 68 ..................    "ph"
-00003F9F:  88 50 52 57 50 00 00 ...    ".PRWP.."</code></pre><p>We could do a find replace using the method header bytes:</p><pre><code>Find: &lt;14 45 08 47 50 52 57 02&gt;
-Replace: &lt;14 45 08 58 50 52 57 02&gt;</code></pre><p>But what happens if the method differs slightly between different versions of BIOS or models that are similar, but not exactly the same? In that case, the byte following the 14 will change due to the change in the method length.</p><p>My thought is that the beginning of the method body is less likely to be different than the total length of the method, so it helps to add a few extra bytes from the body of the method to the find/replace specification:</p><pre><code>Find: &lt;47 50 52 57 02 70 68&gt;
-Replace: &lt;58 50 52 57 02 70 68&gt;</code></pre><p>The number of follow-on bytes that you use depends on how many you need to make the find/replace affect only the method definition. You can verify by looking at the native AML binary in a hex editor such as Hex Fiend (it is a nice hex editor and is also open source).</p><p>Note: Although you could search just for the method name + arg count/flags, it is possible that the same pattern will find a call site to the method which you don’t want to change. In the case of the u430 that wasn’t the case, so I was able to find/replace with just the method name+flags.</p><pre><code>Find: &lt;47505257 02&gt;
-Replace: &lt;58505257 02&gt;</code></pre><p>In the case of the ProBook UPRW, it was necessary to use the follow-on bytes that are part of the method body:</p><pre><code>Find: &lt;55505257 0a7012&gt;
-Replace: &lt;58505257 0a7012&gt;</code></pre><p>Now any code that calls GPRW (or UPRW in the ProBook example) will not call the implementation in XPRW because the name doesn’t match. The original XPRW is now unreachable code. Which means the GPRW implementation can be changed for our purpose:</p><pre><code>Method(GPRW, 2)
+00003F9F:  88 50 52 57 50 00 00 ...    ".PRWP.."</code></pre><p>We could do a find replace using the method header bytes:</p>
+<pre><code>Find: &lt;14 45 08 47 50 52 57 02&gt;
+Replace: &lt;14 45 08 58 50 52 57 02&gt;</code></pre><p>But what happens if the method differs slightly between different versions of BIOS or models that are similar, but not exactly the same? In that case, the byte following the 14 will change due to the change in the method length.</p>
+<p>My thought is that the beginning of the method body is less likely to be different than the total length of the method, so it helps to add a few extra bytes from the body of the method to the find/replace specification:</p>
+<pre><code>Find: &lt;47 50 52 57 02 70 68&gt;
+Replace: &lt;58 50 52 57 02 70 68&gt;</code></pre><p>The number of follow-on bytes that you use depends on how many you need to make the find/replace affect only the method definition. You can verify by looking at the native AML binary in a hex editor such as Hex Fiend (it is a nice hex editor and is also open source).</p>
+<p>Note: Although you could search just for the method name + arg count/flags, it is possible that the same pattern will find a call site to the method which you don’t want to change. In the case of the u430 that wasn’t the case, so I was able to find/replace with just the method name+flags.</p>
+<pre><code>Find: &lt;47505257 02&gt;
+Replace: &lt;58505257 02&gt;</code></pre><p>In the case of the ProBook UPRW, it was necessary to use the follow-on bytes that are part of the method body:</p>
+<pre><code>Find: &lt;55505257 0a7012&gt;
+Replace: &lt;58505257 0a7012&gt;</code></pre><p>Now any code that calls GPRW (or UPRW in the ProBook example) will not call the implementation in XPRW because the name doesn’t match. The original XPRW is now unreachable code. Which means the GPRW implementation can be changed for our purpose:</p>
+<pre><code>Method(GPRW, 2)
 {
     If (0x6d == Arg0) { Return(Package() { 0x6d, 0, }) }
     External(\XPRW, MethodObj)
     Return(XPRW(Arg0, Arg1))
-}</code></pre><p>Explaining the code: For any call to GPRW with the first argument set to 0x6d (the GPE we are trying to disable for wake), instead of returning what the original GPRW would, we return a package with 0x6d and 0 (which disables wake). And for other GPE values, the code simply calls the original GPRW method now named XPRW.</p><p>Another simple case is patching EC query methods to fix the brightness keys. A simple rename of the _Qxx methods involved to XQxx, and a new definition of the method with the original name is all that is needed.</p><p>For example, in the HP Envy Haswell repo:</p><pre><code>// _Q13 called on brightness/mirror display key
+}</code></pre><p>Explaining the code: For any call to GPRW with the first argument set to 0x6d (the GPE we are trying to disable for wake), instead of returning what the original GPRW would, we return a package with 0x6d and 0 (which disables wake). And for other GPE values, the code simply calls the original GPRW method now named XPRW.</p>
+<p>Another simple case is patching EC query methods to fix the brightness keys. A simple rename of the _Qxx methods involved to XQxx, and a new definition of the method with the original name is all that is needed.</p>
+<p>For example, in the HP Envy Haswell repo:</p>
+<pre><code>// _Q13 called on brightness/mirror display key
 Method (_Q13, 0, Serialized)  // _Qxx: EC Query
 {
     External(\HKNO, FieldUnitObj)
@@ -70,12 +842,36 @@ Method (_Q13, 0, Serialized)  // _Qxx: EC Query
         // Mirror toggle
         Notify(\_SB.PCI0.LPCB.PS2K, 0x046e)
     }
-}</code></pre><p>And the associated patch:</p><pre><code>Comment: change Method(_Q13,0,S) to XQ13
+}</code></pre><p>And the associated patch:</p>
+<pre><code>Comment: change Method(_Q13,0,S) to XQ13
 Find: &lt;5f513133 08&gt;
-Replace: &lt;58513133 08&gt;</code></pre><p>This same “Rename and Replace” mechanism can be used in cases that are much more complex than this. For example, it is typically used to patch battery methods, which need to be patched to avoid access to multibyte EC fields.</p><h4 id="Tips-for-complex-Rename-and-Replace"><a href="#Tips-for-complex-Rename-and-Replace" class="headerlink" title="Tips for complex Rename and Replace"></a>Tips for complex Rename and Replace</h4><p>As you probably already know, patching for battery status (multibyte EC fields) can be very complex and can involve a lot of code changes to many methods.</p><p>This section will detail some of the techniques and procedures used for battery patching.</p><p>It is advisable to patch for battery without using hotpatch first. After you get it working, then attempt hotpatch. Also, the difference between the code not patched for battery and the code patched for battery is very helpful. You can use a tool like ‘diffmerge’ to compare each. This is especially true if there is already a static battery patch for your laptop in my laptop repository.</p><p>General procedure:</p><ul><li>start with native ACPI</li><li>patch for battery status using static patching (verify it works)</li><li>use diffmerge to compare the unpatched code with patched code</li><li>for each method that is different, implement the “Rename and Replace” pattern</li><li>for the EC fields, create another EC OperationRegion (use a name that is different from the original) and Field definition as a sort of “overlay” which contains only the EC fields you need to patch</li><li>to create the EC overlay, you can use the patched Field/OperationRegion in the patched DSDT, then eliminate unpatched fields</li><li>use External to allow the replacement methods in the SSDT to access the fields defined elsewhere in the ACPI set (usually DSDT)</li><li>let the compiler point out where you need to use External</li><li>watch out for symbols with duplicate names in different scopes</li></ul><p>An example is provided in post #2 of this thread.</p><h3 id="Code-value-patching"><a href="#Code-value-patching" class="headerlink" title="Code value patching"></a>Code value patching</h3><p>Consider the case of “Fix Mutex with non-zero SyncLevel”. This patch finds all Mutex objects and replaces the SyncLevel with 0. We use this patch since OS X does not support Mutex debugging correctly and aborts on any Acquire with a Mutex that has a non-zero SyncLevel.</p><p>As an example, the u430 has Mutexes delcared as such:</p><pre><code>Mutex (MSMI, 0x07)</code></pre><p>To make it compatible with OS X it must be changed:</p><pre><code>Mutex (MSMI, 0)</code></pre><p>The ACPI spec defines how a Mutex object is encoded in the AML, but it can be helpful to look at a mixed disassembly of a small ACPI file:</p><pre><code>DefinitionBlock ("", "DSDT", 2, "test", "test", 0)
+Replace: &lt;58513133 08&gt;</code></pre><p>This same “Rename and Replace” mechanism can be used in cases that are much more complex than this. For example, it is typically used to patch battery methods, which need to be patched to avoid access to multibyte EC fields.</p>
+<h4 id="Tips-for-complex-Rename-and-Replace"><a href="#Tips-for-complex-Rename-and-Replace" class="headerlink" title="Tips for complex Rename and Replace"></a>Tips for complex Rename and Replace</h4><p>As you probably already know, patching for battery status (multibyte EC fields) can be very complex and can involve a lot of code changes to many methods.</p>
+<p>This section will detail some of the techniques and procedures used for battery patching.</p>
+<p>It is advisable to patch for battery without using hotpatch first. After you get it working, then attempt hotpatch. Also, the difference between the code not patched for battery and the code patched for battery is very helpful. You can use a tool like ‘diffmerge’ to compare each. This is especially true if there is already a static battery patch for your laptop in my laptop repository.</p>
+<p>General procedure:</p>
+<ul>
+<li>start with native ACPI</li>
+<li>patch for battery status using static patching (verify it works)</li>
+<li>use diffmerge to compare the unpatched code with patched code</li>
+<li>for each method that is different, implement the “Rename and Replace” pattern</li>
+<li>for the EC fields, create another EC OperationRegion (use a name that is different from the original) and Field definition as a sort of “overlay” which contains only the EC fields you need to patch</li>
+<li>to create the EC overlay, you can use the patched Field/OperationRegion in the patched DSDT, then eliminate unpatched fields</li>
+<li>use External to allow the replacement methods in the SSDT to access the fields defined elsewhere in the ACPI set (usually DSDT)</li>
+<li>let the compiler point out where you need to use External</li>
+<li>watch out for symbols with duplicate names in different scopes</li>
+</ul>
+<p>An example is provided in post #2 of this thread.</p>
+<h3 id="Code-value-patching"><a href="#Code-value-patching" class="headerlink" title="Code value patching"></a>Code value patching</h3><p>Consider the case of “Fix Mutex with non-zero SyncLevel”. This patch finds all Mutex objects and replaces the SyncLevel with 0. We use this patch since OS X does not support Mutex debugging correctly and aborts on any Acquire with a Mutex that has a non-zero SyncLevel.</p>
+<p>As an example, the u430 has Mutexes delcared as such:</p>
+<pre><code>Mutex (MSMI, 0x07)</code></pre><p>To make it compatible with OS X it must be changed:</p>
+<pre><code>Mutex (MSMI, 0)</code></pre><p>The ACPI spec defines how a Mutex object is encoded in the AML, but it can be helpful to look at a mixed disassembly of a small ACPI file:</p>
+<pre><code>DefinitionBlock ("", "DSDT", 2, "test", "test", 0)
 {
     Mutex(ABCD, 7)
-}</code></pre><p>The iasl compiler can create a mixed listing file with the “-l” option.</p><p>If we compile the above file with: iasl -l test.dsl, test.lst contains:</p><pre><code>       1:  DefinitionBlock ("", "DSDT", 2, "test", "test", 0)
+}</code></pre><p>The iasl compiler can create a mixed listing file with the “-l” option.</p>
+<p>If we compile the above file with: iasl -l test.dsl, test.lst contains:</p>
+<pre><code>       1:  DefinitionBlock ("", "DSDT", 2, "test", "test", 0)
 00000000:  44 53 44 54 2B 00 00 00     "DSDT+..."
 00000008:  02 36 74 65 73 74 00 00     ".6test.."
 00000010:  74 65 73 74 00 00 00 00     "test...."
@@ -86,11 +882,52 @@ Replace: &lt;58513133 08&gt;</code></pre><p>This same “Rename and Replace” m
        3:          Mutex(ABCD, 7)
 
 00000024:  5B 01 41 42 43 44 07 ...    "[.ABCD."
-       4:  }   </code></pre><p>As you can see, the <code>Mutex(ABCD, 7)</code>, is encoded as <code>&lt;5B 01 41 42 43 44 07&gt;</code></p><p>It is now very easy to construct a patch for it:</p><pre><code>Comment: Change Mutex(ABCD,7) to Mutex(ABCD,0)
+       4:  }   </code></pre><p>As you can see, the <code>Mutex(ABCD, 7)</code>, is encoded as <code>&lt;5B 01 41 42 43 44 07&gt;</code></p>
+<p>It is now very easy to construct a patch for it:</p>
+<pre><code>Comment: Change Mutex(ABCD,7) to Mutex(ABCD,0)
 Find: &lt;5B 01 41 42 43 44 07&gt;
-Replace: &lt;5B 01 41 42 43 44 00&gt;</code></pre><h3 id="Clover-ACPI-configuration"><a href="#Clover-ACPI-configuration" class="headerlink" title="Clover ACPI configuration"></a>Clover ACPI configuration</h3><p>With static patching, DropOem=true is used and patched DSDT and SSDTs are added to ACPI/patched. With hotpatch, instead use DropOem=false, and only add-on SSDTs are placed in ACPI/patched.</p><p>It is important to note that config.plist/ACPI/patches are applied only to native SSDTs, and not the SSDTs in ACPI/patched. This means that if you are renaming objects using config.plist, the add-on SSDTs must refer to the new names, not the old names. Unlike SSDTs in ACPI/patched, binary patches in ACPI/Patches <em>do apply</em> to DSDT.aml that might be in ACPI/patched. Keep this in mind if you’re using a combination of static and hotpatching.</p><p>Also, with static patching, SortedOrder is used to specify the order of SSDTs in ACPI/patched. With hotpatch it is not strictly necessary as it is possible to construct the code in each SSDT such that the code is not order dependent. Especially if you place all add-on code in a single SSDT such as many of my laptop repo examples. Unless your add-on SSDTs are order dependent, you do not have to name each one in SortedOrder.</p><p>It is also not necessary to choose “numbered names” for each SSDT. Instead you can use meaningful names, such as “SSDT-USB.aml”, SSDT-XOSI.aml”, etc. Using numbers instead of meaningul names will just confuse you. Don’t do it.</p><h3 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h3><p>You can use patchmatic to look at your complete ACPI set as injected by Clover after patching. By runnning ‘patchmatic -extract’, patchmatic will write all injected DSDT.aml and SSDT*.aml in the order they were injected by Clover. You can disassemble them with ‘iasl -da -dl *.aml’. If iasl shows errors with the disassembly (for example duplicate symbols), it is likley OS X is also rejecting the conflicting SSDTs.</p><p>If you’re a novice with this technique, it is a good idea to implement one patch at a time, and slowly build it up to a full set of working patches + SSDTs. Trying to do all at once can make it difficult to locate your mistake.</p><h2 id="Battery-Status-Hotpatch"><a href="#Battery-Status-Hotpatch" class="headerlink" title="Battery Status Hotpatch"></a>Battery Status Hotpatch</h2><p>This second post is dedicated to patching battery status with Clover hotpatch. To demonstrate the process, we will work through an example DSDT. The example files used are from the guide for disabling discrete graphics, an “Asus UX303LN”.</p><p><a href="https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/</a></p><p>You should download the ACPI/origin files that are attached to that guide, so you can follow along.</p><p>As mentioned in post #1, the general procedures are as follows:</p><ul><li>start with native ACPI</li><li>patch for battery status using static patching (verify it works)</li><li>use diffmerge to compare the unpatched code with patched code</li><li>for each method that is different, implement the “Rename and Replace” pattern</li><li>for the EC fields, create another EC OperationRegion (use a name that is different from the original) and Field definition as a sort of “overlay” which contains only the EC fields you need to patch</li><li>to create the EC overlay, you can use the patched Field/OperationRegion in the patched DSDT, then eliminate unpatched fields</li><li>use External to allow the replacement methods in the SSDT to access the fields defined elsewhere in the ACPI set (usually DSDT)</li><li>let the compiler point out where you need to use External</li><li>watch out for symbols with duplicate names in different scopes</li></ul><h3 id="Using-diffmerge-to-find-patched-vs-native-differences"><a href="#Using-diffmerge-to-find-patched-vs-native-differences" class="headerlink" title="Using diffmerge to find patched vs. native differences"></a>Using diffmerge to find patched vs. native differences</h3><p>Start by disassembling the origin files: iasl -da -dl *.aml<br>(you should be familiar with this part as it is part of normal ACPI patching)</p><p>Next apply the battery patch only using MaciASL to DSDT.dsl. In this case, we apply the “ASUS N55SL/VivoBook”. There is no need to fix any errors, as we are interested only in the differences created by applying the battery patch. Save the patched file as DSDT_patched.dsl.</p><p>Now you can run diffmerge to see the differences between DSDT.dsl and DSDT_patched.dsl. I usually just do this from Terminal:</p><p><code>$ diffmerge DSDT.dsl DSDT_patched.dsl</code></p><p>The initial diffmerge window will look something like this:<br><img src="https://ww2.sinaimg.cn/large/006dLY5Ily1fypvstpmgaj30u40nljze.jpg" alt=""></p><p>From there, we can examine the parts that have changes by clicking on the markers in the left column.</p><p>In the examples, the groups of changes you find:</p><ul><li>group 1: is the changes to the EC fields (multibyte to single byte)</li><li>group 2: addition of RDBA, WRBA, RDBB, WRBB methods</li><li>group 3: patched FBST, _BIX, B1FA methods</li><li>group 4: patched SMBR, SMBW, ECSB methods</li><li>group 5: patched TACH method</li><li>final group: addition of B1B2 method</li></ul><h3 id="Constructing-the-initial-SSDT"><a href="#Constructing-the-initial-SSDT" class="headerlink" title="Constructing the initial SSDT"></a>Constructing the initial SSDT</h3><p>Start with an empty SSDT in MaciASL:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+Replace: &lt;5B 01 41 42 43 44 00&gt;</code></pre><h3 id="Clover-ACPI-configuration"><a href="#Clover-ACPI-configuration" class="headerlink" title="Clover ACPI configuration"></a>Clover ACPI configuration</h3><p>With static patching, DropOem=true is used and patched DSDT and SSDTs are added to ACPI/patched. With hotpatch, instead use DropOem=false, and only add-on SSDTs are placed in ACPI/patched.</p>
+<p>It is important to note that config.plist/ACPI/patches are applied only to native SSDTs, and not the SSDTs in ACPI/patched. This means that if you are renaming objects using config.plist, the add-on SSDTs must refer to the new names, not the old names. Unlike SSDTs in ACPI/patched, binary patches in ACPI/Patches <em>do apply</em> to DSDT.aml that might be in ACPI/patched. Keep this in mind if you’re using a combination of static and hotpatching.</p>
+<p>Also, with static patching, SortedOrder is used to specify the order of SSDTs in ACPI/patched. With hotpatch it is not strictly necessary as it is possible to construct the code in each SSDT such that the code is not order dependent. Especially if you place all add-on code in a single SSDT such as many of my laptop repo examples. Unless your add-on SSDTs are order dependent, you do not have to name each one in SortedOrder.</p>
+<p>It is also not necessary to choose “numbered names” for each SSDT. Instead you can use meaningful names, such as “SSDT-USB.aml”, SSDT-XOSI.aml”, etc. Using numbers instead of meaningul names will just confuse you. Don’t do it.</p>
+<h3 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h3><p>You can use patchmatic to look at your complete ACPI set as injected by Clover after patching. By runnning ‘patchmatic -extract’, patchmatic will write all injected DSDT.aml and SSDT*.aml in the order they were injected by Clover. You can disassemble them with ‘iasl -da -dl *.aml’. If iasl shows errors with the disassembly (for example duplicate symbols), it is likley OS X is also rejecting the conflicting SSDTs.</p>
+<p>If you’re a novice with this technique, it is a good idea to implement one patch at a time, and slowly build it up to a full set of working patches + SSDTs. Trying to do all at once can make it difficult to locate your mistake.</p>
+<h2 id="Battery-Status-Hotpatch"><a href="#Battery-Status-Hotpatch" class="headerlink" title="Battery Status Hotpatch"></a>Battery Status Hotpatch</h2><p>This second post is dedicated to patching battery status with Clover hotpatch. To demonstrate the process, we will work through an example DSDT. The example files used are from the guide for disabling discrete graphics, an “Asus UX303LN”.</p>
+<p><a href="https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/</a></p>
+<p>You should download the ACPI/origin files that are attached to that guide, so you can follow along.</p>
+<p>As mentioned in post #1, the general procedures are as follows:</p>
+<ul>
+<li>start with native ACPI</li>
+<li>patch for battery status using static patching (verify it works)</li>
+<li>use diffmerge to compare the unpatched code with patched code</li>
+<li>for each method that is different, implement the “Rename and Replace” pattern</li>
+<li>for the EC fields, create another EC OperationRegion (use a name that is different from the original) and Field definition as a sort of “overlay” which contains only the EC fields you need to patch</li>
+<li>to create the EC overlay, you can use the patched Field/OperationRegion in the patched DSDT, then eliminate unpatched fields</li>
+<li>use External to allow the replacement methods in the SSDT to access the fields defined elsewhere in the ACPI set (usually DSDT)</li>
+<li>let the compiler point out where you need to use External</li>
+<li>watch out for symbols with duplicate names in different scopes</li>
+</ul>
+<h3 id="Using-diffmerge-to-find-patched-vs-native-differences"><a href="#Using-diffmerge-to-find-patched-vs-native-differences" class="headerlink" title="Using diffmerge to find patched vs. native differences"></a>Using diffmerge to find patched vs. native differences</h3><p>Start by disassembling the origin files: iasl -da -dl *.aml<br>(you should be familiar with this part as it is part of normal ACPI patching)</p>
+<p>Next apply the battery patch only using MaciASL to DSDT.dsl. In this case, we apply the “ASUS N55SL/VivoBook”. There is no need to fix any errors, as we are interested only in the differences created by applying the battery patch. Save the patched file as DSDT_patched.dsl.</p>
+<p>Now you can run diffmerge to see the differences between DSDT.dsl and DSDT_patched.dsl. I usually just do this from Terminal:</p>
+<p><code>$ diffmerge DSDT.dsl DSDT_patched.dsl</code></p>
+<p>The initial diffmerge window will look something like this:<br><img src="https://ww2.sinaimg.cn/large/006dLY5Ily1fypvstpmgaj30u40nljze.jpg" alt=""></p>
+<p>From there, we can examine the parts that have changes by clicking on the markers in the left column.</p>
+<p>In the examples, the groups of changes you find:</p>
+<ul>
+<li>group 1: is the changes to the EC fields (multibyte to single byte)</li>
+<li>group 2: addition of RDBA, WRBA, RDBB, WRBB methods</li>
+<li>group 3: patched FBST, _BIX, B1FA methods</li>
+<li>group 4: patched SMBR, SMBW, ECSB methods</li>
+<li>group 5: patched TACH method</li>
+<li>final group: addition of B1B2 method</li>
+</ul>
+<h3 id="Constructing-the-initial-SSDT"><a href="#Constructing-the-initial-SSDT" class="headerlink" title="Constructing the initial SSDT"></a>Constructing the initial SSDT</h3><p>Start with an empty SSDT in MaciASL:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
-}</code></pre><p>Next, add all methods that were added by the patch. In the example, this includes RDBA, WRBA, RDBB, WRBB and B1B2 methods. You can copy them directly from the DSDT_patched.dsl.</p><p>You want to be certain each method is placed in the same scope. For example, here is the “group 2” methods added:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+}</code></pre><p>Next, add all methods that were added by the patch. In the example, this includes RDBA, WRBA, RDBB, WRBB and B1B2 methods. You can copy them directly from the DSDT_patched.dsl.</p>
+<p>You want to be certain each method is placed in the same scope. For example, here is the “group 2” methods added:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     Scope (_SB.PCI0.LPCB.EC0)
     {
@@ -246,7 +1083,8 @@ Replace: &lt;5B 01 41 42 43 44 00&gt;</code></pre><h3 id="Clover-ACPI-configurat
             }
         }
     }
-}</code></pre><p>And with B1B2 added:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+}</code></pre><p>And with B1B2 added:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     Method (B1B2, 2, NotSerialized) { Return (Or (Arg0, ShiftLeft (Arg1, 8))) }
     // added methods (group 2)
@@ -404,7 +1242,9 @@ Replace: &lt;5B 01 41 42 43 44 00&gt;</code></pre><h3 id="Clover-ACPI-configurat
             }
         }
     }
-}</code></pre><p>Don’t worry that the code does not compile at the moment. It is not expected at this point, due to the EC fields (and other identifiers) that are not defined in this file. They will need to be definined or referenced via External (eventually).</p><p>Now let’s add the patched methods. Just like the methods that were added methods, the patched methods are just copied from the DSDT_patched.dsl:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+}</code></pre><p>Don’t worry that the code does not compile at the moment. It is not expected at this point, due to the EC fields (and other identifiers) that are not defined in this file. They will need to be definined or referenced via External (eventually).</p>
+<p>Now let’s add the patched methods. Just like the methods that were added methods, the patched methods are just copied from the DSDT_patched.dsl:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     // patched methods
     Scope (_SB.PCI0)
@@ -726,7 +1566,9 @@ Else
             }
         }
     }            
-}</code></pre><p>Notice how FBST and _BIX were added to scope _SB.PCI0.BAT0, but BIFA was added to _SB.PCI0.LPCB.EC0. It is important to inject all methods into their original scope.</p><p>Now, we add SMBR, SMBW, ECSB, and TACH:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+}</code></pre><p>Notice how FBST and _BIX were added to scope _SB.PCI0.BAT0, but BIFA was added to _SB.PCI0.LPCB.EC0. It is important to inject all methods into their original scope.</p>
+<p>Now, we add SMBR, SMBW, ECSB, and TACH:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     // patched methods
     Scope (_SB.PCI0)
@@ -1409,12 +2251,18 @@ Else
             }
         }
     }
-}</code></pre><p>With all the nodes expanded in MaciASL, our work looks like this:<br><img src="https://ww2.sinaimg.cn/large/006dLY5Ily1fypvtw1v2ej30r10hr41s.jpg" alt=""></p><h3 id="Resolving-errors"><a href="#Resolving-errors" class="headerlink" title="Resolving errors"></a>Resolving errors</h3><p>Now we need to start resolving errors by using External or defining the patched EC fields as necessary.<br>We can use the compiler to help.</p><p>Clicking Compile will show the first error: “3, 6085, Object not found or not accessible from scope (_SB.PCI0)”<br>It is at this line:</p><pre><code>Scope (_SB.PCI0)</code></pre><p>The compiler is indicating that _SB.PCI0 is not declared, so you can’t use it in a Scope operator.</p><p>We need to declare it with External, as the scope is actually defined in another file (DSDT.aml):<br>Add it to the top of the file:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+}</code></pre><p>With all the nodes expanded in MaciASL, our work looks like this:<br><img src="https://ww2.sinaimg.cn/large/006dLY5Ily1fypvtw1v2ej30r10hr41s.jpg" alt=""></p>
+<h3 id="Resolving-errors"><a href="#Resolving-errors" class="headerlink" title="Resolving errors"></a>Resolving errors</h3><p>Now we need to start resolving errors by using External or defining the patched EC fields as necessary.<br>We can use the compiler to help.</p>
+<p>Clicking Compile will show the first error: “3, 6085, Object not found or not accessible from scope (_SB.PCI0)”<br>It is at this line:</p>
+<pre><code>Scope (_SB.PCI0)</code></pre><p>The compiler is indicating that _SB.PCI0 is not declared, so you can’t use it in a Scope operator.</p>
+<p>We need to declare it with External, as the scope is actually defined in another file (DSDT.aml):<br>Add it to the top of the file:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     Scope (_SB.PCI0)
     {
-...</code></pre><p>Now the next error is at “Scope(BAT0)”, so, again:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+...</code></pre><p>Now the next error is at “Scope(BAT0)”, so, again:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
@@ -1422,33 +2270,43 @@ Else
     {
         Scope (BAT0)
         {
-...</code></pre><p>The next error is “13, 6085, Object not found or not accessible from scope (^^LPCB.EC0.ACAP)”<br>We can tell from the code referencing ACAP that it is a method:</p><pre><code>If (^^LPCB.EC0.ACAP ())</code></pre><p>Note: Method calls are indicated by the “()” (in this case, an empty parameter list).</p><p>So, we know we can add an External as MethodObj:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+...</code></pre><p>The next error is “13, 6085, Object not found or not accessible from scope (^^LPCB.EC0.ACAP)”<br>We can tell from the code referencing ACAP that it is a method:</p>
+<pre><code>If (^^LPCB.EC0.ACAP ())</code></pre><p>Note: Method calls are indicated by the “()” (in this case, an empty parameter list).</p>
+<p>So, we know we can add an External as MethodObj:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
     External(_SB.PCI0.LPCB.EC0.ACAP, MethodObj)
 ...
-}</code></pre><p>Note: The path ^^LPCB.EC0.ACAP is equivalent to _SB.PCI0.LPCB.EC0.ACAP because the reference was in scope _SB.PCI0.BAT0.FBST (the path of the FBST method). Each ^ (parent of) operator walks up the current scope by one item, so ^ is _SB.PCI0.BAT0, and ^^ is _SB.PCI0.</p><p>In some cases, you need to look at the DSDT to find the path and/or type of a given identifier. For example, the next error has to do with CHGS. Again, we know it is a method as it is the target of a method call, but for the path, we must refer to the DSDT:<br>Code (Text):</p><pre><code>Scope (\)
+}</code></pre><p>Note: The path ^^LPCB.EC0.ACAP is equivalent to _SB.PCI0.LPCB.EC0.ACAP because the reference was in scope _SB.PCI0.BAT0.FBST (the path of the FBST method). Each ^ (parent of) operator walks up the current scope by one item, so ^ is _SB.PCI0.BAT0, and ^^ is _SB.PCI0.</p>
+<p>In some cases, you need to look at the DSDT to find the path and/or type of a given identifier. For example, the next error has to do with CHGS. Again, we know it is a method as it is the target of a method call, but for the path, we must refer to the DSDT:<br>Code (Text):</p>
+<pre><code>Scope (\)
 {
     Method (CHGS, 1, Serialized)
     {
         Store (\_SB.PCI0.LPCB.EC0.BCHG (Arg0), Local0)
         Return (Local0)
-    }</code></pre><p>So, it is in the root:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+    }</code></pre><p>So, it is in the root:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
     External(_SB.PCI0.LPCB.EC0.ACAP, MethodObj)
     External(CHGS, MethodObj)
-...</code></pre><p>The next undefined symbol, BLLO, is something other than a method:</p><pre><code>If (BLLO)
-{</code></pre><p>Looking in DSDT, we find it is defined with Name (and it happens to be in root scope):</p><pre><code>Name (BLLO, Zero)</code></pre><p>Which makes it an IntObj:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+...</code></pre><p>The next undefined symbol, BLLO, is something other than a method:</p>
+<pre><code>If (BLLO)
+{</code></pre><p>Looking in DSDT, we find it is defined with Name (and it happens to be in root scope):</p>
+<pre><code>Name (BLLO, Zero)</code></pre><p>Which makes it an IntObj:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
     External(_SB.PCI0.LPCB.EC0.ACAP, MethodObj)
     External(CHGS, MethodObj)
     External(BLLO, IntObj)
-...</code></pre><p>Fixing all the errors in the FBST method:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+...</code></pre><p>Fixing all the errors in the FBST method:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
@@ -1461,7 +2319,9 @@ Else
     External(_SB.PCI0.BAT0.LFCC, IntObj)
     External(MBLF, IntObj)
     External(_SB.PCI0.BAT0.PBST, PkgObj)
-...</code></pre><p>And now continue with the same process.</p><p>Eventually, you will have:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+...</code></pre><p>And now continue with the same process.</p>
+<p>Eventually, you will have:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
@@ -1480,7 +2340,10 @@ Else
     External(_SB.PCI0.BAT0._BIF, MethodObj)
     External(_SB.PCI0.BAT0.PBIF, PkgObj)
     External(_SB.PCI0.BAT0.BIXT, PkgObj)
-...</code></pre><p>And will come to an error with XC30/XC31: “153, 6085, Object not found or not accessible from scope (^^LPCB.EC0.XC30)”</p><p>This is one of the 16-bit fields that was broken into two.<br>And this is where it is necessary to create the EC overlay.</p><p>To do this, we use another OperationRegion within EC scope, that has a different name than what we find in DSDT:</p><pre><code>External(_SB.PCI0.LPCB, DeviceObj)
+...</code></pre><p>And will come to an error with XC30/XC31: “153, 6085, Object not found or not accessible from scope (^^LPCB.EC0.XC30)”</p>
+<p>This is one of the 16-bit fields that was broken into two.<br>And this is where it is necessary to create the EC overlay.</p>
+<p>To do this, we use another OperationRegion within EC scope, that has a different name than what we find in DSDT:</p>
+<pre><code>External(_SB.PCI0.LPCB, DeviceObj)
 External(_SB.PCI0.LPCB.EC0, DeviceObj)
 Scope(_SB.PCI0.LPCB.EC0)
 {
@@ -1488,7 +2351,8 @@ Scope(_SB.PCI0.LPCB.EC0)
     Field(ERM2, ByteAcc, NoLock, Preserve)
     {
     }
-}</code></pre><p>And from DSDT_patched.dsl, we can get the various patched fields (again refer to the diffmerge).<br>This is the entire set from ECOR in the DSDT_patched.dsl</p><pre><code>Offset (0x04),
+}</code></pre><p>And from DSDT_patched.dsl, we can get the various patched fields (again refer to the diffmerge).<br>This is the entire set from ECOR in the DSDT_patched.dsl</p>
+<pre><code>Offset (0x04),
 CMD1,   8,
 CDT1,   8,
 CDT2,   8,
@@ -1554,7 +2418,8 @@ B0S0,8,B0S1,8,
 Offset (0xF8),
 Offset (0xFA),
 Offset (0xFC),
-B1S0,8,B1S1,8</code></pre><p>And if we strip the unpatched identifiers, but keep the offsets correct (very important!):</p><pre><code>Offset (0x93),
+B1S0,8,B1S1,8</code></pre><p>And if we strip the unpatched identifiers, but keep the offsets correct (very important!):</p>
+<pre><code>Offset (0x93),
 TH00,8,TH01,8,
 TH10,8,TH11,8,
 Offset (0xBE),
@@ -1570,7 +2435,8 @@ YC30,8,YC31,8,
 Offset (0xF4),
 B0S0,8,B0S1,8,
 Offset (0xFC),
-B1S0,8,B1S1,8</code></pre><p>The same thing can be written as follows:</p><pre><code>Offset (0x93),
+B1S0,8,B1S1,8</code></pre><p>The same thing can be written as follows:</p>
+<pre><code>Offset (0x93),
 TH00,8,TH01,8,
 TH10,8,TH11,8,
 Offset (0xc4),
@@ -1580,7 +2446,8 @@ YC30,8,YC31,8,
 Offset (0xF4),
 B0S0,8,B0S1,8,
 Offset (0xFC),
-B1S0,8,B1S1,8</code></pre><p>So, into our SSDT:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+B1S0,8,B1S1,8</code></pre><p>So, into our SSDT:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
@@ -1619,7 +2486,8 @@ B1S0,8,B1S1,8</code></pre><p>So, into our SSDT:</p><pre><code>DefinitionBlock(""
                 Offset (0xFC),
                 B1S0,8,B1S1,8
         }
-    }</code></pre><p>And then on to fixing more errors, we add some more External:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+    }</code></pre><p>And then on to fixing more errors, we add some more External:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
@@ -1657,7 +2525,10 @@ B1S0,8,B1S1,8</code></pre><p>So, into our SSDT:</p><pre><code>DefinitionBlock(""
     External(_SB.PCI0.LPCB.EC0, DeviceObj)
     Scope(_SB.PCI0.LPCB.EC0)
     {
-...</code></pre><p>And then we have errors with T2B0 and T2B1. These are again broken down 16-bit EC fields that need to be defined in our EC overlay. In fact, might as well define the rest we know we need (from diffmerge data).</p><p>There is patched data in SMBX:</p><pre><code>OperationRegion (SMBX, EmbeddedControl, 0x18, 0x28)</code></pre><p>So, we create a similar overlay, with a unique name:</p><pre><code>            OperationRegion (RMB1, EmbeddedControl, 0x18, 0x28)
+...</code></pre><p>And then we have errors with T2B0 and T2B1. These are again broken down 16-bit EC fields that need to be defined in our EC overlay. In fact, might as well define the rest we know we need (from diffmerge data).</p>
+<p>There is patched data in SMBX:</p>
+<pre><code>OperationRegion (SMBX, EmbeddedControl, 0x18, 0x28)</code></pre><p>So, we create a similar overlay, with a unique name:</p>
+<pre><code>            OperationRegion (RMB1, EmbeddedControl, 0x18, 0x28)
             Field (RMB1, ByteAcc, NoLock, Preserve)
             {
 /* Note: disabling these fields (already defined in DSDT, referenced with External if needed,
@@ -1680,7 +2551,8 @@ BA10,8,BA11,8,BA12,8,BA13,8,
 BA14,8,BA15,8,BA16,8,BA17,8,
 BA18,8,BA19,8,BA1A,8,BA1B,8,
 BA1C,8,BA1D,8,BA1E,8,BA1F,8
-            }</code></pre><p>And similar withe SMB2 region:</p><pre><code>            OperationRegion(RMB2, EmbeddedControl, 0x40, 0x28)
+            }</code></pre><p>And similar withe SMB2 region:</p>
+<pre><code>            OperationRegion(RMB2, EmbeddedControl, 0x40, 0x28)
             Field (RMB2, ByteAcc, NoLock, Preserve)
             {
 /*
@@ -1701,11 +2573,13 @@ BB10,8,BB11,8,BB12,8,BB13,8,
 BB14,8,BB15,8,BB16,8,BB17,8,
 BB18,8,BB19,8,BB1A,8,BB1B,8,
 BB1C,8,BB1D,8,BB1E,8,BB1F,8
-            }</code></pre><p>And the T2B0 and T2B1 that are in orginal SMBX, but now RMB1:</p><pre><code>Field (RMB1, ByteAcc, NoLock, Preserve)
+            }</code></pre><p>And the T2B0 and T2B1 that are in orginal SMBX, but now RMB1:</p>
+<pre><code>Field (RMB1, ByteAcc, NoLock, Preserve)
 {
     Offset (0x04),
     T2B0,8,T2B1,8
-}</code></pre><p>And now we have:</p><pre><code>External(_SB.PCI0, DeviceObj)
+}</code></pre><p>And now we have:</p>
+<pre><code>External(_SB.PCI0, DeviceObj)
 External(_SB.PCI0.BAT0, DeviceObj)
 External(_SB.PCI0.LPCB.EC0.ACAP, MethodObj)
 External(CHGS, MethodObj)
@@ -1807,7 +2681,8 @@ BB1C,8,BB1D,8,BB1E,8,BB1F,8
             Offset (0x04),
             T2B0,8,T2B1,8
         }
-}                   </code></pre><p>Then continue on with fixing more errors with External (it ends eventually!), by adding these External declarations:</p><pre><code>External(_SB.PCI0.LPCB.EC0.DAT0, FieldUnitObj)
+}                   </code></pre><p>Then continue on with fixing more errors with External (it ends eventually!), by adding these External declarations:</p>
+<pre><code>External(_SB.PCI0.LPCB.EC0.DAT0, FieldUnitObj)
 External(_SB.PCI0.LPCB.EC0.WRBL, IntObj)
 External(_SB.PCI0.LPCB.EC0.WRWD, IntObj)
 External(_SB.PCI0.LPCB.EC0.WRBT, IntObj)
@@ -1821,7 +2696,9 @@ External(_SB.PCI0.LPCB.EC0.BCN2, FieldUnitObj)
 External(_SB.PCI0.LPCB.EC0.DA20, FieldUnitObj)
 External(_SB.PCI0.LPCB.EC0.DA21, FieldUnitObj)
 External(_SB.PCI0.LPCB.EC0.SSTS, FieldUnitObj)
-External(_SB.PCI0.LPCB.EC0.SST2, FieldUnitObj)</code></pre><p>Note: With DAT0, don’t be confused at the “other” DAT0 in a different scope!</p><p>At this point, the SSDT compiles without any errors:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
+External(_SB.PCI0.LPCB.EC0.SST2, FieldUnitObj)</code></pre><p>Note: With DAT0, don’t be confused at the “other” DAT0 in a different scope!</p>
+<p>At this point, the SSDT compiles without any errors:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
 {
     External(_SB.PCI0, DeviceObj)
     External(_SB.PCI0.BAT0, DeviceObj)
@@ -2622,13 +3499,23 @@ Else
         }
     }
 }
-//EOF   </code></pre><p>The resulting file can be saved as AML (suggested name: SSDT-BATT.aml), and placed in ACPI/patched.</p><p>But you can’t expect battery status to work with native DSDT yet!</p><h3 id="Renaming-existing-methods"><a href="#Renaming-existing-methods" class="headerlink" title="Renaming existing methods"></a>Renaming existing methods</h3><p>For now, there are duplicate methods in DSDT and this SSDT-BATT.aml. For each method in DSDT that the SSDT-BATT.aml version will replace, we must rename the method in DSDT to something else, which will allow the SSDT version to override.</p><p>Just as in post #1, this part follows the “Rename/Replace” pattern.<br>The methods that need replacements are FBST, _BIX, BIFA, SMBR, SMBW, ECSB, and TACH.</p><p>For this step, it is useful to create a mixed bytecode listing for the native DSDT.aml.<br>It can be created with: “iasl -l -dl DSDT.aml”, which creates a mixed listing in DSDT.dsl</p><p>For the FBST method:</p><pre><code>Method (FBST, 4, NotSerialized)
+//EOF   </code></pre><p>The resulting file can be saved as AML (suggested name: SSDT-BATT.aml), and placed in ACPI/patched.</p>
+<p>But you can’t expect battery status to work with native DSDT yet!</p>
+<h3 id="Renaming-existing-methods"><a href="#Renaming-existing-methods" class="headerlink" title="Renaming existing methods"></a>Renaming existing methods</h3><p>For now, there are duplicate methods in DSDT and this SSDT-BATT.aml. For each method in DSDT that the SSDT-BATT.aml version will replace, we must rename the method in DSDT to something else, which will allow the SSDT version to override.</p>
+<p>Just as in post #1, this part follows the “Rename/Replace” pattern.<br>The methods that need replacements are FBST, _BIX, BIFA, SMBR, SMBW, ECSB, and TACH.</p>
+<p>For this step, it is useful to create a mixed bytecode listing for the native DSDT.aml.<br>It can be created with: “iasl -l -dl DSDT.aml”, which creates a mixed listing in DSDT.dsl</p>
+<p>For the FBST method:</p>
+<pre><code>Method (FBST, 4, NotSerialized)
 {
     And (Arg1, 0xFFFF, Local1)
     Store (Zero, Local0)
 FF74: 14 43 12 46 42 53 54 04 7B 69 0B FF FF 61 70 00  // .C.FBST.{i...ap.
-FF84: 60</code></pre><p>A potential rename patch (FBST-&gt;XBST):</p><pre><code>Find: &lt;46 42 53 54 04&gt;
-Replace: &lt;58 42 53 54 04&gt;</code></pre><p>It is a good idea to verify that there is only one match for the Find hex data by searching for it in a hex editor such as Hex Fiend. Because the patch should ONLY apply to the method definition, not other code that may be present in the DSDT (or native SSDTs).</p><p>The target name you choose must be unique within the scope that the method resides. Creating a duplicate method will cause kernel panic. Changing the first letter to ‘X’ is usually ok, but no guarantee.</p><p>Patches for the rest of the methods:</p><pre><code>_BIX-&gt;XBIX:
+FF84: 60</code></pre><p>A potential rename patch (FBST-&gt;XBST):</p>
+<pre><code>Find: &lt;46 42 53 54 04&gt;
+Replace: &lt;58 42 53 54 04&gt;</code></pre><p>It is a good idea to verify that there is only one match for the Find hex data by searching for it in a hex editor such as Hex Fiend. Because the patch should ONLY apply to the method definition, not other code that may be present in the DSDT (or native SSDTs).</p>
+<p>The target name you choose must be unique within the scope that the method resides. Creating a duplicate method will cause kernel panic. Changing the first letter to ‘X’ is usually ok, but no guarantee.</p>
+<p>Patches for the rest of the methods:</p>
+<pre><code>_BIX-&gt;XBIX:
 Find: &lt;5F 42 49 58 00&gt;
 Replace: &lt;58 42 49 58 00&gt;</code></pre><pre><code>BIFA-&gt;XIFA:
 Find: &lt;42 49 46 41 00&gt;
@@ -2640,7 +3527,18 @@ Replace: &lt;58 4D 42 57 0D&gt;</code></pre><pre><code>ECSB-&gt;XCSB:
 Find: &lt;45 43 53 42 07&gt;
 Replace: &lt;58 43 53 42 07&gt;</code></pre><pre><code>TACH-&gt;XACH:
 Find: &lt;54 41 43 48 09&gt;
-Replace: &lt;58 41 43 48 09&gt;</code></pre><p>After adding those patches to config.plist/ACPI/DSDT/Patches, the methods in native DSDT will be renamed by Clover. And as a result of the renaming, the patched methods defined in SSDT-BATT.aml will override.</p><h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Hotpatching for battery status is one of the most complex hotpatch tasks possible. The process of writing all the ‘External’ refernences is tedious and boring.</p><p>It will take some time (several hours into the text you’re reading here). Do not rush it.</p><h2 id="Disabling-discrete-switched-GPU-with-Hotpatch"><a href="#Disabling-discrete-switched-GPU-with-Hotpatch" class="headerlink" title="Disabling discrete/switched GPU with Hotpatch"></a>Disabling discrete/switched GPU with Hotpatch</h2><p>This third post is dedicated to hotpatching required for disabling the discrete GPU in a switched dual-GPU laptop, using the same example ACPI fils as the static patch guide.</p><p><a href="https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/</a></p><p>You should download the ACPI/origin files that are attached to that guide, so you can follow along.</p><p>As in the static patch guide, the goal is relatively simple: call the _OFF method (from an _INI method) for the discrete GPU during ACPI initialization. But the details make it more complex due to the fact that _OFF can contain EC related code which needs to be executed in _REG instead of _INI.</p><h3 id="Building-the-replacement-INI-OFF-REG-methods"><a href="#Building-the-replacement-INI-OFF-REG-methods" class="headerlink" title="Building the replacement _INI/_OFF/_REG methods"></a>Building the replacement _INI/_OFF/_REG methods</h3><p>In the example, the target _INI method is in SSDT-7, _OFF is in SSDT-8. The path of the discrete device is _SB.PCI0.RP05.PEGP. In the example files, _OFF contains EC related code that must be moved to _REG. To complete this patching process, we need to replace _INI, _OFF, and _REG, therefore each will need to be renamed to XINI, XOFF, and XREG</p><p>Note: The methods you need to patch may in fact be different. It all depends on the code within the _OFF path. For example, with other ACPI sets, it happens that SGOF (may be some other name) has EC related code that must be moved to _REG. In that case, you would need to use rename/replace for the SGOF, and perhaps not the _OFF method. Analyze your existing code carefully.</p><p>The Clover config.plist patches will be worked out later. For now, lets look at the SSDT for the replacement methods.</p><p>The SSDT will consist of the patched methods:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "D-GPU", 0)
+Replace: &lt;58 41 43 48 09&gt;</code></pre><p>After adding those patches to config.plist/ACPI/DSDT/Patches, the methods in native DSDT will be renamed by Clover. And as a result of the renaming, the patched methods defined in SSDT-BATT.aml will override.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Hotpatching for battery status is one of the most complex hotpatch tasks possible. The process of writing all the ‘External’ refernences is tedious and boring.</p>
+<p>It will take some time (several hours into the text you’re reading here). Do not rush it.</p>
+<h2 id="Disabling-discrete-switched-GPU-with-Hotpatch"><a href="#Disabling-discrete-switched-GPU-with-Hotpatch" class="headerlink" title="Disabling discrete/switched GPU with Hotpatch"></a>Disabling discrete/switched GPU with Hotpatch</h2><p>This third post is dedicated to hotpatching required for disabling the discrete GPU in a switched dual-GPU laptop, using the same example ACPI fils as the static patch guide.</p>
+<p><a href="https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/</a></p>
+<p>You should download the ACPI/origin files that are attached to that guide, so you can follow along.</p>
+<p>As in the static patch guide, the goal is relatively simple: call the _OFF method (from an _INI method) for the discrete GPU during ACPI initialization. But the details make it more complex due to the fact that _OFF can contain EC related code which needs to be executed in _REG instead of _INI.</p>
+<h3 id="Building-the-replacement-INI-OFF-REG-methods"><a href="#Building-the-replacement-INI-OFF-REG-methods" class="headerlink" title="Building the replacement _INI/_OFF/_REG methods"></a>Building the replacement _INI/_OFF/_REG methods</h3><p>In the example, the target _INI method is in SSDT-7, _OFF is in SSDT-8. The path of the discrete device is _SB.PCI0.RP05.PEGP. In the example files, _OFF contains EC related code that must be moved to _REG. To complete this patching process, we need to replace _INI, _OFF, and _REG, therefore each will need to be renamed to XINI, XOFF, and XREG</p>
+<p>Note: The methods you need to patch may in fact be different. It all depends on the code within the _OFF path. For example, with other ACPI sets, it happens that SGOF (may be some other name) has EC related code that must be moved to _REG. In that case, you would need to use rename/replace for the SGOF, and perhaps not the _OFF method. Analyze your existing code carefully.</p>
+<p>The Clover config.plist patches will be worked out later. For now, lets look at the SSDT for the replacement methods.</p>
+<p>The SSDT will consist of the patched methods:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "D-GPU", 0)
 {
     External(_SB.PCI0.RP05.PEGP, DeviceObj)
     External(_SB.PCI0.RP05.PEGP.XINI, MethodObj)
@@ -2681,11 +3579,14 @@ Replace: &lt;58 41 43 48 09&gt;</code></pre><p>After adding those patches to con
                 \_SB.PCI0.LPCB.EC0.SPIN (0x96, Zero) // code that was removed from _OFF
             }
         }
-    }</code></pre><p>At this point, the code won’t compile, as some of the symbols referenced in _OFF are not available.<br>Just like the battery patching guide, we must add the appropriate External declarations.</p><p>Use the compiler errors to determine which symbols you need to find, then add the appropriate External declartions. In the example case:</p><pre><code>External(_SB.PCI0.RP05.PEGP.CTXT, IntObj)
+    }</code></pre><p>At this point, the code won’t compile, as some of the symbols referenced in _OFF are not available.<br>Just like the battery patching guide, we must add the appropriate External declarations.</p>
+<p>Use the compiler errors to determine which symbols you need to find, then add the appropriate External declartions. In the example case:</p>
+<pre><code>External(_SB.PCI0.RP05.PEGP.CTXT, IntObj)
 External(_SB.PCI0.RP05.PEGP.GPRF, IntObj)
 External(_SB.PCI0.RP05.PEGP.VGAR, FieldUnitObj)
 External(_SB.PCI0.RP05.PEGP.VGAB, BuffObj)
-External(_SB.PCI0.RP05.PEGP.SGOF, MethodObj)</code></pre><p>The resulting SSDT:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "D-GPU", 0)
+External(_SB.PCI0.RP05.PEGP.SGOF, MethodObj)</code></pre><p>The resulting SSDT:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "D-GPU", 0)
 {
     External(_SB.PCI0.RP05.PEGP, DeviceObj)
     External(_SB.PCI0.RP05.PEGP.XINI, MethodObj)
@@ -2732,13 +3633,16 @@ External(_SB.PCI0.RP05.PEGP.SGOF, MethodObj)</code></pre><p>The resulting SSDT:<
             }
         }
     }
-}</code></pre><p>Now it compiles without error, but there is one warning: “39, 3079, _REG has no corresponding Operation Region”. And this warning is important. The _REG will not be called unless we add a dummy EC OperationRegion.</p><p>We can add it:</p><pre><code>...
+}</code></pre><p>Now it compiles without error, but there is one warning: “39, 3079, _REG has no corresponding Operation Region”. And this warning is important. The _REG will not be called unless we add a dummy EC OperationRegion.</p>
+<p>We can add it:</p>
+<pre><code>...
 Scope(_SB.PCI0.LPCB.EC0)
 {
     OperationRegion(RME3, EmbeddedControl, 0x00, 0xFF)
     Method(_REG, 2)
     {
-...</code></pre><p>Resulting complete SSDT:</p><pre><code>External(_SB.PCI0.RP05.PEGP, DeviceObj)
+...</code></pre><p>Resulting complete SSDT:</p>
+<pre><code>External(_SB.PCI0.RP05.PEGP, DeviceObj)
 External(_SB.PCI0.RP05.PEGP.XINI, MethodObj)
 External(_SB.PCI0.RP05.PEGP.XOFF, MethodObj)
 External(_SB.PCI0.RP05.PEGP.XINI, MethodObj)
@@ -2783,7 +3687,13 @@ Scope(_SB.PCI0.LPCB.EC0)
             \_SB.PCI0.LPCB.EC0.SPIN (0x96, Zero) // code that was removed from _OFF
         }
     }
-}</code></pre><p>At this point, you can save the SSDT (suggestion: SSDT-DGPU.aml).<br>It is ready to go to ACPI/patched.</p><p>But we still need to rename the original methods in native ACPI.</p><h3 id="Renaming-the-methods"><a href="#Renaming-the-methods" class="headerlink" title="Renaming the methods"></a>Renaming the methods</h3><p>As mentioned earlier, the following methods need renaming:<br>_SB.PCI0.RP05.PEGP._INI -&gt; XINI<br>_SB.PCI0.RP05.PEGP._OFF -&gt; XOFF<br>_SB.PCI0.LPCB.EC0._REG -&gt; XREG</p><p>To determine the binary patches needed, we need a mixed listing of DSDT.aml, SSDT-7.aml, and SSDT-8.aml.<br>Create with:</p><pre><code>iasl -dl -l DSDT.aml SSDT-7.aml SSDT-8.aml</code></pre><p>The resulting mixed listing is in DSDT.dsl, SSDT-7.dsl, and SSDT-8.dsl.</p><p>Here is the mixed listing for _REG in DSDT.dsl:<br>Code (Text):</p><pre><code>        Method (_REG, 2, NotSerialized)  // _REG: Region Availability
+}</code></pre><p>At this point, you can save the SSDT (suggestion: SSDT-DGPU.aml).<br>It is ready to go to ACPI/patched.</p>
+<p>But we still need to rename the original methods in native ACPI.</p>
+<h3 id="Renaming-the-methods"><a href="#Renaming-the-methods" class="headerlink" title="Renaming the methods"></a>Renaming the methods</h3><p>As mentioned earlier, the following methods need renaming:<br>_SB.PCI0.RP05.PEGP._INI -&gt; XINI<br>_SB.PCI0.RP05.PEGP._OFF -&gt; XOFF<br>_SB.PCI0.LPCB.EC0._REG -&gt; XREG</p>
+<p>To determine the binary patches needed, we need a mixed listing of DSDT.aml, SSDT-7.aml, and SSDT-8.aml.<br>Create with:</p>
+<pre><code>iasl -dl -l DSDT.aml SSDT-7.aml SSDT-8.aml</code></pre><p>The resulting mixed listing is in DSDT.dsl, SSDT-7.dsl, and SSDT-8.dsl.</p>
+<p>Here is the mixed listing for _REG in DSDT.dsl:<br>Code (Text):</p>
+<pre><code>        Method (_REG, 2, NotSerialized)  // _REG: Region Availability
         {
 
 D2B8: 14 12 5F 52 45 47 02                             // .._REG.
@@ -2798,8 +3708,11 @@ D2BF: A0 0B 93 68 0A 03                                // ...h..
             }
         }
     }
-D2C5: 70 69 45 43 46 4C</code></pre><p>The patch used should rename only this _REG, not other _REG methods in the ACPI set. We can rename it by grabbing the name/header plus a few bytes from the code.</p><p>This pattern grabs enough bytes to be unique for sure:</p><pre><code>Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;
-Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;</code></pre><p>And the mixed listing for the target _INI in SSDT-7.dsl:</p><pre><code>        Method (_INI, 0, NotSerialized)  // _INI: Initialize
+D2C5: 70 69 45 43 46 4C</code></pre><p>The patch used should rename only this _REG, not other _REG methods in the ACPI set. We can rename it by grabbing the name/header plus a few bytes from the code.</p>
+<p>This pattern grabs enough bytes to be unique for sure:</p>
+<pre><code>Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;
+Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;</code></pre><p>And the mixed listing for the target _INI in SSDT-7.dsl:</p>
+<pre><code>        Method (_INI, 0, NotSerialized)  // _INI: Initialize
         {
 
 03D1: 14 1F 5F 49 4E 49 00                             // .._INI.
@@ -2808,8 +3721,11 @@ Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03 70 69 45 43 46 4C&gt;</code></pre>
         }
 
 03D8: 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30  // p.\/._SB_PCI0RP0
-03E8: 35 50 45 47 50 5F 41 44 52                       // 5PEGP_ADR</code></pre><p>​</p><p>Resulting patch…</p><pre><code>Find: &lt;5F 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;
-Replace: &lt;58 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;</code></pre><p>And the _OFF in SSDT-8.dsl:</p><pre><code>    Method (_OFF, 0, Serialized)  // _OFF: Power Off
+03E8: 35 50 45 47 50 5F 41 44 52                       // 5PEGP_ADR</code></pre><p>​            </p>
+<p>Resulting patch…</p>
+<pre><code>Find: &lt;5F 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;
+Replace: &lt;58 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 50 45 47 50&gt;</code></pre><p>And the _OFF in SSDT-8.dsl:</p>
+<pre><code>    Method (_OFF, 0, Serialized)  // _OFF: Power Off
     {
 
 032B: 14 45 04 5F 4F 46 46 08                          // .E._OFF.
@@ -2820,8 +3736,13 @@ Replace: &lt;58 49 4E 49 00 70 00 5C 2F 05 5F 53 42 5F 50 43 49 30 52 50 30 35 5
 
 0333: A0 39 93 43 54 58 54 00 5C 2F 05 5F 53 42 5F 50  // .9.CTXT.\/._SB_P
 0343: 43 49 30 4C 50 43 42 45 43 30 5F 53 50 49 4E 0A  // CI0LPCBEC0_SPIN.
-0353: 96 00</code></pre><p>The patch…</p><pre><code>Find: &lt;5F 4F 46 46 08 A0 39 93 43 54 58 54&gt;
-Replace: &lt;58 4F 46 46 08 A0 39 93 43 54 58 54&gt;</code></pre><p>Note: Each of these patches could probably be reduced, but you would need to check carefully in all native DSDT and SSDTs for the Find pattern as you don’t want to match on any methods but the target methods. Because _REG, _INI and _OFF are very common names for methods in other scopes, we need to be careful.</p><h3 id="A-simple-example"><a href="#A-simple-example" class="headerlink" title="A simple example"></a>A simple example</h3><p>The files for the ASUS mentioned above were complex due to the need to patch _OFF, _INI, and _REG.</p><p>But let’s take a look at an example that is much simpler. The files are for an Asus K550VX-DM406T, and they are attached to this post. Please download them so you can follow along.</p><p>When we look at the _OFF method in SSDT-14, there is no EC related code. And it calls PGOF, but the PGOF method, defined in SSDT-3, also has no EC related code:</p><pre><code>Method (_OFF, 0, Serialized)  // _OFF: Power Off
+0353: 96 00</code></pre><p> The patch…</p>
+<pre><code>Find: &lt;5F 4F 46 46 08 A0 39 93 43 54 58 54&gt;
+Replace: &lt;58 4F 46 46 08 A0 39 93 43 54 58 54&gt;</code></pre><p>Note: Each of these patches could probably be reduced, but you would need to check carefully in all native DSDT and SSDTs for the Find pattern as you don’t want to match on any methods but the target methods. Because _REG, _INI and _OFF are very common names for methods in other scopes, we need to be careful.</p>
+<h3 id="A-simple-example"><a href="#A-simple-example" class="headerlink" title="A simple example"></a>A simple example</h3><p>The files for the ASUS mentioned above were complex due to the need to patch _OFF, _INI, and _REG.</p>
+<p>But let’s take a look at an example that is much simpler. The files are for an Asus K550VX-DM406T, and they are attached to this post. Please download them so you can follow along.</p>
+<p>When we look at the _OFF method in SSDT-14, there is no EC related code. And it calls PGOF, but the PGOF method, defined in SSDT-3, also has no EC related code:</p>
+<pre><code>Method (_OFF, 0, Serialized)  // _OFF: Power Off
 {
     If (LEqual (CTXT, Zero))
     {
@@ -2834,19 +3755,30 @@ Replace: &lt;58 4F 46 46 08 A0 39 93 43 54 58 54&gt;</code></pre><p>Note: Each o
     }
 
     PGOF (Zero)
-}</code></pre><p>This means _OFF can be called directly from an _INI.</p><p>If you look at all the _INI methods in the ACPI set, you will find there is no _INI at the path of _OFF (_SB.PCI0.PEG0.PEGP). Which means we can simply add an SSDT that has an _INI at the correct path, and that _INI simply calls _OFF.</p><p>It is a one-liner method:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
+}</code></pre><p>This means _OFF can be called directly from an _INI.</p>
+<p>If you look at all the _INI methods in the ACPI set, you will find there is no _INI at the path of _OFF (_SB.PCI0.PEG0.PEGP). Which means we can simply add an SSDT that has an _INI at the correct path, and that _INI simply calls _OFF.</p>
+<p>It is a one-liner method:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
 {
     External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
     Method(_SB.PCI0.PEG0.PEGP._INI) { _OFF() }
-}</code></pre><p>Just as mentioned in the main discrete disable guide (static patch), sometimes you need to call _PS3 instead of _OFF. It is a trial and error process to determine which is best.</p><p>Same code as above, but calling _PS3:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
+}</code></pre><p>Just as mentioned in the main discrete disable guide (static patch), sometimes you need to call _PS3 instead of _OFF. It is a trial and error process to determine which is best.</p>
+<p>Same code as above, but calling _PS3:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
 {
     External(_SB.PCI0.PEG0.PEGP._PS3, MethodObj)
     Method(_SB.PCI0.PEG0.PEGP._INI) { _PS3() }
-}</code></pre><p>Save it as SSDT-DGPU.aml and the Nvidia should be disabled.</p><p>The simple example turned not so simple</p><p>Although the method mentioned above will usually work in this scenario (even with other laptops that present the same scenario: no EC access in _OFF path, no existing _INI at the path), this specific laptop needed additional patching in order to turn off the dedicated Nvidia fan.</p><p>A little investigation was needed. As we can see by looking at the _OFF code, it calls PGOF(Zero) to do most of the work. And if we search for other examples of PGOF being called with Arg0==Zero, we find this code in SSDT-3.dsl:</p><pre><code>ElseIf (LAnd (LGreater (OSYS, 0x07D9), PEGS ()))
+}</code></pre><p>Save it as SSDT-DGPU.aml and the Nvidia should be disabled.</p>
+<p>The simple example turned not so simple</p>
+<p>Although the method mentioned above will usually work in this scenario (even with other laptops that present the same scenario: no EC access in _OFF path, no existing _INI at the path), this specific laptop needed additional patching in order to turn off the dedicated Nvidia fan.</p>
+<p>A little investigation was needed. As we can see by looking at the _OFF code, it calls PGOF(Zero) to do most of the work. And if we search for other examples of PGOF being called with Arg0==Zero, we find this code in SSDT-3.dsl:</p>
+<pre><code>ElseIf (LAnd (LGreater (OSYS, 0x07D9), PEGS ()))
 {
     FAOF ()
     PGOF (Zero)
-...</code></pre><p>Note the call to FAOF. Could that be for “FAN OFF”? Seems likely.</p><p>And look, we have FAOF and FAON in SSDT-3:</p><pre><code>Method (FAON, 0, Serialized)
+...</code></pre><p>Note the call to FAOF. Could that be for “FAN OFF”? Seems likely.</p>
+<p>And look, we have FAOF and FAON in SSDT-3:</p>
+<pre><code>Method (FAON, 0, Serialized)
 {
     \_SB.PCI0.LPCB.EC0.WRAM (0x052B, 0x9E)
     \_SB.PCI0.LPCB.EC0.WRAM (0x0520, 0x8B)
@@ -2864,7 +3796,10 @@ Method (FAOF, 0, Serialized)
     \_SB.PCI0.LPCB.EC0.WRAM (0x0520, 0x89)
     \_SB.PCI0.LPCB.EC0.WRAM (0x03A4, Zero)
     \_SB.PCI0.LPCB.EC0.WRAM (0x03A5, Zero)
-}</code></pre><p>And you can see it does a bunch of EC manipulations. Typically the EC controls the system fans, so this seems to confirm these methods are for “FAN ON”, and “FAN OFF”.</p><p>Since these methods manipulate the EC, we cannot call FAOF without the EC being ready. To do that, we need to patch _REG.</p><p>So, adding the necessary code to our SSDT:</p><pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
+}</code></pre><p>And you can see it does a bunch of EC manipulations. Typically the EC controls the system fans, so this seems to confirm these methods are for “FAN ON”, and “FAN OFF”.</p>
+<p>Since these methods manipulate the EC, we cannot call FAOF without the EC being ready. To do that, we need to patch _REG.</p>
+<p>So, adding the necessary code to our SSDT:</p>
+<pre><code>DefinitionBlock("", "SSDT", 2, "hack", "DGPU", 0)
 {
     External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
     Method(_SB.PCI0.PEG0.PEGP._INI) { _OFF() }
@@ -2883,8 +3818,13 @@ Method (FAOF, 0, Serialized)
             }
         }
     }
-}</code></pre><p>And the patch we need to rename _REG to XREG (again, based on a mixed listing of DSDT.aml):</p><pre><code>Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03&gt;
-Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</code></pre><p>With the patch in config.plist, EC0._REG is renamed XREG. The eventual call to _REG by the system lands in our modified _REG, which, in turn, calls the original _REG (renamed to XREG) and calls FAOF to turn the fan off.</p><h3 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Hotpatching discrete GPU disable code is a bit simpler than battery status, but involves similar concepts.</p><h2 id="Credits"><a href="#Credits" class="headerlink" title="Credits"></a>Credits</h2><p><a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config</a><br><a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p><script>document.querySelectorAll('.github-emoji')
+}</code></pre><p>And the patch we need to rename _REG to XREG (again, based on a mixed listing of DSDT.aml):</p>
+<pre><code>Find: &lt;5F 52 45 47 02 A0 0B 93 68 0A 03&gt;
+Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</code></pre><p>With the patch in config.plist, EC0._REG is renamed XREG. The eventual call to _REG by the system lands in our modified _REG, which, in turn, calls the original _REG (renamed to XREG) and calls FAOF to turn the fan off.</p>
+<h3 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Hotpatching discrete GPU disable code is a bit simpler than battery status, but involves similar concepts.</p>
+<h2 id="Credits"><a href="#Credits" class="headerlink" title="Credits"></a>Credits</h2><p><a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config</a><br><a href="https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/" target="_blank" rel="noopener">https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/</a></p>
+<script>
+        document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
             const img = document.createElement('img');
@@ -2900,14 +3840,249 @@ Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</code></pre><p>With the patch 
               img.remove();
             });
             document.body.appendChild(img);
-          });</script></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="https://blog.cloudops.ml" rel="external nofollow noreferrer">套陆</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://blog.cloudops.ml/posts/991f5d00/">https://blog.cloudops.ml/posts/991f5d00/</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.cloudops.ml" target="_blank">套陆</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blog.cloudops.ml" rel="external nofollow noreferrer">套陆</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blog.cloudops.ml/posts/991f5d00/">https://blog.cloudops.ml/posts/991f5d00/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://blog.cloudops.ml" target="_blank">套陆</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
         let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
         M.toast({html: toastHTML})
       });
 
       function navToReprintStatement() {
         $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/Hacintosh/"><span class="chip bg-color">Hacintosh</span></a> <a href="/tags/hotpatch/"><span class="chip bg-color">hotpatch</span></a> <a href="/tags/ACPI/"><span class="chip bg-color">ACPI</span></a> <a href="/tags/SSDT/"><span class="chip bg-color">SSDT</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/share/js/social-share.min.js"></script></div></div></div><style>#reward{margin:40px 0;text-align:center}#reward .reward-link{font-size:1.4rem;line-height:38px}#reward .btn-floating:hover{box-shadow:0 6px 12px rgba(0,0,0,.2),0 5px 15px rgba(0,0,0,.2)}#rewardModal{width:320px;height:350px}#rewardModal .reward-title{margin:15px auto;padding-bottom:5px}#rewardModal .modal-content{padding:10px}#rewardModal .close{position:absolute;right:15px;top:15px;color:rgba(0,0,0,.5);font-size:1.3rem;line-height:20px;cursor:pointer}#rewardModal .close:hover{color:#ef5350;transform:scale(1.3);-moz-transform:scale(1.3);-webkit-transform:scale(1.3);-o-transform:scale(1.3)}#rewardModal .reward-tabs{margin:0 auto;width:210px}.reward-tabs .tabs{height:38px;margin:10px auto;padding-left:0}.reward-content ul{padding-left:0!important}.reward-tabs .tabs .tab{height:38px;line-height:38px}.reward-tabs .tab a{color:#fff;background-color:#ccc}.reward-tabs .tab a:hover{background-color:#ccc;color:#fff}.reward-tabs .wechat-tab .active{color:#fff!important;background-color:#22ab38!important}.reward-tabs .alipay-tab .active{color:#fff!important;background-color:#019fe8!important}.reward-tabs .reward-img{width:210px;height:210px}</style><div id="reward"><a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a><div id="rewardModal" class="modal"><div class="modal-content"><a class="close modal-close"><i class="fas fa-times"></i></a><h4 class="reward-title">你的赏识是我前进的动力</h4><div class="reward-content"><div class="reward-tabs"><ul class="tabs row"><li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li><li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li></ul><div id="alipay"><img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码"></div><div id="wechat"><img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/reward/wechatpay.jpg" class="reward-img" alt="微信打赏二维码"></div></div></div></div></div></div><script>$(function(){$(".tabs").tabs()})</script></div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/gitalk/gitalk.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/css/my-gitalk.css"><div class="card gitalk-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="gitalk-container" class="card-content"></div></div><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/gitalk/gitalk.min.js"></script><script>let gitalk = new Gitalk({
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Hacintosh/">
+                                    <span class="chip bg-color">Hacintosh</span>
+                                </a>
+                            
+                                <a href="/tags/hotpatch/">
+                                    <span class="chip bg-color">hotpatch</span>
+                                </a>
+                            
+                                <a href="/tags/ACPI/">
+                                    <span class="chip bg-color">ACPI</span>
+                                </a>
+                            
+                                <a href="/tags/SSDT/">
+                                    <span class="chip bg-color">SSDT</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/reward/wechatpay.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
         clientID: 'ae84231acb9f9d755d64',
         clientSecret: '999406dd97c504a700abe350a711868e1000fcec',
         repo: 'gittalk',
@@ -2917,7 +4092,230 @@ Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</code></pre><p>With the patch 
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
-    gitalk.render('gitalk-container');</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/posts/e8eb0481/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="二分查找"> <span class="card-title">二分查找</span></div></a><div class="card-content article-content"><div class="summary block-with-text">代码// // main.c // algorithm // // Created by athlonreg on 17/01/2018. // Copyright © 2018 athlonreg. All rights rese</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2018-01-17</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Algorithm/" class="post-category">Algorithm</a></span></div></div><div class="card-action article-tags"><a href="/tags/algorithm/"><span class="chip bg-color">algorithm</span></a> <a href="/tags/%E7%AE%97%E6%B3%95/"><span class="chip bg-color">算法</span></a> <a href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"><span class="chip bg-color">二分查找</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/d2bf02d2/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="ASUS-X455LD-i5-4210u"> <span class="card-title">ASUS-X455LD-i5-4210u</span></div></a><div class="card-content article-content"><div class="summary block-with-text">Install macOS High Sierra on ASUS X455LD i5 4210u Laptop ConfigurationComputer model Asus F455LD Notebook</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2017-12-13</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Hackintosh/" class="post-category">Hackintosh</a></span></div></div><div class="card-action article-tags"><a href="/tags/Hacintosh/"><span class="chip bg-color">Hacintosh</span></a> <a href="/tags/X455LD/"><span class="chip bg-color">X455LD</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: 套陆的博客<br />文章作者: 套陆<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归作者所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/codeBlock/codeBlockFuction.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/codeBlock/codeLang.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/codeBlock/codeCopy.js"></script><style>code[class*=language-],pre[class*=language-]{white-space:pre!important}</style></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/e8eb0481/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="二分查找">
+                        
+                        <span class="card-title">二分查找</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            代码//
+//  main.c
+//  algorithm
+//
+//  Created by athlonreg on 17/01/2018.
+//  Copyright © 2018 athlonreg. All rights rese
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2018-01-17
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Algorithm/" class="post-category">
+                                    Algorithm
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/algorithm/">
+                        <span class="chip bg-color">algorithm</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">
+                        <span class="chip bg-color">二分查找</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/d2bf02d2/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="ASUS-X455LD-i5-4210u">
+                        
+                        <span class="card-title">ASUS-X455LD-i5-4210u</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Install macOS High Sierra on ASUS X455LD i5 4210u
+
+Laptop ConfigurationComputer model              Asus F455LD Notebook
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hackintosh/" class="post-category">
+                                    Hackintosh
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hacintosh/">
+                        <span class="chip bg-color">Hacintosh</span>
+                    </a>
+                    
+                    <a href="/tags/X455LD/">
+                        <span class="chip bg-color">X455LD</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 套陆的博客<br />'
+            + '文章作者: 套陆<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
@@ -2988,4 +4386,167 @@ Replace: &lt;58 52 45 47 02 A0 0B 93 68 0A 03&gt;</code></pre><p>With the patch 
             fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
-    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:0!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2017</span> <a href="https://blog.cloudops.ml" target="_blank">套陆</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">68.9k</span>&nbsp;字 <span id="busuanzi_container_site_pv" style="display:none">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv" style="display:none">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/athlonreg" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:1143991340@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1143991340" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1143991340" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a><a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="fas fa-rss"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/js/search.js"></script><script>$(function(){searchFunc("https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/materialize/materialize.min.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/masonry/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/aos/aos.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/scrollprogress/scrollProgress.min.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/others/clicklove.js" async></script><script async src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/others/busuanzi.pure.mini.js"></script><script color="0,0,255" pointcolor="0,0,255" opacity="0.7" zindex="-1" count="99" src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/background/canvas-nest.js"></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/background/ribbon-dynamic.js" async></script><script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/instantpage/instantpage.js" type="module"></script></body></html>
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2017</span>
+            <a href="https://blog.cloudops.ml" target="_blank">套陆</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">68.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv" style='display:none'>
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv" style='display:none'>
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/athlonreg" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1143991340@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1143991340" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1143991340" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
