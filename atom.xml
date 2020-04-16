@@ -294,9 +294,9 @@
     
       <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
     
-      <category term="LDAP" scheme="https://blog.cloudops.ml/tags/LDAP/"/>
-    
       <category term="MantisBT" scheme="https://blog.cloudops.ml/tags/MantisBT/"/>
+    
+      <category term="LDAP" scheme="https://blog.cloudops.ml/tags/LDAP/"/>
     
   </entry>
   

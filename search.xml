@@ -321,9 +321,9 @@
             
             <tag> CAS </tag>
             
-            <tag> LDAP </tag>
-            
             <tag> MantisBT </tag>
+            
+            <tag> LDAP </tag>
             
         </tags>
       
