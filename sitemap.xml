@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.cloudops.ml/posts/d2bf02d2/</loc>
+    
+    <lastmod>2020-04-16T02:40:54.211Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.cloudops.ml/posts/72b23132/</loc>
     
     <lastmod>2020-04-16T02:10:14.480Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://blog.cloudops.ml/posts/e7c2bc73/</loc>
     
     <lastmod>2020-04-16T02:10:05.403Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.cloudops.ml/posts/d2bf02d2/</loc>
-    
-    <lastmod>2020-04-16T02:10:05.402Z</lastmod>
     
   </url>
   
