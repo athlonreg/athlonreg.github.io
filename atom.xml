@@ -466,25 +466,25 @@
   </entry>
   
   <entry>
-    <title>CentOS 安装部署 Gerrit</title>
-    <link href="https://blog.cloudops.ml/posts/f43a7a1a/"/>
-    <id>https://blog.cloudops.ml/posts/f43a7a1a/</id>
+    <title>Jenkins 配置部署</title>
+    <link href="https://blog.cloudops.ml/posts/3d8ac6aa/"/>
+    <id>https://blog.cloudops.ml/posts/3d8ac6aa/</id>
     <published>2018-08-22T03:36:45.000Z</published>
-    <updated>2020-04-15T02:46:20.467Z</updated>
+    <updated>2020-04-15T02:46:20.462Z</updated>
     
     <summary type="html">
     
-      CentOS安装部署代码审查工具--Gerrit
+      Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建/测试软件项目、监控外部任务的运行。Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用；常用的版本管理系统有SVN、GIT，构建工具有Maven、Ant、Gradle。
     
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
     
     
-      <category term="Gerrit" scheme="https://blog.cloudops.ml/tags/Gerrit/"/>
+      <category term="Jenkins" scheme="https://blog.cloudops.ml/tags/Jenkins/"/>
     
-      <category term="代码审查" scheme="https://blog.cloudops.ml/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/"/>
+      <category term="持续集成" scheme="https://blog.cloudops.ml/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
     
   </entry>
   
