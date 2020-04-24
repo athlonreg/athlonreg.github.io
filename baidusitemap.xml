@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.cloudops.ml/posts/e7c2bc73/</loc>
+    <lastmod>2020-04-24</lastmod>
+  </url>  <url>
     <loc>https://blog.cloudops.ml/posts/a2a9ac74/</loc>
     <lastmod>2020-04-21</lastmod>
   </url>  <url>
@@ -29,9 +32,6 @@
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://blog.cloudops.ml/posts/5b49af5f/</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>  <url>
-    <loc>https://blog.cloudops.ml/posts/e7c2bc73/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://blog.cloudops.ml/posts/35bb9d15/</loc>
