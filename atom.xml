@@ -5,9 +5,9 @@
   <subtitle>套陆的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://blog.cloudops.ml/"/>
+  <link href="https://blog.tlhub.cn/"/>
   <updated>2020-04-13T10:54:01.152Z</updated>
-  <id>https://blog.cloudops.ml/</id>
+  <id>https://blog.tlhub.cn/</id>
   
   <author>
     <name>套陆</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Openldap 数据迁移</title>
-    <link href="https://blog.cloudops.ml/posts/f2ee8d2/"/>
-    <id>https://blog.cloudops.ml/posts/f2ee8d2/</id>
+    <link href="https://blog.tlhub.cn/posts/f2ee8d2/"/>
+    <id>https://blog.tlhub.cn/posts/f2ee8d2/</id>
     <published>2019-08-11T14:03:49.000Z</published>
     <updated>2020-04-13T10:54:01.152Z</updated>
     
@@ -30,19 +30,19 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="openldap" scheme="https://blog.cloudops.ml/tags/openldap/"/>
+      <category term="openldap" scheme="https://blog.tlhub.cn/tags/openldap/"/>
     
-      <category term="数据迁移" scheme="https://blog.cloudops.ml/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/"/>
+      <category term="数据迁移" scheme="https://blog.tlhub.cn/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/"/>
     
   </entry>
   
   <entry>
     <title>CentOS7 Docker 镜像使用 systemd 服务</title>
-    <link href="https://blog.cloudops.ml/posts/2e815177/"/>
-    <id>https://blog.cloudops.ml/posts/2e815177/</id>
+    <link href="https://blog.tlhub.cn/posts/2e815177/"/>
+    <id>https://blog.tlhub.cn/posts/2e815177/</id>
     <published>2019-08-11T14:00:16.000Z</published>
     <updated>2020-04-13T10:02:39.702Z</updated>
     
@@ -53,21 +53,21 @@
     </summary>
     
     
-      <category term="Docker" scheme="https://blog.cloudops.ml/categories/Docker/"/>
+      <category term="Docker" scheme="https://blog.tlhub.cn/categories/Docker/"/>
     
     
-      <category term="docker" scheme="https://blog.cloudops.ml/tags/docker/"/>
+      <category term="docker" scheme="https://blog.tlhub.cn/tags/docker/"/>
     
-      <category term="centos" scheme="https://blog.cloudops.ml/tags/centos/"/>
+      <category term="centos" scheme="https://blog.tlhub.cn/tags/centos/"/>
     
-      <category term="systemd" scheme="https://blog.cloudops.ml/tags/systemd/"/>
+      <category term="systemd" scheme="https://blog.tlhub.cn/tags/systemd/"/>
     
   </entry>
   
   <entry>
     <title>Tomcat SonarQube Gerrit 设置 systemd 服务</title>
-    <link href="https://blog.cloudops.ml/posts/e99da1ce/"/>
-    <id>https://blog.cloudops.ml/posts/e99da1ce/</id>
+    <link href="https://blog.tlhub.cn/posts/e99da1ce/"/>
+    <id>https://blog.tlhub.cn/posts/e99da1ce/</id>
     <published>2019-08-11T13:55:08.000Z</published>
     <updated>2020-04-13T10:56:17.698Z</updated>
     
@@ -78,25 +78,25 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="systemd" scheme="https://blog.cloudops.ml/tags/systemd/"/>
+      <category term="systemd" scheme="https://blog.tlhub.cn/tags/systemd/"/>
     
-      <category term="tomcat" scheme="https://blog.cloudops.ml/tags/tomcat/"/>
+      <category term="tomcat" scheme="https://blog.tlhub.cn/tags/tomcat/"/>
     
-      <category term="sonar" scheme="https://blog.cloudops.ml/tags/sonar/"/>
+      <category term="sonar" scheme="https://blog.tlhub.cn/tags/sonar/"/>
     
-      <category term="sonarqube" scheme="https://blog.cloudops.ml/tags/sonarqube/"/>
+      <category term="sonarqube" scheme="https://blog.tlhub.cn/tags/sonarqube/"/>
     
-      <category term="gerrit" scheme="https://blog.cloudops.ml/tags/gerrit/"/>
+      <category term="gerrit" scheme="https://blog.tlhub.cn/tags/gerrit/"/>
     
   </entry>
   
   <entry>
     <title>Nginx 开启目录浏览功能</title>
-    <link href="https://blog.cloudops.ml/posts/76e49441/"/>
-    <id>https://blog.cloudops.ml/posts/76e49441/</id>
+    <link href="https://blog.tlhub.cn/posts/76e49441/"/>
+    <id>https://blog.tlhub.cn/posts/76e49441/</id>
     <published>2019-08-11T13:53:09.000Z</published>
     <updated>2020-04-13T10:53:53.237Z</updated>
     
@@ -107,19 +107,19 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="nginx" scheme="https://blog.cloudops.ml/tags/nginx/"/>
+      <category term="nginx" scheme="https://blog.tlhub.cn/tags/nginx/"/>
     
-      <category term="目录浏览" scheme="https://blog.cloudops.ml/tags/%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88/"/>
+      <category term="目录浏览" scheme="https://blog.tlhub.cn/tags/%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88/"/>
     
   </entry>
   
   <entry>
     <title>修复 Hexo 微博图床图片链接失效问题</title>
-    <link href="https://blog.cloudops.ml/posts/5b49af5f/"/>
-    <id>https://blog.cloudops.ml/posts/5b49af5f/</id>
+    <link href="https://blog.tlhub.cn/posts/5b49af5f/"/>
+    <id>https://blog.tlhub.cn/posts/5b49af5f/</id>
     <published>2019-08-11T13:49:22.000Z</published>
     <updated>2020-04-16T02:10:05.403Z</updated>
     
@@ -130,17 +130,17 @@
     </summary>
     
     
-      <category term="Hackintosh" scheme="https://blog.cloudops.ml/categories/Hackintosh/"/>
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/categories/Hackintosh/"/>
     
     
-      <category term="图床" scheme="https://blog.cloudops.ml/tags/%E5%9B%BE%E5%BA%8A/"/>
+      <category term="图床" scheme="https://blog.tlhub.cn/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
   <entry>
     <title>查看当前系统是虚拟机还是实体机</title>
-    <link href="https://blog.cloudops.ml/posts/87e03a7e/"/>
-    <id>https://blog.cloudops.ml/posts/87e03a7e/</id>
+    <link href="https://blog.tlhub.cn/posts/87e03a7e/"/>
+    <id>https://blog.tlhub.cn/posts/87e03a7e/</id>
     <published>2019-08-11T13:47:02.000Z</published>
     <updated>2020-04-13T10:49:08.954Z</updated>
     
@@ -151,15 +151,15 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
   </entry>
   
   <entry>
     <title>设置 postgresql 通过密码登录</title>
-    <link href="https://blog.cloudops.ml/posts/370d1eee/"/>
-    <id>https://blog.cloudops.ml/posts/370d1eee/</id>
+    <link href="https://blog.tlhub.cn/posts/370d1eee/"/>
+    <id>https://blog.tlhub.cn/posts/370d1eee/</id>
     <published>2019-08-11T13:44:43.000Z</published>
     <updated>2020-04-13T10:55:29.038Z</updated>
     
@@ -170,17 +170,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="postgresql" scheme="https://blog.cloudops.ml/tags/postgresql/"/>
+      <category term="postgresql" scheme="https://blog.tlhub.cn/tags/postgresql/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 部署配置 Redmine</title>
-    <link href="https://blog.cloudops.ml/posts/3dd29769/"/>
-    <id>https://blog.cloudops.ml/posts/3dd29769/</id>
+    <link href="https://blog.tlhub.cn/posts/3dd29769/"/>
+    <id>https://blog.tlhub.cn/posts/3dd29769/</id>
     <published>2019-08-11T13:38:16.000Z</published>
     <updated>2020-04-15T02:46:20.464Z</updated>
     
@@ -191,21 +191,21 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="Redmine" scheme="https://blog.cloudops.ml/tags/Redmine/"/>
+      <category term="Redmine" scheme="https://blog.tlhub.cn/tags/Redmine/"/>
     
-      <category term="项目管理" scheme="https://blog.cloudops.ml/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+      <category term="项目管理" scheme="https://blog.tlhub.cn/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
-      <category term="敏捷开发" scheme="https://blog.cloudops.ml/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
+      <category term="敏捷开发" scheme="https://blog.tlhub.cn/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 安装配置 GitLab</title>
-    <link href="https://blog.cloudops.ml/posts/35bb9d15/"/>
-    <id>https://blog.cloudops.ml/posts/35bb9d15/</id>
+    <link href="https://blog.tlhub.cn/posts/35bb9d15/"/>
+    <id>https://blog.tlhub.cn/posts/35bb9d15/</id>
     <published>2019-02-01T02:55:52.000Z</published>
     <updated>2020-04-16T02:10:05.399Z</updated>
     
@@ -216,19 +216,19 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="GitLab" scheme="https://blog.cloudops.ml/tags/GitLab/"/>
+      <category term="GitLab" scheme="https://blog.tlhub.cn/tags/GitLab/"/>
     
-      <category term="frame" scheme="https://blog.cloudops.ml/tags/frame/"/>
+      <category term="frame" scheme="https://blog.tlhub.cn/tags/frame/"/>
     
   </entry>
   
   <entry>
     <title>高效利用有道云笔记</title>
-    <link href="https://blog.cloudops.ml/posts/e7c2bc73/"/>
-    <id>https://blog.cloudops.ml/posts/e7c2bc73/</id>
+    <link href="https://blog.tlhub.cn/posts/e7c2bc73/"/>
+    <id>https://blog.tlhub.cn/posts/e7c2bc73/</id>
     <published>2019-01-20T13:12:25.000Z</published>
     <updated>2020-04-24T02:51:52.034Z</updated>
     
@@ -239,21 +239,21 @@
     </summary>
     
     
-      <category term="Study" scheme="https://blog.cloudops.ml/categories/Study/"/>
+      <category term="Study" scheme="https://blog.tlhub.cn/categories/Study/"/>
     
     
-      <category term="图床" scheme="https://blog.cloudops.ml/tags/%E5%9B%BE%E5%BA%8A/"/>
+      <category term="图床" scheme="https://blog.tlhub.cn/tags/%E5%9B%BE%E5%BA%8A/"/>
     
-      <category term="有道云笔记" scheme="https://blog.cloudops.ml/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/"/>
+      <category term="有道云笔记" scheme="https://blog.tlhub.cn/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Picbed" scheme="https://blog.cloudops.ml/tags/Picbed/"/>
+      <category term="Picbed" scheme="https://blog.tlhub.cn/tags/Picbed/"/>
     
   </entry>
   
   <entry>
     <title>TestLink 整合 LDAP 和 CAS 单点登录</title>
-    <link href="https://blog.cloudops.ml/posts/7873bd56/"/>
-    <id>https://blog.cloudops.ml/posts/7873bd56/</id>
+    <link href="https://blog.tlhub.cn/posts/7873bd56/"/>
+    <id>https://blog.tlhub.cn/posts/7873bd56/</id>
     <published>2018-12-04T06:55:56.000Z</published>
     <updated>2020-04-16T02:10:05.404Z</updated>
     
@@ -264,21 +264,21 @@
     </summary>
     
     
-      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
+      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
     
     
-      <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
+      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
     
-      <category term="LDAP" scheme="https://blog.cloudops.ml/tags/LDAP/"/>
+      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
     
-      <category term="TestLink" scheme="https://blog.cloudops.ml/tags/TestLink/"/>
+      <category term="TestLink" scheme="https://blog.tlhub.cn/tags/TestLink/"/>
     
   </entry>
   
   <entry>
     <title>MantisBT 整合 LDAP 和 CAS 单点登录</title>
-    <link href="https://blog.cloudops.ml/posts/4b6afd89/"/>
-    <id>https://blog.cloudops.ml/posts/4b6afd89/</id>
+    <link href="https://blog.tlhub.cn/posts/4b6afd89/"/>
+    <id>https://blog.tlhub.cn/posts/4b6afd89/</id>
     <published>2018-12-03T07:07:11.000Z</published>
     <updated>2020-04-15T02:46:20.461Z</updated>
     
@@ -289,21 +289,21 @@
     </summary>
     
     
-      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
+      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
     
     
-      <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
+      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
     
-      <category term="LDAP" scheme="https://blog.cloudops.ml/tags/LDAP/"/>
+      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
     
-      <category term="MantisBT" scheme="https://blog.cloudops.ml/tags/MantisBT/"/>
+      <category term="MantisBT" scheme="https://blog.tlhub.cn/tags/MantisBT/"/>
     
   </entry>
   
   <entry>
     <title>Gerrit 整合 ldap 和 CAS 单点登录</title>
-    <link href="https://blog.cloudops.ml/posts/16f4a18f/"/>
-    <id>https://blog.cloudops.ml/posts/16f4a18f/</id>
+    <link href="https://blog.tlhub.cn/posts/16f4a18f/"/>
+    <id>https://blog.tlhub.cn/posts/16f4a18f/</id>
     <published>2018-12-03T01:42:41.000Z</published>
     <updated>2020-04-15T02:46:20.466Z</updated>
     
@@ -314,21 +314,21 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
+      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
     
-      <category term="Gerrit" scheme="https://blog.cloudops.ml/tags/Gerrit/"/>
+      <category term="Gerrit" scheme="https://blog.tlhub.cn/tags/Gerrit/"/>
     
-      <category term="ldap" scheme="https://blog.cloudops.ml/tags/ldap/"/>
+      <category term="ldap" scheme="https://blog.tlhub.cn/tags/ldap/"/>
     
   </entry>
   
   <entry>
     <title>SonarQube 整合 LDAP 和 CAS 单点登录</title>
-    <link href="https://blog.cloudops.ml/posts/4ee518bd/"/>
-    <id>https://blog.cloudops.ml/posts/4ee518bd/</id>
+    <link href="https://blog.tlhub.cn/posts/4ee518bd/"/>
+    <id>https://blog.tlhub.cn/posts/4ee518bd/</id>
     <published>2018-11-30T05:23:17.000Z</published>
     <updated>2020-04-15T02:46:20.463Z</updated>
     
@@ -339,21 +339,21 @@
     </summary>
     
     
-      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
+      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
     
     
-      <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
+      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
     
-      <category term="LDAP" scheme="https://blog.cloudops.ml/tags/LDAP/"/>
+      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
     
-      <category term="SonarQube" scheme="https://blog.cloudops.ml/tags/SonarQube/"/>
+      <category term="SonarQube" scheme="https://blog.tlhub.cn/tags/SonarQube/"/>
     
   </entry>
   
   <entry>
     <title>Jenkins 整合 LDAP 以及 CAS 单点登录</title>
-    <link href="https://blog.cloudops.ml/posts/7a8d1bd5/"/>
-    <id>https://blog.cloudops.ml/posts/7a8d1bd5/</id>
+    <link href="https://blog.tlhub.cn/posts/7a8d1bd5/"/>
+    <id>https://blog.tlhub.cn/posts/7a8d1bd5/</id>
     <published>2018-11-30T02:17:09.000Z</published>
     <updated>2020-04-15T02:46:20.462Z</updated>
     
@@ -364,21 +364,21 @@
     </summary>
     
     
-      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
+      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
     
     
-      <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
+      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
     
-      <category term="Jenkins" scheme="https://blog.cloudops.ml/tags/Jenkins/"/>
+      <category term="Jenkins" scheme="https://blog.tlhub.cn/tags/Jenkins/"/>
     
-      <category term="LDAP" scheme="https://blog.cloudops.ml/tags/LDAP/"/>
+      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
     
   </entry>
   
   <entry>
     <title>CentOS安装部署 openLDAP</title>
-    <link href="https://blog.cloudops.ml/posts/ba648987/"/>
-    <id>https://blog.cloudops.ml/posts/ba648987/</id>
+    <link href="https://blog.tlhub.cn/posts/ba648987/"/>
+    <id>https://blog.tlhub.cn/posts/ba648987/</id>
     <published>2018-11-24T14:17:41.000Z</published>
     <updated>2020-04-15T02:46:20.463Z</updated>
     
@@ -389,17 +389,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="openLDAP" scheme="https://blog.cloudops.ml/tags/openLDAP/"/>
+      <category term="openLDAP" scheme="https://blog.tlhub.cn/tags/openLDAP/"/>
     
   </entry>
   
   <entry>
     <title>CAS 5.3.4 安装部署</title>
-    <link href="https://blog.cloudops.ml/posts/a9996dc0/"/>
-    <id>https://blog.cloudops.ml/posts/a9996dc0/</id>
+    <link href="https://blog.tlhub.cn/posts/a9996dc0/"/>
+    <id>https://blog.tlhub.cn/posts/a9996dc0/</id>
     <published>2018-11-24T12:59:49.000Z</published>
     <updated>2020-04-16T02:10:05.406Z</updated>
     
@@ -410,17 +410,17 @@
     </summary>
     
     
-      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
+      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
     
     
-      <category term="CAS" scheme="https://blog.cloudops.ml/tags/CAS/"/>
+      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 7 安装部署邮件服务器</title>
-    <link href="https://blog.cloudops.ml/posts/41575d45/"/>
-    <id>https://blog.cloudops.ml/posts/41575d45/</id>
+    <link href="https://blog.tlhub.cn/posts/41575d45/"/>
+    <id>https://blog.tlhub.cn/posts/41575d45/</id>
     <published>2018-10-19T13:31:24.000Z</published>
     <updated>2020-04-15T02:46:20.468Z</updated>
     
@@ -431,23 +431,23 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="运维" scheme="https://blog.cloudops.ml/tags/%E8%BF%90%E7%BB%B4/"/>
+      <category term="运维" scheme="https://blog.tlhub.cn/tags/%E8%BF%90%E7%BB%B4/"/>
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/tags/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/tags/Linux/"/>
     
-      <category term="SMTP" scheme="https://blog.cloudops.ml/tags/SMTP/"/>
+      <category term="SMTP" scheme="https://blog.tlhub.cn/tags/SMTP/"/>
     
-      <category term="Mail Server" scheme="https://blog.cloudops.ml/tags/Mail-Server/"/>
+      <category term="Mail Server" scheme="https://blog.tlhub.cn/tags/Mail-Server/"/>
     
   </entry>
   
   <entry>
     <title>TestLink安装部署</title>
-    <link href="https://blog.cloudops.ml/posts/676ab03b/"/>
-    <id>https://blog.cloudops.ml/posts/676ab03b/</id>
+    <link href="https://blog.tlhub.cn/posts/676ab03b/"/>
+    <id>https://blog.tlhub.cn/posts/676ab03b/</id>
     <published>2018-08-26T11:51:29.000Z</published>
     <updated>2020-04-16T01:57:40.254Z</updated>
     
@@ -458,17 +458,17 @@
     </summary>
     
     
-      <category term="CI" scheme="https://blog.cloudops.ml/categories/CI/"/>
+      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
     
     
-      <category term="TestLink" scheme="https://blog.cloudops.ml/tags/TestLink/"/>
+      <category term="TestLink" scheme="https://blog.tlhub.cn/tags/TestLink/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 安装部署 Gerrit</title>
-    <link href="https://blog.cloudops.ml/posts/f43a7a1a/"/>
-    <id>https://blog.cloudops.ml/posts/f43a7a1a/</id>
+    <link href="https://blog.tlhub.cn/posts/f43a7a1a/"/>
+    <id>https://blog.tlhub.cn/posts/f43a7a1a/</id>
     <published>2018-08-22T03:36:45.000Z</published>
     <updated>2020-04-15T02:46:20.467Z</updated>
     
@@ -479,12 +479,12 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://blog.cloudops.ml/categories/Linux/"/>
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
     
     
-      <category term="Gerrit" scheme="https://blog.cloudops.ml/tags/Gerrit/"/>
+      <category term="Gerrit" scheme="https://blog.tlhub.cn/tags/Gerrit/"/>
     
-      <category term="代码审查" scheme="https://blog.cloudops.ml/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/"/>
+      <category term="代码审查" scheme="https://blog.tlhub.cn/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/"/>
     
   </entry>
   
