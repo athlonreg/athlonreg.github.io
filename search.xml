@@ -321,9 +321,9 @@
             
             <tag> CAS </tag>
             
-            <tag> LDAP </tag>
-            
             <tag> MantisBT </tag>
+            
+            <tag> LDAP </tag>
             
         </tags>
       
@@ -846,9 +846,9 @@
       
         <tags>
             
-            <tag> patch </tag>
-            
             <tag> Hackintosh </tag>
+            
+            <tag> patch </tag>
             
             <tag> 补丁 </tag>
             
