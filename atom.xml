@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>套陆的博客</title>
+  <title>套陆的部落阁</title>
   
   <subtitle>套陆的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-04-13T10:54:01.152Z</updated>
+  <updated>2020-04-30T03:12:28.904Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -17,15 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常用驱动工具及引导程序下载</title>
+    <link href="https://blog.tlhub.cn/posts/79b9ead4/"/>
+    <id>https://blog.tlhub.cn/posts/79b9ead4/</id>
+    <published>2020-04-30T02:35:28.000Z</published>
+    <updated>2020-04-30T03:12:28.904Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;OpenCorePkg – 2020-4-29&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/athlonreg/hacktools/OpenCorePkg/OpenCore-0.5.8-DEBUG.zip&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/categories/Hackintosh/"/>
+    
+    
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Openldap 数据迁移</title>
     <link href="https://blog.tlhub.cn/posts/f2ee8d2/"/>
     <id>https://blog.tlhub.cn/posts/f2ee8d2/</id>
     <published>2019-08-11T14:03:49.000Z</published>
-    <updated>2020-04-13T10:54:01.152Z</updated>
+    <updated>2020-04-30T05:02:12.282Z</updated>
     
     <summary type="html">
     
-      Openldap 数据迁移
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;# slapcat &gt; ldapbak.ldif 
+        
+      
     
     </summary>
     
@@ -44,11 +79,17 @@
     <link href="https://blog.tlhub.cn/posts/2e815177/"/>
     <id>https://blog.tlhub.cn/posts/2e815177/</id>
     <published>2019-08-11T14:00:16.000Z</published>
-    <updated>2020-04-13T10:02:39.702Z</updated>
+    <updated>2020-04-30T03:17:30.137Z</updated>
     
     <summary type="html">
     
-      CentOS7 Docker 镜像使用 systemd 服务
+      
+      
+        
+        
+          &lt;h1 id=&quot;Dockerfile&quot;&gt;&lt;a href=&quot;#Dockerfile&quot; class=&quot;headerlink&quot; title=&quot;Dockerfile&quot;&gt;&lt;/a&gt;Dockerfile&lt;/h1&gt;&lt;pre class=&quot;line-numbers
+        
+      
     
     </summary>
     
@@ -69,11 +110,17 @@
     <link href="https://blog.tlhub.cn/posts/e99da1ce/"/>
     <id>https://blog.tlhub.cn/posts/e99da1ce/</id>
     <published>2019-08-11T13:55:08.000Z</published>
-    <updated>2020-04-13T10:56:17.698Z</updated>
+    <updated>2020-04-30T05:04:59.541Z</updated>
     
     <summary type="html">
     
-      Tomcat SonarQube Gerrit 设置 systemd 服务
+      
+      
+        
+        
+          &lt;h2 id=&quot;Tomcat&quot;&gt;&lt;a href=&quot;#Tomcat&quot; class=&quot;headerlink&quot; title=&quot;Tomcat&quot;&gt;&lt;/a&gt;Tomcat&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code
+        
+      
     
     </summary>
     
@@ -98,11 +145,20 @@
     <link href="https://blog.tlhub.cn/posts/76e49441/"/>
     <id>https://blog.tlhub.cn/posts/76e49441/</id>
     <published>2019-08-11T13:53:09.000Z</published>
-    <updated>2020-04-13T10:53:53.237Z</updated>
+    <updated>2020-04-30T05:01:56.261Z</updated>
     
     <summary type="html">
     
-      Nginx 开启目录浏览功能
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;编辑 nginx 配置文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;vim
+        
+      
     
     </summary>
     
@@ -121,11 +177,20 @@
     <link href="https://blog.tlhub.cn/posts/5b49af5f/"/>
     <id>https://blog.tlhub.cn/posts/5b49af5f/</id>
     <published>2019-08-11T13:49:22.000Z</published>
-    <updated>2020-04-16T02:10:05.403Z</updated>
+    <updated>2020-04-30T03:21:13.609Z</updated>
     
     <summary type="html">
     
-      修复 Hexo 微博图床图片链接失效问题
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;修改主题 head 文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token
+        
+      
     
     </summary>
     
@@ -142,11 +207,17 @@
     <link href="https://blog.tlhub.cn/posts/87e03a7e/"/>
     <id>https://blog.tlhub.cn/posts/87e03a7e/</id>
     <published>2019-08-11T13:47:02.000Z</published>
-    <updated>2020-04-13T10:49:08.954Z</updated>
+    <updated>2020-04-30T03:13:47.063Z</updated>
     
     <summary type="html">
     
-      查看当前系统是虚拟机还是实体机
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dmidecode -s system-product-name&lt;span aria-hidden=&quot;true&quot;
+        
+      
     
     </summary>
     
@@ -161,11 +232,20 @@
     <link href="https://blog.tlhub.cn/posts/370d1eee/"/>
     <id>https://blog.tlhub.cn/posts/370d1eee/</id>
     <published>2019-08-11T13:44:43.000Z</published>
-    <updated>2020-04-13T10:55:29.038Z</updated>
+    <updated>2020-04-30T05:03:58.438Z</updated>
     
     <summary type="html">
     
-      设置 postgresql 通过密码登录
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;修改文件 pg_hba.conf&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-properties&quot;&gt;&lt;code class=&quot;language-properties&quot;&gt;&lt;span
+        
+      
     
     </summary>
     
@@ -182,11 +262,17 @@
     <link href="https://blog.tlhub.cn/posts/3dd29769/"/>
     <id>https://blog.tlhub.cn/posts/3dd29769/</id>
     <published>2019-08-11T13:38:16.000Z</published>
-    <updated>2020-04-15T02:46:20.464Z</updated>
+    <updated>2020-04-30T03:20:00.167Z</updated>
     
     <summary type="html">
     
-      CentOS 部署配置 Redmine 项目管理系统
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装-Ruby-2-4&quot;&gt;&lt;a href=&quot;#安装-Ruby-2-4&quot; class=&quot;headerlink&quot; title=&quot;安装 Ruby 2.4&quot;&gt;&lt;/a&gt;安装 Ruby 2.4&lt;/h2&gt;&lt;pre class=&quot;line-numbers
+        
+      
     
     </summary>
     
@@ -207,11 +293,17 @@
     <link href="https://blog.tlhub.cn/posts/35bb9d15/"/>
     <id>https://blog.tlhub.cn/posts/35bb9d15/</id>
     <published>2019-02-01T02:55:52.000Z</published>
-    <updated>2020-04-16T02:10:05.399Z</updated>
+    <updated>2020-04-30T05:03:35.691Z</updated>
     
     <summary type="html">
     
-      CentOS 安装配置 GitLab
+      
+      
+        
+        
+          &lt;h2 id=&quot;CentOS-安装-GitLab&quot;&gt;&lt;a href=&quot;#CentOS-安装-GitLab&quot; class=&quot;headerlink&quot; title=&quot;CentOS 安装 GitLab&quot;&gt;&lt;/a&gt;CentOS 安装 GitLab&lt;/h2&gt;&lt;h2 id=&quot;安装依赖&quot;&gt;&lt;a
+        
+      
     
     </summary>
     
@@ -230,11 +322,17 @@
     <link href="https://blog.tlhub.cn/posts/e7c2bc73/"/>
     <id>https://blog.tlhub.cn/posts/e7c2bc73/</id>
     <published>2019-01-20T13:12:25.000Z</published>
-    <updated>2020-04-24T02:51:52.034Z</updated>
+    <updated>2020-04-30T03:22:43.378Z</updated>
     
     <summary type="html">
     
-      高效利用有道云笔记
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
@@ -255,11 +353,19 @@
     <link href="https://blog.tlhub.cn/posts/7873bd56/"/>
     <id>https://blog.tlhub.cn/posts/7873bd56/</id>
     <published>2018-12-04T06:55:56.000Z</published>
-    <updated>2020-04-16T02:10:05.404Z</updated>
+    <updated>2020-04-30T05:05:31.405Z</updated>
     
     <summary type="html">
     
-      TestLink 整合 LDAP 和 CAS 单点登录
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;TestLink 版本：2.18&lt;/li&gt;
+&lt;li&gt;TestLink URL：&lt;a
+        
+      
     
     </summary>
     
@@ -280,11 +386,19 @@
     <link href="https://blog.tlhub.cn/posts/4b6afd89/"/>
     <id>https://blog.tlhub.cn/posts/4b6afd89/</id>
     <published>2018-12-03T07:07:11.000Z</published>
-    <updated>2020-04-15T02:46:20.461Z</updated>
+    <updated>2020-04-30T05:01:23.518Z</updated>
     
     <summary type="html">
     
-      MantisBT 整合 LDAP 和 CAS 单点登录
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;MantisBT 版本：2.18&lt;/li&gt;
+&lt;li&gt;Mantis URL：&lt;a
+        
+      
     
     </summary>
     
@@ -305,11 +419,19 @@
     <link href="https://blog.tlhub.cn/posts/16f4a18f/"/>
     <id>https://blog.tlhub.cn/posts/16f4a18f/</id>
     <published>2018-12-03T01:42:41.000Z</published>
-    <updated>2020-04-15T02:46:20.466Z</updated>
+    <updated>2020-04-30T03:21:37.372Z</updated>
     
     <summary type="html">
     
-      Gerrit 整合 ldap 和 CAS 单点登录
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Gerrit 版本：2.16&lt;/li&gt;
+&lt;li&gt;Gerrit URL：&lt;a
+        
+      
     
     </summary>
     
@@ -330,11 +452,17 @@
     <link href="https://blog.tlhub.cn/posts/4ee518bd/"/>
     <id>https://blog.tlhub.cn/posts/4ee518bd/</id>
     <published>2018-11-30T05:23:17.000Z</published>
-    <updated>2020-04-15T02:46:20.463Z</updated>
+    <updated>2020-04-30T05:04:44.406Z</updated>
     
     <summary type="html">
     
-      SonarQube 整合 LDAP 和 CAS 单点登录
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
@@ -355,11 +483,19 @@
     <link href="https://blog.tlhub.cn/posts/7a8d1bd5/"/>
     <id>https://blog.tlhub.cn/posts/7a8d1bd5/</id>
     <published>2018-11-30T02:17:09.000Z</published>
-    <updated>2020-04-15T02:46:20.462Z</updated>
+    <updated>2020-04-30T05:00:46.903Z</updated>
     
     <summary type="html">
     
-      Jenkins 整合 LDAP 以及 CAS 单点登录
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Jenkins 版本：2.138.3&lt;/li&gt;
+&lt;li&gt;Jenkins 安装方式： Tomcat 容器部署
+        
+      
     
     </summary>
     
@@ -380,11 +516,17 @@
     <link href="https://blog.tlhub.cn/posts/ba648987/"/>
     <id>https://blog.tlhub.cn/posts/ba648987/</id>
     <published>2018-11-24T14:17:41.000Z</published>
-    <updated>2020-04-15T02:46:20.463Z</updated>
+    <updated>2020-04-30T03:16:54.422Z</updated>
     
     <summary type="html">
     
-      CentOS安装部署 openLDAP
+      
+      
+        
+        
+          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;OpenLDAP 是轻型目录访问协议&lt;code&gt;Lightweight Directory Access Protocol&lt;/code&gt;
+        
+      
     
     </summary>
     
@@ -401,11 +543,17 @@
     <link href="https://blog.tlhub.cn/posts/a9996dc0/"/>
     <id>https://blog.tlhub.cn/posts/a9996dc0/</id>
     <published>2018-11-24T12:59:49.000Z</published>
-    <updated>2020-04-16T02:10:05.406Z</updated>
+    <updated>2020-04-30T03:16:41.102Z</updated>
     
     <summary type="html">
     
-      CAS 5.3.4 安装部署
+      
+      
+        
+        
+          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;code&gt;CAS&lt;/code&gt;全称&lt;code&gt;Central Authentication
+        
+      
     
     </summary>
     
@@ -422,11 +570,18 @@
     <link href="https://blog.tlhub.cn/posts/41575d45/"/>
     <id>https://blog.tlhub.cn/posts/41575d45/</id>
     <published>2018-10-19T13:31:24.000Z</published>
-    <updated>2020-04-15T02:46:20.468Z</updated>
+    <updated>2020-04-30T03:22:54.047Z</updated>
     
     <summary type="html">
     
-      CentOS 7安装部署邮件服务器
+      
+      
+        
+        
+          &lt;h1 id=&quot;本文环境&quot;&gt;&lt;a href=&quot;#本文环境&quot; class=&quot;headerlink&quot; title=&quot;本文环境&quot;&gt;&lt;/a&gt;本文环境&lt;/h1&gt;&lt;p&gt;CentOS 7.2 1511&lt;/p&gt;
+&lt;h1 id=&quot;开始安装&quot;&gt;&lt;a href=&quot;#开始安装&quot;
+        
+      
     
     </summary>
     
@@ -449,11 +604,17 @@
     <link href="https://blog.tlhub.cn/posts/676ab03b/"/>
     <id>https://blog.tlhub.cn/posts/676ab03b/</id>
     <published>2018-08-26T11:51:29.000Z</published>
-    <updated>2020-04-16T01:57:40.254Z</updated>
+    <updated>2020-04-30T05:05:18.052Z</updated>
     
     <summary type="html">
     
-      TestLink安装部署
+      
+      
+        
+        
+          &lt;h1 id=&quot;TestLink安装部署&quot;&gt;&lt;a href=&quot;#TestLink安装部署&quot; class=&quot;headerlink&quot; title=&quot;TestLink安装部署&quot;&gt;&lt;/a&gt;&lt;center&gt;TestLink安装部署&lt;/center&gt;&lt;/h1&gt;&lt;h2
+        
+      
     
     </summary>
     
@@ -462,29 +623,6 @@
     
     
       <category term="TestLink" scheme="https://blog.tlhub.cn/tags/TestLink/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 安装部署 Gerrit</title>
-    <link href="https://blog.tlhub.cn/posts/f43a7a1a/"/>
-    <id>https://blog.tlhub.cn/posts/f43a7a1a/</id>
-    <published>2018-08-22T03:36:45.000Z</published>
-    <updated>2020-04-15T02:46:20.467Z</updated>
-    
-    <summary type="html">
-    
-      CentOS安装部署代码审查工具--Gerrit
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="Gerrit" scheme="https://blog.tlhub.cn/tags/Gerrit/"/>
-    
-      <category term="代码审查" scheme="https://blog.tlhub.cn/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/"/>
     
   </entry>
   
