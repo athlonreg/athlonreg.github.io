@@ -1,10 +1,10 @@
 User-agent: * Allow: /
 Allow: /archives/
-Disallow: /about/
-Disallow: /categories/
-Disallow: /contact/
-Disallow: /friends/
-Disallow: /tags/
+Allow: /about/
+Allow: /categories/
+Allow: /contact/
+Allow: /friends/
+Allow: /tags/
 
 
 Sitemap: https://blog.cloudops.ml/sitemap.xml
