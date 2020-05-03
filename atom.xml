@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-04-30T07:41:48.327Z</updated>
+  <updated>2020-05-03T02:56:39.356Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.tlhub.cn/posts/79b9ead4/"/>
     <id>https://blog.tlhub.cn/posts/79b9ead4/</id>
     <published>2020-04-30T02:35:28.000Z</published>
-    <updated>2020-04-30T07:41:48.327Z</updated>
+    <updated>2020-05-03T02:56:39.356Z</updated>
     
     <summary type="html">
     
@@ -177,7 +177,7 @@
     <link href="https://blog.tlhub.cn/posts/5b49af5f/"/>
     <id>https://blog.tlhub.cn/posts/5b49af5f/</id>
     <published>2019-08-11T13:49:22.000Z</published>
-    <updated>2020-04-30T07:41:40.369Z</updated>
+    <updated>2020-05-03T02:56:39.355Z</updated>
     
     <summary type="html">
     
@@ -543,7 +543,7 @@
     <link href="https://blog.tlhub.cn/posts/a9996dc0/"/>
     <id>https://blog.tlhub.cn/posts/a9996dc0/</id>
     <published>2018-11-24T12:59:49.000Z</published>
-    <updated>2020-04-30T05:33:34.978Z</updated>
+    <updated>2020-05-03T02:56:39.354Z</updated>
     
     <summary type="html">
     
@@ -562,6 +562,10 @@
     
     
       <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
+    
+      <category term="5.3.4" scheme="https://blog.tlhub.cn/tags/5-3-4/"/>
+    
+      <category term="单点登录" scheme="https://blog.tlhub.cn/tags/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/"/>
     
   </entry>
   
