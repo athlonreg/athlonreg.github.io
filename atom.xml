@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-03T02:56:39.356Z</updated>
+  <updated>2020-05-03T03:21:35.936Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>常用驱动工具及引导程序下载</title>
-    <link href="https://blog.tlhub.cn/posts/79b9ead4/"/>
-    <id>https://blog.tlhub.cn/posts/79b9ead4/</id>
-    <published>2020-04-30T02:35:28.000Z</published>
-    <updated>2020-05-03T02:56:39.356Z</updated>
+    <title>hackintosh-tools</title>
+    <link href="https://blog.tlhub.cn/posts/82e723da/"/>
+    <id>https://blog.tlhub.cn/posts/82e723da/</id>
+    <published>2020-05-03T02:56:39.356Z</published>
+    <updated>2020-05-03T03:21:35.936Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,7 @@
         
         
           &lt;ul&gt;
-&lt;li&gt;OpenCorePkg – 2020-4-29&lt;ul&gt;
+&lt;li&gt;OpenCorePkg – 2020-5-2&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/athlonreg/hacktools/OpenCorePkg/OpenCore-0.5.8-DEBUG.zip&quot;
         
       
@@ -38,10 +38,6 @@
     </summary>
     
     
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/categories/Hackintosh/"/>
-    
-    
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
     
   </entry>
   
