@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-06T09:04:46.879Z</updated>
+  <updated>2020-05-06T10:53:22.481Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.tlhub.cn/posts/626dd423/"/>
     <id>https://blog.tlhub.cn/posts/626dd423/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T09:04:46.879Z</updated>
+    <updated>2020-05-06T10:53:22.481Z</updated>
     
     <summary type="html">
     
@@ -36,7 +36,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kexts" scheme="https://blog.tlhub.cn/categories/Kexts/"/>
     
     
       <category term="ACPIBatteryManager" scheme="https://blog.tlhub.cn/tags/ACPIBatteryManager/"/>
@@ -52,7 +52,7 @@
     <link href="https://blog.tlhub.cn/posts/35d65682/"/>
     <id>https://blog.tlhub.cn/posts/35d65682/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T05:59:29.731Z</updated>
+    <updated>2020-05-06T10:53:26.630Z</updated>
     
     <summary type="html">
     
@@ -67,7 +67,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="BT4LEContinuityFixup" scheme="https://blog.tlhub.cn/tags/BT4LEContinuityFixup/"/>
@@ -81,7 +81,7 @@
     <link href="https://blog.tlhub.cn/posts/ce756c86/"/>
     <id>https://blog.tlhub.cn/posts/ce756c86/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T06:56:46.187Z</updated>
+    <updated>2020-05-06T10:53:30.587Z</updated>
     
     <summary type="html">
     
@@ -96,7 +96,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="BrcmPatchRAM" scheme="https://blog.tlhub.cn/tags/BrcmPatchRAM/"/>
@@ -112,7 +112,7 @@
     <link href="https://blog.tlhub.cn/posts/9c3a3a6a/"/>
     <id>https://blog.tlhub.cn/posts/9c3a3a6a/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:37:35.436Z</updated>
+    <updated>2020-05-06T10:53:35.042Z</updated>
     
     <summary type="html">
     
@@ -127,7 +127,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="CPUTune" scheme="https://blog.tlhub.cn/tags/CPUTune/"/>
@@ -141,7 +141,7 @@
     <link href="https://blog.tlhub.cn/posts/c88d6d8e/"/>
     <id>https://blog.tlhub.cn/posts/c88d6d8e/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T07:36:40.721Z</updated>
+    <updated>2020-05-06T10:53:40.641Z</updated>
     
     <summary type="html">
     
@@ -156,7 +156,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="以太网" scheme="https://blog.tlhub.cn/tags/%E4%BB%A5%E5%A4%AA%E7%BD%91/"/>
@@ -188,7 +188,7 @@
     <link href="https://blog.tlhub.cn/posts/354d7e3a/"/>
     <id>https://blog.tlhub.cn/posts/354d7e3a/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:53:48.814Z</updated>
+    <updated>2020-05-06T10:53:51.157Z</updated>
     
     <summary type="html">
     
@@ -203,7 +203,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="FakePCIID" scheme="https://blog.tlhub.cn/tags/FakePCIID/"/>
@@ -215,7 +215,7 @@
     <link href="https://blog.tlhub.cn/posts/69b8c446/"/>
     <id>https://blog.tlhub.cn/posts/69b8c446/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:58:15.401Z</updated>
+    <updated>2020-05-06T10:54:02.878Z</updated>
     
     <summary type="html">
     
@@ -230,7 +230,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="FakeSMC" scheme="https://blog.tlhub.cn/tags/FakeSMC/"/>
@@ -244,7 +244,7 @@
     <link href="https://blog.tlhub.cn/posts/20c9ddae/"/>
     <id>https://blog.tlhub.cn/posts/20c9ddae/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T07:45:48.387Z</updated>
+    <updated>2020-05-06T10:53:58.619Z</updated>
     
     <summary type="html">
     
@@ -259,7 +259,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="蓝牙" scheme="https://blog.tlhub.cn/tags/%E8%93%9D%E7%89%99/"/>
@@ -277,7 +277,7 @@
     <link href="https://blog.tlhub.cn/posts/62834fbb/"/>
     <id>https://blog.tlhub.cn/posts/62834fbb/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T05:52:51.697Z</updated>
+    <updated>2020-05-06T10:53:16.710Z</updated>
     
     <summary type="html">
     
@@ -292,7 +292,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
@@ -306,7 +306,7 @@
     <link href="https://blog.tlhub.cn/posts/95d53914/"/>
     <id>https://blog.tlhub.cn/posts/95d53914/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:28:32.547Z</updated>
+    <updated>2020-05-06T10:53:13.477Z</updated>
     
     <summary type="html">
     
@@ -321,7 +321,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="NVWebDriverLibValFix" scheme="https://blog.tlhub.cn/tags/NVWebDriverLibValFix/"/>
@@ -337,7 +337,7 @@
     <link href="https://blog.tlhub.cn/posts/280bdbea/"/>
     <id>https://blog.tlhub.cn/posts/280bdbea/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T06:11:02.509Z</updated>
+    <updated>2020-05-06T10:53:07.997Z</updated>
     
     <summary type="html">
     
@@ -355,7 +355,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="OpenCorePkg" scheme="https://blog.tlhub.cn/tags/OpenCorePkg/"/>
@@ -369,7 +369,7 @@
     <link href="https://blog.tlhub.cn/posts/4af64ffd/"/>
     <id>https://blog.tlhub.cn/posts/4af64ffd/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:13:27.012Z</updated>
+    <updated>2020-05-06T10:53:03.149Z</updated>
     
     <summary type="html">
     
@@ -384,7 +384,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="NullCPUPowerManagement" scheme="https://blog.tlhub.cn/tags/NullCPUPowerManagement/"/>
@@ -398,7 +398,7 @@
     <link href="https://blog.tlhub.cn/posts/782bfc5/"/>
     <id>https://blog.tlhub.cn/posts/782bfc5/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T06:49:09.561Z</updated>
+    <updated>2020-05-06T10:52:58.858Z</updated>
     
     <summary type="html">
     
@@ -413,7 +413,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="VoodooI2C" scheme="https://blog.tlhub.cn/tags/VoodooI2C/"/>
@@ -429,7 +429,7 @@
     <link href="https://blog.tlhub.cn/posts/b8a69837/"/>
     <id>https://blog.tlhub.cn/posts/b8a69837/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:05:00.640Z</updated>
+    <updated>2020-05-06T10:52:55.316Z</updated>
     
     <summary type="html">
     
@@ -444,7 +444,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="声卡" scheme="https://blog.tlhub.cn/tags/%E5%A3%B0%E5%8D%A1/"/>
@@ -462,7 +462,7 @@
     <link href="https://blog.tlhub.cn/posts/9ebf3be3/"/>
     <id>https://blog.tlhub.cn/posts/9ebf3be3/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T06:29:02.376Z</updated>
+    <updated>2020-05-06T10:52:50.681Z</updated>
     
     <summary type="html">
     
@@ -477,7 +477,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
@@ -495,7 +495,7 @@
     <link href="https://blog.tlhub.cn/posts/bc2377b/"/>
     <id>https://blog.tlhub.cn/posts/bc2377b/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T08:18:55.185Z</updated>
+    <updated>2020-05-06T10:52:46.480Z</updated>
     
     <summary type="html">
     
@@ -511,7 +511,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="VoodooTSCSync" scheme="https://blog.tlhub.cn/tags/VoodooTSCSync/"/>
@@ -527,7 +527,7 @@
     <link href="https://blog.tlhub.cn/posts/9b8e1d8b/"/>
     <id>https://blog.tlhub.cn/posts/9b8e1d8b/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T09:11:34.214Z</updated>
+    <updated>2020-05-06T10:52:43.199Z</updated>
     
     <summary type="html">
     
@@ -542,7 +542,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="无线网卡" scheme="https://blog.tlhub.cn/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/"/>
@@ -558,7 +558,7 @@
     <link href="https://blog.tlhub.cn/posts/22c1706d/"/>
     <id>https://blog.tlhub.cn/posts/22c1706d/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T09:08:01.964Z</updated>
+    <updated>2020-05-06T10:52:39.617Z</updated>
     
     <summary type="html">
     
@@ -574,7 +574,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="读卡器" scheme="https://blog.tlhub.cn/tags/%E8%AF%BB%E5%8D%A1%E5%99%A8/"/>
@@ -590,7 +590,7 @@
     <link href="https://blog.tlhub.cn/posts/a55bb4d1/"/>
     <id>https://blog.tlhub.cn/posts/a55bb4d1/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T10:48:26.207Z</updated>
+    <updated>2020-05-06T10:52:33.468Z</updated>
     
     <summary type="html">
     
@@ -605,7 +605,7 @@
     </summary>
     
     
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
       <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
