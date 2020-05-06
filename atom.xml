@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-06T03:20:34.794Z</updated>
+  <updated>2020-05-06T09:04:46.879Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,604 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ACPIBatteryManager 电池驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/626dd423/"/>
+    <id>https://blog.tlhub.cn/posts/626dd423/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T09:04:46.879Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;为运行 OS X 的非 Apple 笔记本电脑实现基于高级配置和电源管理接口（ACPI）的电池管理器内核扩展（kext /
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="ACPIBatteryManager" scheme="https://blog.tlhub.cn/tags/ACPIBatteryManager/"/>
+    
+      <category term="Battery" scheme="https://blog.tlhub.cn/tags/Battery/"/>
+    
+      <category term="电池" scheme="https://blog.tlhub.cn/tags/%E7%94%B5%E6%B1%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BT4LEContinuityFixup 蓝牙修补驱动</title>
+    <link href="https://blog.tlhub.cn/posts/35d65682/"/>
+    <id>https://blog.tlhub.cn/posts/35d65682/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T05:59:29.731Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;BT4LEContinuityFixup 是一个开源内核扩展程序，为 IOBluetoothFamily
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="BT4LEContinuityFixup" scheme="https://blog.tlhub.cn/tags/BT4LEContinuityFixup/"/>
+    
+      <category term="蓝牙" scheme="https://blog.tlhub.cn/tags/%E8%93%9D%E7%89%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BrcmPatchRAM 无线网卡驱动</title>
+    <link href="https://blog.tlhub.cn/posts/ce756c86/"/>
+    <id>https://blog.tlhub.cn/posts/ce756c86/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T06:56:46.187Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://travis-ci.com/acidanthera/BrcmPatchRAM&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="BrcmPatchRAM" scheme="https://blog.tlhub.cn/tags/BrcmPatchRAM/"/>
+    
+      <category term="博通" scheme="https://blog.tlhub.cn/tags/%E5%8D%9A%E9%80%9A/"/>
+    
+      <category term="无线网卡" scheme="https://blog.tlhub.cn/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CPUTune 驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/9c3a3a6a/"/>
+    <id>https://blog.tlhub.cn/posts/9c3a3a6a/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:37:35.436Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;h3 id=&quot;描述&quot;&gt;&lt;a href=&quot;#描述&quot; class=&quot;headerlink&quot; title=&quot;描述&quot;&gt;&lt;/a&gt;描述&lt;/h3&gt;&lt;p&gt;对
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="CPUTune" scheme="https://blog.tlhub.cn/tags/CPUTune/"/>
+    
+      <category term="Turbo Boost" scheme="https://blog.tlhub.cn/tags/Turbo-Boost/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以太网卡驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/c88d6d8e/"/>
+    <id>https://blog.tlhub.cn/posts/c88d6d8e/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T07:36:40.721Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;h3 id=&quot;RTL8125&quot;&gt;&lt;a href=&quot;#RTL8125&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="以太网" scheme="https://blog.tlhub.cn/tags/%E4%BB%A5%E5%A4%AA%E7%BD%91/"/>
+    
+      <category term="RTL8125" scheme="https://blog.tlhub.cn/tags/RTL8125/"/>
+    
+      <category term="RTL8100" scheme="https://blog.tlhub.cn/tags/RTL8100/"/>
+    
+      <category term="IntelMausi" scheme="https://blog.tlhub.cn/tags/IntelMausi/"/>
+    
+      <category term="IntelMausiEthernet" scheme="https://blog.tlhub.cn/tags/IntelMausiEthernet/"/>
+    
+      <category term="AtherosE2200Ethernet" scheme="https://blog.tlhub.cn/tags/AtherosE2200Ethernet/"/>
+    
+      <category term="AppleIntelE1000" scheme="https://blog.tlhub.cn/tags/AppleIntelE1000/"/>
+    
+      <category term="AppleIGB" scheme="https://blog.tlhub.cn/tags/AppleIGB/"/>
+    
+      <category term="NullEthernet" scheme="https://blog.tlhub.cn/tags/NullEthernet/"/>
+    
+      <category term="Ethernet" scheme="https://blog.tlhub.cn/tags/Ethernet/"/>
+    
+      <category term="内建" scheme="https://blog.tlhub.cn/tags/%E5%86%85%E5%BB%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FakePCIID 驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/354d7e3a/"/>
+    <id>https://blog.tlhub.cn/posts/354d7e3a/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:53:48.814Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;h3 id=&quot;FakePCIID-kext&quot;&gt;&lt;a href=&quot;#FakePCIID-kext&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="FakePCIID" scheme="https://blog.tlhub.cn/tags/FakePCIID/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FakeSMC 驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/69b8c446/"/>
+    <id>https://blog.tlhub.cn/posts/69b8c446/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:58:15.401Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;FakeSMC 是一个开源 SMC 设备驱动程序/仿真器。HWSensors 是一个软件包，其中包括驱动程序和应用程序，可以读取 Mac
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="FakeSMC" scheme="https://blog.tlhub.cn/tags/FakeSMC/"/>
+    
+      <category term="SMC" scheme="https://blog.tlhub.cn/tags/SMC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IntelBluetoothFirmware 英特尔蓝牙驱动</title>
+    <link href="https://blog.tlhub.cn/posts/20c9ddae/"/>
+    <id>https://blog.tlhub.cn/posts/20c9ddae/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T07:45:48.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;IntelBluetoothFirmware 是一个用于在 macOS 中启用原生蓝牙的固件上传驱动，固件的二进制文件来自
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="蓝牙" scheme="https://blog.tlhub.cn/tags/%E8%93%9D%E7%89%99/"/>
+    
+      <category term="IntelBluetoothFirmware" scheme="https://blog.tlhub.cn/tags/IntelBluetoothFirmware/"/>
+    
+      <category term="Bluetooth" scheme="https://blog.tlhub.cn/tags/Bluetooth/"/>
+    
+      <category term="英特尔" scheme="https://blog.tlhub.cn/tags/%E8%8B%B1%E7%89%B9%E5%B0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NVMeFix NVMe修复驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/62834fbb/"/>
+    <id>https://blog.tlhub.cn/posts/62834fbb/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T05:52:51.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;NVMeFix 是 Apple NVMe 存储驱动程序 IONVMeFamily 的一组修补程序。 其目标是改善非 Apple SSD
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
+    
+      <category term="NVMeFix" scheme="https://blog.tlhub.cn/tags/NVMeFix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NVWebDriverLibValFix 驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/95d53914/"/>
+    <id>https://blog.tlhub.cn/posts/95d53914/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:28:32.547Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;此 macOS 内核扩展修补了 macOS Sierra 以将 NVIDIA 的 Web 驱动程序识别为平台二进制文件。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="NVWebDriverLibValFix" scheme="https://blog.tlhub.cn/tags/NVWebDriverLibValFix/"/>
+    
+      <category term="NVIDIA" scheme="https://blog.tlhub.cn/tags/NVIDIA/"/>
+    
+      <category term="iBooks" scheme="https://blog.tlhub.cn/tags/iBooks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenCorePkg 稳定版汇总</title>
+    <link href="https://blog.tlhub.cn/posts/280bdbea/"/>
+    <id>https://blog.tlhub.cn/posts/280bdbea/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T06:11:02.509Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;OpenCorePkg 是一个开源的引导程序。&lt;/p&gt;
+&lt;p&gt;特性: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="OpenCorePkg" scheme="https://blog.tlhub.cn/tags/OpenCorePkg/"/>
+    
+      <category term="OC" scheme="https://blog.tlhub.cn/tags/OC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NullCPUPowerManagement 禁用CPU电源管理驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/4af64ffd/"/>
+    <id>https://blog.tlhub.cn/posts/4af64ffd/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:13:27.012Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;在非 Apple 硬件（虚拟或其他）上运行的 OS X 的另一个问题是 AppleIntelCPUPowerManagement
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="NullCPUPowerManagement" scheme="https://blog.tlhub.cn/tags/NullCPUPowerManagement/"/>
+    
+      <category term="电源管理" scheme="https://blog.tlhub.cn/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VoodooI2C 触摸板驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/782bfc5/"/>
+    <id>https://blog.tlhub.cn/posts/782bfc5/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T06:49:09.561Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;VoodooI2C 是一个由 macOS 内核扩展组成的项目，这些扩展支持 I2C 总线设备。该项目分为两个主要部分：Core -
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="VoodooI2C" scheme="https://blog.tlhub.cn/tags/VoodooI2C/"/>
+    
+      <category term="触摸板" scheme="https://blog.tlhub.cn/tags/%E8%A7%A6%E6%91%B8%E6%9D%BF/"/>
+    
+      <category term="I2C" scheme="https://blog.tlhub.cn/tags/I2C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VoodooHDA 万能声卡驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/b8a69837/"/>
+    <id>https://blog.tlhub.cn/posts/b8a69837/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:05:00.640Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;VoodooHDA 是适用于符合 Intel High Definition Audio 规范的设备的开源音频驱动程序。旨在替代 Mac
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="声卡" scheme="https://blog.tlhub.cn/tags/%E5%A3%B0%E5%8D%A1/"/>
+    
+      <category term="VoodooHDA" scheme="https://blog.tlhub.cn/tags/VoodooHDA/"/>
+    
+      <category term="万能" scheme="https://blog.tlhub.cn/tags/%E4%B8%87%E8%83%BD/"/>
+    
+      <category term="HDA" scheme="https://blog.tlhub.cn/tags/HDA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VoodooPS2 触摸板驱动</title>
+    <link href="https://blog.tlhub.cn/posts/9ebf3be3/"/>
+    <id>https://blog.tlhub.cn/posts/9ebf3be3/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T06:29:02.376Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;新的 VoodooPS2Trackpad 使用 VoodooInput 的 Magic Trackpad II 仿真，以使用 macOS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
+    
+      <category term="触摸板" scheme="https://blog.tlhub.cn/tags/%E8%A7%A6%E6%91%B8%E6%9D%BF/"/>
+    
+      <category term="VoodooPS2" scheme="https://blog.tlhub.cn/tags/VoodooPS2/"/>
+    
+      <category term="PS2" scheme="https://blog.tlhub.cn/tags/PS2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VoodooTSCSync 多核心时钟同步驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/bc2377b/"/>
+    <id>https://blog.tlhub.cn/posts/bc2377b/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T08:18:55.185Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;在 Intel CPU 上同步 TSC 的内核扩展。&lt;/p&gt;
+&lt;h2 id=&quot;版本历史&quot;&gt;&lt;a href=&quot;#版本历史&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="VoodooTSCSync" scheme="https://blog.tlhub.cn/tags/VoodooTSCSync/"/>
+    
+      <category term="时钟同步" scheme="https://blog.tlhub.cn/tags/%E6%97%B6%E9%92%9F%E5%90%8C%E6%AD%A5/"/>
+    
+      <category term="TSC" scheme="https://blog.tlhub.cn/tags/TSC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>itlwm 英特尔无线网卡驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/9b8e1d8b/"/>
+    <id>https://blog.tlhub.cn/posts/9b8e1d8b/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T09:11:34.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;h3 id=&quot;当前进度&quot;&gt;&lt;a href=&quot;#当前进度&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="无线网卡" scheme="https://blog.tlhub.cn/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/"/>
+    
+      <category term="英特尔" scheme="https://blog.tlhub.cn/tags/%E8%8B%B1%E7%89%B9%E5%B0%94/"/>
+    
+      <category term="itlwm" scheme="https://blog.tlhub.cn/tags/itlwm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PCIE 读卡器驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/22c1706d/"/>
+    <id>https://blog.tlhub.cn/posts/22c1706d/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T09:08:01.964Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;macOS 瑞昱读卡器驱动。&lt;/p&gt;
+&lt;h2 id=&quot;下载链接&quot;&gt;&lt;a href=&quot;#下载链接&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="读卡器" scheme="https://blog.tlhub.cn/tags/%E8%AF%BB%E5%8D%A1%E5%99%A8/"/>
+    
+      <category term="SD Card" scheme="https://blog.tlhub.cn/tags/SD-Card/"/>
+    
+      <category term="Sinetek-rtsx" scheme="https://blog.tlhub.cn/tags/Sinetek-rtsx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lilu 插件库汇总</title>
+    <link href="https://blog.tlhub.cn/posts/a55bb4d1/"/>
+    <id>https://blog.tlhub.cn/posts/a55bb4d1/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-06T10:48:26.207Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;h3 id=&quot;描述&quot;&gt;&lt;a href=&quot;#描述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
+    
+      <category term="Lilu" scheme="https://blog.tlhub.cn/tags/Lilu/"/>
+    
+  </entry>
   
   <entry>
     <title>常用驱动工具及引导程序下载</title>
@@ -42,591 +640,6 @@
     
     
       <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Openldap 数据迁移</title>
-    <link href="https://blog.tlhub.cn/posts/f2ee8d2/"/>
-    <id>https://blog.tlhub.cn/posts/f2ee8d2/</id>
-    <published>2019-08-11T14:03:49.000Z</published>
-    <updated>2020-04-30T05:23:37.255Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;# slapcat &gt; ldapbak.ldif 
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="openldap" scheme="https://blog.tlhub.cn/tags/openldap/"/>
-    
-      <category term="数据迁移" scheme="https://blog.tlhub.cn/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7 Docker 镜像使用 systemd 服务</title>
-    <link href="https://blog.tlhub.cn/posts/2e815177/"/>
-    <id>https://blog.tlhub.cn/posts/2e815177/</id>
-    <published>2019-08-11T14:00:16.000Z</published>
-    <updated>2020-04-30T03:17:30.137Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Dockerfile&quot;&gt;&lt;a href=&quot;#Dockerfile&quot; class=&quot;headerlink&quot; title=&quot;Dockerfile&quot;&gt;&lt;/a&gt;Dockerfile&lt;/h1&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Docker" scheme="https://blog.tlhub.cn/categories/Docker/"/>
-    
-    
-      <category term="docker" scheme="https://blog.tlhub.cn/tags/docker/"/>
-    
-      <category term="centos" scheme="https://blog.tlhub.cn/tags/centos/"/>
-    
-      <category term="systemd" scheme="https://blog.tlhub.cn/tags/systemd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tomcat SonarQube Gerrit 设置 systemd 服务</title>
-    <link href="https://blog.tlhub.cn/posts/e99da1ce/"/>
-    <id>https://blog.tlhub.cn/posts/e99da1ce/</id>
-    <published>2019-08-11T13:55:08.000Z</published>
-    <updated>2020-04-30T05:23:37.270Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Tomcat&quot;&gt;&lt;a href=&quot;#Tomcat&quot; class=&quot;headerlink&quot; title=&quot;Tomcat&quot;&gt;&lt;/a&gt;Tomcat&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="systemd" scheme="https://blog.tlhub.cn/tags/systemd/"/>
-    
-      <category term="tomcat" scheme="https://blog.tlhub.cn/tags/tomcat/"/>
-    
-      <category term="sonar" scheme="https://blog.tlhub.cn/tags/sonar/"/>
-    
-      <category term="sonarqube" scheme="https://blog.tlhub.cn/tags/sonarqube/"/>
-    
-      <category term="gerrit" scheme="https://blog.tlhub.cn/tags/gerrit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx 开启目录浏览功能</title>
-    <link href="https://blog.tlhub.cn/posts/76e49441/"/>
-    <id>https://blog.tlhub.cn/posts/76e49441/</id>
-    <published>2019-08-11T13:53:09.000Z</published>
-    <updated>2020-04-30T05:23:37.258Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;编辑 nginx 配置文件&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;vim
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="nginx" scheme="https://blog.tlhub.cn/tags/nginx/"/>
-    
-      <category term="目录浏览" scheme="https://blog.tlhub.cn/tags/%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>修复 Hexo 微博图床图片链接失效问题</title>
-    <link href="https://blog.tlhub.cn/posts/5b49af5f/"/>
-    <id>https://blog.tlhub.cn/posts/5b49af5f/</id>
-    <published>2019-08-11T13:49:22.000Z</published>
-    <updated>2020-05-03T02:56:39.355Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;修改主题 head 文件&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/categories/Hackintosh/"/>
-    
-    
-      <category term="图床" scheme="https://blog.tlhub.cn/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查看当前系统是虚拟机还是实体机</title>
-    <link href="https://blog.tlhub.cn/posts/87e03a7e/"/>
-    <id>https://blog.tlhub.cn/posts/87e03a7e/</id>
-    <published>2019-08-11T13:47:02.000Z</published>
-    <updated>2020-04-30T03:13:47.063Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dmidecode -s system-product-name&lt;span aria-hidden=&quot;true&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>设置 postgresql 通过密码登录</title>
-    <link href="https://blog.tlhub.cn/posts/370d1eee/"/>
-    <id>https://blog.tlhub.cn/posts/370d1eee/</id>
-    <published>2019-08-11T13:44:43.000Z</published>
-    <updated>2020-04-30T05:23:37.286Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;修改文件 pg_hba.conf&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class=&quot;line-numbers language-properties&quot;&gt;&lt;code class=&quot;language-properties&quot;&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="postgresql" scheme="https://blog.tlhub.cn/tags/postgresql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 部署配置 Redmine</title>
-    <link href="https://blog.tlhub.cn/posts/3dd29769/"/>
-    <id>https://blog.tlhub.cn/posts/3dd29769/</id>
-    <published>2019-08-11T13:38:16.000Z</published>
-    <updated>2020-04-30T05:23:37.283Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;安装-Ruby-2-4&quot;&gt;&lt;a href=&quot;#安装-Ruby-2-4&quot; class=&quot;headerlink&quot; title=&quot;安装 Ruby 2.4&quot;&gt;&lt;/a&gt;安装 Ruby 2.4&lt;/h2&gt;&lt;pre class=&quot;line-numbers
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="Redmine" scheme="https://blog.tlhub.cn/tags/Redmine/"/>
-    
-      <category term="项目管理" scheme="https://blog.tlhub.cn/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="敏捷开发" scheme="https://blog.tlhub.cn/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 安装配置 GitLab</title>
-    <link href="https://blog.tlhub.cn/posts/35bb9d15/"/>
-    <id>https://blog.tlhub.cn/posts/35bb9d15/</id>
-    <published>2019-02-01T02:55:52.000Z</published>
-    <updated>2020-04-30T05:23:37.273Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;CentOS-安装-GitLab&quot;&gt;&lt;a href=&quot;#CentOS-安装-GitLab&quot; class=&quot;headerlink&quot; title=&quot;CentOS 安装 GitLab&quot;&gt;&lt;/a&gt;CentOS 安装 GitLab&lt;/h2&gt;&lt;h2 id=&quot;安装依赖&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="GitLab" scheme="https://blog.tlhub.cn/tags/GitLab/"/>
-    
-      <category term="frame" scheme="https://blog.tlhub.cn/tags/frame/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高效利用有道云笔记</title>
-    <link href="https://blog.tlhub.cn/posts/e7c2bc73/"/>
-    <id>https://blog.tlhub.cn/posts/e7c2bc73/</id>
-    <published>2019-01-20T13:12:25.000Z</published>
-    <updated>2020-04-30T05:37:42.420Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Study" scheme="https://blog.tlhub.cn/categories/Study/"/>
-    
-    
-      <category term="图床" scheme="https://blog.tlhub.cn/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-      <category term="有道云笔记" scheme="https://blog.tlhub.cn/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Picbed" scheme="https://blog.tlhub.cn/tags/Picbed/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestLink 整合 LDAP 和 CAS 单点登录</title>
-    <link href="https://blog.tlhub.cn/posts/7873bd56/"/>
-    <id>https://blog.tlhub.cn/posts/7873bd56/</id>
-    <published>2018-12-04T06:55:56.000Z</published>
-    <updated>2020-04-30T05:23:37.288Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;TestLink 版本：2.18&lt;/li&gt;
-&lt;li&gt;TestLink URL：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
-    
-    
-      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
-    
-      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
-    
-      <category term="TestLink" scheme="https://blog.tlhub.cn/tags/TestLink/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MantisBT 整合 LDAP 和 CAS 单点登录</title>
-    <link href="https://blog.tlhub.cn/posts/4b6afd89/"/>
-    <id>https://blog.tlhub.cn/posts/4b6afd89/</id>
-    <published>2018-12-03T07:07:11.000Z</published>
-    <updated>2020-04-30T05:23:37.256Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;MantisBT 版本：2.18&lt;/li&gt;
-&lt;li&gt;Mantis URL：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
-    
-    
-      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
-    
-      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
-    
-      <category term="MantisBT" scheme="https://blog.tlhub.cn/tags/MantisBT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gerrit 整合 ldap 和 CAS 单点登录</title>
-    <link href="https://blog.tlhub.cn/posts/16f4a18f/"/>
-    <id>https://blog.tlhub.cn/posts/16f4a18f/</id>
-    <published>2018-12-03T01:42:41.000Z</published>
-    <updated>2020-04-30T05:23:37.290Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Gerrit 版本：2.16&lt;/li&gt;
-&lt;li&gt;Gerrit URL：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
-    
-      <category term="Gerrit" scheme="https://blog.tlhub.cn/tags/Gerrit/"/>
-    
-      <category term="ldap" scheme="https://blog.tlhub.cn/tags/ldap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SonarQube 整合 LDAP 和 CAS 单点登录</title>
-    <link href="https://blog.tlhub.cn/posts/4ee518bd/"/>
-    <id>https://blog.tlhub.cn/posts/4ee518bd/</id>
-    <published>2018-11-30T05:23:17.000Z</published>
-    <updated>2020-04-30T05:23:37.273Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
-    
-    
-      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
-    
-      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
-    
-      <category term="SonarQube" scheme="https://blog.tlhub.cn/tags/SonarQube/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jenkins 整合 LDAP 以及 CAS 单点登录</title>
-    <link href="https://blog.tlhub.cn/posts/7a8d1bd5/"/>
-    <id>https://blog.tlhub.cn/posts/7a8d1bd5/</id>
-    <published>2018-11-30T02:17:09.000Z</published>
-    <updated>2020-04-30T05:23:37.267Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Jenkins 版本：2.138.3&lt;/li&gt;
-&lt;li&gt;Jenkins 安装方式： Tomcat 容器部署
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
-    
-    
-      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
-    
-      <category term="Jenkins" scheme="https://blog.tlhub.cn/tags/Jenkins/"/>
-    
-      <category term="LDAP" scheme="https://blog.tlhub.cn/tags/LDAP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS安装部署 openLDAP</title>
-    <link href="https://blog.tlhub.cn/posts/ba648987/"/>
-    <id>https://blog.tlhub.cn/posts/ba648987/</id>
-    <published>2018-11-24T14:17:41.000Z</published>
-    <updated>2020-04-30T05:23:37.269Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;OpenLDAP 是轻型目录访问协议&lt;code&gt;Lightweight Directory Access Protocol&lt;/code&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="openLDAP" scheme="https://blog.tlhub.cn/tags/openLDAP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CAS 5.3.4 安装部署</title>
-    <link href="https://blog.tlhub.cn/posts/a9996dc0/"/>
-    <id>https://blog.tlhub.cn/posts/a9996dc0/</id>
-    <published>2018-11-24T12:59:49.000Z</published>
-    <updated>2020-05-03T02:56:39.354Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;code&gt;CAS&lt;/code&gt;全称&lt;code&gt;Central Authentication
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
-    
-    
-      <category term="CAS" scheme="https://blog.tlhub.cn/tags/CAS/"/>
-    
-      <category term="5.3.4" scheme="https://blog.tlhub.cn/tags/5-3-4/"/>
-    
-      <category term="单点登录" scheme="https://blog.tlhub.cn/tags/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 7 安装部署邮件服务器</title>
-    <link href="https://blog.tlhub.cn/posts/41575d45/"/>
-    <id>https://blog.tlhub.cn/posts/41575d45/</id>
-    <published>2018-10-19T13:31:24.000Z</published>
-    <updated>2020-04-30T05:23:37.299Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;本文环境&quot;&gt;&lt;a href=&quot;#本文环境&quot; class=&quot;headerlink&quot; title=&quot;本文环境&quot;&gt;&lt;/a&gt;本文环境&lt;/h1&gt;&lt;p&gt;CentOS 7.2 1511&lt;/p&gt;
-&lt;h1 id=&quot;开始安装&quot;&gt;&lt;a href=&quot;#开始安装&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
-    
-    
-      <category term="运维" scheme="https://blog.tlhub.cn/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-      <category term="Linux" scheme="https://blog.tlhub.cn/tags/Linux/"/>
-    
-      <category term="SMTP" scheme="https://blog.tlhub.cn/tags/SMTP/"/>
-    
-      <category term="Mail Server" scheme="https://blog.tlhub.cn/tags/Mail-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TestLink安装部署</title>
-    <link href="https://blog.tlhub.cn/posts/676ab03b/"/>
-    <id>https://blog.tlhub.cn/posts/676ab03b/</id>
-    <published>2018-08-26T11:51:29.000Z</published>
-    <updated>2020-04-30T05:23:37.253Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;TestLink安装部署&quot;&gt;&lt;a href=&quot;#TestLink安装部署&quot; class=&quot;headerlink&quot; title=&quot;TestLink安装部署&quot;&gt;&lt;/a&gt;&lt;center&gt;TestLink安装部署&lt;/center&gt;&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="CI" scheme="https://blog.tlhub.cn/categories/CI/"/>
-    
-    
-      <category term="TestLink" scheme="https://blog.tlhub.cn/tags/TestLink/"/>
     
   </entry>
   
