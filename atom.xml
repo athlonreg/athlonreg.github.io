@@ -615,11 +615,11 @@
   </entry>
   
   <entry>
-    <title>常用驱动工具及引导程序下载</title>
-    <link href="https://blog.tlhub.cn/posts/79b9ead4/"/>
-    <id>https://blog.tlhub.cn/posts/79b9ead4/</id>
-    <published>2020-04-30T02:35:28.000Z</published>
-    <updated>2020-05-06T03:20:34.794Z</updated>
+    <title>SMCAMDProcessor 驱动汇总</title>
+    <link href="https://blog.tlhub.cn/posts/9c3a3a6a/"/>
+    <id>https://blog.tlhub.cn/posts/9c3a3a6a/</id>
+    <published>2020-05-01T05:54:23.000Z</published>
+    <updated>2020-05-07T01:36:45.282Z</updated>
     
     <summary type="html">
     
@@ -627,19 +627,19 @@
       
         
         
-          &lt;ul&gt;
-&lt;li&gt;OpenCorePkg – 2020-5-6&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/athlonreg/hacktools/OpenCorePkg/OpenCore-0.0.4-DEBUG.zip&quot;
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;针对 AMD 处理器电源管理的 XNU 内核扩展。还带有&lt;a
         
       
     
     </summary>
     
     
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/categories/Hackintosh/"/>
+      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
+      <category term="CPUTune" scheme="https://blog.tlhub.cn/tags/CPUTune/"/>
+    
+      <category term="Turbo Boost" scheme="https://blog.tlhub.cn/tags/Turbo-Boost/"/>
     
   </entry>
   
