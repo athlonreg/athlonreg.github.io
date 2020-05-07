@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-06T10:53:22.481Z</updated>
+  <updated>2020-05-07T02:24:09.127Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Backgrounds v7.5 动态桌面工具</title>
+    <link href="https://blog.tlhub.cn/posts/4e6ad267/"/>
+    <id>https://blog.tlhub.cn/posts/4e6ad267/</id>
+    <published>2020-05-07T02:09:23.000Z</published>
+    <updated>2020-05-07T02:24:09.127Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;Backgrounds 通过 6 个主题使您的桌面动态化：iTunes，Parallax，Quartz，Video, System 和
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Backgrounds" scheme="https://blog.tlhub.cn/tags/Backgrounds/"/>
+    
+      <category term="动态壁纸" scheme="https://blog.tlhub.cn/tags/%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8/"/>
+    
+      <category term="动态桌面" scheme="https://blog.tlhub.cn/tags/%E5%8A%A8%E6%80%81%E6%A1%8C%E9%9D%A2/"/>
+    
+      <category term="视频壁纸" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91%E5%A3%81%E7%BA%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CloudMounter v3.6 网盘挂载工具</title>
+    <link href="https://blog.tlhub.cn/posts/ae60fa93/"/>
+    <id>https://blog.tlhub.cn/posts/ae60fa93/</id>
+    <published>2020-05-07T02:09:23.000Z</published>
+    <updated>2020-05-07T02:22:42.975Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;CloudMounter 允许您通过 Mac 的 Finder 访问和管理数据，从而使使用多种云存储服务变得容易。CloudMounter
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="CloudMounter" scheme="https://blog.tlhub.cn/tags/CloudMounter/"/>
+    
+      <category term="网盘" scheme="https://blog.tlhub.cn/tags/%E7%BD%91%E7%9B%98/"/>
+    
+      <category term="OneDrive" scheme="https://blog.tlhub.cn/tags/OneDrive/"/>
+    
+      <category term="Google Drive" scheme="https://blog.tlhub.cn/tags/Google-Drive/"/>
+    
+      <category term="OpenStack Swift" scheme="https://blog.tlhub.cn/tags/OpenStack-Swift/"/>
+    
+      <category term="Amazon S3" scheme="https://blog.tlhub.cn/tags/Amazon-S3/"/>
+    
+      <category term="Dropbox" scheme="https://blog.tlhub.cn/tags/Dropbox/"/>
+    
+  </entry>
   
   <entry>
     <title>ACPIBatteryManager 电池驱动汇总</title>
@@ -582,70 +654,6 @@
       <category term="SD Card" scheme="https://blog.tlhub.cn/tags/SD-Card/"/>
     
       <category term="Sinetek-rtsx" scheme="https://blog.tlhub.cn/tags/Sinetek-rtsx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lilu 插件库汇总</title>
-    <link href="https://blog.tlhub.cn/posts/a55bb4d1/"/>
-    <id>https://blog.tlhub.cn/posts/a55bb4d1/</id>
-    <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T10:52:33.468Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;h3 id=&quot;描述&quot;&gt;&lt;a href=&quot;#描述&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
-    
-    
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
-    
-      <category term="Lilu" scheme="https://blog.tlhub.cn/tags/Lilu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SMCAMDProcessor AMD 电源管理驱动</title>
-    <link href="https://blog.tlhub.cn/posts/79481b49/"/>
-    <id>https://blog.tlhub.cn/posts/79481b49/</id>
-    <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-07T01:56:34.655Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;针对 AMD 处理器电源管理的 XNU 内核扩展。还带有&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
-    
-    
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
-    
-      <category term="SMC" scheme="https://blog.tlhub.cn/tags/SMC/"/>
-    
-      <category term="电源管理" scheme="https://blog.tlhub.cn/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="SMCAMDProcessor" scheme="https://blog.tlhub.cn/tags/SMCAMDProcessor/"/>
-    
-      <category term="AMD" scheme="https://blog.tlhub.cn/tags/AMD/"/>
     
   </entry>
   
