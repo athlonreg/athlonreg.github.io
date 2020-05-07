@@ -112,7 +112,7 @@
     <link href="https://blog.tlhub.cn/posts/9c3a3a6a/"/>
     <id>https://blog.tlhub.cn/posts/9c3a3a6a/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-06T10:53:35.042Z</updated>
+    <updated>2020-05-07T01:50:25.841Z</updated>
     
     <summary type="html">
     
@@ -615,11 +615,11 @@
   </entry>
   
   <entry>
-    <title>SMCAMDProcessor 驱动汇总</title>
-    <link href="https://blog.tlhub.cn/posts/9c3a3a6a/"/>
-    <id>https://blog.tlhub.cn/posts/9c3a3a6a/</id>
+    <title>SMCAMDProcessor AMD 电源管理驱动</title>
+    <link href="https://blog.tlhub.cn/posts/79481b49/"/>
+    <id>https://blog.tlhub.cn/posts/79481b49/</id>
     <published>2020-05-01T05:54:23.000Z</published>
-    <updated>2020-05-07T01:36:45.282Z</updated>
+    <updated>2020-05-07T01:55:51.547Z</updated>
     
     <summary type="html">
     
@@ -637,9 +637,15 @@
       <category term="Kext" scheme="https://blog.tlhub.cn/categories/Kext/"/>
     
     
-      <category term="CPUTune" scheme="https://blog.tlhub.cn/tags/CPUTune/"/>
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
     
-      <category term="Turbo Boost" scheme="https://blog.tlhub.cn/tags/Turbo-Boost/"/>
+      <category term="SMC" scheme="https://blog.tlhub.cn/tags/SMC/"/>
+    
+      <category term="电源管理" scheme="https://blog.tlhub.cn/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="SMCAMDProcessor" scheme="https://blog.tlhub.cn/tags/SMCAMDProcessor/"/>
+    
+      <category term="AMD" scheme="https://blog.tlhub.cn/tags/AMD/"/>
     
   </entry>
   
