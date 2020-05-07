@@ -592,6 +592,35 @@
     
     
     <entry>
+      <title>Clover 四叶草引导</title>
+      <link href="/posts/c5894244/"/>
+      <url>/posts/c5894244/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>macOS、 Windows 和 Linux 的 UEFI、legacy 模式引导程序。</p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title="版本历史"></a>版本历史</h2><h3 id="5116"><a href="#5116" class="headerlink" title="5116"></a>5116</h3><ul><li>Use symbolic methods for main internal patches for more insurance they will work in new systems.<br>Multiple GUI bugs eliminating.</li></ul><h3 id="5115"><a href="#5115" class="headerlink" title="5115"></a>5115</h3><ul><li>Introduced symbolic kext and kernel patcher.<br>Fixed GUI glitches and other bugs.</li></ul><h2 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bd6m8h" target="_blank" rel="noopener">https://taolu.lanzous.com/b01bd6m8h</a><br>密码: g1xf</p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title="资源来源"></a>资源来源</h2><p><a href="https://github.com/CloverHackyColor/CloverBootloader" target="_blank" rel="noopener">CloverBootloader</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Kext </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hackintosh </tag>
+            
+            <tag> Clover </tag>
+            
+            <tag> 四叶草 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用驱动工具及引导程序下载</title>
       <link href="/posts/79b9ead4/"/>
       <url>/posts/79b9ead4/</url>
