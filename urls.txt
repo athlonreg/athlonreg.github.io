@@ -41,8 +41,8 @@ https://blog.tlhub.cn/SMCAMDProcessor.html
 https://blog.tlhub.cn/Sinetek-rtsx.html
 https://blog.tlhub.cn/VoodooHDA.html
 https://blog.tlhub.cn/VoodooI2C.html
-https://blog.tlhub.cn/VoodooPS2.html
 https://blog.tlhub.cn/VoodooTSCSync.html
+https://blog.tlhub.cn/VoodooPS2.html
 https://blog.tlhub.cn/itlwm.html
 https://blog.tlhub.cn/Lilu.html
 https://blog.tlhub.cn/hackintosh-tools.html
@@ -93,8 +93,8 @@ https://blog.tlhub.cn/RW-NTFS-partition-natively-on-macOS.html
 https://blog.tlhub.cn/Common-Keyboard-shortcut-in-macOS.html
 https://blog.tlhub.cn/Disable-the-discrete-GPU-in-laptop.html
 https://blog.tlhub.cn/Problem-about-Sending-out-death-squads.html
-https://blog.tlhub.cn/Problem-about-rollover-price-tag.html
 https://blog.tlhub.cn/Problem-about-police-and-gangster-110.html
+https://blog.tlhub.cn/Problem-about-rollover-price-tag.html
 https://blog.tlhub.cn/Allow-apps-downloaded-from-anywhere-in-macOS.html
 https://blog.tlhub.cn/Problem-about-low-carbon-lifestyle-answering.html
 https://blog.tlhub.cn/How-to-use-xcode-select-in-terminal.html
