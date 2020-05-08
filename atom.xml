@@ -18,8 +18,8 @@
   
   <entry>
     <title>Bartender 最好用的菜单栏管理工具</title>
-    <link href="https://blog.tlhub.cn/posts/689fae9b/"/>
-    <id>https://blog.tlhub.cn/posts/689fae9b/</id>
+    <link href="https://blog.tlhub.cn/Bartender.html"/>
+    <id>https://blog.tlhub.cn/Bartender.html</id>
     <published>2020-05-07T03:28:00.000Z</published>
     <updated>2020-05-07T07:31:13.599Z</updated>
     
@@ -47,8 +47,8 @@
   
   <entry>
     <title>FixEDID</title>
-    <link href="https://blog.tlhub.cn/posts/d7bd9677/"/>
-    <id>https://blog.tlhub.cn/posts/d7bd9677/</id>
+    <link href="https://blog.tlhub.cn/FixEDID.html"/>
+    <id>https://blog.tlhub.cn/FixEDID.html</id>
     <published>2020-05-07T03:27:51.000Z</published>
     <updated>2020-05-07T07:30:28.424Z</updated>
     
@@ -77,8 +77,8 @@
   
   <entry>
     <title>iStatMenus</title>
-    <link href="https://blog.tlhub.cn/posts/65597d45/"/>
-    <id>https://blog.tlhub.cn/posts/65597d45/</id>
+    <link href="https://blog.tlhub.cn/iStatMenus.html"/>
+    <id>https://blog.tlhub.cn/iStatMenus.html</id>
     <published>2020-05-07T03:27:44.000Z</published>
     <updated>2020-05-07T07:30:28.436Z</updated>
     
@@ -111,8 +111,8 @@
   
   <entry>
     <title>DarwinDumper 信息收集工具</title>
-    <link href="https://blog.tlhub.cn/posts/9cb59c09/"/>
-    <id>https://blog.tlhub.cn/posts/9cb59c09/</id>
+    <link href="https://blog.tlhub.cn/DarwinDumper.html"/>
+    <id>https://blog.tlhub.cn/DarwinDumper.html</id>
     <published>2020-05-07T03:27:36.000Z</published>
     <updated>2020-05-07T07:30:28.425Z</updated>
     
@@ -140,8 +140,8 @@
   
   <entry>
     <title>IOJones IOReg 信息查看工具</title>
-    <link href="https://blog.tlhub.cn/posts/ec9c5209/"/>
-    <id>https://blog.tlhub.cn/posts/ec9c5209/</id>
+    <link href="https://blog.tlhub.cn/IOJones.html"/>
+    <id>https://blog.tlhub.cn/IOJones.html</id>
     <published>2020-05-07T03:27:29.000Z</published>
     <updated>2020-05-07T07:30:28.426Z</updated>
     
@@ -172,8 +172,8 @@
   
   <entry>
     <title>Mos 鼠标增强工具</title>
-    <link href="https://blog.tlhub.cn/posts/598f8eb3/"/>
-    <id>https://blog.tlhub.cn/posts/598f8eb3/</id>
+    <link href="https://blog.tlhub.cn/Mos.html"/>
+    <id>https://blog.tlhub.cn/Mos.html</id>
     <published>2020-05-07T03:27:23.000Z</published>
     <updated>2020-05-07T07:30:28.428Z</updated>
     
@@ -202,8 +202,8 @@
   
   <entry>
     <title>MaciASL ACPI 编辑工具</title>
-    <link href="https://blog.tlhub.cn/posts/86f26ea6/"/>
-    <id>https://blog.tlhub.cn/posts/86f26ea6/</id>
+    <link href="https://blog.tlhub.cn/MaciASL.html"/>
+    <id>https://blog.tlhub.cn/MaciASL.html</id>
     <published>2020-05-07T03:27:19.000Z</published>
     <updated>2020-05-07T07:30:28.427Z</updated>
     
@@ -224,11 +224,11 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
+      <category term="MaciASL" scheme="https://blog.tlhub.cn/tags/MaciASL/"/>
+    
       <category term="ACPI" scheme="https://blog.tlhub.cn/tags/ACPI/"/>
     
       <category term="SSDT" scheme="https://blog.tlhub.cn/tags/SSDT/"/>
-    
-      <category term="MaciASL" scheme="https://blog.tlhub.cn/tags/MaciASL/"/>
     
       <category term="DSDT" scheme="https://blog.tlhub.cn/tags/DSDT/"/>
     
@@ -236,8 +236,8 @@
   
   <entry>
     <title>PlistEditPro Plist 文件编辑器</title>
-    <link href="https://blog.tlhub.cn/posts/7596a060/"/>
-    <id>https://blog.tlhub.cn/posts/7596a060/</id>
+    <link href="https://blog.tlhub.cn/PlistEditPro.html"/>
+    <id>https://blog.tlhub.cn/PlistEditPro.html</id>
     <published>2020-05-07T03:27:10.000Z</published>
     <updated>2020-05-07T07:30:28.432Z</updated>
     
@@ -270,8 +270,8 @@
   
   <entry>
     <title>iTerm2</title>
-    <link href="https://blog.tlhub.cn/posts/10a3695f/"/>
-    <id>https://blog.tlhub.cn/posts/10a3695f/</id>
+    <link href="https://blog.tlhub.cn/iTerm.html"/>
+    <id>https://blog.tlhub.cn/iTerm.html</id>
     <published>2020-05-07T03:27:01.000Z</published>
     <updated>2020-05-07T07:30:28.437Z</updated>
     
@@ -301,8 +301,8 @@
   
   <entry>
     <title>CPU-S CPU 频率检测工具</title>
-    <link href="https://blog.tlhub.cn/posts/540a5c27/"/>
-    <id>https://blog.tlhub.cn/posts/540a5c27/</id>
+    <link href="https://blog.tlhub.cn/CPU-S.html"/>
+    <id>https://blog.tlhub.cn/CPU-S.html</id>
     <published>2020-05-07T03:26:56.000Z</published>
     <updated>2020-05-07T07:30:28.418Z</updated>
     
@@ -331,8 +331,8 @@
   
   <entry>
     <title>CodeRunner 万能好用的编辑器</title>
-    <link href="https://blog.tlhub.cn/posts/b6067110/"/>
-    <id>https://blog.tlhub.cn/posts/b6067110/</id>
+    <link href="https://blog.tlhub.cn/CodeRunner.html"/>
+    <id>https://blog.tlhub.cn/CodeRunner.html</id>
     <published>2020-05-07T03:26:50.000Z</published>
     <updated>2020-05-07T07:30:28.423Z</updated>
     
@@ -364,8 +364,8 @@
   
   <entry>
     <title>SublimeText 精致的文本编辑器</title>
-    <link href="https://blog.tlhub.cn/posts/ae70a39/"/>
-    <id>https://blog.tlhub.cn/posts/ae70a39/</id>
+    <link href="https://blog.tlhub.cn/SublimeText.html"/>
+    <id>https://blog.tlhub.cn/SublimeText.html</id>
     <published>2020-05-07T03:26:43.000Z</published>
     <updated>2020-05-07T07:30:28.431Z</updated>
     
@@ -396,8 +396,8 @@
   
   <entry>
     <title>TeamViewer 远程桌面工具</title>
-    <link href="https://blog.tlhub.cn/posts/9fd39c9b/"/>
-    <id>https://blog.tlhub.cn/posts/9fd39c9b/</id>
+    <link href="https://blog.tlhub.cn/TeamViewer.html"/>
+    <id>https://blog.tlhub.cn/TeamViewer.html</id>
     <published>2020-05-07T03:26:34.000Z</published>
     <updated>2020-05-07T07:30:28.434Z</updated>
     
@@ -427,8 +427,8 @@
   
   <entry>
     <title>Tuxera NTFS 读写工具</title>
-    <link href="https://blog.tlhub.cn/posts/b1fa7868/"/>
-    <id>https://blog.tlhub.cn/posts/b1fa7868/</id>
+    <link href="https://blog.tlhub.cn/Tuxera.html"/>
+    <id>https://blog.tlhub.cn/Tuxera.html</id>
     <published>2020-05-07T03:26:27.000Z</published>
     <updated>2020-05-07T07:30:28.435Z</updated>
     
@@ -457,8 +457,8 @@
   
   <entry>
     <title>V2rayU mac 上好用的 v2ray 客户端</title>
-    <link href="https://blog.tlhub.cn/posts/fe89286a/"/>
-    <id>https://blog.tlhub.cn/posts/fe89286a/</id>
+    <link href="https://blog.tlhub.cn/V2RayU.html"/>
+    <id>https://blog.tlhub.cn/V2RayU.html</id>
     <published>2020-05-07T03:26:20.000Z</published>
     <updated>2020-05-07T07:30:28.433Z</updated>
     
@@ -492,8 +492,8 @@
   
   <entry>
     <title>Reeder 好用的 RSS 订阅工具</title>
-    <link href="https://blog.tlhub.cn/posts/9f5f06cc/"/>
-    <id>https://blog.tlhub.cn/posts/9f5f06cc/</id>
+    <link href="https://blog.tlhub.cn/Reeder.html"/>
+    <id>https://blog.tlhub.cn/Reeder.html</id>
     <published>2020-05-07T03:26:14.000Z</published>
     <updated>2020-05-07T07:30:28.429Z</updated>
     
@@ -524,8 +524,8 @@
   
   <entry>
     <title>PinConfigurator 声卡仿冒工具</title>
-    <link href="https://blog.tlhub.cn/posts/dd853e56/"/>
-    <id>https://blog.tlhub.cn/posts/dd853e56/</id>
+    <link href="https://blog.tlhub.cn/PinConfigurator.html"/>
+    <id>https://blog.tlhub.cn/PinConfigurator.html</id>
     <published>2020-05-07T03:26:03.000Z</published>
     <updated>2020-05-07T07:30:28.430Z</updated>
     
@@ -559,8 +559,8 @@
   
   <entry>
     <title>OpenCore Configurator 图形化 OpenCore 配置工具</title>
-    <link href="https://blog.tlhub.cn/posts/ac2838a7/"/>
-    <id>https://blog.tlhub.cn/posts/ac2838a7/</id>
+    <link href="https://blog.tlhub.cn/OpenCoreConfigurator.html"/>
+    <id>https://blog.tlhub.cn/OpenCoreConfigurator.html</id>
     <published>2020-05-07T03:25:55.000Z</published>
     <updated>2020-05-07T07:30:28.428Z</updated>
     
@@ -580,18 +580,18 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="OpenCorePkg" scheme="https://blog.tlhub.cn/tags/OpenCorePkg/"/>
+      <category term="OpenCore" scheme="https://blog.tlhub.cn/tags/OpenCore/"/>
     
       <category term="OC" scheme="https://blog.tlhub.cn/tags/OC/"/>
     
-      <category term="OpenCore" scheme="https://blog.tlhub.cn/tags/OpenCore/"/>
+      <category term="OpenCorePkg" scheme="https://blog.tlhub.cn/tags/OpenCorePkg/"/>
     
   </entry>
   
   <entry>
     <title>NoSleep 禁止睡眠工具</title>
-    <link href="https://blog.tlhub.cn/posts/6ccc196/"/>
-    <id>https://blog.tlhub.cn/posts/6ccc196/</id>
+    <link href="https://blog.tlhub.cn/NoSleep.html"/>
+    <id>https://blog.tlhub.cn/NoSleep.html</id>
     <published>2020-05-07T03:25:47.000Z</published>
     <updated>2020-05-07T07:30:28.430Z</updated>
     
@@ -621,8 +621,8 @@
   
   <entry>
     <title>Hackintool 黑果必备工具</title>
-    <link href="https://blog.tlhub.cn/posts/adcc6c71/"/>
-    <id>https://blog.tlhub.cn/posts/adcc6c71/</id>
+    <link href="https://blog.tlhub.cn/Hackintool.html"/>
+    <id>https://blog.tlhub.cn/Hackintool.html</id>
     <published>2020-05-07T03:25:39.000Z</published>
     <updated>2020-05-07T07:30:28.426Z</updated>
     
