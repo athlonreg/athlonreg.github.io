@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-07T07:31:13.599Z</updated>
+  <updated>2020-05-09T02:23:04.234Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Bartender 最好用的菜单栏管理工具</title>
-    <link href="https://blog.tlhub.cn/Bartender.html"/>
-    <id>https://blog.tlhub.cn/Bartender.html</id>
-    <published>2020-05-07T03:28:00.000Z</published>
-    <updated>2020-05-07T07:31:13.599Z</updated>
+    <title>Smooze 鼠标平滑滚动神器</title>
+    <link href="https://blog.tlhub.cn/Smooze.html"/>
+    <id>https://blog.tlhub.cn/Smooze.html</id>
+    <published>2020-05-09T02:02:57.000Z</published>
+    <updated>2020-05-09T02:23:04.234Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,65 @@
       
         
         
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;Smooze
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="鼠标增强" scheme="https://blog.tlhub.cn/tags/%E9%BC%A0%E6%A0%87%E5%A2%9E%E5%BC%BA/"/>
+    
+      <category term="Smooze" scheme="https://blog.tlhub.cn/tags/Smooze/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AdGuard for Mac 最高级的广告拦截程序</title>
+    <link href="https://blog.tlhub.cn/Adguard.html"/>
+    <id>https://blog.tlhub.cn/Adguard.html</id>
+    <published>2020-05-09T02:02:41.000Z</published>
+    <updated>2020-05-09T02:23:10.541Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;AdGuard for Mac 是世界上第一个专设计给 macOS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="AdGuard" scheme="https://blog.tlhub.cn/tags/AdGuard/"/>
+    
+      <category term="广告拦截" scheme="https://blog.tlhub.cn/tags/%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bartender 3 最好用的菜单栏管理工具</title>
+    <link href="https://blog.tlhub.cn/Bartender.html"/>
+    <id>https://blog.tlhub.cn/Bartender.html</id>
+    <published>2020-05-07T03:28:00.000Z</published>
+    <updated>2020-05-09T02:00:26.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;Bartender 3 是一款非常实用的 Menubar 菜单栏管理小助手。随着 Mac
         
       
     
@@ -585,68 +643,6 @@
       <category term="OC" scheme="https://blog.tlhub.cn/tags/OC/"/>
     
       <category term="OpenCorePkg" scheme="https://blog.tlhub.cn/tags/OpenCorePkg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NoSleep 禁止睡眠工具</title>
-    <link href="https://blog.tlhub.cn/NoSleep.html"/>
-    <id>https://blog.tlhub.cn/NoSleep.html</id>
-    <published>2020-05-07T03:25:47.000Z</published>
-    <updated>2020-05-07T07:30:28.430Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;让你的 mac 永远不休眠。有时候挂机下载大文件的时候，Mac 空闲一段时间自动锁定屏幕后 WiFi
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="NoSleep" scheme="https://blog.tlhub.cn/tags/NoSleep/"/>
-    
-      <category term="睡眠" scheme="https://blog.tlhub.cn/tags/%E7%9D%A1%E7%9C%A0/"/>
-    
-      <category term="休眠" scheme="https://blog.tlhub.cn/tags/%E4%BC%91%E7%9C%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hackintool 黑果必备工具</title>
-    <link href="https://blog.tlhub.cn/Hackintool.html"/>
-    <id>https://blog.tlhub.cn/Hackintool.html</id>
-    <published>2020-05-07T03:25:39.000Z</published>
-    <updated>2020-05-07T07:30:28.426Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;HackinTool 是一款由 headkaze 开发，并由 daliansky, Bat.bat, penghubingzhou
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="Hackintool" scheme="https://blog.tlhub.cn/tags/Hackintool/"/>
-    
-      <category term="瑞士军刀" scheme="https://blog.tlhub.cn/tags/%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80/"/>
-    
-      <category term="缓冲帧" scheme="https://blog.tlhub.cn/tags/%E7%BC%93%E5%86%B2%E5%B8%A7/"/>
     
   </entry>
   
