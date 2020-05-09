@@ -1,11 +1,16 @@
-User-agent: * Allow: /
+# https://blog.tlhub.cn robots.txt
+
+User-agent: * 
+Allow: /
+Allow: /home/
 Allow: /archives/
 Allow: /about/
-Allow: /categories/
-Allow: /contact/
-Allow: /friends/
-Allow: /tags/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /libs/
+Disallow: /vendors/
+Disallow: /fancybox/
 
-
-Sitemap: https://blog.cloudops.ml/sitemap.xml
-Sitemap: https://blog.cloudops.ml/baidusitemap.xml
+Sitemap: https://blog.tlhub.cn/sitemap.xml
+Sitemap: https://blog.tlhub.cn/baidusitemap.xml
