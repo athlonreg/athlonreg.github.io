@@ -2,9 +2,366 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
+    
+    <lastmod>2020-05-10T08:39:10.039Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    
+    <lastmod>2020-05-10T08:39:06.137Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CPUTune.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.711Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/FakeSMC.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.710Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.710Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/itlwm.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.710Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/NullCPUPowerManagement.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.709Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.709Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooTSCSync.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.709Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Clover.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.708Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.708Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Sinetek-rtsx.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.708Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CPU-S.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/ACPIBatteryManager.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/BT4LEContinuityFixup.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/V2RayU.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/iTerm.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/FakePCIID.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Ethernet.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Mos.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.702Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.702Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
+    
+    <lastmod>2020-05-10T08:39:00.701Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CodeRunner.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.933Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/DarwinDumper.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.931Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Tuxera.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.930Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/iStatMenus.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.930Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.928Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Adguard.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.927Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Bartender.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.927Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Downie.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.925Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.924Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Adobe-Zii.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.923Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Smooze.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.923Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/FixEDID.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.922Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/NoSleep.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.922Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.921Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Reeder.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.921Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/IOJones.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.920Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CloudMounter.html</loc>
+    
+    <lastmod>2020-05-10T08:35:50.919Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/PlistEditPro.html</loc>
+    
+    <lastmod>2020-05-10T08:33:15.502Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
+    
+    <lastmod>2020-05-10T08:33:00.141Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/SonarQube-integrate-with-ldap-and-CAS.html</loc>
+    
+    <lastmod>2020-05-10T08:29:50.278Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Common-Keyboard-shortcut-in-macOS.html</loc>
+    
+    <lastmod>2020-05-10T08:28:12.845Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
     
-    <lastmod>2020-05-10T07:43:52.169Z</lastmod>
+    <lastmod>2020-05-10T08:16:52.634Z</lastmod>
     
   </url>
   
@@ -16,349 +373,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Clover.html</loc>
-    
-    <lastmod>2020-05-09T09:52:07.882Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
-    
-    <lastmod>2020-05-09T09:51:23.565Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CloudMounter.html</loc>
-    
-    <lastmod>2020-05-09T09:50:03.116Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Adobe-Zii.html</loc>
-    
-    <lastmod>2020-05-09T09:49:05.660Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CPU-S.html</loc>
-    
-    <lastmod>2020-05-09T09:48:17.900Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
-    
-    <lastmod>2020-05-09T09:47:57.821Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/DarwinDumper.html</loc>
-    
-    <lastmod>2020-05-09T09:47:26.180Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/FixEDID.html</loc>
-    
-    <lastmod>2020-05-09T09:47:06.326Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    
-    <lastmod>2020-05-09T09:46:32.516Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CodeRunner.html</loc>
-    
-    <lastmod>2020-05-09T09:46:15.346Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
-    
-    <lastmod>2020-05-09T09:45:26.120Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/IOJones.html</loc>
-    
-    <lastmod>2020-05-09T09:45:08.674Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
-    
-    <lastmod>2020-05-09T09:44:51.037Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Mos.html</loc>
-    
-    <lastmod>2020-05-09T09:44:25.093Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    
-    <lastmod>2020-05-09T09:44:00.129Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Reeder.html</loc>
-    
-    <lastmod>2020-05-09T09:43:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/NoSleep.html</loc>
-    
-    <lastmod>2020-05-09T09:42:50.917Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
-    
-    <lastmod>2020-05-09T09:42:32.982Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
-    
-    <lastmod>2020-05-09T09:42:04.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/PlistEditPro.html</loc>
-    
-    <lastmod>2020-05-09T09:41:43.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/V2RayU.html</loc>
-    
-    <lastmod>2020-05-09T09:41:15.433Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Bartender.html</loc>
-    
-    <lastmod>2020-05-09T09:40:37.954Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
-    
-    <lastmod>2020-05-09T09:40:24.747Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
-    
-    <lastmod>2020-05-09T09:40:07.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Tuxera.html</loc>
-    
-    <lastmod>2020-05-09T09:39:41.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/ACPIBatteryManager.html</loc>
-    
-    <lastmod>2020-05-09T09:38:54.467Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/iStatMenus.html</loc>
-    
-    <lastmod>2020-05-09T09:38:13.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/iTerm.html</loc>
-    
-    <lastmod>2020-05-09T09:37:41.378Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Ethernet.html</loc>
-    
-    <lastmod>2020-05-09T09:35:37.710Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Smooze.html</loc>
-    
-    <lastmod>2020-05-09T02:23:29.426Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Adguard.html</loc>
-    
-    <lastmod>2020-05-09T02:23:29.421Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
-    
-    <lastmod>2020-05-07T01:56:34.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CPUTune.html</loc>
-    
-    <lastmod>2020-05-07T01:50:25.841Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/FakeSMC.html</loc>
-    
-    <lastmod>2020-05-06T10:54:02.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
-    
-    <lastmod>2020-05-06T10:53:58.619Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/FakePCIID.html</loc>
-    
-    <lastmod>2020-05-06T10:53:51.157Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
-    
-    <lastmod>2020-05-06T10:53:30.587Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/BT4LEContinuityFixup.html</loc>
-    
-    <lastmod>2020-05-06T10:53:26.630Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
-    
-    <lastmod>2020-05-06T10:53:16.710Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
-    
-    <lastmod>2020-05-06T10:53:13.477Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
-    
-    <lastmod>2020-05-06T10:53:07.997Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/NullCPUPowerManagement.html</loc>
-    
-    <lastmod>2020-05-06T10:53:03.149Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
-    
-    <lastmod>2020-05-06T10:52:58.858Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
-    
-    <lastmod>2020-05-06T10:52:55.316Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    
-    <lastmod>2020-05-06T10:52:50.681Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooTSCSync.html</loc>
-    
-    <lastmod>2020-05-06T10:52:46.480Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/itlwm.html</loc>
-    
-    <lastmod>2020-05-06T10:52:43.199Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Sinetek-rtsx.html</loc>
-    
-    <lastmod>2020-05-06T10:52:39.617Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
-    
-    <lastmod>2020-05-06T10:52:33.468Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
     
     <lastmod>2020-05-03T02:56:39.356Z</lastmod>
@@ -366,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     
     <lastmod>2020-05-03T02:56:39.355Z</lastmod>
     
@@ -380,7 +394,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
+    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
     
     <lastmod>2020-05-03T02:56:39.355Z</lastmod>
     
@@ -471,13 +485,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Common-Keyboard-shortcut-in-macOS.html</loc>
-    
-    <lastmod>2020-04-30T05:23:37.288Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/TestLink-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2020-04-30T05:23:37.288Z</lastmod>
@@ -563,13 +570,6 @@
   
   <url>
     <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>
-    
-    <lastmod>2020-04-30T05:23:37.273Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/SonarQube-integrate-with-ldap-and-CAS.html</loc>
     
     <lastmod>2020-04-30T05:23:37.273Z</lastmod>
     
