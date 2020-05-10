@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-09T02:23:29.426Z</updated>
+  <updated>2020-05-10T07:40:25.395Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Motrix 一款全能的下载工具</title>
+    <link href="https://blog.tlhub.cn/Motrix.html"/>
+    <id>https://blog.tlhub.cn/Motrix.html</id>
+    <published>2020-05-10T07:30:10.000Z</published>
+    <updated>2020-05-10T07:40:25.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;Motrix 是一款全能的下载工具，支持下载 HTTP、FTP、BT、磁力链、某盘等资源。它的界面简洁易用，希望大家喜欢
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Motrix" scheme="https://blog.tlhub.cn/tags/Motrix/"/>
+    
+      <category term="下载" scheme="https://blog.tlhub.cn/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="种子" scheme="https://blog.tlhub.cn/tags/%E7%A7%8D%E5%AD%90/"/>
+    
+      <category term="磁力链接" scheme="https://blog.tlhub.cn/tags/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>Smooze 鼠标平滑滚动神器</title>
@@ -612,37 +645,6 @@
       <category term="PinConfigurator" scheme="https://blog.tlhub.cn/tags/PinConfigurator/"/>
     
       <category term="仿冒" scheme="https://blog.tlhub.cn/tags/%E4%BB%BF%E5%86%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OpenCore Configurator 图形化 OpenCore 配置工具</title>
-    <link href="https://blog.tlhub.cn/OpenCoreConfigurator.html"/>
-    <id>https://blog.tlhub.cn/OpenCoreConfigurator.html</id>
-    <published>2020-05-07T03:25:55.000Z</published>
-    <updated>2020-05-09T09:44:00.129Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;OpenCore 是非常优秀的开源软件，旨在通过提供更加通用和模块化的系统来解决 Clover 带来的限制和问题，拦截内核加载以插入高级的
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="OpenCore" scheme="https://blog.tlhub.cn/tags/OpenCore/"/>
-    
-      <category term="OC" scheme="https://blog.tlhub.cn/tags/OC/"/>
-    
-      <category term="OpenCorePkg" scheme="https://blog.tlhub.cn/tags/OpenCorePkg/"/>
     
   </entry>
   
