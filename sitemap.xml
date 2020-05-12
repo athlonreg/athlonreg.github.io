@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Sketch.html</loc>
+    
+    <lastmod>2020-05-12T11:46:13.381Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-05-12T11:43:57.680Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/UEFITool.html</loc>
+    
+    <lastmod>2020-05-12T11:37:53.550Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-05-12T11:28:10.675Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
     
     <lastmod>2020-05-11T16:13:39.054Z</lastmod>
@@ -12,13 +40,6 @@
     <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
     
     <lastmod>2020-05-11T16:13:26.929Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-05-11T14:36:45.133Z</lastmod>
     
   </url>
   

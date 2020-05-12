@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-11T16:13:26.929Z</updated>
+  <updated>2020-05-12T11:46:13.381Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sketch 轻量易用的矢量设计工具</title>
+    <link href="https://blog.tlhub.cn/Sketch.html"/>
+    <id>https://blog.tlhub.cn/Sketch.html</id>
+    <published>2020-05-12T11:32:17.000Z</published>
+    <updated>2020-05-12T11:46:13.381Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Sketch
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="设计" scheme="https://blog.tlhub.cn/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="Sketch" scheme="https://blog.tlhub.cn/tags/Sketch/"/>
+    
+      <category term="UI" scheme="https://blog.tlhub.cn/tags/UI/"/>
+    
+      <category term="矢量" scheme="https://blog.tlhub.cn/tags/%E7%9F%A2%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UEFITool 专业高效的 BIOS 图形化软件</title>
+    <link href="https://blog.tlhub.cn/UEFITool.html"/>
+    <id>https://blog.tlhub.cn/UEFITool.html</id>
+    <published>2020-05-12T11:28:34.000Z</published>
+    <updated>2020-05-12T11:37:53.550Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;UEFITool
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="UEFITool" scheme="https://blog.tlhub.cn/tags/UEFITool/"/>
+    
+      <category term="UEFI" scheme="https://blog.tlhub.cn/tags/UEFI/"/>
+    
+      <category term="BIOS" scheme="https://blog.tlhub.cn/tags/BIOS/"/>
+    
+      <category term="刷 BIOS" scheme="https://blog.tlhub.cn/tags/%E5%88%B7-BIOS/"/>
+    
+      <category term="ROM" scheme="https://blog.tlhub.cn/tags/ROM/"/>
+    
+      <category term="EFI" scheme="https://blog.tlhub.cn/tags/EFI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Etcher 强大的镜像刻盘工具</title>
+    <link href="https://blog.tlhub.cn/Etcher.html"/>
+    <id>https://blog.tlhub.cn/Etcher.html</id>
+    <published>2020-05-12T11:04:06.000Z</published>
+    <updated>2020-05-12T11:28:10.675Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Etcher
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Etcher" scheme="https://blog.tlhub.cn/tags/Etcher/"/>
+    
+      <category term="balenaEtcher" scheme="https://blog.tlhub.cn/tags/balenaEtcher/"/>
+    
+      <category term="烧录" scheme="https://blog.tlhub.cn/tags/%E7%83%A7%E5%BD%95/"/>
+    
+      <category term="刻盘" scheme="https://blog.tlhub.cn/tags/%E5%88%BB%E7%9B%98/"/>
+    
+      <category term="镜像" scheme="https://blog.tlhub.cn/tags/%E9%95%9C%E5%83%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>PDF Expert 快速、轻巧、易用的 PDF 编辑器</title>
@@ -536,101 +641,6 @@
       <category term="SublimeText" scheme="https://blog.tlhub.cn/tags/SublimeText/"/>
     
       <category term="Sublime" scheme="https://blog.tlhub.cn/tags/Sublime/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TeamViewer 远程桌面工具</title>
-    <link href="https://blog.tlhub.cn/TeamViewer.html"/>
-    <id>https://blog.tlhub.cn/TeamViewer.html</id>
-    <published>2020-05-07T03:26:34.000Z</published>
-    <updated>2020-05-10T08:35:50.924Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="TeamViewer" scheme="https://blog.tlhub.cn/tags/TeamViewer/"/>
-    
-      <category term="远程桌面" scheme="https://blog.tlhub.cn/tags/%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/"/>
-    
-      <category term="内网穿透" scheme="https://blog.tlhub.cn/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tuxera NTFS 读写工具</title>
-    <link href="https://blog.tlhub.cn/Tuxera.html"/>
-    <id>https://blog.tlhub.cn/Tuxera.html</id>
-    <published>2020-05-07T03:26:27.000Z</published>
-    <updated>2020-05-10T08:35:50.930Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Tuxera
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="NTFS" scheme="https://blog.tlhub.cn/tags/NTFS/"/>
-    
-      <category term="Tuxera" scheme="https://blog.tlhub.cn/tags/Tuxera/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>V2rayU mac 上好用的 v2ray 客户端</title>
-    <link href="https://blog.tlhub.cn/V2RayU.html"/>
-    <id>https://blog.tlhub.cn/V2RayU.html</id>
-    <published>2020-05-07T03:26:20.000Z</published>
-    <updated>2020-05-10T08:39:00.704Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;V2rayU
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="V2rayU" scheme="https://blog.tlhub.cn/tags/V2rayU/"/>
-    
-      <category term="Shadowsocks" scheme="https://blog.tlhub.cn/tags/Shadowsocks/"/>
-    
-      <category term="SS" scheme="https://blog.tlhub.cn/tags/SS/"/>
-    
-      <category term="vmess" scheme="https://blog.tlhub.cn/tags/vmess/"/>
-    
-      <category term="科学上网" scheme="https://blog.tlhub.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
   </entry>
   
