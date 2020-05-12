@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-05-12T12:55:00.050Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    
+    <lastmod>2020-05-12T12:35:01.751Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Shadowsocks.html</loc>
+    
+    <lastmod>2020-05-12T12:35:01.750Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/ScreenFlow.html</loc>
+    
+    <lastmod>2020-05-12T12:35:01.749Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/GenI2C.html</loc>
+    
+    <lastmod>2020-05-12T12:35:01.748Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/CarbonCopyCloner.html</loc>
     
-    <lastmod>2020-05-12T12:34:50.706Z</lastmod>
+    <lastmod>2020-05-12T12:35:01.747Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Sketch.html</loc>
+    
+    <lastmod>2020-05-12T12:35:01.746Z</lastmod>
     
   </url>
   
@@ -16,51 +58,9 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/GenI2C.html</loc>
-    
-    <lastmod>2020-05-12T12:22:50.536Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    
-    <lastmod>2020-05-12T12:18:19.031Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/ScreenFlow.html</loc>
-    
-    <lastmod>2020-05-12T12:07:29.040Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Shadowsocks.html</loc>
-    
-    <lastmod>2020-05-12T11:56:53.769Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Sketch.html</loc>
-    
-    <lastmod>2020-05-12T11:49:46.295Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
     
     <lastmod>2020-05-12T11:46:20.874Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-05-12T11:46:20.872Z</lastmod>
     
   </url>
   
