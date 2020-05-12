@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-12T11:46:13.381Z</updated>
+  <updated>2020-05-12T12:34:50.706Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -17,11 +17,182 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CarbonCopyCloner 比时间机器更好用的系统备份还原工具</title>
+    <link href="https://blog.tlhub.cn/CarbonCopyCloner.html"/>
+    <id>https://blog.tlhub.cn/CarbonCopyCloner.html</id>
+    <published>2020-05-12T12:23:14.000Z</published>
+    <updated>2020-05-12T12:34:50.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Carbon
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="CarbonCopyCloner" scheme="https://blog.tlhub.cn/tags/CarbonCopyCloner/"/>
+    
+      <category term="CCC" scheme="https://blog.tlhub.cn/tags/CCC/"/>
+    
+      <category term="备份" scheme="https://blog.tlhub.cn/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="时光机" scheme="https://blog.tlhub.cn/tags/%E6%97%B6%E5%85%89%E6%9C%BA/"/>
+    
+      <category term="时间机器" scheme="https://blog.tlhub.cn/tags/%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GenI2C 自动生成 I2C 热补丁</title>
+    <link href="https://blog.tlhub.cn/GenI2C.html"/>
+    <id>https://blog.tlhub.cn/GenI2C.html</id>
+    <published>2020-05-12T12:19:09.000Z</published>
+    <updated>2020-05-12T12:22:50.536Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;GenI2C
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
+    
+      <category term="SSDT" scheme="https://blog.tlhub.cn/tags/SSDT/"/>
+    
+      <category term="触摸板" scheme="https://blog.tlhub.cn/tags/%E8%A7%A6%E6%91%B8%E6%9D%BF/"/>
+    
+      <category term="I2C" scheme="https://blog.tlhub.cn/tags/I2C/"/>
+    
+      <category term="GenI2C" scheme="https://blog.tlhub.cn/tags/GenI2C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typora 所见即所得的 Markdown 编辑器</title>
+    <link href="https://blog.tlhub.cn/Typora.html"/>
+    <id>https://blog.tlhub.cn/Typora.html</id>
+    <published>2020-05-12T12:08:44.000Z</published>
+    <updated>2020-05-12T12:18:19.031Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Typora
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+      <category term="Typora" scheme="https://blog.tlhub.cn/tags/Typora/"/>
+    
+      <category term="Markdown" scheme="https://blog.tlhub.cn/tags/Markdown/"/>
+    
+      <category term="所见即所得" scheme="https://blog.tlhub.cn/tags/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ScreenFlow 强大的录屏软件</title>
+    <link href="https://blog.tlhub.cn/ScreenFlow.html"/>
+    <id>https://blog.tlhub.cn/ScreenFlow.html</id>
+    <published>2020-05-12T11:57:17.000Z</published>
+    <updated>2020-05-12T12:07:29.040Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="ScreenFlow" scheme="https://blog.tlhub.cn/tags/ScreenFlow/"/>
+    
+      <category term="录屏" scheme="https://blog.tlhub.cn/tags/%E5%BD%95%E5%B1%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shadowsocks 科学上网工具</title>
+    <link href="https://blog.tlhub.cn/Shadowsocks.html"/>
+    <id>https://blog.tlhub.cn/Shadowsocks.html</id>
+    <published>2020-05-12T11:50:39.000Z</published>
+    <updated>2020-05-12T11:56:53.769Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Shadowsocks" scheme="https://blog.tlhub.cn/tags/Shadowsocks/"/>
+    
+      <category term="SS" scheme="https://blog.tlhub.cn/tags/SS/"/>
+    
+      <category term="科学上网" scheme="https://blog.tlhub.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="酸酸乳" scheme="https://blog.tlhub.cn/tags/%E9%85%B8%E9%85%B8%E4%B9%B3/"/>
+    
+      <category term="小飞机" scheme="https://blog.tlhub.cn/tags/%E5%B0%8F%E9%A3%9E%E6%9C%BA/"/>
+    
+      <category term="纸飞机" scheme="https://blog.tlhub.cn/tags/%E7%BA%B8%E9%A3%9E%E6%9C%BA/"/>
+    
+      <category term="影梭" scheme="https://blog.tlhub.cn/tags/%E5%BD%B1%E6%A2%AD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Sketch 轻量易用的矢量设计工具</title>
     <link href="https://blog.tlhub.cn/Sketch.html"/>
     <id>https://blog.tlhub.cn/Sketch.html</id>
     <published>2020-05-12T11:32:17.000Z</published>
-    <updated>2020-05-12T11:46:13.381Z</updated>
+    <updated>2020-05-12T11:49:46.295Z</updated>
     
     <summary type="html">
     
@@ -54,7 +225,7 @@
     <link href="https://blog.tlhub.cn/UEFITool.html"/>
     <id>https://blog.tlhub.cn/UEFITool.html</id>
     <published>2020-05-12T11:28:34.000Z</published>
-    <updated>2020-05-12T11:37:53.550Z</updated>
+    <updated>2020-05-12T11:46:20.874Z</updated>
     
     <summary type="html">
     
@@ -91,7 +262,7 @@
     <link href="https://blog.tlhub.cn/Etcher.html"/>
     <id>https://blog.tlhub.cn/Etcher.html</id>
     <published>2020-05-12T11:04:06.000Z</published>
-    <updated>2020-05-12T11:28:10.675Z</updated>
+    <updated>2020-05-12T11:46:20.872Z</updated>
     
     <summary type="html">
     
@@ -484,163 +655,6 @@
       <category term="SSDT" scheme="https://blog.tlhub.cn/tags/SSDT/"/>
     
       <category term="DSDT" scheme="https://blog.tlhub.cn/tags/DSDT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PlistEditPro Plist 文件编辑器</title>
-    <link href="https://blog.tlhub.cn/PlistEditPro.html"/>
-    <id>https://blog.tlhub.cn/PlistEditPro.html</id>
-    <published>2020-05-07T03:27:10.000Z</published>
-    <updated>2020-05-10T08:33:15.502Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
-      <category term="PlistEditPro" scheme="https://blog.tlhub.cn/tags/PlistEditPro/"/>
-    
-      <category term="PlistEdit" scheme="https://blog.tlhub.cn/tags/PlistEdit/"/>
-    
-      <category term="Plist" scheme="https://blog.tlhub.cn/tags/Plist/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iTerm2 最强大的终端替代品</title>
-    <link href="https://blog.tlhub.cn/iTerm.html"/>
-    <id>https://blog.tlhub.cn/iTerm.html</id>
-    <published>2020-05-07T03:27:01.000Z</published>
-    <updated>2020-05-10T08:39:00.704Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;iTerm2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="终端" scheme="https://blog.tlhub.cn/tags/%E7%BB%88%E7%AB%AF/"/>
-    
-      <category term="iTerm2" scheme="https://blog.tlhub.cn/tags/iTerm2/"/>
-    
-      <category term="Terminal" scheme="https://blog.tlhub.cn/tags/Terminal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CPU-S CPU 频率检测工具</title>
-    <link href="https://blog.tlhub.cn/CPU-S.html"/>
-    <id>https://blog.tlhub.cn/CPU-S.html</id>
-    <published>2020-05-07T03:26:56.000Z</published>
-    <updated>2020-05-10T08:39:00.707Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;CPU-S 是一款
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="CPU-S" scheme="https://blog.tlhub.cn/tags/CPU-S/"/>
-    
-      <category term="频率" scheme="https://blog.tlhub.cn/tags/%E9%A2%91%E7%8E%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CodeRunner 万能好用的编辑器</title>
-    <link href="https://blog.tlhub.cn/CodeRunner.html"/>
-    <id>https://blog.tlhub.cn/CodeRunner.html</id>
-    <published>2020-05-07T03:26:50.000Z</published>
-    <updated>2020-05-10T08:35:50.933Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="CodeRunner" scheme="https://blog.tlhub.cn/tags/CodeRunner/"/>
-    
-      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
-      <category term="IDE" scheme="https://blog.tlhub.cn/tags/IDE/"/>
-    
-      <category term="断点调试" scheme="https://blog.tlhub.cn/tags/%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SublimeText 精致的文本编辑器</title>
-    <link href="https://blog.tlhub.cn/SublimeText.html"/>
-    <id>https://blog.tlhub.cn/SublimeText.html</id>
-    <published>2020-05-07T03:26:43.000Z</published>
-    <updated>2020-05-10T08:33:00.141Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
-      <category term="SublimeText" scheme="https://blog.tlhub.cn/tags/SublimeText/"/>
-    
-      <category term="Sublime" scheme="https://blog.tlhub.cn/tags/Sublime/"/>
     
   </entry>
   

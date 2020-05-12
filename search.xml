@@ -4,11 +4,172 @@
   
     
     <entry>
+      <title>CarbonCopyCloner 比时间机器更好用的系统备份还原工具</title>
+      <link href="/CarbonCopyCloner.html"/>
+      <url>/CarbonCopyCloner.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Carbon Copy Cloner 简称 CCC，是 mac 上的硬盘克隆、同步、备份的最佳工具。你可以用它来执行计划任务、增量备份、整盘克隆恢复等功能。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li>硬盘克隆</li><li>硬盘同步</li><li>硬盘备份</li><li>硬盘恢复</li><li>增量备份</li><li>计划任务</li><li>高速备份</li><li>高速还原</li><li>易于使用</li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512203030.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512203052.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512203204.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-7</td><td align="center">5.1.16</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bedlzg" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedlzg</a><br>密码: b4mp</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CarbonCopyCloner </tag>
+            
+            <tag> CCC </tag>
+            
+            <tag> 备份 </tag>
+            
+            <tag> 时光机 </tag>
+            
+            <tag> 时间机器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GenI2C 自动生成 I2C 热补丁</title>
+      <link href="/GenI2C.html"/>
+      <url>/GenI2C.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>GenI2C 是一个自动的 SSDT 热补丁生成工具，让你的 ACPI 表适配 VoodooI2C，出自 <a href="https://github.com/williambj1" target="_blank" rel="noopener external nofollow noreferrer">Bat</a> 大佬</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li><p>VoodooI2C 信息</p><ul><li>加载状态</li><li>加载的目标驱动</li><li>提取日志</li><li>工作模式 (APIC, GPIO, 轮询)</li><li>显示 APIC/GPIO Pin</li></ul></li><li><p>生成 SSDT</p><ul><li>使用 External 来保持原生 Bios APIC Pin / GPIO Pin 注入</li><li>生成 I2C 总线速率补丁</li><li>生成 Skylake 架构 I2C 控制器补丁 (开发中🚧)</li><li>在需要手动计算 GPIO Pin 时自动生成 GpioInt</li><li>支持轮询模式 (只能使用 VoodooI2CHID)</li></ul></li><li><p>工具</p><ul><li>ACPI 反编译器</li></ul></li><li><p>VoodooI2C 诊断</p><ul><li>检查 CPU 架构支持</li><li>AppleIntelLpssI2C.kext/AppleIntelLpssI2CController.kext 屏蔽检测</li><li>检查 VoodooI2C 状态</li><li>检查 Magic Trackpad 2 模拟引擎状态</li><li>分析 VoodooI2C 日志</li></ul></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-12</td><td align="center">1.3.1</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bedlvc" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedlvc</a><br>密码: 9ly5</p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2><p><a href="https://github.com/williambj1/GenI2C" target="_blank" rel="noopener external nofollow noreferrer">GenI2C</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hackintosh </tag>
+            
+            <tag> SSDT </tag>
+            
+            <tag> 触摸板 </tag>
+            
+            <tag> I2C </tag>
+            
+            <tag> GenI2C </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Typora 所见即所得的 Markdown 编辑器</title>
+      <link href="/Typora.html"/>
+      <url>/Typora.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Typora 是一款支持实时预览的 Markdown 文本编辑器。它有 OS X、Windows、Linux 三个平台的版本，并且由于仍在测试中，是完全免费的。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li>数学公式</li></ul><p>Typora 对于 [公式] 语法支持的非常完善，内置的渲染引擎堪称完美</p><ul><li>图片</li></ul><p>Typora 对于图片渲染的支持也十分到位，可以直接拖拽图片，支持 html 语法，所以可以进行缩放等操作。</p><ul><li>代码块</li></ul><p>代码展示是必不可少的功能，高亮显示也是完美。</p><ul><li>流程图</li></ul><p>Typora 可以直接在 markdown 中画流程图，而且语法简洁易懂。</p><ul><li>实时预览</li></ul><p>当你离开正在编辑的有格式的文本段后，Typora 会自动隐藏 Markdown 标记，只留下「所见即所得」的美妙。他们把这称为 Hybrid View。</p><ul><li>emoji 表情</li></ul><p>在 Typora 中，你可以用 :emoji: 的形式来打出 emoji，软件会自动给出图形的提示，还是比较好用的。</p><ul><li>LaTeX</li></ul><p>Typora 原生支持 LaTeX 语法。</p><ul><li>等等。。。</li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512201207.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-12</td><td align="center">0.9.9.32.1</td></tr><tr><td align="center">2020-5-7</td><td align="center">0.9.9.28.5</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bedlcd" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedlcd</a><br>密码: 4gjk</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编辑器 </tag>
+            
+            <tag> Typora </tag>
+            
+            <tag> Markdown </tag>
+            
+            <tag> 所见即所得 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ScreenFlow 强大的录屏软件</title>
+      <link href="/ScreenFlow.html"/>
+      <url>/ScreenFlow.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>ScreenFlow 是一款适用在 Mac 上的屏幕录制和编辑，ScreenFlow 是一款非常出色的屏幕录制应用程序，它可以记录任何内容，并在之后为您提供大量的编辑选项。ScreenFlow 具有最佳的屏幕录制功能 - 即使在视网膜显示屏上也是如此。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li>多屏幕录制</li></ul><p>有时候一个屏幕是不够的！无论是你需要一个更大一点的空间，还是想一次显示多个程序窗口，还是你只是想录制你的所有显示器，现在你可以！</p><ul><li>时间轴工具面板</li></ul><p>抓手，缩放，刻刀和轨道选择现在降临到ScreenFlow中了！使用快捷键切换你的指针功能是你更加容易地导航时间轴，进行快速的轨道分割以及选择时间轴上的全部图层！</p><ul><li>剪辑编辑器</li></ul><p>在新的剪辑编辑中预览媒体剪辑并进行初剪。一旦你验证了你的媒体并修剪到想要的尺寸就可以直接把结果剪辑拖到时间轴上。</p><ul><li>代理</li></ul><p>如果你想在ScreenFlow中编辑大尺寸分辨率的文件，现在你可以编辑一个代理取代它！这是什么意思？你可以比以往任何时候都快地编辑和播放更加高要求的项目。</p><ul><li>新的鼠标指针点击特效</li></ul><p>我们已经更新了在屏幕录制属性中的雷达点击特效！调整尺寸，颜色，时长和模糊来创建完美的点击自定义。</p><ul><li>性能增强</li></ul><p>ScreenFlow 9改进了后台性能确保你使用ScreenFlow的体验是最好的。更新了捕获卡支持，缩略图改进和手动媒体管理等等。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512200712.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-12</td><td align="center">9.0.3</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bedl3e" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedl3e</a><br>密码: dh3u</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ScreenFlow </tag>
+            
+            <tag> 录屏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Shadowsocks 科学上网工具</title>
+      <link href="/Shadowsocks.html"/>
+      <url>/Shadowsocks.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Shadowsocks 也称 SS、酸酸乳、小飞机、纸飞机、影梭，是目前主流的科学上网工具。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512195543.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-7</td><td align="center">1.9.4</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bedl0b" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedl0b</a><br>密码: fgc1</p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2><p><a href="https://github.com/shadowsocks/ShadowsocksX-NG" target="_blank" rel="noopener external nofollow noreferrer">ShadowsocksX-NG</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Shadowsocks </tag>
+            
+            <tag> SS </tag>
+            
+            <tag> 科学上网 </tag>
+            
+            <tag> 酸酸乳 </tag>
+            
+            <tag> 小飞机 </tag>
+            
+            <tag> 纸飞机 </tag>
+            
+            <tag> 影梭 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Sketch 轻量易用的矢量设计工具</title>
       <link href="/Sketch.html"/>
       <url>/Sketch.html</url>
       
-        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Sketch 是一款轻量、易用的矢量设计工具，让 UI 设计更简单，更高效。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><h3 id="为-Web-和-UI-设计"><a href="#为-Web-和-UI-设计" class="headerlink" title="为 Web 和 UI 设计"></a>为 Web 和 UI 设计</h3><ul><li>Web 和 iOS 的设计模板标配</li><li>复制 CSS 样式到剪贴板（包括梯度）</li><li>切片：将出口作为画布上的图像区域</li><li>960 默认网格，与更先进的网格选项的支持</li><li>创建一个文档内的多个页面</li><li>标准响应网页设计画板</li></ul><h3 id="用于图标设计师"><a href="#用于图标设计师" class="headerlink" title="用于图标设计师"></a>用于图标设计师</h3><ul><li>画板：每个都是自己的小帆布- iOS的图标模板</li><li>像素网格</li><li>像素效果，如高斯和运动模糊</li><li>舍入到最近的像素边缘</li></ul><h3 id="检查器"><a href="#检查器" class="headerlink" title="检查器"></a>检查器</h3><p>右侧的检查器能让你对正在编辑的图层——有时是正在使用的工具——进行参数调整。当你选中一个图层时，你会发现检查器被划分为几个区域。</p><h3 id="通用属性"><a href="#通用属性" class="headerlink" title="通用属性"></a>通用属性</h3><p>通用图层式样都在顶端区域：图层所在位置，透明度，混合模式以及几个特殊选项——比如调整矩形内角半径和多边形的不同点模式。</p><h3 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a>样式属性</h3><p>边框和填充属性都有他们独自的区域，你可以勾选左上方的小方框展开他们，并显示出具体的选项。如果你点击颜色按钮，你会发现检查器滑倒一边，出现新的专门的颜色检查器，你只需要单击顶端的“后退”按钮便会回到主检查器。当你选中了其他图层，同样会自动回到主检查器。</p><h3 id="图层列表"><a href="#图层列表" class="headerlink" title="图层列表"></a>图层列表</h3><p>图层列表列出了所在页面的所有图层(和切片)，每个涂层都会有一个小小的预览。你可以在这里：查看涂层是否被锁定，不可见，使用了蒙板或标记为可导出；重新排列图层，或者给图层添加布尔运算，比如减去顶层形状；对图层进行建组或者重命名来管理他们。</p><h3 id="多页面操作"><a href="#多页面操作" class="headerlink" title="多页面操作"></a>多页面操作</h3><p>Sketch 支持多页面操作，你可以在图层列表上面的按钮里面添加/删除或者转换到其他页面（或者用键盘上的 Page Up/Page Down 来切换）。图层列表始终只会显示当前页面的图层。</p><h3 id="画板"><a href="#画板" class="headerlink" title="画板"></a>画板</h3><p>在图层列表里，有白色背景一栏的便是画板，你可以把画板视为设计中的顶层对象，所以一个画板不能被嵌入另一个画板。</p><h3 id="蒙版"><a href="#蒙版" class="headerlink" title="蒙版"></a>蒙版</h3><p>在图层列表里，那些使用了蒙版的图层名前会有一个小点，它的蒙版则是底下紧接着不带小点的图层。了解更多关于蒙版。</p><h3 id="布尔运算"><a href="#布尔运算" class="headerlink" title="布尔运算"></a>布尔运算</h3><p>每个图形都可以包含多个子路径，他们会以组的形式呈现在图层列表中，伴随一个下拉箭头显示具体的子路径。每一层子路径都可以单独设置布尔运算，决定和它的下一图层以什么方式组合。图层列表能清晰的展现子路径的组合方式，同时方便你随时调整更改。</p><h3 id="符号和共享式样"><a href="#符号和共享式样" class="headerlink" title="符号和共享式样"></a>符号和共享式样</h3><ul><li><p>符号是一种特殊的组，他们可以出现在文件的多个地方。符号会以紫色文件夹图标呈现在涂层列表中——正常编组则是蓝色的文件夹。了解更多关于符号。</p></li><li><p>共享式样可以使多个对象（图形以及文本）的式样保持一致，如果一个图形或者一段文本使用了共享式样，他们的预览小图标会显示成紫色，而不是标准的灰色。了解更多关于共享式样。</p></li></ul><h3 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h3><ul><li><p>Sketch 的工具栏涵盖了你创作当中所需要的所有工具。</p></li><li><p>在默认工具栏中，第一组工具是用来添加新图层的：图形、图片、符号等等。</p></li><li><p>编组 (Group) 和取消编组 (Ungroup) 能让你有条例的组织文件。</p></li><li><p>接下来的几个工具则都是用来编辑现有图层：旋转 (Rotate)，变形 (Transform)， 通过布尔运算来合并图层，以及在图层列表中上移或下移图层。</p></li><li><p>工具栏最后的导出(Export) 按钮 同时也是一个切片工具，你可以在这将你的作品导出为一个或多个位图或者矢量文件。</p></li><li><p>不同于其他绘图应用，Sketch把常用工具放在顶端的工具栏，而不是垂直排列的工具箱，但如果需要，你可以通过右击工具栏，***“定制工具栏…” (Customize toolbar…) 来添加工具和快捷键。</p></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-7</td><td align="center"></td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: </p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Sketch 是一款轻量、易用的矢量设计工具，让 UI 设计更简单，更高效。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><h3 id="为-Web-和-UI-设计"><a href="#为-Web-和-UI-设计" class="headerlink" title="为 Web 和 UI 设计"></a>为 Web 和 UI 设计</h3><ul><li>Web 和 iOS 的设计模板标配</li><li>复制 CSS 样式到剪贴板（包括梯度）</li><li>切片：将出口作为画布上的图像区域</li><li>960 默认网格，与更先进的网格选项的支持</li><li>创建一个文档内的多个页面</li><li>标准响应网页设计画板</li></ul><h3 id="用于图标设计师"><a href="#用于图标设计师" class="headerlink" title="用于图标设计师"></a>用于图标设计师</h3><ul><li>画板：每个都是自己的小帆布- iOS的图标模板</li><li>像素网格</li><li>像素效果，如高斯和运动模糊</li><li>舍入到最近的像素边缘</li></ul><h3 id="检查器"><a href="#检查器" class="headerlink" title="检查器"></a>检查器</h3><p>右侧的检查器能让你对正在编辑的图层——有时是正在使用的工具——进行参数调整。当你选中一个图层时，你会发现检查器被划分为几个区域。</p><h3 id="通用属性"><a href="#通用属性" class="headerlink" title="通用属性"></a>通用属性</h3><p>通用图层式样都在顶端区域：图层所在位置，透明度，混合模式以及几个特殊选项——比如调整矩形内角半径和多边形的不同点模式。</p><h3 id="样式属性"><a href="#样式属性" class="headerlink" title="样式属性"></a>样式属性</h3><p>边框和填充属性都有他们独自的区域，你可以勾选左上方的小方框展开他们，并显示出具体的选项。如果你点击颜色按钮，你会发现检查器滑倒一边，出现新的专门的颜色检查器，你只需要单击顶端的“后退”按钮便会回到主检查器。当你选中了其他图层，同样会自动回到主检查器。</p><h3 id="图层列表"><a href="#图层列表" class="headerlink" title="图层列表"></a>图层列表</h3><p>图层列表列出了所在页面的所有图层(和切片)，每个涂层都会有一个小小的预览。你可以在这里：查看涂层是否被锁定，不可见，使用了蒙板或标记为可导出；重新排列图层，或者给图层添加布尔运算，比如减去顶层形状；对图层进行建组或者重命名来管理他们。</p><h3 id="多页面操作"><a href="#多页面操作" class="headerlink" title="多页面操作"></a>多页面操作</h3><p>Sketch 支持多页面操作，你可以在图层列表上面的按钮里面添加/删除或者转换到其他页面（或者用键盘上的 Page Up/Page Down 来切换）。图层列表始终只会显示当前页面的图层。</p><h3 id="画板"><a href="#画板" class="headerlink" title="画板"></a>画板</h3><p>在图层列表里，有白色背景一栏的便是画板，你可以把画板视为设计中的顶层对象，所以一个画板不能被嵌入另一个画板。</p><h3 id="蒙版"><a href="#蒙版" class="headerlink" title="蒙版"></a>蒙版</h3><p>在图层列表里，那些使用了蒙版的图层名前会有一个小点，它的蒙版则是底下紧接着不带小点的图层。了解更多关于蒙版。</p><h3 id="布尔运算"><a href="#布尔运算" class="headerlink" title="布尔运算"></a>布尔运算</h3><p>每个图形都可以包含多个子路径，他们会以组的形式呈现在图层列表中，伴随一个下拉箭头显示具体的子路径。每一层子路径都可以单独设置布尔运算，决定和它的下一图层以什么方式组合。图层列表能清晰的展现子路径的组合方式，同时方便你随时调整更改。</p><h3 id="符号和共享式样"><a href="#符号和共享式样" class="headerlink" title="符号和共享式样"></a>符号和共享式样</h3><ul><li><p>符号是一种特殊的组，他们可以出现在文件的多个地方。符号会以紫色文件夹图标呈现在涂层列表中——正常编组则是蓝色的文件夹。了解更多关于符号。</p></li><li><p>共享式样可以使多个对象（图形以及文本）的式样保持一致，如果一个图形或者一段文本使用了共享式样，他们的预览小图标会显示成紫色，而不是标准的灰色。了解更多关于共享式样。</p></li></ul><h3 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h3><ul><li><p>Sketch 的工具栏涵盖了你创作当中所需要的所有工具。</p></li><li><p>在默认工具栏中，第一组工具是用来添加新图层的：图形、图片、符号等等。</p></li><li><p>编组 (Group) 和取消编组 (Ungroup) 能让你有条例的组织文件。</p></li><li><p>接下来的几个工具则都是用来编辑现有图层：旋转 (Rotate)，变形 (Transform)， 通过布尔运算来合并图层，以及在图层列表中上移或下移图层。</p></li><li><p>工具栏最后的导出(Export) 按钮 同时也是一个切片工具，你可以在这将你的作品导出为一个或多个位图或者矢量文件。</p></li><li><p>不同于其他绘图应用，Sketch把常用工具放在顶端的工具栏，而不是垂直排列的工具箱，但如果需要，你可以通过右击工具栏，***“定制工具栏…” (Customize toolbar…) 来添加工具和快捷键。</p></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200512194812.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-7</td><td align="center">65</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bedkyj" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedkyj</a><br>密码: bhr9</p>]]></content>
       
       
       <categories>
@@ -685,7 +846,7 @@
       <link href="/Reeder.html"/>
       <url>/Reeder.html</url>
       
-        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>macOS 平台下最好的 RSS 订阅工具。</p><h2 id="截图"><a href="#截图" class="headerlink" title=" 截图"></a><i class="fa fa-desktop" aria-hidden="true"></i> 截图</h2><p><img src="https://cdn.sspai.com/2019/04/28/8d0ed2d957c5647c03c94627a3c190ba.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt=""></p><p><img src="https://cdn.sspai.com/2019/04/28/b083eee9b4fb248b46f0ada306ab55bd.gif?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-7</td><td align="center">4.2.2</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bd6j0b" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bd6j0b</a><br>密码: 3phl</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>macOS 平台下最好的 RSS 订阅工具。</p><h2 id="截图"><a href="#截图" class="headerlink" title=" 截图"></a><i class="fa fa-desktop" aria-hidden="true"></i> 截图</h2><p><img src="https://cdn.sspai.com/2019/04/28/8d0ed2d957c5647c03c94627a3c190ba.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt=""></p><p><img src="https://cdn.sspai.com/2019/04/28/b083eee9b4fb248b46f0ada306ab55bd.gif?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-12</td><td align="center">4.2.4</td></tr><tr><td align="center">2020-5-7</td><td align="center">4.2.2</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bd6j0b" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bd6j0b</a><br>密码: 3phl</p>]]></content>
       
       
       <categories>
