@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-13T11:02:49.479Z</updated>
+  <updated>2020-05-13T11:46:21.675Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -17,11 +17,178 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Transmit 强大的 ftp 客户端</title>
+    <link href="https://blog.tlhub.cn/Transmit.html"/>
+    <id>https://blog.tlhub.cn/Transmit.html</id>
+    <published>2020-05-13T11:16:42.000Z</published>
+    <updated>2020-05-13T11:46:21.675Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Transmit" scheme="https://blog.tlhub.cn/tags/Transmit/"/>
+    
+      <category term="ftp" scheme="https://blog.tlhub.cn/tags/ftp/"/>
+    
+      <category term="scp" scheme="https://blog.tlhub.cn/tags/scp/"/>
+    
+      <category term="远程" scheme="https://blog.tlhub.cn/tags/%E8%BF%9C%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>One Switch 万能开关</title>
+    <link href="https://blog.tlhub.cn/One-Switch.html"/>
+    <id>https://blog.tlhub.cn/One-Switch.html</id>
+    <published>2020-05-13T11:16:26.000Z</published>
+    <updated>2020-05-13T11:57:25.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;One
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="One Switch" scheme="https://blog.tlhub.cn/tags/One-Switch/"/>
+    
+      <category term="开关合集" scheme="https://blog.tlhub.cn/tags/%E5%BC%80%E5%85%B3%E5%90%88%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Navicat Premium 老牌强大的数据库管理工具</title>
+    <link href="https://blog.tlhub.cn/Navicat-Premium.html"/>
+    <id>https://blog.tlhub.cn/Navicat-Premium.html</id>
+    <published>2020-05-13T11:16:17.000Z</published>
+    <updated>2020-05-13T11:57:14.920Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Navicat
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="MySQL" scheme="https://blog.tlhub.cn/tags/MySQL/"/>
+    
+      <category term="SQLServer" scheme="https://blog.tlhub.cn/tags/SQLServer/"/>
+    
+      <category term="Navicat" scheme="https://blog.tlhub.cn/tags/Navicat/"/>
+    
+      <category term="Navicat Premium" scheme="https://blog.tlhub.cn/tags/Navicat-Premium/"/>
+    
+      <category term="数据库" scheme="https://blog.tlhub.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="Oracle" scheme="https://blog.tlhub.cn/tags/Oracle/"/>
+    
+      <category term="PostgreSQL" scheme="https://blog.tlhub.cn/tags/PostgreSQL/"/>
+    
+      <category term="PG" scheme="https://blog.tlhub.cn/tags/PG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Microsoft Remote Desktop mac 端微软远程连接工具</title>
+    <link href="https://blog.tlhub.cn/Microsoft-Remote-Desktop.html"/>
+    <id>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</id>
+    <published>2020-05-13T11:16:09.000Z</published>
+    <updated>2020-05-13T11:58:11.450Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Microsoft
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="远程连接" scheme="https://blog.tlhub.cn/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
+    
+      <category term="Remote" scheme="https://blog.tlhub.cn/tags/Remote/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Folx Mac 上好用的下载工具</title>
+    <link href="https://blog.tlhub.cn/Folx.html"/>
+    <id>https://blog.tlhub.cn/Folx.html</id>
+    <published>2020-05-13T11:15:55.000Z</published>
+    <updated>2020-05-13T11:57:57.788Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Folx
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="下载" scheme="https://blog.tlhub.cn/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="种子" scheme="https://blog.tlhub.cn/tags/%E7%A7%8D%E5%AD%90/"/>
+    
+      <category term="Folx" scheme="https://blog.tlhub.cn/tags/Folx/"/>
+    
+      <category term="Torrent" scheme="https://blog.tlhub.cn/tags/Torrent/"/>
+    
+      <category term="磁链" scheme="https://blog.tlhub.cn/tags/%E7%A3%81%E9%93%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo Pages 建设个人博客指南</title>
     <link href="https://blog.tlhub.cn/Hexo.html"/>
     <id>https://blog.tlhub.cn/Hexo.html</id>
     <published>2020-05-13T10:36:34.000Z</published>
-    <updated>2020-05-13T11:02:49.479Z</updated>
+    <updated>2020-05-13T11:25:51.284Z</updated>
     
     <summary type="html">
     
@@ -512,157 +679,6 @@
       <category term="Bartender" scheme="https://blog.tlhub.cn/tags/Bartender/"/>
     
       <category term="菜单栏隐藏" scheme="https://blog.tlhub.cn/tags/%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%9A%90%E8%97%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FixEDID 开启你的 HiDPI 高清时代</title>
-    <link href="https://blog.tlhub.cn/FixEDID.html"/>
-    <id>https://blog.tlhub.cn/FixEDID.html</id>
-    <published>2020-05-07T03:27:51.000Z</published>
-    <updated>2020-05-10T08:35:50.922Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;FixEDID
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="FixEDID" scheme="https://blog.tlhub.cn/tags/FixEDID/"/>
-    
-      <category term="HiDPI" scheme="https://blog.tlhub.cn/tags/HiDPI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iStatMenus 状态栏系统监控工具</title>
-    <link href="https://blog.tlhub.cn/iStatMenus.html"/>
-    <id>https://blog.tlhub.cn/iStatMenus.html</id>
-    <published>2020-05-07T03:27:44.000Z</published>
-    <updated>2020-05-10T08:35:50.930Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="iStatMenus" scheme="https://blog.tlhub.cn/tags/iStatMenus/"/>
-    
-      <category term="网速" scheme="https://blog.tlhub.cn/tags/%E7%BD%91%E9%80%9F/"/>
-    
-      <category term="监控" scheme="https://blog.tlhub.cn/tags/%E7%9B%91%E6%8E%A7/"/>
-    
-      <category term="状态栏" scheme="https://blog.tlhub.cn/tags/%E7%8A%B6%E6%80%81%E6%A0%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DarwinDumper mac 的综合信息收集工具</title>
-    <link href="https://blog.tlhub.cn/DarwinDumper.html"/>
-    <id>https://blog.tlhub.cn/DarwinDumper.html</id>
-    <published>2020-05-07T03:27:36.000Z</published>
-    <updated>2020-05-10T08:35:50.931Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="DarwinDumper" scheme="https://blog.tlhub.cn/tags/DarwinDumper/"/>
-    
-      <category term="信息收集工具" scheme="https://blog.tlhub.cn/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IOJones IOReg 信息查看工具</title>
-    <link href="https://blog.tlhub.cn/IOJones.html"/>
-    <id>https://blog.tlhub.cn/IOJones.html</id>
-    <published>2020-05-07T03:27:29.000Z</published>
-    <updated>2020-05-10T08:35:50.920Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;IOJones
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="Hackintosh" scheme="https://blog.tlhub.cn/tags/Hackintosh/"/>
-    
-      <category term="IOJones" scheme="https://blog.tlhub.cn/tags/IOJones/"/>
-    
-      <category term="IOReg" scheme="https://blog.tlhub.cn/tags/IOReg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mos 鼠标增强工具</title>
-    <link href="https://blog.tlhub.cn/Mos.html"/>
-    <id>https://blog.tlhub.cn/Mos.html</id>
-    <published>2020-05-07T03:27:23.000Z</published>
-    <updated>2020-05-10T08:39:00.703Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;一个用于在
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="Mos" scheme="https://blog.tlhub.cn/tags/Mos/"/>
-    
-      <category term="鼠标增强" scheme="https://blog.tlhub.cn/tags/%E9%BC%A0%E6%A0%87%E5%A2%9E%E5%BC%BA/"/>
     
   </entry>
   
