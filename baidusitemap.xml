@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-13</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <loc>https://blog.tlhub.cn/Hexo.html</loc>
+    <lastmod>2020-05-13</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-05-13</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Clover.html</loc>

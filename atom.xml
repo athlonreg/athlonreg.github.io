@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-12T12:35:01.747Z</updated>
+  <updated>2020-05-13T11:02:49.479Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Pages 建设个人博客指南</title>
+    <link href="https://blog.tlhub.cn/Hexo.html"/>
+    <id>https://blog.tlhub.cn/Hexo.html</id>
+    <published>2020-05-13T10:36:34.000Z</published>
+    <updated>2020-05-13T11:02:49.479Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink&quot; title=&quot;Hexo&quot;&gt;&lt;/a&gt;Hexo&lt;/h3&gt;&lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="建站" scheme="https://blog.tlhub.cn/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="Hexo" scheme="https://blog.tlhub.cn/tags/Hexo/"/>
+    
+      <category term="Pages" scheme="https://blog.tlhub.cn/tags/Pages/"/>
+    
+      <category term="blog" scheme="https://blog.tlhub.cn/tags/blog/"/>
+    
+      <category term="建站" scheme="https://blog.tlhub.cn/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="个人网站" scheme="https://blog.tlhub.cn/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
+    
+      <category term="博客" scheme="https://blog.tlhub.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Coding" scheme="https://blog.tlhub.cn/tags/Coding/"/>
+    
+      <category term="GitHub" scheme="https://blog.tlhub.cn/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>CarbonCopyCloner 比时间机器更好用的系统备份还原工具</title>
@@ -622,39 +663,6 @@
       <category term="Mos" scheme="https://blog.tlhub.cn/tags/Mos/"/>
     
       <category term="鼠标增强" scheme="https://blog.tlhub.cn/tags/%E9%BC%A0%E6%A0%87%E5%A2%9E%E5%BC%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MaciASL ACPI 编辑工具</title>
-    <link href="https://blog.tlhub.cn/MaciASL.html"/>
-    <id>https://blog.tlhub.cn/MaciASL.html</id>
-    <published>2020-05-07T03:27:19.000Z</published>
-    <updated>2020-05-10T08:39:00.707Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;MaciASL
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="MaciASL" scheme="https://blog.tlhub.cn/tags/MaciASL/"/>
-    
-      <category term="ACPI" scheme="https://blog.tlhub.cn/tags/ACPI/"/>
-    
-      <category term="SSDT" scheme="https://blog.tlhub.cn/tags/SSDT/"/>
-    
-      <category term="DSDT" scheme="https://blog.tlhub.cn/tags/DSDT/"/>
     
   </entry>
   

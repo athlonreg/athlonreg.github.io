@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
-    <lastmod>2020-05-13T02:18:46.434Z</lastmod>
+    <lastmod>2020-05-13T11:25:20.716Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <loc>https://blog.tlhub.cn/Hexo.html</loc>
     
-    <lastmod>2020-05-13T00:37:26.907Z</lastmod>
+    <lastmod>2020-05-13T11:02:49.479Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-05-13T02:18:46.434Z</lastmod>
     
   </url>
   
