@@ -115,10 +115,10 @@
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/ACPIBatteryManager.html</loc>
+    <loc>https://blog.tlhub.cn/BT4LEContinuityFixup.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/BT4LEContinuityFixup.html</loc>
+    <loc>https://blog.tlhub.cn/ACPIBatteryManager.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
@@ -149,6 +149,9 @@
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
+    <lastmod>2020-05-10</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Motrix.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CodeRunner.html</loc>
@@ -205,19 +208,16 @@
     <loc>https://blog.tlhub.cn/Common-Keyboard-shortcut-in-macOS.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Motrix.html</loc>
-    <lastmod>2020-05-10</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
+    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
