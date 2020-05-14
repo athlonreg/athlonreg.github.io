@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-13T11:58:43.752Z</updated>
+  <updated>2020-05-14T03:57:26.599Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows 10 VB-2004 官方 MVS (MSDN) 初始镜像 19041.208</title>
+    <link href="https://blog.tlhub.cn/Windows-10-2004.html"/>
+    <id>https://blog.tlhub.cn/Windows-10-2004.html</id>
+    <published>2020-05-14T03:27:08.000Z</published>
+    <updated>2020-05-14T03:57:26.599Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Windows
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="镜像" scheme="https://blog.tlhub.cn/tags/%E9%95%9C%E5%83%8F/"/>
+    
+      <category term="Windows 10" scheme="https://blog.tlhub.cn/tags/Windows-10/"/>
+    
+      <category term="Windows" scheme="https://blog.tlhub.cn/tags/Windows/"/>
+    
+      <category term="2004" scheme="https://blog.tlhub.cn/tags/2004/"/>
+    
+      <category term="MSDN" scheme="https://blog.tlhub.cn/tags/MSDN/"/>
+    
+      <category term="微软" scheme="https://blog.tlhub.cn/tags/%E5%BE%AE%E8%BD%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Office 2019 for Mac</title>
+    <link href="https://blog.tlhub.cn/Office-2019-for-Mac.html"/>
+    <id>https://blog.tlhub.cn/Office-2019-for-Mac.html</id>
+    <published>2020-05-14T03:26:58.000Z</published>
+    <updated>2020-05-14T03:36:57.630Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Office
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="office" scheme="https://blog.tlhub.cn/tags/office/"/>
+    
+      <category term="2019" scheme="https://blog.tlhub.cn/tags/2019/"/>
+    
+  </entry>
   
   <entry>
     <title>Transmit 强大的 ftp 客户端</title>
@@ -621,64 +687,6 @@
       <category term="鼠标增强" scheme="https://blog.tlhub.cn/tags/%E9%BC%A0%E6%A0%87%E5%A2%9E%E5%BC%BA/"/>
     
       <category term="Smooze" scheme="https://blog.tlhub.cn/tags/Smooze/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AdGuard for Mac 最高级的广告拦截程序</title>
-    <link href="https://blog.tlhub.cn/Adguard.html"/>
-    <id>https://blog.tlhub.cn/Adguard.html</id>
-    <published>2020-05-09T02:02:41.000Z</published>
-    <updated>2020-05-13T12:36:18.518Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;AdGuard
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="AdGuard" scheme="https://blog.tlhub.cn/tags/AdGuard/"/>
-    
-      <category term="广告拦截" scheme="https://blog.tlhub.cn/tags/%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bartender 3 最好用的菜单栏管理工具</title>
-    <link href="https://blog.tlhub.cn/Bartender.html"/>
-    <id>https://blog.tlhub.cn/Bartender.html</id>
-    <published>2020-05-07T03:28:00.000Z</published>
-    <updated>2020-05-10T08:35:50.927Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Bartender
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="Bartender" scheme="https://blog.tlhub.cn/tags/Bartender/"/>
-    
-      <category term="菜单栏隐藏" scheme="https://blog.tlhub.cn/tags/%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%9A%90%E8%97%8F/"/>
     
   </entry>
   

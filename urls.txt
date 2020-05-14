@@ -1,3 +1,5 @@
+https://blog.tlhub.cn/Windows-10-2004.html
+https://blog.tlhub.cn/Office-2019-for-Mac.html
 https://blog.tlhub.cn/Transmit.html
 https://blog.tlhub.cn/One-Switch.html
 https://blog.tlhub.cn/Navicat-Premium.html
@@ -96,5 +98,3 @@ https://blog.tlhub.cn/Custom-terminal-on-your-mac.html
 https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html
 https://blog.tlhub.cn/OSI-Model.html
 https://blog.tlhub.cn/Common-patches-on-Hackintosh.html
-https://blog.tlhub.cn/Common-command-in-macOS.html
-https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html
