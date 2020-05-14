@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-05-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    <lastmod>2020-05-14</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-05-14</lastmod>
   </url>  <url>
@@ -69,12 +75,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
     <lastmod>2020-05-11</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-05-10</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
     <lastmod>2020-05-10</lastmod>
