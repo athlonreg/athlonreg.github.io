@@ -4,6 +4,406 @@
   
     
     <entry>
+      <title>Movist Pro 2.2.18 强大的视频播放器</title>
+      <link href="/Movist-Pro.html"/>
+      <url>/Movist-Pro.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Movist是一款易于使用且功能强大的电影播放器。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><h3 id="美观便捷的用户界面"><a href="#美观便捷的用户界面" class="headerlink" title="美观便捷的用户界面"></a>美观便捷的用户界面</h3><ul><li><p>控制器既实用又方便，并且仅在鼠标指针接近时才会显示。 透明的标题栏和控制器使您可以更专注于观看体验。</p></li><li><p>主菜单实时显示各种状态，控制面板使您可以快速访问所需的所有功能。将鼠标移到搜索滑块上可以查看缩略图。</p></li><li><p>除了所有这些便利之外，我们还增加了美丽。它支持包括浅色和深色主题的现代 macOS 风格。</p></li></ul><h3 id="性能提升"><a href="#性能提升" class="headerlink" title="性能提升"></a>性能提升</h3><ul><li><p>Movist 支持 H.265/HEVC 编解码器的硬件加速解码。您可以舒适地欣赏 4K UHD 图像。</p></li><li><p>此外，它经过优化以消耗最少的能量。CPU 使用率降低了一半。</p></li></ul><h3 id="网络视频"><a href="#网络视频" class="headerlink" title="网络视频"></a>网络视频</h3><ul><li><p>您可以使用 Movist 观看网页中包含的视频。只需单击 Safari 工具栏上的按钮(提供了 Safari 扩展程序)。您当然可以手动输入 Internet 地址或拖动 Internet 链接。</p></li><li><p>您可以选择画质，查看字幕并使用所有 Movist 功能。您可以将其添加到播放列表中，然后可以从最近打开的列表中再次打开它。</p></li></ul><h3 id="当您打开媒体时"><a href="#当您打开媒体时" class="headerlink" title="当您打开媒体时"></a>当您打开媒体时</h3><ul><li><p>打开媒体时，有许多默认的首选项适用。</p></li><li><p>您可以指定默认的跟踪语言。例如，韩语的视频和音频，英文字幕或如果有英语音轨，则可以设置不显示字幕。</p></li><li><p>您可以指定自己喜欢的视频质量，滤波器，均衡器等。您还可以还原上一次播放的时间，以便从那里观看。</p></li></ul><h3 id="同时显示多首曲目"><a href="#同时显示多首曲目" class="headerlink" title="同时显示多首曲目"></a>同时显示多首曲目</h3><ul><li><p>您可以同时查看多种语言的字幕。您还可以为每种语言设置不同的位置和样式。</p></li><li><p>您还可以同时为视频和音频选择多个轨道。例如，如果汽车黑匣子的前后视频都包含在一个文件中，则可以同时查看前后视频。</p></li></ul><h3 id="使用信箱"><a href="#使用信箱" class="headerlink" title="使用信箱"></a>使用信箱</h3><ul><li><p>如果可能，Movist 将在信箱空间中显示字幕。字幕不仅掩盖了视频，而且还提高了可见度。</p></li><li><p>Movist 会自动调整信箱的高度以便字幕以行为单位进行布局。您还可以设置要在信箱中显示的行数。</p></li></ul><h3 id="听字幕"><a href="#听字幕" class="headerlink" title="听字幕"></a>听字幕</h3><ul><li><p>Movist 可以大声朗读字幕。如果您看不到字幕，请立即收听。</p></li><li><p>可以不显示屏幕而只说字幕，并且可以控制讲话速度。您还可以根据说话速度自动调整播放/暂停。最好将它用于语言学习。</p></li><li><p>不需要复杂的设置。只需按下 <code>语音</code> 按钮即可。</p></li></ul><h3 id="便捷的播放列表"><a href="#便捷的播放列表" class="headerlink" title="便捷的播放列表"></a>便捷的播放列表</h3><ul><li><p>当您打开文件时，Movist 会创建一个播放列表，然后在同一文件夹中查找并填充系列和字幕文件。您也可以手动添加和删除文件。</p></li><li><p>您可以保存播放列表并稍后再调用。您不需要管理播放列表文件。Movist 管理所有这些。只需给播放列表起个名字即可。</p></li></ul><h3 id="网络服务器"><a href="#网络服务器" class="headerlink" title="网络服务器"></a>网络服务器</h3><ul><li>您可以立即播放视频，而无需从网络服务器下载。支持 SMB，SFTP，FTP，WebDAV（包括 HTTPS）。由于 Movist Pro 自动处理缓冲，即使网络不稳定，您可以观看视频而无需缓冲。</li></ul><h3 id="HDR-色调映射"><a href="#HDR-色调映射" class="headerlink" title="HDR 色调映射"></a>HDR 色调映射</h3><ul><li>新相机拍摄的 HDR 视频的颜色是看起来很虚弱，在监视器上被洗掉了。Movist 尝试重现 HDR 颜色，尽可能在非 HDR 显示器上使用。</li></ul><h3 id="还有…"><a href="#还有…" class="headerlink" title="还有…"></a>还有…</h3><ul><li>自2016年以来，MacBook（Pro）不再具有音频光学输出插孔。 而且大多数廉价的 USB 音频设备都不支持 macOS 上的数字输出。但是，Movist 在这些设备中本身支持数字输出，允许按原样输出 ac3，dts 数据。 请继续使用现有的光纤输出扬声器。</li><li>您可以播放音乐文件。 欣赏专辑封面。</li><li>更准确的颜色，包括 10 位颜色支持。</li><li>您可以缩放，旋转和翻转视频。</li><li>您可以将各种 CoreImage 滤镜应用于视频。</li><li>支持音频均衡器。</li><li>您可以为每个音频输出设备设置通道数，延迟和数字输出，并设置默认音频输出设备。</li><li>观看 3D 电影时，字幕以 3D 形式显示。</li><li>您可以自定义快捷键。</li><li>支持 MacBook Pro 的 TouchBar。</li><li>您可以选择 FFmpeg/QuickTime 解码器。</li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_interface_en.jpg" alt=""></p><video id="video" controls="" preload="none" poster="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517233948.png"><source id="mp4" src="https://movistprime.com/resources/images/performance_en.mp4" type="video/mp4"></video><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_internet_en.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_open_en.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_multitrack_en.jpg" alt=""></p><video id="video" controls="" preload="none" poster="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517235007.png"><source id="mp4" src="https://movistprime.com/resources/images/letterbox_en.mp4" type="video/mp4"></video><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_speech_en.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_playlist_en.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_network_server.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/movistpro_hdr_tone_mapping.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/etc_en.jpg" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">2.2.18</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bewv4j" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bewv4j</a><br>密码: a9ox</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Movist Pro </tag>
+            
+            <tag> 播放器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SoundControl 2.4.3 音频控制管理工具</title>
+      <link href="/SoundControl.html"/>
+      <url>/SoundControl.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>SoundControl 是一个独一无二的可以为您的 mac 设备添加高级音频控制的应用程序。通过每个应用的音量，均衡器，平衡和音频路由，独立控制每个应用的音频。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li><p>独立控制应用的音量。</p></li><li><p>将键盘音量控件添加到 DisplayPort 监视器，HDMI TV 和接收器以及其他缺少它们的设备。</p></li><li><p>使用系统范围的EQ或在每个应用程序上设置不同的 EQ。每个均衡器可以是 10 或 31 个频段。</p></li><li><p>触控栏 TouchBar 支持。</p></li><li><p>分别调整每个应用程序的左右平衡。 还可以选择下混音为单声道，使您可以将所有音频移至左或右声道。</p></li><li><p>设置热键以控制前景应用程序的音量，静音和均衡器。 甚至还有一个热键可以使所有后台应用程序静音。</p></li><li><p>将应用程序音频重新路由到任何音频输出设备。</p></li><li><p>将 iTunes 发送到外部 USB 设备，而其他应用程序则使用 MacBook 的内置扬声器。</p></li><li><p>兼容 macOS 10.11 – 10.15。</p></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517230130.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517231008.png" alt=""></p><video id="video" controls="" preload="none" poster="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517231008.png"><source id="mp4" src="https://staticz.com/wp-content/uploads/2018/06/soundcontroldemo.m4v" type="video/mp4"></video><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">2.4.3</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedlgh" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedlgh</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SoundControl </tag>
+            
+            <tag> 音频管理 </tag>
+            
+            <tag> HDMI </tag>
+            
+            <tag> 音频控制 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VideoProc 3.6 一站式视频编辑软件</title>
+      <link href="/VideoProc.html"/>
+      <url>/VideoProc.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>快速轻松地编辑，转换和调整大型4K视频，音频和 DVD 的大小。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li><p>唯一全 GPU 加速的视频编辑软件<br>VideoProc 是排名第一的快速视频处理软件，在由英特尔®，AMD® 和 NVIDIA® GPU 完全支持的三级硬件加速方面达到了顶峰，可在不影响质量的情况下提供流畅的（4K）视频编辑和转码。</p></li><li><p>剪切，裁切，合并，效果–简单编辑可放大您的画面<br>通过 GoPro，DJI，智能手机等轻松，无损地处理和修饰您的高清/4K 大型素材。</p></li><li><p>简易和高级编辑全部包含在工具箱中<br>无论您是经验丰富的专业人士还是刚入门的人，4K 视频编辑器都可以帮助您以简化的工作流程编辑 HD/4K 视频。</p></li><li><p>从 iPhone，GoPro，DJI，相机处理 4K/HD 视频<br>VideoProc 可以处理您用 GoPro，DJI，iPhone，Android，便携式摄像机或任何其他 4k 摄像机（DSLR 或无反光镜）拍摄的任何视频。</p></li><li><p>简单但功能强大的屏幕录像机组件<br>对于游戏玩家，体育爱好者，教育工作者和现场爱好者来说，VideoProc 是记录游戏玩法，演示，网络研讨会，Skype 通话，流媒体视频以及创建视频博客，截屏视频，播客，软件评论和视频说明的必备工具。 与您的观众和队友互动。</p></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517224314.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517224507.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517224542.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517224602.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517224637.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517224815.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/div14-img01.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/div15-face02.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/div15-face03.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/div15-face04.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/div15-face06.jpg" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">3.6</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedl5g" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedl5g</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VideoProc </tag>
+            
+            <tag> 视频编辑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>iThoughtsX 5.20.1 优秀的思维导图工具</title>
+      <link href="/iThoughtsX.html"/>
+      <url>/iThoughtsX.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>iThoughtsX 是一款功能强大的思维导图工具，支持 Windows Mac iOS, 可以跨设备，跨平台同步。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/iThoughtsX_tlhub_screen.jpg" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">5.20</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedlpg" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedlpg</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> iThoughtsX </tag>
+            
+            <tag> 思维导图 </tag>
+            
+            <tag> 脑图 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IntelPowerGadget 3.7.0 CPU 监测工具</title>
+      <link href="/IntelPowerGadget.html"/>
+      <url>/IntelPowerGadget.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Intel Power Gadget 是因特尔官方出品的一款 CPU 实时监控的小工具。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517220933.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">3.7.0</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedlri" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedlri</a></p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2><p><a href="https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html" target="_blank" rel="noopener external nofollow noreferrer">IntelPowerGadget 官网</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 监控 </tag>
+            
+            <tag> IntelPowerGadget </tag>
+            
+            <tag> CPU </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CAJViewerMac 1.5 CAJ 文献阅读器</title>
+      <link href="/CAJViewerMac.html"/>
+      <url>/CAJViewerMac.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>CAJViewer 是光盘国家工程研究中心、清华同方知网(北京)技术有限公司 CAJViewer 系列产品，它充分吸取了当前市场上各种同类主流产品的优点，经过长时间市场调查和系统设计而成，兼容 CAJ 和 PDF 等文件。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517231907.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">1.5</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedm0h" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedm0h</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CAJViewer </tag>
+            
+            <tag> CAJViewerMac </tag>
+            
+            <tag> CAJ </tag>
+            
+            <tag> 文献阅读 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BetterZip 4.2.5.1558 功能强大、操作简单的解压缩软件</title>
+      <link href="/BetterZip.html"/>
+      <url>/BetterZip.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>BetterZip 是一款功能强大、操作简单的解压缩软件。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li>支持新系统 Mac OS 10.15 Catalina</li><li>支持超过 30 种存档格式 </li><li>无需解压，快速预览</li><li>强大的AES-256加密，保护您的数据 </li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/newfeatures_2.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517220238.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">4.2.5.1558</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedm5c" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedm5c</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BetterZip </tag>
+            
+            <tag> 压缩 </tag>
+            
+            <tag> 解压 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>macOS SDKs</title>
+      <link href="/macOS-SDKs.html"/>
+      <url>/macOS-SDKs.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>本站持续收集 macOS SDK，方便您下载使用，目前已收集的版本如下：</p><ul><li>10.10</li><li>10.11</li><li>10.12</li><li>10.13</li><li>10.14</li><li>10.15</li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517203730.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">10.10 - 10.15</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01bedm9g" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bedm9g</a><br>密码: bdai</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> macOS </tag>
+            
+            <tag> mac </tag>
+            
+            <tag> SDK </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Alfred 4 4.0.9 1144 效率神器</title>
+      <link href="/Alfred.html"/>
+      <url>/Alfred.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Alfred 是 macOS 上屡获殊荣的应用程序，可通过热键，关键字，文本扩展等功能提高效率。 搜索 Mac 和网络，并通过自定义操作控制 Mac 来提高生产力。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><h3 id="搜索和浏览"><a href="#搜索和浏览" class="headerlink" title="搜索和浏览"></a>搜索和浏览</h3><ul><li><p>启动应用程序并在 Mac 或 Web 上查找文件。Alfred 了解如何使用 Mac 并优先考虑结果。</p></li><li><p>通过使用热键，关键字并自定义搜索 Mac 和活动历史记录的方式，可以节省大量时间。</p></li><li><p>进入并浏览，预览文件并对其进行操作，而无需将手指从键盘上移开。</p></li></ul><h3 id="输入少，做的多"><a href="#输入少，做的多" class="headerlink" title="输入少，做的多"></a>输入少，做的多</h3><ul><li><p>借助 Alfred 的剪贴板历史记录和代码片段功能，无需一遍又一遍地键入相同的URL或响应。</p></li><li><p>使用剪贴板历史记录可以找到您先前复制的任何文本，图像或文件，然后再次粘贴。</p></li><li><p>创建您自己的代码片段，并输入一个简短的缩写，以将其自动扩展为全文代码片段，从长远来看，您可以节省数小时的输入时间！</p></li></ul><h3 id="扩展和自动化"><a href="#扩展和自动化" class="headerlink" title="扩展和自动化"></a>扩展和自动化</h3><ul><li><p>借助 Alfred 的 Powerpack，可使用功能强大的工作流程来更高效地执行任务，并减少重复的手动任务。</p></li><li><p>将热键，关键字和操作链接在一起以创建自己的工作流程； 无需编写任何代码即可创建工作流。 我们创建者社区已共享的数千种导入工作流。</p></li></ul><h3 id="控制您的音乐"><a href="#控制您的音乐" class="headerlink" title="控制您的音乐"></a>控制您的音乐</h3><ul><li><p>你是老板，通过使用 Alfred 与 macOS 的深度集成来控制 Mac，从而提高工作效率。 迅速对文件和联系人采取措施，控制音乐播放器并调度系统命令。</p></li><li><p>为您的一天增添些乐趣； 借助适用于 iOS 的 Alfred Remote，将 iPhone 或 iPad 变成 Mac  的命令中心。</p></li><li><p>另外，看看其他音乐服务（例如 Spotify）的许多工作流程。</p></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517215227.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517215757.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517215642.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517215006.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517215201.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">4.0.9(1144)</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01befueb" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01befueb</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 增强 </tag>
+            
+            <tag> Alfred </tag>
+            
+            <tag> 效率 </tag>
+            
+            <tag> Powerpack </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BetterTouchTool 3.365 鼠标触控板增强工具</title>
+      <link href="/BetterTouchTool.html"/>
+      <url>/BetterTouchTool.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>BetterTouchTool 是一款功能强大的功能强大的应用程序，可让您自定义增强 Mac 上的各种输入设备。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><p>目前，BetterTouchTool 支持：</p><ul><li>Macbook Trackpad</li><li>Magic Trackpad 1 &amp; 2</li><li>Magic Mouse 1 &amp; 2</li><li>Touch Bar customization</li><li>Siri/Apple Remote</li><li>Normal Mouse Gestures</li><li>Normal Mouse Buttons</li><li>Keyboard Shortcuts</li><li>Key Sequences / Text Triggers</li><li>BTT Remote (iOS) Triggers</li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517213434.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517213615.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">3.365</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01befuhe" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01befuhe</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BetterTouchTool </tag>
+            
+            <tag> 鼠标 </tag>
+            
+            <tag> 触控板 </tag>
+            
+            <tag> 增强 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Keka 1.1.28 好用的压缩解压工具</title>
+      <link href="/Keka.html"/>
+      <url>/Keka.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Keka 是一款 mac 平台上好用的压缩解压工具，支持加密、分卷等实用功能。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li>简单强大</li></ul><p>您甚至不需要打开 Keka 来压缩文件，将其保存在扩展坞中并从那里使用它。<br>只需将文件和文件夹拖放到 Dock 图标或 Keka 窗口即可创建它们的压缩包。</p><ul><li>注重隐私</li></ul><p>只需设置密码并创建高度加密的文件即可安全地共享。<br>对 7z 文件使用AES-256加密规范<br>Zip 文件的 Zip 2.0 旧版加密规范。</p><ul><li>分卷压缩</li></ul><p>如果文件确实很大，并且它们不适合您的邮件或服务器，则将它们分成几部分。<br>不用担心，它们仍然可以解压生成您的原始文件:)</p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">1.1.28</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01befuna" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01befuna</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 压缩 </tag>
+            
+            <tag> 解压 </tag>
+            
+            <tag> Keka </tag>
+            
+            <tag> 分卷 </tag>
+            
+            <tag> 加密 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Paste 2.5.6 剪贴板增强工具</title>
+      <link href="/Paste.html"/>
+      <url>/Paste.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Paste 是 Mac，iPhone 和 iPad 上全球最受欢迎的剪贴板管理器。它可以存储您复制的所有内容，并使剪贴板在所有设备上井井有条，而无需跳动。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li>Paste 相当于上千个剪贴板</li></ul><p>Paste 可以提升你的剪贴板容量并且提供非常舒适的用户界面。</p><ul><li>成为你系统和工作的一部分</li></ul><p>Paste 会保留你复制的一切内容，当你需要时可以轻松访问它们。</p><ul><li>Pinboards</li></ul><p>你可以通过记事板让一切竟然有序，比如新建列表以及按照你喜欢的顺序贴上你喜欢的内容。</p><ul><li>只要你想，就能收到</li></ul><p>没有内容会丢失，因为 Paste 知道它在哪。简单输入几个字，Paste 就会找到你想找的内容。</p><ul><li>在后台工作</li></ul><p>Paste 会在后台工作并且会在菜单栏显示图标，当你需要使用它的时候请使用快捷键或者点击图标即可。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211712.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211755.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517210842.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211303.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211324.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211338.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211447.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517211604.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">2.5.6</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01befv4h" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01befv4h</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Paste </tag>
+            
+            <tag> 剪贴板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pap.er 3.5 专为 Mac 设计的壁纸应用</title>
+      <link href="/Pap-er.html"/>
+      <url>/Pap-er.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Pap.er 是一款专为 Mac 设计的壁纸应用，拥有它您可以每天享受来自全球新鲜精美的壁纸。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><ul><li><p>每日更新</p></li><li><p>最热排行</p></li><li><p>实施更新</p></li><li><p>特色壁纸</p></li><li><p>常驻顶栏</p></li></ul><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200517210324.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">3.5</td></tr></tbody></table><blockquote><p>近期更新：</p></blockquote><ul><li><ol><li>修复多项已知问题，强烈推荐更新</li></ol></li><li><ol start="2"><li>壁纸下载速度提升</li></ol></li><li><ol start="3"><li>兼容 macOS 10.15 Catalina</li></ol></li><li><ol start="4"><li>当前的随机壁纸可在「我的壁纸」找到及保存</li></ol></li></ul><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>地址: <a href="https://taolu.lanzous.com/b01befuzc" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01befuzc</a></p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2><p><a href="https://paper.meiyuan.in/" target="_blank" rel="noopener external nofollow noreferrer">Pap.er 官网</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GeekBench 5.1.1 mac 跑分软件</title>
+      <link href="/GeekBench.html"/>
+      <url>/GeekBench.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Geekbench 官方版是一款专业的系统检测工具，界面简洁明晰、操作方便快捷，是 mac 平台上最常用的测试程序。</p><h2 id="特性"><a href="#特性" class="headerlink" title=" 特性"></a><i class="fa fa-star" aria-hidden="true"></i> 特性</h2><h3 id="CPU-跑分"><a href="#CPU-跑分" class="headerlink" title="CPU 跑分"></a>CPU 跑分</h3><p>Geekbench 5 可以测量处理器的单核和多核性能，从检查电子邮件，拍照到播放音乐，甚至一次都可以完成。 Geekbench 5 的 CPU 基准测试可测量包括增强现实和机器学习在内的新应用程序领域的性能，因此您将了解系统与前沿技术的距离。</p><h3 id="图形计算"><a href="#图形计算" class="headerlink" title="图形计算"></a>图形计算</h3><p>使用 Compute Benchmark 测试系统在游戏，图像处理或视频编辑方面的潜力。 通过支持 OpenCL，CUDA 和 Metal API 来测试 GPU 的性能。 Geekbench 5 的新增功能是对下一代跨平台图形和计算 API Vulkan 的支持。</p><h3 id="跨平台"><a href="#跨平台" class="headerlink" title="跨平台"></a>跨平台</h3><p>Geekbench 5 是专为跨平台比较而设计的，可让您比较设备，操作系统和处理器体系结构之间的系统性能。 Geekbench 5 支持 Android，iOS，macOS，Windows 和 Linux。</p><h3 id="GeekBench-浏览器"><a href="#GeekBench-浏览器" class="headerlink" title="GeekBench 浏览器"></a>GeekBench 浏览器</h3><p>将您的结果上传到 Geekbench 浏览器以与他人共享，或者让全世界知道您的设备可以运行多快（或慢）！ 您可以通过创建一个帐户在一个地方跟踪所有结果，并在任何设备上轻松找到它们。</p><h2 id="应用界面"><a href="#应用界面" class="headerlink" title=" 应用界面"></a><i class="fa fa-desktop" aria-hidden="true"></i> 应用界面</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/macos-result-dark.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/macos-home-dark.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-5-17</td><td align="center">5.1.1</td></tr><tr><td align="center">2020-5-7</td><td align="center">5.1.0</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><h3 id="天翼云"><a href="#天翼云" class="headerlink" title="天翼云"></a>天翼云</h3><p>地址: <a href="https://cloud.189.cn/t/VFVj6frAZ3qa" target="_blank" rel="noopener external nofollow noreferrer">https://cloud.189.cn/t/VFVj6frAZ3qa</a><br>密码：kf9a</p><h3 id="套陆专用分享站"><a href="#套陆专用分享站" class="headerlink" title="套陆专用分享站"></a>套陆专用分享站</h3><blockquote><p>建议使用 <a href="https://blog.tlhub.cn/Motrix.html"><code>Motrix</code></a> 或 <code>IDM</code> 等支持多线程下载的工具进行安装</p></blockquote><p>地址: <a href="https://od.cloudops.ml/tlhub.cn/GeekBench/Geekbench_5_5.1.1__blog.tlhub.cn.dmg" target="_blank" rel="noopener external nofollow noreferrer">https://od.cloudops.ml/tlhub.cn/GeekBench/Geekbench_5_5.1.1__blog.tlhub.cn.dmg</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GeekBench </tag>
+            
+            <tag> 跑分 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Parallels Desktop 15.1.3 47255 Mac 最强大的虚拟机</title>
       <link href="/Parallels-Desktop.html"/>
       <url>/Parallels-Desktop.html</url>
