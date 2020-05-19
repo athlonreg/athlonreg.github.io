@@ -39,11 +39,11 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
+      <category term="XMind" scheme="https://blog.tlhub.cn/tags/XMind/"/>
+    
       <category term="思维导图" scheme="https://blog.tlhub.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
       <category term="脑图" scheme="https://blog.tlhub.cn/tags/%E8%84%91%E5%9B%BE/"/>
-    
-      <category term="XMind" scheme="https://blog.tlhub.cn/tags/XMind/"/>
     
   </entry>
   
@@ -161,11 +161,11 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="iThoughtsX" scheme="https://blog.tlhub.cn/tags/iThoughtsX/"/>
-    
       <category term="思维导图" scheme="https://blog.tlhub.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
       <category term="脑图" scheme="https://blog.tlhub.cn/tags/%E8%84%91%E5%9B%BE/"/>
+    
+      <category term="iThoughtsX" scheme="https://blog.tlhub.cn/tags/iThoughtsX/"/>
     
   </entry>
   
@@ -533,15 +533,15 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="Web" scheme="https://blog.tlhub.cn/tags/Web/"/>
-    
-      <category term="设计" scheme="https://blog.tlhub.cn/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="Boxy SVG" scheme="https://blog.tlhub.cn/tags/Boxy-SVG/"/>
     
       <category term="SVG" scheme="https://blog.tlhub.cn/tags/SVG/"/>
     
       <category term="矢量" scheme="https://blog.tlhub.cn/tags/%E7%9F%A2%E9%87%8F/"/>
+    
+      <category term="设计" scheme="https://blog.tlhub.cn/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="Web" scheme="https://blog.tlhub.cn/tags/Web/"/>
     
   </entry>
   
