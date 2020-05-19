@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-19T03:50:03.453Z</updated>
+  <updated>2020-05-19T13:44:54.680Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sensei 1.2.0 Mac 新一代性能优化及清理工具</title>
+    <link href="https://blog.tlhub.cn/Sensei.html"/>
+    <id>https://blog.tlhub.cn/Sensei.html</id>
+    <published>2020-05-19T13:23:59.000Z</published>
+    <updated>2020-05-19T13:44:54.680Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Sensei
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Sensei" scheme="https://blog.tlhub.cn/tags/Sensei/"/>
+    
+      <category term="优化" scheme="https://blog.tlhub.cn/tags/%E4%BC%98%E5%8C%96/"/>
+    
+      <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
+    
+      <category term="监测" scheme="https://blog.tlhub.cn/tags/%E7%9B%91%E6%B5%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>XMind 10.1.3 思如泉涌 • 成竹在图</title>
@@ -612,35 +645,6 @@
       <category term="MSDN" scheme="https://blog.tlhub.cn/tags/MSDN/"/>
     
       <category term="微软" scheme="https://blog.tlhub.cn/tags/%E5%BE%AE%E8%BD%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Office 2019 for Mac</title>
-    <link href="https://blog.tlhub.cn/Office-2019-for-Mac.html"/>
-    <id>https://blog.tlhub.cn/Office-2019-for-Mac.html</id>
-    <published>2020-05-14T03:26:58.000Z</published>
-    <updated>2020-05-14T03:59:40.780Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Office
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="office" scheme="https://blog.tlhub.cn/tags/office/"/>
-    
-      <category term="2019" scheme="https://blog.tlhub.cn/tags/2019/"/>
     
   </entry>
   
