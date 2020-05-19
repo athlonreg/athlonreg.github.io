@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
+    
+    <lastmod>2020-05-19T15:36:38.531Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Sensei.html</loc>
     
-    <lastmod>2020-05-19T13:44:54.680Z</lastmod>
+    <lastmod>2020-05-19T13:47:18.949Z</lastmod>
     
   </url>
   
@@ -607,13 +614,6 @@
     <loc>https://blog.tlhub.cn/PlistEditPro.html</loc>
     
     <lastmod>2020-05-10T08:33:15.502Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
-    
-    <lastmod>2020-05-10T08:33:00.141Z</lastmod>
     
   </url>
   
