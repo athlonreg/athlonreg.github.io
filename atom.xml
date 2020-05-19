@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-17T16:20:06.417Z</updated>
+  <updated>2020-05-19T03:49:33.968Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XMind 10.1.3 思如泉涌 • 成竹在图</title>
+    <link href="https://blog.tlhub.cn/XMind.html"/>
+    <id>https://blog.tlhub.cn/XMind.html</id>
+    <published>2020-05-19T03:38:58.000Z</published>
+    <updated>2020-05-19T03:49:33.968Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;XMind
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="思维导图" scheme="https://blog.tlhub.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+      <category term="脑图" scheme="https://blog.tlhub.cn/tags/%E8%84%91%E5%9B%BE/"/>
+    
+      <category term="XMind" scheme="https://blog.tlhub.cn/tags/XMind/"/>
+    
+  </entry>
   
   <entry>
     <title>Movist Pro 2.2.18 强大的视频播放器</title>
@@ -610,39 +641,6 @@
       <category term="office" scheme="https://blog.tlhub.cn/tags/office/"/>
     
       <category term="2019" scheme="https://blog.tlhub.cn/tags/2019/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Transmit 强大的 ftp 客户端</title>
-    <link href="https://blog.tlhub.cn/Transmit.html"/>
-    <id>https://blog.tlhub.cn/Transmit.html</id>
-    <published>2020-05-13T11:16:42.000Z</published>
-    <updated>2020-05-13T11:58:43.752Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="Transmit" scheme="https://blog.tlhub.cn/tags/Transmit/"/>
-    
-      <category term="ftp" scheme="https://blog.tlhub.cn/tags/ftp/"/>
-    
-      <category term="scp" scheme="https://blog.tlhub.cn/tags/scp/"/>
-    
-      <category term="远程" scheme="https://blog.tlhub.cn/tags/%E8%BF%9C%E7%A8%8B/"/>
     
   </entry>
   
