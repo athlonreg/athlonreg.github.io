@@ -69,9 +69,9 @@ https://blog.tlhub.cn/Backgrounds.html
 https://blog.tlhub.cn/CloudMounter.html
 https://blog.tlhub.cn/ACPIBatteryManager.html
 https://blog.tlhub.cn/BT4LEContinuityFixup.html
-https://blog.tlhub.cn/BrcmPatchRAM.html
 https://blog.tlhub.cn/CPUTune.html
 https://blog.tlhub.cn/Clover.html
+https://blog.tlhub.cn/BrcmPatchRAM.html
 https://blog.tlhub.cn/Ethernet.html
 https://blog.tlhub.cn/FakeSMC.html
 https://blog.tlhub.cn/FakePCIID.html
