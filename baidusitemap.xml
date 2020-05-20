@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-05-20</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Don-t-Starve.html</loc>
     <lastmod>2020-05-20</lastmod>
   </url>  <url>
@@ -17,9 +20,6 @@
     <lastmod>2020-05-20</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-05-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/SublimeText.html</loc>
@@ -286,10 +286,10 @@
     <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
+    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
