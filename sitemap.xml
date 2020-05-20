@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Numi.html</loc>
+    
+    <lastmod>2020-05-20T03:26:19.201Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Wireshark.html</loc>
+    
+    <lastmod>2020-05-20T03:22:36.522Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Adguard.html</loc>
     
-    <lastmod>2020-05-19T16:44:50.913Z</lastmod>
+    <lastmod>2020-05-20T03:07:17.991Z</lastmod>
     
   </url>
   

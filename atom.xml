@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-19T13:47:18.949Z</updated>
+  <updated>2020-05-20T03:26:19.201Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Numi 3.27 漂亮的自然语言计算器</title>
+    <link href="https://blog.tlhub.cn/Numi.html"/>
+    <id>https://blog.tlhub.cn/Numi.html</id>
+    <published>2020-05-20T02:38:01.000Z</published>
+    <updated>2020-05-20T03:26:19.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Numi 是一款
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Numi" scheme="https://blog.tlhub.cn/tags/Numi/"/>
+    
+      <category term="计算器" scheme="https://blog.tlhub.cn/tags/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
+    
+      <category term="自然语言" scheme="https://blog.tlhub.cn/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Wireshark 3.2.4 网络协议分析工具</title>
+    <link href="https://blog.tlhub.cn/Wireshark.html"/>
+    <id>https://blog.tlhub.cn/Wireshark.html</id>
+    <published>2020-05-20T02:37:53.000Z</published>
+    <updated>2020-05-20T03:22:36.522Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Wireshark
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="Wireshark" scheme="https://blog.tlhub.cn/tags/Wireshark/"/>
+    
+      <category term="网络" scheme="https://blog.tlhub.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Sensei 1.2.0 Mac 新一代性能优化及清理工具</title>
@@ -575,76 +635,6 @@
       <category term="设计" scheme="https://blog.tlhub.cn/tags/%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="Web" scheme="https://blog.tlhub.cn/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MWeb 3.3.9 专业的 Markdown 写作、记笔记、静态博客生成软件</title>
-    <link href="https://blog.tlhub.cn/MWeb.html"/>
-    <id>https://blog.tlhub.cn/MWeb.html</id>
-    <published>2020-05-15T07:19:18.000Z</published>
-    <updated>2020-05-15T07:39:30.963Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;MWeb
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="MWeb" scheme="https://blog.tlhub.cn/tags/MWeb/"/>
-    
-      <category term="Markdown" scheme="https://blog.tlhub.cn/tags/Markdown/"/>
-    
-      <category term="静态博客" scheme="https://blog.tlhub.cn/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="记笔记" scheme="https://blog.tlhub.cn/tags/%E8%AE%B0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 10 VB-2004 官方 MVS (MSDN) 初始镜像 19041.208</title>
-    <link href="https://blog.tlhub.cn/Windows-10-2004.html"/>
-    <id>https://blog.tlhub.cn/Windows-10-2004.html</id>
-    <published>2020-05-14T03:27:08.000Z</published>
-    <updated>2020-05-14T03:59:33.557Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Windows
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="镜像" scheme="https://blog.tlhub.cn/tags/%E9%95%9C%E5%83%8F/"/>
-    
-      <category term="Windows 10" scheme="https://blog.tlhub.cn/tags/Windows-10/"/>
-    
-      <category term="Windows" scheme="https://blog.tlhub.cn/tags/Windows/"/>
-    
-      <category term="2004" scheme="https://blog.tlhub.cn/tags/2004/"/>
-    
-      <category term="MSDN" scheme="https://blog.tlhub.cn/tags/MSDN/"/>
-    
-      <category term="微软" scheme="https://blog.tlhub.cn/tags/%E5%BE%AE%E8%BD%AF/"/>
     
   </entry>
   
