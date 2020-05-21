@@ -2,7 +2,6 @@ https://blog.tlhub.cn/Don-t-Starve.html
 https://blog.tlhub.cn/Numi.html
 https://blog.tlhub.cn/Wireshark.html
 https://blog.tlhub.cn/Sensei.html
-https://blog.tlhub.cn/XMind.html
 https://blog.tlhub.cn/Movist-Pro.html
 https://blog.tlhub.cn/SoundControl.html
 https://blog.tlhub.cn/VideoProc.html
@@ -98,3 +97,4 @@ https://blog.tlhub.cn/Check-current-system-is-vm-or-real.html
 https://blog.tlhub.cn/Setup-postgresql-login-by-password.html
 https://blog.tlhub.cn/Deploy-redmine-on-CentOS7.html
 https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html
+https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html
