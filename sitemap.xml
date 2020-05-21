@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
+    
+    <lastmod>2020-05-21T00:48:17.338Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
     
     <lastmod>2020-05-21T00:43:48.424Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://blog.tlhub.cn/Sensei.html</loc>
     
     <lastmod>2020-05-21T00:35:15.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
-    
-    <lastmod>2020-05-21T00:35:02.128Z</lastmod>
     
   </url>
   
