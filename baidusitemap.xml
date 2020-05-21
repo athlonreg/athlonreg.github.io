@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    <lastmod>2020-05-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
+    <lastmod>2020-05-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Smooze.html</loc>
+    <lastmod>2020-05-21</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-05-20</lastmod>
   </url>  <url>
@@ -26,9 +35,6 @@
     <lastmod>2020-05-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/SublimeText.html</loc>
-    <lastmod>2020-05-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
     <lastmod>2020-05-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Sketch.html</loc>
@@ -253,16 +259,10 @@
     <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Smooze.html</loc>
-    <lastmod>2020-05-10</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/FixEDID.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/NoSleep.html</loc>
-    <lastmod>2020-05-10</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/IOJones.html</loc>
