@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Meld.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
@@ -343,9 +349,6 @@
     <loc>https://blog.tlhub.cn/Common-Keyboard-shortcut-in-macOS.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
-    <lastmod>2020-05-03</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
@@ -365,9 +368,6 @@
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
     <lastmod>2020-04-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Install-and-deploy-mail-server-on-CentOS-7.html</loc>

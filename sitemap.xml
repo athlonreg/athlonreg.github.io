@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
+    
+    <lastmod>2020-05-22T19:00:49.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
+    
+    <lastmod>2020-05-22T18:59:47.715Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Meld.html</loc>
     
-    <lastmod>2020-05-22T18:11:41.810Z</lastmod>
+    <lastmod>2020-05-22T18:11:47.887Z</lastmod>
     
   </url>
   
@@ -800,13 +814,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
-    
-    <lastmod>2020-05-03T02:56:39.356Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     
     <lastmod>2020-05-03T02:56:39.355Z</lastmod>
@@ -852,13 +859,6 @@
     <loc>https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html</loc>
     
     <lastmod>2020-04-30T05:37:42.420Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
-    
-    <lastmod>2020-04-30T05:23:37.300Z</lastmod>
     
   </url>
   
