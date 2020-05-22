@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/PicGo.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OfficeTool.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Itsycal.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/IINA.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Go2Shell.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Boom-3D.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Hexo.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Keka.html</loc>
+    <lastmod>2020-05-22</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
@@ -37,9 +70,6 @@
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
     <lastmod>2020-05-21</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    <lastmod>2020-05-21</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Don-t-Starve.html</loc>
     <lastmod>2020-05-20</lastmod>
   </url>  <url>
@@ -62,9 +92,6 @@
     <lastmod>2020-05-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Downie.html</loc>
-    <lastmod>2020-05-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Keka.html</loc>
     <lastmod>2020-05-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
@@ -148,9 +175,6 @@
     <loc>https://blog.tlhub.cn/Folx.html</loc>
     <lastmod>2020-05-13</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Hexo.html</loc>
-    <lastmod>2020-05-13</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-05-12</lastmod>
   </url>  <url>
@@ -208,10 +232,10 @@
     <loc>https://blog.tlhub.cn/CPU-S.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
+    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
+    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
@@ -241,10 +265,10 @@
     <loc>https://blog.tlhub.cn/Mos.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
@@ -277,9 +301,6 @@
     <loc>https://blog.tlhub.cn/IOJones.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CloudMounter.html</loc>
-    <lastmod>2020-05-10</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/PlistEditPro.html</loc>
     <lastmod>2020-05-10</lastmod>
   </url>  <url>
@@ -295,10 +316,10 @@
     <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
+    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
