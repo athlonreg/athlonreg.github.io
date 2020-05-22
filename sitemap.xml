@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
+    
+    <lastmod>2020-05-22T00:45:33.090Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     
-    <lastmod>2020-05-21T16:49:19.723Z</lastmod>
+    <lastmod>2020-05-21T16:49:58.833Z</lastmod>
     
   </url>
   
@@ -600,13 +607,6 @@
     <loc>https://blog.tlhub.cn/iStatMenus.html</loc>
     
     <lastmod>2020-05-10T08:35:50.930Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
-    
-    <lastmod>2020-05-10T08:35:50.928Z</lastmod>
     
   </url>
   
