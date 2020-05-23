@@ -1,3 +1,11 @@
+https://blog.tlhub.cn/MindNodePro.html
+https://blog.tlhub.cn/iShot.html
+https://blog.tlhub.cn/NearLock.html
+https://blog.tlhub.cn/PhotoBulk.html
+https://blog.tlhub.cn/Permute.html
+https://blog.tlhub.cn/iMazing.html
+https://blog.tlhub.cn/Postman.html
+https://blog.tlhub.cn/Xnip.html
 https://blog.tlhub.cn/VMware-Fusion-Pro.html
 https://blog.tlhub.cn/Platelet.html
 https://blog.tlhub.cn/NeatDownloadManager.html
@@ -90,11 +98,3 @@ https://blog.tlhub.cn/Adobe-Zii.html
 https://blog.tlhub.cn/Backgrounds.html
 https://blog.tlhub.cn/ACPIBatteryManager.html
 https://blog.tlhub.cn/BT4LEContinuityFixup.html
-https://blog.tlhub.cn/BrcmPatchRAM.html
-https://blog.tlhub.cn/CPUTune.html
-https://blog.tlhub.cn/Clover.html
-https://blog.tlhub.cn/Ethernet.html
-https://blog.tlhub.cn/FakeSMC.html
-https://blog.tlhub.cn/FakePCIID.html
-https://blog.tlhub.cn/IntelBluetooth.html
-https://blog.tlhub.cn/NVMeFix.html
