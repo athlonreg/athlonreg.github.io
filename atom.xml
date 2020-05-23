@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-23T05:51:10.271Z</updated>
+  <updated>2020-05-23T06:09:37.855Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Tower 4.5 最强大的 Git 客户端</title>
+    <link href="https://blog.tlhub.cn/Tower.html"/>
+    <id>https://blog.tlhub.cn/Tower.html</id>
+    <published>2020-05-23T05:57:53.000Z</published>
+    <updated>2020-05-23T06:09:37.855Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Tower
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="GitHub" scheme="https://blog.tlhub.cn/tags/GitHub/"/>
+    
+      <category term="Tower" scheme="https://blog.tlhub.cn/tags/Tower/"/>
+    
+      <category term="Git" scheme="https://blog.tlhub.cn/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MindNode 5.0.1 强大漂亮又简洁的思维导图软件</title>
     <link href="https://blog.tlhub.cn/MindNodePro.html"/>
     <id>https://blog.tlhub.cn/MindNodePro.html</id>
     <published>2020-05-22T18:30:26.000Z</published>
-    <updated>2020-05-23T05:51:10.271Z</updated>
+    <updated>2020-05-23T05:52:36.910Z</updated>
     
     <summary type="html">
     
@@ -52,7 +83,7 @@
     <link href="https://blog.tlhub.cn/iShot.html"/>
     <id>https://blog.tlhub.cn/iShot.html</id>
     <published>2020-05-22T18:30:16.000Z</published>
-    <updated>2020-05-23T05:35:34.185Z</updated>
+    <updated>2020-05-23T05:52:36.918Z</updated>
     
     <summary type="html">
     
@@ -87,7 +118,7 @@
     <link href="https://blog.tlhub.cn/NearLock.html"/>
     <id>https://blog.tlhub.cn/NearLock.html</id>
     <published>2020-05-22T18:29:53.000Z</published>
-    <updated>2020-05-23T04:19:41.542Z</updated>
+    <updated>2020-05-23T05:52:36.911Z</updated>
     
     <summary type="html">
     
@@ -118,7 +149,7 @@
     <link href="https://blog.tlhub.cn/PhotoBulk.html"/>
     <id>https://blog.tlhub.cn/PhotoBulk.html</id>
     <published>2020-05-22T18:29:43.000Z</published>
-    <updated>2020-05-23T03:22:54.103Z</updated>
+    <updated>2020-05-23T05:52:36.914Z</updated>
     
     <summary type="html">
     
@@ -149,7 +180,7 @@
     <link href="https://blog.tlhub.cn/Permute.html"/>
     <id>https://blog.tlhub.cn/Permute.html</id>
     <published>2020-05-22T18:29:34.000Z</published>
-    <updated>2020-05-23T03:46:31.210Z</updated>
+    <updated>2020-05-23T05:52:36.913Z</updated>
     
     <summary type="html">
     
@@ -180,7 +211,7 @@
     <link href="https://blog.tlhub.cn/iMazing.html"/>
     <id>https://blog.tlhub.cn/iMazing.html</id>
     <published>2020-05-22T18:29:20.000Z</published>
-    <updated>2020-05-23T03:59:21.457Z</updated>
+    <updated>2020-05-23T05:52:36.917Z</updated>
     
     <summary type="html">
     
@@ -215,7 +246,7 @@
     <link href="https://blog.tlhub.cn/Postman.html"/>
     <id>https://blog.tlhub.cn/Postman.html</id>
     <published>2020-05-22T18:29:06.000Z</published>
-    <updated>2020-05-23T04:27:33.724Z</updated>
+    <updated>2020-05-23T05:52:36.915Z</updated>
     
     <summary type="html">
     
@@ -250,7 +281,7 @@
     <link href="https://blog.tlhub.cn/Xnip.html"/>
     <id>https://blog.tlhub.cn/Xnip.html</id>
     <published>2020-05-22T18:28:59.000Z</published>
-    <updated>2020-05-23T05:27:02.464Z</updated>
+    <updated>2020-05-23T05:52:36.916Z</updated>
     
     <summary type="html">
     
@@ -650,31 +681,6 @@
       <category term="MarkDown" scheme="https://blog.tlhub.cn/tags/MarkDown/"/>
     
       <category term="熊掌记" scheme="https://blog.tlhub.cn/tags/%E7%86%8A%E6%8E%8C%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Boom 3D 1.3.4</title>
-    <link href="https://blog.tlhub.cn/Boom-3D.html"/>
-    <id>https://blog.tlhub.cn/Boom-3D.html</id>
-    <published>2020-05-22T13:02:01.000Z</published>
-    <updated>2020-05-22T14:06:29.929Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;Boom 3D
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
     
   </entry>
   

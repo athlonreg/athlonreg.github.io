@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.tlhub.cn/MindNodePro.html</loc>
+    <loc>https://blog.tlhub.cn/Tower.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iShot.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
+    <loc>https://blog.tlhub.cn/iMazing.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Xnip.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Postman.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/PhotoBulk.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Permute.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/NearLock.html</loc>
+    <lastmod>2020-05-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/MindNodePro.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/XMind.html</loc>
@@ -23,21 +44,6 @@
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/FCPX.html</loc>
-    <lastmod>2020-05-23</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Postman.html</loc>
-    <lastmod>2020-05-23</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/NearLock.html</loc>
-    <lastmod>2020-05-23</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/iMazing.html</loc>
-    <lastmod>2020-05-23</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Permute.html</loc>
-    <lastmod>2020-05-23</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/PhotoBulk.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
@@ -116,9 +122,6 @@
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
-    <lastmod>2020-05-21</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-21</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/WePE.html</loc>
