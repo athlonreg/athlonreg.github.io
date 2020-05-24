@@ -70,11 +70,11 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="思维导图" scheme="https://blog.tlhub.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+      <category term="MindNode" scheme="https://blog.tlhub.cn/tags/MindNode/"/>
     
       <category term="脑图" scheme="https://blog.tlhub.cn/tags/%E8%84%91%E5%9B%BE/"/>
     
-      <category term="MindNode" scheme="https://blog.tlhub.cn/tags/MindNode/"/>
+      <category term="思维导图" scheme="https://blog.tlhub.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
   </entry>
   
@@ -509,13 +509,13 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="状态栏" scheme="https://blog.tlhub.cn/tags/%E7%8A%B6%E6%80%81%E6%A0%8F/"/>
-    
-      <category term="menubar" scheme="https://blog.tlhub.cn/tags/menubar/"/>
-    
       <category term="Dozer" scheme="https://blog.tlhub.cn/tags/Dozer/"/>
     
       <category term="隐藏" scheme="https://blog.tlhub.cn/tags/%E9%9A%90%E8%97%8F/"/>
+    
+      <category term="menubar" scheme="https://blog.tlhub.cn/tags/menubar/"/>
+    
+      <category term="状态栏" scheme="https://blog.tlhub.cn/tags/%E7%8A%B6%E6%80%81%E6%A0%8F/"/>
     
   </entry>
   
@@ -608,11 +608,11 @@
     
       <category term="设计" scheme="https://blog.tlhub.cn/tags/%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="视频" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91/"/>
-    
       <category term="FCPX" scheme="https://blog.tlhub.cn/tags/FCPX/"/>
     
       <category term="Final Cut Pro" scheme="https://blog.tlhub.cn/tags/Final-Cut-Pro/"/>
+    
+      <category term="视频" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91/"/>
     
       <category term="剪辑" scheme="https://blog.tlhub.cn/tags/%E5%89%AA%E8%BE%91/"/>
     
@@ -641,11 +641,11 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
-    
       <category term="AppCleaner" scheme="https://blog.tlhub.cn/tags/AppCleaner/"/>
     
       <category term="卸载" scheme="https://blog.tlhub.cn/tags/%E5%8D%B8%E8%BD%BD/"/>
+    
+      <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
     
   </entry>
   
@@ -672,9 +672,9 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
       <category term="Bear" scheme="https://blog.tlhub.cn/tags/Bear/"/>
+    
+      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
       <category term="笔记" scheme="https://blog.tlhub.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
