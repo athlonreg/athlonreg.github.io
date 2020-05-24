@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    
+    <lastmod>2020-05-24T09:28:40.876Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-05-23T17:53:29.061Z</lastmod>
@@ -103,13 +110,6 @@
     <loc>https://blog.tlhub.cn/FCPX.html</loc>
     
     <lastmod>2020-05-23T04:29:15.887Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    
-    <lastmod>2020-05-23T02:59:04.438Z</lastmod>
     
   </url>
   
