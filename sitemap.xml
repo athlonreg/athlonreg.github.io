@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Hexo.html</loc>
+    
+    <lastmod>2020-05-25T02:21:27.485Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
+    
+    <lastmod>2020-05-25T02:21:19.633Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-05-25T02:10:24.801Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>
+    
+    <lastmod>2020-05-25T02:10:04.226Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
+    
+    <lastmod>2020-05-25T02:09:25.172Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html</loc>
+    
+    <lastmod>2020-05-25T02:08:48.469Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Custom-terminal-on-your-mac.html</loc>
+    
+    <lastmod>2020-05-25T02:08:36.212Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
+    
+    <lastmod>2020-05-25T02:08:22.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Disable-the-discrete-GPU-in-laptop.html</loc>
+    
+    <lastmod>2020-05-25T02:07:18.269Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    
+    <lastmod>2020-05-25T02:07:13.730Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     
     <lastmod>2020-05-25T01:28:52.679Z</lastmod>
@@ -12,13 +82,6 @@
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2020-05-25T00:38:30.953Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-05-23T17:53:29.061Z</lastmod>
     
   </url>
   
@@ -124,13 +187,6 @@
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     
     <lastmod>2020-05-22T19:18:57.676Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
-    
-    <lastmod>2020-05-22T19:00:49.478Z</lastmod>
     
   </url>
   
@@ -264,13 +320,6 @@
     <loc>https://blog.tlhub.cn/Boom-3D.html</loc>
     
     <lastmod>2020-05-22T14:06:29.929Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Hexo.html</loc>
-    
-    <lastmod>2020-05-22T10:27:28.156Z</lastmod>
     
   </url>
   
@@ -884,48 +933,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
-    
-    <lastmod>2020-05-03T02:56:39.355Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
-    
-    <lastmod>2020-05-03T02:56:39.355Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
-    
-    <lastmod>2020-05-03T02:56:39.354Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Custom-terminal-on-your-mac.html</loc>
-    
-    <lastmod>2020-05-03T02:56:39.354Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Disable-the-discrete-GPU-in-laptop.html</loc>
-    
-    <lastmod>2020-05-03T02:56:39.354Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html</loc>
-    
-    <lastmod>2020-04-30T05:37:42.420Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
     
     <lastmod>2020-04-30T05:23:37.299Z</lastmod>
@@ -1055,13 +1062,6 @@
     <loc>https://blog.tlhub.cn/Problem-about-police-and-gangster-110.html</loc>
     
     <lastmod>2020-04-30T05:23:37.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>
-    
-    <lastmod>2020-04-30T05:23:37.273Z</lastmod>
     
   </url>
   

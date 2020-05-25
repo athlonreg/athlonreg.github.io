@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Hexo.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Custom-terminal-on-your-mac.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Disable-the-discrete-GPU-in-laptop.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
+    <lastmod>2020-05-25</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-05-25</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-05-25</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-05-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-05-23</lastmod>
@@ -53,9 +80,6 @@
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-05-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Install-macOS-on-laptop.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
@@ -113,9 +137,6 @@
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Boom-3D.html</loc>
-    <lastmod>2020-05-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Hexo.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Keka.html</loc>
@@ -379,24 +400,6 @@
     <loc>https://blog.tlhub.cn/Drive-CX20751-2-audio-on-hackintosh.html</loc>
     <lastmod>2020-05-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picbed.html</loc>
-    <lastmod>2020-05-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
-    <lastmod>2020-05-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
-    <lastmod>2020-05-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Custom-terminal-on-your-mac.html</loc>
-    <lastmod>2020-05-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Disable-the-discrete-GPU-in-laptop.html</loc>
-    <lastmod>2020-05-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Install-and-deploy-mail-server-on-CentOS-7.html</loc>
     <lastmod>2020-04-30</lastmod>
   </url>  <url>
@@ -452,9 +455,6 @@
     <lastmod>2020-04-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Problem-about-police-and-gangster-110.html</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>
     <lastmod>2020-04-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Problem-about-low-carbon-lifestyle-answering.html</loc>
