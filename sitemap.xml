@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-05-25T00:38:30.953Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     
     <lastmod>2020-05-25T00:31:45.332Z</lastmod>
@@ -537,13 +544,6 @@
     <loc>https://blog.tlhub.cn/One-Switch.html</loc>
     
     <lastmod>2020-05-13T11:58:43.753Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-05-13T11:58:43.752Z</lastmod>
     
   </url>
   
