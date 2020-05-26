@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-05-26</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-05-26</lastmod>
   </url>  <url>
@@ -14,9 +17,6 @@
     <lastmod>2020-05-25</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
-    <lastmod>2020-05-25</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-25</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-05-26T11:41:53.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     
     <lastmod>2020-05-26T08:53:59.541Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://blog.tlhub.cn/CAS-5-3-4-install-and-deploy.html</loc>
     
     <lastmod>2020-05-25T02:21:19.633Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-05-25T02:10:24.801Z</lastmod>
     
   </url>
   
