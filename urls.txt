@@ -1,3 +1,4 @@
+https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html
 https://blog.tlhub.cn/Tower.html
 https://blog.tlhub.cn/MindNodePro.html
 https://blog.tlhub.cn/iShot.html
@@ -97,4 +98,3 @@ https://blog.tlhub.cn/CloverConfigurator.html
 https://blog.tlhub.cn/CleanMyMac.html
 https://blog.tlhub.cn/Adobe-Zii.html
 https://blog.tlhub.cn/Backgrounds.html
-https://blog.tlhub.cn/ACPIBatteryManager.html

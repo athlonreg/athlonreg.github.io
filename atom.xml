@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-23T06:18:13.893Z</updated>
+  <updated>2020-05-28T00:37:14.261Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS Catalina 10.15.5 19F96</title>
+    <link href="https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html"/>
+    <id>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html</id>
+    <published>2020-05-28T00:35:10.000Z</published>
+    <updated>2020-05-28T00:37:14.261Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;macOS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="原版镜像" scheme="https://blog.tlhub.cn/tags/%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F/"/>
+    
+      <category term="黑苹果镜像" scheme="https://blog.tlhub.cn/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%95%9C%E5%83%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Tower 4.2 最强大的 Git 客户端</title>
@@ -646,41 +675,6 @@
       <category term="卸载" scheme="https://blog.tlhub.cn/tags/%E5%8D%B8%E8%BD%BD/"/>
     
       <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bear 1.3.1 高效的 mac 写作工具</title>
-    <link href="https://blog.tlhub.cn/Bear.html"/>
-    <id>https://blog.tlhub.cn/Bear.html</id>
-    <published>2020-05-22T14:35:27.000Z</published>
-    <updated>2020-05-22T18:10:49.174Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="Bear" scheme="https://blog.tlhub.cn/tags/Bear/"/>
-    
-      <category term="编辑器" scheme="https://blog.tlhub.cn/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
-      <category term="笔记" scheme="https://blog.tlhub.cn/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="MarkDown" scheme="https://blog.tlhub.cn/tags/MarkDown/"/>
-    
-      <category term="熊掌记" scheme="https://blog.tlhub.cn/tags/%E7%86%8A%E6%8E%8C%E8%AE%B0/"/>
     
   </entry>
   
