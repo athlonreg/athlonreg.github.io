@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-05-28T11:38:56.175Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
     
     <lastmod>2020-05-28T06:22:20.908Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://blog.tlhub.cn/Downie.html</loc>
     
     <lastmod>2020-05-26T12:54:21.406Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-05-26T11:41:53.002Z</lastmod>
     
   </url>
   
