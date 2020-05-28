@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Smooze.html</loc>
+    
+    <lastmod>2020-05-28T00:52:50.944Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html</loc>
     
-    <lastmod>2020-05-28T00:37:14.261Z</lastmod>
+    <lastmod>2020-05-28T00:37:28.549Z</lastmod>
     
   </url>
   
@@ -397,13 +404,6 @@
     <loc>https://blog.tlhub.cn/Clover.html</loc>
     
     <lastmod>2020-05-21T06:43:39.002Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Smooze.html</loc>
-    
-    <lastmod>2020-05-21T00:57:39.465Z</lastmod>
     
   </url>
   
