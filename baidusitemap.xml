@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/VMware-Fusion-Pro.html</loc>
+    <lastmod>2020-05-29</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    <lastmod>2020-05-29</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
+    <lastmod>2020-05-29</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-29</lastmod>
   </url>  <url>
@@ -106,9 +115,6 @@
     <loc>https://blog.tlhub.cn/GeekBench.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/VMware-Fusion-Pro.html</loc>
-    <lastmod>2020-05-23</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/FCPX.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
@@ -143,9 +149,6 @@
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/AppCleaner.html</loc>
-    <lastmod>2020-05-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
@@ -242,9 +245,6 @@
     <lastmod>2020-05-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    <lastmod>2020-05-17</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     <lastmod>2020-05-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
