@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
-    <lastmod>2020-05-29T07:20:18.957Z</lastmod>
+    <lastmod>2020-05-29T07:37:52.317Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.tlhub.cn/VMware-Fusion-Pro.html</loc>
     
-    <lastmod>2020-05-29T07:08:26.133Z</lastmod>
+    <lastmod>2020-05-29T07:36:33.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-05-29T07:20:18.957Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     
     <lastmod>2020-05-29T07:07:10.822Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-05-29T02:05:00.779Z</lastmod>
     
   </url>
   
