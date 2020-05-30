@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/capXDR.html</loc>
+    
+    <lastmod>2020-05-30T05:20:10.337Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
     <lastmod>2020-05-30T04:02:29.219Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
     
     <lastmod>2020-05-28T14:25:42.898Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/capXDR.html</loc>
-    
-    <lastmod>2020-05-28T13:31:35.248Z</lastmod>
     
   </url>
   
