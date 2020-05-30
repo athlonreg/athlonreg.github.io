@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-05-30</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    <lastmod>2020-05-30</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-30</lastmod>
   </url>  <url>
@@ -121,9 +127,6 @@
     <loc>https://blog.tlhub.cn/FCPX.html</loc>
     <lastmod>2020-05-23</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-05-22</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/How-to-patch-Framebuffer-change-VRAM-from-1536MB-to-2048MB.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
@@ -207,9 +210,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/Wireshark.html</loc>
     <lastmod>2020-05-20</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-05-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/SublimeText.html</loc>
     <lastmod>2020-05-19</lastmod>
