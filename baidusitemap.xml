@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-05-31</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
+    <lastmod>2020-05-31</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-05-30</lastmod>
   </url>  <url>
@@ -8,9 +14,6 @@
     <lastmod>2020-05-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-05-30</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-05-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CarbonCopyCloner.html</loc>
@@ -236,9 +239,6 @@
     <lastmod>2020-05-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/SoundControl.html</loc>
-    <lastmod>2020-05-17</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     <lastmod>2020-05-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BetterZip.html</loc>
