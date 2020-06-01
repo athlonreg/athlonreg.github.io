@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-06-01T11:23:40.631Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     
     <lastmod>2020-06-01T11:20:19.947Z</lastmod>
@@ -131,13 +138,6 @@
     <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
     
     <lastmod>2020-05-28T06:22:20.908Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-05-28T03:07:38.934Z</lastmod>
     
   </url>
   
