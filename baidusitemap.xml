@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
+    <lastmod>2020-06-01</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
+    <lastmod>2020-06-01</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Boom-3D.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -38,9 +44,6 @@
     <lastmod>2020-05-29</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    <lastmod>2020-05-29</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     <lastmod>2020-05-29</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/V2RayU.html</loc>
@@ -188,9 +191,6 @@
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Keka.html</loc>
-    <lastmod>2020-05-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/WePE.html</loc>
