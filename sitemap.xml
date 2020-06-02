@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
+    
+    <lastmod>2020-06-02T03:23:28.450Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
     
     <lastmod>2020-06-01T15:51:46.310Z</lastmod>
@@ -159,13 +166,6 @@
     <loc>https://blog.tlhub.cn/Numi.html</loc>
     
     <lastmod>2020-05-28T13:28:55.795Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
-    
-    <lastmod>2020-05-28T06:22:20.908Z</lastmod>
     
   </url>
   
