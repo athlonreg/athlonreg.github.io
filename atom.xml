@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-05-28T00:37:28.549Z</updated>
+  <updated>2020-06-02T06:58:24.797Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS Catalina 10.15.5 19F101</title>
+    <link href="https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html"/>
+    <id>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html</id>
+    <published>2020-06-02T06:44:50.000Z</published>
+    <updated>2020-06-02T06:58:24.797Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;macOS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
+    
+    
+      <category term="原版镜像" scheme="https://blog.tlhub.cn/tags/%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F/"/>
+    
+      <category term="黑苹果镜像" scheme="https://blog.tlhub.cn/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%95%9C%E5%83%8F/"/>
+    
+      <category term="19F101" scheme="https://blog.tlhub.cn/tags/19F101/"/>
+    
+      <category term="Catalina" scheme="https://blog.tlhub.cn/tags/Catalina/"/>
+    
+      <category term="10.15.5" scheme="https://blog.tlhub.cn/tags/10-15-5/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS Catalina 10.15.5 19F96</title>
@@ -644,37 +679,6 @@
       <category term="视频" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91/"/>
     
       <category term="剪辑" scheme="https://blog.tlhub.cn/tags/%E5%89%AA%E8%BE%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AppCleaner 3.5 彻底清理 App 工具</title>
-    <link href="https://blog.tlhub.cn/AppCleaner.html"/>
-    <id>https://blog.tlhub.cn/AppCleaner.html</id>
-    <published>2020-05-22T14:35:46.000Z</published>
-    <updated>2020-05-22T18:10:49.173Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="AppCleaner" scheme="https://blog.tlhub.cn/tags/AppCleaner/"/>
-    
-      <category term="卸载" scheme="https://blog.tlhub.cn/tags/%E5%8D%B8%E8%BD%BD/"/>
-    
-      <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
     
   </entry>
   
