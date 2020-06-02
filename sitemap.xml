@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Downie.html</loc>
+    
+    <lastmod>2020-06-02T07:13:27.910Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html</loc>
     
-    <lastmod>2020-06-02T06:58:24.797Z</lastmod>
+    <lastmod>2020-06-02T06:58:36.716Z</lastmod>
     
   </url>
   
@@ -187,13 +194,6 @@
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html</loc>
     
     <lastmod>2020-05-28T00:37:28.549Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
-    
-    <lastmod>2020-05-26T12:54:21.406Z</lastmod>
     
   </url>
   
