@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-06-03T10:39:17.861Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Navicat-Premium.html</loc>
     
     <lastmod>2020-06-03T10:31:50.730Z</lastmod>
@@ -194,13 +201,6 @@
     <loc>https://blog.tlhub.cn/VMware-Fusion-Pro.html</loc>
     
     <lastmod>2020-05-29T07:36:33.477Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-05-29T07:20:18.957Z</lastmod>
     
   </url>
   
