@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-06-03T13:21:51.659Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2020-06-03T10:39:17.861Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     
     <lastmod>2020-06-01T14:22:16.976Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-06-01T11:23:40.631Z</lastmod>
     
   </url>
   
