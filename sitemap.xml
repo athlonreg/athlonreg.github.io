@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    
+    <lastmod>2020-06-06T10:22:36.826Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2020-06-06T09:11:07.239Z</lastmod>
@@ -495,13 +502,6 @@
     <loc>https://blog.tlhub.cn/Parallels-Desktop.html</loc>
     
     <lastmod>2020-06-01T01:22:24.225Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.222Z</lastmod>
     
   </url>
   
