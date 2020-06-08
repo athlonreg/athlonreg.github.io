@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
+    
+    <lastmod>2020-06-08T14:20:18.985Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/iTerm.html</loc>
+    
+    <lastmod>2020-06-08T14:19:41.771Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     
     <lastmod>2020-06-07T11:58:03.631Z</lastmod>
@@ -222,13 +236,6 @@
     <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
     
     <lastmod>2020-06-01T01:22:24.347Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/iTerm.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.334Z</lastmod>
     
   </url>
   
@@ -572,13 +579,6 @@
     <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
     
     <lastmod>2020-06-01T01:22:24.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.214Z</lastmod>
     
   </url>
   
