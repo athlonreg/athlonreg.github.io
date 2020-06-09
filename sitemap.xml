@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/WePE.html</loc>
+    
+    <lastmod>2020-06-09T09:50:26.163Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     
     <lastmod>2020-06-09T09:45:08.179Z</lastmod>
@@ -292,13 +299,6 @@
     <loc>https://blog.tlhub.cn/Windows-10-2004.html</loc>
     
     <lastmod>2020-06-01T01:22:24.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/WePE.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.293Z</lastmod>
     
   </url>
   
