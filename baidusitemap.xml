@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    <lastmod>2020-06-10</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Adobe-Zii.html</loc>
+    <lastmod>2020-06-10</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
+    <lastmod>2020-06-10</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/WePE.html</loc>
     <lastmod>2020-06-09</lastmod>
   </url>  <url>
@@ -26,9 +35,6 @@
     <lastmod>2020-06-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-06-06</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-06-06</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
@@ -328,9 +334,6 @@
     <loc>https://blog.tlhub.cn/CodeRunner.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/CPU-S.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -356,9 +359,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Adobe-Zii.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/ACPIBatteryManager.html</loc>
