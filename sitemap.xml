@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Keka.html</loc>
+    
+    <lastmod>2020-06-11T12:21:16.358Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
+    
+    <lastmod>2020-06-11T12:19:25.238Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-06-11T00:32:43.075Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>https://blog.tlhub.cn/WePE.html</loc>
     
     <lastmod>2020-06-09T09:50:26.163Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
-    
-    <lastmod>2020-06-09T09:45:08.179Z</lastmod>
     
   </url>
   
@@ -642,13 +649,6 @@
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
     
     <lastmod>2020-06-01T01:22:24.207Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Keka.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.204Z</lastmod>
     
   </url>
   
