@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-06-11T00:32:43.075Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-06-11T00:29:05.880Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Permute.html</loc>
     
     <lastmod>2020-06-11T00:25:32.208Z</lastmod>
@@ -61,20 +75,6 @@
     <loc>https://blog.tlhub.cn/GeekBench.html</loc>
     
     <lastmod>2020-06-09T09:44:13.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-06-09T01:19:05.788Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-06-08T15:52:32.901Z</lastmod>
     
   </url>
   
