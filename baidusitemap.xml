@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Permute.html</loc>
+    <lastmod>2020-06-11</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Downie.html</loc>
+    <lastmod>2020-06-11</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Folx.html</loc>
+    <lastmod>2020-06-10</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-06-10</lastmod>
   </url>  <url>
@@ -64,13 +73,7 @@
     <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Permute.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Bartender.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html</loc>
@@ -80,9 +83,6 @@
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Folx.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
@@ -166,10 +166,10 @@
     <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
+    <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
+    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/SublimeText.html</loc>
@@ -196,10 +196,10 @@
     <loc>https://blog.tlhub.cn/Shadowsocks.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/ScreenFlow.html</loc>
+    <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
+    <loc>https://blog.tlhub.cn/ScreenFlow.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Postman.html</loc>
@@ -214,10 +214,10 @@
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Platelet.html</loc>
+    <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
+    <loc>https://blog.tlhub.cn/Platelet.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PhotoBulk.html</loc>
@@ -268,10 +268,10 @@
     <loc>https://blog.tlhub.cn/Meld.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Maipo.html</loc>
+    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
+    <loc>https://blog.tlhub.cn/Maipo.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
@@ -310,10 +310,10 @@
     <loc>https://blog.tlhub.cn/FakeSMC.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/FakePCIID.html</loc>
+    <loc>https://blog.tlhub.cn/FCPX.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/FCPX.html</loc>
+    <loc>https://blog.tlhub.cn/FakePCIID.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Ethernet.html</loc>
