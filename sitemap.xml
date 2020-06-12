@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-06-12T10:48:36.927Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/BetterZip.html</loc>
     
     <lastmod>2020-06-12T10:24:20.955Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     
     <lastmod>2020-06-11T12:19:25.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-06-11T00:32:43.075Z</lastmod>
     
   </url>
   
