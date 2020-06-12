@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
+    <lastmod>2020-06-12</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
+    <lastmod>2020-06-12</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    <lastmod>2020-06-12</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
     <lastmod>2020-06-11</lastmod>
   </url>  <url>
@@ -45,9 +54,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     <lastmod>2020-06-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
-    <lastmod>2020-06-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-06-06</lastmod>
@@ -116,9 +122,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/itlwm.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iStatMenus.html</loc>
@@ -344,9 +347,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAJViewerMac.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Bear.html</loc>
