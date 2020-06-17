@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-06-17</lastmod>
   </url>  <url>
@@ -63,9 +69,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     <lastmod>2020-06-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-06-06</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
     <lastmod>2020-06-06</lastmod>
@@ -329,9 +332,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/DarwinDumper.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CodeRunner.html</loc>
