@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/capXDR.html</loc>
+    <lastmod>2020-06-19</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
+    <lastmod>2020-06-19</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     <lastmod>2020-06-17</lastmod>
   </url>  <url>
@@ -23,9 +29,6 @@
     <lastmod>2020-06-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    <lastmod>2020-06-12</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
     <lastmod>2020-06-12</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
@@ -137,9 +140,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iShot.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Xnip.html</loc>
