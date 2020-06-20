@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-06-20T13:51:17.398Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    
+    <lastmod>2020-06-20T13:28:19.090Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     
     <lastmod>2020-06-19T10:29:45.642Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
     <lastmod>2020-06-17T13:28:08.939Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-06-17T13:26:49.472Z</lastmod>
     
   </url>
   
@@ -285,13 +292,6 @@
     <loc>https://blog.tlhub.cn/Pap-er.html</loc>
     
     <lastmod>2020-06-01T02:51:22.093Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.375Z</lastmod>
     
   </url>
   

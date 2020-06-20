@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-06-20</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    <lastmod>2020-06-20</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-06-19</lastmod>
   </url>  <url>
@@ -11,9 +17,6 @@
     <lastmod>2020-06-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-06-17</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-06-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
@@ -122,9 +125,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Pap-er.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html</loc>
