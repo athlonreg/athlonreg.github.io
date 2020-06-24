@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Blocs.html</loc>
+    
+    <lastmod>2020-06-24T11:14:27.011Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Alfred.html</loc>
     
-    <lastmod>2020-06-23T06:45:42.701Z</lastmod>
+    <lastmod>2020-06-24T11:11:07.959Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
+    
+    <lastmod>2020-06-24T11:08:59.292Z</lastmod>
     
   </url>
   
@@ -61,13 +75,6 @@
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     
     <lastmod>2020-06-19T10:29:45.642Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
-    
-    <lastmod>2020-06-19T10:26:06.570Z</lastmod>
     
   </url>
   
@@ -264,13 +271,6 @@
     <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
     
     <lastmod>2020-06-02T03:23:28.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Blocs.html</loc>
-    
-    <lastmod>2020-06-01T15:51:46.310Z</lastmod>
     
   </url>
   

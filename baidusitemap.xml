@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Blocs.html</loc>
+    <lastmod>2020-06-24</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    <lastmod>2020-06-23</lastmod>
+    <lastmod>2020-06-24</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
+    <lastmod>2020-06-24</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-06-23</lastmod>
@@ -26,9 +32,6 @@
     <lastmod>2020-06-20</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
-    <lastmod>2020-06-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
     <lastmod>2020-06-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
@@ -114,9 +117,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
     <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Blocs.html</loc>
-    <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
     <lastmod>2020-06-01</lastmod>
