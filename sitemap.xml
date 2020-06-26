@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
+    
+    <lastmod>2020-06-26T04:30:34.863Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
+    
+    <lastmod>2020-06-26T04:30:02.099Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-06-25T02:36:02.498Z</lastmod>
@@ -198,13 +212,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
-    
-    <lastmod>2020-06-09T09:44:13.304Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     
     <lastmod>2020-06-08T14:20:18.985Z</lastmod>
@@ -243,13 +250,6 @@
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
     
     <lastmod>2020-06-02T14:31:57.637Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
-    
-    <lastmod>2020-06-02T14:26:41.355Z</lastmod>
     
   </url>
   

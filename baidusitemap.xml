@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
+    <lastmod>2020-06-26</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
+    <lastmod>2020-06-26</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-06-25</lastmod>
   </url>  <url>
@@ -85,9 +91,6 @@
     <loc>https://blog.tlhub.cn/WePE.html</loc>
     <lastmod>2020-06-09</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
-    <lastmod>2020-06-09</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     <lastmod>2020-06-08</lastmod>
   </url>  <url>
@@ -104,9 +107,6 @@
     <lastmod>2020-06-05</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Bartender.html</loc>
