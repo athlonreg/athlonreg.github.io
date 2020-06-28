@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-06-28</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/PicGo.html</loc>
+    <lastmod>2020-06-28</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Tower.html</loc>
+    <lastmod>2020-06-28</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Sensei.html</loc>
     <lastmod>2020-06-27</lastmod>
   </url>  <url>
@@ -12,9 +21,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/GeekBench.html</loc>
     <lastmod>2020-06-26</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-06-25</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iMazing.html</loc>
     <lastmod>2020-06-25</lastmod>
@@ -187,9 +193,6 @@
     <loc>https://blog.tlhub.cn/Transmit.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Tower.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -227,9 +230,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PlistEditPro.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/PicGo.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
