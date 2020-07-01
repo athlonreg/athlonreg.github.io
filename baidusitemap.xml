@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Alfred.html</loc>
+    <lastmod>2020-07-01</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
+    <lastmod>2020-07-01</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Sketch.html</loc>
+    <lastmod>2020-07-01</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    <lastmod>2020-07-01</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-06-30</lastmod>
   </url>  <url>
@@ -12,9 +24,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-06-28</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    <lastmod>2020-06-27</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iShot.html</loc>
     <lastmod>2020-06-27</lastmod>
@@ -38,9 +47,6 @@
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
-    <lastmod>2020-06-24</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Alfred.html</loc>
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BetterZip.html</loc>
@@ -196,9 +202,6 @@
     <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/SublimeText.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -209,9 +212,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Smooze.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Sketch.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Sinetek-rtsx.html</loc>

@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Alfred.html</loc>
+    
+    <lastmod>2020-07-01T15:01:22.350Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
+    
+    <lastmod>2020-07-01T14:54:36.485Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Sketch.html</loc>
+    
+    <lastmod>2020-07-01T14:51:58.820Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    
+    <lastmod>2020-07-01T14:43:44.527Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-06-30T12:54:55.739Z</lastmod>
@@ -26,13 +54,6 @@
     <loc>https://blog.tlhub.cn/Tower.html</loc>
     
     <lastmod>2020-06-28T13:33:22.100Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    
-    <lastmod>2020-06-27T02:32:53.055Z</lastmod>
     
   </url>
   
@@ -89,13 +110,6 @@
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
     
     <lastmod>2020-06-24T11:14:27.011Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    
-    <lastmod>2020-06-24T11:11:07.959Z</lastmod>
     
   </url>
   
@@ -457,13 +471,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.238Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/SublimeText.html</loc>
     
     <lastmod>2020-06-01T01:22:24.237Z</lastmod>
@@ -486,13 +493,6 @@
   
   <url>
     <loc>https://blog.tlhub.cn/Smooze.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.234Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Sketch.html</loc>
     
     <lastmod>2020-06-01T01:22:24.234Z</lastmod>
     
