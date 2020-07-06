@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-07-06</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Tower.html</loc>
+    <lastmod>2020-07-06</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    <lastmod>2020-07-06</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Alfred.html</loc>
+    <lastmod>2020-07-04</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-07-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     <lastmod>2020-07-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    <lastmod>2020-07-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     <lastmod>2020-07-01</lastmod>
@@ -16,19 +25,10 @@
     <loc>https://blog.tlhub.cn/Sketch.html</loc>
     <lastmod>2020-07-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    <lastmod>2020-07-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-06-30</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     <lastmod>2020-06-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
-    <lastmod>2020-06-28</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-06-28</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iShot.html</loc>

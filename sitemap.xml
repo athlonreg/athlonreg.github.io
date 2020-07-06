@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-07-06T05:01:43.850Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Tower.html</loc>
+    
+    <lastmod>2020-07-06T04:52:35.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Sensei.html</loc>
+    
+    <lastmod>2020-07-06T04:50:41.489Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Alfred.html</loc>
+    
+    <lastmod>2020-07-04T03:10:05.654Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2020-07-03T01:23:33.612Z</lastmod>
@@ -12,13 +40,6 @@
     <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     
     <lastmod>2020-07-02T05:32:58.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    
-    <lastmod>2020-07-01T15:01:22.350Z</lastmod>
     
   </url>
   
@@ -37,20 +58,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    
-    <lastmod>2020-07-01T14:43:44.527Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-06-30T12:54:55.739Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
     
     <lastmod>2020-06-30T12:35:49.690Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
     
     <lastmod>2020-06-28T13:36:03.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Tower.html</loc>
-    
-    <lastmod>2020-06-28T13:33:22.100Z</lastmod>
     
   </url>
   
