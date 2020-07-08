@@ -2,7 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-07-06</lastmod>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/VideoProc.html</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Downie.html</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Sketch.html</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
+    <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-07-06</lastmod>
@@ -13,16 +34,10 @@
     <loc>https://blog.tlhub.cn/Alfred.html</loc>
     <lastmod>2020-07-04</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    <lastmod>2020-07-03</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     <lastmod>2020-07-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
-    <lastmod>2020-07-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Sketch.html</loc>
     <lastmod>2020-07-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
@@ -37,9 +52,6 @@
     <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
     <lastmod>2020-06-26</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
-    <lastmod>2020-06-26</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/iMazing.html</loc>
     <lastmod>2020-06-25</lastmod>
   </url>  <url>
@@ -49,13 +61,7 @@
     <loc>https://blog.tlhub.cn/Permute.html</loc>
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
-    <lastmod>2020-06-24</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
-    <lastmod>2020-06-24</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
@@ -181,9 +187,6 @@
     <loc>https://blog.tlhub.cn/VMware-Fusion-Pro.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/VideoProc.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/V2RayU.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -305,9 +308,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Go2Shell.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/GenI2C.html</loc>
