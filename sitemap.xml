@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
+    
+    <lastmod>2020-07-08T02:06:36.509Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    
+    <lastmod>2020-07-08T02:01:24.468Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-07-08T01:54:25.651Z</lastmod>
@@ -222,13 +236,6 @@
     <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
     
     <lastmod>2020-06-12T10:22:22.664Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
-    
-    <lastmod>2020-06-12T10:21:45.792Z</lastmod>
     
   </url>
   
@@ -703,13 +710,6 @@
   
   <url>
     <loc>https://blog.tlhub.cn/IOJones.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.202Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
     
     <lastmod>2020-06-01T01:22:24.202Z</lastmod>
     
