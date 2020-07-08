@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Mos.html</loc>
+    
+    <lastmod>2020-07-08T15:32:51.043Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
     
     <lastmod>2020-07-08T02:06:36.509Z</lastmod>
@@ -656,13 +663,6 @@
     <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
     
     <lastmod>2020-06-01T01:22:24.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Mos.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.212Z</lastmod>
     
   </url>
   
