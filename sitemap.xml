@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    
+    <lastmod>2020-07-10T05:44:56.035Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Alfred.html</loc>
+    
+    <lastmod>2020-07-10T05:16:27.904Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-07-10T05:10:37.497Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
     <lastmod>2020-07-09T00:19:33.133Z</lastmod>
@@ -26,13 +47,6 @@
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     
     <lastmod>2020-07-08T02:01:24.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    
-    <lastmod>2020-07-08T01:54:25.651Z</lastmod>
     
   </url>
   
@@ -96,13 +110,6 @@
     <loc>https://blog.tlhub.cn/Sensei.html</loc>
     
     <lastmod>2020-07-06T04:50:41.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    
-    <lastmod>2020-07-04T03:10:05.654Z</lastmod>
     
   </url>
   
@@ -173,13 +180,6 @@
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
     
     <lastmod>2020-06-24T11:14:27.011Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-06-23T06:40:36.226Z</lastmod>
     
   </url>
   
