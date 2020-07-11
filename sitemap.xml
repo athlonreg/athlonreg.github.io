@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    
+    <lastmod>2020-07-11T03:51:49.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
+    
+    <lastmod>2020-07-11T03:47:49.437Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-07-10T15:54:02.526Z</lastmod>
@@ -464,13 +478,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.242Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Tuxera.html</loc>
     
     <lastmod>2020-06-01T01:22:24.241Z</lastmod>
@@ -488,13 +495,6 @@
     <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
     
     <lastmod>2020-06-01T01:22:24.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.237Z</lastmod>
     
   </url>
   
