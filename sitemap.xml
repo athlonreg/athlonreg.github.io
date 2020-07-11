@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-07-11T09:55:23.439Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     
     <lastmod>2020-07-11T03:51:49.546Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     
     <lastmod>2020-07-08T02:01:24.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-07-08T01:47:57.452Z</lastmod>
     
   </url>
   
