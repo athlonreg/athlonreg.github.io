@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.tlhub.cn/Dozer.html</loc>
-    <lastmod>2020-07-13</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-07-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-07-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Downie.html</loc>
+    <lastmod>2020-07-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Dozer.html</loc>
     <lastmod>2020-07-13</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
@@ -28,9 +34,6 @@
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-07-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-07-09</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Mos.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
@@ -44,9 +47,6 @@
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/GeekBench.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BetterZip.html</loc>
