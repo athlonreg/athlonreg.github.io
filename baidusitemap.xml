@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-07-14</lastmod>
+    <lastmod>2020-07-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
+    <lastmod>2020-07-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    <lastmod>2020-07-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
+    <lastmod>2020-07-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Permute.html</loc>
+    <lastmod>2020-07-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
+    <lastmod>2020-07-15</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-07-14</lastmod>
@@ -24,9 +39,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/Sensei.html</loc>
     <lastmod>2020-07-12</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    <lastmod>2020-07-11</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Alfred.html</loc>
     <lastmod>2020-07-10</lastmod>
@@ -55,9 +67,6 @@
     <loc>https://blog.tlhub.cn/Sketch.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-07-06</lastmod>
   </url>  <url>
@@ -80,9 +89,6 @@
     <lastmod>2020-06-25</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Navicat-Premium.html</loc>
-    <lastmod>2020-06-24</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Permute.html</loc>
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Blocs.html</loc>
@@ -124,9 +130,6 @@
     <loc>https://blog.tlhub.cn/Folx.html</loc>
     <lastmod>2020-06-10</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
-    <lastmod>2020-06-10</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/WePE.html</loc>
     <lastmod>2020-06-09</lastmod>
   </url>  <url>
@@ -149,9 +152,6 @@
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
