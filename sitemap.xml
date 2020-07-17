@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Parallels-Desktop.html</loc>
+    
+    <lastmod>2020-07-17T17:51:12.093Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-07-17T12:12:48.698Z</lastmod>
@@ -593,13 +600,6 @@
     <loc>https://blog.tlhub.cn/Paste.html</loc>
     
     <lastmod>2020-06-01T01:22:24.226Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Parallels-Desktop.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.225Z</lastmod>
     
   </url>
   
