@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-07-18</lastmod>
+    <lastmod>2020-07-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
+    <lastmod>2020-07-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
+    <lastmod>2020-07-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Keka.html</loc>
+    <lastmod>2020-07-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Downie.html</loc>
+    <lastmod>2020-07-21</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Tower.html</loc>
+    <lastmod>2020-07-21</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-07-18</lastmod>
@@ -22,9 +37,6 @@
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     <lastmod>2020-07-17</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
-    <lastmod>2020-07-15</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
     <lastmod>2020-07-15</lastmod>
   </url>  <url>
@@ -35,9 +47,6 @@
     <lastmod>2020-07-15</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-07-14</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
     <lastmod>2020-07-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Dozer.html</loc>
@@ -78,9 +87,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/Sketch.html</loc>
     <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Tower.html</loc>
-    <lastmod>2020-07-06</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
     <lastmod>2020-07-02</lastmod>
@@ -127,13 +133,7 @@
     <loc>https://blog.tlhub.cn/Reeder.html</loc>
     <lastmod>2020-06-14</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
-    <lastmod>2020-06-12</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
-    <lastmod>2020-06-11</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Keka.html</loc>
     <lastmod>2020-06-11</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Folx.html</loc>
