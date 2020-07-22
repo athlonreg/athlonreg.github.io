@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.tlhub.cn/Folx.html</loc>
-    <lastmod>2020-07-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Boom-3D.html</loc>
-    <lastmod>2020-07-22</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-07-21</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Hackintool.html</loc>
-    <lastmod>2020-07-21</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/iThoughtsX.html</loc>
-    <lastmod>2020-07-21</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Keka.html</loc>
-    <lastmod>2020-07-21</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Downie.html</loc>
-    <lastmod>2020-07-21</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Tower.html</loc>
     <lastmod>2020-07-21</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
@@ -31,26 +13,11 @@
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     <lastmod>2020-07-18</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/SublimeText.html</loc>
-    <lastmod>2020-07-18</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Parallels-Desktop.html</loc>
-    <lastmod>2020-07-17</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Clover.html</loc>
     <lastmod>2020-07-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     <lastmod>2020-07-17</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Boxy-SVG.html</loc>
-    <lastmod>2020-07-15</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Permute.html</loc>
-    <lastmod>2020-07-15</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CleanMyMac.html</loc>
-    <lastmod>2020-07-15</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-07-14</lastmod>
@@ -64,12 +31,6 @@
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Sensei.html</loc>
-    <lastmod>2020-07-12</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Alfred.html</loc>
-    <lastmod>2020-07-10</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-07-10</lastmod>
   </url>  <url>
@@ -82,62 +43,23 @@
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/VideoProc.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/GeekBench.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterZip.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Sketch.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Movist-Pro.html</loc>
-    <lastmod>2020-07-02</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     <lastmod>2020-07-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BetterTouchTool.html</loc>
-    <lastmod>2020-06-30</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iShot.html</loc>
     <lastmod>2020-06-27</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/PDF-Expert.html</loc>
-    <lastmod>2020-06-26</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/iMazing.html</loc>
-    <lastmod>2020-06-25</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Navicat-Premium.html</loc>
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Blocs.html</loc>
-    <lastmod>2020-06-24</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Adobe-Zii.html</loc>
-    <lastmod>2020-06-22</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
     <lastmod>2020-06-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CarbonCopyCloner.html</loc>
-    <lastmod>2020-06-21</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-06-20</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-06-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Backgrounds.html</loc>
-    <lastmod>2020-06-16</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Reeder.html</loc>
-    <lastmod>2020-06-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
     <lastmod>2020-06-11</lastmod>
@@ -151,13 +73,7 @@
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
     <lastmod>2020-06-06</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Adguard.html</loc>
-    <lastmod>2020-06-06</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Bartender.html</loc>
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html</loc>
@@ -181,16 +97,7 @@
     <loc>https://blog.tlhub.cn/itlwm.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/iStatMenus.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Xnip.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/XMind.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Wireshark.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Windows-10-2004.html</loc>
@@ -202,31 +109,16 @@
     <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/VMware-Fusion-Pro.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/V2RayU.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Tuxera.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Transmit.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/TeamViewer.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/SoundControl.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Snipaste.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Smooze.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Sinetek-rtsx.html</loc>
@@ -238,13 +130,7 @@
     <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/ScreenFlow.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Postman.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/PlistEditPro.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/PinConfigurator.html</loc>
@@ -253,22 +139,10 @@
     <loc>https://blog.tlhub.cn/Platelet.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/PhotoBulk.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Paste.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/One-Switch.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Office-2019-for-Mac.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OfficeTool.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Numi.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/NoSleep.html</loc>
@@ -277,19 +151,10 @@
     <loc>https://blog.tlhub.cn/NullCPUPowerManagement.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/NeatDownloadManager.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/NearLock.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/MindNodePro.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Meld.html</loc>
@@ -298,13 +163,7 @@
     <loc>https://blog.tlhub.cn/MaciASL.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Maipo.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/IntelPowerGadget.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Itsycal.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/IOJones.html</loc>
@@ -322,9 +181,6 @@
     <loc>https://blog.tlhub.cn/FakeSMC.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/FCPX.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/FakePCIID.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -337,9 +193,6 @@
     <loc>https://blog.tlhub.cn/DarwinDumper.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CodeRunner.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/CPU-S.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -350,12 +203,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAJViewerMac.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Bear.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/AppCleaner.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BT4LEContinuityFixup.html</loc>
