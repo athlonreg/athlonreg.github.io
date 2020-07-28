@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
-    <lastmod>2020-07-27T03:15:42.014Z</lastmod>
+    <lastmod>2020-07-28T02:35:12.516Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
     
-    <lastmod>2020-07-27T03:13:37.798Z</lastmod>
+    <lastmod>2020-07-28T02:33:30.735Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-07-28T02:05:19.419Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    
+    <lastmod>2020-07-27T03:15:42.014Z</lastmod>
     
   </url>
   
@@ -72,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-07-10T05:10:37.497Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Mos.html</loc>
     
     <lastmod>2020-07-08T15:32:51.043Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
     
     <lastmod>2020-06-22T00:26:28.303Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    
-    <lastmod>2020-06-20T13:28:19.090Z</lastmod>
     
   </url>
   

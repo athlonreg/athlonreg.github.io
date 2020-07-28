@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    <lastmod>2020-07-27</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-07-28</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    <lastmod>2020-07-28</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    <lastmod>2020-07-28</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-07-27</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Hackintool.html</loc>
@@ -31,9 +37,6 @@
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    <lastmod>2020-07-10</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Mos.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
@@ -54,9 +57,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
     <lastmod>2020-06-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    <lastmod>2020-06-20</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-06-19</lastmod>
