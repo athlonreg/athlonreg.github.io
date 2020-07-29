@@ -2,7 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-07-28</lastmod>
+    <lastmod>2020-07-29</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    <lastmod>2020-07-29</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-07-28</lastmod>
@@ -41,9 +44,6 @@
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
