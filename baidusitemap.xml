@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-08-05</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    <lastmod>2020-08-05</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    <lastmod>2020-08-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    <lastmod>2020-08-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    <lastmod>2020-08-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
+    <lastmod>2020-08-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
+    <lastmod>2020-08-03</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-08-02</lastmod>
   </url>  <url>
@@ -22,17 +43,8 @@
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-07-18</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-07-18</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Clover.html</loc>
     <lastmod>2020-07-17</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
-    <lastmod>2020-07-17</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-07-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Dozer.html</loc>
     <lastmod>2020-07-13</lastmod>
@@ -78,12 +90,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html</loc>
     <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Pap-er.html</loc>
     <lastmod>2020-06-01</lastmod>
@@ -151,9 +157,6 @@
     <loc>https://blog.tlhub.cn/NullCPUPowerManagement.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/NVWebDriverLibValFix.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
@@ -197,9 +200,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CPUTune.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CAJViewerMac.html</loc>
