@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
-    <lastmod>2020-08-06T15:01:41.044Z</lastmod>
+    <lastmod>2020-08-07T06:52:48.775Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
     
-    <lastmod>2020-08-06T02:29:21.024Z</lastmod>
+    <lastmod>2020-08-07T04:29:52.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    
+    <lastmod>2020-08-06T15:01:41.044Z</lastmod>
     
   </url>
   
@@ -194,13 +201,6 @@
     <loc>https://blog.tlhub.cn/Motrix.html</loc>
     
     <lastmod>2020-06-06T03:51:15.387Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
-    
-    <lastmod>2020-06-02T14:31:57.637Z</lastmod>
     
   </url>
   
