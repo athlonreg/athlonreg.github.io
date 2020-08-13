@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-08-09</lastmod>
+    <lastmod>2020-08-13</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-08-13</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    <lastmod>2020-08-13</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/V2RayU.html</loc>
+    <lastmod>2020-08-13</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
     <lastmod>2020-08-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-08-06</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-08-05</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
     <lastmod>2020-08-03</lastmod>
@@ -113,9 +116,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/V2RayU.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
