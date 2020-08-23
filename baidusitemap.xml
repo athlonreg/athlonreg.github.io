@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-08-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    <lastmod>2020-08-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    <lastmod>2020-08-23</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Clover.html</loc>
+    <lastmod>2020-08-23</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     <lastmod>2020-08-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/V2RayU.html</loc>
-    <lastmod>2020-08-13</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-08-13</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
@@ -37,20 +46,11 @@
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-07-28</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    <lastmod>2020-07-28</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-07-27</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Hackintool.html</loc>
     <lastmod>2020-07-21</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    <lastmod>2020-07-18</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Clover.html</loc>
-    <lastmod>2020-07-17</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Dozer.html</loc>
     <lastmod>2020-07-13</lastmod>
