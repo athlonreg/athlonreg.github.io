@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
-    <lastmod>2020-08-29</lastmod>
+    <lastmod>2020-09-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Clover.html</loc>
+    <lastmod>2020-09-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/IINA.html</loc>
+    <lastmod>2020-09-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    <lastmod>2020-09-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
+    <lastmod>2020-09-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    <lastmod>2020-09-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-08-29</lastmod>
@@ -12,12 +27,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-08-29</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    <lastmod>2020-08-29</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Clover.html</loc>
-    <lastmod>2020-08-23</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     <lastmod>2020-08-14</lastmod>
@@ -35,9 +44,6 @@
     <lastmod>2020-08-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    <lastmod>2020-08-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
     <lastmod>2020-08-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
@@ -78,9 +84,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-06-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/IINA.html</loc>
-    <lastmod>2020-06-11</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/WePE.html</loc>
     <lastmod>2020-06-09</lastmod>
@@ -161,9 +164,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Meld.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/IntelPowerGadget.html</loc>
