@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    <lastmod>2020-09-07</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Clover.html</loc>
     <lastmod>2020-09-07</lastmod>
   </url>  <url>
@@ -39,9 +42,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
     <lastmod>2020-08-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
-    <lastmod>2020-08-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
     <lastmod>2020-08-03</lastmod>
