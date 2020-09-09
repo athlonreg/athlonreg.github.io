@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <lastmod>2020-09-09</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Ethernet.html</loc>
+    <lastmod>2020-09-09</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-09-09</lastmod>
   </url>  <url>
@@ -8,9 +14,6 @@
     <lastmod>2020-09-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Clover.html</loc>
-    <lastmod>2020-09-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-09-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
@@ -185,9 +188,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/FakePCIID.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Ethernet.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Don-t-Starve.html</loc>
