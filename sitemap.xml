@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    
+    <lastmod>2020-09-11T15:02:19.829Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-09-09T14:25:47.181Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
     
     <lastmod>2020-08-03T16:24:29.949Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    
-    <lastmod>2020-07-28T02:33:30.735Z</lastmod>
     
   </url>
   
