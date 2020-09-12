@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    
+    <lastmod>2020-09-12T07:46:04.763Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     
     <lastmod>2020-09-12T02:21:52.702Z</lastmod>
@@ -103,13 +110,6 @@
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     
     <lastmod>2020-09-07T13:09:04.283Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    
-    <lastmod>2020-08-29T04:42:16.128Z</lastmod>
     
   </url>
   
