@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.tlhub.cn/"/>
-  <updated>2020-06-02T06:58:36.716Z</updated>
+  <updated>2020-09-12T01:13:53.402Z</updated>
   <id>https://blog.tlhub.cn/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS 安装部署 MySQL 8.0</title>
+    <link href="https://blog.tlhub.cn/How-to-deploy-MySQL-8-0-on-CentOS.html"/>
+    <id>https://blog.tlhub.cn/How-to-deploy-MySQL-8-0-on-CentOS.html</id>
+    <published>2020-09-12T01:12:20.000Z</published>
+    <updated>2020-09-12T01:13:53.402Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;root@smartagriculture ~&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
+    
+    
+      <category term="MySQL" scheme="https://blog.tlhub.cn/tags/MySQL/"/>
+    
+      <category term="8" scheme="https://blog.tlhub.cn/tags/8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 安装部署 PostgreSQL 12</title>
+    <link href="https://blog.tlhub.cn/How-to-deploy-PostgreSQL-12-on-CentOS.html"/>
+    <id>https://blog.tlhub.cn/How-to-deploy-PostgreSQL-12-on-CentOS.html</id>
+    <published>2020-09-12T01:08:42.000Z</published>
+    <updated>2020-09-12T01:11:41.126Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;配置安装源&quot;&gt;&lt;a href=&quot;#配置安装源&quot; class=&quot;headerlink&quot; title=&quot;配置安装源&quot;&gt;&lt;/a&gt;配置安装源&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://blog.tlhub.cn/categories/Linux/"/>
+    
+    
+      <category term="PostgreSQL" scheme="https://blog.tlhub.cn/tags/PostgreSQL/"/>
+    
+      <category term="PG" scheme="https://blog.tlhub.cn/tags/PG/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS Catalina 10.15.5 19F101</title>
@@ -593,68 +651,6 @@
       <category term="4K" scheme="https://blog.tlhub.cn/tags/4K/"/>
     
       <category term="视频下载" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微 PE 工具箱 2.1 Beta</title>
-    <link href="https://blog.tlhub.cn/WePE.html"/>
-    <id>https://blog.tlhub.cn/WePE.html</id>
-    <published>2020-05-21T14:44:20.000Z</published>
-    <updated>2020-06-09T09:50:26.163Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 介绍&lt;/h2&gt;&lt;p&gt;WePE 2.0
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="微 PE" scheme="https://blog.tlhub.cn/tags/%E5%BE%AE-PE/"/>
-    
-      <category term="PE" scheme="https://blog.tlhub.cn/tags/PE/"/>
-    
-      <category term="WePE" scheme="https://blog.tlhub.cn/tags/WePE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dont Starve Hamlet 饥荒 mac 版生存游戏</title>
-    <link href="https://blog.tlhub.cn/Don-t-Starve.html"/>
-    <id>https://blog.tlhub.cn/Don-t-Starve.html</id>
-    <published>2020-05-20T08:53:12.000Z</published>
-    <updated>2020-06-01T01:22:24.189Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot; 介绍&quot;&gt;&lt;/a&gt;&lt;i class=&quot;fa fa-audio-description&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
-    
-    
-      <category term="饥荒" scheme="https://blog.tlhub.cn/tags/%E9%A5%A5%E8%8D%92/"/>
-    
-      <category term="Don&#39;t Starve" scheme="https://blog.tlhub.cn/tags/Don-t-Starve/"/>
-    
-      <category term="Hamlet" scheme="https://blog.tlhub.cn/tags/Hamlet/"/>
     
   </entry>
   

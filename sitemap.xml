@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/How-to-deploy-MySQL-8-0-on-CentOS.html</loc>
+    
+    <lastmod>2020-09-12T01:13:53.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/How-to-deploy-PostgreSQL-12-on-CentOS.html</loc>
+    
+    <lastmod>2020-09-12T01:11:41.126Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Systemd-service-file-of-sonar-gerrit-and-tomcat.html</loc>
+    
+    <lastmod>2020-09-12T01:08:03.468Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/How-to-deploy-gitlab-on-centos.html</loc>
+    
+    <lastmod>2020-09-12T01:06:57.359Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2020-09-11T15:15:43.578Z</lastmod>
@@ -513,13 +541,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html</loc>
-    
-    <lastmod>2020-05-25T02:10:04.226Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/Driver-audio-for-hackintosh.html</loc>
     
     <lastmod>2020-05-25T02:09:25.172Z</lastmod>
@@ -733,13 +754,6 @@
     <loc>https://blog.tlhub.cn/Problem-about-rollover-price-tag.html</loc>
     
     <lastmod>2020-04-30T05:23:37.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Systemd-service-file-of-sonar-gerrit-and-tomcat.html</loc>
-    
-    <lastmod>2020-04-30T05:23:37.270Z</lastmod>
     
   </url>
   

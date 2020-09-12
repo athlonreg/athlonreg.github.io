@@ -1,3 +1,5 @@
+https://blog.tlhub.cn/How-to-deploy-MySQL-8-0-on-CentOS.html
+https://blog.tlhub.cn/How-to-deploy-PostgreSQL-12-on-CentOS.html
 https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html
 https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F96.html
 https://blog.tlhub.cn/iShot.html
@@ -78,7 +80,7 @@ https://blog.tlhub.cn/Fix-the-pictures-can-not-show-in-hexo-with-sina-weibo-picb
 https://blog.tlhub.cn/Check-current-system-is-vm-or-real.html
 https://blog.tlhub.cn/Setup-postgresql-login-by-password.html
 https://blog.tlhub.cn/Deploy-redmine-on-CentOS7.html
-https://blog.tlhub.cn/Setup-gitlab-to-support-frame.html
+https://blog.tlhub.cn/How-to-deploy-gitlab-on-centos.html
 https://blog.tlhub.cn/How-to-use-youdao-note-in-a-special-way.html
 https://blog.tlhub.cn/TestLink-integrate-with-ldap-and-CAS.html
 https://blog.tlhub.cn/MantisBT-integrate-with-ldap-and-CAS.html
@@ -96,5 +98,3 @@ https://blog.tlhub.cn/MantisBT-install-and-deploy.html
 https://blog.tlhub.cn/awk-to-use.html
 https://blog.tlhub.cn/quicksort.html
 https://blog.tlhub.cn/High-Sierra-and-Mojave-Images-update.html
-https://blog.tlhub.cn/Command-sed-on-mac.html
-https://blog.tlhub.cn/Custom-terminal-on-your-mac.html
