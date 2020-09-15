@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-09-15T11:39:24.875Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     
     <lastmod>2020-09-15T01:18:54.101Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://blog.tlhub.cn/How-to-deploy-gitlab-on-centos.html</loc>
     
     <lastmod>2020-09-12T01:06:57.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-09-11T15:15:43.578Z</lastmod>
     
   </url>
   
