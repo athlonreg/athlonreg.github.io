@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-09-26T13:01:46.652Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
     <lastmod>2020-09-17T11:12:24.167Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     
     <lastmod>2020-09-16T10:42:21.959Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-09-16T10:41:34.801Z</lastmod>
     
   </url>
   
