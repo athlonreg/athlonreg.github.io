@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    
+    <lastmod>2020-09-28T14:32:37.372Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
     <lastmod>2020-09-28T14:28:30.449Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.tlhub.cn/How-to-deploy-gitlab-on-centos.html</loc>
     
     <lastmod>2020-09-12T01:06:57.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    
-    <lastmod>2020-09-11T15:02:19.829Z</lastmod>
     
   </url>
   
