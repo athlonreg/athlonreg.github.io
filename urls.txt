@@ -1,3 +1,4 @@
+https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html
 https://blog.tlhub.cn/How-to-deploy-MySQL-8-0-on-CentOS.html
 https://blog.tlhub.cn/How-to-deploy-PostgreSQL-12-on-CentOS.html
 https://blog.tlhub.cn/macOS-Catalina-10-15-5-19F101.html
@@ -97,4 +98,3 @@ https://blog.tlhub.cn/SonarQube-install-and-deploy.html
 https://blog.tlhub.cn/MantisBT-install-and-deploy.html
 https://blog.tlhub.cn/awk-to-use.html
 https://blog.tlhub.cn/quicksort.html
-https://blog.tlhub.cn/High-Sierra-and-Mojave-Images-update.html
