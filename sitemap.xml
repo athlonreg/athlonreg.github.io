@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Clover.html</loc>
+    
+    <lastmod>2020-10-04T04:31:57.133Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    
+    <lastmod>2020-10-04T04:30:17.168Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
     
-    <lastmod>2020-10-03T01:14:49.937Z</lastmod>
+    <lastmod>2020-10-03T01:15:18.116Z</lastmod>
     
   </url>
   
@@ -107,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Clover.html</loc>
-    
-    <lastmod>2020-09-07T14:44:54.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
     
     <lastmod>2020-09-07T13:12:03.794Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     
     <lastmod>2020-08-13T13:17:17.033Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
-    
-    <lastmod>2020-08-07T04:29:52.559Z</lastmod>
     
   </url>
   
