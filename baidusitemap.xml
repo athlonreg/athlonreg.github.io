@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.tlhub.cn/Clover.html</loc>
-    <lastmod>2020-10-04</lastmod>
+    <loc>https://blog.tlhub.cn/itlwm.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Ethernet.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    <lastmod>2020-10-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/IINA.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Clover.html</loc>
     <lastmod>2020-10-04</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
@@ -17,9 +47,6 @@
     <lastmod>2020-10-02</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
-    <lastmod>2020-09-28</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-09-28</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
@@ -46,19 +73,7 @@
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-09-09</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Ethernet.html</loc>
-    <lastmod>2020-09-09</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
-    <lastmod>2020-09-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/IINA.html</loc>
-    <lastmod>2020-09-07</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/MaciASL.html</loc>
-    <lastmod>2020-09-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
     <lastmod>2020-09-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/V2RayU.html</loc>
@@ -66,15 +81,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     <lastmod>2020-08-13</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    <lastmod>2020-08-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
-    <lastmod>2020-08-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
-    <lastmod>2020-08-03</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Hackintool.html</loc>
     <lastmod>2020-07-21</lastmod>
@@ -86,9 +92,6 @@
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Mos.html</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/iShot.html</loc>
@@ -122,9 +125,6 @@
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/macOS-SDKs.html</loc>
-    <lastmod>2020-06-01</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/itlwm.html</loc>
     <lastmod>2020-06-01</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Xnip.html</loc>
