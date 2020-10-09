@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
-    <lastmod>2020-10-09T02:22:43.201Z</lastmod>
+    <lastmod>2020-10-09T04:11:38.153Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
-    <lastmod>2020-10-08T15:38:07.320Z</lastmod>
+    <lastmod>2020-10-09T04:10:56.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    
+    <lastmod>2020-10-09T02:22:43.201Z</lastmod>
     
   </url>
   
@@ -103,13 +110,6 @@
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     
     <lastmod>2020-10-03T00:52:24.130Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-10-02T12:19:42.628Z</lastmod>
     
   </url>
   
