@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-10-31</lastmod>
   </url>  <url>
@@ -22,9 +34,6 @@
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-10-12</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-10-12</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
     <lastmod>2020-10-09</lastmod>
   </url>  <url>
@@ -34,9 +43,6 @@
     <loc>https://blog.tlhub.cn/IntelBluetooth.html</loc>
     <lastmod>2020-10-07</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
-    <lastmod>2020-10-07</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/NVMeFix.html</loc>
     <lastmod>2020-10-07</lastmod>
   </url>  <url>
@@ -44,12 +50,6 @@
     <lastmod>2020-10-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/BrcmPatchRAM.html</loc>
-    <lastmod>2020-10-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    <lastmod>2020-10-07</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
     <lastmod>2020-10-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
