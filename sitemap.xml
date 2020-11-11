@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/UEFITool.html</loc>
+    
+    <lastmod>2020-11-11T06:24:00.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-11-11T06:18:13.113Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     
     <lastmod>2020-11-11T06:07:07.736Z</lastmod>
@@ -145,13 +159,6 @@
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     
     <lastmod>2020-09-16T10:42:21.959Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-09-15T01:18:54.101Z</lastmod>
     
   </url>
   
@@ -327,13 +334,6 @@
     <loc>https://blog.tlhub.cn/VoodooHDA.html</loc>
     
     <lastmod>2020-06-01T01:22:24.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/UEFITool.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.243Z</lastmod>
     
   </url>
   
