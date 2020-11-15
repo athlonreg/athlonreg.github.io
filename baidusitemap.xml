@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
+    <lastmod>2020-11-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-11-15</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    <lastmod>2020-11-15</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     <lastmod>2020-11-13</lastmod>
   </url>  <url>
@@ -14,9 +23,6 @@
     <lastmod>2020-11-11</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    <lastmod>2020-11-11</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     <lastmod>2020-11-11</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
@@ -64,14 +70,8 @@
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
     <lastmod>2020-10-03</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
-    <lastmod>2020-10-03</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-09-28</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
-    <lastmod>2020-09-16</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
     <lastmod>2020-09-12</lastmod>

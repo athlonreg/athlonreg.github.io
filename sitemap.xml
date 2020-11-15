@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
+    
+    <lastmod>2020-11-15T02:59:05.368Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    
+    <lastmod>2020-11-15T02:56:40.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    
+    <lastmod>2020-11-15T02:56:30.468Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     
     <lastmod>2020-11-13T09:08:18.832Z</lastmod>
@@ -33,13 +54,6 @@
     <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
     
     <lastmod>2020-11-11T06:07:07.736Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    
-    <lastmod>2020-11-11T06:00:43.194Z</lastmod>
     
   </url>
   
@@ -149,23 +163,9 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
-    
-    <lastmod>2020-10-03T00:52:24.130Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     
     <lastmod>2020-09-28T14:32:37.372Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
-    
-    <lastmod>2020-09-16T10:42:21.959Z</lastmod>
     
   </url>
   
