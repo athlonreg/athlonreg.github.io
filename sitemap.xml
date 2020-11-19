@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/CPU-S.html</loc>
+    
+    <lastmod>2020-11-19T06:17:49.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-11-19T06:15:05.853Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
+    
+    <lastmod>2020-11-19T06:14:06.175Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     
     <lastmod>2020-11-17T01:27:20.365Z</lastmod>
@@ -26,13 +47,6 @@
     <loc>https://blog.tlhub.cn/uPic.html</loc>
     
     <lastmod>2020-11-15T02:56:30.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-11-13T07:34:18.000Z</lastmod>
     
   </url>
   
@@ -75,20 +89,6 @@
     <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
     
     <lastmod>2020-11-03T01:57:28.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
-    
-    <lastmod>2020-10-31T09:16:23.211Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CPU-S.html</loc>
-    
-    <lastmod>2020-10-31T09:13:15.300Z</lastmod>
     
   </url>
   
