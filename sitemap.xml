@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
+    
+    <lastmod>2020-11-24T01:46:57.146Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2020-11-23T01:43:01.342Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
     
     <lastmod>2020-11-11T06:24:00.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-11-11T06:18:13.113Z</lastmod>
     
   </url>
   
