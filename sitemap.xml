@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    
+    <lastmod>2020-11-25T01:11:51.273Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     
     <lastmod>2020-11-24T01:46:57.146Z</lastmod>
@@ -159,13 +166,6 @@
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
     
     <lastmod>2020-10-03T01:15:18.116Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    
-    <lastmod>2020-09-28T14:32:37.372Z</lastmod>
     
   </url>
   
