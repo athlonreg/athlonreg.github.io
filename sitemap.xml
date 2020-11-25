@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
+    
+    <lastmod>2020-11-25T01:34:30.596Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     
     <lastmod>2020-11-25T01:11:51.273Z</lastmod>
@@ -362,13 +369,6 @@
     <loc>https://blog.tlhub.cn/Shadowsocks.html</loc>
     
     <lastmod>2020-06-01T01:22:24.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/SMCAMDProcessor.html</loc>
-    
-    <lastmod>2020-06-01T01:22:24.231Z</lastmod>
     
   </url>
   
