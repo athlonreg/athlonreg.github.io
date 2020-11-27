@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/bb/index.html</loc>
+    
+    <lastmod>2020-11-27T15:40:17.454Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
+    
+    <lastmod>2020-11-27T15:06:22.355Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     
     <lastmod>2020-11-27T14:01:29.722Z</lastmod>
@@ -89,13 +103,6 @@
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
     
     <lastmod>2020-11-11T06:24:00.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/CloverConfigurator.html</loc>
-    
-    <lastmod>2020-11-11T06:07:07.736Z</lastmod>
     
   </url>
   

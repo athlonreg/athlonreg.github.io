@@ -175,8 +175,6 @@
       
         <tags>
             
-            <tag> 录屏 </tag>
-            
             <tag> 截图 </tag>
             
             <tag> 贴图 </tag>
@@ -184,6 +182,8 @@
             <tag> 长截图 </tag>
             
             <tag> iShot </tag>
+            
+            <tag> 录屏 </tag>
             
         </tags>
       
@@ -489,9 +489,9 @@
       
         <tags>
             
-            <tag> 清理 </tag>
-            
             <tag> Lemon </tag>
+            
+            <tag> 清理 </tag>
             
             <tag> 柠檬 </tag>
             
@@ -572,9 +572,9 @@
       
         <tags>
             
-            <tag> 视频 </tag>
-            
             <tag> IINA </tag>
+            
+            <tag> 视频 </tag>
             
             <tag> 播放器 </tag>
             
@@ -928,6 +928,10 @@
             
             <tag> MySQL </tag>
             
+            <tag> PostgreSQL </tag>
+            
+            <tag> PG </tag>
+            
             <tag> SQLServer </tag>
             
             <tag> Navicat </tag>
@@ -937,10 +941,6 @@
             <tag> 数据库 </tag>
             
             <tag> Oracle </tag>
-            
-            <tag> PostgreSQL </tag>
-            
-            <tag> PG </tag>
             
         </tags>
       
@@ -1064,11 +1064,11 @@
       
         <tags>
             
-            <tag> 编辑器 </tag>
-            
             <tag> Markdown </tag>
             
             <tag> Typora </tag>
+            
+            <tag> 编辑器 </tag>
             
             <tag> 所见即所得 </tag>
             
@@ -1200,11 +1200,11 @@
       
         <tags>
             
+            <tag> Motrix </tag>
+            
             <tag> 下载 </tag>
             
             <tag> 种子 </tag>
-            
-            <tag> Motrix </tag>
             
             <tag> 磁力链接 </tag>
             
@@ -1592,11 +1592,11 @@
     
     
     <entry>
-      <title>Clover Configurator 5.17.1.0 四叶草图形化配置工具</title>
+      <title>Clover Configurator 5.17.3.0 四叶草图形化配置工具</title>
       <link href="/CloverConfigurator.html"/>
       <url>/CloverConfigurator.html</url>
       
-        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Clover Configurator 是一款四叶草图形化配置工具。Clover Configurator 可以图形化的帮你编辑配置文件 config.plist，而且把四叶草的几项功能都分了区块，你可以很快的找到想要配置的属性。</p><h2 id="截图"><a href="#截图" class="headerlink" title=" 截图"></a><i class="fa fa-desktop" aria-hidden="true"></i> 截图</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200507145129.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-11-11</td><td align="center">5.17.1.0</td></tr><tr><td align="center">2020-11-3</td><td align="center">5.17.0.0</td></tr><tr><td align="center">2020-10-12</td><td align="center">5.16.0.0</td></tr><tr><td align="center">2020-8-13</td><td align="center">5.15.2.0</td></tr><tr><td align="center">2020-8-5</td><td align="center">5.15.1.0</td></tr><tr><td align="center">2020-8-4</td><td align="center">5.15.0.1</td></tr><tr><td align="center">2020-7-19</td><td align="center">5.15.0.0</td></tr><tr><td align="center">2020-6-17</td><td align="center">5.14.1.0</td></tr><tr><td align="center">2020-5-30</td><td align="center">5.14.0.0</td></tr><tr><td align="center">2020-5-14</td><td align="center">5.13.1.0</td></tr><tr><td align="center">2020-5-14</td><td align="center">5.13.0.1</td></tr><tr><td align="center">2020-5-10</td><td align="center">5.12.0.0</td></tr><tr><td align="center">2020-5-7</td><td align="center">5.11.0.0</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bd6ipa" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bd6ipa</a><br>密码: 1rvr</p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2><p><a href="https://mackie100projects.altervista.org" target="_blank" rel="noopener external nofollow noreferrer">Clover Configurator</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title=" 介绍"></a><i class="fa fa-audio-description" aria-hidden="true"></i> 介绍</h2><p>Clover Configurator 是一款四叶草图形化配置工具。Clover Configurator 可以图形化的帮你编辑配置文件 config.plist，而且把四叶草的几项功能都分了区块，你可以很快的找到想要配置的属性。</p><h2 id="截图"><a href="#截图" class="headerlink" title=" 截图"></a><i class="fa fa-desktop" aria-hidden="true"></i> 截图</h2><p><img src="https://cdn.jsdelivr.net/gh/tlhub/picbed-1/20200507145129.png" alt=""></p><h2 id="版本历史"><a href="#版本历史" class="headerlink" title=" 版本历史"></a><i class="fa fa-history" aria-hidden="true"></i> 版本历史</h2><table><thead><tr><th align="center">更新时间</th><th align="center">版本号</th></tr></thead><tbody><tr><td align="center">2020-11-27</td><td align="center">5.17.3.0</td></tr><tr><td align="center">2020-11-11</td><td align="center">5.17.1.0</td></tr><tr><td align="center">2020-11-3</td><td align="center">5.17.0.0</td></tr><tr><td align="center">2020-10-12</td><td align="center">5.16.0.0</td></tr><tr><td align="center">2020-8-13</td><td align="center">5.15.2.0</td></tr><tr><td align="center">2020-8-5</td><td align="center">5.15.1.0</td></tr><tr><td align="center">2020-8-4</td><td align="center">5.15.0.1</td></tr><tr><td align="center">2020-7-19</td><td align="center">5.15.0.0</td></tr><tr><td align="center">2020-6-17</td><td align="center">5.14.1.0</td></tr><tr><td align="center">2020-5-30</td><td align="center">5.14.0.0</td></tr><tr><td align="center">2020-5-14</td><td align="center">5.13.1.0</td></tr><tr><td align="center">2020-5-14</td><td align="center">5.13.0.1</td></tr><tr><td align="center">2020-5-10</td><td align="center">5.12.0.0</td></tr><tr><td align="center">2020-5-7</td><td align="center">5.11.0.0</td></tr></tbody></table><h2 id="下载链接"><a href="#下载链接" class="headerlink" title=" 下载链接"></a><i class="fa fa-cloud-download" aria-hidden="true"></i> 下载链接</h2><p>地址: <a href="https://taolu.lanzous.com/b01bd6ipa" target="_blank" rel="noopener external nofollow noreferrer">https://taolu.lanzous.com/b01bd6ipa</a><br>密码: 1rvr</p><h2 id="资源来源"><a href="#资源来源" class="headerlink" title=" 资源来源"></a><i class="fa fa-database" aria-hidden="true"></i> 资源来源</h2><p><a href="https://mackie100projects.altervista.org" target="_blank" rel="noopener external nofollow noreferrer">Clover Configurator</a></p>]]></content>
       
       
       <categories>

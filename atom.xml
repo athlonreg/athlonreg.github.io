@@ -204,8 +204,6 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="录屏" scheme="https://blog.tlhub.cn/tags/%E5%BD%95%E5%B1%8F/"/>
-    
       <category term="截图" scheme="https://blog.tlhub.cn/tags/%E6%88%AA%E5%9B%BE/"/>
     
       <category term="贴图" scheme="https://blog.tlhub.cn/tags/%E8%B4%B4%E5%9B%BE/"/>
@@ -213,6 +211,8 @@
       <category term="长截图" scheme="https://blog.tlhub.cn/tags/%E9%95%BF%E6%88%AA%E5%9B%BE/"/>
     
       <category term="iShot" scheme="https://blog.tlhub.cn/tags/iShot/"/>
+    
+      <category term="录屏" scheme="https://blog.tlhub.cn/tags/%E5%BD%95%E5%B1%8F/"/>
     
   </entry>
   
@@ -538,9 +538,9 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
-    
       <category term="Lemon" scheme="https://blog.tlhub.cn/tags/Lemon/"/>
+    
+      <category term="清理" scheme="https://blog.tlhub.cn/tags/%E6%B8%85%E7%90%86/"/>
     
       <category term="柠檬" scheme="https://blog.tlhub.cn/tags/%E6%9F%A0%E6%AA%AC/"/>
     
@@ -627,9 +627,9 @@
       <category term="Software" scheme="https://blog.tlhub.cn/categories/Software/"/>
     
     
-      <category term="视频" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91/"/>
-    
       <category term="IINA" scheme="https://blog.tlhub.cn/tags/IINA/"/>
+    
+      <category term="视频" scheme="https://blog.tlhub.cn/tags/%E8%A7%86%E9%A2%91/"/>
     
       <category term="播放器" scheme="https://blog.tlhub.cn/tags/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
