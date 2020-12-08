@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    <lastmod>2020-12-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    <lastmod>2020-12-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
+    <lastmod>2020-12-08</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    <lastmod>2020-12-08</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     <lastmod>2020-12-08</lastmod>
   </url>  <url>
@@ -43,15 +55,6 @@
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
     <lastmod>2020-11-11</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
-    <lastmod>2020-11-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
-    <lastmod>2020-11-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    <lastmod>2020-11-03</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     <lastmod>2020-10-12</lastmod>
   </url>  <url>
@@ -90,9 +93,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/How-to-deploy-gitlab-on-centos.html</loc>
     <lastmod>2020-09-12</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
-    <lastmod>2020-09-07</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/V2RayU.html</loc>
     <lastmod>2020-08-13</lastmod>

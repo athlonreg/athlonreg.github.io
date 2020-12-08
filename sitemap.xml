@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Lilu.html</loc>
+    
+    <lastmod>2020-12-08T01:46:14.413Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
+    
+    <lastmod>2020-12-08T01:42:07.066Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
+    
+    <lastmod>2020-12-08T01:41:27.072Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
+    
+    <lastmod>2020-12-08T01:41:01.450Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     
     <lastmod>2020-12-08T01:34:27.141Z</lastmod>
@@ -114,27 +142,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/Lilu.html</loc>
-    
-    <lastmod>2020-11-03T02:05:42.891Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
-    
-    <lastmod>2020-11-03T01:59:28.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooPS2.html</loc>
-    
-    <lastmod>2020-11-03T01:57:28.573Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-10-12T15:25:11.402Z</lastmod>
@@ -222,13 +229,6 @@
     <loc>https://blog.tlhub.cn/How-to-deploy-gitlab-on-centos.html</loc>
     
     <lastmod>2020-09-12T01:06:57.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/MaciASL.html</loc>
-    
-    <lastmod>2020-09-07T13:09:46.669Z</lastmod>
     
   </url>
   
