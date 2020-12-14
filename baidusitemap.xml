@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-12-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    <lastmod>2020-12-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    <lastmod>2020-12-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/capXDR.html</loc>
+    <lastmod>2020-12-14</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    <lastmod>2020-12-14</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     <lastmod>2020-12-08</lastmod>
   </url>  <url>
@@ -15,9 +30,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     <lastmod>2020-12-08</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    <lastmod>2020-12-04</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Etcher.html</loc>
     <lastmod>2020-12-04</lastmod>
@@ -37,9 +49,6 @@
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-11-25</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-11-23</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
     <lastmod>2020-11-20</lastmod>
   </url>  <url>
@@ -48,9 +57,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/Hackintool.html</loc>
     <lastmod>2020-11-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
-    <lastmod>2020-11-15</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/UEFITool.html</loc>
     <lastmod>2020-11-11</lastmod>
@@ -78,9 +84,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
     <lastmod>2020-10-03</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    <lastmod>2020-09-12</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/How-to-deploy-PostgreSQL-12-on-CentOS.html</loc>
     <lastmod>2020-09-12</lastmod>
@@ -114,9 +117,6 @@
   </url>  <url>
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
     <lastmod>2020-06-22</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/capXDR.html</loc>
-    <lastmod>2020-06-19</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/WePE.html</loc>
     <lastmod>2020-06-09</lastmod>

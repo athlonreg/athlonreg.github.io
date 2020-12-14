@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    
+    <lastmod>2020-12-14T09:06:18.652Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/uPic.html</loc>
+    
+    <lastmod>2020-12-14T09:04:25.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Typora.html</loc>
+    
+    <lastmod>2020-12-14T09:02:13.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/capXDR.html</loc>
+    
+    <lastmod>2020-12-14T08:55:03.210Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2020-12-14T08:51:57.282Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
     
     <lastmod>2020-12-08T01:46:14.413Z</lastmod>
@@ -33,13 +68,6 @@
     <loc>https://blog.tlhub.cn/iTerm.html</loc>
     
     <lastmod>2020-12-08T01:34:27.141Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2020-12-04T09:32:03.211Z</lastmod>
     
   </url>
   
@@ -100,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    
-    <lastmod>2020-11-23T01:42:06.536Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
     
     <lastmod>2020-11-20T01:33:30.033Z</lastmod>
@@ -124,13 +145,6 @@
     <loc>https://blog.tlhub.cn/Hackintool.html</loc>
     
     <lastmod>2020-11-19T06:14:06.175Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/uPic.html</loc>
-    
-    <lastmod>2020-11-15T02:56:30.468Z</lastmod>
     
   </url>
   
@@ -194,13 +208,6 @@
     <loc>https://blog.tlhub.cn/CentOS-depoly-8-nodes-Hadoop-HBase-Kafka-Flink-Spark-Zookeeper-HA-Cluster.html</loc>
     
     <lastmod>2020-10-03T01:15:18.116Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Typora.html</loc>
-    
-    <lastmod>2020-09-12T07:46:04.763Z</lastmod>
     
   </url>
   
@@ -278,13 +285,6 @@
     <loc>https://blog.tlhub.cn/MWeb.html</loc>
     
     <lastmod>2020-06-22T00:26:28.303Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/capXDR.html</loc>
-    
-    <lastmod>2020-06-19T10:29:45.642Z</lastmod>
     
   </url>
   
