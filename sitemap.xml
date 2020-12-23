@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/uTools.html</loc>
+    
+    <lastmod>2020-12-23T01:35:20.504Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    
+    <lastmod>2020-12-23T01:34:11.394Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Tencent-Lemon.html</loc>
     
     <lastmod>2020-12-20T03:51:03.250Z</lastmod>
@@ -128,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/uTools.html</loc>
-    
-    <lastmod>2020-11-25T01:11:51.273Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.tlhub.cn/IINA.html</loc>
     
     <lastmod>2020-11-20T01:33:30.033Z</lastmod>
@@ -166,13 +173,6 @@
     <loc>https://blog.tlhub.cn/hackintosh-tools.html</loc>
     
     <lastmod>2020-10-12T15:25:11.402Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
-    
-    <lastmod>2020-10-09T02:22:43.201Z</lastmod>
     
   </url>
   
