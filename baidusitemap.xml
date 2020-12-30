@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <lastmod>2020-12-30</lastmod>
+  </url>  <url>
+    <loc>https://blog.tlhub.cn/capXDR.html</loc>
+    <lastmod>2020-12-30</lastmod>
+  </url>  <url>
     <loc>https://blog.tlhub.cn/uTools.html</loc>
     <lastmod>2020-12-23</lastmod>
   </url>  <url>
@@ -13,9 +19,6 @@
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -26,9 +29,6 @@
     <lastmod>2020-12-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Typora.html</loc>
-    <lastmod>2020-12-14</lastmod>
-  </url>  <url>
-    <loc>https://blog.tlhub.cn/capXDR.html</loc>
     <lastmod>2020-12-14</lastmod>
   </url>  <url>
     <loc>https://blog.tlhub.cn/Lilu.html</loc>
