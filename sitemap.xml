@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
+    
+    <lastmod>2021-01-20T02:16:38.173Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
     <lastmod>2021-01-20T02:03:37.451Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
     
     <lastmod>2021-01-11T03:32:00.617Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
-    
-    <lastmod>2021-01-11T03:10:42.026Z</lastmod>
     
   </url>
   
