@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
     
-    <lastmod>2021-01-11T03:32:00.617Z</lastmod>
+    <lastmod>2021-01-20T02:03:37.451Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.tlhub.cn/OpenCoreConfigurator.html</loc>
+    <loc>https://blog.tlhub.cn/Etcher.html</loc>
     
-    <lastmod>2021-01-11T03:13:14.191Z</lastmod>
+    <lastmod>2021-01-20T01:58:53.984Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
+    
+    <lastmod>2021-01-20T01:58:12.413Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.tlhub.cn/VoodooI2C.html</loc>
+    
+    <lastmod>2021-01-11T03:32:00.617Z</lastmod>
     
   </url>
   
@@ -75,13 +89,6 @@
     <loc>https://blog.tlhub.cn/PicGo.html</loc>
     
     <lastmod>2020-12-20T03:42:47.156Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Etcher.html</loc>
-    
-    <lastmod>2020-12-20T03:41:54.986Z</lastmod>
     
   </url>
   
@@ -159,13 +166,6 @@
     <loc>https://blog.tlhub.cn/CPU-S.html</loc>
     
     <lastmod>2020-11-19T06:17:49.914Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/Hackintool.html</loc>
-    
-    <lastmod>2020-11-19T06:14:06.175Z</lastmod>
     
   </url>
   
