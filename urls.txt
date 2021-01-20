@@ -33,7 +33,6 @@ https://blog.tlhub.cn/Microsoft-Remote-Desktop.html
 https://blog.tlhub.cn/Hexo.html
 https://blog.tlhub.cn/GenI2C.html
 https://blog.tlhub.cn/Typora.html
-https://blog.tlhub.cn/Shadowsocks.html
 https://blog.tlhub.cn/UEFITool.html
 https://blog.tlhub.cn/Etcher.html
 https://blog.tlhub.cn/Motrix.html
@@ -45,7 +44,6 @@ https://blog.tlhub.cn/MaciASL.html
 https://blog.tlhub.cn/iTerm.html
 https://blog.tlhub.cn/CPU-S.html
 https://blog.tlhub.cn/TeamViewer.html
-https://blog.tlhub.cn/V2RayU.html
 https://blog.tlhub.cn/PinConfigurator.html
 https://blog.tlhub.cn/OpenCoreConfigurator.html
 https://blog.tlhub.cn/NoSleep.html
@@ -72,7 +70,6 @@ https://blog.tlhub.cn/VoodooPS2.html
 https://blog.tlhub.cn/VoodooTSCSync.html
 https://blog.tlhub.cn/itlwm.html
 https://blog.tlhub.cn/Lilu.html
-https://blog.tlhub.cn/hackintosh-tools.html
 https://blog.tlhub.cn/Openldap-backup-and-recovery-data.html
 https://blog.tlhub.cn/Centos7-docker-image-with-systemd.html
 https://blog.tlhub.cn/Systemd-service-file-of-sonar-gerrit-and-tomcat.html
@@ -98,3 +95,6 @@ https://blog.tlhub.cn/SonarQube-install-and-deploy.html
 https://blog.tlhub.cn/MantisBT-install-and-deploy.html
 https://blog.tlhub.cn/awk-to-use.html
 https://blog.tlhub.cn/quicksort.html
+https://blog.tlhub.cn/High-Sierra-and-Mojave-Images-update.html
+https://blog.tlhub.cn/Command-sed-on-mac.html
+https://blog.tlhub.cn/Custom-terminal-on-your-mac.html
