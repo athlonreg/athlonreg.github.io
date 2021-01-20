@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tlhub.cn/capXDR.html</loc>
+    
+    <lastmod>2021-01-20T02:28:15.627Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.tlhub.cn/Microsoft-Remote-Desktop.html</loc>
     
     <lastmod>2021-01-20T02:16:38.173Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.tlhub.cn/OpenCorePkg.html</loc>
     
     <lastmod>2021-01-05T01:17:26.816Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.tlhub.cn/capXDR.html</loc>
-    
-    <lastmod>2021-01-05T01:15:44.051Z</lastmod>
     
   </url>
   
