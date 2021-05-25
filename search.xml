@@ -988,9 +988,9 @@
       
         <tags>
             
-            <tag> Hackintosh </tag>
-            
             <tag> patch </tag>
+            
+            <tag> Hackintosh </tag>
             
             <tag> 补丁 </tag>
             
@@ -1224,11 +1224,11 @@
             
             <tag> Hacintosh </tag>
             
-            <tag> SSDT </tag>
+            <tag> hotpatch </tag>
             
             <tag> ACPI </tag>
             
-            <tag> hotpatch </tag>
+            <tag> SSDT </tag>
             
         </tags>
       
